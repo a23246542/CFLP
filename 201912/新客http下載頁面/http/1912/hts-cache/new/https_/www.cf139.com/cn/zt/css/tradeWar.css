@@ -1,0 +1,757 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0;color:#333;position: relative}
+.inner{overflow: hidden;width: 1200px; margin: 0 auto; position: relative}
+img{ overflow:hidden;display:block;border: none;}
+.e-header .header{
+    background: none;
+}
+.web-banner{
+    width: 100%;
+    height: 730px;
+    background: url("//img.getfc.com.cn/source/www/zt/tradeWar1812/banner-bg.jpg") no-repeat center;
+    margin-top:-76px;
+    position: relative;
+}
+.move{
+    transform: translate(-796px,726px);
+}
+
+.web-banner .inner{
+    height: 730px;
+}
+.btn-banner{
+    position: absolute;
+    bottom: 143px;
+    left: 60px;
+    z-index: 10;
+}
+.btn-banner a{
+    font-size: 24px;
+    background: #fff;
+    color: #0a528d;
+    width: 182px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    transition: all .3s;
+    display: inline-block;
+    margin-right: 40px;
+    font-weight: lighter;
+}
+.btn-banner a:hover{
+    background: #0096dc;
+    color: #fff;
+    font-weight: bold;
+}
+.btn-banner a.real{
+    background: #0096dc;
+    color: #fff;
+    font-weight: bold;
+}
+.btn-banner a.real:hover{
+    background: #fff;
+    color: #0a528d;
+    font-weight: lighter;
+}
+.web-banner .light {
+    position: absolute;
+    right: -804px;
+    top: -696px;
+    transition: all 1.5s;
+}
+.web-banner .layout-1 img{margin: 0 auto}
+.web-icon img{
+    position: absolute;
+    z-index: 1;
+    animation-fill-mode: backwards;
+    -webkit-animation-fill-mode: backwards;
+}
+.web-page{
+    overflow: hidden;
+    width: 100%;
+    /*background: #f6f6f6;*/
+    padding: 65px 0;
+}
+.trade-title .first-title{
+    font-size: 48px;
+    color: #313547;
+    text-align: center;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.trade-title .first-title span{
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.trade-title .first-title i{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background:url("//img.getfc.com.cn/source/www/zt/new-tradeWar/icon.png");
+    vertical-align: middle;
+    margin: 0 10px;
+}
+ .sub-title{
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #313547;
+     line-height: 28px;
+}
+.bg-02{
+    width: 100%;
+    height: 782px;
+    background: url("//img.getfc.com.cn/source/www/zt/new-tradeWar/bg.jpg?v=33243") no-repeat center;
+    /*padding-top: 50px;*/
+}
+.bg-02 .inner .trade-title .first-title{
+    margin-bottom: 20px;
+}
+.trade-box{
+    margin-top: 44px;
+}
+ .trade-left{
+     float: left;
+    position: relative;
+     margin-left: 15px;
+}
+ .trade-text:hover{
+     box-shadow: 0 0 15px #ccc;
+ }
+ .trade-text:hover .img-right{
+     box-shadow: none
+ }
+.trade-right{
+    float: right;
+    margin-right: 10px;
+}
+ .trade-content{
+    font-size: 16px;
+    padding-bottom:60px;
+    line-height: 1.8;
+    text-align: justify;
+    color: #313547;
+}
+.trade-bottom{
+    padding-top: 20px;
+}
+.trade-left .trade-content span{
+    color: #0096dc;
+}
+.trade-text img{
+    float: left;
+}
+ .trade-text .img-right{
+    margin-left: 112px;
+    width:465px;
+    height: 426px;
+    /*box-shadow: 10px 12px 20px #ccc;*/
+    padding:85px 50px 0 45px;
+     margin-bottom: 30px;
+     box-shadow: 0 -4px 15px -1px #ddd,
+     0 4px 15px -1px #ddd,
+     4px 0 15px -1px #ddd;
+
+}
+ .trade-right .img-right{
+     padding-top: 50px;
+ }
+.img-title{
+    font-size: 20px;
+    font-weight: bold;
+    color: #0096dc;
+}
+ .trade-top{
+     border-bottom: 1px solid #ccc;
+ }
+ .trade-time{
+     font-size: 14px;
+     color: #313547;
+     margin-bottom: 10px;
+ }
+ .trade-right .trade-content{
+     padding-bottom: 20px;
+ }
+.market-box .hd{   padding:0 20px; position:relative; }
+.market-box .hd ul{ width:624px;margin:0 auto ;border-bottom: 1px solid #ccc;}
+.market-box .hd ul li{ float:left; cursor:pointer;width: 140px;text-align: center;margin-right: 95px;  }
+/*.market-box .hd ul li.on{   border-bottom:3px solid #0096dc; }*/
+.market-box .hd ul li:last-child{
+    margin-right: 0;
+}
+.icon-market.icon01{
+   background: url("//img.getfc.com.cn/source/www/zt/tradeWar/icon01.png") no-repeat;
+    background-size:39px 28px;
+    width: 39px;
+    height: 28px;
+    margin:  0 auto 5px;
+}
+.icon-market.icon02{
+   background: url("//img.getfc.com.cn/source/www/zt/tradeWar/icon02.png") no-repeat;
+    background-size:44px 29px;
+    width: 44px;
+    height: 29px;
+    margin:  0 auto 5px;
+}
+.icon-market.icon03{
+   background: url("//img.getfc.com.cn/source/www/zt/tradeWar/icon03.png") no-repeat;
+    background-size:28px 28px;
+    width: 28px;
+    height: 28px;
+    margin:  0 auto 5px;
+}
+.market-box .hd ul li.on .icon03{
+    background: url("//img.getfc.com.cn/source/www/zt/new-tradeWar/3.png") no-repeat;
+    background-size:28px 28px;
+}
+.market-box .hd ul li.on .icon02{
+    background: url("//img.getfc.com.cn/source/www/zt/new-tradeWar/2.png") no-repeat;
+    background-size:44px 29px;
+}
+.market-box .hd ul li.on .icon01{
+    background: url("//img.getfc.com.cn/source/www/zt/new-tradeWar/1.png") no-repeat;
+    background-size:39px 28px;
+}
+
+.bd-img img{
+    display: block;
+    width: 1060px;
+    margin: 0 auto;
+}
+.market-text{
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.market-box .hd ul li.on .market-text{
+    color: #1a4376;
+}
+.assist{
+padding-left: 69px;
+}
+
+.assist-bottom{
+    text-align: center;
+    margin-top: 44px;
+}
+.assist a{
+    display: inline-block;
+    font-size: 0;
+    vertical-align: middle;
+    transition: all .3s ease-in;
+}
+.assist a:hover{
+    transform: translateY(-8px);
+}
+.assist a img{
+    display: inline-block;
+}
+.assist-title{
+    text-align: center;
+    font-size: 18px;
+    color:#313547;
+    margin: 32px auto 15px;
+}
+.assist-plus{
+    margin-left: 20px;
+}
+.assist-plus img{
+ display: inline-block;
+    vertical-align: middle;
+}
+.assist-left{
+    float: left;
+    width: 370px;
+    height: 420px;
+    background: url("//img.getfc.com.cn/source/www/zt/tradeWar/left.jpg") no-repeat;
+    background-size: 370px 420px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.assist-left:hover,.assist-right:hover{
+    box-shadow: 0 0 15px #ccc;
+}
+.assist-right{
+    float: left;
+    width: 370px;
+    height: 420px;
+    background: url("//img.getfc.com.cn/source/www/zt/tradeWar/right.jpg") no-repeat;
+    background-size: 370px 420px;
+    margin-bottom: 10px;
+}
+
+.teach{
+    padding-left: 60px;
+}
+.teach ul li{
+    margin-bottom: 40px;
+    width: 860px;
+}
+.teach ul li:hover{
+    box-shadow: 0 0 15px #ccc;
+}
+.teach ul li:nth-child(2){
+    margin-left: 90px;
+}
+.teach ul li:nth-child(3){
+    margin-left: 200px;
+}
+.teach ul li .teach-left{
+    float: left;
+}
+.teach ul li .teach-left img{
+    width: 300px;
+    height: 160px;
+}
+.teach ul li .teach-right{
+    padding: 15px 38px 0 30px;
+    float: left;
+    background: #fafafa;
+    border: 1px solid #ccc;
+    width: 560px;
+    height: 160px;
+    border-left: none;
+    transition: all .3s;
+}
+.teach-right .teach-title{
+   font-size: 24px;
+    font-weight: bold;
+    transition: all .3s;
+}
+.teach-right .sub-teachTitle{
+    font-size: 18px;
+    color: #fcac42;
+    font-weight: bold;
+    margin: 10px 0 15px;
+    transition: all .3s;
+}
+.teach-right .teach-order{
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    background: #1a4376;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    transition: all .3s;
+}
+.teach ul li.active .teach-right{
+    background: #416ab8;
+}
+.teach ul li.active  .teach-title{
+    color: #fff;
+}
+.teach-order.dn{
+    display: none;
+}
+.teach ul li.active  .sub-teachTitle{
+    color: #f5cda2;
+}
+
+.teach-right .teach-text{
+    font-size: 14px;
+    color: #fff;
+    display: none;
+}
+.teach-right .teach-text.ds{
+    display: block;
+}
+.tool ul li{
+    float: left;
+}
+
+.tool ul li .tool-left{
+    float: left;
+}
+
+.tool ul li .tool-right{
+    margin-left: 350px;
+    padding-top: 130px;
+    width: 250px;
+}
+.tool ul li .tool-right .item-1{
+    font-size: 28px;
+    color: #313547;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.tool ul li .tool-right .item-2{
+    width: 30px;
+    height: 2px;
+    background: #313547;
+    margin-bottom: 20px;
+}
+.tool ul li .tool-right .item-3{
+ font-size: 18px;
+  color: #707488;
+    margin-bottom: 90px;
+}
+.tool ul li .tool-right .item-4{
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px dashed #1a4376;
+   font-size: 16px;
+   color: #1a4376;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.tool ul li .tool-right .item-5 a{
+    display: inline-block;
+    width: 245px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background: #1a4376;
+    border-radius: 10px;
+    transition: all .3s;
+}
+.tool ul li .tool-right .item-5 a:hover{
+    box-shadow:0 12px 5px -5px #1a4376;
+}
+.open-part{
+    width: 100%;
+    height: 158px;
+    line-height: 158px;
+    background:#426ab9 ;
+}
+.open-part .inner{
+    width:470px;
+    margin: 0 auto;
+}
+.open-part a{
+    display: inline-block;
+    width: 192px;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+    transition: all .3s;
+    border-radius: 10px;
+}
+.open-part a.real{
+    margin-left: 83px;
+    background: #0096dc;
+    border: 1px solid #0096dc;
+    box-shadow:0 20px 10px  -10px rgba(0,150,220,.5);
+}
+.open-part a.real:hover{
+   box-shadow: none;
+    color: #fff;
+    border: 1px solid #fff;
+    background: none;
+}
+.open-part a:hover{
+    border-radius: 10px;
+    background: #0096dc;
+    border: 1px solid #0096dc;
+    /*box-shadow:0 12px 5px -5px #0096dc;*/
+    box-shadow:0 20px 10px  -10px rgba(0,150,220,.5);
+
+}
+.open-btn{
+    font-size: 0;
+    text-align: center;
+    padding:16px 0;
+}
+.open-btn a{
+    display: inline-block;
+    width: 192px;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid #1a4376;
+    color: #1a4376;
+    font-size: 28px;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 20px;
+    transition: all .3s;
+}
+.open-btn a.admin{
+    background: #1a4376;
+    color: #fff;
+    box-shadow:0 20px 10px  -10px rgba(26,67,118,.5);
+}
+.open-btn a.admin:hover{
+    color: #1a4376;
+    background: none;
+    box-shadow: none;
+}
+.open-btn a:hover{
+    background: #1a4376;
+    color: #fff;
+    box-shadow:0 20px 10px  -10px rgba(26,67,118,.5);
+ }
+.web-page .add-con{
+    overflow: hidden;
+    background: url("//img.getfc.com.cn/source/www/zt/tradeWar1812/con-bg.png") no-repeat;
+    width: 1200px;
+    height: 510px;
+    margin: 0 auto;
+}
+.web-page .add-con .add-tit{
+    overflow: hidden;
+    width: 190px;
+    height: 52px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #fff;
+    margin: 30px 0 0 4px;
+}
+.web-page .add-con .add-list{overflow: hidden;margin: 35px 0 0 120px}
+.web-page .add-con .add-list time{
+    overflow: hidden;
+    display: block;
+    font-size: 14px;
+    line-height: 28px;
+    color: #313547;
+    font-weight: lighter;
+}
+.web-page .add-con .add-list p{
+    overflow: hidden;
+    display: block;
+    font-size: 18px;
+    color: #313547;
+    line-height: 28px;
+    margin-bottom: 32px;
+}
+.web-page .add-con .add-list span{
+    overflow: hidden;
+    display: block;
+    font-size: 24px;
+    line-height: 36px;
+    color: #0096dc;
+}
+.web-page .add-con .add-list span.bold{font-weight: bold;margin-top: 20px}
+.web-page .add-con .add-list a{
+    overflow: hidden;
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    background: #1a4376;
+    width: 220px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-top: 50px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.web-page .add-con .add-list a:hover{
+    background: #fff;
+    border: solid 1px #1a4376;
+    color: #1a4376;
+}
+.web-page .add-tit01{overflow: hidden;margin-top: 75px}
+.web-page .add-tit01 span{
+    overflow: hidden;
+    display: block;
+    font-weight: bold;
+    font-size: 30px;
+    color: #313547;
+}
+.web-page .add-tit01 span.line{
+    width: 53px;
+    height: 2px;
+    background: #ababae;
+    margin: 10px 0 0;
+}
+.web-page .add-list01{overflow: hidden}
+.web-page .add-list01 ul{
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.web-page .add-list01 ul li{
+    overflow: hidden;
+    display: block;
+    list-style: none;
+    margin-top: 25px;
+    transition: all .25s;
+}
+.web-page .add-list01 ul li:hover{
+    margin-top: 15px;
+    transition: all .25s;
+}
+.web-page .add-list01 .item{
+    overflow: hidden;
+    width: 290px;
+    height: 423px;
+    border-radius: 6px;
+    background: #f8f8f8;
+    position: relative;
+}
+.web-page .add-list01 .item time{
+    overflow: hidden;
+    display: block;
+    font-size: 18px;
+    line-height: 28px;
+    color: #313547;
+    margin: 32px 18px 0 18px;
+}
+.web-page .add-list01 .item p{
+    overflow: hidden;
+    display: block;
+    font-weight: lighter;
+    font-size: 14px;
+    color: #313547;
+    line-height: 24px;
+    margin: 0 18px;
+}
+.web-page .add-list01 .item span{
+    overflow: hidden;
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    color: #0096dc;
+}
+.web-page .add-list01 .item span.bold{font-weight: bold;margin-top: 10px}
+.web-page .add-list01 .item .pos{
+    overflow: hidden;
+    position: absolute;
+    bottom: 32px;
+    left: 18px;
+}
+@media screen and (max-width: 1800px){
+
+    .btn-banner{
+        right: 400px;
+    }
+}
+@media screen and (max-width: 1680px){
+    .move {
+        transform: translate(-680px,730px);
+    }
+    .btn-banner{
+        right: 349px;
+    }
+}
+@media screen and (max-width: 1600px){
+    .move {
+        transform: translate(-627px,720px);
+    }
+    .btn-banner{
+        right: 300px;
+    }
+}
+@media screen and (max-width: 1400px){
+    .move {
+        transform: translate(-550px,744px);
+    }
+    .btn-banner{
+        right: 206px;
+    }
+}
+@media screen and (max-width: 1366px){
+    .web-banner .light {
+        right: -840px;
+        top: -696px;
+    }
+    .move {
+        transform: translate(-566px,750px);
+    }
+}
+@media screen and (max-width: 1280px){
+    .move {
+        transform: translate(-457px,724px);
+    }
+    .web-banner .inner {
+        text-align: center;
+        padding: 260px 0 0 320px;
+        width: 900px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .web-banner .inner {
+        padding: 200px 0 0 350px;
+    }
+    .light {
+       display: none;
+    }
+}
+@media screen and (max-width: 1200px){
+    .inner{
+        width: 1000px;
+    }
+    .trade-left .trade-text{
+        margin-right:20px;
+    }
+    .bd-img img {
+        display: block;
+        width: 800px;
+        margin: 0 auto;
+    }
+    .assist-plus{
+        width: 50px;
+    }
+    .teach ul li:nth-child(2) {
+        margin-left: 0;
+    }
+    .teach ul li:nth-child(3) {
+        margin-left: 0;
+    }
+    .point ul {
+        width: 700px;
+        margin: 0 auto;
+    }
+    .point ul li{
+        height: 370px;
+        margin-right: 150px;
+    }
+    .point ul li:nth-child(2){
+        margin-right: 0;
+    }
+    .point ul li:nth-child(4){
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 1000px){
+    .inner{
+        width: 900px;
+    }
+    .trade-left .trade-text{
+        margin-right:20px;
+    }
+    .bd-img img {
+        display: block;
+        width: 800px;
+        margin: 0 auto;
+    }
+    .assist-plus{
+        width: 50px;
+    }
+    .teach ul li:nth-child(2) {
+        margin-left: 0;
+    }
+    .teach ul li:nth-child(3) {
+        margin-left: 0;
+    }
+    .point ul {
+        width: 700px;
+        margin: 0 auto;
+    }
+    .point ul li{
+        height: 370px;
+        margin-right: 150px;
+    }
+    .point ul li:nth-child(2){
+        margin-right: 0;
+    }
+    .point ul li:nth-child(4){
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,972 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0;color:#333;position: relative}
+.inner{overflow: hidden;width: 1200px; margin: 0 auto; position: relative}
+img{ overflow:hidden;display:block;border: none;}
+.e-header .header{
+    background: none;
+}
+
+.web-banner{
+    width: 100%;
+    height: 700px;
+    background: url("http://img.getfc.com.cn/source/www/zt/new-metal/bg.png") no-repeat center;
+    margin-top:-76px;
+    position: relative;
+}
+
+.web-banner .inner{
+    text-align: left;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 200px;
+    padding-left: 150px;
+}
+.web-banner .inner img{
+    display: inline;
+}
+.web-banner .button{
+    margin-top: 10px;
+}
+.bg-05 .button{
+    width: 440px;
+    font-size: 0;
+    margin:  80px auto 0;
+}
+.bg-05{
+    padding-bottom: 60px;
+}
+.button a{
+    display: inline-block;
+    width: 192px;
+    height: 59px;
+    line-height: 59px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    transition:  all .3s;
+    color: #fff;
+}
+
+.web-banner .button a.real,.bg-05 .button a.real{
+    background: url("http://img.getfc.com.cn/source/www/zt/new-metal/btn02.png?v=3232") no-repeat;
+    width: 242px;
+    height: 105px;
+    background-size: 242px 105px;
+}
+.button a.service{
+   border: 1px solid #0096dc;
+    color: #0096dc;
+    transition: all .3s;
+}
+.button a.service:hover{
+    background: #0096dc;
+    color: #fff;
+}
+.web-page{
+    overflow: hidden;
+    width: 100%;
+    background: #fff;
+    /*padding: 70px 0;*/
+}
+
+.trade-title .first-title{
+    font-size: 40px;
+    color: #444444;
+    text-align: center;
+    margin-bottom: 53px;
+    font-weight: bold;
+    margin-top: 90px;
+    position: relative;
+}
+.bg-03{
+    padding-bottom: 100px;
+}
+.bg-03 .trade-title .first-title img{
+    left: 306px;
+}
+.bg-04 .trade-title .first-title img{
+    left: 432px;
+}
+.bg-05 .trade-title .first-title img{
+    left: 371px;
+}
+.bg-04{
+    background: #f7f7f7;
+    padding-bottom: 40px;
+}
+.bg-01{
+    padding-bottom: 106px;
+}
+.bg-01 .first-title{
+    margin-bottom: 4px;
+
+}
+.bg-02 .icon-top img{
+    width: 232px;
+    height: 175px;
+}
+.trade-title .first-title img{
+    width: 91px;
+    height: 90px;
+    display: inline-block;
+    position: absolute;
+    top: -28px;
+    left: 391px;
+}
+.trade-title .first-title:before{
+    content: '';
+    position: absolute;
+    width: 33px;
+    height: 4px;
+    background-image: url("http://img.getfc.com.cn/source/www/zt/new-metal/iconbottom.png");
+    background-size: 33px 4px;
+    background-repeat: no-repeat;
+    bottom: -26px;
+    left: 586px;
+}
+.trade-title .sub-title{
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 25px;
+    padding-left: 20px;
+    margin-top: 50px;
+}
+.trade-title .sub-title span{
+    color: #e6a03a;
+}
+.icon-top{
+    position: absolute;
+    left: 0;
+}
+.icon-top img{
+    width: 268px;
+    height: 228px;
+}
+.popup{
+    background: url("http://img.getfc.com.cn/source/www/zt/new-metal/btn01.png");
+    width: 191px;
+    height: 93px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 51px;
+    cursor: pointer;
+    margin: 0 auto;
+    font-weight: bold;
+    letter-spacing: 7px;
+}
+.bg-02{
+    width: 100%;
+    height: 823px;
+    background: url("http://img.getfc.com.cn/source/www/zt/new-metal/bg02.jpg") no-repeat center;
+}
+.bg-02 .inner .trade-title .first-title{
+    margin-bottom: 5px;
+}
+.market-box{
+    width:1130px;
+     height: 412px;
+    background: #fff;
+    margin:  50px auto 0;
+    box-shadow: 0 0 15px #ccc;
+    padding:25px 50px;
+
+}
+.market-box .market-left{
+    float: left;
+    padding-right: 3%;
+}
+.market-img,.swiper-slide{
+    transition: all .2s ease-in;
+}
+.market-img img{
+    width: 468px;
+    height: 366px;
+    margin:  0 auto;
+}
+
+.market-img:hover,.swiper-slide:hover,.market-add:hover{
+    transform:translateY(-8px);
+}
+.inner-title{
+    margin-top: 80px;
+    padding-left: 37px;
+}
+.inner-title img{
+    width: 24px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.inner-title span{
+    font-size: 20px;
+    color: #48507c;
+}
+.inner-title span.item-2{
+margin-left:154px;
+}
+.market-box .market-right{
+    margin-left: 54%;
+}
+.market-add{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transition: all .2s ease-in;
+    position: relative;
+}
+.market-add img{
+    margin:  0 auto;
+}
+.bg-o3{
+    background: #fffcf3;
+}
+.luck-box{
+    font-size: 0;
+    padding-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.luck-box  .changeLevel.active{
+    right: 20px;
+    top:90px;
+}
+.change01.active{
+    display: none;
+}
+.change02{
+    display: none;
+}
+.change02.active{
+    display: block;
+}
+.luck-box .left-bg{
+    background: url("http://img.getfc.com.cn/source/www/zt/new-metal/font-bg.png") no-repeat;
+    width:580px;
+    height: 320px;
+    background-size: 580px 320px;
+    position: relative;
+    float: left;
+    margin-right: 7%;
+    transition: all .3s;
+}
+.luck-box .changeLevel{
+    position: absolute;
+    top: 110px;
+    right:60px;
+}
+
+.luck-box img.second-img{
+    display: inline-block;
+    transition: all .3s;
+    border-radius: 10px;
+}
+.second-img:hover,.left-bg:hover{
+    box-shadow: 0 0 15px #ccc;
+    transform:translateY(-8px);
+}
+/*.luck-box img:hover{*/
+    /*box-shadow: 0 0 15px #ccc;*/
+/*}*/
+
+.market-show{
+    position: absolute;
+    right: 72px;
+    bottom: 22px;
+
+}
+.marketImg{
+    display: none;
+}
+.show{
+    display: block;
+}
+.market-show a{
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: -111px;
+    left: 1px;
+}
+.market-show a.move{
+    top: -65px;
+    left: 216px;
+}
+.assist{
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 15px #ccc;
+    padding-bottom:  20px;
+    margin: 0 15px 15px;
+    padding-top: 15px;
+}
+.assist ul li{
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    height: 150px;
+    padding-top: 75px;
+    width: 18.8%;
+
+}
+.assist ul li:nth-child(3){
+    margin-right: 80px;
+}
+.assist ul li:nth-child(2){
+    margin-right: 34px;
+}
+.assist-bottom{
+    background: url("http://img.getfc.com.cn/source/www/zt/new-metal/bg02.png") no-repeat;
+    width: 1137px;
+    height: 180px;
+    background-size: 1137px 180px;
+    margin: 0 auto;
+    padding-left: 208px;
+    padding-top: 24px;
+}
+.assist-bottom ul li{
+    padding-top: 60px;
+}
+.assist-bottom ul li span{
+    font-weight: bold;
+}
+
+.assist-top{
+    background: url("http://img.getfc.com.cn/source/www/zt/new-metal/bg01.png") no-repeat;
+    width: 1175px;
+    height: 218px;
+    background-size: 1175px 218px;
+    margin: 0 auto;
+    padding-left: 230px;
+}
+.assist-top ul li{
+    position: relative;
+   font-size: 16px;
+    color: #fff;
+}
+
+
+.assist-top ul li span{
+    font-size: 30px;
+    color: #e6a03a;
+    font-weight: bold;
+}
+.gold{
+    display: flex;
+    text-align: center;
+    padding-left: 20px;
+    margin-top: 145px;
+}
+.gold .gold-img{
+    position: absolute;
+    top:-42px;
+    right: 200px;
+}
+.gold .gold-id{
+    font-size: 16px;
+    color: #999999;
+    margin-bottom: 5px;
+}
+.gold .gold-result{
+    font-weight: bold;
+    font-size: 36px;
+    color: #e6a03a;
+    margin-bottom: 20px;
+}
+.gold  .gold-action{
+    font-size: 20px;
+    font-weight: bold;
+}
+.gold .gold-img img{
+    width: 81px;
+    height: 81px;
+    text-align: center;
+}
+.gold .gold-left,.gold .gold-right{
+    width: 500px;
+    height: 410px;
+    box-shadow: 0  12px  20px #ccc;
+    border-radius: 5px;
+    position: relative;
+    padding-top: 50px;
+
+}
+.gold .gold-left{
+    margin-right: 10%;
+}
+.gold .gold-left:hover,.gold .gold-right:hover{
+   box-shadow: 0 0 15px #ccc;
+}
+
+.gold-image.dn{
+    display: none;
+}
+/*.gold-image{*/
+/*position: relative;*/
+/*top: -23px;*/
+/*}*/
+.gold-image.ds{
+    display: block;
+}
+.gold-detail.dn{
+    display: none;
+}
+.gold-detail.ds{
+    display: block;
+}
+.gold-detail{
+    margin-bottom: 10px;
+    padding:0 30px;
+    font-size: 16px;
+}
+.gold-detail span{
+    color: #e6a03a;
+    font-weight: bold;
+}
+.gold-detail ul li span{
+    color: #e6a03a;
+    font-weight: bold;
+}
+.gold-detail ul li ul li{
+    width: 32%;
+}
+.gold-detail ul li ul li img{
+    display: inline-block;
+}
+.gold-detail ul li ul li:first-child{
+    width: 32%;
+    text-align: left;
+}
+.gold-detail ul li ul{
+    border-bottom: 1px solid #ccc;
+    padding: 8px 0;
+}
+.gold-detail ul li ul li{
+    float: left;
+    font-size: 16px;
+    text-align: center;
+
+}
+.gold-title{
+    color: #0096dc;
+    font-size: 16px;
+    cursor: pointer;
+}
+.gold-right .gold-detail{
+    margin-bottom: 50px;
+    line-height: 28px;
+}
+
+.gold-title i{
+    background: url("http://img.getfc.com.cn/source/www/zt/metalTrade/next.png") no-repeat;
+    width: 10px;
+    height: 6px;
+    background-size: 10px 6px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.gold-title.close i{
+    transform: rotate(180deg);
+}
+.bg-05  .first-title{
+    margin-bottom: 100px;
+}
+@font-face {
+    font-family: 'num01';
+    src: url('metalTrade/IMPACT.html');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'num02';
+    src: url('metalTrade/%c3%a5%c2%85%c2%b0%c3%a4%c2%ba%c2%ad%c3%a7%c2%89%c2%b9%c3%a9%c2%bb%c2%91%20GBK.html');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*.swiper-slider .item-1{*/
+    /*background: url("//img.getfc.com.cn/source/www/zt/new-metal/move.jpg") no-repeat;*/
+    /*background-size: 354px 488px;*/
+/*}*/
+.swiper-slide {
+    width: 354px;
+    height: 488px;
+    text-align: center;
+    font-size: 18px;
+    background: linear-gradient(to right, #f3e6b7, #e8d39c);
+    padding-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+    margin: 18px auto 20px;
+}
+
+.swiper-slide .item-1{
+    font-size: 28px;
+    color: #fff;
+    text-shadow: 0 0 5px #b76e0f;
+    margin-bottom: 20px;
+}
+.swiper-slide .item-2{
+    padding-top: 20px;
+    width: 295px;
+    height: 375px;
+    margin: 0 auto;
+    background: url(http://img.getfc.com.cn/source/www/zt/new-metal/move.png);
+    background-size: 295px 375px;
+}
+.swiper-slide .item-2 .num01{
+    font-size: 59px;
+    color: #ff8700;
+    font-family: num01;
+}
+.swiper-slide .item-2 .plus{
+    font-size: 37px;
+    color: #ff8700;
+    font-family: num01;
+}
+.swiper-slide .num04{
+    font-size: 50px;
+    color: #ff8700;
+    font-family: num02;
+}
+.swiper-slide .num04 span{
+    font-size: 32px;
+    font-family: num02;
+}
+.swiper-slide .item-2 .num01 span{
+    font-size: 35px;
+}
+.swiper-slide .item-2 .num02{
+    font-size: 22px;
+    color: #ad6421;
+    width: 115px;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #ad6421;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto;
+}
+.swiper-slide .item-2 .num03{
+    font-size: 22px;
+    color: #ad6421;
+    font-weight: bold;
+    margin-top: 37px;
+}
+.special-sw .item-2{
+    padding-top: 100px;
+}
+.swiper-button-next {
+    background-image: url("http://img.getfc.com.cn/source/www/zt/new-metal/ArrowRight.png");
+    position: absolute;
+    top: 67%;
+    width: 23px;
+    height: 18px;
+    right: 120px;
+    z-index: 10;
+    cursor: pointer;
+    background-size: 23px 18px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.swiper-button-prev {
+    background-image: url("http://img.getfc.com.cn/source/www/zt/new-metal/ArrowRight.png");
+    position: absolute;
+    top: 67%;
+    width: 23px;
+    height: 18px;
+    left: 120px;
+    z-index: 10;
+    cursor: pointer;
+    background-size: 23px 18px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+}
+.swiper-pagination-bullet {
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    border-radius: 100%;
+    background-color: #d6d7da;
+    opacity: 1;
+    margin-right: 25px;
+    margin-top: 10px;
+}
+.swiper-pagination{
+    position: unset;
+}
+ .swiper-pagination-bullets .swiper-pagination-bullet-active {
+    background-color: #646875;
+}
+
+
+/*弹窗*/
+.popup-box {
+    max-width: 1000px;
+    height: 650px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    margin-top: -325px;
+    background: #fff;
+    z-index: 99999;
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+    padding: 0 20px 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.popup-box .box-in {
+    margin: 3% 3% 5% 5%;
+    color: #333333;
+    overflow: auto;
+    height: 500px;
+    padding: 0% 2% 0 0;
+}
+.popup-box table.data-box {
+    width: 100%;
+    margin: 16px auto 25px;
+    text-align: center;
+    border: 0 !important;
+    font-size: 1.6em;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.popup-box  .box-in .section1 .detailContent{
+    width:670px;
+
+    font-size:18px;
+    text-align: center;
+    margin-left:50px;
+}
+
+
+.popup-box  .box-in .section1{
+    margin-top:0px;
+}
+.popup-box  .box-in .section1 p{
+    font-size:16px;
+}
+.popup-box  .box-in .section1 ul li:nth-child(2){
+    margin:8px 63px;
+}
+.popup-box  .box-in div.title,.popup-box  .box-in div.bottom{
+    height:50px;
+    width:100%;
+    line-height: 50px;
+    background:#e4f2f8;
+}
+.popup-box  .box-in div.bottom{
+    background:#f1f8fa;
+}
+
+.popup-box  .box-in .section1 .detailContent ul li span{
+    display: inline-block;
+    font-size:20px;
+    color:#e84c00;
+    position:relative;
+    left:-2px;
+    top:-1px;
+}
+.popup-box  .box-in div.bottom{
+    text-align: left;
+    padding-left:20px;
+}
+.popup-box  .box-in .section1 .detailContent  img{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    position:relative;
+    top:-90px;
+    left:-110px;
+}
+.popup-box  .box-in .section1 .detailContent  img.pic{
+    position:relative;
+    top:-90px;
+    left:108px;
+}
+
+.section3 ol li{
+    font-size:16px;
+}
+.section4 ol li{
+    font-size:16px;
+    line-height:2.2;
+    text-align: justify;
+    display: -webkit-box;  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box;     /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox;  /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex;         /* 新版本语法: Opera 12.1, Firefox 22+ */
+}
+.popup-box table.data-box thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box thead th {
+    font-size: 16px;
+    text-align: center;
+    padding: 15px;
+    color: #FFFFFF;
+    background: #dcb08e;
+    line-height: 1.0;
+}
+.popup-box table.data-box thead tr {
+    border: 1px solid #dcb08e;
+}
+.popup-box table.data-box tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box tbody td {
+    line-height: 1.0;
+    text-align: center;
+    color: #333333;
+    padding: 1.44%;
+    font-size: 16px;
+    border: 0.025rem solid #ead5c2;
+    font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+}
+.popup-box table.data-box tbody .unit {
+    font-size: 0.8em;
+}
+.popup-box table.data-box tbody tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    background: #FFFFFF;
+}
+.popup-box table.data-box tbody tr.white {
+    background: #f7efe8;
+}
+.popup-box table.data-box tbody tr.last-row td {
+    border-bottom: 1px solid #CCCCCC;
+}
+.popup-box table.data-box .first-child {
+    text-align: center;
+    font-size: 16px;
+}
+.popup-box table.data-box .first-child a {
+    color: #666666;
+}
+.popup-box .table1 td,
+.popup-box .table2 td {
+    width: 25%;
+}
+.popup-box .table4 td {
+    width: 16%;
+}
+.popup-box .table3 td {
+    width: 33.333333%;
+}
+.popup-box .close-top {
+    height: 60px;
+    color:  #b78255;
+    border-bottom: 1px solid #b78255;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.popup-box .close-top a {
+    display: block;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    background: url(http://img.getfc.com.cn/source/www/zt/campaign1710/close.png) no-repeat;
+    top: 25px;
+    right: 25px;
+}
+.popup-box h2 {
+    font-size:24px;
+    margin: 38px 0 18px;
+    color: #b78255
+;
+    position: relative;
+}
+.popup-box h2.ver-line {
+    padding-left: 45px;
+}
+.popup-box h2.ver-line i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #b78255
+;
+    color:#fff;
+    position: absolute;
+    left: 0;
+    top: -3px;
+    text-align: center;
+    line-height: 30px;
+}
+.popup-box p {
+    line-height: 1.9;
+    color: #333333;
+    text-align: justify;
+}
+.popup-box p span{
+    overflow: hidden;
+    display: inline;
+    color: #d8505a;
+}
+.section5 ol li{
+    font-size: 16px;
+}
+.section3 ul li ul li{
+    float: left;
+    font-size: 14px;
+    width: 16%;
+    text-align: center;
+    height: 65px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding-top:24px;
+}
+.section3 .first{
+    border-left: 0.025rem solid #ccc;
+}
+#head-ul{
+    background: #b78255;
+    color: #fff;
+    height: 60px;
+    margin-top: 20px;
+}
+.section3 ul li ul li.last{
+    width:20%;
+    padding-top:6px;
+}
+#head-ul li{
+    width: 16%;
+    text-align: center;
+    height: 60px;
+    line-height:60px;
+    padding-top:0;
+}
+#head-ul li.last{
+    width: 20%;
+
+}
+@media screen and (max-width: 1680px){
+
+}
+@media screen and (max-width: 1600px){
+
+}
+@media screen and (max-width: 1400px){
+
+}
+@media screen and (max-width: 1366px){
+
+}
+@media screen and (max-width: 1280px){
+    .inner{
+        width: 1000px;
+    }
+    .luck-box img.second-img{
+        width: 420px;
+    }
+    .market-img img {
+        width: 350px;
+        height: auto;
+    }
+    .market-show a{
+        top: -89px;
+        left: -24px;
+    }
+    .market-show a.move{
+        top: -56px;
+        left: 195px;
+    }
+    .market-box {
+        width: 900px;
+        height: 337px;
+    }
+    .market-add img {
+       width: 900px;
+    }
+    .market-add  .marketImg img{
+        width:220px;
+    }
+    .market-show {
+        right: 60px;
+    }
+    .assist-top {
+        width: 1175px;
+        height: 218px;
+        background-size: 80%;
+        margin: 0 auto;
+        padding-left: 157px;
+    }
+    .assist-bottom {
+        background-size: 81%;
+        padding-top: 10px;
+    }
+    .assist ul li {
+        width: 14.8%;
+    }
+    .assist-top ul li span {
+        font-size: 24px;
+    }
+    .assist ul li:nth-child(3) {
+        margin-right: 42px;
+    }
+    .market-box .market-left {
+        padding-right: 4%;
+        border: none;
+    }
+    .gold .gold-left, .gold .gold-right {
+        width: 400px;
+    }
+    .gold-image img{
+        width: 400px;
+    }
+    .gold-detail ul li ul {
+        padding: 4px 0;
+    }
+    .gold-right .gold-detail {
+        margin-bottom: 34px;
+    }
+    .trade-title .first-title img {
+        left: 291px;
+    }
+    .bg-03 .trade-title .first-title img {
+        left: 206px;
+    }
+    .bg-04 .trade-title .first-title img {
+        left: 332px;
+    }
+    .bg-05 .trade-title .first-title img {
+        left: 271px;
+    }
+  .swiper-button-next{
+      right: 33px;
+  }
+  .swiper-button-prev{
+      left: 33px;
+  }
+    .trade-title .first-title:before {
+        left: 485px;
+    }
+    .luck-box .left-bg{
+        background-size: 73%;
+    }
+    .luck-box .changeLevel {
+        position: absolute;
+        top: 88px;
+        right: 184px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .inner{
+        width: 900px;
+    }
+
+}

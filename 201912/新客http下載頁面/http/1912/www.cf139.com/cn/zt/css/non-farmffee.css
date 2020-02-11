@@ -1,0 +1,661 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0;color: #333}
+.inner{overflow: hidden;width: 1200px; margin: 0 auto; position: relative}
+img{ overflow:hidden;display:block;border: none;}
+.e-header .header{
+    background: none;
+}
+.web-banner{
+    width: 100%;
+    height: 520px;
+    background: url("http://img.getfc.com.cn/source/www/zt/non-farm6/banner-bg.jpg") no-repeat center;
+    top:-76px;
+    position: relative;
+    margin-bottom: -76px;
+}
+.web-banner .img-font{
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: -45px;
+}
+.web-banner .img-font img{margin: 190px auto 0;}
+.web-banner .btn{
+    overflow: hidden;
+    width: 273px;
+    height: 58px;
+    margin: 0 auto;
+    background: #0096dc;
+    border-radius: 28.5px;
+    line-height: 58px;
+}
+.web-banner .btn a{
+    overflow: hidden;
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+.web-page{
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 102px;
+}
+.web-page.bg01{
+    background: #eee;
+    padding-bottom: 60px;
+}
+.web-page.bg03{
+    background: url("http://img.getfc.com.cn/source/www/zt/non-farm-new/neiye-bg03.jpg") no-repeat;
+    height: 1060px;
+}
+.web-page.bg05{
+    background: url("http://img.getfc.com.cn/source/www/zt/non-farm-new/neiye-bg05.jpg") no-repeat;
+    height: 1343px;
+}
+.web-page.bg06{
+    background: url("http://img.getfc.com.cn/source/www/zt/non-farm6/neiye-bg06.jpg") no-repeat;
+    height: 590px;
+}
+.web-page.bg08{
+    background: url("http://img.getfc.com.cn/source/www/zt/non-farm-new/neiye-bg08.jpg") no-repeat;
+    height: 893px;
+}
+.web-page.bg09{
+    background: url("http://img.getfc.com.cn/source/www/zt/non-farm6/neiye-bg09.jpg") no-repeat bottom;
+    height: 700px;
+}
+.web-page.bg-color{
+    background: #0096dc;
+    padding-bottom: 0;
+}
+.web-page.bg-color01{
+    background: #eee;
+    position: relative;
+    padding-bottom: 0;
+}
+.web-page .title{
+    overflow: hidden;
+    margin: 102px 0 40px 0;
+}
+.web-page .title span{
+    overflow: hidden;
+    display: block;
+    font-size: 36px;
+    line-height: 38px;
+    font-weight: bold;
+    text-align: center;
+}
+.web-page .title span img{display: inline;margin-right: 10px}
+.web-page .title span.line{
+    width: 81px;
+    height: 2px;
+    background: #0096dc;
+    margin: 25px auto 0 auto;
+}
+.web-page.bg06 .title span{color: #fff}
+.web-page.bg06 .title span.line{background: #fff}
+.web-page .title span.light{font-weight: normal;display: inline}
+.web-page .title span.bold{font-weight: bold;display: inline}
+.web-page .title span#map-tit{font-weight: lighter}
+.web-page .title p{
+    overflow: hidden;
+    display: block;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+}
+.web-page.bg06 .title p{color: #fff}
+.web-page .countdown{
+    overflow: hidden;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.web-page .countdown .list-title{
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+}
+.web-page .countdown .list-title span{
+    overflow: hidden;
+    display: block;
+    margin: 10px 0;
+    text-shadow: 0 0 10px rgba(34,30,31,.3);
+}
+.web-page .countdown .line-con {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.web-page .countdown .line-con ul{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.web-page .countdown .line-con ul li{
+    overflow: hidden;
+    display: block;
+    margin: 44px 47px 0 26px;
+    float: left;
+}
+.web-page .countdown .line-con ul li span{
+    overflow: hidden;
+    display: block;
+    width: 55px;
+    height: 1px;
+    background: rgba(255,255,255,.6);
+    margin: 0 auto 1px;
+}
+.wrapper {
+    overflow: hidden;
+    position: relative;
+}
+#elapseClock{
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#elapseClock span{
+    overflow: hidden;
+    display: block;
+    height: 92px;
+    width: 83px;;
+    margin: 0 12px;
+    background: url("http://img.getfc.com.cn/source/www/zt/non-farm6/digit.png") no-repeat;
+    line-height: 92px;
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(34,30,31,.3);
+}
+#elapseClock p{
+    overflow: hidden;
+    display: block;
+    font-size: 24px;
+    margin: 10px 0;
+    text-shadow: 0 0 10px rgba(34,30,31,.3);
+}
+.web-page .con-list{
+    overflow: hidden;
+}
+.web-page .con-list ul{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.web-page .con-list ul li{
+    overflow: hidden;
+    display: block;
+    list-style: none;
+    width: 28%;
+}
+.web-page .con-list ul li span{
+    overflow: hidden;
+    width: 138px;
+    height: 138px;
+    border-radius: 100%;
+    background: #0096dc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 42px auto;
+}
+.web-page .con-list ul li p{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    line-height: 28px;
+}
+.web-page .con-list ul li p.bold{
+    font-size: 20px;
+    font-weight: bold;
+}
+.web-page .con-list ul li p.line{
+    width: 18px;
+    height: 4px;
+    background: #0096dc;
+    margin: 5px auto 20px auto;
+}
+.web-page .con-list01{
+    overflow: hidden;
+}
+.web-page .con-list01 ul{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.web-page .con-list01 ul li{
+    overflow: hidden;
+    display: block;
+    list-style: none;
+    width: 238px;
+    position: relative;
+    cursor: pointer;
+}
+.web-page .con-list01 ul li img{margin-bottom: 10px}
+.web-page .con-list01 ul li p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+}
+.web-page .con-list02{
+    overflow: hidden;
+    margin-top: 110px;
+}
+.web-page .con-list02 ul{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.web-page .con-list02 ul li{
+    overflow: hidden;
+    display: block;
+    list-style: none;
+    width: 354px;
+    height: 287px;
+    background: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.web-page .con-list02 ul li .item{
+    overflow: hidden;
+    padding: 22px 45px;
+}
+.web-page .con-list02 ul li img{width: 100%}
+.web-page .con-list02 ul li p{
+    overflow: hidden;
+    display: block;
+    font-size: 24px;
+    line-height: 32px;
+    color: #0096dc;
+}
+.web-page .con-explain{
+    overflow: hidden;
+    width: 100%;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    margin: 0 auto 70px auto;
+}
+.web-page .con-explain span{
+    overflow: hidden;
+    display: inline;
+    color: #0096dc;
+}
+.web-page .histogram{
+    overflow: hidden;
+    width: 100%;
+    padding: 0 0 30px 0;
+    margin-top: -30px;
+}
+.web-page .map{
+    overflow: hidden;
+    position: relative;
+}
+.web-page .map img{
+    margin: 90px auto 0 auto;
+}
+.web-page .map img.map_con{margin-top: 0}
+.web-page .map .layout{
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.web-page .map .layout .list{position: relative;height: 100%}
+.web-page .map .layout .item{
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+}
+.web-page .map .layout .item.left01{left: 9%;top: 125px}
+.web-page .map .layout .item.left02{left: 13%;top: 20px;}
+.web-page .map .layout .item.left03{left: 33%;top: 50px;}
+.web-page .map .layout .item.left04{left: 45%;top: 50px;}
+.web-page .map .layout .item.left05{right: 36%;top: 70px}
+.web-page .map .layout .item.left06{left: 14%;bottom: 70px}
+.web-page .map .layout .item.left07{left: 37%;bottom: 135px}
+.web-page .map .layout .item.left08{right: 8%;bottom: 235px}
+.web-page .map .layout .item.left09{right: 18%;bottom: 136px;}
+.web-page .map .layout .item span{
+    overflow: hidden;
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 36px;
+    color: #0096dc;
+}
+.web-page .map .layout .item p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    color: #0096dc;
+}
+.web-page .table{
+    overflow: hidden;
+    margin-top: 115px;
+}
+.web-page .table .tab-title{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.web-page .table .tab-title p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    color: #0096dc;
+}
+.web-page .table .tab-con{
+    overflow: hidden;
+    width: 100%;
+    border-radius: 20px;
+    border: solid 2px #0096dc;
+}
+.web-page .table table{
+    overflow: hidden;
+    width: 100%;
+}
+.web-page .table table tr{
+    overflow: hidden;
+    height: 62px;
+    border-bottom: solid 1px #959595;
+}
+.web-page .table table tr:last-child{border-bottom: none}
+.web-page .table table thead tr{
+    background: #0096dc;
+    height: 115px;
+    border-bottom: none;
+}
+.web-page .table table tr td{
+    font-size: 16px;
+    text-align: center;
+}
+.web-page .table table tr td.first{
+    font-size: 24px;
+    color: #0096dc;
+    font-weight: bold;
+    border-right: solid 1px #959595;
+    width: 18%;
+}
+.web-page .table table tr td.yellow{color: #eba73c}
+.web-page .table table tr td.red{color: #e72418;font-weight: bold}
+.web-page .table table tr td.green{color: #59b75b}
+.web-page .table table thead tr td {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+.web-page .table table tr td span{
+    overflow: hidden;
+    display: block;
+}
+.web-page .table table tr td span.red{color: #e72418;font-weight: bold}
+.web-page .table table tr td span.green{color: #59b75b;font-weight: bold}
+.web-page .table .tab-explain{
+    overflow: hidden;
+    margin: 35px 0 0 5%;
+}
+.web-page .table .tab-explain .item{
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #0096dc;
+}
+.web-page .table .tab-explain .item-list{
+    overflow: hidden;
+}
+.web-page .table .tab-explain .item-list ul{
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+.web-page .table .tab-explain .item-list ul li{
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+    line-height: 36px;
+    font-weight: bold;
+    margin: 10px 20px 0 10px;
+}
+.web-page .table .tab-explain .item-list ul:first-child li{margin-right: 60px}
+.web-page .table .tab-explain .item-list ul li img{margin: 0 10px}
+.web-page .table .tab-explain .item-list ul li p{color: #0096dc;}
+.web-page .table .tab-explain .item-list ul li span.red{color: #e72418;display: inline}
+.web-page .table .tab-explain .item-list ul li span.green{color: #59b75b;display: inline}
+.web-page .slider-list{
+    overflow: hidden;
+    width: 283px;
+    height: 438px;
+    border-radius: 20px;
+    background: #fff;
+    padding: 0 20px;
+    margin: 0 22px 22px 0;
+    cursor: pointer;
+}
+.web-page .slider-list:hover{
+    box-shadow: 10px 10px 22px rgba(0,0,0,.15);
+}
+.web-page .slider-list img{margin: 30px auto 40px auto}
+.web-page .slider-list span{
+    overflow: hidden;
+    display: block;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: bold;
+    color: #0096dc;
+    text-align: center;
+}
+.web-page .slider-list span.line{
+    width: 30px;
+    height: 1px;
+    background: #0096dc;
+    margin: 10px auto 20px auto;
+}
+.web-page .slider-list p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+}
+.web-page .slider-con {
+    overflow: hidden;
+    position: relative;
+    margin-top: 120px
+}
+.slider01 li{float: left;}
+.slider-nav {
+    overflow: hidden;
+    position: absolute;
+    top:38%;
+    z-index: 11;
+    width: 100%;
+}
+.slider-nav .prev,.slider-nav .next {
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    background: url("http://img.getfc.com.cn/source/www/zt/non-farm-new/arrow.png") no-repeat;
+    background-size: 104px 98px;
+    background-position: 0 0;
+    width: 52px;
+    height: 98px;
+    float: left;
+    opacity: .5;
+}
+.slider-nav .next{
+    background-position: -52px 0;
+    float: right;
+}
+.web-page .chat-con{
+    overflow: hidden;
+    width: 100%;
+    height: 102px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.web-page .chat-con a{
+    overflow: hidden;
+    display: block;
+    font-size: 20px;
+    line-height: 25px;
+    color: #fff;
+    margin-right: 30px;
+}
+.web-page .chat-con span {
+    overflow: hidden;
+    display: block;
+    color: rgba(255,255,255,.7);
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+    line-height: 20px;
+    font-size: 20px;
+    border: solid 1px #fff;
+    text-align: center;
+}
+.web-page .disclaimer{
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 28px;
+    color: #666;
+    margin-top: 97px;
+}
+.web-page .list-btn{
+    overflow: hidden;
+    width: 33%;
+    height: 130px;
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    margin: 102px 0;
+}
+.web-page .list-btn .item{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.web-page .list-btn .item img{margin: 0 50px}
+.web-page .list-btn .item span{
+    overflow: hidden;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 20px;
+}
+.web-page .list-btn .item a{
+    overflow: hidden;
+    display: block;
+    width: 166px;
+    height: 43px;
+    line-height: 43px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 11px 0;
+    cursor: pointer;
+}
+.web-page .list-btn .item a.real{
+    background: #0096dc;
+    color: #fff;
+}
+.web-page .list-btn .item a.demo{
+    border: solid 1px #0096dc;
+    color: #0096dc;
+}
+.web-page .list-btn .item a.demo:hover{
+    background: #0096dc;
+    color: #fff;
+}
+.web-page .list-btn .item a.download-app{
+    background: #0096dc;
+    color: #fff;
+}
+.web-page .list-btn .item a.download{
+    border: solid 1px #0096dc;
+    color: #0096dc;
+}
+.web-page .list-btn .item a.download:hover{
+    background: #0096dc;
+    color: #fff;
+}
+.web-page .list-btn .item a.chat{
+    border: solid 1px #0096dc;
+    color: #0096dc;
+}
+.web-page .list-btn .item a.chat:hover{
+    background: #0096dc;
+    color: #fff;
+}
+.web-page .apk {
+    overflow: hidden;
+    width: 90px;
+    position: absolute;
+    right: 32%;
+    top: 42px;
+    display: none;
+}
+.web-page .apk ul{overflow: hidden;display: block;margin: 0;padding: 0;list-style: none}
+.web-page .apk ul li{overflow: hidden;display: block;list-style: none;margin-bottom: 20px}
+.web-page .apk ul li span{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+}
+@media (max-width: 1200px){
+    .inner{width: 90%}
+    .web-page .map .layout .item.left01{margin-left: 0}
+    .web-page .map .layout .item.left06{margin-left: 0}
+    .web-page .map .layout .item.left10{margin-right: 0}
+    .web-page .con-list01 ul li{width: 320px}
+    .web-page .con-list01 ul li img{width: 100%}
+    .web-page .con-list01 ul li .item01 img{width: auto}
+    .tempWrap{width: 900px!important;}
+    .web-page .con-list02 ul li{width: 320px;height: 500px}
+    .web-page .map img{width: 94.6%}
+}
+

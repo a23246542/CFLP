@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.css">
+    <title>Document</title>
+    <style>
+        .outer {
+            max-width: 1060px;
+            height: 600px;
+            background-color: rgb(230, 195, 195);
+        }
+
+        .wrapper {
+            width: 88%;
+            height: 400px;
+            margin: 0 auto;
+            padding-top: 60px;
+            background-color: rgb(168, 217, 236);
+        }
+
+        .container {
+            width: 64%;
+            /* height: 300px; */
+            height: auto;
+            margin: 0 auto;
+            border: 1px dashed #000;
+        }
+
+        .owl-carousel {
+            /* margin: auto unset !important; */
+        }
+
+        .item {
+            /* width: 150px;
+            
+            height: 0;
+            padding-top: 200px;
+            position: relative;
+            overflow: hidden;
+             */
+            width: 100%;
+            height:0;
+            padding-bottom: 133%;
+            overflow: hidden;
+            position: relative;
+
+        }
+        .owl-item{
+           
+            /* position: relative;
+            min-height: 200px !important;
+            padding-top: 100%; */
+        }
+
+        img{
+            width: 100%;
+            /* display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="wrapper">
+            <div class="container">
+                <div class="owl-carousel">
+                    <!-- <img src="./img/1Bali.jpg" alt="">
+                    <img src="./img/2movie.jpg" alt="">
+                    <img src="./img/3run.jpg" alt="">
+                    <img src="./img/4poem.jpg" alt="">
+                    <img src="./img/5montain.png " alt=""> -->
+                    <!-- <div><img src="./img/1Bali.jpg" alt=""></div>
+                    <div><img src="./img/2movie.jpg" alt=""></div>
+                    <div><img src="./img/3run.jpg" alt=""></div>
+                    <div><img src="./img/4poem.jpg" alt=""></div>
+                    <div><img src="./img/5montain.png " alt=""></div> -->
+                    <div class="item"><img src="./img/1Bali.jpg" alt=""></div>
+                    <div class="item"><img src="./img/2movie.jpg" alt=""></div>
+                    <div class="item"><img src="./img/3run.jpg" alt=""></div>
+                    <div class="item"><img src="./img/4poem.jpg" alt=""></div>
+                    <div class="item"><img src="./img/5montain.png " alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="owlcarousel/jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                item:3,
+                responsiveClass: true,
+                stagePadding: 50,
+                // merge:true,
+                responsive: {
+                    0: {
+                        items: 2,
+                        nav: true
+                    },
+                    480:{
+                        item:2,
+                        // mergeFit:true
+                    },
+                    600: {
+                        items: 3,
+                        nav: true
+                    },
+                    1000: {
+                        items: 3,
+                        nav: true,
+                        loop: false
+                    }
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

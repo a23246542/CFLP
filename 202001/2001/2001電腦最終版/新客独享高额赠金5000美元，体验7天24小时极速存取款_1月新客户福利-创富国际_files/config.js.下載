@@ -1,0 +1,100 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var www_url = "//www.cf860.com";
+var img_url = "//img.cf860.com";
+var css_url = "";
+var js_url = "";
+var m_url = "//m.cf860.com";
+var inf_url = "";
+var id_url = "//ac.cf860.com";
+var api_url = "//mis.cf860.com";
+var live800_url = "https://www.cf-service.com/k800/chatClient/chatbox.jsp?companyID=475&configID=56&pagereferrer=http://www.cf860.com/cn/zt/campaign2001.html";
+var qq_url = "http://wpa.b.qq.com/cgi/wpa.php?ln=2&uin=800163863";
+
+var bi_url = "http://192.168.35.231:81";
+var mis_url = "//mis.cf860.com";
+
+var CF_TEXT = "神龙科技"
+var CFD_ENG = "SLKE"
+var CF_ENG = "SL"
+var info_url = "http://192.168.35.84:9001"
+var cms_url =  "http://cms.cf860.com"
+var live_url =  "http://wenda.oppohtz.com/mobile"
+

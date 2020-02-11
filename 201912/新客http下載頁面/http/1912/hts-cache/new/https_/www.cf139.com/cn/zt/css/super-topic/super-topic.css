@@ -1,0 +1,238 @@
+@charset "utf-8";
+/*css reset 整体布局*/
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+p,
+blockquote,
+pre,
+form,
+fieldset,
+table,
+th,
+td,
+span,
+input,
+textarea {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+li,
+ol {
+    list-style: none;
+}
+i,
+em {
+    font-style: normal;
+}
+a {
+    text-decoration: none;
+}
+input,
+textarea {
+    -webkit-appearance: none;
+}
+
+img{ border: 0;}
+html {
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background: #fff;
+    /*font-size: .28rem;*/
+    color: #333;
+
+}
+.add-info{
+    width: 1054px;
+  font-size: 16px;
+    text-align: left;
+    color: #999;
+    margin: 20px auto;
+}
+.topic-content{
+    margin: 100px auto 15px;
+}
+.content-area{
+    width: 1100px;
+    margin: 0 auto;
+}
+.top-topic{
+    background: #f7f7f7;
+    box-sizing: border-box;
+    padding-bottom: .2rem;
+}
+.top-topic .layout-1{
+    background: #fff;
+    padding:.4rem .3rem;
+    line-height: .48rem;
+}
+.topic .layout-1 .topic-title{
+    font-size: .32rem;
+    color: #003355;
+    font-weight: bold;
+}
+.topic .layout-1 .topic-sub{
+    font-size: .28rem;
+    color: #333;
+}
+.topic .layout-2{
+    padding: .7rem .3rem 0;
+    background: #fff;
+}
+.topic .layout-2   .item-1{
+    background: url(../../images/super-topic/example.jpg) no-repeat;
+    width: 490px;
+    height: 270px;
+    background-size: 490px 270px;
+    padding-top: .2rem;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    /*float: left;*/
+}
+.status{
+    font-size: 0;
+    margin-top: 15px;
+}
+.topic .layout-2   .item-1 .label{
+    font-size:20px ;
+    color: #fff;
+    padding:5px 15px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: inline-block;
+}
+
+.topic .layout-2   .item-1  .label.blue{
+    background: #4a84ee;
+}
+.topic .layout-2 .layout-content{
+    position: relative;
+    float: left;
+    margin: 0 30px 40px 30px;
+    display: block;
+}
+.layout-content .item-1{
+    display: block;
+}
+.topic .layout-2   .item-1  .label.red{
+    background: #ee4a4a;
+}
+.topic .layout-2   .item-1  .label.grey{
+    background: #ff8500;
+}
+.topic .layout-2   .item-1 .count{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.topic .layout-2   .item-1 .count-content{
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    font-size: 18px;
+    padding: 5px 15px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.topic .layout-2   .item-2{
+    padding: .3rem 0 ;
+}
+.topic .layout-2   .item-2 .news-title{
+    font-size: 28px;
+    color: #333;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    width: 490px;
+    margin-top: 10px;
+}
+.topic .layout-2   .item-2 .news-time{
+    font-size: 16px;
+    color: #999;
+    margin-top: 10px;
+}
+.load-more{
+    font-size: 24px;
+    color: #333;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 auto 50px;
+}
+.load-more:active{
+    background: #666;
+}
+.e-header .header{
+    background: #fff;
+}
+.future-popup{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 220px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: .5rem;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    margin-left: -110px;
+    display: none;
+}
+.top-banner {
+    position: relative;
+    margin-top: -76px;
+    background: #1c4560;
+    line-height: 0;
+}
+.top-banner .img-banner-commodities {
+    display: block;
+    height: 350px;
+    background: url(../../super-topic/images/banner.jpg) top center no-repeat;
+    background-size: cover !important;
+}
+.top-banner .img-banner-commodities .title-banner {
+    font-size: 3.6em;
+    line-height: 1.6;
+    color: #FFFFFF;
+    text-align: left;
+    padding-top: 194px;
+}
+.top-banner .img-banner-commodities .sub-title {
+    font-size: 2.4em;
+    line-height: 1.8;
+    color: #FFFFFF;
+}
+.crumb-wrap {
+    width: 100%;
+    background-color: #f2f2f2;
+//padding-left: 18.5%;
+    font-size: 16px;
+}
+.crumb-wrap .w {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 13px 0 9px;
+}
+.crumb-wrap .w .item {
+    float: left;
+}
+.crumb-wrap .w .item.sep {
+    padding: 0 10px;
+    color: #D8D8D8;
+}
