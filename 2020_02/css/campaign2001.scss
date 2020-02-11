@@ -1,0 +1,159 @@
+body,
+html {
+    background: #fff;
+    font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+    height: auto;
+    // overflow: hidden;
+    // img{
+    //     display: block;
+    // }
+}
+
+.web-banner,.web-page {
+    max-width: 750px;
+    margin: 0 auto;
+    overflow: hidden;
+    .inner{
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+.inner{
+    width: 100%;
+    overflow: hidden;
+}
+
+.web-banner{
+    height: 44rem;
+}
+
+.bgColor1{
+    background: url("../images/titbg.jpg") no-repeat;
+                // url("../images/mobile_bg2.jpg");
+    // background-repeat: no-repeat,no-repeat;
+    // background-position:  top,bottom;
+    // background-position: 100%;
+    background-position: top center;
+    background-size: 100%;
+}
+
+
+.web-banner .page_title{
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    img{
+        width: 84%;
+        position: relative;
+        left: 2.6rem;
+    }
+
+}
+
+.web-banner .page_money{
+    padding-top: 2rem;
+    img.money{
+        display: block;
+    width: 74%;
+    margin: 0 auto;
+    }
+}
+
+.mobile_bg2{
+    // background: url("../images/mobile_bg2.jpg") no-repeat;
+    // height: 8.8rem; //TODO
+    // max-width: 750px;
+    img{
+        width: 100%;
+        vertical-align: bottom;
+    }
+}
+
+// ===========web-page 2=============================
+
+
+.web-page.bgColor2{
+    background-color: #ffecba;
+    height: 50rem;
+}
+
+.page_title.exchange{
+
+    padding-top: 2rem;
+    h2{
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+}
+
+.web-page.bgColor2 .conList1,.conList2{
+    ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        li{
+            // width: 50%;//TODO 会自动缩起来
+            img{
+                width: 13rem;
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+}
+
+// =================================
+
+.web-page.bgColor3{
+    background-color: #0194B2;
+
+    .page_title{
+        width: 100%;
+        overflow: hidden;
+        padding-top: 3rem;
+        img{
+            display: block;
+            width: 30rem;
+            margin: 0 auto;
+        }
+    }
+
+    .conList{
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            img{
+                display: block;
+                width: 13rem;
+            }
+            img:nth-of-type(4){
+                width: 10rem;
+            }
+            p{
+                text-align: center;
+                color: #D2D5B8;
+                font-weight: 600;
+                letter-spacing: .3rem;
+            }
+        }
+    }
+}
+
+// =================================
+
+footer.web-footer{
+    background-color: #004c5a;
+    color: #B2BCBF;
+    padding: 2rem 0 1rem;
+
+    p{
+        line-height: 1.6rem;
+    }
+}
