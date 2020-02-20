@@ -1,0 +1,182 @@
+// 事前設定
+// >
+// <!-- 手機板高度900以內 -->
+//     <!-- 桌基板寬度1100以那 -->
+//     <!-- app padding-bottom -->
+// 大區塊用mb 大區塊內小區塊可以用mt
+//     <!-- width100% 會查找 height 100% 的用途 -->
+//     <!-- ctrl 一起選取多個 -->
+// mr 4.3%
+// 只有左右要百分比
+// 小部分的東西用固定寬
+
+// 原本pc 100% 手機板90%劉邊
+// @import "reset.scss";
+@import "template.css";
+
+html,body{
+    width: 100%;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+    font-family: "Microsoft JhengHei","Heiti TC","sans-self";
+    a{text-decoration: none;}
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style-type:none;
+}
+img{
+    display: block;
+}
+
+// =============web-page1================
+
+
+.container{
+    // width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    outline: 1px red solid;
+
+    @media screen and (max-width:1099px) {
+        width: 80%;
+    }
+}
+.web-page1{
+    // background-color: #FC6972;
+    
+    // background: -moz-linear-gradient(180deg, #FF6C6C 0%, #C835E8 76%);
+    // background: -webkit-linear-gradient(180deg, #FF6C6C 0%, #C835E8 76%);
+    // background: -o-linear-gradient(180deg, #FF6C6C 0%, #C835E8 76%);
+    padding-top: 3rem;
+    background-image: url("../images/bgicon1.png"),
+                      url("../images/bgicon1-reverse.png"),
+                      linear-gradient(180deg, #FF6C6C 0%, #C835E8 76%);;
+    background-repeat: no-repeat,no-repeat;
+    background-size: 7rem,8rem,auto;
+    
+    background-position: left 3rem top 5rem,right 2rem top 2rem,0 0;
+ 
+
+    .container{
+        display: flex;
+    }
+    .bannerImg{
+        // width:40%;
+        img{
+            // width: 100%;
+            width: 30rem;
+            height: auto;
+        }
+    }
+}
+
+
+// ======web-page2===============
+
+.web-page2{
+    background-image: url("../images/bgicon1.png"),
+    url("../images/bgicon2.png"),
+    url("../images/bgicon3.png");
+    background-color: #c835e8;
+
+    background-repeat: no-repeat,no-repeat,no-repeat;
+    background-size:7rem,9rem,9rem;
+    background-position: left 2rem top 2rem,
+                        right 1rem top 4rem,
+                        left -1rem bottom 5rem;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .conList{
+        width: 100%;
+        ul{
+            display: flex;
+            li{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 50%;
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }
+        img{
+            width: 20rem;
+            height: auto;
+        }
+
+        .bonus{
+            box-sizing: border-box;
+            // padding-left: 80px;
+            // padding-left: 12%; //??為什會影響到圖片大小
+            img,p{
+                margin-left: 12%;
+                // margin-left: 5rem;
+            }
+        }
+        .money{
+            box-sizing: border-box;
+            // padding-right: 80px;
+            // margin-right: 12%;
+            img,p{
+                margin-right: 12%;
+                // margin-right: 5rem;
+            }
+        }
+
+    }
+}
+
+
+// =======web-page3===============
+
+.web-page3{
+    background-color: #7a3de8;
+}
+
+
+// =======web-page4================
+
+.web-page4{
+    background-color: #c835e8;
+
+    .title{
+        h2{
+            text-align: center;
+        }
+    }
+
+    .conList ul{
+        display: flex;
+        justify-content: space-around;
+        li{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid #e761e1;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+
+            img{
+                width: 12rem;
+                height: auto;
+            }
+        }
+    }
+}

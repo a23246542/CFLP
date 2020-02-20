@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/campaign2002(VN).css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 多用a連結 -->
+    <div class="wrapper">
+        <section class="web-page1 bg">
+            <div class="container">
+                <div class="bannerImg">
+                    <img src="./images/top_img.png" alt="">
+                </div>
+                <div class="bannerTxt">
+                    <p>Cách đầu tư kiếm tiền an toàn và thông minh năm 2020</p>
+                    <h1>Đầu tư ngoại hối, chỉ số chứng khoán
+                    </h1>
+                </div>
+            </div>
+
+        </section>
+        <section class="web-page2 bg">
+            <div class="container">
+                <div class="title">
+                    <p>Kích hoạt tài khoản nhận</p>
+                    <h2>TIỀN THƯỞNG +LÌ XÌ</h2>
+                    <p>Lì xì được rút về trực tiếp</p>
+                </div>
+                <div class="conList">
+                    <ul>
+                        <li class="bonus">
+                            <img src="./images/money.png" alt="">
+                            <p>TIỀN THƯỞNG</p>
+                            <p>$100 ~ $3000</p>
+                        </li>
+                        <li class="money">
+                            <img src="./images/redbox.png" alt="">
+                            <p>LÌ XÌ</p>
+                            <p>Lì xì:116600vnd ~ 699900vnd</p>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="account">
+                    <a href="">MỞ TÀI KHOẢN THẬT</a>
+                    <a href="">"MỞ TÀI KHOẢN DEMO"</a>
+                </div>
+            </div>
+
+        </section>
+        <section class="web-page3 bg">
+            <div class="container">
+                <div class="title">
+                    <h2>Chỉ giới hạn 600 khách hàng mới được nhận tiền thưởng, hãy đăng ký ngay</h2>
+                    <p>Chúc mừng <span>052xxxx201</span>> ông Nguyễn đã nhận được $200 + 116600vnd</p>
+                </div>
+                <div class="slider"></div>
+                <div class="amount">
+                    <img src="" alt="">
+                    <p><span>316</span>người đã nhận được</p>
+                </div>
+            </div>
+        </section>
+        <section class="web-page4 bg">
+            <div class="container">
+                <div class="title">
+                    <h2>Thương hiệu quốc tế uy tính,Vận hành 11 năm</h2>
+                </div>
+                <div class="conList">
+                    <ul>
+                        <li>
+                            <img src="./images/iicon1.png" alt="">
+                            <h3>2 giấy tờ chứng nhận:<h3>
+                                    <p>FSP NZ ( số giấy phép:507506)</p>
+                                    <p>SCB（số giấy phép:001273790)</p>
+                        </li>
+                        <li>
+                            <img src="./images/iicon2.png" alt="">
+                            <h3>Tiền vốn được lưu trữ an toàn</h3>
+                            <p>Ngân hàng ANZ của New Zealand</p>
+                            <p>Ngân hàng DBS của Singapore</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer class="web-footer">
+            <p>Lời nhắc nhở ấm áp: Đầu tư có rủi ro, bắt đầu phải cẩn thận</p>
+        </footer>
+    </div>
+    <script>
+        window.onload=function(){
+            var docEl = document.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if (clientWidth >= 992) {
+                        docEl.style.fontSize = '16px';
+                    } else {
+                        // docEl.style.fontSize = 10*(clientWidth / 750) + 'px';
+                        docEl.style.fontSize = 16*(clientWidth / 992) + 'px';
+                    }
+                };
+                console.log("test");
+                
+            if (!document.addEventListener) return;
+            window.addEventListener(resizeEvt, recalc, false);
+            document.addEventListener('DOMContentLoaded', recalc, false);
+        }
+        // (function (doc, win) {
+        //     var docEl = doc.documentElement,
+        //         resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        //         recalc = function () {
+        //             var clientWidth = docEl.clientWidth;
+        //             if (!clientWidth) return;
+        //             if (clientWidth >= 640) {
+        //                 docEl.style.fontSize = '100px';
+        //             } else {
+        //                 docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+        //             }
+        //         };
+
+        //     if (!doc.addEventListener) return;
+        //     win.addEventListener(resizeEvt, recalc, false);
+        //     doc.addEventListener('DOMContentLoaded', recalc, false);
+        // })(document, window);
+//         const oHtml = document.getElementsByTagName('html')[0]
+//         const width = oHtml.clientWidth;
+// // 320px的屏幕基准像素为12px
+//         oHtml.style.fontSize = 12 * (width / 320) + "px";
+    </script>
+</body>
+
+</html>
