@@ -185,6 +185,40 @@ img {
 .web-page2 .conList {
   width: 100%;
   padding-top: 15px;
+  position: relative;
+}
+
+.web-page2 .conList::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 4rem;
+  height: 1.2rem;
+  background-color: #ffeb66;
+  left: 50%;
+  top: 37%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.web-page2 .conList::after {
+  position: absolute;
+  position: absolute;
+  content: "";
+  display: block;
+  width: 1.2rem;
+  height: 4rem;
+  background-color: #ffeb66;
+  left: 50%;
+  top: 37%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
 
 .web-page2 .conList ul {

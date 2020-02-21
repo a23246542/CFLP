@@ -1,17 +1,4 @@
-// 事前設定
-// >
-// <!-- 手機板高度900以內 -->
-//     <!-- 桌基板寬度1100以那 -->
-//     <!-- app padding-bottom -->
-// 大區塊用mb 大區塊內小區塊可以用mt
-//     <!-- width100% 會查找 height 100% 的用途 -->
-//     <!-- ctrl 一起選取多個 -->
-// mr 4.3%
-// 只有左右要百分比
-// 小部分的東西用固定寬
 
-// 原本pc 100% 手機板90%劉邊
-// @import "reset.scss";
 @import "template.css";
 // @import "swiper.scss";
 
@@ -35,9 +22,7 @@ img{
     display: block;
 }
 
-// @mixin pc(){
-//     @media screen and ()
-// }
+
 
 @mixin phone() {
     @media screen and (max-width:768px){
@@ -59,23 +44,16 @@ img{
         // width: 90%;
     }
 
-    // @include phone(){
-    //     width: 80%;
-    // }
+   
 }
 .web-page1{
-    // background-color: #FC6972;
-    
-    // background: -moz-linear-gradient(180deg, #FF6C6C 0%, #C835E8 76%);
-    // background: -webkit-linear-gradient(180deg, #FF6C6C 0%, #C835E8 76%);
-    // background: -o-linear-gradient(180deg, #FF6C6C 0%, #C835E8 76%);
-    padding-top: 3rem;
+
+    padding-top:3rem;
     background-image: url("../images/bgicon1.png"),
                       url("../images/bgicon1-reverse.png"),
                       linear-gradient(180deg, #FF6C6C 0%, #C835E8 76%);
     background-repeat: no-repeat,no-repeat;
     background-size: 7rem,8rem,auto;
-    
     background-position: left 3rem top 5rem,right 2rem top 2rem,0 0;
  
 
@@ -97,7 +75,7 @@ img{
         img{
             width: 100%;
             height: auto;      
-            // width: 30rem;
+    
         }
     }
 
@@ -106,10 +84,10 @@ img{
         text-align: center;
         padding-top: 6.5%;
         @include phone(){
-            width: 35rem; //!!??不该写在外层 RWD失败
+            width: 35rem;
         }
         p{
-            display: inline-block;//就這個就可以縮起來
+            display: inline-block;
             color: white;
             border-bottom: 1px solid white;
             padding: 15px 2%;
@@ -147,12 +125,12 @@ img{
 
     background-repeat: no-repeat,no-repeat,no-repeat;
     background-size:7rem,9rem,9rem;
-    // background-position: left 2rem top 2rem,
-    //                     right 1rem top 4rem,
-    //                     left -1rem bottom 5rem;
+
     background-position: left 9% top 5%,
                         right 4% top 19%,
                         left 0% bottom 10%;
+
+    
 
     .container{
         display: flex;
@@ -166,7 +144,6 @@ img{
     }
 
     .title{
-        // line-height: 2.5rem;
         text-align: center;
         padding-top: 40px;
         @include phone(){
@@ -196,6 +173,38 @@ img{
     .conList{
         width: 100%;
         padding-top: 15px;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            display: block;
+            width: 4rem;
+            height: 1.2rem;
+            background-color: #ffeb66;
+            left: 50%;
+            top: 37%;
+            transform: translate(-50%,-50%);
+            -webkit-transform: translate(-50%,-50%);
+            -moz-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+            -o-transform: translate(-50%,-50%);
+        }
+        &::after{
+            position: absolute;
+            position: absolute;
+            content: "";
+            display: block;
+            width: 1.2rem;
+            height: 4rem;
+            background-color: #ffeb66;
+            left: 50%;
+            top: 37%;
+            transform: translate(-50%,-50%);
+            -webkit-transform: translate(-50%,-50%);
+            -moz-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+            -o-transform: translate(-50%,-50%);
+        }
         ul{
             display: flex;
             justify-content: space-around;
@@ -210,7 +219,7 @@ img{
                     width: 100%;
                     height: auto;
                     @include phone(){
-                        margin-bottom: 1.6rem; //??为蛇么跟下面黏在一起
+                        margin-bottom: 1.6rem;
                     }
                 }
                 span{
@@ -241,7 +250,6 @@ img{
                     -ms-transform: translateY(-10px);
                     -o-transform: translateY(-10px);
                     @include phone(){
-                        // line-height: 2rem;
                         line-height: normal;
                     }
                 }
@@ -249,19 +257,10 @@ img{
         }
         
         .bonus{
-            // box-sizing: border-box;
-            // padding-left: 80px;
-            // padding-left: 12%; //??為什會影響到圖片大小
             margin-left: 10%;
-
-            img,p{
-                // margin-left: 25%;
-                // margin-left: 5rem;
-            }
         }
         .money{
-            // box-sizing: border-box;
-            // padding-right: 80px;
+ 
             margin-right: 10%;
             img{
                 padding-top: .6rem;
@@ -269,11 +268,6 @@ img{
                 @include phone(){
                     margin-bottom: 1.7rem;
                 }
-            }
-
-            img,p{
-                // margin-right: 25%;
-                // margin-right: 5rem;
             }
         }
 
@@ -292,12 +286,11 @@ img{
             height: 5rem;
             line-height: 5rem;
             white-space: nowrap;
-            // display: flex;
-            // align-items: center;
-            padding: 0 14px;//按钮上下不要padding 缩放不好RWD
+ 
+            padding: 0 14px;
             box-sizing: border-box;
             font-weight: bold;
-            font-size: 1.5rem;//??赣 字型大小动不了 
+            font-size: 1.5rem;
             border: 2px solid #fce26c;
             border-radius: 12px;
             -webkit-border-radius: 12px;
@@ -395,7 +388,6 @@ img{
                 width: 43rem;
             }
             .swiper-slide{
-                // margin: 0 20px;
                 width: 14%;
                 margin: 0 20px;
                 img{
@@ -419,7 +411,6 @@ img{
             justify-content: center;
             align-items: center;
             background-color: #7a3de8;
-            //!!!怎么可以忘记这个//box-sizing: border-box;
             padding: 11px 0px 11px 14px;
             border: 2px solid #ecd378;
             border-radius: 10px;
@@ -449,10 +440,9 @@ img{
                 line-height: 3.5rem;
                 letter-spacing: .07rem;
                 text-align: center;
-                vertical-align: bottom;//!! 
+                vertical-align: bottom;
                 font-weight: 800;
-                padding-right: 40px;//这边按钮排版处理的不好
-                // margin-left: ;
+                padding-right: 40px;
                 white-space: nowrap;
                 color: white;
                 @include phone(){
