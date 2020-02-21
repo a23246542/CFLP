@@ -13,6 +13,7 @@
 // 原本pc 100% 手機板90%劉邊
 // @import "reset.scss";
 @import "template.css";
+// @import "swiper.scss";
 
 html,body{
     width: 100%;
@@ -34,6 +35,17 @@ img{
     display: block;
 }
 
+// @mixin pc(){
+//     @media screen and ()
+// }
+
+@mixin phone() {
+    @media screen and (max-width:768px){
+        @content;
+    }
+}
+
+
 // =============web-page1================
 
 
@@ -43,9 +55,13 @@ img{
     margin: 0 auto;
     outline: 1px red solid;
 
-    @media screen and (max-width:1099px) {
-        width: 80%;
+    @media screen and (min-width:0px) and (max-width:768px) {
+        // width: 90%;
     }
+
+    // @include phone(){
+    //     width: 80%;
+    // }
 }
 .web-page1{
     // background-color: #FC6972;
@@ -56,7 +72,7 @@ img{
     padding-top: 3rem;
     background-image: url("../images/bgicon1.png"),
                       url("../images/bgicon1-reverse.png"),
-                      linear-gradient(180deg, #FF6C6C 0%, #C835E8 76%);;
+                      linear-gradient(180deg, #FF6C6C 0%, #C835E8 76%);
     background-repeat: no-repeat,no-repeat;
     background-size: 7rem,8rem,auto;
     
@@ -65,13 +81,56 @@ img{
 
     .container{
         display: flex;
+        box-sizing: border-box;
+        @include phone(){
+            flex-direction: column;
+            align-items: center;
+        }
     }
     .bannerImg{
-        // width:40%;
+        width:45%;
+
+        @include phone(){
+            width: 34rem;
+            order: 2;
+        }
         img{
-            // width: 100%;
-            width: 30rem;
-            height: auto;
+            width: 100%;
+            height: auto;      
+            // width: 30rem;
+        }
+    }
+
+    .bannerTxt{
+        width: 55%;
+        text-align: center;
+        padding-top: 6.5%;
+        @include phone(){
+            width: 35rem; //!!??不该写在外层 RWD失败
+        }
+        p{
+            display: inline-block;//就這個就可以縮起來
+            color: white;
+            border-bottom: 1px solid white;
+            padding: 15px 2%;
+            font-size: 1.2rem;
+            @include phone(){
+                padding: 1rem .5rem;
+            }
+        }
+        h1{
+            color: #FFE967;
+            padding-top: 17px;
+            font-weight: 900;
+            font-size: 2.5rem;
+            line-height: 2.8rem;
+            @include phone(){
+                .br-pc{
+                    display:none;
+                }
+                margin-bottom:4rem;
+                font-size: 3rem;
+            }
         }
     }
 }
@@ -80,6 +139,7 @@ img{
 // ======web-page2===============
 
 .web-page2{
+    
     background-image: url("../images/bgicon1.png"),
     url("../images/bgicon2.png"),
     url("../images/bgicon3.png");
@@ -87,55 +147,188 @@ img{
 
     background-repeat: no-repeat,no-repeat,no-repeat;
     background-size:7rem,9rem,9rem;
-    background-position: left 2rem top 2rem,
-                        right 1rem top 4rem,
-                        left -1rem bottom 5rem;
+    // background-position: left 2rem top 2rem,
+    //                     right 1rem top 4rem,
+    //                     left -1rem bottom 5rem;
+    background-position: left 9% top 5%,
+                        right 4% top 19%,
+                        left 0% bottom 10%;
 
     .container{
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 40px 0 80px;
+        @include phone(){
+            padding: 4rem 0 8rem;    
+        }
         
+    }
+
+    .title{
+        // line-height: 2.5rem;
+        text-align: center;
+        padding-top: 40px;
+        @include phone(){
+            padding-top: 2rem;
+        }
+        p{
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 800;
+
+        }
+        h2{
+            color: #FCE26C;
+            font-size: 2rem;
+            font-weight: 900;
+            @include phone(){
+                font-size: 3rem;
+                margin-bottom: .3rem;
+            }
+        }
+        span{
+            color: #fce26c;
+        }
+
     }
 
     .conList{
         width: 100%;
+        padding-top: 15px;
         ul{
             display: flex;
-            li{
+            justify-content: space-around;
+            li.bonus,li.money{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                width: 50%;
+                // width: 50%;
+                width: 30%;
+                img{
+                    // width: 16rem;
+                    width: 100%;
+                    height: auto;
+                    @include phone(){
+                        margin-bottom: 1.6rem; //??为蛇么跟下面黏在一起
+                    }
+                }
+                span{
+                    color: white;
+                    font-weight: 800;
+                    @include phone(){
+                        margin-bottom: .5rem;
+                        font-size: .8rem;
+                    }
+                }
                 p{
-                    font-size: 1rem;
+                    color: #fee968;
+                    font-weight: 900;
+                    font-size: 1.6rem;
+                    margin-bottom: 20px;
+                    white-space: nowrap;
+                    @include phone(){
+                        margin-bottom: 1rem;
+                        font-size:1.8rem;
+                    }
+                }
+                span,p{
+                    line-height: 1.5rem;
+                    font-weight: 900;
+                    transform: translateY(-10px);
+                    -webkit-transform: translateY(-10px);
+                    -moz-transform: translateY(-10px);
+                    -ms-transform: translateY(-10px);
+                    -o-transform: translateY(-10px);
+                    @include phone(){
+                        // line-height: 2rem;
+                        line-height: normal;
+                    }
                 }
             }
         }
-        img{
-            width: 20rem;
-            height: auto;
-        }
-
+        
         .bonus{
-            box-sizing: border-box;
+            // box-sizing: border-box;
             // padding-left: 80px;
             // padding-left: 12%; //??為什會影響到圖片大小
+            margin-left: 10%;
+
             img,p{
-                margin-left: 12%;
+                // margin-left: 25%;
                 // margin-left: 5rem;
             }
         }
         .money{
-            box-sizing: border-box;
+            // box-sizing: border-box;
             // padding-right: 80px;
-            // margin-right: 12%;
+            margin-right: 10%;
+            img{
+                padding-top: .6rem;
+                margin-bottom: .1rem;
+                @include phone(){
+                    margin-bottom: 1.7rem;
+                }
+            }
+
             img,p{
-                margin-right: 12%;
+                // margin-right: 25%;
                 // margin-right: 5rem;
             }
         }
 
+    }
+
+
+    .account{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        a{
+            display: inline-block;
+            // vertical-align: middle;
+            width: 33%;
+            height: 5rem;
+            line-height: 5rem;
+            white-space: nowrap;
+            // display: flex;
+            // align-items: center;
+            padding: 0 14px;//按钮上下不要padding 缩放不好RWD
+            box-sizing: border-box;
+            font-weight: bold;
+            font-size: 1.5rem;//??赣 字型大小动不了 
+            border: 2px solid #fce26c;
+            border-radius: 12px;
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+            -ms-border-radius: 12px;
+            -o-border-radius: 12px;
+            @include phone(){
+                width: 36%;
+                line-height: 4.9rem;
+                font-size: 8px;
+                border-radius: 7px;
+                -webkit-border-radius: 7px;
+                -moz-border-radius: 7px;
+                -ms-border-radius: 7px;
+                -o-border-radius: 7px;
+            }
+            box-shadow: 9px 9px 10px 1px rgba(0,0,0,.25);
+            
+        }
+
+        a:nth-child(1){
+            margin-left: 8%;
+            color: #feea66;
+            background: linear-gradient(180deg, #7a3dea 0%, #8907ab 100%);
+
+        }
+
+        a:nth-child(2){
+            margin-right: 8%;
+            border: 2px solid #eab9f7;
+        }
     }
 }
 
@@ -143,8 +336,144 @@ img{
 // =======web-page3===============
 
 .web-page3{
+    background-image: url("../images/bgicon4.png"),url("../images/bgicon4.png");
+    background-repeat: no-repeat,no-repeat;
+    // background-size: 30% auto,38% auto;
+    background-size: 30rem auto,38rem auto;
+    background-position: left -5.8rem top 1.8rem, bottom 6.6rem right -11.1rem;
     background-color: #7a3de8;
-}
+    @include phone(){
+        background-position:-4.8rem top 1.8rem, bottom 6.6rem right -23.1rem
+    }
+    
+
+    .container{
+        padding: 120px 0 90px;
+        @include phone(){
+            padding: 12rem 0 8rem;
+        }
+    }
+
+    .title{
+        color: #feea66;
+        text-align: center;
+        margin-bottom: 65px;
+        @include phone(){
+            margin-bottom:5rem ;
+        }
+
+        h2{
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+            font-weight: 900;
+            @include phone(){
+                font-size: 2.5rem;
+                font-weight: 900;
+                margin-bottom: 1.1rem;
+
+            }
+        }
+        p{
+            color: white;
+            @include phone(){
+                font-size: 1rem;
+            }
+            span{
+                color: #ead07a;
+            }
+        }
+    }
+
+    .slider{
+        margin-bottom: 50px;
+        @include phone(){
+            margin-bottom: 1rem;
+        }
+        .swiper-container{
+            width: 60%;
+            @include phone(){
+                width: 43rem;
+            }
+            .swiper-slide{
+                // margin: 0 20px;
+                width: 14%;
+                margin: 0 20px;
+                img{
+                    width: 100%;
+                }
+                @include phone(){
+                    width: 10rem;
+                    margin-right:2.9rem;
+                }
+            }
+        }
+    }
+
+    .amount{
+
+        padding: 30px 0 0;
+        .btn{
+            width: 50%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #7a3de8;
+            //!!!怎么可以忘记这个//box-sizing: border-box;
+            padding: 11px 0px 11px 14px;
+            border: 2px solid #ecd378;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+           
+
+            }
+            .pop{
+                width: 17%;
+                padding-left: 30px;
+                box-sizing: border-box;
+                @include phone(){
+                    width: 4rem;
+                    padding-left: 0;
+                }
+                img{
+                    width: 100%;
+                    // object-fit: cover;
+                }
+            }
+            p{
+                flex: 1;
+                font-size: 1.8rem;
+                line-height: 3.5rem;
+                letter-spacing: .07rem;
+                text-align: center;
+                vertical-align: bottom;//!! 
+                font-weight: 800;
+                padding-right: 40px;//这边按钮排版处理的不好
+                // margin-left: ;
+                white-space: nowrap;
+                color: white;
+                @include phone(){
+                    padding-right: 2rem;
+                    font-size: 2.5rem;
+                }
+                span{
+                    color: #ffeb66;
+                    font-weight: 900;
+                    font-size: 2.9rem;
+                    margin-right: 5px;
+                    vertical-align: inherit;
+                    @include phone(){
+                        font-size: 3.2rem;
+                    }
+                }
+            }
+        }
+   }
+
+
 
 
 // =======web-page4================
@@ -152,31 +481,103 @@ img{
 .web-page4{
     background-color: #c835e8;
 
+    .container{
+        padding: 70px 0 90px;
+        @include phone(){
+            padding: 8rem 0 11rem;
+        }
+    }
     .title{
+        margin-bottom: 40px;
         h2{
             text-align: center;
+            color: #fde46b;
+            @include phone(){
+                font-size: 2.2rem;
+                font-weight: 900;
+            }
         }
     }
 
     .conList ul{
         display: flex;
         justify-content: space-around;
+        color: white;
         li{
-            width: 40%;
+            width: 32%;
+            padding: 21px 0 24px;
             display: flex;
             flex-direction: column;
             align-items: center;
+            text-align: center;
             border: 2px solid #e761e1;
             border-radius: 10px;
             -webkit-border-radius: 10px;
             -moz-border-radius: 10px;
             -ms-border-radius: 10px;
             -o-border-radius: 10px;
+            @include phone(){
+                width: 24rem;
+                padding: 0 5px;
+            }
 
             img{
                 width: 12rem;
                 height: auto;
             }
+            h3{
+                border-bottom: 2px solid white;
+                padding: 9px;
+                margin-bottom: 10px;
+                font-weight: 900;
+                @include phone(){
+                    font-size: 1rem;
+                    // white-space: nowrap;
+                    padding: 1rem 9px;
+                }
+            }
+            p{
+                border: none;
+                // padding: 7px 0;
+                margin-bottom: 8px;
+                // font-weight: 700;
+                @include phone(){
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        li:nth-child(1){
+            position: relative;
+            left: 2%;
+            @include phone(){
+                left: 1%;
+            }
+            h3{
+                @include phone(){
+                    padding: 2.2rem 9px;
+                }
+            }
+        }
+        li:nth-child(2){
+            position: relative;
+            right: 2%;
+            @include phone(){
+                right: 1%;
+            }
+            h3{
+                font-size: .8rem;
+            }
         }
     }
+}
+
+// ========web-footer=====================
+
+.web-footer{
+    color: white;
+    background-color: #7a3de8;
+    padding: 30px 0 26px;
+    text-align: center;
+    font-size: .8rem;
 }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/campaign2002(VN).css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
     <title>Document</title>
 </head>
 
@@ -19,9 +20,8 @@
                     <img src="./images/top_img.png" alt="">
                 </div>
                 <div class="bannerTxt">
-                    <p>Cách đầu tư kiếm tiền an toàn và thông minh năm 2020</p>
-                    <h1>Đầu tư ngoại hối, chỉ số chứng khoán
-                    </h1>
+                    <p>Cách đầu tư kiếm tiền an toàn<br>và thông minh năm 2020</p>
+                    <h1>Đầu tư ngoại hối,<br class="br-pc">chỉ số chứng khoán</h1>
                 </div>
             </div>
 
@@ -31,19 +31,19 @@
                 <div class="title">
                     <p>Kích hoạt tài khoản nhận</p>
                     <h2>TIỀN THƯỞNG +LÌ XÌ</h2>
-                    <p>Lì xì được rút về trực tiếp</p>
+                    <span>Lì xì được rút về trực tiếp</span>
                 </div>
                 <div class="conList">
                     <ul>
                         <li class="bonus">
                             <img src="./images/money.png" alt="">
-                            <p>TIỀN THƯỞNG</p>
+                            <span>TIỀN THƯỞNG</span>
                             <p>$100 ~ $3000</p>
                         </li>
                         <li class="money">
                             <img src="./images/redbox.png" alt="">
-                            <p>LÌ XÌ</p>
-                            <p>Lì xì:116600vnd ~ 699900vnd</p>
+                            <span>LÌ XÌ</span>
+                            <p>116600 vnd ~ 699900 vnd</p>
                         </li>
                     </ul>
 
@@ -58,13 +58,37 @@
         <section class="web-page3 bg">
             <div class="container">
                 <div class="title">
-                    <h2>Chỉ giới hạn 600 khách hàng mới được nhận tiền thưởng, hãy đăng ký ngay</h2>
-                    <p>Chúc mừng <span>052xxxx201</span>> ông Nguyễn đã nhận được $200 + 116600vnd</p>
+                    <h2>Chỉ giới hạn 600 khách hàng mới được nhận<br>tiền thưởng, hãy đăng ký ngay</h2>
+                    <p>Chúc mừng <span>052xxxx201</span> ông Nguyễn đã nhận<br>được $200 + 116600vnd</p>
                 </div>
-                <div class="slider"></div>
+                <div class="slider">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./images/hand1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/hand2.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/hand3.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/hand4.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/hand5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="amount">
-                    <img src="" alt="">
-                    <p><span>316</span>người đã nhận được</p>
+                    <div class="btn">
+                        <div class="pop">
+                            <img src="./images/pop.png" alt="">
+                        </div>
+                        <p><span>316</span>người đã nhận được</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -77,13 +101,13 @@
                     <ul>
                         <li>
                             <img src="./images/iicon1.png" alt="">
-                            <h3>2 giấy tờ chứng nhận:<h3>
-                                    <p>FSP NZ ( số giấy phép:507506)</p>
-                                    <p>SCB（số giấy phép:001273790)</p>
+                            <h3>2 giấy tờ chứng nhận</h3>
+                            <p>FSP NZ ( số giấy phép:507506)</p>
+                            <p>SCB（số giấy phép:001273790)</p>
                         </li>
                         <li>
                             <img src="./images/iicon2.png" alt="">
-                            <h3>Tiền vốn được lưu trữ an toàn</h3>
+                            <h3>Tiền vốn được lưu<br>trữ an toàn</h3>
                             <p>Ngân hàng ANZ của New Zealand</p>
                             <p>Ngân hàng DBS của Singapore</p>
                         </li>
@@ -95,25 +119,39 @@
             <p>Lời nhắc nhở ấm áp: Đầu tư có rủi ro, bắt đầu phải cẩn thận</p>
         </footer>
     </div>
+    <script src="./js/swiper.min.js"></script>
     <script>
-        window.onload=function(){
+        var mySwiper = new Swiper('.swiper-container', {
+            // direction: 'vertical', // 垂直切换选项
+            autoplay:true,
+            loop: true, // 循环模式选项
+            slidesPerView:"auto",
+            // spaceBetween : 20,
+
+        })
+        window.onload = function () {
             var docEl = document.documentElement,
                 resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
                 recalc = function () {
                     var clientWidth = docEl.clientWidth;
                     if (!clientWidth) return;
                     if (clientWidth >= 992) {
+                        // if (clientWidth >= 768) {
                         docEl.style.fontSize = '16px';
                     } else {
                         // docEl.style.fontSize = 10*(clientWidth / 750) + 'px';
-                        docEl.style.fontSize = 16*(clientWidth / 992) + 'px';
+                        docEl.style.fontSize = 16 * (clientWidth / 992) + 'px';
+                        // docEl.style.fontSize = 16*(clientWidth / 768) + 'px';
+                        
                     }
                 };
-                console.log("test");
-                
+            console.log("test");
+
             if (!document.addEventListener) return;
             window.addEventListener(resizeEvt, recalc, false);
             document.addEventListener('DOMContentLoaded', recalc, false);
+            document.addEventListener('beforeunload', recalc, false)
+
         }
         // (function (doc, win) {
         //     var docEl = doc.documentElement,
@@ -132,11 +170,12 @@
         //     win.addEventListener(resizeEvt, recalc, false);
         //     doc.addEventListener('DOMContentLoaded', recalc, false);
         // })(document, window);
-//         const oHtml = document.getElementsByTagName('html')[0]
-//         const width = oHtml.clientWidth;
-// // 320px的屏幕基准像素为12px
-//         oHtml.style.fontSize = 12 * (width / 320) + "px";
+        //         const oHtml = document.getElementsByTagName('html')[0]
+        //         const width = oHtml.clientWidth;
+        // // 320px的屏幕基准像素为12px
+        //         oHtml.style.fontSize = 12 * (width / 320) + "px";
     </script>
+
 </body>
 
 </html>
