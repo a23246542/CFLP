@@ -298,9 +298,16 @@ img{
             -ms-border-radius: 12px;
             -o-border-radius: 12px;
             @include phone(){
-                width: 36%;
-                line-height: 4.9rem;
-                font-size: 8px;
+                // width: 36%;
+                // line-height: 4.9rem;
+                // font-size: 8px;
+                width: 24.5rem;
+                height: 6.5rem;
+                line-height: 6.5rem;
+                font-size: 1rem;
+                text-align: center;
+                margin: 0;//!!!跟padding一起去钓很重要 
+                padding: 0;//!!!
                 border-radius: 7px;
                 -webkit-border-radius: 7px;
                 -moz-border-radius: 7px;
@@ -312,14 +319,18 @@ img{
         }
 
         a:nth-child(1){
-            margin-left: 8%;
+            // margin-left: 8%;
+            position: relative;
+            left: 1.2rem;
             color: #feea66;
             background: linear-gradient(180deg, #7a3dea 0%, #8907ab 100%);
 
         }
 
         a:nth-child(2){
-            margin-right: 8%;
+            // margin-right: 8%;
+            position: relative;
+            right: 1.2rem;
             border: 2px solid #eab9f7;
         }
     }
@@ -406,6 +417,9 @@ img{
         padding: 30px 0 0;
         .btn{
             width: 50%;
+            @include phone(){
+                width: 63%;
+            }
             margin: 0 auto;
             display: flex;
             justify-content: center;
@@ -418,15 +432,19 @@ img{
             -moz-border-radius: 10px;
             -ms-border-radius: 10px;
             -o-border-radius: 10px;
+            
            
 
             }
             .pop{
                 width: 17%;
+                // width: 12%;
                 padding-left: 30px;
                 box-sizing: border-box;
                 @include phone(){
-                    width: 4rem;
+                    // width: 4rem;
+                    // width: 12%;
+                    width: 4.7rem;
                     padding-left: 0;
                 }
                 img{

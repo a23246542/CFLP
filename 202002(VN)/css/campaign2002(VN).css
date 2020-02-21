@@ -349,9 +349,13 @@ img {
 
 @media screen and (max-width: 768px) {
   .web-page2 .account a {
-    width: 36%;
-    line-height: 4.9rem;
-    font-size: 8px;
+    width: 24.5rem;
+    height: 6.5rem;
+    line-height: 6.5rem;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
     border-radius: 7px;
     -webkit-border-radius: 7px;
     -moz-border-radius: 7px;
@@ -361,14 +365,16 @@ img {
 }
 
 .web-page2 .account a:nth-child(1) {
-  margin-left: 8%;
+  position: relative;
+  left: 1.2rem;
   color: #feea66;
   background: -webkit-gradient(linear, left top, left bottom, from(#7a3dea), to(#8907ab));
   background: linear-gradient(180deg, #7a3dea 0%, #8907ab 100%);
 }
 
 .web-page2 .account a:nth-child(2) {
-  margin-right: 8%;
+  position: relative;
+  right: 1.2rem;
   border: 2px solid #eab9f7;
 }
 
@@ -498,6 +504,12 @@ img {
   -o-border-radius: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  .web-page3 .amount .btn {
+    width: 63%;
+  }
+}
+
 .web-page3 .amount .pop {
   width: 17%;
   padding-left: 30px;
@@ -507,7 +519,7 @@ img {
 
 @media screen and (max-width: 768px) {
   .web-page3 .amount .pop {
-    width: 4rem;
+    width: 4.7rem;
     padding-left: 0;
   }
 }
