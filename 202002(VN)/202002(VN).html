@@ -11,8 +11,6 @@
 </head>
 
 <body>
-
-    <!-- 多用a連結 -->
     <div class="wrapper">
         <section class="web-page1 bg">
             <div class="container">
@@ -43,7 +41,7 @@
                         <li class="money">
                             <img src="./images/redbox.png" alt="">
                             <span>LÌ XÌ</span>
-                            <p>116600 vnd ~ 699900 vnd</p>
+                            <p>116600 vnd~699900 vnd</p>
                         </li>
                     </ul>
 
@@ -125,11 +123,33 @@
             // direction: 'vertical', // 垂直切换选项
             autoplay:true,
             loop: true, // 循环模式选项
-            slidesPerView:"auto",
-            centeredSlides:true,
+            // slidesPerView:"auto",
+            // centeredSlides:true,
             // spaceBetween : 20,
+            breakpoints: {
+                320: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+                },
+                375: {
+                slidesPerView: 3,
+                spaceBetween: 25,
+                },
+                414: {
+                slidesPerView: 3,
+                spaceBetween: 25,
+                },
+                768: {
+                slidesPerView: 3,
+                spaceBetween: 35,
+                },
+                1024: {
+                slidesPerView: 5,
+                spaceBetween: 35,
+                },
+            }
 
-        })
+        });
         window.onload = function () {
             var docEl = document.documentElement,
                 resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
@@ -154,27 +174,6 @@
             document.addEventListener('beforeunload', recalc, false)
 
         }
-        // (function (doc, win) {
-        //     var docEl = doc.documentElement,
-        //         resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-        //         recalc = function () {
-        //             var clientWidth = docEl.clientWidth;
-        //             if (!clientWidth) return;
-        //             if (clientWidth >= 640) {
-        //                 docEl.style.fontSize = '100px';
-        //             } else {
-        //                 docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
-        //             }
-        //         };
-
-        //     if (!doc.addEventListener) return;
-        //     win.addEventListener(resizeEvt, recalc, false);
-        //     doc.addEventListener('DOMContentLoaded', recalc, false);
-        // })(document, window);
-        //         const oHtml = document.getElementsByTagName('html')[0]
-        //         const width = oHtml.clientWidth;
-        // // 320px的屏幕基准像素为12px
-        //         oHtml.style.fontSize = 12 * (width / 320) + "px";
     </script>
 
 </body>
