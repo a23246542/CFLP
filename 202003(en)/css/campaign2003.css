@@ -1,0 +1,312 @@
+@import url(d:\Users\sam.yang\Documents\CFLP1\202003(en)\css\reset.css);
+@import url(d:\Users\sam.yang\Documents\CFLP1\202003(en)\css\template.css);
+/* .section1{
+    background: url("./images/bgimg.jpg") no-repeat;
+    width: 7.5rem;
+    height: 9rem;
+}
+.section1-title1{
+    width: 5.6rem;
+    height: 0.6rem;        
+    
+}
+.section1-title1 img{
+    width: 80%;
+    height: 80%;
+   
+  
+}
+.section1-p{
+    font-size: 0.34rem;
+    color: white;
+   
+    top:0;
+    left: 0;
+    
+} */
+html {
+  height: 100%;
+  background: rosybrown;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100%;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+}
+
+.wrapper {
+  background-color: #0C2B7E;
+}
+
+.wrapper .inner {
+  width: 6.3rem;
+  margin: 0 auto;
+}
+
+.web-page1 {
+  background: url("../images/bgimg.jpg") no-repeat;
+  background-size: cover;
+  height: 9rem;
+}
+
+.web-page1 .inner {
+  padding-top: 1.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.web-page1 .inner .page1-title1 {
+  width: 5.7rem;
+  height: 0.7rem;
+  background: url("../images/title1.png") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  margin-bottom: .4rem;
+}
+
+.web-page1 .inner .page1-title1 h2 {
+  position: absolute;
+  font-size: .34rem;
+  white-space: nowrap;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.web-page1 .inner .page1-title2 {
+  margin-bottom: 1.1rem;
+}
+
+.web-page1 .inner .page1-title2 h1:nth-child(1) {
+  font-size: .45rem;
+  font-weight: normal;
+}
+
+.web-page1 .inner .page1-title2 h1:nth-child(2) {
+  font-size: 1.07rem;
+  text-shadow: 5px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.web-page1 .inner .page1-title2 h1:nth-child(2) span {
+  color: #FBA301;
+  font-family: Impact;
+  font-weight: normal;
+  letter-spacing: .01rem;
+  position: relative;
+  left: -.15rem;
+}
+
+.web-page1 .inner .page1-img {
+  width: 5.1rem;
+  height: 3.49rem;
+}
+
+.web-page1 .inner .page1-img img {
+  width: 100%;
+}
+
+.web-page2 .inner .trading-items {
+  width: 6.3rem;
+  height: 4.5rem;
+  margin: 0 auto;
+  background: url("../images/icon_bgimg.png") no-repeat;
+  background-size: cover;
+}
+
+.web-page2 .inner .trading-items ul {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.web-page2 .inner .trading-items ul li img {
+  width: 1.32rem;
+  height: 1.3rem;
+}
+
+.web-page2 .inner .trading-items ul li p {
+  color: #1d1e1f;
+  font-weight: normal;
+  font-size: .28rem;
+  text-align: center;
+}
+
+.web-page2 .inner .trading-items ul li:nth-child(1) {
+  position: absolute;
+  top: .52rem;
+  left: .54rem;
+}
+
+.web-page2 .inner .trading-items ul li:nth-child(2) {
+  position: absolute;
+  top: .52rem;
+  left: 2.54rem;
+}
+
+.web-page2 .inner .trading-items ul li:nth-child(3) {
+  position: absolute;
+  top: .52rem;
+  left: 4.55rem;
+}
+
+.web-page2 .inner .trading-items ul li:nth-child(4) {
+  position: absolute;
+  top: 2.45rem;
+  left: 1.55rem;
+}
+
+.web-page2 .inner .trading-items ul li:nth-child(5) {
+  position: absolute;
+  top: 2.45rem;
+  left: 3.55rem;
+}
+
+.web-page3 .inner {
+  padding-top: .4rem;
+}
+
+.web-page3 .inner .conditions {
+  height: 21rem;
+}
+
+.web-page3 .inner .conditions .page3-title {
+  width: 6.3rem;
+  height: 0.8rem;
+  background-color: #FBA301;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top-left-radius: .15rem;
+  border-top-right-radius: .15rem;
+}
+
+.web-page3 .inner .conditions .page3-title h2 {
+  font-size: .36rem;
+  font-weight: normal;
+}
+
+.web-page3 .inner .conditions .page3-description {
+  color: #333333;
+  background-color: #E8EFF9;
+  padding-top: .5rem;
+  border-bottom-left-radius: .15rem;
+  border-bottom-right-radius: .15rem;
+}
+
+.web-page3 .inner .conditions .page3-description .title {
+  position: relative;
+  height: .6rem;
+}
+
+.web-page3 .inner .conditions .page3-description .title img {
+  position: absolute;
+  top: 0;
+  left: -0.1rem;
+}
+
+.web-page3 .inner .conditions .page3-description .title h3 {
+  color: #ffffff;
+  font-size: .28rem;
+  font-weight: normal;
+  position: absolute;
+  top: .08rem;
+  left: .5rem;
+}
+
+.web-page3 .inner .conditions .page3-description p {
+  font-size: .28rem;
+  padding: .3rem 0 .5rem .3rem;
+}
+
+.web-page3 .inner .conditions .page3-description .notes p {
+  padding: .3rem 0 .1rem .3rem;
+}
+
+.web-page3 .inner .conditions .page3-description .notes p span {
+  color: #024AB8;
+  margin-right: .1rem;
+}
+
+.web-page3 .inner .conditions .page3-description .notes li:nth-child(5) p {
+  padding-bottom: .5rem;
+}
+
+.web-page3 .inner .conditions .page3-description img.lab1 {
+  width: 3.5rem;
+  height: 0.6rem;
+}
+
+.web-page3 .inner .conditions .page3-description img.lab2 {
+  width: 2.27rem;
+  height: 0.6rem;
+}
+
+.footer-btn {
+  height: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #103998;
+  -webkit-box-shadow: 0px -5px 12px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px -5px 12px 0px rgba(0, 0, 0, 0.5);
+}
+
+.footer-btn .btn-service, .footer-btn .btn-trade {
+  border-radius: .5rem;
+}
+
+.footer-btn .btn-service a, .footer-btn .btn-trade a {
+  display: block;
+  width: 2.8rem;
+  line-height: .85rem;
+  font-size: .28rem !important;
+  color: #ffffff;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: .01rem;
+}
+
+.footer-btn .btn-service {
+  background: -webkit-gradient(linear, left top, right top, color-stop(44%, #3360d9), to(#1742b5));
+  background: linear-gradient(90deg, #3360d9 44%, #1742b5 100%);
+}
+
+.footer-btn .btn-trade {
+  background: -webkit-gradient(linear, left top, right top, color-stop(65%, #f0a61e), to(#d48c07));
+  background: linear-gradient(90deg, #f0a61e 65%, #d48c07 100%);
+}
+/*# sourceMappingURL=campaign2003.css.map */
