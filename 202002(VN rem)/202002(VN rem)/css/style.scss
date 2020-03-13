@@ -1,0 +1,386 @@
+@import "reset.css";
+@import "template.css";
+@import "_init.scss";
+
+$bg:#c835e8;
+$bg-2:#fd6a70;
+$bg-3:#7a3de8;
+
+@mixin tablet {
+    @media screen and ( max-width:992px) {
+        @content;
+    }
+}
+
+@mixin break($point) {
+    @media screen and (max-width:$point){
+        @content; 
+    }
+}
+
+*{
+    outline: 1px red solid;
+}
+html{
+    font-size: 100px;
+    -webkit-overflow-scrolling: touch;
+    font-family: arialMT;
+    
+    // @include tablet(){
+    //     font-size: 60px;
+    // }
+    // @include break(1100px){
+    //     font-size: 90px;
+    // }
+
+}
+body{
+    font-size: 16px;
+}
+.wrapper{
+    background-color:$bg;
+    .container{
+        // max-width: 11rem;
+        // max-width: 16.6rem;
+        // max-width: 13rem;
+        padding: 0 1rem;
+        // ======== 
+        max-width: 19.2rem;
+        padding: 0 2.4rem;
+        // padding: 0 2.1rem;
+
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+}
+
+// ===================================================================
+
+.web-page1{
+    background: linear-gradient(180deg, #FF6C6C 0%, #C835E8 76%);;
+    .container  {
+
+        display: flex;
+        background-image: url("../images/bgicon1.png"),
+        url("../images/bgicon1-reverse.png");
+        background-repeat: no-repeat,no-repeat;
+        background-size: .7rem,.8rem;
+        background-position: left .3rem top .5rem,right .2rem top .2rem;
+        .page1-img{
+            width: 7.78rem;
+            // width: 50%;
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .page1-txt{
+            // width: 5.5rem;
+            flex: 1;
+            // width: 50%;
+            
+            text-align: center;
+            display: flex;
+            flex-flow: column;
+            // align-items: center;
+            justify-content: center;
+
+            // ====這個要嘛padding寫死 要嘛寬度百分比
+            &>div{
+                box-sizing: border-box;
+                padding: 0 1rem;
+                p{
+                border-bottom: 1px solid white;
+                padding-bottom: .1rem;
+                // max-width: 3rem;
+                // margin: 0 auto;
+                font-size: .38rem;
+                }
+            }
+            
+            h1{
+                // max-width: 4rem;
+                // margin: 0 auto;
+                font-size: .61rem;
+                box-sizing: border-box;
+                padding: 0 .8rem;
+                margin-top: .2rem;
+
+            }
+        }
+
+        
+
+
+
+    }
+    
+}
+
+// ===================================================================
+
+
+.web-page2{
+
+    .container{
+        padding-top: .3rem;
+        .title{
+            text-align: center;
+            p:nth-child(1){
+                font-size: .4rem;
+            }
+            p:nth-child(2){
+                padding: .15rem 0;
+                font-size: .6rem;
+            }
+            p:nth-child(3){
+                font-size: .3rem;
+            }
+        }
+        // 這邊還有另一種切法inline-block縮 +flex column
+        .conlist{
+            ul{
+                display: flex;
+                li{
+                    // width: 5.5rem;//不需要這個 會縮成內容大小
+                    .img{
+                        // width: 4.63rem;//兩張圖大小不一 右邊大
+                        // width: 4.83rem;//也可以
+                        // width: 3.3rem;
+                        // height: 0;
+                        // padding-bottom: 50%;
+                        // padding-bottom: 90%;//為什麼變不行
+                        // padding-bottom: 3rem;
+                        position: relative;
+                        img{
+                            // position: absolute;
+                            // width: 100%;
+                            // height: 100%;
+                            // object-fit: fill;
+                            width: auto;//!!!寬度設auto 變成高度自動適應!!!不對這到底什麼魔法
+                            // 怎麼處理寬度大小不一
+                        }
+                    }
+                    p:nth-child(2){
+                        font-size: .18rem;
+                        // padding: .2rem 0;
+                        // margin-top: -.2rem;//為何只有右邊吃到
+                        position: relative;
+                        top: -.1rem;
+                        
+                    }
+                    p:nth-child(3){
+                        font-size: .25rem;
+                        padding: 0 0 .1rem;
+
+                    }
+                    
+                    .btn{
+                        // width: 4rem;
+                        // height: .5rem;
+                        background-color: rgb(131, 78, 230);
+                        a{
+                            display: block;
+                            width: 6rem;
+                            height: 1.25rem;
+                            line-height: 1.25rem;
+                            font-weight: bold;
+                            font-size: .38rem;
+                            text-align: center;
+                            text-decoration: none;//為何無效
+
+
+                        }
+                    }
+                }
+
+                li.money{
+                    // overflow: hidden;
+                    padding-right: .6rem;
+                    .img{
+                        width: 4.63rem;
+                        height: 4.2rem;
+                        float: right;
+                        // &::after{ //為何家這邊沒用了
+                        //     content: "";
+                        //     display: block;
+                        //     clear: both;
+                        //     overflow: hidden;
+                        // }
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .img + p{
+                        clear: both;
+                    }
+
+                    p{
+                        text-align: right;
+
+                        // &:nth-child(2){
+                        //     padding-right: 1.2rem;
+                        // }
+                    }
+                    p:nth-child(2){
+                        padding-right: 1.2rem;
+                        
+                    }
+                    p:nth-child(3){
+                        padding-right:1rem;
+                    }
+                }
+
+                li.redbox{
+                    padding-left: .6rem;
+                    .img{
+                        width: 4.83rem;
+                        height: 4.2rem;
+                        img{
+                            width: 100%;
+                        }
+                    }
+
+                    p:nth-child(2){
+                        padding-left: 1.2rem;
+                    }
+                    p:nth-child(3){
+                        padding-left: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// =========================================================
+
+.web-page3{
+    background-color: $bg-3;
+    .container{
+        padding-top: .8rem;
+
+        .title{
+            h2{
+                font-size: .4rem;
+                font-weight: bolder;
+            }
+
+            p{
+                font-size: .3rem;
+            }
+        }
+
+        .slider{
+            .slider-container{
+                // display: flex;
+                .slider-item{
+                    width: 1.21rem;
+                    height: 1.21rem;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .amount{
+            
+            .btn{
+                width: 7rem;
+                height: 1rem;
+                line-height: 1rem;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                border: .02rem solid #ecd378;
+                border-radius: .1rem;
+                .pop{
+                    width: .68rem;
+                    height: .57rem;
+                    margin-top: -.12rem;
+                    img{
+                        width: 100%;
+                        // width: auto;
+                    }
+                }
+
+                p{
+                    font-size: .36rem;
+                    font-weight: bold;
+                    span{
+                        font-size: .6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ============================================================
+
+.web-page4{
+
+    .container{
+
+        .title{
+            
+            h2{
+                font-size: .4rem;
+                font-weight: bold;
+            }
+        }
+
+        .conlist{
+
+            ul{
+                li{
+                    .img{
+
+                        img{
+                            width: auto;
+                        }
+                    }
+
+                    h3{
+                        font-size: .3rem;
+                        font-weight: bold;
+                    }
+                    p{
+                        font-size: .24rem;
+                    }
+                    
+                }
+                li:nth-child(1){
+                    .img{
+                        width: 2.38rem;
+                        height: 2.73rem;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+                li:nth-child(2){
+                    .img{
+                        width: 2.47rem;
+                        height: 2.73rem;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// =========================================================
+
+.web-footer{
+    p{
+        font-size: .24rem;
+    }
+}

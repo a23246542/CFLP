@@ -1,0 +1,326 @@
+@import url(d:\Users\sam.yang\Documents\CFLP1\202002(VN rem)\202002(VN rem)\css\reset.css);
+@import url(d:\Users\sam.yang\Documents\CFLP1\202002(VN rem)\202002(VN rem)\css\template.css);
+html {
+  height: 100%;
+  background: rosybrown;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100%;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+}
+
+* {
+  outline: 1px red solid;
+}
+
+html {
+  font-size: 100px;
+  -webkit-overflow-scrolling: touch;
+  font-family: arialMT;
+}
+
+body {
+  font-size: 16px;
+}
+
+.wrapper {
+  background-color: #c835e8;
+}
+
+.wrapper .container {
+  padding: 0 1rem;
+  max-width: 19.2rem;
+  padding: 0 2.4rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.web-page1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF6C6C), color-stop(76%, #C835E8));
+  background: linear-gradient(180deg, #FF6C6C 0%, #C835E8 76%);
+}
+
+.web-page1 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("../images/bgicon1.png"), url("../images/bgicon1-reverse.png");
+  background-repeat: no-repeat,no-repeat;
+  background-size: .7rem,.8rem;
+  background-position: left .3rem top .5rem,right .2rem top .2rem;
+}
+
+.web-page1 .container .page1-img {
+  width: 7.78rem;
+}
+
+.web-page1 .container .page1-img img {
+  width: 100%;
+  height: auto;
+}
+
+.web-page1 .container .page1-txt {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.web-page1 .container .page1-txt > div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 1rem;
+}
+
+.web-page1 .container .page1-txt > div p {
+  border-bottom: 1px solid white;
+  padding-bottom: .1rem;
+  font-size: .38rem;
+}
+
+.web-page1 .container .page1-txt h1 {
+  font-size: .61rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 .8rem;
+  margin-top: .2rem;
+}
+
+.web-page2 .container {
+  padding-top: .3rem;
+}
+
+.web-page2 .container .title {
+  text-align: center;
+}
+
+.web-page2 .container .title p:nth-child(1) {
+  font-size: .4rem;
+}
+
+.web-page2 .container .title p:nth-child(2) {
+  padding: .15rem 0;
+  font-size: .6rem;
+}
+
+.web-page2 .container .title p:nth-child(3) {
+  font-size: .3rem;
+}
+
+.web-page2 .container .conlist ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.web-page2 .container .conlist ul li .img {
+  position: relative;
+}
+
+.web-page2 .container .conlist ul li .img img {
+  width: auto;
+}
+
+.web-page2 .container .conlist ul li p:nth-child(2) {
+  font-size: .18rem;
+  position: relative;
+  top: -.1rem;
+}
+
+.web-page2 .container .conlist ul li p:nth-child(3) {
+  font-size: .25rem;
+  padding: 0 0 .1rem;
+}
+
+.web-page2 .container .conlist ul li .btn {
+  background-color: #834ee6;
+}
+
+.web-page2 .container .conlist ul li .btn a {
+  display: block;
+  width: 6rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  font-size: .38rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.web-page2 .container .conlist ul li.money {
+  padding-right: .6rem;
+}
+
+.web-page2 .container .conlist ul li.money .img {
+  width: 4.63rem;
+  height: 4.2rem;
+  float: right;
+}
+
+.web-page2 .container .conlist ul li.money .img img {
+  width: 100%;
+}
+
+.web-page2 .container .conlist ul li.money .img + p {
+  clear: both;
+}
+
+.web-page2 .container .conlist ul li.money p {
+  text-align: right;
+}
+
+.web-page2 .container .conlist ul li.money p:nth-child(2) {
+  padding-right: 1.2rem;
+}
+
+.web-page2 .container .conlist ul li.money p:nth-child(3) {
+  padding-right: 1rem;
+}
+
+.web-page2 .container .conlist ul li.redbox {
+  padding-left: .6rem;
+}
+
+.web-page2 .container .conlist ul li.redbox .img {
+  width: 4.83rem;
+  height: 4.2rem;
+}
+
+.web-page2 .container .conlist ul li.redbox .img img {
+  width: 100%;
+}
+
+.web-page2 .container .conlist ul li.redbox p:nth-child(2) {
+  padding-left: 1.2rem;
+}
+
+.web-page2 .container .conlist ul li.redbox p:nth-child(3) {
+  padding-left: 1rem;
+}
+
+.web-page3 {
+  background-color: #7a3de8;
+}
+
+.web-page3 .container {
+  padding-top: .8rem;
+}
+
+.web-page3 .container .title h2 {
+  font-size: .4rem;
+  font-weight: bolder;
+}
+
+.web-page3 .container .title p {
+  font-size: .3rem;
+}
+
+.web-page3 .container .slider .slider-container .slider-item {
+  width: 1.21rem;
+  height: 1.21rem;
+}
+
+.web-page3 .container .slider .slider-container .slider-item img {
+  width: 100%;
+}
+
+.web-page3 .container .amount .btn {
+  width: 7rem;
+  height: 1rem;
+  line-height: 1rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: .02rem solid #ecd378;
+  border-radius: .1rem;
+}
+
+.web-page3 .container .amount .btn .pop {
+  width: .68rem;
+  height: .57rem;
+  margin-top: -.12rem;
+}
+
+.web-page3 .container .amount .btn .pop img {
+  width: 100%;
+}
+
+.web-page3 .container .amount .btn p {
+  font-size: .36rem;
+  font-weight: bold;
+}
+
+.web-page3 .container .amount .btn p span {
+  font-size: .6rem;
+}
+
+.web-page4 .container .title h2 {
+  font-size: .4rem;
+  font-weight: bold;
+}
+
+.web-page4 .container .conlist ul li .img img {
+  width: auto;
+}
+
+.web-page4 .container .conlist ul li h3 {
+  font-size: .3rem;
+  font-weight: bold;
+}
+
+.web-page4 .container .conlist ul li p {
+  font-size: .24rem;
+}
+
+.web-page4 .container .conlist ul li:nth-child(1) .img {
+  width: 2.38rem;
+  height: 2.73rem;
+}
+
+.web-page4 .container .conlist ul li:nth-child(1) .img img {
+  width: 100%;
+}
+
+.web-page4 .container .conlist ul li:nth-child(2) .img {
+  width: 2.47rem;
+  height: 2.73rem;
+}
+
+.web-page4 .container .conlist ul li:nth-child(2) .img img {
+  width: 100%;
+}
+
+.web-footer p {
+  font-size: .24rem;
+}
+/*# sourceMappingURL=style.css.map */

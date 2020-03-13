@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript">
+        !(function (doc, win) {
+            var docEle = doc.documentElement, //获取html元素
+            event = "onorientationchange" in window ? "orientationchange" : "resize", //判断是屏幕旋转还是resize;
+            fn = function () {
+                var width = docEle.clientWidth;
+                console.log(width);
+                if(width<1920){
+                    width && (docEle.style.fontSize = 100 * (width / 1920) + "px"); //设置html的fontSize，随着event的改变而改变。
+                }else{
+                    docEle.style.fontSize = 100 + "px";
+                }
+                   
+            };
+            fn();
+            win.addEventListener(event, fn, false);
+            doc.addEventListener("DOMContentLoaded", fn, false);
+            doc.addEventListener("resize", fn, false);
+        }(document, window));
+    
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <section class="web-page1">
+            <div class="container">
+                <div class="page1-img">
+                    <img src="./images/top_img.png" alt="">
+                </div>
+                <div class="page1-txt">
+                    <div>
+                        <p>Cách đầu tư kiếm tiền an toàn<br>và thông minh năm 2020</p>
+                    </div>
+                    <h1>Đầu tư ngoại hối,<br class="br-pc">chỉ số chứng khoán</h1>
+                </div>
+                <!-- <div class="page1-title1"></div>
+                <div class="page1-title2"></div> -->
+            </div>
+        </section>
+        <section class="web-page2">
+            <div class="container">
+                <div class="title">
+                    <p>Kích hoạt tài khoản nhận</p>
+                    <p>TIỀN THƯỞNG +LÌ XÌ</p>
+                    <p>Lì xì được rút về trực tiếp</p>
+                </div>
+                <div class="conlist">
+                    <ul>
+                        <li class="money">
+                             <div class="img">
+                                 <img src="./images/money.png" alt="">
+                             </div>
+                             <p>TIỀN THƯỞNG</p>
+                             <p>$100 ~ $3000</p>
+                             <div class="btn">
+                                 <a href="#">MỞ TÀI KHOẢN THẬT</a>
+                             </div>
+                        </li>
+                        <li class="redbox">
+                            <div class="img">
+                                <img src="./images/redbox.png" alt="">
+                            </div>
+                            <p>LÌ XÌ</p>
+                            <p>116600 vnd ~ 699900 vnd</p>
+                            <div class="btn">
+                                <a href="#">MỞ TÀI KHOẢN DEMO</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="web-page3">
+            <div class="container">
+                <div class="title">
+                    <h2>Chỉ giới hạn 600 khách hàng mới được nhận<br>tiền thưởng, hãy đăng ký ngay</h2>
+                    <p>Chúc mừng<span>052xxxx201</span>ông Nguyễn đã nhận được $200 + 116600vnd</p>
+                </div>
+                <div class="slider">
+                    <div class="slider-container">
+                        <div class="slider-wrap">
+                            <div class="slider-item">
+                                <img src="./images/hand1.png" alt="">
+                            </div>
+                            <div class="slider-item">
+                                <img src="./images/hand2.png" alt="">
+                            </div>
+                            <div class="slider-item">
+                                <img src="./images/hand3.png" alt="">
+                            </div>
+                            <div class="slider-item">
+                                <img src="./images/hand4.png" alt="">
+                            </div>
+                            <div class="slider-item">
+                                <img src="./images/hand5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="amount">
+                    <!-- 用position定位或背景圖 實作兩方法' -->
+                    <div class="btn">
+                        <div class="pop">
+                            <img src="./images/pop.png" alt="">
+                        </div>
+                        <p> <span>316</span>người đã nhận được</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="web-page4">
+            <div class="container">
+                <div class="title">
+                    <h2>Thương hiệu quốc tế uy tính,Vận hành 11 năm</h2>
+                </div>
+                <div class="conlist">
+                    <ul>
+                        <li>
+                            <div class="img">
+                                <img src="./images/iicon1.png" alt="">
+                            </div>
+                            <h3>2 giấy tờ chứng nhận</h3>
+                            <p>FSP NZ ( số giấy phép:507506)</p>
+                            <p>SCB（số giấy phép:001273790)</p>
+                        </li>
+                        <li>
+                            <div class="img">
+                                <img src="./images/iicon2.png" alt="">
+                            </div>
+                            <h3>Tiền vốn được lưu<br>trữ an toàn</h3>
+                            <p>Ngân hàng ANZ của New Zealand</p>
+                            <p>Ngân hàng DBS của Singapore</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer class="web-footer">
+            <p>Lời nhắc nhở ấm áp: Đầu tư có rủi ro, bắt đầu phải cẩn thận</p>
+        </footer>
+    </div>
+    <script src="./js/swiper.min.js"></script>
+    <script>
+    
+        var mySwiper = new Swiper('.swiper-container',{
+            loop:true,
+            autoplay:true,
+            slidesPerView:"auto",
+        })
+    </script>
+</body>
+</html>
