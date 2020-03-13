@@ -83,25 +83,35 @@
             <div class="container">
                 <div class="title">
                     <h2>Chỉ giới hạn 600 khách hàng mới được nhận<br>tiền thưởng, hãy đăng ký ngay</h2>
-                    <p>Chúc mừng<span>052xxxx201</span>ông Nguyễn đã nhận được $200 + 116600vnd</p>
+                    <p>Chúc mừng<span>052xxxx201</span>ông Nguyễn đã nhận<br>được $200 + 116600vnd</p>
                 </div>
                 <div class="slider">
-                    <div class="slider-container">
-                        <div class="slider-wrap">
-                            <div class="slider-item">
-                                <img src="./images/hand1.png" alt="">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="box">
+                                    <img src="./images/hand1.png" alt="">
+                                </div>
                             </div>
-                            <div class="slider-item">
-                                <img src="./images/hand2.png" alt="">
+                            <div class="swiper-slide">
+                                <div class="box">
+                                    <img src="./images/hand2.png" alt="">
+                                </div>
                             </div>
-                            <div class="slider-item">
-                                <img src="./images/hand3.png" alt="">
+                            <div class="swiper-slide">
+                                <div class="box">
+                                    <img src="./images/hand3.png" alt="">
+                                </div>
                             </div>
-                            <div class="slider-item">
-                                <img src="./images/hand4.png" alt="">
+                            <div class="swiper-slide">
+                                <div class="box">
+                                    <img src="./images/hand4.png" alt="">
+                                </div>
                             </div>
-                            <div class="slider-item">
-                                <img src="./images/hand5.png" alt="">
+                            <div class="swiper-slide">
+                                <div class="box">
+                                    <img src="./images/hand5.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -149,14 +159,59 @@
             <p>Lời nhắc nhở ấm áp: Đầu tư có rủi ro, bắt đầu phải cẩn thận</p>
         </footer>
     </div>
+    <!-- <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script> -->
     <script src="./js/swiper.min.js"></script>
     <script>
     
         var mySwiper = new Swiper('.swiper-container',{
             loop:true,
-            autoplay:true,
-            slidesPerView:"auto",
+            // autoplay:true,
+            autoplay:{ 
+                disableOnInteraction: false,//這個必加
+                // https://blog.csdn.net/qq_41619567/article/details/84855297
+                delay:3000
+            },
+            // slidesPerView:"auto",
+            // autoHeight:true,
+            breakpoints:{
+                320:{
+                    slidesPerView:3,
+                    // spaceBetween:20 算好然後padding就好??因為container固定 可是百分比的話
+                },
+                996:{
+                    slidesPerView:5,
+                    // spaceBetween:20
+                }
+            }
+            
         })
     </script>
+
+
+
+
+<!-- breakpoints: {
+    320: {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    },
+    375: {
+    slidesPerView: 3,
+    spaceBetween: 25,
+    },
+    414: {
+    slidesPerView: 3,
+    spaceBetween: 25,
+    },
+    768: {
+    slidesPerView: 3,
+    spaceBetween: 35,
+    },
+    1024: {
+    slidesPerView: 5,
+    spaceBetween: 35,
+    },
+} -->
 </body>
 </html>
