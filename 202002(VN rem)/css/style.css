@@ -1,5 +1,5 @@
-@import url(d:\Users\sam.yang\Documents\CFLP1\202002(VN rem)\css\reset.css);
-@import url(d:\Users\sam.yang\Documents\CFLP1\202002(VN rem)\css\template.css);
+@import url(c:\Users\user\Documents\CFLP\202002(VN rem)\css\reset.css);
+@import url(c:\Users\user\Documents\CFLP\202002(VN rem)\css\template.css);
 html {
   height: 100%;
   background: rosybrown;
@@ -20,24 +20,14 @@ h1, h2, h3, p, ul, li, a {
   list-style-type: none;
 }
 
-img {
+img, a {
   display: block;
 }
 
 html {
   font-size: 100px;
   -webkit-overflow-scrolling: touch;
-  font-family: "Microsoft JhengHei","Heiti TC","sans-self";
-}
-
-@media screen and (max-width: 768px) {
-  html h1, html h2, html h3, html p.span {
-    font-size: 80%;
-  }
-}
-
-body {
-  font-size: 16px;
+  font-family: "Microsoft JhengHei", "Heiti TC", "sans-self";
 }
 
 .wrapper {
@@ -53,6 +43,13 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 768px) {
+  .wrapper .container {
+    max-width: 100%;
+    padding: 0 .24rem;
+  }
+}
+
 .web-page1 {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF6C6C), color-stop(76%, #C835E8));
   background: linear-gradient(180deg, #FF6C6C 0%, #C835E8 76%);
@@ -64,9 +61,9 @@ body {
   display: -ms-flexbox;
   display: flex;
   background-image: url("../images/bgicon1.png"), url("../images/bgicon1-reverse.png");
-  background-repeat: no-repeat,no-repeat;
-  background-size: 2rem,2rem;
-  background-position: left .8rem top .5rem,right 0.5rem top .55rem;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 2rem, 2rem;
+  background-position: left .8rem top .5rem, right 0.5rem top .55rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -81,6 +78,8 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    background-size: 1rem, 1rem;
+    background-position: left .8rem top .5rem, right 0.5rem top .55rem;
   }
 }
 
@@ -89,18 +88,18 @@ body {
   margin-bottom: .7rem;
 }
 
-.web-page1 .container .page1-img img {
-  width: 100%;
-  height: auto;
-}
-
 @media screen and (max-width: 768px) {
   .web-page1 .container .page1-img {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    width: 9.18rem;
+    width: 5.6rem;
   }
+}
+
+.web-page1 .container .page1-img img {
+  width: 100%;
+  height: auto;
 }
 
 .web-page1 .container .page1-txt {
@@ -138,6 +137,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .web-page1 .container .page1-txt > div.box {
+    padding: 0 1.6rem;
     margin-top: 0;
   }
 }
@@ -149,6 +149,12 @@ body {
   white-space: nowrap;
 }
 
+@media screen and (max-width: 768px) {
+  .web-page1 .container .page1-txt > div.box p {
+    font-size: .28rem;
+  }
+}
+
 .web-page1 .container .page1-txt h1 {
   font-size: .61rem;
   -webkit-box-sizing: border-box;
@@ -158,12 +164,19 @@ body {
   white-space: nowrap;
 }
 
+@media screen and (max-width: 768px) {
+  .web-page1 .container .page1-txt h1 {
+    font-size: .51rem;
+    line-height: .6rem;
+  }
+}
+
 .web-page2 .container {
   background-image: url("../images/bgicon1.png"), url("../images/bgicon2.png"), url("../images/bgicon3.png");
   background-color: #c835e8;
-  background-repeat: no-repeat,no-repeat;
-  background-size: 2rem,2rem,2.8rem;
-  background-position: left 1.5rem top .4rem, right .7rem top 1.9rem,left 0rem bottom 2.6rem;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 1rem, 1rem, 1.8rem;
+  background-position: left 1.5rem top .4rem, right .7rem top 1.9rem, left 0rem bottom 2.6rem;
 }
 
 .web-page2 .container .title {
@@ -191,12 +204,27 @@ body {
   display: flex;
 }
 
+.web-page2 .container .conlist ul li {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
 .web-page2 .container .conlist ul li .img {
   position: relative;
 }
 
 .web-page2 .container .conlist ul li .img img {
   width: auto;
+}
+
+.web-page2 .container .conlist ul li P {
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+  .web-page2 .container .conlist ul li P {
+    font-size: .1rem !important;
+  }
 }
 
 .web-page2 .container .conlist ul li p:nth-child(2) {
@@ -212,17 +240,23 @@ body {
 }
 
 .web-page2 .container .conlist ul li .btn {
-  background-color: #834ee6;
-  border: .03rem solid #fce26c;
   border-radius: .12rem;
   overflow: hidden;
+  width: 6rem;
+  height: 1.25rem;
   margin-bottom: 1.9rem;
+}
+
+@media screen and (max-width: 768px) {
+  .web-page2 .container .conlist ul li .btn {
+    width: 2rem;
+    height: .6rem;
+    margin-bottom: .9rem;
+  }
 }
 
 .web-page2 .container .conlist ul li .btn a {
   display: block;
-  width: 6rem;
-  height: 1.25rem;
   line-height: 1.25rem;
   font-weight: 900;
   font-size: .38rem;
@@ -231,14 +265,34 @@ body {
   white-space: nowrap;
 }
 
+@media screen and (max-width: 768px) {
+  .web-page2 .container .conlist ul li .btn a {
+    font-size: .15rem;
+    line-height: .6rem;
+  }
+}
+
 .web-page2 .container .conlist ul li.money {
   padding-right: .75rem;
+}
+
+@media screen and (max-width: 768px) {
+  .web-page2 .container .conlist ul li.money {
+    padding-right: .3rem;
+  }
 }
 
 .web-page2 .container .conlist ul li.money .img {
   width: 4.63rem;
   height: 4.2rem;
   float: right;
+}
+
+@media screen and (max-width: 768px) {
+  .web-page2 .container .conlist ul li.money .img {
+    width: 2.31rem;
+    height: 2.1rem;
+  }
 }
 
 .web-page2 .container .conlist ul li.money .img img {
@@ -261,6 +315,11 @@ body {
   padding-right: 1rem;
 }
 
+.web-page2 .container .conlist ul li.money .btn {
+  border: .03rem solid #fce26c;
+  float: right;
+}
+
 .web-page2 .container .conlist ul li.money .btn a {
   color: #feea66;
   background: -webkit-gradient(linear, left top, left bottom, from(#7a3dea), to(#8907ab));
@@ -271,9 +330,22 @@ body {
   padding-left: .75rem;
 }
 
+@media screen and (max-width: 768px) {
+  .web-page2 .container .conlist ul li.redbox {
+    padding-left: .3rem;
+  }
+}
+
 .web-page2 .container .conlist ul li.redbox .img {
   width: 4.83rem;
   height: 4.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .web-page2 .container .conlist ul li.redbox .img {
+    width: 2.4rem;
+    height: 2.1rem;
+  }
 }
 
 .web-page2 .container .conlist ul li.redbox .img img {
@@ -290,11 +362,10 @@ body {
 }
 
 .web-page2 .container .conlist ul li.redbox .btn {
-  border: .03rem solid #f4c3ff;
+  border: .03rem solid #eab9f7;
 }
 
 .web-page2 .container .conlist ul li.redbox .btn a {
-  border: .02rem solid #eab9f7;
   color: #57016a;
   background-color: #c835e8;
 }
@@ -305,8 +376,8 @@ body {
 
 .web-page3 .container {
   background-image: url("../images/bgicon4.png"), url("../images/bgicon4.png");
-  background-repeat: no-repeat,no-repeat;
-  background-size: 4.6rem,6.8rem;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 4.6rem, 6.8rem;
   background-position: left -0.6rem top 0.6rem, bottom 1.5rem right -1.8rem;
 }
 
@@ -363,7 +434,7 @@ body {
   padding-left: .52rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: .02rem solid #ecd378;
+  border: .03rem solid #ecd378;
   border-radius: .1rem;
 }
 
@@ -429,7 +500,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding-top: .4rem;
-  border: .02rem solid #e761e1;
+  border: .03rem solid #e761e1;
   border-radius: .1rem;
 }
 

@@ -7,45 +7,56 @@ $bg-2:#fd6a70;
 $bg-3:#7a3de8;
 
 @mixin tablet {
-    @media screen and ( max-width:992px) {
+    @media screen and (max-width:992px) {
         @content;
     }
 }
-// !!!!!到底喂蛇么clinetwidth跟右上角不一漾
-@mixin break($point) {
-    @media screen and (max-width:$point){
-        @content; 
+
+@mixin phone {
+    @media screen and (max-width:768px) {
+        @content;
     }
 }
 
-*{
+// !!!!!到底喂蛇么clinetwidth跟右上角不一漾
+@mixin break($point) {
+    @media screen and (max-width:$point) {
+        @content;
+    }
+}
+
+* {
     // outline: 1px red solid;
 }
-html{
+
+html {
     font-size: 100px;
     -webkit-overflow-scrolling: touch;
     // font-family: arialMT;
-    font-family: "Microsoft JhengHei","Heiti TC","sans-self";
-    
+    font-family: "Microsoft JhengHei", "Heiti TC", "sans-self";
+
     // @include tablet(){
     //     font-size: 60px;
     // }
     // @include break(1100px){
     //     font-size: 90px;
     // }
-    @include break(768px){
-        h1,h2,h3,p.span{
-            font-size: 80%;
-        }
+    @include break(768px) {
+        // h1,h2,h3,p,span{
+        //     font-size: 60% !important;
+        // }
     }
 
 }
-body{
-    font-size: 16px;
+
+body {
+    // font-size: 16px;
 }
-.wrapper{
-    background-color:$bg;
-    .container{
+
+.wrapper {
+    background-color: $bg;
+
+    .container {
         // max-width: 11rem;
         // max-width: 16.6rem;
         // max-width: 13rem;
@@ -57,79 +68,99 @@ body{
 
         box-sizing: border-box;
         margin: 0 auto;
+
+        @include phone() {
+            max-width: 100%;
+            padding: 0 .24rem;
+        }
     }
 
 }
 
 // ===================================================================
 
-.web-page1{
-    background: linear-gradient(180deg, #FF6C6C 0%, #C835E8 76%);;
-    .container  {
+.web-page1 {
+    background: linear-gradient(180deg, #FF6C6C 0%, #C835E8 76%);
+    ;
+
+    .container {
         padding-top: 1rem;
         display: flex;
         background-image: url("../images/bgicon1.png"),
-        url("../images/bgicon1-reverse.png");
-        background-repeat: no-repeat,no-repeat;
-        background-size: 2rem,2rem;
-        background-position: left .8rem top .5rem,right 0.5rem top .55rem;
+            url("../images/bgicon1-reverse.png");
+        background-repeat: no-repeat, no-repeat;
+        background-size: 2rem, 2rem;
+        background-position: left .8rem top .5rem, right 0.5rem top .55rem;
 
-        @include break(768px){
+        @include phone() {
             flex-direction: column;
-            align-items:center;
-            justify-content: center;//為什麼不適這個
+            align-items: center;
+            justify-content: center; //為什麼不適這個
+            background-size: 1rem, 1rem;
+            background-position: left .8rem top .5rem, right 0.5rem top .55rem;
         }
 
-        .page1-img{
+        .page1-img {
             width: 7.78rem;
             // width: 50%;
             margin-bottom: .7rem; //flex 只有左邊下推 右邊也會自動伸展
 
-            img{
+            @include phone() {
+                order: 2;
+                width: 5.6rem;
+            }
+
+            img {
                 width: 100%;
                 height: auto;
             }
 
-            @include break(768px){
-                order: 2;
-                width: 9.18rem;
-            }
         }
 
-        .page1-txt{
+        .page1-txt {
             // width: 5.5rem;
             flex: 1;
             // width: 50%;
-            
+
             text-align: center;
             display: flex;
             flex-flow: column;
             // align-items: center;
             justify-content: center;
-            @include break(768px){
+
+            @include phone() {
                 order: 1;
                 margin-bottom: .8rem;
             }
+
             // ====這個要嘛padding寫死 要嘛寬度百分比
-            &>div.box{
+            &>div.box {
                 box-sizing: border-box;
                 padding: 0 1rem;
                 // margin-top: .1rem; //!flex跟中空margin的組合
-                margin-top: -.45rem;//會把下面也往上帶!! 但跑出紅線破版原因
-                @include break(768px){
+                margin-top: -.45rem; //會把下面也往上帶!! 但跑出紅線破版原因
+
+                @include phone(){
+                    padding: 0 1.6rem;
                     margin-top: 0;
                 }
-                p{
-                border-bottom: 1px solid white;
-                padding-bottom: .1rem;
-                // max-width: 3rem;
-                // margin: 0 auto;
-                font-size: .38rem;
-                white-space: nowrap;
+
+                p {
+                    border-bottom: 1px solid white;
+                    padding-bottom: .1rem;
+                    // max-width: 3rem;
+                    // margin: 0 auto;
+                    font-size: .38rem;
+                    white-space: nowrap;
+                    @include phone(){
+                        font-size: .28rem;
+                        
+                    }
+
                 }
             }
-            
-            h1{
+
+            h1 {
                 // max-width: 4rem;
                 // margin: 0 auto;
                 font-size: .61rem;
@@ -137,57 +168,69 @@ body{
                 padding: 0 .8rem;
                 margin-top: .2rem;
                 white-space: nowrap;
+                @include phone(){
+                    font-size: .51rem;
+                    line-height: .6rem;
+                }
 
             }
         }
 
-        
+
 
 
 
     }
-    
+
 }
 
 // ===================================================================
 
 
-.web-page2{
+.web-page2 {
+
     // background-image: url("../images/bgicon3.png");
     // background-repeat: no-repeat;
     // background-size: 2.8rem;
     // background-position: left 1.5rem bottom 2.6rem;//不行 這樣根本會被切掉幹
-    .container{
+    .container {
         background-image: url("../images/bgicon1.png"),
-        url("../images/bgicon2.png"),
-        url("../images/bgicon3.png");
+            url("../images/bgicon2.png"),
+            url("../images/bgicon3.png");
         background-color: #c835e8;
-        background-repeat: no-repeat,no-repeat;
-        background-size: 2rem,2rem,2.8rem;
-        background-position: left 1.5rem top .4rem, right .7rem top 1.9rem,left 0rem bottom 2.6rem;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 1rem, 1rem, 1.8rem;
+        background-position: left 1.5rem top .4rem, right .7rem top 1.9rem, left 0rem bottom 2.6rem;
 
-        .title{
+        .title {
             padding-top: 1rem;
-            margin-bottom: .25rem;//上top下bottom
+            margin-bottom: .25rem; //上top下bottom
             text-align: center;
-            p:nth-child(1){
+
+            p:nth-child(1) {
                 font-size: .4rem;
             }
-            p:nth-child(2){
-                padding: .15rem 0;//到底哪來的紅線跟放大字體就出線的航高
+
+            p:nth-child(2) {
+                padding: .15rem 0; //到底哪來的紅線跟放大字體就出線的航高
                 font-size: .6rem;
             }
-            p:nth-child(3){
+
+            p:nth-child(3) {
                 font-size: .3rem;
             }
         }
+
         // 這邊還有另一種切法inline-block縮 +flex column
-        .conlist{
-            ul{
+        .conlist {
+            ul {
                 display: flex;
-                li{
+
+                li {
                     // width: 5.5rem;//不需要這個 會縮成內容大小
-                    .img{
+                    flex-basis: 50%;
+
+                    .img {
                         // width: 4.63rem;//兩張圖大小不一 右邊大
                         // width: 4.83rem;//也可以
                         // width: 3.3rem;
@@ -196,25 +239,36 @@ body{
                         // padding-bottom: 90%;//為什麼變不行
                         // padding-bottom: 3rem;
                         position: relative;
-                        img{
+                       
+
+                        img {
                             // position: absolute;
                             // width: 100%;
                             // height: 100%;
                             // object-fit: fill;
-                            width: auto;//!!!寬度設auto 變成高度自動適應!!!不對這到底什麼魔法
+                            width: auto; //!!!寬度設auto 變成高度自動適應!!!不對這到底什麼魔法
                             // 怎麼處理寬度大小不一
                         }
                     }
-                    p:nth-child(2){
+
+                    P {
+                        white-space: nowrap;
+                        @include phone(){
+                            font-size: .1rem !important;
+                        }
+                    }
+
+                    p:nth-child(2) {
                         font-size: .23rem;
                         font-weight: bold;
                         // padding: .2rem 0;
                         // margin-top: -.2rem;//為何只有右邊吃到
                         // position: relative;
                         // top: -.1rem;
-                        
+
                     }
-                    p:nth-child(3){
+
+                    p:nth-child(3) {
                         font-size: .36rem;
                         font-weight: bold;
                         padding: .1rem 0 0;
@@ -222,100 +276,137 @@ body{
                         margin-bottom: .6rem;
 
                     }
-                    
-                    .btn{
+
+                    .btn {
                         // width: 4rem;
                         // height: .5rem;
-                        background-color: rgb(131, 78, 230);
-                        border: .03rem solid #fce26c;
+                        // background-color: rgb(131, 78, 230);
                         border-radius: .12rem;
                         overflow: hidden;
-                        margin-bottom: 1.9rem;//還好margin下面不會推破
-                        a{
+                        width: 6rem;
+                        height: 1.25rem;
+                        margin-bottom: 1.9rem; //還好margin下面不會推破
+                        @include phone(){
+                            width: 2rem;
+                            height: .6rem;
+                            margin-bottom: .9rem;
+                        }
+                        a {
                             display: block;
-                            width: 6rem;
-                            height: 1.25rem;
+                            // width: 6rem;
+                            // height: 1.25rem;
                             line-height: 1.25rem;
                             font-weight: 900;
                             font-size: .38rem;
                             text-align: center;
-                            text-decoration: none;//為何無效
+                            text-decoration: none; //為何無效
                             white-space: nowrap;
+                            @include phone(){
+                                font-size: .15rem;
+                                line-height: .6rem;
+                            }
 
 
                         }
                     }
                 }
 
-                li.money{
+                li.money {
                     // overflow: hidden;
                     padding-right: .75rem;
-                    .img{
+                    @include phone(){
+                        padding-right: .3rem;
+                    }
+
+                    .img {
                         width: 4.63rem;
                         height: 4.2rem;
                         float: right;
+                        @include phone(){
+                            width: 2.31rem;
+                            height: 2.1rem;
+                        }
+
                         // &::after{ //為何家這邊沒用了
                         //     content: "";
                         //     display: block;
                         //     clear: both;
                         //     overflow: hidden;
                         // }
-                        img{
+                        img {
                             width: 100%;
                         }
                     }
-                    .img + p{
+
+                    .img+p {
                         clear: both;
                     }
 
-                    p{
+                    p {
                         text-align: right;
-
                         // &:nth-child(2){
                         //     padding-right: 1.2rem;
                         // }
                     }
-                    p:nth-child(2){
+
+                    p:nth-child(2) {
                         padding-right: 1.2rem;
-                        
-                    }
-                    p:nth-child(3){
-                        padding-right:1rem;
 
                     }
 
-                    .btn{
-                        a{
+                    p:nth-child(3) {
+                        padding-right: 1rem;
+
+                    }
+
+                    .btn {
+                        border: .03rem solid #fce26c;
+                        float: right; //後面沒有飄上來
+
+                        a {
                             color: #feea66;
-                            background:linear-gradient(180deg, #7a3dea 0%, #8907ab 100%);
+                            background: linear-gradient(180deg, #7a3dea 0%, #8907ab 100%);
                         }
-                        
+
                     }
                 }
 
-                li.redbox{
+                li.redbox {
                     padding-left: .75rem;
-                    .img{
+                    @include phone(){
+                        padding-left: .3rem;
+                    }
+
+                    .img {
                         width: 4.83rem;
                         height: 4.2rem;
-                        img{
+                        @include phone(){
+                            width: 2.4rem;
+                            height: 2.1rem;
+                        }
+
+                        img {
                             width: 100%;
                         }
                     }
 
-                    p:nth-child(2){
+                    p:nth-child(2) {
                         padding-left: 2.2rem;
                     }
-                    p:nth-child(3){
+
+                    p:nth-child(3) {
                         padding-left: 0.1rem;
                         letter-spacing: 0.01rem;
-                        
+
                     }
 
-                    .btn{
-                        border: .03rem solid #f4c3ff;
-                        a{
-                            border: .02rem solid #eab9f7;
+                    .btn {
+                        // border: .03rem solid #f4c3ff;
+                        // width: 6rem;
+                        // height: 1.25rem;
+                        border: .03rem solid #eab9f7; //為和.02rem邊框就不見
+
+                        a {
                             color: #57016a;
                             background-color: $bg;
                         }
@@ -329,87 +420,98 @@ body{
 
 // =========================================================
 
-.web-page3{
+.web-page3 {
     background-color: $bg-3;
-    .container{
-    background-image: url("../images/bgicon4.png"),url("../images/bgicon4.png");
-    background-repeat: no-repeat,no-repeat;
-    background-size: 4.6rem,6.8rem;
-    background-position: left -0.6rem top 0.6rem, bottom 1.5rem right -1.8rem;
-        .title{
+
+    .container {
+        background-image: url("../images/bgicon4.png"), url("../images/bgicon4.png");
+        background-repeat: no-repeat, no-repeat;
+        background-size: 4.6rem, 6.8rem;
+        background-position: left -0.6rem top 0.6rem, bottom 1.5rem right -1.8rem;
+
+        .title {
             padding-top: 1.6rem;
             text-align: center;
+
             // margin-bottom: 1rem;
-            h2{
+            h2 {
                 font-size: .4rem;
                 font-weight: bolder;
                 margin-bottom: .45rem;
             }
 
-            p{
+            p {
                 font-size: .3rem;
             }
         }
 
-        .slider{
+        .slider {
             padding-top: 1rem;
-            margin-bottom: 1rem;//mike大哉問 到底這邊margin好還是padding 丸子
-            .swiper-container{
+            margin-bottom: 1rem; //mike大哉問 到底這邊margin好還是padding 丸子
+
+            .swiper-container {
                 // display: flex;
                 // width: 10rem;
                 // min-width: 6.05rem;會報
                 // width: 6.05rem;
                 width: 10.05rem;
                 margin: 0 auto;
-                .swiper-slide{
+
+                .swiper-slide {
+
                     // padding: 0 .2rem;
                     // box-sizing: border-box;
-                    .box{
+                    .box {
                         width: 1.21rem;
                         height: 1.21rem;
                         margin: 0 auto;
+
                         // width: 1.21rem !important;
                         // height: 1.21rem !important;
-                        img{
+                        img {
                             width: 100%;
                         }
                     }
                 }
-                
+
             }
         }
 
-        .amount{
+        .amount {
             // margin-bottom: 1.1rem;//!!!挖靠會報出去
             padding-bottom: 1.1rem;
-            .btn{
+
+            .btn {
                 width: 7rem;
                 height: 1rem;
                 line-height: 1rem;
                 margin: 0 auto;
                 display: flex;
                 align-items: center;
-                padding-left:.52rem;
+                padding-left: .52rem;
                 box-sizing: border-box;
-                border: .02rem solid #ecd378;
+                border: .03rem solid #ecd378;
                 border-radius: .1rem;
-                .pop{
+
+                .pop {
                     width: .68rem;
                     height: .57rem;
                     margin-top: -.12rem;
                     margin-right: .4rem;
-                    img{
+
+                    img {
                         width: 100%;
                         // width: auto;
                     }
                 }
 
-                p{
+                p {
                     font-size: .36rem;
                     font-weight: bold;
                     white-space: nowrap;
-                    span{
-                        display: inline-block;//inline-block的必要性??
+
+                    span {
+                        display: inline-block; //inline-block的必要性??
                         font-size: .6rem;
                         margin-right: .15rem;
                     }
@@ -421,26 +523,29 @@ body{
 
 // ============================================================
 
-.web-page4{
+.web-page4 {
 
-    .container{
-        
-        .title{
-            padding-top:1.3rem;
+    .container {
+
+        .title {
+            padding-top: 1.3rem;
             margin-bottom: .6rem;
-            h2{
+
+            h2 {
                 font-size: .4rem;
                 font-weight: bold;
                 text-align: center;
             }
         }
 
-        .conlist{
+        .conlist {
             margin-bottom: 1.9rem;
-            ul{
+
+            ul {
                 display: flex;
                 justify-content: space-around;
-                li{
+
+                li {
                     width: 4.8rem;
                     height: 5.35rem;
                     box-sizing: border-box;
@@ -449,48 +554,58 @@ body{
                     // justify-content: center;
                     align-items: center;
                     padding-top: .4rem;
-                    border: .02rem solid #e761e1;
+                    border: .03rem solid #e761e1;
+                    // border: .02rem solid #e761e1;
                     border-radius: .1rem;
-                    .img{
+
+                    .img {
                         margin-left: .15rem;
-                        img{
+
+                        img {
                             width: auto;
                         }
                     }
 
-                    h3{
+                    h3 {
                         font-size: .3rem;
                         font-weight: bold;
                         padding: .2rem .1rem .15rem;
                         border-bottom: .02rem solid white;
                         white-space: nowrap;
                     }
-                    p{
+
+                    p {
                         font-size: .24rem;
                         white-space: nowrap;
                     }
-                    p:nth-child(3){
+
+                    p:nth-child(3) {
                         padding: .15rem 0;
                     }
-                    p:nth-child(4){
+
+                    p:nth-child(4) {
                         padding: .05rem 0;
                     }
-            
+
                 }
-                li:nth-child(1){
-                    .img{
+
+                li:nth-child(1) {
+                    .img {
                         width: 2.38rem;
                         height: 2.73rem;
-                        img{
+
+                        img {
                             width: 100%;
                         }
                     }
                 }
-                li:nth-child(2){
-                    .img{
+
+                li:nth-child(2) {
+                    .img {
                         width: 2.47rem;
                         height: 2.73rem;
-                        img{
+
+                        img {
                             width: 100%;
                         }
                     }
@@ -502,8 +617,8 @@ body{
 
 // =========================================================
 
-.web-footer{
-    p{
+.web-footer {
+    p {
         height: 1.2rem;
         line-height: 1.2rem;
         font-size: .24rem;
