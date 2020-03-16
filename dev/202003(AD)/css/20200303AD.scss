@@ -1,0 +1,229 @@
+@import "reset.css";
+@import "template.css";
+@import "_init.scss";
+@import "20200303AD.css";
+$bg:#a410cf;
+
+html{
+    -webkit-overflow-scrolling: touch;
+}
+
+
+.wrapper{
+    background-color: $bg;
+}
+
+.web-page1{
+    background: url("../images/topbg1.png") no-repeat;
+    background-position: center,top;
+    background-size: cover;
+    height: 6.49rem;
+    .container{
+        .page-txt{
+            h3,h1,p{
+                color: transparent !important;
+                user-select: none;
+            }
+        }
+    }
+}
+
+.web-page2{
+    background: url("../images/topbg2.png") no-repeat;
+    background-position: center,top;
+    background-size: cover;
+    height: 4.5rem;
+    margin-top: -.15rem;
+
+    .container{
+        form.zhuizong{
+            width: 6.9rem;
+            height: 4.3rem;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            padding:.55rem .4rem .45rem;
+            box-sizing: border-box;
+            border-radius: .2rem;
+            box-shadow: 0 .04rem .10rem 0 rgba(0, 0, 0, .4);
+            background-image: linear-gradient(180deg, #794dca 0%, #d01151 85%);
+            input{
+                display: block;
+                width: 100%;
+                background: white;
+                border-radius: .15rem;
+                border: none;
+                height: .65rem;
+                line-height: .65rem;
+                padding-left: .25rem;
+                box-sizing: border-box;
+                
+               
+            }
+            input::-webkit-input-placeholder{
+                color: #722a88;
+                font-weight: 600;
+                font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+                letter-spacing: .03rem;
+            }
+            .form-item1{
+                margin-bottom: .2rem;
+                input#phone{
+                    font-size: .24rem;
+                    display: block;
+                }
+            }
+            .form-item2{
+                margin-bottom: .2rem;
+                input#upwd{
+                    font-size: .24rem;
+                }
+            }
+
+            .yan-wrapper{
+                display: flex;
+                align-items: center !important;
+                margin-bottom: .25rem;
+                .form-item{
+                    flex-grow: 0;
+                    flex-basis: 3.4rem;
+                    input#yanZ{
+                        font-size: .24rem;
+                    }
+                }
+
+                .yanzheng{
+                    margin-left: auto;
+                    a{
+                        font-size: .24rem;
+                        width: 2.5rem;
+                        height: .6rem;
+                        line-height: .6rem;
+                        color: #fdfdfd;
+                        font-weight: 400;
+                        border-radius: .1rem;
+                        text-align: center;
+                        border: .01rem solid #fb76e0;
+                        background-image: linear-gradient(180deg, #9712b3 0%, #d533f8 100%);
+                        letter-spacing: .04rem;
+                    }
+
+                    .phonecode{
+                        height: .6rem;
+                    }
+                    .re-btn{
+                        // display: none;
+                        height: .6rem;
+                    }
+                }
+            }
+            .button-a{
+                a.submit{
+                    font-size: .3rem;
+                    height: .65rem;
+                    line-height: .65rem;
+                    color: #0e27c6;
+                    background-color: #cea755;
+                    border-radius: .15rem;
+                    text-align: center;
+                    background-image: linear-gradient(180deg, #fdde9d 0%, #caa34f 100%);
+                    letter-spacing: .04rem;
+                }
+            }
+        }
+    }
+}
+
+.web-page3{
+    .container{
+        .title{
+            padding: .7rem 0 .85rem;
+            h2{
+                font-size: .6rem;
+                text-align: center;
+                color: #fff4b6;
+                letter-spacing: .04rem;
+            }
+        }
+
+        ul.layout{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            li:nth-child(odd){position: relative;left: 0.1rem;}
+            li:nth-child(even){position: relative;right: 0.1rem;}
+            li:nth-child(1){margin-bottom: 1.2rem;}
+            li:nth-child(2){margin-bottom: 1.2rem;}
+            li{
+                .icon{
+                    width: 2.89rem;
+                    height: 2.88rem;
+                    img{
+                        width: 100%;
+                    }
+                }
+                h3{
+                    font-size: .3rem;
+                    text-align: center;
+                    font-weight: 500;
+                    letter-spacing: .04rem;
+                    color: #ffdf71;
+                    padding: .25rem 0 .3rem;
+                }
+                p{
+                    font-size: .24rem;
+                    font-weight: 300;
+                    letter-spacing: .05rem;
+                    text-align: center;
+                    color: #fdfdfd;
+                }
+            }
+        }
+    }
+}
+
+.web-page4{
+
+    .container{
+        .title{
+            padding-top: 1rem;
+            margin-bottom: .25rem;
+            h2{
+                font-size: .6rem;
+                text-align: center;
+                color: #fff4b6;
+                letter-spacing: .04rem;
+                margin-bottom: .3rem;
+            }
+            p{
+                font-size: .3rem;
+                text-align: center;
+                color: #fdfdfd;
+                letter-spacing: .04rem;
+                font-weight: 300;
+            }
+        }
+    }
+
+    .mark{
+        width: 3.93rem;
+        height: 3.88rem;
+        margin: 0 auto .7rem;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+
+.web-footer{
+    background-color: #5c00db;
+    p{
+        font-size: .24rem;
+        text-align: center;
+        font-weight: 300;
+        color: #d6d4d4;
+        letter-spacing: .02rem;
+        padding: .28rem 0 .25rem;
+    }
+}

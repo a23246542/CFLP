@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/20200303AD.css">
+    <title>Document</title>
+    <script type="text/javascript">
+        !(function (doc, win) {
+            var docEle = doc.documentElement, //获取html元素
+            event = "onorientationchange" in window ? "orientationchange" : "resize", //判断是屏幕旋转还是resize;
+            fn = function () {
+                var width = docEle.clientWidth;
+                console.log(width);
+                width && (docEle.style.fontSize = 100 * (width / 750) + "px"); //设置html的fontSize，随着event的改变而改变。
+            };
+            fn();
+            win.addEventListener(event, fn, false);
+            doc.addEventListener("DOMContentLoaded", fn, false);
+            win.addEventListener("resize",fn,false)
+        }(document, window));
+    
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <section class="web-page1">
+            <div class="container">
+                <div class="page-txt">
+                    <h3>期货投资开户</h3>
+                    <h1>开春行情抢先知</h1>
+                    <p>买涨买跌双向操作</p>
+                </div>
+                <!-- <div class="page-img">
+                    <div class="banner-img">
+                        <img src="" alt="">
+                    </div>
+                </div> -->
+                <div class="page-form">
+                </div>
+            </div>
+        </section>
+        <section class="web-page2">
+            <div class="container">
+                <form action="" method="POST" id="submitForm" class="zhuizong">
+                    <div class="form-item1">
+                        <input type="number" id="phone" name="mobilePhone" maxlength="11" placeholder="请输入手机号码">
+                    </div>
+                    <div class="form-item2">
+                        <input type="text" id="upwd" maxlength="8" name="password" placeholder="请设置登陆密码">
+                    </div>
+                    <div class="yan-wrapper">
+                        <div class="form-item">
+                            <!-- <label for=""></label> -->
+                            <input type="text" id="yanZ" maxlength="4" name="phoneYz" placeholder="请输入验证码">
+                        </div>
+                        <div class="yanzheng">
+                            <div class="phonecode">
+                                <a href="#">获取验证码</a>
+                            </div>
+                            <div class="re-btn" style="display: none;">
+                                <a href="#">重新获取</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-a">
+                        <a class="submit" href="#" id="submitInfo">立即注册领豪礼</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="web-page3">
+            <div class="container">
+                <div class="title">
+                    <h2>期货投资好时期</h2>
+                </div>
+                <ul class="layout">
+                    <li>
+                        <div class="icon">
+                            <img src="./images/icon1.png" alt="">
+                        </div>
+                        <h3>安全正规</h3>
+                        <p>专业平台<br>11年稳健运营</p>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <img src="./images/icon2.png" alt="">
+                        </div>
+                        <h3>易操作</h3>
+                        <p>30秒极速开户<br>专业客服在线指导</p>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <img src="./images/icon3.png" alt="">
+                        </div>
+                        <h3>低门槛</h3>
+                        <p>0佣金<br>13元即可交易</p>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <img src="./images/icon4.png" alt="">
+                        </div>
+                        <h3>机会多</h3>
+                        <p>交易品种丰富<br>行情及时推送</p>
+                    </li>
+            </div>
+        </section>
+        <section class="web-page4">
+            <div class="container">
+                <div class="title">
+                    <h2>期货专家免费指导</h2>
+                    <p>问答功能上线，投资专家在线买时间问答指导<br>
+                    大数据分析行情，买涨买跌一目了然
+                    </p>
+                </div>
+                <div class="mark">
+                    <img src="./images/phonegirl.png" alt="">
+                </div>
+            </div>
+        </section>
+        <div class="web-footer">
+            <p>温馨提示: 投资有风险，入市需谨慎<br>
+            版权为国海良时期货有限公司温州营业部所有，不得转载
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,5 +1,5 @@
-@import url(d:\Users\sam.yang\Documents\CFLP1\202002(VN rem)\202002(VN rem)\css\reset.css);
-@import url(d:\Users\sam.yang\Documents\CFLP1\202002(VN rem)\202002(VN rem)\css\template.css);
+@import url(d:\Users\sam.yang\Documents\CFLP1\202002(VN rem)\css\reset.css);
+@import url(d:\Users\sam.yang\Documents\CFLP1\202002(VN rem)\css\template.css);
 html {
   height: 100%;
   background: rosybrown;
@@ -24,14 +24,16 @@ img {
   display: block;
 }
 
-* {
-  outline: 1px red solid;
-}
-
 html {
   font-size: 100px;
   -webkit-overflow-scrolling: touch;
-  font-family: arialMT;
+  font-family: "Microsoft JhengHei","Heiti TC","sans-self";
+}
+
+@media screen and (max-width: 768px) {
+  html h1, html h2, html h3, html p.span {
+    font-size: 80%;
+  }
 }
 
 body {
@@ -57,22 +59,48 @@ body {
 }
 
 .web-page1 .container {
+  padding-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-image: url("../images/bgicon1.png"), url("../images/bgicon1-reverse.png");
   background-repeat: no-repeat,no-repeat;
-  background-size: .7rem,.8rem;
-  background-position: left .3rem top .5rem,right .2rem top .2rem;
+  background-size: 2rem,2rem;
+  background-position: left .8rem top .5rem,right 0.5rem top .55rem;
+}
+
+@media screen and (max-width: 768px) {
+  .web-page1 .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .web-page1 .container .page1-img {
   width: 7.78rem;
+  margin-bottom: .7rem;
 }
 
 .web-page1 .container .page1-img img {
   width: 100%;
   height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .web-page1 .container .page1-img {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 9.18rem;
+  }
 }
 
 .web-page1 .container .page1-txt {
@@ -92,16 +120,33 @@ body {
           justify-content: center;
 }
 
-.web-page1 .container .page1-txt > div {
+@media screen and (max-width: 768px) {
+  .web-page1 .container .page1-txt {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: .8rem;
+  }
+}
+
+.web-page1 .container .page1-txt > div.box {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 1rem;
+  margin-top: -.45rem;
 }
 
-.web-page1 .container .page1-txt > div p {
+@media screen and (max-width: 768px) {
+  .web-page1 .container .page1-txt > div.box {
+    margin-top: 0;
+  }
+}
+
+.web-page1 .container .page1-txt > div.box p {
   border-bottom: 1px solid white;
   padding-bottom: .1rem;
   font-size: .38rem;
+  white-space: nowrap;
 }
 
 .web-page1 .container .page1-txt h1 {
@@ -110,13 +155,20 @@ body {
           box-sizing: border-box;
   padding: 0 .8rem;
   margin-top: .2rem;
+  white-space: nowrap;
 }
 
 .web-page2 .container {
-  padding-top: .3rem;
+  background-image: url("../images/bgicon1.png"), url("../images/bgicon2.png"), url("../images/bgicon3.png");
+  background-color: #c835e8;
+  background-repeat: no-repeat,no-repeat;
+  background-size: 2rem,2rem,2.8rem;
+  background-position: left 1.5rem top .4rem, right .7rem top 1.9rem,left 0rem bottom 2.6rem;
 }
 
 .web-page2 .container .title {
+  padding-top: 1rem;
+  margin-bottom: .25rem;
   text-align: center;
 }
 
@@ -148,18 +200,23 @@ body {
 }
 
 .web-page2 .container .conlist ul li p:nth-child(2) {
-  font-size: .18rem;
-  position: relative;
-  top: -.1rem;
+  font-size: .23rem;
+  font-weight: bold;
 }
 
 .web-page2 .container .conlist ul li p:nth-child(3) {
-  font-size: .25rem;
-  padding: 0 0 .1rem;
+  font-size: .36rem;
+  font-weight: bold;
+  padding: .1rem 0 0;
+  margin-bottom: .6rem;
 }
 
 .web-page2 .container .conlist ul li .btn {
   background-color: #834ee6;
+  border: .03rem solid #fce26c;
+  border-radius: .12rem;
+  overflow: hidden;
+  margin-bottom: 1.9rem;
 }
 
 .web-page2 .container .conlist ul li .btn a {
@@ -167,14 +224,15 @@ body {
   width: 6rem;
   height: 1.25rem;
   line-height: 1.25rem;
-  font-weight: bold;
+  font-weight: 900;
   font-size: .38rem;
   text-align: center;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .web-page2 .container .conlist ul li.money {
-  padding-right: .6rem;
+  padding-right: .75rem;
 }
 
 .web-page2 .container .conlist ul li.money .img {
@@ -203,8 +261,14 @@ body {
   padding-right: 1rem;
 }
 
+.web-page2 .container .conlist ul li.money .btn a {
+  color: #feea66;
+  background: -webkit-gradient(linear, left top, left bottom, from(#7a3dea), to(#8907ab));
+  background: linear-gradient(180deg, #7a3dea 0%, #8907ab 100%);
+}
+
 .web-page2 .container .conlist ul li.redbox {
-  padding-left: .6rem;
+  padding-left: .75rem;
 }
 
 .web-page2 .container .conlist ul li.redbox .img {
@@ -217,11 +281,22 @@ body {
 }
 
 .web-page2 .container .conlist ul li.redbox p:nth-child(2) {
-  padding-left: 1.2rem;
+  padding-left: 2.2rem;
 }
 
 .web-page2 .container .conlist ul li.redbox p:nth-child(3) {
-  padding-left: 1rem;
+  padding-left: 0.1rem;
+  letter-spacing: 0.01rem;
+}
+
+.web-page2 .container .conlist ul li.redbox .btn {
+  border: .03rem solid #f4c3ff;
+}
+
+.web-page2 .container .conlist ul li.redbox .btn a {
+  border: .02rem solid #eab9f7;
+  color: #57016a;
+  background-color: #c835e8;
 }
 
 .web-page3 {
@@ -229,10 +304,14 @@ body {
 }
 
 .web-page3 .container {
-  padding-top: .8rem;
+  background-image: url("../images/bgicon4.png"), url("../images/bgicon4.png");
+  background-repeat: no-repeat,no-repeat;
+  background-size: 4.6rem,6.8rem;
+  background-position: left -0.6rem top 0.6rem, bottom 1.5rem right -1.8rem;
 }
 
 .web-page3 .container .title {
+  padding-top: 1.6rem;
   text-align: center;
 }
 
@@ -302,6 +381,7 @@ body {
 .web-page3 .container .amount .btn p {
   font-size: .36rem;
   font-weight: bold;
+  white-space: nowrap;
 }
 
 .web-page3 .container .amount .btn p span {
@@ -318,6 +398,11 @@ body {
 .web-page4 .container .title h2 {
   font-size: .4rem;
   font-weight: bold;
+  text-align: center;
+}
+
+.web-page4 .container .conlist {
+  margin-bottom: 1.9rem;
 }
 
 .web-page4 .container .conlist ul {
@@ -331,6 +416,25 @@ body {
 .web-page4 .container .conlist ul li {
   width: 4.8rem;
   height: 5.35rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: .4rem;
+  border: .02rem solid #e761e1;
+  border-radius: .1rem;
+}
+
+.web-page4 .container .conlist ul li .img {
+  margin-left: .15rem;
 }
 
 .web-page4 .container .conlist ul li .img img {
@@ -340,10 +444,22 @@ body {
 .web-page4 .container .conlist ul li h3 {
   font-size: .3rem;
   font-weight: bold;
+  padding: .2rem .1rem .15rem;
+  border-bottom: .02rem solid white;
+  white-space: nowrap;
 }
 
 .web-page4 .container .conlist ul li p {
   font-size: .24rem;
+  white-space: nowrap;
+}
+
+.web-page4 .container .conlist ul li p:nth-child(3) {
+  padding: .15rem 0;
+}
+
+.web-page4 .container .conlist ul li p:nth-child(4) {
+  padding: .05rem 0;
 }
 
 .web-page4 .container .conlist ul li:nth-child(1) .img {
@@ -365,6 +481,11 @@ body {
 }
 
 .web-footer p {
+  height: 1.2rem;
+  line-height: 1.2rem;
   font-size: .24rem;
+  text-align: center;
+  color: white;
+  background-color: #7a3de8;
 }
 /*# sourceMappingURL=style.css.map */

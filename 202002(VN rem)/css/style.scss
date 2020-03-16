@@ -11,7 +11,7 @@ $bg-3:#7a3de8;
         @content;
     }
 }
-
+// !!!!!到底喂蛇么clinetwidth跟右上角不一漾
 @mixin break($point) {
     @media screen and (max-width:$point){
         @content; 
@@ -19,12 +19,13 @@ $bg-3:#7a3de8;
 }
 
 *{
-    outline: 1px red solid;
+    // outline: 1px red solid;
 }
 html{
     font-size: 100px;
     -webkit-overflow-scrolling: touch;
-    font-family: arialMT;
+    // font-family: arialMT;
+    font-family: "Microsoft JhengHei","Heiti TC","sans-self";
     
     // @include tablet(){
     //     font-size: 60px;
@@ -32,6 +33,11 @@ html{
     // @include break(1100px){
     //     font-size: 90px;
     // }
+    @include break(768px){
+        h1,h2,h3,p.span{
+            font-size: 80%;
+        }
+    }
 
 }
 body{
@@ -60,22 +66,36 @@ body{
 .web-page1{
     background: linear-gradient(180deg, #FF6C6C 0%, #C835E8 76%);;
     .container  {
-
+        padding-top: 1rem;
         display: flex;
         background-image: url("../images/bgicon1.png"),
         url("../images/bgicon1-reverse.png");
         background-repeat: no-repeat,no-repeat;
-        background-size: .7rem,.8rem;
-        background-position: left .3rem top .5rem,right .2rem top .2rem;
+        background-size: 2rem,2rem;
+        background-position: left .8rem top .5rem,right 0.5rem top .55rem;
+
+        @include break(768px){
+            flex-direction: column;
+            align-items:center;
+            justify-content: center;//為什麼不適這個
+        }
+
         .page1-img{
             width: 7.78rem;
             // width: 50%;
+            margin-bottom: .7rem; //flex 只有左邊下推 右邊也會自動伸展
 
             img{
                 width: 100%;
                 height: auto;
             }
+
+            @include break(768px){
+                order: 2;
+                width: 9.18rem;
+            }
         }
+
         .page1-txt{
             // width: 5.5rem;
             flex: 1;
@@ -86,17 +106,26 @@ body{
             flex-flow: column;
             // align-items: center;
             justify-content: center;
-
+            @include break(768px){
+                order: 1;
+                margin-bottom: .8rem;
+            }
             // ====這個要嘛padding寫死 要嘛寬度百分比
-            &>div{
+            &>div.box{
                 box-sizing: border-box;
                 padding: 0 1rem;
+                // margin-top: .1rem; //!flex跟中空margin的組合
+                margin-top: -.45rem;//會把下面也往上帶!! 但跑出紅線破版原因
+                @include break(768px){
+                    margin-top: 0;
+                }
                 p{
                 border-bottom: 1px solid white;
                 padding-bottom: .1rem;
                 // max-width: 3rem;
                 // margin: 0 auto;
                 font-size: .38rem;
+                white-space: nowrap;
                 }
             }
             
@@ -107,6 +136,7 @@ body{
                 box-sizing: border-box;
                 padding: 0 .8rem;
                 margin-top: .2rem;
+                white-space: nowrap;
 
             }
         }
@@ -123,16 +153,28 @@ body{
 
 
 .web-page2{
-
+    // background-image: url("../images/bgicon3.png");
+    // background-repeat: no-repeat;
+    // background-size: 2.8rem;
+    // background-position: left 1.5rem bottom 2.6rem;//不行 這樣根本會被切掉幹
     .container{
-        padding-top: .3rem;
+        background-image: url("../images/bgicon1.png"),
+        url("../images/bgicon2.png"),
+        url("../images/bgicon3.png");
+        background-color: #c835e8;
+        background-repeat: no-repeat,no-repeat;
+        background-size: 2rem,2rem,2.8rem;
+        background-position: left 1.5rem top .4rem, right .7rem top 1.9rem,left 0rem bottom 2.6rem;
+
         .title{
+            padding-top: 1rem;
+            margin-bottom: .25rem;//上top下bottom
             text-align: center;
             p:nth-child(1){
                 font-size: .4rem;
             }
             p:nth-child(2){
-                padding: .15rem 0;
+                padding: .15rem 0;//到底哪來的紅線跟放大字體就出線的航高
                 font-size: .6rem;
             }
             p:nth-child(3){
@@ -164,16 +206,20 @@ body{
                         }
                     }
                     p:nth-child(2){
-                        font-size: .18rem;
+                        font-size: .23rem;
+                        font-weight: bold;
                         // padding: .2rem 0;
                         // margin-top: -.2rem;//為何只有右邊吃到
-                        position: relative;
-                        top: -.1rem;
+                        // position: relative;
+                        // top: -.1rem;
                         
                     }
                     p:nth-child(3){
-                        font-size: .25rem;
-                        padding: 0 0 .1rem;
+                        font-size: .36rem;
+                        font-weight: bold;
+                        padding: .1rem 0 0;
+                        // padding: 0 0 .1rem;
+                        margin-bottom: .6rem;
 
                     }
                     
@@ -181,15 +227,20 @@ body{
                         // width: 4rem;
                         // height: .5rem;
                         background-color: rgb(131, 78, 230);
+                        border: .03rem solid #fce26c;
+                        border-radius: .12rem;
+                        overflow: hidden;
+                        margin-bottom: 1.9rem;//還好margin下面不會推破
                         a{
                             display: block;
                             width: 6rem;
                             height: 1.25rem;
                             line-height: 1.25rem;
-                            font-weight: bold;
+                            font-weight: 900;
                             font-size: .38rem;
                             text-align: center;
                             text-decoration: none;//為何無效
+                            white-space: nowrap;
 
 
                         }
@@ -198,7 +249,7 @@ body{
 
                 li.money{
                     // overflow: hidden;
-                    padding-right: .6rem;
+                    padding-right: .75rem;
                     .img{
                         width: 4.63rem;
                         height: 4.2rem;
@@ -230,11 +281,20 @@ body{
                     }
                     p:nth-child(3){
                         padding-right:1rem;
+
+                    }
+
+                    .btn{
+                        a{
+                            color: #feea66;
+                            background:linear-gradient(180deg, #7a3dea 0%, #8907ab 100%);
+                        }
+                        
                     }
                 }
 
                 li.redbox{
-                    padding-left: .6rem;
+                    padding-left: .75rem;
                     .img{
                         width: 4.83rem;
                         height: 4.2rem;
@@ -244,10 +304,21 @@ body{
                     }
 
                     p:nth-child(2){
-                        padding-left: 1.2rem;
+                        padding-left: 2.2rem;
                     }
                     p:nth-child(3){
-                        padding-left: 1rem;
+                        padding-left: 0.1rem;
+                        letter-spacing: 0.01rem;
+                        
+                    }
+
+                    .btn{
+                        border: .03rem solid #f4c3ff;
+                        a{
+                            border: .02rem solid #eab9f7;
+                            color: #57016a;
+                            background-color: $bg;
+                        }
                     }
                 }
             }
@@ -261,9 +332,12 @@ body{
 .web-page3{
     background-color: $bg-3;
     .container{
-        padding-top: .8rem;
-
+    background-image: url("../images/bgicon4.png"),url("../images/bgicon4.png");
+    background-repeat: no-repeat,no-repeat;
+    background-size: 4.6rem,6.8rem;
+    background-position: left -0.6rem top 0.6rem, bottom 1.5rem right -1.8rem;
         .title{
+            padding-top: 1.6rem;
             text-align: center;
             // margin-bottom: 1rem;
             h2{
@@ -333,6 +407,7 @@ body{
                 p{
                     font-size: .36rem;
                     font-weight: bold;
+                    white-space: nowrap;
                     span{
                         display: inline-block;//inline-block的必要性??
                         font-size: .6rem;
@@ -356,19 +431,28 @@ body{
             h2{
                 font-size: .4rem;
                 font-weight: bold;
+                text-align: center;
             }
         }
 
         .conlist{
-
+            margin-bottom: 1.9rem;
             ul{
                 display: flex;
                 justify-content: space-around;
                 li{
                     width: 4.8rem;
                     height: 5.35rem;
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: column;
+                    // justify-content: center;
+                    align-items: center;
+                    padding-top: .4rem;
+                    border: .02rem solid #e761e1;
+                    border-radius: .1rem;
                     .img{
-
+                        margin-left: .15rem;
                         img{
                             width: auto;
                         }
@@ -377,11 +461,21 @@ body{
                     h3{
                         font-size: .3rem;
                         font-weight: bold;
+                        padding: .2rem .1rem .15rem;
+                        border-bottom: .02rem solid white;
+                        white-space: nowrap;
                     }
                     p{
                         font-size: .24rem;
+                        white-space: nowrap;
                     }
-                    
+                    p:nth-child(3){
+                        padding: .15rem 0;
+                    }
+                    p:nth-child(4){
+                        padding: .05rem 0;
+                    }
+            
                 }
                 li:nth-child(1){
                     .img{
@@ -410,6 +504,11 @@ body{
 
 .web-footer{
     p{
+        height: 1.2rem;
+        line-height: 1.2rem;
         font-size: .24rem;
+        text-align: center;
+        color: white;
+        background-color: $bg-3;
     }
 }
