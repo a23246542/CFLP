@@ -5,6 +5,7 @@
 $bg:#c835e8;
 $bg-2:#fd6a70;
 $bg-3:#7a3de8;
+$gold:#ffeb66;
 
 @mixin tablet {
     @media screen and (max-width:992px) {
@@ -33,7 +34,7 @@ html {
     font-size: 100px;
     -webkit-overflow-scrolling: touch;
     // font-family: arialMT;
-    font-family: "Microsoft JhengHei", "Heiti TC", "sans-self";
+    // font-family: "Microsoft JhengHei", "Heiti TC", "sans-self";
 
     // @include tablet(){
     //     font-size: 60px;
@@ -72,6 +73,8 @@ body {
         @include phone() {
             max-width: 100%;
             padding: 0 .24rem;
+            overflow: hidden;//!!!发现竟然可以避免f12缩到320以下破版 造成的左右卷轴出现无法回复
+            // 追踪hahow麦克回复的
         }
     }
 
@@ -96,18 +99,20 @@ body {
             flex-direction: column;
             align-items: center;
             justify-content: center; //為什麼不適這個
-            background-size: 1rem, 1rem;
-            background-position: left .8rem top .5rem, right 0.5rem top .55rem;
+            background-size: 1.1rem, 1.2rem;
+            background-position: left 0.7rem top 3.9rem, 
+                                right 0.2rem top 0.85rem;
         }
 
         .page1-img {
             width: 7.78rem;
             // width: 50%;
-            margin-bottom: .7rem; //flex 只有左邊下推 右邊也會自動伸展
-
+            margin-bottom: .7rem; //flex 只有左邊下推 右邊也會自動伸展 然后父曾也称开了!!
+            
             @include phone() {
                 order: 2;
                 width: 5.6rem;
+                margin-bottom: .3rem;
             }
 
             img {
@@ -154,12 +159,9 @@ body {
                     white-space: nowrap;
                     @include phone(){
                         font-size: .28rem;
-                        
                     }
-
                 }
             }
-
             h1 {
                 // max-width: 4rem;
                 // margin: 0 auto;
@@ -168,8 +170,9 @@ body {
                 padding: 0 .8rem;
                 margin-top: .2rem;
                 white-space: nowrap;
+                color: $gold;
                 @include phone(){
-                    font-size: .51rem;
+                    font-size: .56rem;
                     line-height: .6rem;
                 }
 
@@ -199,32 +202,98 @@ body {
             url("../images/bgicon3.png");
         background-color: #c835e8;
         background-repeat: no-repeat, no-repeat;
-        background-size: 1rem, 1rem, 1.8rem;
-        background-position: left 1.5rem top .4rem, right .7rem top 1.9rem, left 0rem bottom 2.6rem;
-
+        background-size: 1rem, 1rem, 1.3rem;
+        background-position: left 1.5rem top .4rem, 
+                            right .7rem top 1.9rem, 
+                            left -0.1rem bottom 1.4rem;
+        @include phone(){
+            background-size: 1.2rem, 1rem, 1.3rem;
+            background-position: left 0.1rem top 0.4rem, 
+                        right 0.2rem top 2.3rem, 
+                        left -0.5rem bottom 1.3rem;
+        }
         .title {
             padding-top: 1rem;
             margin-bottom: .25rem; //上top下bottom
             text-align: center;
+            @include phone(){
+                padding-top: .8rem;
+                margin-bottom: .55rem;
+            }
 
             p:nth-child(1) {
                 font-size: .4rem;
+                font-weight: bold;
+                @include phone(){
+                    font-size: .34rem;
+                }
             }
 
             p:nth-child(2) {
                 padding: .15rem 0; //到底哪來的紅線跟放大字體就出線的航高
                 font-size: .6rem;
+                font-weight: bold;
+                color: $gold;
+                @include phone(){
+                    font-size: .5rem;
+                }
             }
 
             p:nth-child(3) {
                 font-size: .3rem;
+                color: $gold;
+                @include phone(){
+                    font-size: .27rem;
+                }
             }
         }
 
         // 這邊還有另一種切法inline-block縮 +flex column
         .conlist {
+
             ul {
                 display: flex;
+                position: relative;
+                &::before{
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    width: 0.8rem;
+                    height: 0.23rem;
+                    background-color: #ffeb66;
+                    left: 50%;
+                    top: 1.7rem;
+                    transform: translate(-50%,-50%);
+                    // -webkit-transform: translate(-50%,-50%);
+                    // -moz-transform: translate(-50%,-50%);
+                    // -ms-transform: translate(-50%,-50%);
+                    // -o-transform: translate(-50%,-50%);
+                    @include phone(){
+                        width: .5rem;
+                        height: .15rem;
+                        top: 1rem;
+                    }
+                }
+                &::after{
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    width: 0.23rem;
+                    height: 0.8rem;
+                    background-color: #ffeb66;
+                    left: 50%;
+                    top: 1.7rem;
+                    transform: translate(-50%,-50%);
+                    // -webkit-transform: translate(-50%,-50%);
+                    // -moz-transform: translate(-50%,-50%);
+                    // -ms-transform: translate(-50%,-50%);
+                    // -o-transform: translate(-50%,-50%);
+                    @include phone(){
+                        width: .15rem;
+                        height: .5rem;
+                        top: 1rem;
+                    }
+                }
 
                 li {
                     // width: 5.5rem;//不需要這個 會縮成內容大小
@@ -253,9 +322,9 @@ body {
 
                     P {
                         white-space: nowrap;
-                        @include phone(){
-                            font-size: .1rem !important;
-                        }
+                        // @include phone(){
+                        //     font-size: .22rem !important;
+                        // }
                     }
 
                     p:nth-child(2) {
@@ -265,15 +334,26 @@ body {
                         // margin-top: -.2rem;//為何只有右邊吃到
                         // position: relative;
                         // top: -.1rem;
+                        @include phone(){
+                            font-size: .2rem;
+                        }
 
                     }
 
                     p:nth-child(3) {
                         font-size: .36rem;
-                        font-weight: bold;
+                        font-weight: 600;
                         padding: .1rem 0 0;
+                        color: $gold;
                         // padding: 0 0 .1rem;
+                        // font-family: Helvetica, sans-serif;
+                        // font-family: "Microsoft JhengHei","Heiti TC","sans-self";
+                        // font-family: "Heiti TC","sans-self";
                         margin-bottom: .6rem;
+                        @include phone(){
+                            font-size: .23rem;
+                            margin-bottom: .25rem;
+                        }
 
                     }
 
@@ -286,8 +366,12 @@ body {
                         width: 6rem;
                         height: 1.25rem;
                         margin-bottom: 1.9rem; //還好margin下面不會推破
+                        box-shadow: .09rem .09rem .1rem .01rem rgba(0,0,0,.25);
+                        // box-shadow: 9px 9px 10px 1px rgba(0,0,0,.25);
                         @include phone(){
-                            width: 2rem;
+                            // width: 2.7rem;
+                            // height: .55rem;
+                            width: 3rem;
                             height: .6rem;
                             margin-bottom: .9rem;
                         }
@@ -303,10 +387,17 @@ body {
                             white-space: nowrap;
                             @include phone(){
                                 font-size: .15rem;
+                                // line-height: .55rem;
                                 line-height: .6rem;
                             }
-
-
+                            
+                            @media screen and (max-width:768px) and (min-width:500px) {
+                                font-size: .2rem !important;//特别处理
+                            }
+                            @media screen and (max-width:320px) {
+                                letter-spacing: -.03rem !important;
+                            }
+                            
                         }
                     }
                 }
@@ -323,8 +414,9 @@ body {
                         height: 4.2rem;
                         float: right;
                         @include phone(){
-                            width: 2.31rem;
-                            height: 2.1rem;
+                            width: 2.7rem;
+                            // height: 2.1rem;
+                            height: auto;
                         }
 
                         // &::after{ //為何家這邊沒用了
@@ -351,11 +443,17 @@ body {
 
                     p:nth-child(2) {
                         padding-right: 1.2rem;
+                        @include phone(){
+                            padding-right: .5rem;
+                        }
 
                     }
 
                     p:nth-child(3) {
                         padding-right: 1rem;
+                        @include phone(){
+                            padding-right: .5rem;
+                        }
 
                     }
 
@@ -381,8 +479,10 @@ body {
                         width: 4.83rem;
                         height: 4.2rem;
                         @include phone(){
-                            width: 2.4rem;
-                            height: 2.1rem;
+                            width: 2.8rem;
+                            // height: 2.1rem;//手機圖片外面div auto就rwd了!
+                            height: auto;
+                            margin-bottom: .015rem;
                         }
 
                         img {
@@ -392,11 +492,20 @@ body {
 
                     p:nth-child(2) {
                         padding-left: 2.2rem;
+                        @include phone(){
+                            padding-left: 1rem;
+                        }
                     }
 
                     p:nth-child(3) {
                         padding-left: 0.1rem;
                         letter-spacing: 0.01rem;
+                        @include phone(){
+                            padding-left: 0rem;
+                            letter-spacing: 0;
+                            font-size: .25rem;
+                            margin-bottom: .23rem;
+                        }
 
                     }
 
@@ -404,7 +513,7 @@ body {
                         // border: .03rem solid #f4c3ff;
                         // width: 6rem;
                         // height: 1.25rem;
-                        border: .03rem solid #eab9f7; //為和.02rem邊框就不見
+                        border: .032rem solid #eab9f7; //為和.02rem邊框就不見
 
                         a {
                             color: #57016a;
@@ -428,7 +537,11 @@ body {
         background-repeat: no-repeat, no-repeat;
         background-size: 4.6rem, 6.8rem;
         background-position: left -0.6rem top 0.6rem, bottom 1.5rem right -1.8rem;
-
+        @include phone(){
+            background-size: 3.9rem, 4.5rem;
+            background-position: left -1.2rem top 0.2rem, 
+                                bottom 2.6rem right -2.2rem;
+        }
         .title {
             padding-top: 1.6rem;
             text-align: center;
@@ -438,10 +551,25 @@ body {
                 font-size: .4rem;
                 font-weight: bolder;
                 margin-bottom: .45rem;
+                color: $gold;
+                @include phone(){
+                    font-size: 0.32rem;
+                    line-height: .4rem;
+                    white-space: nowrap;
+                    margin-bottom: .4rem;
+                }
             }
 
             p {
                 font-size: .3rem;
+                @include phone(){
+                    font-size: .26rem;
+                }
+                span{
+                    margin: 0 .1rem;
+                    color: $gold;
+                    
+                }
             }
         }
 
@@ -456,6 +584,9 @@ body {
                 // width: 6.05rem;
                 width: 10.05rem;
                 margin: 0 auto;
+                @include phone(){
+                    width: 6rem;
+                }
 
                 .swiper-slide {
 
@@ -478,9 +609,11 @@ body {
         }
 
         .amount {
-            // margin-bottom: 1.1rem;//!!!挖靠會報出去
+            // margin-bottom: 1.1rem;//!!!挖靠會報出去 可是web-page1的img就不会啊
             padding-bottom: 1.1rem;
-
+            @include phone(){
+                padding-bottom: 1rem;
+            }
             .btn {
                 width: 7rem;
                 height: 1rem;
@@ -491,13 +624,23 @@ body {
                 padding-left: .52rem;
                 box-sizing: border-box;
                 border: .03rem solid #ecd378;
-                border-radius: .1rem;
-
+                border-radius: .25rem;
+                background-color: $bg-3;
+                @include phone(){
+                    width: 5.7rem;
+                    padding-left: .22rem;
+                }
                 .pop {
                     width: .68rem;
                     height: .57rem;
                     margin-top: -.12rem;
                     margin-right: .4rem;
+                    @include phone(){
+                        margin-right: .2rem;
+                        width: .58rem;
+                        height: .48rem;
+                        margin-top: -.1rem;
+                    }
 
                     img {
                         width: 100%;
@@ -507,13 +650,20 @@ body {
 
                 p {
                     font-size: .36rem;
-                    font-weight: bold;
+                    font-weight: 600;
                     white-space: nowrap;
+                    
+                    @include phone(){
+                        font-size: .32rem;
+                    }
 
                     span {
                         display: inline-block; //inline-block的必要性??
                         font-size: .6rem;
                         margin-right: .15rem;
+                        @include phone(){
+                            font-size: .45rem;
+                        }
                     }
                 }
             }
@@ -530,20 +680,31 @@ body {
         .title {
             padding-top: 1.3rem;
             margin-bottom: .6rem;
+            @include phone(){
+                padding-top: 1.1rem;
+            }
 
             h2 {
                 font-size: .4rem;
                 font-weight: bold;
                 text-align: center;
+                color: $gold;
             }
         }
 
         .conlist {
             margin-bottom: 1.9rem;
-
+            @include phone(){
+                margin-bottom: 1.1rem;
+            }
             ul {
                 display: flex;
                 justify-content: space-around;
+                @include phone(){
+                    // justify-content: space-between;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
 
                 li {
                     width: 4.8rem;
@@ -557,12 +718,16 @@ body {
                     border: .03rem solid #e761e1;
                     // border: .02rem solid #e761e1;
                     border-radius: .1rem;
-
+                    @include phone(){
+                        // width: 5rem;
+                        width: 5.3rem;
+                        height: 5.8rem;
+                    }
                     .img {
                         margin-left: .15rem;
-
                         img {
-                            width: auto;
+                            // width: auto;//!!!!到底要哪個好
+                            // width: 100%;
                         }
                     }
 
@@ -572,11 +737,17 @@ body {
                         padding: .2rem .1rem .15rem;
                         border-bottom: .02rem solid white;
                         white-space: nowrap;
+                        @include phone(){
+                            font-size: .31rem;
+                        }
                     }
 
                     p {
                         font-size: .24rem;
                         white-space: nowrap;
+                        @include phone(){
+                            font-size: .26rem;
+                        }
                     }
 
                     p:nth-child(3) {
@@ -590,24 +761,46 @@ body {
                 }
 
                 li:nth-child(1) {
+                    @include phone(){
+                        margin-bottom: 1rem;
+                    }
                     .img {
                         width: 2.38rem;
                         height: 2.73rem;
-
+                        @include phone(){
+                            // height: 5rem;
+                            // width: auto;//對齁 我是對外面的div做 不是真的img
+                            width: auto;
+                            height: auto;
+                        }
                         img {
                             width: 100%;
+                            @include phone(){
+                                height: 3rem;
+                                width: auto;
+                            }
                         }
                     }
                 }
-
                 li:nth-child(2) {
                     .img {
                         width: 2.47rem;
                         height: 2.73rem;
-
+                        @include phone(){
+                            width: auto;
+                            height: auto;
+                        }
                         img {
                             width: 100%;
+                            @include phone(){
+                                height: 3rem;
+                                width: auto;
+                            }
                         }
+                    }
+                    h3{
+                        letter-spacing: -0.01rem;
+                        padding: .2rem .05rem .15rem;
                     }
                 }
             }
@@ -619,8 +812,11 @@ body {
 
 .web-footer {
     p {
-        height: 1.2rem;
-        line-height: 1.2rem;
+        // height: 1.2rem;//div不要写死高度!!除了图片按钮不会折行 这边就要用padding代替line-height垂直志忠
+        // line-height: 1.2rem;
+        padding:.4rem .1rem;
+        box-sizing: border-box;
+        width: 100%;//是否有用处padding 搭配box-sizing ??
         font-size: .24rem;
         text-align: center;
         color: white;
