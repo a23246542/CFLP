@@ -1,5 +1,5 @@
-@import url(d:\Users\sam.yang\Documents\CFLP1\202002(VN rem)\css\reset.css);
-@import url(d:\Users\sam.yang\Documents\CFLP1\202002(VN rem)\css\template.css);
+@import url(d:\Users\sam.yang\Documents\CFLP1\dev\202002(VN rem)\css\reset.css);
+@import url(d:\Users\sam.yang\Documents\CFLP1\dev\202002(VN rem)\css\template.css);
 html {
   height: 100%;
   background: rosybrown;
@@ -22,10 +22,6 @@ h1, h2, h3, p, ul, li, a {
 
 img, a {
   display: block;
-}
-
-* {
-  outline: 1px red solid;
 }
 
 html {
@@ -181,8 +177,8 @@ html {
   background-image: url("../images/bgicon1.png"), url("../images/bgicon2.png"), url("../images/bgicon3.png");
   background-color: #c835e8;
   background-repeat: no-repeat, no-repeat;
-  background-size: 2rem, 2rem, 2.3rem;
-  background-position: left 1.5rem top .4rem,  right .7rem top 1.9rem,  left -0.1rem bottom 2.4rem;
+  background-size: 2rem, 2rem, 3.2rem;
+  background-position: left 1.5rem top .4rem,  right .7rem top 1.9rem,  left -0.1rem bottom 2.6rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -309,7 +305,6 @@ html {
 .web-page2 .container .conlist ul li p:nth-child(2) {
   font-size: .23rem;
   font-weight: bold;
-  margin-top: -.2rem;
 }
 
 @media screen and (max-width: 768px) {
