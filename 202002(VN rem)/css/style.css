@@ -785,8 +785,8 @@ html {
 
 @media screen and (max-width: 768px) {
   .web-page4 .container .conlist ul li:nth-child(1) .img {
+    height: 3rem;
     width: auto;
-    height: auto;
   }
 }
 
@@ -796,7 +796,7 @@ html {
 
 @media screen and (max-width: 768px) {
   .web-page4 .container .conlist ul li:nth-child(1) .img img {
-    height: 3rem;
+    height: 100%;
     width: auto;
   }
 }
@@ -808,8 +808,8 @@ html {
 
 @media screen and (max-width: 768px) {
   .web-page4 .container .conlist ul li:nth-child(2) .img {
+    height: 3rem;
     width: auto;
-    height: auto;
   }
 }
 
@@ -819,7 +819,7 @@ html {
 
 @media screen and (max-width: 768px) {
   .web-page4 .container .conlist ul li:nth-child(2) .img img {
-    height: 3rem;
+    height: 100%;
     width: auto;
   }
 }
@@ -831,9 +831,6 @@ html {
 
 .web-footer p {
   padding: .4rem .1rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 100%;
   font-size: .24rem;
   text-align: center;
   color: white;

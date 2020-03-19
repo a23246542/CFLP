@@ -328,8 +328,10 @@ body {
                     p:nth-child(2) {
                         font-size: .23rem;
                         font-weight: bold;
-                        // padding: .2rem 0;
-                        margin-top: -.2rem;//??為何只有右邊吃到
+                        
+                        margin-top: -.2rem;//??為何只有右邊吃到 原来是因为上面float
+                        // padding-top: .2rem;
+
                         // position: relative;
                         // top: -.1rem;
                         @include phone(){
@@ -403,6 +405,7 @@ body {
                 li.money {
                     // overflow: hidden;
                     padding-right: .75rem;
+                    
                     @include phone(){
                         padding-right: .3rem;
                     }
@@ -411,25 +414,38 @@ body {
                         width: 4.63rem;
                         height: 4.2rem;
                         float: right;
+                        // margin-bottom: .5rem;//往下推浮动还是会飘上来
                         @include phone(){
                             width: 2.7rem;
                             // height: 2.1rem;
                             height: auto;//圖片auto
                         }
 
-                        // &::after{ //為何家這邊沒用了
+                        img {
+                            width: 100%;
+                        }
+                        
+                        // &::after{ //為何家這邊沒用了 家在浮动的东西上面没用
                         //     content: "";
                         //     display: block;
                         //     clear: both;
                         //     overflow: hidden;
                         // }
-                        img {
-                            width: 100%;
-                        }
+
                     }
 
                     .img+p {
                         clear: both;
+                        // &::before{ //这边清除浮动前或后有差!
+                        //     content: '';
+                        //     display: block;
+                        //     clear: both;
+                        // }
+                        // &::after{
+                        //     content: '';
+                        //     display: block;
+                        //     clear: both;
+                        // }
                     }
 
                     p {
@@ -456,8 +472,9 @@ body {
                     }
 
                     .btn {
+                        // display: none;
                         border: .03rem solid #fce26c;
-                        float: right; //後面沒有飄上來
+                        float: right; //後面沒有东西飄上來
 
                         a {
                             color: #feea66;
@@ -702,7 +719,7 @@ body {
                 justify-content: space-around;
                 @include phone(){
                     // justify-content: space-between;
-                    justify-content: center;
+                    justify-content: center;//折行也可以置中
                     flex-wrap: wrap;
                 }
 
@@ -771,14 +788,20 @@ body {
                         @include phone(){
                             // height: 5rem;
                             // width: auto;//對齁 我是對外面的div做 不是真的img
+                            // width: auto;
+                            // height: auto;
+
+                            height: 3rem;
                             width: auto;
-                            height: auto;
+
                         }
                         img {
                             width: 100%;
                             @include phone(){
-                                height: 3rem;
-                                width: auto;
+                                height: 100%;
+                                width: auto;//记得加上覆盖掉100%
+                                // height: 3rem;
+                                // width: auto;
                             }
                         }
                     }
@@ -788,14 +811,18 @@ body {
                         width: 2.47rem;
                         height: 2.73rem;
                         @include phone(){
+                            // width: auto;
+                            // height: auto;
+                            height: 3rem;
                             width: auto;
-                            height: auto;
                         }
                         img {
                             width: 100%;
                             @include phone(){
-                                height: 3rem;
+                                height: 100%;
                                 width: auto;
+                                // height: 3rem;
+                                // width: auto;
                             }
                         }
                     }
@@ -816,8 +843,8 @@ body {
         // height: 1.2rem;//div不要写死高度!!除了图片按钮不会折行 这边就要用padding代替line-height垂直志忠
         // line-height: 1.2rem;
         padding:.4rem .1rem;
-        box-sizing: border-box;
-        width: 100%;//是否有用处padding 搭配box-sizing ??
+        // box-sizing: border-box;
+        // width: 100%;//是否有用处padding 搭配box-sizing ??
         font-size: .24rem;
         text-align: center;
         color: white;
