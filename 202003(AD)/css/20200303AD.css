@@ -99,20 +99,20 @@ h1, h2, h3, p, a {
   letter-spacing: .03rem;
 }
 
-.web-page2 .container form.zhuizong .form-item1 {
+.web-page2 .container form.zhuizong > .form-item:nth-child(1) {
   margin-bottom: .2rem;
 }
 
-.web-page2 .container form.zhuizong .form-item1 input#phone {
+.web-page2 .container form.zhuizong > .form-item:nth-child(1) input#phone {
   font-size: .24rem;
   display: block;
 }
 
-.web-page2 .container form.zhuizong .form-item2 {
+.web-page2 .container form.zhuizong .form-item:nth-child(2) {
   margin-bottom: .2rem;
 }
 
-.web-page2 .container form.zhuizong .form-item2 input#upwd {
+.web-page2 .container form.zhuizong .form-item:nth-child(2) input#upwd {
   font-size: .24rem;
 }
 

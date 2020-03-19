@@ -84,18 +84,20 @@ body{
             // .form-item{
             //     flex: 1;
             // }
-            .form-item1{
+            // .form-item1{
+            &>.form-item:nth-child(1){
+            // .form-item:nth-of-type(1){
                 // flex: 1;//被这个害死 原来表格练flex最刚好
                 margin-bottom: .2rem;
                 input#phone{
                     font-size: .24rem;
                     display: block;
-                    
                     // color: #722a88;
                 }
             }
 
-            .form-item2{
+            // .form-item2{
+            .form-item:nth-child(2){
                 // flex: 1;
                 margin-bottom: .2rem;
                 input#upwd{
