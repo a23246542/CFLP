@@ -1,0 +1,29 @@
+@import url(d:\Users\sam.yang\Documents\CFLP1\202004\PC\css\_template.css);
+html {
+  height: 100%;
+  background: rosybrown;
+  font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+}
+
+body {
+  min-height: 100%;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+img, a {
+  display: block;
+}
+
+.wrapper .container {
+  max-width: 1200px;
+}
+/*# sourceMappingURL=202004pc.css.map */
