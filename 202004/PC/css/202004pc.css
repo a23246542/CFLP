@@ -20,7 +20,7 @@ img, a {
   display: block;
 }
 
-.title-item-structure span, .web-page2 .title .title-item span, .web-page3 .title .title-item span, .web-page4 .title .title-item span, .web-page5 .title .title-item span {
+.title-item-structure span, .web-page2 .title .title-item span, .web-page3 .title .title-item span, .web-page4 .title .title-item span, .web-page5 .title .title-item span, .web-page7 .title .title-item span {
   display: inline-block;
   width: 32px;
   height: 32px;
@@ -28,7 +28,7 @@ img, a {
   background-position: 50% 50%;
 }
 
-.title-item-structure h2, .web-page2 .title .title-item h2, .web-page3 .title .title-item h2, .web-page4 .title .title-item h2, .web-page5 .title .title-item h2 {
+.title-item-structure h2, .web-page2 .title .title-item h2, .web-page3 .title .title-item h2, .web-page4 .title .title-item h2, .web-page5 .title .title-item h2, .web-page7 .title .title-item h2 {
   display: inline-block;
   font-size: 40px;
   font-weight: bold;
@@ -411,6 +411,10 @@ a {
           transform: scale(0.8);
 }
 
+.web-page5 {
+  background-color: #fff;
+}
+
 .web-page5 .title {
   text-align: center;
   padding-top: 75px;
@@ -436,11 +440,153 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.web-page5 .layout ul li {
+  color: #074b6b;
+  text-align: center;
+  font-weight: 500;
+}
+
+.web-page5 .layout ul li > div {
+  width: 260px;
+  height: 264px;
+  margin-bottom: 20px;
+}
+
+.web-page5 .layout ul li > div img {
+  width: 100%;
+}
+
+.web-page5 .layout ul li span {
+  font-size: 26px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.web-page5 .layout ul li p {
+  font-size: 20px;
+}
+
+.web-page6 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#09355a), to(#165266));
+  background-image: linear-gradient(180deg, #09355a 0%, #165266 100%);
+  text-align: center;
 }
 
 .web-page6 .brand ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.web-page6 .brand ul li p {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fec738;
+}
+
+.web-page6 .brand ul li span {
+  font-size: 26px;
+  color: #fff;
+}
+
+.web-page6 .input-box h3 {
+  font-size: 40px;
+  color: white;
+}
+
+.web-page7 {
+  background-color: #333333;
+  color: white;
+}
+
+.web-page7 .line {
+  height: 5px;
+  background-color: #fff;
+}
+
+.web-page7 .title {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.web-page7 .title .title-item {
+  display: inline-block;
+}
+
+.web-page7 .title .title-item h2 {
+  color: white;
+}
+
+.web-page7 .title .title-item span {
+  background-image: url("../images/gift_icon2.png");
+}
+
+.web-page7 .layout {
+  overflow: hidden;
+}
+
+.web-page7 .layout .leftCon1 {
+  float: left;
+  width: 52.5%;
+}
+
+.web-page7 .layout .leftCon1 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.web-page7 .layout .leftCon1 ul li {
+  margin-left: 60px;
+}
+
+.web-page7 .layout .leftCon1 ul li > div {
+  width: 255px;
+  height: 255px;
+}
+
+.web-page7 .layout .leftCon1 ul li > div img {
+  width: 100%;
+  height: auto;
+}
+
+.web-page7 .layout .leftCon1 ul li p {
+  font-size: 23px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.web-page7 .layout .rightCon2 {
+  float: right;
+  width: 47.5%;
+}
+
+.web-page7 .layout .rightCon2 ul {
+  padding-left: 120px;
+}
+
+.web-page7 .layout .rightCon2 ul li {
+  padding-left: 60px;
+}
+
+.web-page7 .layout .rightCon2 ul li p {
+  font-size: 24px;
+  line-height: 80px;
+}
+
+.web-page7 .web-footer {
+  background-color: #333333;
+  padding: 55px 0 45px;
+}
+
+.web-page7 .web-footer .item-1, .web-page7 .web-footer .item-2 {
+  color: #ffffff !important;
+  margin: 0;
+  font-size: 18px;
 }
 /*# sourceMappingURL=202004pc.css.map */

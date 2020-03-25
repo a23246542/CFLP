@@ -442,6 +442,7 @@ a {
 // ================================================================================
 
 .web-page5{
+    background-color: #fff;
     .title{
         text-align: center;
         padding-top: 75px;
@@ -463,8 +464,29 @@ a {
         ul{
             display: flex;
             justify-content: space-between;
+            padding-bottom: 50px;
             li{
+                color: $blue-dark;
+                &>div{
+                    width: 260px;
+                    height: 264px;
+                    margin-bottom: 20px;
+                    
+                    img{
+                        width: 100%;
+                    }
+                }
+                text-align: center;
+                font-weight: 500;
+                span{
+                    font-size: 26px;
+                    display: block;//!!span block才能margin
+                    margin-bottom: 10px;
+                }
 
+                p{
+                    font-size: 20px;
+                }
             }
         }
     }
@@ -474,9 +496,116 @@ a {
 // =============================================================
 
 .web-page6{
+    background-image: linear-gradient(180deg,#09355a 0%,#165266 100%);
+    text-align: center;//繼承
     .brand{
         ul{
             display: flex;
+            justify-content: space-around;
+            li{
+                p{
+                    font-size: 36px;
+                    font-weight: bold;
+                    color: #fec738;
+                }
+                span{
+                    font-size: 26px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .input-box{
+        h3{
+            font-size: 40px;
+            color: white;
+        }
+    }
+}
+
+
+
+// ================================================================
+
+.web-page7{
+    background-color: #333333;
+    color: white;
+    .line{
+        height: 5px;
+        background-color: #fff;
+    }
+    .title{
+        text-align: center;
+        padding-top: 80px;
+        .title-item{
+            display: inline-block;
+             @extend .title-item-structure;
+             h2{
+                color:white;
+             }
+             span{
+                background-image: url("../images/gift_icon2.png");
+             }
+        }
+       
+    }
+    .layout{
+        overflow: hidden;
+        .leftCon1{
+            float: left;
+            width: 52.5%;
+            ul{
+                display: flex;
+                // justify-content: space-around;
+                
+                li{
+                    margin-left: 60px;
+                    &>div{
+                        width: 255px;
+                        height: 255px;
+                        img{
+                            // object-fit: cover;//????完全沒用
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+
+                    p{
+                        font-size: 23px;
+                        margin-top: 40px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .rightCon2{
+            float: right;
+            width: 47.5%;
+        
+            ul{
+                padding-left: 120px;
+                li{
+                    padding-left: 60px;
+                    p{
+                        font-size: 24px;
+                        line-height: 80px;
+                    }
+                }
+            }
+        }
+    }
+
+    .web-footer{
+        background-color: #333333;
+        padding: 55px 0 45px;
+        // color: #ffffff !important;//放這邊竟然是沒用的對template
+        // .item-1.item-2{//!!!上下差異 上面是兩個都要有
+        .item-1,.item-2{
+            color: #ffffff !important;
+            margin: 0;
+            font-size: 18px;
         }
     }
 }
