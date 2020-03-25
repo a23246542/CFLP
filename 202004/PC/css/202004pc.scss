@@ -386,26 +386,50 @@ a {
 
             .swiper-wrapper{
                 .swiper-slide{
-                    padding: 0 10px;
-                    box-sizing: border-box;
-                    &:not(.swiper-slide-active) .item{
-                        transform: scale(.8);
-                    }
-                    .item{
-                        background-color: $blue-dark;
-                        padding: 20px;
+                    // padding: 10px;
+                    // box-sizing: border-box;
+                    
+                    .item{ //??下面的空格哪来
+                        // background-color: $blue-dark;
+                        background-color: #fff;
+                        padding: 17px;
                         box-sizing: border-box;
                         &>div{
                             width: 366px;
+                            margin: 0 auto;//插点忘记这样置中就好
                             // height: 160px;
                             img{
                                 width: 100%;
                                 height: auto;
                             }
                         }
+
                         p{
-                            color: #fff;
+                            color: #333333;
+                            font-size: 24px;
                         }
+
+                        p:nth-of-type(1){
+                            padding-top: 25px;
+                        }
+                        p:nth-of-type(2){
+                            padding: 20px;//TODO看这边是否要用text-overflow
+                        }
+                    }
+                    &-active .item{
+                        // .item{
+                            background-color: $blue-dark;
+                            // color: #ffffff;//!!?color 不会寄诚
+                            p{
+                                color: white;
+                            }
+                        // }
+                        
+                    }
+                    &:not(.swiper-slide-active) .item{
+                        transform: scale(.8);
+                        // color: #333333 !important;//自不会见 权重?
+                        // background-color: #fff;
                     }
                 }
             }
@@ -413,4 +437,46 @@ a {
     }
 
 
+}
+
+// ================================================================================
+
+.web-page5{
+    .title{
+        text-align: center;
+        padding-top: 75px;
+        .title-item{
+            @extend .title-item-structure;
+            display: inline-block;
+            h2{
+                color:$blue-dark;
+                margin-bottom: 60px;
+            }
+            span{
+                background-image: url("../images/gift_icon.png");
+            }
+        }
+        
+    }
+
+    .layout{
+        ul{
+            display: flex;
+            justify-content: space-between;
+            li{
+
+            }
+        }
+    }
+}
+
+
+// =============================================================
+
+.web-page6{
+    .brand{
+        ul{
+            display: flex;
+        }
+    }
 }

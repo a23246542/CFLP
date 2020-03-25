@@ -20,7 +20,7 @@ img, a {
   display: block;
 }
 
-.title-item-structure span, .web-page2 .title .title-item span, .web-page3 .title .title-item span, .web-page4 .title .title-item span {
+.title-item-structure span, .web-page2 .title .title-item span, .web-page3 .title .title-item span, .web-page4 .title .title-item span, .web-page5 .title .title-item span {
   display: inline-block;
   width: 32px;
   height: 32px;
@@ -28,7 +28,7 @@ img, a {
   background-position: 50% 50%;
 }
 
-.title-item-structure h2, .web-page2 .title .title-item h2, .web-page3 .title .title-item h2, .web-page4 .title .title-item h2 {
+.title-item-structure h2, .web-page2 .title .title-item h2, .web-page3 .title .title-item h2, .web-page4 .title .title-item h2, .web-page5 .title .title-item h2 {
   display: inline-block;
   font-size: 40px;
   font-weight: bold;
@@ -368,26 +368,16 @@ a {
   background-image: linear-gradient(180deg, #09355a 0%, #165266 100%);
 }
 
-.web-page4 .swiper .swiper-container .swiper-wrapper .swiper-slide {
-  padding: 0 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.web-page4 .swiper .swiper-container .swiper-wrapper .swiper-slide:not(.swiper-slide-active) .item {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
-}
-
 .web-page4 .swiper .swiper-container .swiper-wrapper .swiper-slide .item {
-  background-color: #074b6b;
-  padding: 20px;
+  background-color: #fff;
+  padding: 17px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .web-page4 .swiper .swiper-container .swiper-wrapper .swiper-slide .item > div {
   width: 366px;
+  margin: 0 auto;
 }
 
 .web-page4 .swiper .swiper-container .swiper-wrapper .swiper-slide .item > div img {
@@ -396,6 +386,61 @@ a {
 }
 
 .web-page4 .swiper .swiper-container .swiper-wrapper .swiper-slide .item p {
-  color: #fff;
+  color: #333333;
+  font-size: 24px;
+}
+
+.web-page4 .swiper .swiper-container .swiper-wrapper .swiper-slide .item p:nth-of-type(1) {
+  padding-top: 25px;
+}
+
+.web-page4 .swiper .swiper-container .swiper-wrapper .swiper-slide .item p:nth-of-type(2) {
+  padding: 20px;
+}
+
+.web-page4 .swiper .swiper-container .swiper-wrapper .swiper-slide-active .item {
+  background-color: #074b6b;
+}
+
+.web-page4 .swiper .swiper-container .swiper-wrapper .swiper-slide-active .item p {
+  color: white;
+}
+
+.web-page4 .swiper .swiper-container .swiper-wrapper .swiper-slide:not(.swiper-slide-active) .item {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.web-page5 .title {
+  text-align: center;
+  padding-top: 75px;
+}
+
+.web-page5 .title .title-item {
+  display: inline-block;
+}
+
+.web-page5 .title .title-item h2 {
+  color: #074b6b;
+  margin-bottom: 60px;
+}
+
+.web-page5 .title .title-item span {
+  background-image: url("../images/gift_icon.png");
+}
+
+.web-page5 .layout ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.web-page6 .brand ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=202004pc.css.map */
