@@ -1,0 +1,227 @@
+@import url("reset.css");
+@import url("template.css");
+@import url("swiper.min.css");
+@import "_init.scss";
+
+$dark-blue:#074b6b;
+html{
+    // -webkit-overflow-scrolling: touch;
+    font-size: 16px;
+}
+.title-item-structure {
+    text-align: center;
+    span {
+        //!!这边小图span 行内元素会自动垂直置中?
+        display: inline-block;
+        width: .32rem;
+        height: .32rem;
+        background-image: url("../images/gift_icon.png");
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+
+    h2 {
+        display: inline-block;
+        font-size: .4rem;
+        font-weight: bold;
+        padding: 0 .3rem;
+        color: $dark-blue;
+        margin-bottom: .45px;
+    }
+}
+
+.wrapper{
+    
+    .container{
+        width: 100% !important;
+    }
+}
+
+.web-page1{
+    .container{
+        height: 9.88rem;
+        background: url("../images/M_toppic.png") no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        h1,h2{
+            color: transparent;
+            user-select: none;
+        }
+    }
+}
+
+.web-page2{
+
+    .title{
+        .title-item{
+            @extend .title-item-structure;
+        }
+
+        p{
+            font-size: .24rem;
+            color: #fe3838;
+            text-align: center;
+        }
+    }
+
+    .conList{
+        .swiper-ticket{
+            ul.swiper-wrapper{
+                li.swiper-slide{
+                    // width: 60%;
+                    width: 4.7rem;
+                    box-sizing: content-box;
+                    padding-left: .3rem;
+                    padding-top: .1rem;
+                    padding-bottom: .1rem;
+                    .ticket{
+                        width: 4.7rem;
+                        height: 2.3rem;//結果量不夠高票券下面被吃掉 還cue casper
+                        display: flex;
+                        // border-radius: 15px;
+                        // box-sizing: content-box;
+                        // padding-top: .1rem;
+                        background: url("../images/ticket_bu.png");
+                        background-size: cover;
+                        background-position: 50% 50%;
+                        filter: drop-shadow(0px .01rem .03rem #9db4e7);
+                    }
+                    .ticket-item{
+                        width: 3.25rem;
+                    }
+                    a.receive{
+                        width: 1.45rem;
+                    }
+                }
+            }
+        }   
+    }
+
+    .btn-detail{
+        height: auto;//???高度到底是哪裡來的
+        text-align: center;
+        &>div{
+            display: inline-block;
+            a.btn{
+                color: #fff;
+                font-size: .28rem;
+                background-color: $dark-blue;
+            }
+        }
+    }
+}
+
+// ========================================================
+
+.web-page3{
+    background-image: linear-gradient(180deg,#09355a 0%,#165266 40%);
+    .container{
+        width: 100%;
+        padding: 0 .3rem;
+        .title{
+            .title-item{
+                @extend .title-item-structure;
+                h2{
+                    color: #fff;
+                }
+                span{
+                    background-image: url("../images/gift_icon2.png");
+                }
+            }
+            p{
+                font-size: .28rem;
+                color: #fec738;
+                text-align: center;
+            }
+        }
+
+        .conList{
+            ul{
+                display: flex;
+                justify-content: space-between;
+                li{
+                    &>div{
+                        width: 2.1rem;
+                        height: 2.25rem;//結果也是高度不夠高切掉圖片原本陰影
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                            object-fit: fill;
+                        }
+                    }
+                    h3{
+                        font-size: .25rem;
+                        color: #fff;
+                    }
+                    p{
+                        font-size: .28rem;
+                        color:#eb2929;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ========================================================
+
+.web-page4{
+    background-color: #f2f8ff;
+    .container{
+        width: 100%;
+    }
+
+    .title{
+        .title-item{
+            @extend .title-item-structure;
+        }
+    }
+
+    .swiper-focus.swiper-container{
+        .swiper-wrapper{
+            width: auto;
+            .swiper-slide{
+                // width: 50%;
+                width: 3.6rem;
+
+                .item{
+                    width: 3.3rem;
+                    background-color: $dark-blue;
+                    color: #fff;
+                    &>div{
+                        width: 2.9rem;
+                        height: 1.4rem;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// =============================================================
+
+.web-page5{
+    .container{
+        width: 100%;//不佳會被template蓋過 不如寫順便複習盒子
+        // max-width: 100%;//??這個有意義嗎
+    }
+    .layout{
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            li{
+
+            }
+        }
+    }
+}
+
+// =======================================================
+
+.web-fixed{
+    display: flex;
+}

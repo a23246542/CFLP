@@ -36,19 +36,6 @@ img, a {
   margin-bottom: 45px;
 }
 
-div,
-h1,
-h2,
-h3,
-p,
-span,
-ul,
-li,
-img,
-a {
-  outline: .5px solid red;
-}
-
 .wrapper {
   background-color: #f2f8ff;
 }
@@ -112,7 +99,6 @@ a {
 }
 
 .web-page2 .conList ul {
-  outline: .5px solid red;
   position: relative;
   min-height: 570px;
 }
@@ -125,6 +111,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-filter: drop-shadow(0px 1px 15px #9db4e7);
+          filter: drop-shadow(0px 1px 15px #9db4e7);
 }
 
 .web-page2 .conList ul li.ticket .ticket-item {
@@ -340,6 +328,10 @@ a {
   color: #074b6b;
 }
 
+.web-page4 .swiper {
+  padding-bottom: 60px;
+}
+
 .web-page4 .swiper .swiper-container {
   padding-top: 100px;
 }
@@ -373,6 +365,7 @@ a {
   padding: 17px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border-radius: 20px;
 }
 
 .web-page4 .swiper .swiper-container .swiper-wrapper .swiper-slide .item > div {
@@ -388,6 +381,7 @@ a {
 .web-page4 .swiper .swiper-container .swiper-wrapper .swiper-slide .item p {
   color: #333333;
   font-size: 24px;
+  padding-left: 20px;
 }
 
 .web-page4 .swiper .swiper-container .swiper-wrapper .swiper-slide .item p:nth-of-type(1) {
@@ -395,7 +389,13 @@ a {
 }
 
 .web-page4 .swiper .swiper-container .swiper-wrapper .swiper-slide .item p:nth-of-type(2) {
+  padding: 10px 20px 0px;
+  font-size: 22px;
+}
+
+.web-page4 .swiper .swiper-container .swiper-wrapper .swiper-slide .item p:nth-of-type(3) {
   padding: 20px;
+  font-size: 18px;
 }
 
 .web-page4 .swiper .swiper-container .swiper-wrapper .swiper-slide-active .item {
@@ -409,6 +409,7 @@ a {
 .web-page4 .swiper .swiper-container .swiper-wrapper .swiper-slide:not(.swiper-slide-active) .item {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
+  opacity: .8;
 }
 
 .web-page5 {
@@ -475,6 +476,10 @@ a {
   text-align: center;
 }
 
+.web-page6 .brand {
+  padding-top: 100px;
+}
+
 .web-page6 .brand ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -483,10 +488,22 @@ a {
       justify-content: space-around;
 }
 
+.web-page6 .brand ul li > div {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+
+.web-page6 .brand ul li > div img {
+  width: 100%;
+}
+
 .web-page6 .brand ul li p {
   font-size: 36px;
   font-weight: bold;
   color: #fec738;
+  margin-bottom: 20px;
 }
 
 .web-page6 .brand ul li span {
@@ -494,9 +511,104 @@ a {
   color: #fff;
 }
 
+.web-page6 .input-box {
+  padding-top: 50px;
+}
+
 .web-page6 .input-box h3 {
   font-size: 40px;
   color: white;
+}
+
+.web-page6 .input-box .zhuizong {
+  width: 600px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 30px 40px 0;
+}
+
+.web-page6 .input-box .zhuizong .form-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  height: 65px;
+  padding-left: 25px;
+  border-radius: 6px;
+}
+
+.web-page6 .input-box .zhuizong .form-item > div img {
+  width: auto;
+}
+
+.web-page6 .input-box .zhuizong .form-item input {
+  display: block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: transparent;
+  border: none;
+  line-height: 65px;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.web-page6 .input-box .zhuizong .form-item input::-webkit-input-placeholder {
+  color: #999;
+}
+
+.web-page6 .input-box .zhuizong > .form-item:nth-child(1) {
+  margin-bottom: 35px;
+}
+
+.web-page6 .input-box .zhuizong > .form-item:nth-child(2) {
+  margin-bottom: 40px;
+}
+
+.web-page6 .input-box .zhuizong .form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+
+.web-page6 .input-box .zhuizong .form-wrapper > .form-item {
+  width: 360px;
+}
+
+.web-page6 .input-box .zhuizong .form-wrapper .yanzheng-btn {
+  margin-left: auto;
+}
+
+.web-page6 .input-box .zhuizong .form-wrapper .yanzheng-btn a.btn-phonecode {
+  width: 130px;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1e7395), color-stop(50%, #105183));
+  background-image: linear-gradient(180deg, #1e7395 0%, #105183 50%);
+  border-radius: 5px;
+}
+
+.web-page6 .input-box .zhuizong .btn-account {
+  padding-bottom: 70px;
+}
+
+.web-page6 .input-box .zhuizong .btn-account a.common {
+  font-size: 26px;
+  line-height: 67px;
+  color: white;
+  letter-spacing: 1.5px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1e7395), color-stop(50%, #0e4c81));
+  background-image: linear-gradient(180deg, #1e7395 0%, #0e4c81 50%);
+  border-radius: 6px;
 }
 
 .web-page7 {
@@ -572,6 +684,8 @@ a {
 
 .web-page7 .layout .rightCon2 ul li {
   padding-left: 60px;
+  background: url("../images/footer_icon.png") no-repeat;
+  background-position: left center;
 }
 
 .web-page7 .layout .rightCon2 ul li p {
@@ -581,12 +695,69 @@ a {
 
 .web-page7 .web-footer {
   background-color: #333333;
-  padding: 55px 0 45px;
+  padding: 55px 0 178px;
 }
 
 .web-page7 .web-footer .item-1, .web-page7 .web-footer .item-2 {
   color: #ffffff !important;
   margin: 0;
   font-size: 18px;
+  font-weight: 300;
+}
+
+.web-fixed {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 133px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+}
+
+.web-fixed::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  width: 100%;
+  background-color: #f2f8ff;
+}
+
+.web-fixed .item {
+  margin: 0 160px;
+}
+
+.web-fixed .item a {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#207897), to(#0e4d81));
+  background-image: linear-gradient(180deg, #207897 0%, #0e4d81 100%);
+  width: 270px;
+  height: 80px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.web-fixed .item a p {
+  font-size: 23px;
+  color: #fefefe;
+  padding: 8px 0 8px;
+}
+
+.web-fixed .item a span {
+  font-size: 17px;
+  color: #fefefe;
 }
 /*# sourceMappingURL=202004pc.css.map */

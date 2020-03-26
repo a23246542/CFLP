@@ -40,7 +40,7 @@ ul,
 li,
 img,
 a {
-    outline: .5px solid red;
+    // outline: .5px solid red;
 }
 
 .wrapper {
@@ -110,7 +110,6 @@ a {
         padding-top: 80px;
 
         ul {
-            outline: .5px solid red;
             position: relative;
             min-height: 570px; //min-height的用处 搭配position?? 没有高给高
 
@@ -120,6 +119,8 @@ a {
                 background-image: url("../images/ticket_bu.png");
                 position: absolute;
                 display: flex;
+                filter: drop-shadow(0px 1px 15px #9db4e7);
+                // filter: drop-shadow(1px 1px 15px rgba(45, 42, 73, 0.5));
 
                 .ticket-item {
                     width: 245px;
@@ -350,7 +351,7 @@ a {
     }
 
     .swiper {
-
+        padding-bottom: 60px;
         .swiper-container {
             // width: 1000px;
             // position: relative;//swiper內建
@@ -394,6 +395,7 @@ a {
                         background-color: #fff;
                         padding: 17px;
                         box-sizing: border-box;
+                        border-radius: 20px;
                         &>div{
                             width: 366px;
                             margin: 0 auto;//插点忘记这样置中就好
@@ -407,13 +409,19 @@ a {
                         p{
                             color: #333333;
                             font-size: 24px;
+                            padding-left: 20px;
                         }
 
                         p:nth-of-type(1){
                             padding-top: 25px;
                         }
                         p:nth-of-type(2){
+                            padding: 10px 20px 0px;
+                            font-size: 22px;
+                        }
+                        p:nth-of-type(3){
                             padding: 20px;//TODO看这边是否要用text-overflow
+                            font-size: 18px;
                         }
                     }
                     &-active .item{
@@ -428,6 +436,7 @@ a {
                     }
                     &:not(.swiper-slide-active) .item{
                         transform: scale(.8);
+                        opacity: .8;
                         // color: #333333 !important;//自不会见 权重?
                         // background-color: #fff;
                     }
@@ -499,14 +508,25 @@ a {
     background-image: linear-gradient(180deg,#09355a 0%,#165266 100%);
     text-align: center;//繼承
     .brand{
+        padding-top: 100px;
         ul{
             display: flex;
             justify-content: space-around;
             li{
+                &>div{
+                    width: 150px;
+                    height: 150px;
+                    margin: 0 auto;
+                    margin-bottom: 35px;
+                    img{
+                        width: 100%;
+                    }
+                }
                 p{
                     font-size: 36px;
                     font-weight: bold;
                     color: #fec738;
+                    margin-bottom: 20px;
                 }
                 span{
                     font-size: 26px;
@@ -517,12 +537,92 @@ a {
     }
 
     .input-box{
+        padding-top: 50px;
         h3{
             font-size: 40px;
             color: white;
+            // margin-bottom: 30px;
         }
+        .zhuizong{
+            width: 600px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            padding: 30px 40px 0;
+            .form-item{
+                display: flex;
+                align-items: center;
+                background-color: #fff;
+                height: 65px;
+                padding-left: 25px;
+                border-radius: 6px;
+                // line-height: 65px;//为舌么有时后单独line-height 然后不要放
+                &>div{
+                    img{
+                        width: auto;
+                    }
+                }
+                input{
+                    display: block;
+                    flex: 1;
+                    background: transparent;
+                    border: none;
+                    line-height: 65px;//放这
+                    padding-left: 20px;
+                    font-size: 20px;
+                    &::-webkit-input-placeholder{
+                        // font-size: 20px;
+                        color: #999;
+                    }
+                }
+            }
+            
+            &>.form-item:nth-child(1){
+                margin-bottom: 35px;
+            }
+            &>.form-item:nth-child(2){
+                margin-bottom: 40px;
+            }
+
+            .form-wrapper{
+                display: flex;
+                align-items: center;
+                margin-bottom: 40px;
+                &>.form-item{
+                    width: 360px;
+                }
+                .yanzheng-btn{
+                    margin-left: auto;
+                    a.btn-phonecode{
+                        width: 130px;
+                        line-height: 65px;
+                        font-size: 20px;
+                        // margin-left: auto;//??为舌么又变推不动了 粗心 放错位置
+                        color: white;
+                        background-image: linear-gradient(180deg,#1e7395 0%,#105183 50%);
+                        border-radius: 5px;
+                    }
+                }
+
+            }
+            .btn-account{
+                // margin-bottom: 70px;//果然推出去了
+                padding-bottom: 70px;
+                a.common{
+                    font-size: 26px;
+                    // height: 67px;//??这边就可以拿掉
+                    line-height: 67px;
+                    color: white;
+                    letter-spacing: 1.5px;
+                    background-image: linear-gradient(180deg,#1e7395 0%,#0e4c81 50%);
+                    border-radius: 6px;
+                }
+            }
+        }
+
     }
 }
+
+
 
 
 
@@ -588,6 +688,8 @@ a {
                 padding-left: 120px;
                 li{
                     padding-left: 60px;
+                    background: url("../images/footer_icon.png") no-repeat;
+                    background-position: left center;
                     p{
                         font-size: 24px;
                         line-height: 80px;
@@ -599,13 +701,63 @@ a {
 
     .web-footer{
         background-color: #333333;
-        padding: 55px 0 45px;
+        padding: 55px 0 178px;
+        // margin-bottom: 133px;//还是为显
         // color: #ffffff !important;//放這邊竟然是沒用的對template
         // .item-1.item-2{//!!!上下差異 上面是兩個都要有
         .item-1,.item-2{
             color: #ffffff !important;
             margin: 0;
             font-size: 18px;
+            font-weight: 300;
+        }
+    }
+}
+
+.web-fixed{//!!!切图思维不一样 
+    position: fixed;
+    z-index: 100;//定位不要忘记社z-index!
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 133px;
+    // text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        width: 100%;
+        background-color: #f2f8ff;
+    }
+    .item{ //以前都是先acount 再a
+        // display: inline-block;
+        // vertical-align: middle;//垂直置中失败????
+        // line-height: 133px;
+        margin: 0 160px;//!!!先置中在中间 再依次margin左右 不用特别指margin一编
+        a{
+            background-image: linear-gradient(180deg,#207897 0%,#0e4d81 100%);
+            width: 270px;
+            height: 80px;
+            border-radius: 6px;
+            text-align: center;
+            p{
+                font-size: 23px;
+                color: #fefefe;
+                padding: 8px 0 8px;
+            }
+            span{
+                font-size: 17px;
+                color: #fefefe;
+            }
         }
     }
 }
