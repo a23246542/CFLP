@@ -178,16 +178,35 @@ html{
     }
 
     .swiper-focus.swiper-container{
+        padding-bottom: .75rem;
         .swiper-wrapper{
             width: auto;
             .swiper-slide{
                 // width: 50%;
                 width: 3.6rem;
-
+                // margin: 0 auto;
+                // width: 60%!important;
+                // margin: 0 auto;
+                // padding: 0 .25rem; //這次用paading就失敗了??
+                // box-sizing: content-box;
+                &-prev{
+                    // margin-right: -8%;
+                }
+                &-next{
+                    // margin-left: 8%;
+                }
                 .item{
                     width: 3.3rem;
-                    background-color: $dark-blue;
-                    color: #fff;
+                    margin: 0 auto;
+                    // background-color: $dark-blue;
+                    box-sizing: border-box;
+                    padding: .2rem;
+                    background-color: #fff;
+                    border-radius: .1rem;
+                    color: #333;
+                    opacity: .8;
+                    transform: scale(.8);
+                    transition: all .2s;
                     &>div{
                         width: 2.9rem;
                         height: 1.4rem;
@@ -195,6 +214,22 @@ html{
                             width: 100%;
                         }
                     }
+                    p:nth-of-type(1){
+                        font-size: .26rem;
+                    }
+                    p:nth-of-type(2){
+                        font-size: .24rem;
+                        padding: .1rem 0;
+                    }
+                    p:nth-of-type(3){
+                        font-size: .18rem;
+                    }
+                }
+                &-active .item{
+                    background-color: $dark-blue;
+                    color: #fff;
+                    opacity: 1;
+                    transform: scale(1);
                 }
             }
         }
@@ -208,13 +243,34 @@ html{
     .container{
         width: 100%;//不佳會被template蓋過 不如寫順便複習盒子
         // max-width: 100%;//??這個有意義嗎
+        padding: 0 .3rem;
+    }
+    .title{
+        .title-item{
+            @extend .title-item-structure;
+        }
     }
     .layout{
         ul{
             display: flex;
             flex-wrap: wrap;
+            justify-content: space-between;
             li{
-
+                &>div{
+                    width: 3.45rem;
+                    height: 3.5rem;
+                    img{
+                        width: 100%;
+                    }
+                }
+                color: $dark-blue;
+                text-align: center;
+                span{
+                    font-size: .36rem;
+                }
+                p{
+                    font-size: .28rem;
+                }
             }
         }
     }
