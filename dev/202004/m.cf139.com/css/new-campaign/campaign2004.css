@@ -1,0 +1,454 @@
+@import url("../reset.css");
+@import url("../template.css");
+@import url("../swiper.min-4.0.7.css");
+html {
+  height: 100%;
+  font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+img, a {
+  display: block;
+}
+
+html {
+  font-size: 16px;
+}
+
+.title-item-structure, .web-page2 .title .title-item, .web-page3 .container .title .title-item, .web-page4 .title .title-item, .web-page5 .title .title-item {
+  text-align: center;
+}
+
+.title-item-structure span, .web-page2 .title .title-item span, .web-page3 .container .title .title-item span, .web-page4 .title .title-item span, .web-page5 .title .title-item span {
+  display: inline-block;
+  width: .32rem;
+  height: .32rem;
+  background-image: url("lp-img/mobile/campaign2004/gift_icon.png");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.title-item-structure h2, .web-page2 .title .title-item h2, .web-page3 .container .title .title-item h2, .web-page4 .title .title-item h2, .web-page5 .title .title-item h2 {
+  display: inline-block;
+  font-size: .4rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 .3rem;
+  color: #074b6b;
+  margin-bottom: .45px;
+}
+
+.wrapper .container {
+  width: 100% !important;
+}
+
+.web-page1 .container {
+  height: 9.88rem;
+  background: url("lp-img/mobile/campaign2004/M_toppic.png") no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.web-page1 .container h1, .web-page1 .container h2 {
+  color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.web-page2 {
+  background: #f2f8ff;
+}
+
+.web-page2 .title {
+  padding-top: .25rem;
+  margin-bottom: .5rem;
+}
+
+.web-page2 .title .title-item {
+  margin-bottom: .1rem;
+}
+
+.web-page2 .title p {
+  font-size: .24rem;
+  color: #fe3838;
+  text-align: center;
+  padding: 0 .3rem;
+  line-height: .42rem;
+}
+
+.web-page2 .conList .swiper-ticket ul.swiper-wrapper li.swiper-slide {
+  width: 4.7rem;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding-left: 0.53rem;
+  padding-top: .1rem;
+  padding-bottom: .1rem;
+}
+
+.web-page2 .conList .swiper-ticket ul.swiper-wrapper li.swiper-slide .ticket {
+  width: 100%;
+  height: 2.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url("lp-img/mobile/campaign2004/ticket_bu.png");
+  background-size: cover;
+  background-position: 50% 50%;
+  -webkit-filter: drop-shadow(0px 0.01rem 0.03rem #9db4e7);
+          filter: drop-shadow(0px 0.01rem 0.03rem #9db4e7);
+}
+
+.web-page2 .conList .swiper-ticket ul.swiper-wrapper li.swiper-slide .ticket.red {
+  background-image: url("lp-img/mobile/campaign2004/ticket_red.png");
+  background-size: 100% 100%;
+}
+
+.web-page2 .conList .swiper-ticket ul.swiper-wrapper li.swiper-slide .ticket-item {
+  width: 3.25rem;
+  padding-top: .3rem;
+  text-align: center;
+}
+
+.web-page2 .conList .swiper-ticket ul.swiper-wrapper li.swiper-slide .ticket-item p {
+  font-size: .25rem;
+  color: #2851bd;
+  letter-spacing: .02rem;
+}
+
+.web-page2 .conList .swiper-ticket ul.swiper-wrapper li.swiper-slide .ticket-item span {
+  font-size: .49rem;
+  color: #fec738;
+}
+
+.web-page2 .conList .swiper-ticket ul.swiper-wrapper li.swiper-slide .ticket-item p:nth-child(2) {
+  padding: .07rem;
+}
+
+.web-page2 .conList .swiper-ticket ul.swiper-wrapper li.swiper-slide a.receive {
+  width: 1.45rem;
+}
+
+.web-page2 .btn-detail {
+  text-align: center;
+  margin-top: -.2rem;
+  padding-bottom: .9rem;
+}
+
+.web-page2 .btn-detail > div {
+  display: inline-block;
+}
+
+.web-page2 .btn-detail > div a.btn {
+  width: 3.2rem;
+  height: .75rem;
+  line-height: .75rem;
+  color: #fff;
+  font-size: .28rem;
+  letter-spacing: .01rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#155065), to(#0a375b));
+  background-image: linear-gradient(180deg, #155065 0%, #0a375b 100%);
+  border-radius: .1rem;
+  font-weight: normal;
+  -webkit-box-shadow: 0px 0.11rem 0.08rem 0.02rem rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 0.11rem 0.08rem 0.02rem rgba(0, 0, 0, 0.12);
+}
+
+.web-page3 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#09355a), color-stop(40%, #165266));
+  background-image: linear-gradient(180deg, #09355a 0%, #165266 40%);
+}
+
+.web-page3 .container {
+  width: 100%;
+  padding: 0 .3rem;
+}
+
+.web-page3 .container .title {
+  margin-bottom: 0.7rem;
+}
+
+.web-page3 .container .title .title-item {
+  margin-bottom: .1rem;
+}
+
+.web-page3 .container .title .title-item h2 {
+  color: #fff;
+}
+
+.web-page3 .container .title .title-item span {
+  background-image: url("lp-img/mobile/campaign2004/gift_icon2.png");
+}
+
+.web-page3 .container .title p {
+  font-size: .28rem;
+  color: #fec738;
+  text-align: center;
+  line-height: .48rem;
+}
+
+.web-page3 .container .conList ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 0.8rem;
+}
+
+.web-page3 .container .conList ul li {
+  text-align: center;
+}
+
+.web-page3 .container .conList ul li > div {
+  width: 2.1rem;
+  height: 2.25rem;
+  overflow: hidden;
+  margin-bottom: 0.1rem;
+}
+
+.web-page3 .container .conList ul li > div img {
+  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.web-page3 .container .conList ul li h3 {
+  font-size: .25rem;
+  color: #fff;
+  margin-bottom: .18rem;
+}
+
+.web-page3 .container .conList ul li p {
+  font-size: .28rem;
+  color: #eb2929;
+  width: 1.3rem;
+  height: .5rem;
+  line-height: .5rem;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: .05rem;
+}
+
+.web-page4 {
+  background-color: #f2f8ff;
+}
+
+.web-page4 .container {
+  width: 100%;
+}
+
+.web-page4 .swiper-focus.swiper-container {
+  padding-bottom: .75rem;
+  padding-top: 1.35rem;
+}
+
+.web-page4 .swiper-focus.swiper-container .swiper-pagination-bullets {
+  position: absolute;
+  top: 0.12rem;
+  text-align: center !important;
+}
+
+.web-page4 .swiper-focus.swiper-container .swiper-pagination-bullet {
+  display: inline-block;
+  width: 1.9rem;
+  height: .5rem;
+  line-height: .5rem;
+  text-align: center !important;
+  letter-spacing: .015rem;
+  margin: 0 .15rem;
+  color: #074b6b;
+  background-color: #fff;
+  font-size: .28rem;
+  border-radius: .05rem;
+  opacity: 1;
+  -webkit-box-shadow: 0 0.01rem 0.08rem 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.01rem 0.08rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.web-page4 .swiper-focus.swiper-container .swiper-pagination-bullet-active {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#155065), to(#0a365b));
+  background-image: linear-gradient(180deg, #155065 0%, #0a365b 100%);
+  color: #fff;
+}
+
+.web-page4 .swiper-focus.swiper-container .swiper-wrapper {
+  width: 32.4rem;
+}
+
+.web-page4 .swiper-focus.swiper-container .swiper-wrapper .swiper-slide {
+  width: 3.5rem;
+}
+
+.web-page4 .swiper-focus.swiper-container .swiper-wrapper .swiper-slide .item {
+  width: 3.3rem;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: .2rem;
+  background-color: #fff;
+  border-radius: .1rem;
+  -webkit-box-shadow: 0 0.01rem 0.09rem 0.01rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.01rem 0.09rem 0.01rem rgba(0, 0, 0, 0.1);
+  color: #333;
+  opacity: .8;
+  -webkit-transform: scale(0.93);
+          transform: scale(0.93);
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.web-page4 .swiper-focus.swiper-container .swiper-wrapper .swiper-slide .item > div {
+  width: 2.9rem;
+  height: 1.4rem;
+  margin-bottom: .15rem;
+}
+
+.web-page4 .swiper-focus.swiper-container .swiper-wrapper .swiper-slide .item > div img {
+  width: 100%;
+  height: 100%;
+}
+
+.web-page4 .swiper-focus.swiper-container .swiper-wrapper .swiper-slide .item p {
+  text-align: left;
+}
+
+.web-page4 .swiper-focus.swiper-container .swiper-wrapper .swiper-slide .item p:nth-of-type(1) {
+  font-size: .26rem;
+  font-weight: 500;
+}
+
+.web-page4 .swiper-focus.swiper-container .swiper-wrapper .swiper-slide .item p:nth-of-type(2) {
+  font-size: .24rem;
+  padding: .12rem 0;
+}
+
+.web-page4 .swiper-focus.swiper-container .swiper-wrapper .swiper-slide .item p:nth-of-type(3) {
+  font-size: .18rem;
+  line-height: .26rem;
+}
+
+.web-page4 .swiper-focus.swiper-container .swiper-wrapper .swiper-slide-active .item {
+  background-color: #074b6b;
+  color: #fff;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.web-page5 .container {
+  width: 100%;
+  padding: 0 .3rem;
+}
+
+.web-page5 .title {
+  padding-top: 0.35rem;
+  margin-bottom: .2rem;
+}
+
+.web-page5 .layout ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.web-page5 .layout ul li {
+  padding-bottom: .45rem;
+  color: #074b6b;
+  text-align: center;
+}
+
+.web-page5 .layout ul li > div {
+  width: 3.3rem;
+  height: 3.3rem;
+  margin-bottom: .25rem;
+}
+
+.web-page5 .layout ul li > div img {
+  width: 100%;
+  -webkit-filter: drop-shadow(0px 0px 0.03rem rgba(0, 0, 0, 0.1)) !important;
+          filter: drop-shadow(0px 0px 0.03rem rgba(0, 0, 0, 0.1)) !important;
+}
+
+.web-page5 .layout ul li span {
+  font-size: .36rem;
+  font-weight: bold;
+}
+
+.web-page5 .layout ul li p {
+  font-size: .28rem;
+}
+
+.web-footer {
+  background-color: #333;
+  padding-top: 0;
+  padding-bottom: 1.5rem;
+}
+
+.web-footer > div {
+  padding: .25rem .1rem;
+}
+
+.web-footer > div p {
+  color: #f8f5f5 !important;
+  font-size: .27rem;
+  font-weight: lighter;
+  opacity: .9;
+}
+
+.web-fixed {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #fff;
+  -webkit-box-shadow: inset 0rem 0rem 0.02rem 0.01rem rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0rem 0rem 0.02rem 0.01rem rgba(0, 0, 0, 0.1);
+}
+
+.web-fixed .item > a {
+  padding: .2rem 0;
+}
+
+.web-fixed .item > a > div {
+  width: .66rem;
+  height: .66rem;
+  margin: 0 auto .05rem;
+}
+
+.web-fixed .item > a > div img {
+  width: 100%;
+}
+
+.web-fixed .item > a p {
+  font-size: .28rem;
+  color: #074b6b;
+  text-align: center;
+}
+/*# sourceMappingURL=campaign2004.css.map */
