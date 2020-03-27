@@ -84,7 +84,8 @@ html {
 }
 
 .web-page2 .title p {
-  font-size: .24rem;
+  font-size: .28rem;
+  font-weight: 500;
   color: #fe3838;
   text-align: center;
   padding: 0 .3rem;
