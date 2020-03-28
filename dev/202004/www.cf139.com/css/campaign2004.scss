@@ -173,13 +173,17 @@ section[class*="web-page"]{
                 .ticket-item {
                     width: 290px;
                     font-weight: 500;
-
+                    p{
+                        font-size: 20px;
+                    }
                     p:nth-child(1) {
-                        padding-top: 35px;
+                        padding-top: 32px;
+                        font-size: 22px;
                     }
 
                     span {
                         margin: 0 10px 0 5px;
+                        font-size: 43px;
                     }
                 }
 
@@ -682,18 +686,19 @@ section[class*="web-page"]{
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    &::before{
-        content: "";
-        display: block;
-        position: absolute;
-        z-index: 999;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 4px;
-        width: 100%;
-        background-color: #f2f8ff;
-    }
+    box-shadow: inset 0 0 2px 1px rgba(0,0,0,.3);
+    // &::before{
+    //     content: "";
+    //     display: block;
+    //     position: absolute;
+    //     z-index: 999;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     height: 4px;
+    //     width: 100%;
+    //     background-color: #f2f8ff;
+    // }
     .item{
         margin: 0 160px;
         a{
@@ -702,7 +707,7 @@ section[class*="web-page"]{
             height: 80px;
             border-radius: 6px;
             text-align: center;
-            box-shadow: 0px 5px 12px 0px rgba(0,0,0,.35);
+            box-shadow: 0px 5px 15px 0px rgba(0,0,0,.4);
             p{
                 font-size: 23px;
                 color: #fefefe;

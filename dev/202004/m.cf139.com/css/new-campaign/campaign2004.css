@@ -75,8 +75,8 @@ html {
 }
 
 .web-page2 .title {
-  padding-top: .25rem;
-  margin-bottom: .5rem;
+  padding-top: .3rem;
+  margin-bottom: .3rem;
 }
 
 .web-page2 .title .title-item {
@@ -132,12 +132,21 @@ html {
 }
 
 .web-page2 .conList .swiper-ticket ul.swiper-wrapper li.swiper-slide .ticket-item span {
+  display: inline-block;
   font-size: .49rem;
   color: #fec738;
+  vertical-align: sub;
+  margin-left: .08rem;
+  margin-right: .08rem;
+}
+
+.web-page2 .conList .swiper-ticket ul.swiper-wrapper li.swiper-slide .ticket-item p:nth-child(1) {
+  margin-bottom: .1rem;
 }
 
 .web-page2 .conList .swiper-ticket ul.swiper-wrapper li.swiper-slide .ticket-item p:nth-child(2) {
   padding: .07rem;
+  margin-bottom: .08rem;
 }
 
 .web-page2 .conList .swiper-ticket ul.swiper-wrapper li.swiper-slide a.receive {
@@ -184,6 +193,7 @@ html {
 }
 
 .web-page3 .container .title .title-item {
+  padding-top: .2rem;
   margin-bottom: .1rem;
 }
 
@@ -254,6 +264,10 @@ html {
   width: 100%;
 }
 
+.web-page4 .title {
+  padding-top: .2rem;
+}
+
 .web-page4 .swiper-focus.swiper-container {
   padding-bottom: .75rem;
   padding-top: 1.35rem;
@@ -261,22 +275,24 @@ html {
 
 .web-page4 .swiper-focus.swiper-container .swiper-pagination-bullets {
   position: absolute;
-  top: 0.12rem;
+  top: -0.18rem;
   text-align: center !important;
 }
 
 .web-page4 .swiper-focus.swiper-container .swiper-pagination-bullet {
   display: inline-block;
   width: 1.9rem;
-  height: .5rem;
-  line-height: .5rem;
+  height: .55rem;
+  line-height: .55rem;
   text-align: center !important;
   letter-spacing: .015rem;
-  margin: 0 .15rem;
+  margin: 0 .25rem;
   color: #074b6b;
   background-color: #fff;
   font-size: .28rem;
   border-radius: .05rem;
+  font-weight: 700;
+  font-family: "Ping Fang";
   opacity: 1;
   -webkit-box-shadow: 0 0.01rem 0.08rem 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 0.01rem 0.08rem 0 rgba(0, 0, 0, 0.1);
@@ -290,6 +306,8 @@ html {
 
 .web-page4 .swiper-focus.swiper-container .swiper-wrapper {
   width: 32.4rem;
+  margin-top: -0.3rem;
+  margin-bottom: -0.2rem;
 }
 
 .web-page4 .swiper-focus.swiper-container .swiper-wrapper .swiper-slide {
@@ -398,6 +416,9 @@ html {
 
 .web-page5 .layout ul li p {
   font-size: .28rem;
+  font-weight: bold;
+  line-height: .38rem;
+  text-align: center;
 }
 
 .web-footer {
@@ -407,13 +428,14 @@ html {
 }
 
 .web-footer > div {
-  padding: .25rem .1rem;
+  padding: .2rem .3rem;
 }
 
 .web-footer > div p {
   color: #f8f5f5 !important;
   font-size: .27rem;
-  font-weight: lighter;
+  font-family: "Ping Fang";
+  line-height: .4rem;
   opacity: .9;
 }
 
