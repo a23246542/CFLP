@@ -1,0 +1,38 @@
+.banner-posi{
+    position: relative;
+    z-index: 1;
+    top: -74px;
+    margin-bottom: -74px;
+}
+
+.web-page1.banner-all{
+    width: 100%;
+    height: 0;
+    padding-bottom: 31.25%;//尝试沩元素做法
+    background: url("https://img.getfc.com.cn/source/www/zt/lp-img/pc/campaign2004/banner.png") no-repeat;
+    background-size: 100% 100%;
+    // background-size: cover;
+    background-position: center center;
+
+}
+
+.clearfix{
+    clear: both;//加在哪一个?
+}
+.web-page1.banner-col{
+    width: 100%;
+    .banner-content{
+        width: 100%;
+        overflow: hidden;
+        .f-left{
+            width: 50%;
+            float: left;
+        }
+        .f-right{
+            width: 50%;
+            float: right;
+        }
+
+    }
+
+}

@@ -1,0 +1,112 @@
+
+.input-box .input-tip{
+    height: 34px !important;
+    line-height: 34px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    overflow: hidden;
+    span{
+        font-size: 14px;
+        padding-left: 20px;
+        color: #de3f00!important;
+    }
+}
+
+// =====单独表格版本=======
+
+img,a{
+    display: block;
+    text-decoration: none;
+}
+.web-page6{
+    // .rightCon{
+        background-color:rgb(81, 245, 182);
+        .input-box{
+            padding-top: 50px;
+            h3{
+                font-size: 40px;
+                color: white;
+            }
+            .zhuizong{
+                width: 600px;
+                margin: 0 auto;
+                box-sizing: border-box;
+                padding: 30px 40px 0;
+                .form-item{
+                    display: flex;
+                    align-items: center;
+                    background-color: #fff;
+                    height: 65px;
+                    padding-left: 25px;
+                    box-sizing: border-box !important;
+                    border-radius: 6px;
+                    &>div{
+                        img{
+                            width: auto;
+                        }
+                    }
+                    input{
+                        display: block;
+                        flex: 1;
+                        background: transparent;
+                        border: none;
+                        line-height: 65px;
+                        padding-left: 20px;
+                        font-size: 20px;
+                        &::-webkit-input-placeholder{
+                            color: #999;
+                        }
+                    }
+                }
+                // &>.form-item:nth-child(1){
+                //     margin-bottom: 35px;
+                // }
+                // &>.form-item:nth-child(2){
+                //     margin-bottom: 40px;
+                // }
+                .yan-wrapper{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 40px;
+                    &>.form-item{
+                        width: 360px;
+                    }
+                    .yanzheng-btn{
+                        margin-left: auto;
+                        width: 130px;
+                        height: 65px;
+                        line-height: 65px;
+                        text-align: center;
+                        background-image: linear-gradient(180deg,#1e7395 0%,#105183 50%);
+                        border-radius: 5px;
+                        box-shadow: 0px 3px 7px 0px rgba(0,0,0,.4);
+                        a.btn-phonecode{
+                            font-size: 20px;
+                            color: white;
+                            // display: none;
+                        }
+                        a.re-btn{
+                            font-size: 17px;
+                            color: white;
+                        }
+                    }
+    
+                }
+                .btn-account{
+                    padding-bottom: 70px;
+                    a.common{
+                        font-size: 26px;
+                        line-height: 67px;
+                        color: white;
+                        letter-spacing: 1.5px;
+                        background-image: linear-gradient(180deg,#1e7395 0%,#0e4c81 50%);
+                        border-radius: 6px;
+                        box-shadow: 0px 3px 7px 0px rgba(0,0,0,.3);
+                    }
+                }
+            }
+            
+        }
+    // }
+}

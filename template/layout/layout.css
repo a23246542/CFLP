@@ -1,0 +1,34 @@
+section[class*="web-page"] {
+  width: 100%;
+  min-width: 1200px;
+}
+
+#main {
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #292626;
+}
+
+.inner {
+  overflow: hidden;
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.clearfix {
+  display: block;
+  clear: both;
+}
+
+.clearfix::before {
+  content: "";
+  display: block;
+  visibility: hidden;
+  font-size: 0;
+  height: 0;
+  clear: both;
+}
+/*# sourceMappingURL=layout.css.map */

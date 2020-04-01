@@ -1,0 +1,35 @@
+.title{
+    padding-top: 90px;
+    font-size: 0;
+    div.title-item{
+        text-align: center;
+        h2{
+            display: inline-block;
+            font-size: 40px;
+            font-weight: bold;
+            // padding: 0 30px;
+            margin-bottom: 45px;
+        }
+        // &::before{
+        //     display: inline-block;
+        //     width: 32px;
+        //     height: 32px;
+        //     background-size: 100% 100%;
+        //     background-position: 50% 50%;
+        // }
+        // &::after{
+        //     display: inline-block;
+        //     width: 32px;
+        //     height: 32px;
+        //     background-size: 100% 100%;
+        //     background-position: 50% 50%;
+        // }
+    }
+
+    p.title-p{
+        overflow: hidden;
+        font-size: 18px;
+        text-align: center;
+        margin: 30px auto;//强壮的程式码
+    }
+}

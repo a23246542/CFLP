@@ -1,0 +1,36 @@
+
+
+//非响应是要加这个?
+section[class*="web-page"] {
+    width: 100%;
+    min-width: 1200px;
+}
+
+#main { //我是用或是里面在包wrapper
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #292626;
+}
+// ====================================================
+// template.css里面的
+.inner {  //我是用container
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.clearfix{
+    display: block;
+    clear: both;
+    &::before{
+        content: "";
+        display: block;
+        visibility: hidden;
+        font-size: 0;
+        height: 0;
+        clear: both;
+    }
+}

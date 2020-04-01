@@ -1,0 +1,129 @@
+.input-box .input-tip {
+  height: 34px !important;
+  line-height: 34px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  overflow: hidden;
+}
+
+.input-box .input-tip span {
+  font-size: 14px;
+  padding-left: 20px;
+  color: #de3f00 !important;
+}
+
+img, a {
+  display: block;
+  text-decoration: none;
+}
+
+.web-page6 {
+  background-color: #51f5b6;
+}
+
+.web-page6 .input-box {
+  padding-top: 50px;
+}
+
+.web-page6 .input-box h3 {
+  font-size: 40px;
+  color: white;
+}
+
+.web-page6 .input-box .zhuizong {
+  width: 600px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 30px 40px 0;
+}
+
+.web-page6 .input-box .zhuizong .form-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  height: 65px;
+  padding-left: 25px;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  border-radius: 6px;
+}
+
+.web-page6 .input-box .zhuizong .form-item > div img {
+  width: auto;
+}
+
+.web-page6 .input-box .zhuizong .form-item input {
+  display: block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: transparent;
+  border: none;
+  line-height: 65px;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.web-page6 .input-box .zhuizong .form-item input::-webkit-input-placeholder {
+  color: #999;
+}
+
+.web-page6 .input-box .zhuizong .yan-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+
+.web-page6 .input-box .zhuizong .yan-wrapper > .form-item {
+  width: 360px;
+}
+
+.web-page6 .input-box .zhuizong .yan-wrapper .yanzheng-btn {
+  margin-left: auto;
+  width: 130px;
+  height: 65px;
+  line-height: 65px;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1e7395), color-stop(50%, #105183));
+  background-image: linear-gradient(180deg, #1e7395 0%, #105183 50%);
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.4);
+}
+
+.web-page6 .input-box .zhuizong .yan-wrapper .yanzheng-btn a.btn-phonecode {
+  font-size: 20px;
+  color: white;
+}
+
+.web-page6 .input-box .zhuizong .yan-wrapper .yanzheng-btn a.re-btn {
+  font-size: 17px;
+  color: white;
+}
+
+.web-page6 .input-box .zhuizong .btn-account {
+  padding-bottom: 70px;
+}
+
+.web-page6 .input-box .zhuizong .btn-account a.common {
+  font-size: 26px;
+  line-height: 67px;
+  color: white;
+  letter-spacing: 1.5px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1e7395), color-stop(50%, #0e4c81));
+  background-image: linear-gradient(180deg, #1e7395 0%, #0e4c81 50%);
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.3);
+}
+/*# sourceMappingURL=form.css.map */

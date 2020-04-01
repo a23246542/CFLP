@@ -1,0 +1,23 @@
+.title {
+  padding-top: 90px;
+  font-size: 0;
+}
+
+.title div.title-item {
+  text-align: center;
+}
+
+.title div.title-item h2 {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 45px;
+}
+
+.title p.title-p {
+  overflow: hidden;
+  font-size: 18px;
+  text-align: center;
+  margin: 30px auto;
+}
+/*# sourceMappingURL=title.css.map */
