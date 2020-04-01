@@ -75,7 +75,7 @@ html {
 }
 
 .web-page2 .title {
-  padding-top: .3rem;
+  padding-top: 1rem;
   margin-bottom: .3rem;
 }
 
@@ -92,6 +92,15 @@ html {
   line-height: .42rem;
 }
 
+.web-page2 .conList .swiper-ticket {
+  height: 2.4rem;
+  margin-bottom: .4rem;
+}
+
+.web-page2 .conList .swiper-ticket ul.swiper-wrapper {
+  height: 2.32rem;
+}
+
 .web-page2 .conList .swiper-ticket ul.swiper-wrapper li.swiper-slide {
   width: 4.7rem;
   -webkit-box-sizing: content-box;
@@ -103,12 +112,12 @@ html {
 
 .web-page2 .conList .swiper-ticket ul.swiper-wrapper li.swiper-slide .ticket {
   width: 100%;
-  height: 2.3rem;
+  height: 2.32rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background: url("lp-img/mobile/campaign2004/ticket_bu.png");
-  background-size: cover;
+  background-size: 4.7rem 2.32rem;
   background-position: 50% 50%;
   -webkit-filter: drop-shadow(0px 0.01rem 0.03rem #9db4e7);
           filter: drop-shadow(0px 0.01rem 0.03rem #9db4e7);
@@ -190,10 +199,10 @@ html {
 
 .web-page3 .container .title {
   margin-bottom: 0.7rem;
+  padding-top: 1rem;
 }
 
 .web-page3 .container .title .title-item {
-  padding-top: .2rem;
   margin-bottom: .1rem;
 }
 
@@ -265,7 +274,7 @@ html {
 }
 
 .web-page4 .title {
-  padding-top: .2rem;
+  padding-top: 1rem;
 }
 
 .web-page4 .swiper-focus.swiper-container {
@@ -275,8 +284,10 @@ html {
 
 .web-page4 .swiper-focus.swiper-container .swiper-pagination-bullets {
   position: absolute;
-  top: -0.18rem;
+  top: 0rem;
   text-align: center !important;
+  height: 1.5rem;
+  padding-top: .48rem;
 }
 
 .web-page4 .swiper-focus.swiper-container .swiper-pagination-bullet {
@@ -306,6 +317,7 @@ html {
 
 .web-page4 .swiper-focus.swiper-container .swiper-wrapper {
   width: 32.4rem;
+  height: 5rem;
   margin-top: -0.3rem;
   margin-bottom: -0.2rem;
 }
@@ -376,7 +388,7 @@ html {
 }
 
 .web-page5 .title {
-  padding-top: 0.35rem;
+  padding-top: 1rem;
   margin-bottom: .2rem;
 }
 
