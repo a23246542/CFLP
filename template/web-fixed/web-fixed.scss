@@ -1,0 +1,91 @@
+
+// ================================pc====================================
+.web-fixed{
+    overflow: hidden;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    // padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;//因为只有两个 可以先置中集中 再彼此推开
+    align-items: center;
+    transition: all .25s;
+    box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.3);
+    
+    >.item{
+        overflow: hidden;
+        display: inline-block;
+        width: 330px;
+        margin: 0 60px;
+        // margin: 0 160px;
+
+        >a{
+            background-image: linear-gradient(180deg, #207897 0%, #0e4d81 100%);
+            width: 270px;
+            height: 80px;
+            cursor: pointer !important;
+            border-radius: 6px;
+            text-align: center;
+            box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.4);
+
+        //     &:hover{
+        //         width: 320px;
+        //         transition: all .25s;//??这边也需要写吗
+        //     }
+            >p{
+                font-size: 23px;
+                color: #fefefe;
+                padding: 8px 0 8px;
+                // padding: 8px 0;
+            }
+
+            >span{
+                font-size: 17px;
+                color: #fefefe;
+                opacity: .9;
+            }
+        }
+    }
+}
+
+// ========================mobile=====================================
+
+.web-fixed{
+    overflow: hidden;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    // align-items: center;全占满高
+    background-color: #fff;
+    box-shadow: inset 0rem 0rem 0.02rem 0.01rem rgba(0, 0, 0, 0.1);
+
+    >a{ //??会自动加上 不会 要自己家上
+        padding: .2rem 0;
+
+        >div{
+            width: .66rem;
+            height: .66rem;
+            margin: 0 auto .05rem;//?发现自己没看懂这个
+            >img{
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+            }
+        }
+
+        >p{
+            font-size:.28rem;
+            color: #074b6b;
+            text-align: center;
+        }
+
+    }
+}

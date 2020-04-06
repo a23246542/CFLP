@@ -1,0 +1,259 @@
+@import url("../init/M/template.css");
+@import url("../init/M/reset.css");
+@import "../init/init";
+
+
+
+.tc-hide{
+    // display:none;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    line-height: 1.8;
+}
+
+.masking{
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+}
+
+ul li,table{
+    list-style-type: none !important;
+}
+.popup-box{
+    overflow: hidden;
+    max-width:95%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top:10%;
+    background: #fff;
+    z-index: 99999;
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 .1rem rgba(0, 0, 0, 0.3);
+    .close-top{
+        padding:0.3rem 0.3rem;
+        font-size: 0.44rem;
+        color:#b78255;
+        text-align: center;
+        border-bottom: 1px solid #b78255;
+        width:6rem;
+        margin: 0 auto;
+        position: relative;
+        a{
+            background: url(../../images/campaign1710/close-b.png) no-repeat;
+            width: 0.21rem;
+            height:0.21rem;
+            background-size: 0.21rem 0.21rem;
+            position: absolute;
+            right: 0;
+            margin-top: .2rem;
+            text-decoration: none;
+        }
+    }
+
+    .note{
+        line-height: 1.8;font-size: 0.24rem;margin-bottom: 0.1rem
+        span{color: #f00}
+    }
+
+    .table1 td,.table2 td{
+        width: 25%;
+    }
+    .table3 td{
+        width: 33.3333%;
+    }
+    .table4 td{
+        width: 16%;
+    }
+    
+    table.data-box{
+        width: 100%;
+        margin: 16px auto .25rem;
+        text-align: center;
+        border: 0 !important;
+        font-size: 1.6em;
+        border-collapse: collapse;
+        border-spacing: 0;
+
+        .first-child {
+            text-align: center;
+            font-size: .28rem;
+            a {
+                color: #666666;
+                text-decoration: none;
+            }
+        }
+        thead {
+            display: table-header-group;
+            vertical-align: middle;
+            border-color: inherit;
+            th {
+                font-size: .28rem;
+                /* font-size: .2rem; */
+                // font-size: 16px template;
+                text-align: center;
+                padding: .15rem .05rem;
+                color: #FFFFFF;
+                background: #dcb08e;
+                line-height: 1.0;
+            }
+        }
+
+        tbody {
+            display: table-row-group;
+            vertical-align: middle;
+            border-color: inherit;
+            td {
+                line-height: 1.0;
+                text-align: center;
+                color: #333333;
+                padding: 1.44%;
+                font-size: .28rem;
+                /* font-size: 14px; template*/
+                border: 0.025rem solid #ead5c2;
+                font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+            }
+
+            tr {
+                display: table-row;
+                vertical-align: inherit;
+                border-color: inherit;
+                &.grey td:nth-child(1){
+                /* width: 30px; */
+                }
+                &.grey {
+                    background: #fff;
+                }
+                &.last-row td {
+                    border-bottom: 1px solid #CCCCCC;
+                }
+            }
+            
+            .unit {
+                font-size: 0.8em;
+            }
+        }
+    }
+
+    // //template
+    // h2 {
+    //     font-size: 0.28rem;
+    //     font-weight: bold;
+    //     color: #b78255;
+    // }
+    .box-in{
+        margin: 3% 4% 5% 4%;
+        overflow-y: auto;
+        height: 8rem;
+        // //template
+        // p {
+        //     font-size: 0.28rem;
+        //     line-height: 1.8;
+        // }
+        
+        // font-size: 16px;
+        .line-throw{font-size: 0.3rem;}
+        .section1{
+            .item{
+            display: flex;
+            justify-content: flex-start;
+            align-items: baseline;
+            margin-bottom: .1rem;
+            }
+            h2{
+                font-size: 0.28rem;
+                font-weight: bold;
+                color: #b78255;
+            }
+            p{
+                font-size:0.28rem;
+                line-height: 1.8;
+            }
+        }
+        .section3{
+            p{
+                font-size:0.28rem;
+                /*margin-bottom: 0.2rem;*/
+                line-height: 1.8;
+                a{color: #0096dc}
+                span{
+                    color: #f00;
+                    font-weight: bold;
+                }
+            }
+            // template
+            .first{
+                border-left: .025rem solid #ccc;
+            }
+            ul li ul li{
+                float: left;
+                font-size: 12px;
+                width: 16%;
+                text-align: center;
+                height: 2.5rem;
+                border-right: 0.025rem solid #ccc;
+                border-bottom: 0.025rem solid #ccc;
+                padding-top:1rem;
+            }
+            
+            ul li ul li.last{
+                width:20%;
+                padding-top:.5rem;
+            }
+        }
+        .section4{
+            h2{
+                font-size: 0.3rem;
+                margin-bottom: 0.1rem;
+                color: #b78255;
+            }
+            li{
+                font-size: 0.28rem;
+                line-height: 1.8;
+                span{
+                    /*margin-right: 0.15rem;*/
+                }
+                p{
+                    display: flex;
+                }
+            }
+        }
+        .section5 ol li{
+            font-size: .2rem;
+            //下面template的部分
+            // font-size: .28rem;
+            // line-height: 2.2;
+            // text-align: justify;
+            // display: flex;
+        }
+        
+    }
+
+}
+
+.down-footer span{
+    line-height: 1.8;
+}
+.bot-fixed li{
+    line-height: 1.8;
+}
+
+// /*判断是否是iphoneX，使用@media 媒体查询尺寸*/
+
+// @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+//     .fixed-footer{
+//         padding-bottom: 2rem;
+//     }
+// }

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- =============pc=============================================== -->
+    <div id="main" class="wrapper">
+        <section class="web-page lastPage">
+            <div class="inner container"></div>
+        </section>
+        <!--#include file="./module/template.footer-1.html"-->
+        <!--#include file="./module/html.body.end.html"-->
+    </div>
+    
+    <div class="web-fixed">
+        <div id="isLogin" class="item">
+            <a href="javaScript:;" class="account" target="_blank" onclick="ga('send', 'event', 'Reg_Real', 'ClickAccount', 'SJ_LP', '1');">
+                <p>免费开户</p>
+                <span>0手续费 0佣金</span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javaScript:;" class="chat" target="_blank"onclick="openLive800(); ga('send', 'event', 'Chat_Live800', 'Click800', 'SJ_LP', '1');">
+                <p>咨询客服</p>
+                <span>报名参与</span>
+            </a>
+        </div>
+    </div>
+    
+    <!-- =============mobile============================ -->
+    <!-- ????不知道为舌么手机版class是在a -->
+    <!-- 像account手机版写在div 或li为舌么不是写在a会怎么样 -->
+    <div class="web-fixed">
+        <ul>
+            <li id="isLogin" class="item account">
+                <a href="javaScript:;" onclick="ga('send', 'event', 'Reg_Real', 'ClickAccount', 'SJ_LP', '1');">
+                    <div>
+                        <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/campaign2004/M_icon1.png" alt="">
+                    </div>
+                    <p>开户领赠金</p>
+                </a>
+            </li>
+            <li class="item">
+                <a href="javaScript:;" class="chat" onclick="openLive800(); ga('send', 'event', 'Chat_Live800', 'Click800', 'SJ_LP', '1');" >
+                    <div>
+                        <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/campaign2004/M_icon2.png" alt="">
+                    </div>
+                    <p>咨询客服</p>
+                </a>
+            </li>
+            <li id="app" class="item">
+                <a href="javaScript:;" class="app download" target="_blank">
+                    <div>
+                        <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/campaign2004/M_icon3.png" alt="">
+                    </div>
+                    <p>下载APP</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
