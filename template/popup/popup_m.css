@@ -1,5 +1,6 @@
 @import url("../init/M/template.css");
 @import url("../init/M/reset.css");
+@import url("./M/reset.css");
 html {
   height: 100%;
   font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
