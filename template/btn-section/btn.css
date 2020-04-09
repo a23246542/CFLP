@@ -1,0 +1,22 @@
+.btn-detail {
+  padding: 50px 0 60px;
+}
+
+.btn-detail > div.btn-box {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.btn-detail > div.btn-box a.btn {
+  padding: 0 30px;
+  line-height: 75px;
+  color: white;
+  font-size: 28px;
+  letter-spacing: 1.5px;
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#155065), to(#09355a));
+  background-image: linear-gradient(180deg, #155065 0%, #09355a 100%);
+  -webkit-box-shadow: 0px 11px 8px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 11px 8px 2px rgba(0, 0, 0, 0.12);
+}
+/*# sourceMappingURL=btn.css.map */

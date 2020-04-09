@@ -10,6 +10,7 @@ $blue-dark:#074b6b;
 
 // %.title-item1{ 找不到占位符皓
 .title-item-structure {
+    font-size: 0;
     span {
         //!!这边小图span 行内元素会自动垂直置中?
         display: inline-block;
@@ -60,9 +61,9 @@ section[class*="web-page"]{
         // max-width: 1920px;
         // padding: 0 360px;
         // box-sizing: border-box;
-        // width: 100%;
-        // max-width: 1200px;//以前都是缩到1200才缩小
-        width: 1200px;
+        width: 100%;//??為什麼要先100% 乾 我知道是那個tempalte有寫小魚的時候便1000px
+        max-width: 1200px;//以前都是缩到1200才缩小
+        // width: 1200px;
         margin: 0 auto;
         outline: 1px red solid;
         // background-color: #555;
@@ -72,6 +73,7 @@ section[class*="web-page"]{
 
 .web-page1 {
     width: 100%;
+    // height: 0;
     padding-bottom: 31.25%;
     background-image: url("../images/banner.png");
     background-size: cover;
@@ -82,7 +84,7 @@ section[class*="web-page"]{
 
         h1,
         h2 {
-            position: absolute; //定位住才不会变高(盒子模型)
+            position: absolute; //定位住才不会撐高content(沒設height的話)(盒子模型)
             color: transparent;
             user-select: none;
         }
@@ -97,6 +99,7 @@ section[class*="web-page"]{
         display: flex;
         flex-direction: column;
         align-items: center;
+        font-size: 0;
 
         .title-item {
             @extend .title-item-structure;
@@ -122,7 +125,7 @@ section[class*="web-page"]{
 
         ul {
             position: relative;
-            min-height: 570px; //min-height的用处 搭配position?? 没有高给高
+            min-height: 570px; //min-height的用处 搭配position?? 没有高给高 不然會擠在一起
 
             li.ticket {
                 width: 364px;
@@ -245,12 +248,20 @@ section[class*="web-page"]{
     .btn-detail {
         padding: 50px 0 60px;
         text-align: center;
+        
 
         &>div {
-            display: inline-block; //尝试不用margin- auto用inline-block置中
-
+            display: inline-block; //尝试不用margin- auto用inline-block置中!!!!!!
+            margin: 0 auto;//寫錯位置
             a.btn {
-                width: 320px;
+                // width: 320px;
+                // display: inline;
+                // display: inline-block;
+                // min-width: 320px;
+                // max-width: 320px;
+                // margin: 0 auto;
+                padding: 0 30px;
+                
                 line-height: 75px;
                 color: white;
                 font-size: 28px;
@@ -298,8 +309,8 @@ section[class*="web-page"]{
 
     .conList {
         // padding-top: 75px;
-        // margin-bottom: 80px;//!!!margin-bottom也会塌陷
         padding: 75px 0 80px; //!!都出这与法了 上下padding就好方便安全
+        // margin-bottom: 80px;//!!!margin-bottom也会塌陷
 
         ul {
             display: flex;
@@ -747,32 +758,36 @@ section[class*="web-page"]{
     bottom: 0;
     width: 100%;
     height: 133px;
+    line-height: 133px;
     // text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+
+    text-align: center;
     background-color: #fff;
-    &::before{
-        content: "";
-        display: block;
-        position: absolute;
-        z-index: 999;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 4px;
-        width: 100%;
-        background-color: #f2f8ff;
-    }
+    // &::before{
+    //     content: "";
+    //     display: block;
+    //     position: absolute;
+    //     z-index: 999;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     height: 4px;
+    //     width: 100%;
+    //     background-color: #f2f8ff;
+    // }
     .item{ //以前都是先acount 再a
-        // display: inline-block;
-        // vertical-align: middle;//垂直置中失败????
+        display: inline-block;
+        vertical-align: middle;//垂直置中失败????
         // line-height: 133px;
         margin: 0 160px;//!!!先置中在中间 再依次margin左右 不用特别指margin一编
         a{
             background-image: linear-gradient(180deg,#207897 0%,#0e4d81 100%);
             width: 270px;
             height: 80px;
+            
             border-radius: 6px;
             text-align: center;
             box-shadow: 0px 5px 12px 0px rgba(0,0,0,.35);
