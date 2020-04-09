@@ -780,14 +780,15 @@ section[class*="web-page"]{
     // }
     .item{ //以前都是先acount 再a
         display: inline-block;
-        vertical-align: middle;//垂直置中失败????
+        vertical-align: middle;//垂直置中失败???? 父層要寫line-height
+        background-color:red;
         // line-height: 133px;
         margin: 0 160px;//!!!先置中在中间 再依次margin左右 不用特别指margin一编
         a{
             background-image: linear-gradient(180deg,#207897 0%,#0e4d81 100%);
             width: 270px;
             height: 80px;
-            
+            line-height: initial;//!!!!!
             border-radius: 6px;
             text-align: center;
             box-shadow: 0px 5px 12px 0px rgba(0,0,0,.35);

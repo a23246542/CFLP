@@ -1,11 +1,11 @@
 .btn-detail {
     padding: 50px 0 60px;
-    // text-align: center;
+    text-align: center;
     
 
     &>div.btn-box { //!!!結構跟樣是分開
         display: inline-block; //尝试不用margin- auto用inline-block置中!!!!!!
-        margin: 0 auto;//寫錯位置
+        // margin: 0 auto;//寫錯位置
         // 可是這篇!!![CSS] 解決div區塊設定為display:inline-block時margin:0 auto無法置中的問題
         // 因為行內不能margin??
         // https://sistergub.blogspot.com/2014/12/css-divdisplayinline-blockmargin0-auto.html

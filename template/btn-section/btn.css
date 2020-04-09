@@ -1,10 +1,10 @@
 .btn-detail {
   padding: 50px 0 60px;
+  text-align: center;
 }
 
 .btn-detail > div.btn-box {
   display: inline-block;
-  margin: 0 auto;
 }
 
 .btn-detail > div.btn-box a.btn {
