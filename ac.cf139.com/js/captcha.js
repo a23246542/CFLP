@@ -28,7 +28,7 @@ $(function () {
             result.phone = phone;
             result.receiveTunnel = $("#receiveTunnel").val();
             result.hiddenurl = $.trim($("input[name='hiddenurl']").val());
-            if(createCfdAccount.generatePhoneCaptcha("yanZ",result)){//
+            if(createCfdAccount.generatePhoneCaptcha("yanZ",result)){//不知道什麼送過去好像是電話 然後ajax出去 發送手機驗證碼成功回傳true
                 $('.yanZ-tip').html('<span style="color: #5ca500" >验证码已发送,请查收! </span>');
                 $(".voice-check").hide();
                 $(".btn-phonecode").hide();
