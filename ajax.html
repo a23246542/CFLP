@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="server/api/items" name="productForm" enctype="multipart/form-data" method="POST">
+        <h3>新增商品</h3>
+        <input type="file" name="files" class="productFile">
+        <input type="text" class="productName">
+        <input type="number" min="1" class="productPrice">
+        <input type="submit" value="送出">
+    </form>
+</body>
+</html>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous">
+    </script>
+    <script>
+    $.ajax({
+        type:"POST",//http請求方法
+        url:"xxx",
+        contentType:"text/plain",//送過去server的資料格式 好像也可以當作取得的資料格式
+        contentType:"text/plain",//不解析直接送過去
+        contentType: "text/javascript",//JS文檔
+        contentType:"application/json",//JSON数据格式
+        contentType:"application/x-www-form-urlencoded ",//預設的 表單的enctype已經有了
+        contentType:"multipart/form-data ",//from-data做ajax的格式
+        dataType:"json",//預期從server接收的資料型態
+        headers: {
+        // 'Content-Type': 'multipart/form-data',
+        // 使用 multipart/form-data 在此不需要設定 Content-Type。
+        'X-Requested-With': 'XMLHttpRequest',
+        'Authorization': `Bearer ${ userToken }`,
+            },
+        data:phone,
+        async:false,
+        xhrFields: {
+                withCredentials: true
+            },
+        crossDomain:true,
+        success:function(data){
+
+        },
+        error:function(jqXHR, textStatus, errorThrown){
+
+        }
+
+        
+    });
+//   http請求方法
+    // 1.get
+    // 2.post //可能導致新資源跟現有的改掉
+    // 3.put //更新server現有資料
+    // 4.delete刪除指定
+
+    // http 狀態碼
+    // 1**	信息，服务器收到请求，需要请求者继续执行操作
+    // 2**	成功，操作被成功接收并处理
+    // 3**	重定向，需要进一步的操作以完成请求
+    // 4**	客户端错误，请求包含语法错误或无法完成请求//找不到對應伺服器 要不要資料
+    // 5**	服务器错误，服务器在处理请求的过程中发生了错误
+
+  </script>
+
+  
+
