@@ -9,7 +9,7 @@ $(function(){
     var phone,upwd,yanZ,check;
     // var messageInfo = new messageInfo();
     $('#phone').focus(phoneCheck1);
-    $('#upwd').focus(upwdCheck1);
+    $('#upwd').focus(upwdCheck1);//????字有出現但不知道為什麼顏色沒出現
     $('#yanZ').focus(yanCheck1);
     $('#pc-yanZ').focus(pCheck1);
 
@@ -76,7 +76,7 @@ $(function(){
         var phone=$.trim($('#phone').val());
         createCfdAccount.validatePhoneVNo("yanZ",yanZ,phone);
     });
-    $('#pc-yanZ').blur(function () {
+    $('#pc-yanZ').blur(function () { //找不到pc-yanZ
         var check = $.trim($('#pc-yanZ').val());
         createCfdAccount.validateImageNo("pc-yanZ",check);
     });
@@ -93,7 +93,7 @@ $(function(){
         });
     }
 
-    $("#submitInfo").click(function () {
+    $("#submitInfo").click(function () {//因為是純div不用prevent
 
         //需要禁用按钮
 
@@ -103,8 +103,8 @@ $(function(){
         var check = $.trim($('#pc-yanZ').val());
 
         var phonePd = createCfdAccount.validatePhone("phone",phone);
-        if(!phonePd){
-            return;
+        if(!phonePd){//驗證過會回傳true
+            return;//沒過就return
         }
         var upwdPd = createCfdAccount.validatePassword("upwd",upwd);
         if(!upwdPd){
@@ -116,9 +116,9 @@ $(function(){
             return;
         }
 
-        var display =$(".yzmhideinfo").css('display');
+        var display =$(".yzmhideinfo").css('display');//找不到
         if(display&&display != 'none'){
-            var pcpd = createCfdAccount.validateImageNo("pc-yanZ",check);
+            var pcpd = createCfdAccount.validateImageNo("pc-yanZ",check);//找不到
             if(!pcpd){
                 return;
             }

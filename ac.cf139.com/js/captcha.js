@@ -1,5 +1,5 @@
 $(function () {
-    var validateInfo = function () {
+    var validateInfo = function () { //先取得手機&密碼驗證結果true false
         if ($(this).hasClass('disabled')) {
             return false;
         }
@@ -11,16 +11,16 @@ $(function () {
 
         if(!createCfdAccount.validatePassword("upwd",upwd)){
             return false;
-        }//?寫這樣為什麼不直接return
-
+        }//?寫這樣為什麼不直接寫return (createCfdAccount.validatePassword("upwd",upwd))就好
+        //喔喔 因為前面return false下面就不會執行了
         return true;
     }
 
     var handler = function (captchaObj) {
         // 将验证码加到id为captcha的元素里，同时会有三个input的值用于表单提交
         captchaObj.onReady(function () {
-        }).onSuccess(function () {
-            var result = captchaObj.getValidate();
+        }).onSuccess(function () {//???
+            var result = captchaObj.getValidate();//
             if (!result) {
                 return alert('请完成验证');
             }
@@ -28,12 +28,12 @@ $(function () {
             result.phone = phone;
             result.receiveTunnel = $("#receiveTunnel").val();
             result.hiddenurl = $.trim($("input[name='hiddenurl']").val());
-            if(createCfdAccount.generatePhoneCaptcha("yanZ",result)){
+            if(createCfdAccount.generatePhoneCaptcha("yanZ",result)){//
                 $('.yanZ-tip').html('<span style="color: #5ca500" >验证码已发送,请查收! </span>');
                 $(".voice-check").hide();
                 $(".btn-phonecode").hide();
                 $('.re-btn').show();
-                $(".btn-phonecode").addClass("disabled");
+                $(".btn-phonecode").addClass("disabled");//
                 var second= 60;
                 var interval = setInterval(function() {
                     if (second > 0) {
@@ -53,13 +53,13 @@ $(function () {
         var sendCode = function () {
             // 调用之前先通过前端表单校验
             if(validateInfo()){
-                captchaObj.verify();
+                captchaObj.verify();//??根本搜尋不到captchaObj
             }
         }
 
         $('.btn-phonecode').click(function () {
             $("#receiveTunnel").val(0);//普通短信方式
-            sendCode();
+            sendCode();//祭出驗證碼
         });
 
         $(".voice-check").click(function () {
