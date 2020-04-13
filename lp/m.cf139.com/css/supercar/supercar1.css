@@ -1,0 +1,731 @@
+html{background: transparent}
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0;color: #333}
+.inner{overflow: hidden;width: 100%; margin: 0 auto; position: relative}
+img{ overflow:hidden;display:block;border: none;}
+.web-banner{
+    width: 100%;
+    height: 9.3rem;
+    background: url("/cn/zt/images/supercar/banner.png?v06071447") no-repeat center;
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+}
+.web-page{
+    overflow: hidden;
+    padding: .4rem 0;
+    width: 100%;
+    background: #fff;
+}
+.web-page.bg-video{
+    padding: 0;
+    //margin: -.9rem 0 -1rem 0;
+    height: 4rem;
+    background: transparent;
+}
+.web-page.bg{
+    background: url("/cn/zt/images/supercar/neiye-bg06.jpg") no-repeat center;
+    background-size: 100% 100%;
+    height: 10.24rem;
+}
+.web-page.bg-color{
+    background: #f9f9f9;
+    padding-bottom: .65rem;
+}
+.web-page.bg-color01{
+    background: #dfdfdf;
+    padding: 0;
+}
+.web-page .video{
+    overflow: hidden;
+    width: 7.5rem;
+    //height: 6.8rem;
+    height: 4rem;
+    margin: 0;
+}
+.web-page .title{
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: .2rem;
+}
+.web-page .title img{
+    width: 2.17rem;
+    height: .85rem;
+    margin: 0 auto;
+}
+.web-page .title span{
+    overflow: hidden;
+    display: block;
+    font-size: .44rem;
+    color: #e51816;
+    text-align: center;
+    vertical-align: top;
+}
+.web-page .title span.inline{
+    font-size: .28rem;
+    color: #d47271;
+    line-height: normal;
+    display: inline-block;
+    margin-top: .12rem;
+}
+.web-page .title p{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    line-height: .48rem;
+    text-align: center;
+    margin: .45rem .25rem .35rem .25rem;
+}
+.web-page .title p.line{
+    border-bottom: dashed #898989 .02rem;
+    margin-bottom: -.15rem;
+    padding-bottom: .3rem;
+}
+.web-page .title p span{
+    display: inline;
+    color: #952f2e;
+    font-weight: bold;
+    font-size: .28rem;
+    line-height: .48rem;
+}
+.web-page.bg .title p{
+    color: #fff;
+    margin-bottom: 0;
+}
+.web-page.bg .title p span{
+     display: inline;
+     color: #e51816;
+     font-weight: bold;
+     font-size: .28rem;
+     line-height: .48rem;
+ }
+.web-page .title a{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto .3rem auto;
+    background: #952f2e;
+    width: 2.3rem;
+    height: .65rem;
+    line-height: .65rem;
+    text-decoration: none;
+    border-radius: .04rem;
+    -moz-border-radius: .04rem;
+}
+.web-page .con{
+    overflow: hidden;
+    width: 100%;
+}
+.web-page .con01{
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: .2rem;
+}
+.web-page .con03{
+    overflow: hidden;
+    width: 100%;
+    margin-top: .35rem;
+}
+.web-page .page-bth{
+    overflow: hidden;
+    width: 4.9rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+.web-page .page-bth a{
+    overflow: hidden;
+    display: block;
+    width: 2.3rem;
+    height: .65rem;
+    line-height: .65rem;
+    text-align: center;
+    border-radius: .04rem;
+    -moz-border-radius: .04rem;
+    border: solid .02rem #213040;
+    color: #213040;
+    font-size: .28rem;
+}
+.web-page .page-bth a.account{
+    background: #213040;
+    color: #fff;
+}
+.web-page .page2-bg{
+    overflow: hidden;
+    width: 100%;
+    margin-top: .05rem;
+}
+.web-page .page2-list{
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 4.95rem;
+    background: url("/cn/zt/images/supercar/slider-bg.png") no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+}
+.web-page .page2-list span{
+    overflow: hidden;
+    display: block;
+    font-size: .4rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 2.1rem 0 .3rem;
+}
+.web-page .page2-list p{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    line-height: .48rem;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.web-page .page3-left{
+    overflow: hidden;
+    width: 100%;
+    margin-top: .3rem;
+}
+.web-page .page3-left .item{
+    overflow: hidden;
+    width: 6.27rem;
+    height: 4.33rem;
+    box-shadow: .02rem .02rem .05rem rgba(0,0,0,.27);
+    margin: 0 auto;
+    background: #ebebeb;
+}
+.web-page .page3-left .item img{
+    width: 2.6rem;
+    height: 2.1rem;
+    margin: .4rem auto .1rem auto;
+}
+.web-page .page3-left .item p{
+    overflow: hidden;
+    color: #213040;
+    font-size: .28rem;
+    line-height: .48rem;
+    text-align: center;
+    margin: 0 .1rem;
+}
+.web-page .page5-list{
+    overflow: hidden;
+}
+.web-page .page5-list .item{
+    overflow: hidden;
+    cursor: pointer;
+    width: 7rem;
+    margin: 0 auto;
+}
+.web-page .page5-list .item .neiye-title{
+    overflow: hidden;
+    font-size: .4rem;
+    color: #952f2e;
+    text-align: center;
+    margin-bottom: .2rem;
+}
+.web-page .page5-list .juan{
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    color: #fff;
+    background: #213040;
+}
+.web-page .page5-list .juan span{
+    overflow: hidden;
+    width: 4.79rem;
+    height: .51rem;
+    background: url("/cn/zt/images/supercar/img-02.png") no-repeat;
+    background-size: 100% 100%;
+    font-size: .28rem;
+    line-height: .36rem;
+    text-align: center;
+    padding-top: 1.75rem;
+}
+.web-page .page5-list .juan a{
+    overflow: hidden;
+    color: #fff;
+    width: 2.2rem;
+    line-height: 2.26rem;
+    text-align: center;
+    font-size: .44rem;
+    text-decoration: none;
+}
+/*.web-page .page5-list .juan .code img{
+    width: 2.2rem;
+    height: 2.26rem;
+}*/
+.web-page .page6-list{
+    overflow: hidden;
+    width: 6.27rem;
+    height: 6.09rem;
+    background: rgba(255,255,255,.67);
+    margin: 0 auto;
+}
+.web-page .page6-list span{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+}
+.web-page .page6-list .fir-span{
+    color: #e51816;
+    font-size: .44rem;
+    margin: .3rem 0 .25rem 0;
+}
+.web-page .page6-list .sec-gif{
+    width: 3.6rem;
+    height: 2.4rem;
+    margin: 0 auto;
+    background: url("/cn/zt/images/supercar/img-03.gif") no-repeat;
+    background-size: 100% 100%;
+}
+.web-page .page6-list .sec-gif.bg-gif{
+    background: url("/cn/zt/images/supercar/img-04.gif") no-repeat;
+    background-size: 100% 100%;
+}
+.web-page .page6-list p{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-size: .24rem;
+    line-height: .48rem;
+    margin: .25rem .3rem;
+}
+.web-page .page7-list{
+    overflow: hidden;
+    margin-top: .6rem;
+    display: none;
+}
+.web-page .page7-list .city-nav{
+    overflow: hidden;
+}
+.web-page .page7-list .city-nav ul{
+    overflow: hidden;
+    width: 7rem;
+    display: block;
+    border-bottom: solid .02rem #272636;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+.web-page .page7-list .city-nav ul li{
+    overflow: hidden;
+    display: inline-block;
+    float: left;
+    padding-right: .84rem;
+}
+.web-page .page7-list .city-nav.paddingright ul li{padding-right: .57rem}
+.web-page .page7-list .city-nav ul li:last-child{
+    float:right;
+    text-align: right;
+    padding-right: 0;
+}
+.web-page .page7-list .city-nav ul li span{
+    overflow: hidden;
+    font-size: .36rem;
+    line-height: .36rem;
+    padding-bottom: .1rem;
+    display: inline-block;
+}
+.web-page .page7-list .city-nav ul li.on span{border-bottom: solid .03rem #272636;}
+.web-page .page7-list .city-con{
+    overflow: hidden;
+    width: 7rem;
+    margin: .25rem auto 0 auto;
+    //display: none;
+}
+.web-page .page7-list .city-con img{
+    width: 2.26rem;
+    height: 1.49rem;
+    float: left;
+    margin: 0 .1rem .12rem 0;
+}
+.web-page .page7-list .city-con img.marginright{margin-right: 0}
+.web-page .page7-nav{
+    overflow: hidden;
+}
+.web-page .page7-nav ul{
+    overflow: hidden;
+    list-style: none;
+    width: 5.3rem;
+    margin: .35rem auto .2rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+.web-page .page7-nav ul li{
+    overflow: hidden;
+    list-style: none;
+    width: 2.3rem;
+    height: .65rem;
+    line-height: .65rem;
+    text-align: center;
+    border-radius: .04rem;
+    -moz-border-radius: .04rem;
+    border: solid .02rem #213040;
+    color: #213040;
+    font-size: .28rem;
+}
+.web-page .page7-nav ul li.on{
+    background: #213040;
+    color: #fff;
+}
+.web-page .page8-list{
+    overflow: hidden;
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: .2rem;
+}
+.web-page .page8-list .left-img{
+    overflow: hidden;
+    margin: 0 .2rem 0 .25rem;
+}
+.web-page .page8-list .left-img img{ width: 2.5rem;}
+.web-page .page8-list .right-con{
+    overflow: hidden;
+    margin-top: .2rem;
+}
+.web-page .page8-list .right-con p{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    color: #333;
+}
+.web-page .page8-list .right-con span{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    color: #999;
+}
+.web-page .page9-slider{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.web-page .page9-slider .masking{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 1.535rem;
+    background: rgba(13,28,43,.6);
+}
+.web-page .page9-slider ul li{
+    width: 1.915rem;
+}
+.web-page .page9-slider ul li img{
+    width: 1.915rem;
+    height: 1.535rem;
+}
+.web-page .page9-list{
+    overflow: hidden;
+    margin-top: .3rem;
+}
+.web-page .page9-list ul{
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.web-page .page9-list ul li{
+    overflow: hidden;
+    list-style: none;
+    width: 2.07rem;
+    height: 1.88rem;
+    background: #ececec;
+    box-shadow: .02rem .02rem .05rem rgba(0,0,0,.27);
+    margin-bottom: .3rem;
+}
+.web-page .page9-list ul li.width{
+    width: auto;
+    height: auto;
+    background: none;
+    box-shadow: none;
+    margin: .86rem .05rem 0 .07rem;
+}
+.web-page .page9-list ul li.width01{width: 3.24rem}
+.web-page .page9-list ul li.width02{width: 3rem}
+.web-page .page9-list ul li img{
+    width: 1.46rem;
+    height: .66rem;
+    margin: .2rem auto .05rem auto;
+}
+.web-page .page9-list ul li.width img{
+    width: .29rem;
+    height: .22rem;
+}
+.web-page .page9-list ul li .logo-img{
+    width: 1.62rem;
+    height: 0.56rem;
+}
+.web-page .page9-list ul li span{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    line-height: .36rem;
+    color: #213040;
+    text-align: center;
+    margin: 0 .05rem;
+}
+.web-page .btn{
+    overflow: hidden;
+    font-size: .28rem;
+    text-align: center;
+    margin: .15rem auto 0 auto;
+    background: #952f2e;
+    width: 2.3rem;
+    height: .65rem;
+    line-height: .65rem;
+    border-radius: .04rem;
+    -moz-border-radius: .04rem;
+}
+.web-page .btn a{color: #fff;text-decoration: none;}
+.web-page .page10-con{
+    overflow: hidden;
+    width: 100%;
+    height: 4.34rem;
+    background: url("/cn/zt/images/supercar/neiye-bg10.png?0410") no-repeat left 2rem;
+    background-size: auto 2.14rem;
+}
+.web-page .page10-con img{
+    width: 3.66rem;
+    height: .81rem;
+    margin: .46rem 0 .2rem .25rem;
+}
+.web-page .page10-con span{
+    overflow: hidden;
+    display: block;
+    color: #090909;
+    font-size: .36rem;
+    margin-left: .25rem;
+}
+.tc-hide{
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+}
+.masking{
+    display: block;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+}
+.tc-con{
+    overflow: hidden;
+    width: 6.5rem;
+    margin: 2rem auto 0 auto;
+    background: #fff;
+    border-radius: .06rem;
+    -moz-border-radius: .06rem;
+    padding-bottom: .3rem;
+}
+.tc-con .scroll{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 6rem;
+}
+.tc-con span{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    line-height: .48rem;
+    padding: 0 .2rem;
+    text-align: justify;
+}
+.tc-con span.center{
+    text-align: center;
+    font-size: .36rem;
+    padding: .2rem 0;
+    color: #e51816;
+    border-bottom: solid .02rem #e51816;
+    margin-bottom: .3rem;
+    position: relative;
+}
+.tc-con span.close{
+    overflow: hidden;
+    background: url("/cn/zt/images/supercar/X.png") no-repeat;
+    background-size: .21rem .21rem;
+    height: .21rem;
+    display: inline;
+    position: absolute;
+    right: 0;
+    top: .34rem;
+    cursor: pointer;
+}
+.tc-con p{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    line-height: .48rem;
+    padding: 0 .2rem;
+    text-align: justify;
+}
+.tc-con p.color{color: #e51816;font-weight: bold}
+.swiper-pagination-bullet{background: #4c647d;opacity: .4}
+.swiper-pagination-bullet-active{background: #213040;opacity: 1}
+.swiper-button-next, .swiper-button-prev{top: 2rem;}
+.swiper-button-next.arrow-bg-right, .swiper-button-prev.arrow-bg-left{top: 2.87rem;}
+.swiper-button-next{
+    width: .34rem;
+    height: .62rem;
+    background: url("/cn/zt/images/supercar/icon-right-01.png") no-repeat;
+    background-size: 100% 100%;
+    right: .2rem;
+}
+.swiper-button-next.arrow-bg-right{
+    background: url("/cn/zt/images/supercar/icon-right-02.png") no-repeat;
+    background-size: 100% 100%;
+}
+.swiper-button-prev{
+    width: .34rem;
+    height: .62rem;
+    background: url("/cn/zt/images/supercar/icon-left-01.png") no-repeat;
+    background-size: 100% 100%;
+    left: .2rem;
+}
+.swiper-button-prev.arrow-bg-left{
+    background: url("/cn/zt/images/supercar/icon-left-02.png") no-repeat;
+    background-size: 100% 100%;
+}
+.share-con{
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url("/cn/zt/images/supercar/share-bg.jpg") no-repeat;
+    background-size: auto 12rem;
+    padding-top: 6rem;
+}
+.share-con .share-list{
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 6.2rem;
+    margin: 0 auto .6rem auto;
+}
+.share-con .share-list span{
+    overflow: hidden;
+    font-size: .36rem;
+    font-weight: bold;
+    width: .75rem;
+    height: .63rem;
+    line-height: .63rem;
+    color: #fff;
+    background: url("/cn/zt/images/supercar/share-icon.png") no-repeat;
+    background-size: .75rem .63rem;
+    padding-left: .18rem;
+}
+.share-con .share-list p{
+    overflow: hidden;
+    font-size: .28rem;
+    line-height: .36rem;
+    color: #fff;
+}
+.share-con .share-list p.marginleft{margin-left: -.2rem}
+.share-con .share-btn{
+    overflow: hidden;
+}
+.share-con .share-btn img{
+    width: 3.88rem;
+    margin: 0 auto;
+}
+/*分享*/
+.tc-share{
+    overflow: hidden;
+    position: fixed;
+    display: none;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+}
+.tc-share .masking{
+    overflow: hidden;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background: rgba(0,0,0,.5);
+}
+.tc-share .tc-share-con{
+    overflow: hidden;
+    position: fixed;
+    z-index: 999;
+    width: 7rem;
+    height: 3.4rem;
+    bottom: 0;
+    background: #fff;
+    padding: 0 .25rem;
+}
+.tc-share .tc-share-con .close{
+    overflow: hidden;
+    position: relative;
+    width: 7rem;
+    margin: 0 auto;
+}
+.tc-share .tc-share-con .close span{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    color: #999;
+    margin-top: .7rem;
+    margin-bottom: .3rem;
+    text-align: center;
+}
+.tc-share .tc-share-con .close img{
+    width: .57rem;
+    height: .57rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.share-item{
+    margin-top: .15rem;
+}
+.share-item ul{
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.share-item li{
+    overflow: hidden;
+    width: 1.75rem;
+    margin-bottom: .4rem;
+}
+.share-item span{
+    overflow: hidden;
+    display: block;
+    color: #333;
+    font-size: .28rem;
+    text-align: center;
+}
+.share-item a {
+    overflow: hidden;
+    width: 1rem!important;
+    height: 1rem!important;
+    margin: 0 auto .1rem!important;
+    float: none!important;
+    padding: 0!important;
+    display: block;
+    background-position: 0 0!important;
+}
+.share-item .wechat-friend { background: url("../../images/rec-app/weixin-m.png") no-repeat; background-size: 100% 100%; }
+.share-item .wechat-timeline { background: url("../../images/rec-app/weixinp-m.png") no-repeat; background-size: 100% 100%; }

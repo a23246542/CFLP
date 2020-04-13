@@ -1,0 +1,882 @@
+@keyframes light_show {
+    0%,
+    100% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+    15% {
+        opacity: 1;
+        transform: scale(1.4);
+    }
+    12%,
+    18% {
+        opacity: 0.7;
+        transform: scale(1);
+    }
+    30% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    80% {
+        opacity: 0.3;
+        transform: scale(0.7);
+    }
+}
+
+body {
+    background: #fef9ed
+}
+
+#main {
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.inner {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.rule {
+    position: absolute;
+    right: 0.3rem;
+    z-index: 99;
+}
+
+.rule img {
+    width: .9rem;
+}
+
+img {
+    overflow: hidden;
+    border: none;
+    display: block;
+}
+
+.e-header .header {
+    background: none;
+}
+
+.web-banner {
+    width: 100%;
+    background: url('../../images/campaign1911/bg.png') no-repeat top center;
+    background-size: 100% 100%;
+    height: 14rem;
+    position: relative;
+    z-index: 1;
+}
+
+.web-banner.top_banner .inner span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: -.2rem;
+}
+
+.web-banner.top_banner .inner span i {
+    width: 1.5rem;
+    height: .7rem;
+    margin: 0 -12.25%;
+    display: block;
+    position: absolute;
+    background: url(../../images/campaign1910/title_light.png) no-repeat;
+    background-size: 100% 100%;
+    animation: light_show 4.1s;
+    animation-iteration-count: infinite;
+}
+
+.light1 {
+    top: 73%;
+    left: 36.5%;
+}
+
+.light2 {
+    top: 64%;
+    left: 42%;
+    animation-delay: -0.7s !important;
+}
+
+.light3 {
+    top: 58%;
+    left: 68%;
+    animation-delay: -0.4s !important;
+}
+
+.web-banner .goldbox {
+    width: 5.4rem;
+    margin: 1rem 1.2rem auto;
+}
+
+.web-banner .mainTitle {
+    margin: 1.9rem auto;
+    width: 5.28rem;
+}
+
+.web-page {
+    overflow: hidden;
+    position: relative;
+}
+.web-page.block2 {
+    
+    background-size: 100% 100%;
+    height: 17.04rem;
+}
+.web-page .conList {
+    overflow: hidden;
+    width: 100%;
+    
+    justify-content: space-between;
+  }
+  .conList-b1{
+    width: 4.75rem;
+    height: 5.05rem;
+    background-image: url('../../images/campaign1911/cont-1910-rm-bg-22.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 4.75rem 5.05rem ;
+    margin: 0 auto;
+  }
+  .conList-b1.margin-left-0{
+    background-image: url('../../images/campaign1911/cont-1910-rm-bg-11.png');
+  }
+  .conList-b1 .conList-title{
+    width: 100%;
+    height: .82rem;
+    line-height: .82rem;
+    text-align: center;
+    font-size: .34rem;
+    color: #fff;
+    float: left;
+  }
+  .conList-b1 .cont-img{
+    display: block;
+    float: left;
+    width: 2.63rem;
+    margin: .58rem 0 .4rem 1.06rem;
+  }
+  .conList-b1 ul li{
+    float: left;
+    text-align: center;
+    width: 1.43rem;
+    height: 1.7rem;
+    margin-left: .22rem; 
+  }
+  .conList-b1 ul li img{
+    float: left;
+    margin-left: .2rem;
+    width: 1.03rem;
+  }
+  .conList-b1 ul li span{
+    line-height: .7rem;
+    color: #867636;
+    font-size: .28rem;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    float: left;
+  }
+  .conList-b1 ul li.margin-0{
+    margin: 0;
+  }
+  
+.web-page .task_tip {
+    text-align: center;
+    font-size: 0.24rem;
+    color: #cc1137;
+    width: 80%;
+    margin: .1rem auto 1rem;
+}
+
+.web-page .title {
+    overflow: hidden;
+    margin-top: 1.25rem;
+    text-align: center;
+}
+.web-page.block2 .title{
+    margin-bottom: .7rem;
+    margin-top: 0;
+}
+.web-page .title .item {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.web-page .title .item_text p {
+    font-size: 0.24rem;
+}
+
+.web-page .title .item img {
+    width: 6.9rem;
+}
+.web-page .title .item img.img-02 {
+    width: 5.77rem;
+}
+
+.web-page .title .item img.eq_1 {
+    width: 5.69rem;
+}
+
+.web-page .title .item img.eq_2 {
+    width: 3.94rem;
+}
+
+.web-page .title .item img.eq_3 {
+    width: 3.30rem;
+}
+
+.web-page .title p {
+    overflow: hidden;
+    display: block;
+    font-size: 0.24rem;
+    color: #766053;
+    text-align: center;
+    margin: 0.2rem auto;
+    width: 6.9rem;
+}
+.list-up{
+    width: 6.9rem;
+    margin: 0 auto;
+    margin-bottom: 1.4rem;
+}
+.list-up table{
+    background-color: #faeaa6;
+    border: 1px solid #a5896c;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: .15rem;
+    margin-top: .55rem;
+}
+.list-up table thead{
+
+}
+.list-up tr th,.list-up tr td{
+    text-align: center;
+    font-size: .26rem;
+    color: #867636;
+    border-bottom: 1px solid #baa17a;
+    border-right: 1px solid #baa17a;
+}
+.list-up tr td.rigth-0,.list-up tr th.rigth-0{
+    border-right:0;
+}
+.ed-bold{
+    font-weight: bold;
+}
+.list-up tr:nth-child(2) td{
+    border-bottom: 0;
+}
+.list-up tr{
+    line-height: .9rem;
+    text-align: center;
+}
+.web-page .title a {
+    overflow: hidden;
+    display: block;
+    width: 1.8rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    position: relative;
+    color: #fff;
+    margin: 0 auto;
+    font-size: 0.28rem;
+    text-align: center;
+    cursor: pointer;
+    background: #fbbd51;
+    border-radius: 0.3rem;
+    transition: all 0.25s;
+}
+
+.web-page .title a:hover {
+    width: 1.9rem;
+    transition: all 0.25s;
+}
+
+.web-page .swiper-container {
+    width: 100%;
+    margin: 0.5rem 0 0;
+    height: 5rem;
+}
+.web-page .swiper-wrapper {
+    height: 4.17rem !important;
+}
+
+.web-page .swiper-slide {
+    width: 3.85rem;
+    height: 4.17rem;
+}
+
+.web-page .swiper-slide-prev .swiperList {
+    transform: scale(0.8);
+}
+
+.web-page .swiper-slide-next .swiperList {
+    transform: scale(0.8);
+}
+
+.web-page .swiper-pagination-bullet {
+    width: 0.5rem;
+    height: 1px;
+    background: #a08879;
+    border-radius: 0;
+    opacity: 1;
+    vertical-align: middle;
+}
+
+.web-page .swiper-pagination-bullet-active {
+    height: 0.05rem;
+}
+
+.web-page .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 0.02rem;
+}
+
+.web-page .swiperList {
+    overflow: hidden;
+    background: url('../../images/campaign1910/tabbg2.png') no-repeat center;
+    background-size: 100% 100%;
+    width: 3.85rem;
+    height: 4.17rem;
+    margin: 0 auto;
+}
+
+.web-page .swiperList.liBg {
+    background: url('../../images/campaign1910/tabbg1.png') no-repeat center;
+    background-size: 100% 100%;
+}
+
+.web-page .swiperList img {
+    margin: 0 auto;
+    width: 0.4rem;
+}
+
+.web-page .swiperList p,
+.web-page .swiperList span {
+    overflow: hidden;
+    display: block;
+    text-align: center;
+}
+
+.web-page .swiperList p {
+    color: #fff;
+    font-size: 0.38rem;
+    line-height: 0.4rem;
+    margin: 0.35rem 0 1rem 0;
+}
+
+.web-page .swiperList span {
+    color: #b79659;
+    font-size: 0.42rem;
+}
+
+.web-page .swiperList.liBg span {
+    color: #bc9f3b;
+}
+
+.web-page .swiperList span:last-child {
+    font-size: 0.45rem;
+}
+
+.web-page .swiperList span:last-child em {
+    font-weight: bold;
+    display: inline;
+}
+
+.web-page .swiperList span.icon {
+    overflow: hidden;
+    display: block;
+    width: 2.89rem;
+    height: 1rem;
+    margin: .8rem auto -.2rem;
+}
+
+.web-page .swiperList span.condition {
+    margin: .3rem auto 0;
+    border-radius: .32rem;
+    width: 2.95rem;
+    height: .64rem;
+    line-height: .64rem;
+    text-align: center;
+    font-size: 0.28rem;
+    background-color: #fdc51e;
+    color: white;
+}
+
+.web-page .swiperList span.condition.red {
+    margin: .3rem auto 0;
+    border-radius: .32rem;
+    width: 2.95rem;
+    height: .64rem;
+    line-height: .64rem;
+    text-align: center;
+    font-size: 0.28rem;
+    background-color: #cc1137;
+    color: white;
+}
+
+.web-page .swiperList span.icon30 {
+    background: url('../../images/campaign1910/3000.png') no-repeat center;
+    background-size: 2.9rem .99rem;
+}
+
+.web-page .swiperList span.icon50 {
+    background: url('../../images/campaign1910/5000.png') no-repeat center;
+    background-size: 2.89rem 1rem;
+}
+
+.web-page .swiperList span.icon2 {
+    background: url('../../images/campaign1910/200.png') no-repeat center;
+    background-size: 2.44rem .86rem;
+}
+
+.web-page .swiperList span.icon10 {
+    background: url('../../images/campaign1910/1000.png') no-repeat center;
+    background-size: 2.8rem .99rem;
+}
+
+.web-page .swiperList span.icon5 {
+    background: url('../../images/campaign1910/500.png') no-repeat center;
+    background-size: 2.44rem .86rem;
+}
+
+.web-page .pic1 {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.65rem;
+}
+
+.web-page .pic2 {
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0.8rem;
+}
+
+
+
+.web-page .task.container {
+    padding: 0.1rem 0.15rem;
+}
+
+.web-page .task.container .task.list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 3rem;
+    height: 1.3rem;
+    border-radius: .1rem;
+    margin-left: -0.1rem;
+    background-color: #fedf75;
+    margin-top: 0.11rem;
+}
+
+p.task_title {
+    padding: 0.2rem 0 0;
+    font-size: 0.35rem;
+}
+
+.task.note {
+    margin-top: 0.1rem;
+}
+
+
+
+.web-page .conList1 {
+    overflow: hidden;
+    width: 5.9rem;
+    margin: 0.8rem auto 0.7rem;
+}
+
+.web-page .conList1 li {
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+
+.web-page .conList1 li.childEven {
+    margin: 1.17rem 0.66rem 0;
+}
+
+.web-page .conList1 li.width {
+    width: 100%;
+}
+
+.web-page .conList1 li img {
+    width: 0.44rem;
+}
+
+.web-page .conList1 li img.arrow {
+    transform: rotate(180deg);
+}
+
+.web-page .conList1 li.width img {
+    float: right;
+    transform: rotate(90deg);
+    margin: 0.3rem 0.8rem 0.3rem 0;
+}
+
+.web-page .conList1 li span {
+    overflow: hidden;
+    display: block;
+    background-size: 100% 100%;
+    width: 2.04rem;
+    height: 2.82rem;
+    margin: 0 auto;
+}
+
+.web-page .conList1 li span img {
+    margin:0 auto;
+    width: 2.04rem;
+    height: 2.82rem;
+}
+.block3 .title{
+    margin-top: 0;
+}
+.web-page .conList1 li p {
+    overflow: hidden;
+    display: block;
+    color: #fff;
+    font-size: 0.28rem;
+    text-align: center;
+    position: absolute;
+    line-height: .6rem;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.down-footer {
+    background: transparent;
+    opacity: 0.6;
+}
+
+.down-footer .copyright span {
+    font-size: 0.22rem;
+    color: #7c4545;
+}
+
+.down-footer .copyright span:first-child {
+    font-size: 0.24rem;
+}
+
+.bot-fixed {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    width: 7.5rem;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 -0.1rem 0.08rem rgba(221, 221, 221, 0.4);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-top: 0.1rem;
+}
+
+.bot-fixed ul {
+    overflow: hidden;
+    list-style: none;
+    height: 0.9rem;
+    margin: 0;
+    padding: 0 0.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bot-fixed ul li {
+    overflow: hidden;
+    list-style: none;
+    margin: 0 0.3rem;
+}
+
+.bot-fixed ul li a img {
+    width: 0.5rem;
+    margin: 0 auto;
+}
+
+.bot-fixed ul li a {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.24rem;
+    color: #7c4545;
+}
+
+/*寮圭獥*/
+.tc-hide {
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    line-height: 1.8;
+}
+
+.masking {
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.popup-box {
+    overflow: hidden;
+    max-width: 95%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 10%;
+    background: #fff;
+    z-index: 99999;
+    font-family: 'Microsoft JhengHei', 'Microsoft YaHei', arial, sans-serif;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.3);
+}
+
+.popup-box .box-in {
+    margin: 3% 4% 5% 4%;
+    overflow-y: auto;
+    height: 8rem;
+}
+
+.popup-box .close-top {
+    padding: 0.3rem 0.3rem;
+    font-size: 0.44rem;
+    color: #b78255;
+    text-align: center;
+    border-bottom: 1px solid #b78255;
+    width: 6rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.popup-box .close-top a {
+    background: url(../../images/campaign1710/close-b.png) no-repeat;
+    width: 0.21rem;
+    height: 0.21rem;
+    background-size: 0.21rem 0.21rem;
+    position: absolute;
+    right: 0;
+    margin-top: 0.2rem;
+    text-decoration: none;
+}
+
+.popup-box .box-in .section1 .item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: 0.1rem;
+}
+
+.popup-box .section1 h2 {
+    font-size: 0.28rem;
+    font-weight: bold;
+    color: #b78255;
+}
+
+.popup-box table.data-box {
+    width: 100%;
+    margin: 16px auto 0.25rem;
+    text-align: center;
+    border: 0 !important;
+    font-size: 1.6em;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.popup-box .box-in .line-throw {
+    font-size: 0.3rem;
+}
+
+.popup-box .box-in .section1 p {
+    font-size: 0.28rem;
+    line-height: 1.8;
+}
+
+.popup-box .box-in .section3 p {
+    font-size: 0.28rem;
+    /*margin-bottom: 0.2rem;*/
+    line-height: 1.8;
+}
+
+.popup-box .box-in .section3 p a {
+    color: #0096dc;
+}
+
+.popup-box .box-in .section3 p span {
+    color: #f00;
+    font-weight: bold;
+}
+
+.popup-box .box-in .section4 h2 {
+    font-size: 0.3rem;
+    margin-bottom: 0.1rem;
+    color: #b78255;
+}
+
+.popup-box .box-in .section4 li {
+    font-size: 0.28rem;
+    line-height: 1.8;
+}
+
+.popup-box .box-in .section4 li span {
+    /*margin-right: 0.15rem;*/
+}
+
+.popup-box .box-in .section4 li p {
+    display: flex;
+}
+
+.popup-box table.data-box thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.popup-box table.data-box thead th {
+    font-size: 0.28rem;
+    text-align: center;
+    padding: 0.15rem 0.05rem;
+    color: #ffffff;
+    background: #dcb08e;
+    line-height: 1;
+}
+
+.popup-box table.data-box thead tr {
+    border: 1px solid #dcb08e;
+}
+
+.popup-box table.data-box tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.popup-box table.data-box tbody td {
+    line-height: 1;
+    text-align: center;
+    color: #333333;
+    padding: 1.44%;
+    font-size: 0.28rem;
+    border: 0.025rem solid #ead5c2;
+    font-family: Notol, 'Microsoft JhengHei', 'Microsoft YaHei', arial, sans-serif;
+}
+
+.popup-box table.data-box tbody .unit {
+    font-size: 0.8em;
+}
+
+.popup-box table.data-box tbody tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.popup-box table.data-box tbody tr.grey {
+    background: #fff;
+}
+
+.popup-box table.data-box tbody tr.last-row td {
+    border-bottom: 1px solid #cccccc;
+}
+
+.popup-box table.data-box .first-child {
+    text-align: center;
+    font-size: 0.28rem;
+}
+
+.popup-box table.data-box .first-child a {
+    color: #666666;
+    text-decoration: none;
+}
+
+.popup-box .table1 td,
+.popup-box .table2 td {
+    width: 25%;
+}
+
+.popup-box .table4 td {
+    width: 16%;
+}
+
+.popup-box .table3 td {
+    width: 33.333333%;
+}
+
+.popup-box .note {
+    line-height: 1.8;
+    font-size: 0.24rem;
+    margin-bottom: 0.1rem;
+}
+
+.popup-box .note span {
+    color: #f00;
+}
+
+.down-footer span {
+    line-height: 1.8;
+}
+
+.bot-fixed li {
+    line-height: 1.8;
+}
+.bg4{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1rem;
+    z-index: 999;
+    background-color: #e9c12f;
+    text-align: center;
+    line-height: 1rem;
+    padding-bottom:  env(safe-area-inset-bottom);
+}
+.bg4 .btn{
+    width: 6.9rem;
+    height: 1rem;
+    margin: 0 auto;
+}
+.bg4 a{
+    display: inline-block;
+    font-size: 0.26rem;
+    color: #fff;
+    border: 1px solid #6e612c;
+    background-color: #6e612c;
+    border-radius: .7rem;
+    height: .7rem;
+    padding: 0 .7rem;
+    text-align: center;
+    line-height: .7rem;
+    margin: .15rem .35rem;
+    float: left;
+    margin-left: .6rem;
+    box-sizing: border-box;
+}
+.bg4 a.btn02{
+    margin-left: .35rem;
+    border-color: #fff;
+    background-color: transparent;
+}

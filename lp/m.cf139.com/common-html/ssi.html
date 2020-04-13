@@ -1,0 +1,288 @@
+<!--#set var="ZHIBO_API_URL"    value="http://192.168.35.81:3004/api"-->
+<!--#set var="ZHIBO_SOCKET"     value="http://192.168.35.81:3007/cfstudio"-->
+<!--#set var="WWW_URL" 	        value="https://www.cf139.com"-->
+<!--#set var="IMG_URL" 	        value="https://sc.tfejy.com"-->
+<!--#set var="API_URL" 	        value="http://mis.will68.com"-->
+<!--#set var="CFD_URL"     	    value="http://113.28.105.93:8081/Frontoffice_cf/"-->
+<!--#set var="ID_URL"           value="http://ac.cf860.com"-->
+<!--#set var="M_URL"            value=""-->
+<!--#set var="CMS_URL"          value="http://cms.cf860.com"-->
+<!--#set var="PRECMS_URL"       value="https://precrs.cf139.com/"-->
+<!--#set var="MIS_URL" 	        value="http://mis.will68.com"-->
+<!--#set var="BI_URL"           value="https://datac.gwghk.com"-->
+<!--#set var="version" 	        value="?v=20180209"-->
+<!--#set var="CF_TEXT"          value="神龙科技"-->
+<!--#set var="CFD_ENG"          value="SLKE"-->
+<!--#set var="CF_ENG"           value="SL"-->
+<!--#set var="INFO_URL"         value="http://info.cf860.net"-->
+<!--#set var="minify" 	        value=""-->
+<!--#set var="PRE_OP" 	        value="https://precrs.cf139.com/"-->
+
+
+<!--# if expr="${HTTP_HOST}=/.*cf139.com/" -->
+<!--#set var="WWW_URL" 	        value="//www.cf139.com"-->
+<!--#set var="IMG_URL" 	        value="https://sc.tfejy.com"-->
+<!--#set var="API_URL" 	        value="//mis.cf139.com"-->
+<!--#set var="CFD_URL"     	    value="https://admin.cfxdealer.com/"-->
+<!--#set var="ID_URL"           value="//ac.cfd139.com.cn"-->
+<!--#set var="M_URL"            value="//m.cf139.com"-->
+<!--#set var="CMS_URL"          value="//www.cms139.com"-->
+<!--#set var="PRECMS_URL"       value="https://precrs.cf139.com"-->
+<!--#set var="MIS_URL" 	        value="https://mis.cf139.com"-->
+<!--#set var="BI_URL"           value="https://datac.gwghk.com"-->
+<!--#set var="ZHIBO_API_URL"    value="//cfapi.cf139.com/api"-->
+<!--#set var="ZHIBO_SOCKET"     value="//ws.cf139.com:3007/cfstudio"-->
+<!--#set var="CF_TEXT"          value="创富"-->
+<!--#set var="CFD_ENG"          value="CFD"-->
+<!--#set var="CF_ENG"           value="CF"-->
+<!--#set var="INFO_URL"         value="https://api.futureipool.com:1315"-->
+<!--#set var="PRE_OP" 	        value="https://precrs.cf139.com/"-->
+<!--# endif -->
+
+<!--# if expr="${HTTP_HOST}=/.*cfd139.com/" -->
+<!--#set var="WWW_URL" 	        value="//www.cfd139.com"-->
+<!--#set var="IMG_URL" 	        value="https://sc.tfejy.com"-->
+<!--#set var="API_URL" 	        value="//mis.cfd139.com"-->
+<!--#set var="CFD_URL"     	    value="https://admin.cfxdealer.com/"-->
+<!--#set var="ID_URL"           value="//ac.cfd139.com"-->
+<!--#set var="M_URL"            value="//m.cfd139.com"-->
+<!--#set var="CMS_URL"          value="//www.cms139.com"-->
+<!--#set var="PRECMS_URL"       value="https://precrs.cf139.com"-->
+<!--#set var="MIS_URL" 	        value="https://mis.cfd139.com"-->
+<!--#set var="BI_URL"           value="https://datac.gwghk.com"-->
+<!--#set var="ZHIBO_API_URL"    value="//cfapi.cf139.com/api"-->
+<!--#set var="ZHIBO_SOCKET"     value="//ws.cf139.com:3007/cfstudio"-->
+<!--#set var="CF_TEXT"          value="创富"-->
+<!--#set var="CFD_ENG"          value="CFD"-->
+<!--#set var="CF_ENG"           value="CF"-->
+<!--#set var="INFO_URL"         value="https://api.futureipool.com:1315"-->
+<!--#set var="PRE_OP" 	        value="https://precrs.cf139.com/"-->
+<!--# endif -->
+
+<!--# if  expr="${HTTP_HOST}=/.*cf139.cn/" -->
+<!--#set var="WWW_URL" 	        value="//www.cf139.cn"-->
+<!--#set var="IMG_URL" 	        value="https://sc.tfejy.com"-->
+<!--#set var="API_URL" 	        value="//mis.cf139.cn"-->
+<!--#set var="CFD_URL"     	    value="https://admin.cfxdealer.com/"-->
+<!--#set var="ID_URL"           value="//ac.cf139.cn"-->
+<!--#set var="M_URL"            value="//m.cf139.cn"-->
+<!--#set var="CMS_URL"          value="//www.cms139.com"-->
+<!--#set var="PRECMS_URL"       value="https://precrs.cf139.com"-->
+<!--#set var="MIS_URL" 	        value="https://mis.cf139.cn"-->
+<!--#set var="BI_URL"           value="https://datac.gwghk.com"-->
+<!--#set var="CF_TEXT"          value="创富"-->
+<!--#set var="CFD_ENG"          value="CFD"-->
+<!--#set var="CF_ENG"           value="CF"-->
+<!--#set var="INFO_URL"         value="https://api.futureipool.com:1315"-->
+<!--#set var="PRE_OP" 	        value="https://precrs.cf139.com/"-->
+<!--# endif -->
+
+<!--# if  expr="${HTTP_HOST}=/.*cf139.com.cn/" -->
+<!--#set var="WWW_URL" 	        value="//www.cf139.com.cn"-->
+<!--#set var="IMG_URL" 	        value="https://sc.tfejy.com"-->
+<!--#set var="API_URL" 	        value="//mis.cf139.com.cn"-->
+<!--#set var="CFD_URL"     	    value="https://admin.cfxdealer.com/"-->
+<!--#set var="ID_URL"           value="//ac.cf139.com.cn"-->
+<!--#set var="M_URL"            value="//m.cf139.com.cn"-->
+<!--#set var="CMS_URL"          value="//www.cms139.com"-->
+<!--#set var="PRECMS_URL"       value="https://precrs.cf139.com"-->
+<!--#set var="MIS_URL" 	        value="https://mis.cf139.com.cn"-->
+<!--#set var="BI_URL"           value="https://datac.gwghk.com"-->
+<!--#set var="ZHIBO_API_URL"    value="//cfapi.cf139.com/api"-->
+<!--#set var="ZHIBO_SOCKET"     value="//ws.cf139.com:3007/cfstudio"-->
+<!--#set var="CF_TEXT"          value="创富"-->
+<!--#set var="CFD_ENG"          value="CFD"-->
+<!--#set var="CF_ENG"           value="CF"-->
+<!--#set var="PRE_OP" 	        value="https://precrs.cf139.com/"-->
+<!--# endif -->
+
+<!--# if  expr="${HTTP_HOST}=/.*cfd139.com.cn/" -->
+<!--#set var="WWW_URL" 	        value="//www.cfd139.com.cn"-->
+<!--#set var="IMG_URL" 	        value="//img.cfd139.com.cn"-->
+<!--#set var="API_URL" 	        value="//mis.cfd139.com.cn"-->
+<!--#set var="CFD_URL"     	    value="https://admin.cfxdealer.com/"-->
+<!--#set var="ID_URL"           value="//ac.cfd139.com.cn"-->
+<!--#set var="M_URL"            value="//m.cfd139.com.cn"-->
+<!--#set var="CMS_URL"          value="//www.cms139.com"-->
+<!--#set var="PRECMS_URL"       value="https://precrs.cf139.com"-->
+<!--#set var="MIS_URL" 	        value="https://mis.cfd139.com.cn"-->
+<!--#set var="BI_URL"           value="https://datac.gwghk.com"-->
+<!--#set var="ZHIBO_API_URL"    value="//cfapi.cf139.com/api"-->
+<!--#set var="ZHIBO_SOCKET"     value="//ws.cf139.com:3007/cfstudio"-->
+<!--#set var="CF_TEXT"          value="创富"-->
+<!--#set var="CFD_ENG"          value="CFD"-->
+<!--#set var="CF_ENG"           value="CF"-->
+<!--#set var="INFO_URL"         value="https://api.futureipool.com:1315"-->
+<!--#set var="PRE_OP" 	        value="https://precrs.cf139.com/"-->
+<!--# endif -->
+
+<!--# if expr="$HTTP_HOST = /.*cf860.com/" -->
+<!--#set var="WWW_URL"          value="//www.cf860.com"-->
+<!--#set var="IMG_URL"          value="http://img.cf860.com"-->
+<!--#set var="M_URL"            value="//m.cf860.com"-->
+<!--#set var="ID_URL"           value="//ac.cf860.com"-->
+<!--#set var="BI_URL"           value="http://192.168.35.231:81"-->
+<!--#set var="API_URL"          value="http://mis.will68.com"-->
+<!--#set var="CFD_URL"          value="http://113.28.105.93:8081/Frontoffice_cf"-->
+<!--#set var="MIS_URL" 	        value="http://mis.will68.com"-->
+<!--#set var="CMS_URL"          value="//cms.cf860.com"-->
+<!--#set var="PRECMS_URL"       value="https://precrs.cf139.com/"-->
+<!--#set var="ZHIBO_API_URL"    value="http://192.168.35.81:3004/api"-->
+<!--#set var="ZHIBO_SOCKET"     value="http://192.168.35.81:3007/cfstudio"-->
+<!--#set var="CF_TEXT"          value="神龙科技"-->
+<!--#set var="CFD_ENG"          value="SLKE"-->
+<!--#set var="CF_ENG"           value="SL"-->
+<!--#set var="INFO_URL"         value="http://info.cf860.net"-->
+<!--#set var="PRE_OP" 	        value="https://precrs.cf139.com/"-->
+<!--# endif -->
+
+<!--# if expr="$HTTP_HOST = /.*cf860.net/" -->
+<!--#set var="WWW_URL"          value="//www.cf860.net"-->
+<!--#set var="IMG_URL"          value="https://sc.tfejy.com"-->
+<!--#set var="M_URL"            value="//m.cf860.net"-->
+<!--#set var="CMS_URL"          value="//cms.cf860.net"-->
+<!--#set var="PRECMS_URL"       value="https://precrs.cf139.com/"-->
+<!--#set var="ID_URL"           value="//ac.cf860.net"-->
+<!--#set var="BI_URL"           value="http://192.168.35.231:81"-->
+<!--#set var="API_URL"          value="http://mis.will68.com"-->
+<!--#set var="CFD_URL"          value="http://113.28.105.93:8081/Frontoffice_cf"-->
+<!--#set var="MIS_URL"  	    value="http://mis.will68.com"-->
+<!--#set var="INFO_URL"         value="http://info.cf860.net"-->
+<!--#set var="PRE_OP" 	        value="https://precrs.cf139.com/"-->
+<!--# endif -->
+
+
+<!--# if  expr="${HTTP_HOST}=/.*scdatas.com/" -->
+<!--#set var="WWW_URL" 	        value="//www.scdatas.com"-->
+<!--#set var="IMG_URL" 	        value="//img.scdatas.com"-->
+<!--#set var="API_URL" 	        value="//mis.scdatas.com"-->
+<!--#set var="CFD_URL"     	    value="https://admin.cfxdealer.com/"-->
+<!--#set var="ID_URL"           value="//ac.scdatas.com"-->
+<!--#set var="M_URL"            value="//m.scdatas.com"-->
+<!--#set var="CMS_URL"          value="//www.cms139.com"-->
+<!--#set var="PRECMS_URL"       value="https://precrs.cf139.com"-->
+<!--#set var="MIS_URL" 	        value="//mis.scdatas.com"-->
+<!--#set var="BI_URL"           value="https://datac.gwghk.com"-->
+<!--#set var="ZHIBO_API_URL"    value="//cfapi.cf139.com/api"-->
+<!--#set var="ZHIBO_SOCKET"     value="//ws.cf139.com:3007/cfstudio"-->
+<!--#set var="CF_TEXT"          value="创富"-->
+<!--#set var="CFD_ENG"          value="CFD"-->
+<!--#set var="CF_ENG"           value="CF"-->
+<!--#set var="INFO_URL"         value="https://api.futureipool.com:1315"-->
+<!--#set var="PRE_OP" 	        value="https://precrs.cf139.com/"-->
+<!--# endif -->
+
+<!--# if  expr="${HTTP_HOST}=/.*insightinf.com/" -->
+<!--#set var="WWW_URL" 	        value="//www.insightinf.com"-->
+<!--#set var="IMG_URL" 	        value="//img.insightinf.com"-->
+<!--#set var="API_URL" 	        value="//mis.insightinf.com"-->
+<!--#set var="CFD_URL"     	    value="https://admin.cfxdealer.com/"-->
+<!--#set var="ID_URL"           value="//ac.insightinf.com"-->
+<!--#set var="M_URL"            value="//m.insightinf.com"-->
+<!--#set var="CMS_URL"          value="//www.cms139.com"-->
+<!--#set var="PRECMS_URL"       value="https://precrs.cf139.com"-->
+<!--#set var="MIS_URL" 	        value="//mis.insightinf.com"-->
+<!--#set var="BI_URL"           value="https://datac.gwghk.com"-->
+<!--#set var="ZHIBO_API_URL"    value="//cfapi.cf139.com/api"-->
+<!--#set var="ZHIBO_SOCKET"     value="//ws.cf139.com:3007/cfstudio"-->
+<!--#set var="CF_TEXT"          value="创富"-->
+<!--#set var="CFD_ENG"          value="CFD"-->
+<!--#set var="CF_ENG"           value="CF"-->
+<!--#set var="INFO_URL"         value="https://api.futureipool.com:1315"-->
+<!--#set var="PRE_OP" 	        value="https://precrs.cf139.com/"-->
+<!--# endif -->
+
+<!--# if  expr="${HTTP_HOST}=/.*nascsj.com/" -->
+<!--#set var="WWW_URL" 	        value="//www.nascsj.com"-->
+<!--#set var="IMG_URL" 	        value="//img.nascsj.com"-->
+<!--#set var="API_URL" 	        value="//mis.nascsj.com"-->
+<!--#set var="CFD_URL"     	    value="https://admin.cfxdealer.com/"-->
+<!--#set var="ID_URL"           value="//ac.nascsj.com"-->
+<!--#set var="M_URL"            value="//m.nascsj.com"-->
+<!--#set var="CMS_URL"          value="//www.cms139.com"-->
+<!--#set var="PRECMS_URL"       value="https://precrs.cf139.com"-->
+<!--#set var="MIS_URL" 	        value="//mis.nascsj.com"-->
+<!--#set var="BI_URL"           value="https://datac.gwghk.com"-->
+<!--#set var="ZHIBO_API_URL"    value="//cfapi.cf139.com/api"-->
+<!--#set var="ZHIBO_SOCKET"     value="//ws.cf139.com:3007/cfstudio"-->
+<!--#set var="CF_TEXT"          value="创富"-->
+<!--#set var="CFD_ENG"          value="CFD"-->
+<!--#set var="CF_ENG"           value="CF"-->
+<!--#set var="INFO_URL"         value="https://api.futureipool.com:1315"-->
+<!--#set var="PRE_OP" 	        value="https://precrs.cf139.com/"-->
+<!--# endif -->
+
+<!--# if expr="${HTTP_HOST}=/.*cffx.pro/" -->
+<!--#set var="WWW_URL" 	        value="//www.cffx.pro"-->
+<!--#set var="IMG_URL" 	        value="https://sc.tfejy.com"-->
+<!--#set var="API_URL" 	        value="//mis.cffx.pro"-->
+<!--#set var="CFD_URL"     	    value="https://admin.cfxdealer.com/"-->
+<!--#set var="ID_URL"           value="//ac.cffx.pro"-->
+<!--#set var="M_URL"            value="//m.cffx.pro"-->
+<!--#set var="CMS_URL"          value="//www.cms139.com"-->
+<!--#set var="PRECMS_URL"       value="https://precrs.cf139.com"-->
+<!--#set var="MIS_URL" 	        value="https://mis.cffx.pro"-->
+<!--#set var="BI_URL"           value="https://datac.gwghk.com"-->
+<!--#set var="ZHIBO_API_URL"    value="//cfapi.cffx.pro/api"-->
+<!--#set var="ZHIBO_SOCKET"     value="//ws.cffx.pro:3007/cfstudio"-->
+<!--#set var="CF_TEXT"          value="创富"-->
+<!--#set var="CFD_ENG"          value="CFD"-->
+<!--#set var="CF_ENG"           value="CF"-->
+<!--#set var="INFO_URL"         value="https://api.futureipool.com:1315"-->
+<!--#set var="PRE_OP" 	        value="https://precrs.cf139.com/"-->
+<!--# endif -->
+
+<!--# if expr="${HTTP_HOST}=/.*cf-139.com/" -->
+<!--#set var="WWW_URL" 	        value="//www.cf-139.com"-->
+<!--#set var="IMG_URL" 	        value="https://sc.tfejy.com"-->
+<!--#set var="API_URL" 	        value="//mis.cf-139.com"-->
+<!--#set var="CFD_URL"     	    value="https://admin.cfxdealer.com/"-->
+<!--#set var="ID_URL"           value="//ac.cf-139.com"-->
+<!--#set var="M_URL"            value="//m.cf-139.com"-->
+<!--#set var="CMS_URL"          value="//www.cms139.com"-->
+<!--#set var="PRECMS_URL"       value="https://precrs.cf139.com"-->
+<!--#set var="MIS_URL" 	        value="https://mis.cf-139.com"-->
+<!--#set var="BI_URL"           value="https://datac.gwghk.com"-->
+<!--#set var="ZHIBO_API_URL"    value="//cfapi.cf-139.com/api"-->
+<!--#set var="ZHIBO_SOCKET"     value="//ws.cf-139.com:3007/cfstudio"-->
+<!--#set var="CF_TEXT"          value="创富"-->
+<!--#set var="CFD_ENG"          value="CFD"-->
+<!--#set var="CF_ENG"           value="CF"-->
+<!--#set var="INFO_URL"         value="https://api.futureipool.com:1315"-->
+<!--#set var="PRE_OP" 	        value="https://precrs.cf139.com/"-->
+<!--# endif -->
+
+
+<!--# if expr="${HTTP_HOST}=/.*cfx139.com/" -->
+<!--#set var="WWW_URL" 	        value="//www.cfx139.com"-->
+<!--#set var="IMG_URL" 	        value="https://sc.tfejy.com"-->
+<!--#set var="API_URL" 	        value="//mis.cfx139.com"-->
+<!--#set var="CFD_URL"     	    value="https://admin.cfxdealer.com/"-->
+<!--#set var="ID_URL"           value="//ac.cfx139.com"-->
+<!--#set var="M_URL"            value="//m.cfx139.com"-->
+<!--#set var="CMS_URL"          value="//www.cms139.com"-->
+<!--#set var="PRECMS_URL"       value="https://precrs.cf139.com"-->
+<!--#set var="MIS_URL" 	        value="https://mis.cfx139.com"-->
+<!--#set var="BI_URL"           value="https://datac.gwghk.com"-->
+<!--#set var="ZHIBO_API_URL"    value="//cfapi.cfx139.com/api"-->
+<!--#set var="ZHIBO_SOCKET"     value="//ws.cfx139.com:3007/cfstudio"-->
+<!--#set var="CF_TEXT"          value="创富"-->
+<!--#set var="CFD_ENG"          value="CFD"-->
+<!--#set var="CF_ENG"           value="CF"-->
+<!--#set var="INFO_URL"         value="https://api.futureipool.com:1315"-->
+<!--#set var="PRE_OP" 	        value="https://precrs.cf139.com/"-->
+<!--# endif -->
+<script>
+    var bi_url = "<!--#echo var='BI_URL' default=''-->";
+    var mis_url = "<!--#echo var='MIS_URL' default=''-->";
+    var apiUrl = "<!--#echo var='MIS_URL' default=''-->";
+    var ac_url = "<!--#echo var='ID_URL' default=''-->";
+    var id_url = "<!--#echo var='ID_URL' default=''-->";
+    var m_url = "<!--#echo var='M_URL' default=''-->";
+    var api_url = "<!--#echo var='API_URL' default=''-->";
+    var cms_url = "<!--#echo var='CMS_URL' default=''-->";
+    var info_url = "<!--#echo var='INFO_URL' default=''-->";
+    var img_url = "<!--#echo var='IMG_URL' default=''-->";
+    var pre_op = "<!--#echo var='PRE_OP' default=''-->";
+    var precrs_url = "<!--#echo var='PRECMS_URL' default=''-->";
+</script>

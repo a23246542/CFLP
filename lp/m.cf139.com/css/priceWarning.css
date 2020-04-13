@@ -1,0 +1,80 @@
+.price-warning{
+    background: #f7f7f7;
+    text-align: center;
+    color: #323333;
+}
+.title{
+    font-size: .32rem;
+    font-weight: bold;
+     padding-top: .4rem;
+}
+.info{
+    font-size: .28rem;
+    padding: .3rem 0 .4rem;
+    line-height: .4rem;
+
+}
+.price-title{
+    background: #fff;
+    padding:0 .3rem;
+    margin-bottom: .2rem;
+}
+.price-question{
+    background: #fff;
+    padding:0 .3rem;
+    text-align: left;
+}
+.price-question .title{
+    text-align: center;
+    border-bottom: .01rem solid #BFBFBF ;
+    padding-bottom: .2rem;
+}
+.price-question ul li .item-1{
+    font-size: .28rem;
+    margin:.5rem auto 0;
+    position: relative;
+}
+.price-question ul li .item-1 .icon{
+    position: absolute;
+    right: .1rem;
+    top:-.05rem;
+    font-size: .24rem;
+    color: #666;
+}
+.price-question ul li .item-1 .icon i{
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../images/priceWarning/icon_sq.png") no-repeat;
+    width: .44rem;
+    height: .44rem;
+    background-size: .44rem .44rem;
+    transition: all .3s;
+}
+.price-question ul li .item-1.active .icon i{
+    transform: rotate(180deg)
+}
+.price-question ul li .item-2{
+    background: #F8FCFF;
+    padding: .2rem 0 .2rem .45rem;
+    position: relative;
+    border-radius: .2rem;
+    margin-top: .25rem;
+}
+.price-question ul li .item-2.dn{
+    display: none;
+}
+.price-question ul li .item-2 p{
+    font-size: .24rem;
+    line-height: .48rem;
+}
+.price-question ul li .item-2::before{
+   content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: .15rem;
+    border-style: solid;
+    border-color: transparent transparent #F8FCFF transparent;
+    top: -.3rem;
+    left: .8rem;
+}

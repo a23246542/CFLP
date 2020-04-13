@@ -1,0 +1,1076 @@
+@import url("reset.css");
+@import url("template.css");
+@import url("swiper.min-4.0.7.css");
+html {
+  height: 100%;
+  font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+img, a {
+  display: block;
+}
+
+.title-item-structure span, .web-page2 .title .title-item span, .web-page3 .title .title-item span, .web-page4 .title .title-item span, .web-page5 .title .title-item span, .web-page7 .title .title-item span {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.title-item-structure h2, .web-page2 .title .title-item h2, .web-page3 .title .title-item h2, .web-page4 .title .title-item h2, .web-page5 .title .title-item h2, .web-page7 .title .title-item h2 {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 0 30px;
+  margin-bottom: 45px;
+}
+
+section[class*="web-page"] {
+  width: 100%;
+  min-width: 1200px;
+}
+
+.wrapper {
+  background-color: #f2f8ff;
+}
+
+.wrapper .container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.web-page1 {
+  width: 100%;
+  padding-bottom: 31.25%;
+  background-image: url("https://img.getfc.com.cn/source/www/zt/lp-img/pc/campaign2004/banner.png");
+  background-size: cover;
+  background-position: 50% 50%;
+  top: -74px;
+  position: relative;
+  margin-bottom: -74px;
+}
+
+.web-page1 .container {
+  position: relative;
+}
+
+.web-page1 .container h1,
+.web-page1 .container h2 {
+  position: absolute;
+  color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.web-page2 {
+  background-color: #f2f8ff;
+}
+
+.web-page2 .title {
+  padding-top: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.web-page2 .title .title-item span {
+  background-image: url("https://img.getfc.com.cn/source/www/zt/lp-img/pc/campaign2004/gift_icon.png");
+}
+
+.web-page2 .title .title-item h2 {
+  color: #074b6b;
+}
+
+.web-page2 .title p {
+  font-size: 26px;
+  color: #fe3838;
+}
+
+.web-page2 .conList {
+  padding-top: 80px;
+}
+
+.web-page2 .conList ul {
+  position: relative;
+  min-height: 570px;
+}
+
+.web-page2 .conList ul li.ticket {
+  width: 364px;
+  height: 177px;
+  background-image: url("https://img.getfc.com.cn/source/www/zt/lp-img/pc/campaign2004/ticket_bu.png");
+  background-size: 364px 177px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-filter: drop-shadow(0px 1px 15px #9db4e7);
+          filter: drop-shadow(0px 1px 15px #9db4e7);
+}
+
+.web-page2 .conList ul li.ticket .ticket-item {
+  width: 245px;
+}
+
+.web-page2 .conList ul li.ticket .ticket-item p {
+  font-size: 18px;
+  color: #2851bd;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.web-page2 .conList ul li.ticket .ticket-item p span {
+  font-size: 40px;
+  color: #fec738;
+  font-weight: bold;
+}
+
+.web-page2 .conList ul li.ticket .ticket-item p:nth-child(1) {
+  padding-top: 25px;
+  padding-left: 40px;
+  margin-bottom: 5px;
+}
+
+.web-page2 .conList ul li.ticket .ticket-item p:nth-child(2) {
+  margin-bottom: 8px;
+  padding-left: 53px;
+}
+
+.web-page2 .conList ul li.ticket .ticket-item p:nth-child(3) {
+  padding-left: 10px;
+}
+
+.web-page2 .conList ul li.ticket a.receive {
+    cursor: default;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.web-page2 .conList ul li.ticket:nth-child(1) {
+  top: 40px;
+  /* left: 0; */
+  left: 52%;
+  transform: translateX(-50%);
+}
+
+.web-page2 .conList ul li.ticket:nth-child(1) span {
+  letter-spacing: 1.5px;
+  margin: 0 15px 0 5px;
+}
+
+.web-page2 .conList ul li.ticket:nth-child(2) {
+  /* bottom: 0;
+  left: 0; */
+  top: 40px;
+  right: 10px;
+}
+
+.web-page2 .conList ul li.ticket:nth-child(2) span {
+  letter-spacing: 1.5px;
+  margin: 0 15px 0 5px;
+}
+
+.web-page2 .conList ul li.ticket:nth-child(3) {
+  width: 413px;
+  height: 195px;
+  background-image: url("https://img.getfc.com.cn/source/www/zt/lp-img/pc/campaign2004/ticket_red.png");
+  background-size: 413px 195px;
+  /* top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); */
+    top: 20px;
+    left: 0px;
+}
+
+.web-page2 .conList ul li.ticket:nth-child(3) .ticket-item {
+  width: 290px;
+  font-weight: 500;
+}
+
+.web-page2 .conList ul li.ticket:nth-child(3) .ticket-item p {
+  font-size: 20px;
+}
+
+.web-page2 .conList ul li.ticket:nth-child(3) .ticket-item p:nth-child(1) {
+  padding-top: 32px;
+  font-size: 22px;
+}
+
+.web-page2 .conList ul li.ticket:nth-child(3) .ticket-item span {
+  margin: 0 10px 0 5px;
+  font-size: 43px;
+}
+
+.web-page2 .conList ul li.ticket:nth-child(4) {
+  /* top: 0;
+  right: 0; */
+  bottom: 110px;
+  left: 240px;
+}
+
+.web-page2 .conList ul li.ticket:nth-child(4) span {
+  margin: 0 10px 0 5px;
+}
+
+.web-page2 .conList ul li.ticket:nth-child(5) {
+    bottom: 110px;
+    right: 180px;
+}
+
+.web-page2 .conList ul li.ticket:nth-child(5) span {
+  margin: 0 10px 0 5px;
+}
+
+.web-page2 .btn-detail {
+  padding: 50px 0 60px;
+  text-align: center;
+}
+
+.web-page2 .btn-detail > div {
+  display: inline-block;
+}
+
+.web-page2 .btn-detail > div a.btn {
+  width: 320px;
+  line-height: 75px;
+  color: white;
+  font-size: 28px;
+  letter-spacing: 1.5px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#155065), to(#09355a));
+  background-image: linear-gradient(180deg, #155065 0%, #09355a 100%);
+  -webkit-box-shadow: 0px 11px 8px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 11px 8px 2px rgba(0, 0, 0, 0.12);
+}
+
+.web-page3 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#09355a), to(#165266));
+  background-image: linear-gradient(180deg, #09355a 0%, #165266 100%);
+}
+
+.web-page3 .title {
+  padding-top: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.web-page3 .title .title-item span {
+  background-image: url("https://img.getfc.com.cn/source/www/zt/lp-img/pc/campaign2004/gift_icon2.png");
+}
+
+.web-page3 .title .title-item h2 {
+  color: white;
+}
+
+.web-page3 .title P {
+  color: #fec738;
+  font-size: 26px;
+  text-align: center;
+}
+
+.web-page3 .conList {
+  padding: 75px 0 80px;
+}
+
+.web-page3 .conList ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.web-page3 .conList ul li {
+  text-align: center;
+}
+
+.web-page3 .conList ul li > div {
+  width: 309px;
+  height: 306px;
+  margin-bottom: 40px;
+}
+
+.web-page3 .conList ul li > div img {
+  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.web-page3 .conList ul li h3 {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.web-page3 .conList ul li p {
+  display: inline-block;
+  width: 140px;
+  line-height: 60px;
+  font-size: 30px;
+  color: #eb2929;
+  background-color: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.web-page4 {
+  background-color: #f2f8ff;
+}
+
+.web-page4 .title {
+  text-align: center;
+}
+
+.web-page4 .title .title-item {
+  padding-top: 75px;
+  display: inline-block;
+}
+
+.web-page4 .title .title-item span {
+  background-image: url("https://img.getfc.com.cn/source/www/zt/lp-img/pc/campaign2004/gift_icon.png");
+}
+
+.web-page4 .title .title-item h2 {
+  color: #074b6b;
+}
+
+.web-page4 .swiper {
+  padding-bottom: 60px;
+  height: 620px;
+}
+
+.web-page4 .swiper .swiper-container {
+  padding-top: 100px;
+}
+
+.web-page4 .swiper .swiper-container .swiper-pagination {
+  top: 0;
+}
+
+.web-page4 .swiper .swiper-container .swiper-pagination .swiper-pagination-bullet {
+  top: 0;
+  display: inline-block;
+  width: 195px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 15px;
+  color: #074b6b;
+  font-size: 24px;
+  border-radius: 5px;
+  opacity: 1;
+  background: none;
+  text-align: center;
+}
+
+.web-page4 .swiper .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+  color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#09355a), to(#165266));
+  background-image: linear-gradient(180deg, #09355a 0%, #165266 100%);
+  -webkit-box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.web-page4 .swiper .swiper-container .swiper-wrapper {
+  width: 3600px;
+}
+
+.web-page4 .swiper .swiper-container .swiper-wrapper .swiper-slide .item {
+  background-color: #fff;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 1px 9px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 9px 1px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all .1s;
+  transition: all .1s;
+}
+
+.web-page4 .swiper .swiper-container .swiper-wrapper .swiper-slide .item > div {
+  width: 366px;
+  margin: 0 auto;
+}
+
+.web-page4 .swiper .swiper-container .swiper-wrapper .swiper-slide .item > div img {
+  width: 100%;
+  height: auto;
+}
+
+.web-page4 .swiper .swiper-container .swiper-wrapper .swiper-slide .item p {
+  color: #333333;
+  font-size: 24px;
+}
+
+.web-page4 .swiper .swiper-container .swiper-wrapper .swiper-slide .item p:nth-of-type(1) {
+  padding-top: 25px;
+}
+
+.web-page4 .swiper .swiper-container .swiper-wrapper .swiper-slide .item p:nth-of-type(2) {
+  padding: 10px 0px 0px;
+  font-size: 22px;
+}
+
+.web-page4 .swiper .swiper-container .swiper-wrapper .swiper-slide .item p:nth-of-type(3) {
+  padding: 20px 0 0;
+  font-size: 18px;
+  /* line-height: 26px; */
+  line-height: 32px;
+}
+
+.web-page4 .swiper .swiper-container .swiper-wrapper .swiper-slide-active .item {
+  background-color: #074b6b;
+}
+
+.web-page4 .swiper .swiper-container .swiper-wrapper .swiper-slide-active .item p {
+  color: white;
+}
+
+.web-page4 .swiper .swiper-container .swiper-wrapper .swiper-slide:not(.swiper-slide-active) .item {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  opacity: .8;
+}
+
+.web-page5 {
+  background-color: #fff;
+}
+
+.web-page5 .title {
+  text-align: center;
+  padding-top: 75px;
+}
+
+.web-page5 .title .title-item {
+  display: inline-block;
+}
+
+.web-page5 .title .title-item h2 {
+  color: #074b6b;
+  margin-bottom: 60px;
+}
+
+.web-page5 .title .title-item span {
+  background-image: url("https://img.getfc.com.cn/source/www/zt/lp-img/pc/campaign2004/gift_icon.png");
+}
+
+.web-page5 .layout ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.web-page5 .layout ul li {
+  color: #074b6b;
+  text-align: center;
+  font-weight: 500;
+}
+
+.web-page5 .layout ul li > div {
+  width: 250px;
+  margin-bottom: 30px;
+}
+
+.web-page5 .layout ul li > div img {
+  width: 100%;
+  -webkit-filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.2)) !important;
+          filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.2)) !important;
+}
+
+.web-page5 .layout ul li span {
+  font-size: 26px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.web-page5 .layout ul li p {
+  font-size: 20px;
+}
+
+.web-page6 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#09355a), to(#165266));
+  background-image: linear-gradient(180deg, #09355a 0%, #165266 100%);
+  text-align: center;
+}
+
+.web-page6 .brand {
+  padding-top: 100px;
+}
+
+.web-page6 .brand ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.web-page6 .brand ul li > div {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+
+.web-page6 .brand ul li > div img {
+  width: 100%;
+}
+
+.web-page6 .brand ul li p {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fec738;
+  margin-bottom: 20px;
+}
+
+.web-page6 .brand ul li span {
+  font-size: 26px;
+  color: #fff;
+}
+
+.web-page6 .input-box {
+  padding-top: 50px;
+}
+
+.web-page6 .input-box h3 {
+  font-size: 40px;
+  color: white;
+}
+
+.web-page6 .input-box .zhuizong {
+  width: 600px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 30px 40px 0;
+}
+
+.web-page6 .input-box .zhuizong .form-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  height: 65px;
+  padding-left: 25px;
+  border-radius: 6px;
+}
+
+.web-page6 .input-box .zhuizong .form-item > div img {
+  width: auto;
+}
+
+.web-page6 .input-box .zhuizong .form-item input {
+  display: block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: transparent;
+  border: none;
+  line-height: 65px;
+  padding-left: 20px;
+  font-size: 20px;
+  outline: none;
+}
+.input_box .input-tip {
+     height: 34px !important;
+     line-height: 34px;
+     width: 100%;
+     margin: 0 auto;
+ }
+ .input_box .input-tip span {
+     color: #de3f00!important;
+     padding-left: 20px;
+     font-size: 14px;
+ }
+.web-page6 .input-box .zhuizong .form-item input::-webkit-input-placeholder {
+  color: #999;
+}
+
+.web-page6 .input-box .zhuizong > .form-item:nth-child(1) {
+  /* margin-bottom: 35px; */
+}
+
+.web-page6 .input-box .zhuizong > .form-item:nth-child(2) {
+  /* margin-bottom: 40px; */
+}
+
+.web-page6 .input-box .zhuizong .form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.web-page6 .input-box .zhuizong .form-wrapper > .form-item {
+  width: 360px;
+}
+
+.web-page6 .input-box .zhuizong .form-wrapper .yanzheng-btn {
+  margin-left: auto;
+  width: 130px;
+  height: 65px;
+  line-height: 65px;
+  color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1e7395), color-stop(50%, #105183));
+  background-image: linear-gradient(180deg, #1e7395 0%, #105183 50%);
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.4);
+}
+
+.web-page6 .input-box .zhuizong .form-wrapper .yanzheng-btn a.btn-phonecode {
+    color: white;
+    font-size: 20px;
+}
+.web-page6 .input-box .zhuizong .form-wrapper .yanzheng-btn a.re-btn{
+    color: white;
+    font-size: 17px;
+}
+
+.web-page6 .input-box .zhuizong .btn-account {
+  padding-bottom: 70px;
+}
+
+.web-page6 .input-box .zhuizong .btn-account a.common {
+  font-size: 26px;
+  line-height: 67px;
+  color: white;
+  letter-spacing: 1.5px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1e7395), color-stop(50%, #0e4c81));
+  background-image: linear-gradient(180deg, #1e7395 0%, #0e4c81 50%);
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.3);
+}
+
+.web-page7 {
+  background-color: #333333;
+  color: white;
+}
+
+.web-page7 .line {
+  height: 5px;
+  background-color: #fff;
+}
+
+.web-page7 .title {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.web-page7 .title .title-item {
+  display: inline-block;
+}
+
+.web-page7 .title .title-item h2 {
+  color: white;
+  font-weight: normal;
+}
+
+.web-page7 .title .title-item span {
+  background-image: url("https://img.getfc.com.cn/source/www/zt/lp-img/pc/campaign2004/gift_icon2.png");
+}
+
+.web-page7 .layout {
+  overflow: hidden;
+}
+
+.web-page7 .layout .leftCon1 {
+  float: left;
+  width: 52.5%;
+}
+
+.web-page7 .layout .leftCon1 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.web-page7 .layout .leftCon1 ul li {
+  margin-left: 60px;
+}
+
+.web-page7 .layout .leftCon1 ul li > div {
+  width: 255px;
+  height: 255px;
+}
+
+.web-page7 .layout .leftCon1 ul li > div img {
+  width: 100%;
+  height: auto;
+}
+
+.web-page7 .layout .leftCon1 ul li p {
+  font-size: 23px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.web-page7 .layout .rightCon2 {
+  float: right;
+  width: 47.5%;
+}
+
+.web-page7 .layout .rightCon2 ul {
+  padding-left: 120px;
+}
+
+.web-page7 .layout .rightCon2 ul li {
+  padding-left: 60px;
+  background: url("https://img.getfc.com.cn/source/www/zt/lp-img/pc/campaign2004/footer_icon.png") no-repeat;
+  background-position: left center;
+}
+
+.web-page7 .layout .rightCon2 ul li p {
+  font-size: 24px;
+  line-height: 80px;
+}
+
+.web-footer{
+    padding: 0;
+}
+
+.web-page7 .web-footer {
+  background-color: #333333;
+  padding: 55px 0 150px;
+}
+
+.web-page7 .web-footer .item-1, .web-page7 .web-footer .item-2 {
+  color: #ffffff !important;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 300;
+  opacity: .8;
+}
+
+.web-fixed+.web-footer{
+    display: none !important;
+} 
+.web-fixed {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color:rgba(255, 255, 255, .9);
+  -webkit-box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.web-fixed .item {
+  margin: 0 160px;
+}
+
+.web-fixed .item a {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#207897), to(#0e4d81));
+  background-image: linear-gradient(180deg, #207897 0%, #0e4d81 100%);
+  width: 270px;
+  height: 80px;
+  cursor: pointer !important;
+  border-radius: 6px;
+  text-align: center;
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.4);
+}
+
+.web-fixed .item a p {
+  font-size: 23px;
+  color: #fefefe;
+  padding: 8px 0 8px;
+}
+
+.web-fixed .item a span {
+  font-size: 17px;
+  color: #fefefe;
+  opacity: .9;
+}
+
+/*# sourceMappingURL=campaign2004.css.map */
+
+.popup-box {
+    max-width: 1000px;
+    height: 650px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: -325px auto 0 auto;
+    top: 50%;
+    background: #fff;
+    z-index: 9999999999;
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+    padding: 0 20px 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.popup-box .box-in {
+    margin: 3% 3% 5% 5%;
+    color: #333333;
+    overflow: auto;
+    height: 500px;
+    padding: 0% 2% 0 0;
+}
+.popup-box table.data-box {
+    width: 100%;
+    margin: 16px auto;
+    text-align: center;
+    font-size: 1.6em;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #ead5c2;
+}
+.popup-box .box-in .section1 .detailContent{
+    width:670px;
+    font-size:18px;
+    text-align: center;
+    margin-left:50px;
+}
+.popup-box .box-in .section1{
+    margin-top:0px;
+}
+.popup-box .box-in .section1 .item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+.popup-box .box-in .section1 p{
+    font-size:20px;
+}
+.popup-box .box-in .section1 ul li:nth-child(2){
+    margin:8px 63px;
+}
+.popup-box .box-in div.title,.popup-box  .box-in div.bottom{
+    height:50px;
+    width:100%;
+    line-height: 50px;
+    background:#e4f2f8;
+}
+.popup-box .box-in div.bottom{
+    background:#f1f8fa;
+}
+
+.popup-box .box-in .section1 .detailContent ul li span{
+    display: inline-block;
+    font-size:20px;
+    color:#e84c00;
+    position:relative;
+    left:-2px;
+    top:-1px;
+}
+.popup-box .box-in div.bottom{
+    text-align: left;
+    padding-left:20px;
+}
+.popup-box .box-in .section1 .detailContent  img{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    position:relative;
+    top:-90px;
+    left:-110px;
+}
+.popup-box .box-in .section1 .detailContent  img.pic{
+    position:relative;
+    top:-90px;
+    left:108px;
+}
+
+.section3 ol li{
+    font-size:16px;
+    margin-top: 10px;
+}
+.section4 ol li{
+    font-size:20px;
+    line-height:2.2;
+    text-align: justify;
+    display: -webkit-box;  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box;     /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox;  /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex;         /* 新版本语法: Opera 12.1, Firefox 22+ */
+}
+
+.section4 ol li p.clearfix{
+    font-size: 16px;
+}
+
+.popup-box p{
+    font-size: 20px;
+}
+
+.section5 ol li{
+    font-size:16px;
+    line-height:2.2;
+    text-align: justify;
+    display: -webkit-box;  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box;     /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox;  /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex;         /* 新版本语法: Opera 12.1, Firefox 22+ */
+}
+
+
+.popup-box table.data-box thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box thead th {
+    font-size: 16px;
+    text-align: center;
+    padding: 15px;
+    color: #FFFFFF;
+    background: #dcb08e;
+    line-height: 1.0;
+    border: 1px dotted #ccc;
+}
+.popup-box table.data-box thead tr {
+    border: 1px dotted #ccc;
+}
+.popup-box table.data-box tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box tbody td {
+    line-height: 1.6;
+    text-align: center;
+    color: #333333;
+    padding: 1.44%;
+    font-size: 16px;
+    border: 1px dotted #ccc;
+    font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+}
+.popup-box table.data-box tbody .unit {
+    font-size: 0.8em;
+}
+.popup-box table.data-box tbody tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    background: #FFFFFF;
+}
+.popup-box table.data-box tbody tr.white {
+}
+.popup-box table.data-box tbody tr.last-row td {
+    border-bottom: 1px solid #CCCCCC;
+}
+.popup-box .table1 td,
+.popup-box .table2 td {
+}
+.popup-box .table4 td {
+    width: 16%;
+}
+.popup-box .table3 td {
+    width: 33.333333%;
+}
+.popup-box .close-top {
+    height: 60px;
+    color:  #b78255;
+    border-bottom: 1px solid #b78255;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.popup-box .close-top a {
+    display: block;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    background: url(//img.getfc.com.cn/source/www/zt/campaign1710/close.png) no-repeat;
+    top: 25px;
+    right: 25px;
+    text-decoration: none;
+}
+.popup-box h2 {
+    font-size:20px;
+    color: #b78255;
+    font-weight: bold;
+    position: relative;
+}
+.popup-box h2.ver-line {
+}
+.popup-box h2.ver-line i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #b78255;
+    color:#fff;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    text-align: center;
+    line-height: 30px;
+}
+.popup-box .note{line-height: 30px;}
+.popup-box .note span{color: #f00}
+.popup-box p {
+    line-height: 1.9;
+    color: #333333;
+    text-align: justify;
+}
+.popup-box p span{
+    overflow: hidden;
+    display: inline;
+    color: #d8505a;
+}
+.popup-box p a{
+    overflow: hidden;
+    display: inline;
+    color: #225b76;
+    text-decoration: underline;
+}

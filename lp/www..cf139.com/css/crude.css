@@ -1,0 +1,957 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0; color: #333}
+.inner{overflow: hidden;width: 1200px; margin: 0 auto; position: relative}
+img{ overflow:hidden;display:block;border: none;}
+.e-header .header{
+    background: none;
+}
+.web-banner{
+    width: 100%;
+    height: 680px;
+    background: url("//img.getfc.com.cn/source/www/zt/crude/banner.jpg") no-repeat center;
+    margin-top:-76px;
+    position: relative;
+    overflow: hidden;
+}
+.web-banner .masking {
+    overflow: hidden;
+    position: absolute;
+    top:0;
+    width: 60%;
+    height: 680px;
+    background: rgba(224,229,234,.5);
+    background: -o-linear-gradient(left,rgba(255,255,255,.1),rgba(255,255,255,.2));
+    background: -moz-linear-gradient(left,rgba(255,255,255,.1),rgba(255,255,255,.2));
+    background: -webkit-linear-gradient(left,rgba(255,255,255,.1),rgba(255,255,255,.2));
+    background: linear-gradient(to right,rgba(255,255,255,.1),rgba(255,255,255,.2));
+    animation: masking 1s infinite linear;
+    -webkit-animation: masking 1s infinite linear;
+}
+@-webkit-keyframes masking {
+    0% { left:0;opacity: 0; width: 0}
+    50% { left:50%;opacity: .3; width: 60%}
+    100%{ left:80%;opacity: 0; width: 0}
+}
+@keyframes masking {
+    0% { left:0;opacity: 0; width: 0}
+    50% { left:50%;opacity: .3; width: 60%}
+    100%{ left:80%;opacity: 0; width: 0}
+}
+.web-banner .layout-1{
+    overflow: hidden;
+    padding-top: 160px;
+    margin-left: 200px;
+    position: relative;
+}
+.web-banner .layout-2{
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 140px;
+    position: absolute;
+    z-index: 1;
+    bottom: 90px;
+}
+.web-banner .layout-2 a{
+    overflow: hidden;
+    display: block;
+    width:280px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    text-align: center;
+    margin-right: 124px;
+    text-decoration: none;
+    border: solid 1px #ff9100;
+}
+.web-banner .layout-2 a.item-1{
+    background: #ff9100;
+    color: #fff;
+    transition: all 1s ease-in;
+}
+.web-banner .layout-2 a:hover{
+    background: #ff9100;
+    transition: all 0.35s ease-in;
+    border: solid 1px #ff9100;
+    color: #ff9100;
+}
+.web-banner .layout-2 a::after{
+    content: "→";
+    position: absolute;
+    width: 280px;
+    height: 60px;
+    font-size: 24px;
+    color: #fff;
+    opacity: 0;
+    -webkit-transform: translate(0, 30%);
+    transform: translate(0, 30%);
+    transition: all 0.35s ease-in;
+    background: transparent;
+    margin-left: -167px;
+    margin-top: -1px;
+}
+.web-banner .layout-2 a:hover::after {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+.web-banner .layout-2 a.item-2{
+    color: #ff9100;
+}
+.web-page{
+    overflow: hidden;
+    width: 100%;
+    padding: 85px 0;
+}
+.web-page.marginbottom{padding-bottom: 0}
+.web-page.bg-color{
+    background: #f7f7f7;
+    padding: 65px 0;
+}
+.web-page .left-img{
+    overflow: hidden;
+    width: 48%;
+    height: 500px;
+    float: left;
+    position: relative;
+    margin-right: 2%;
+}
+.web-page .left-img img{
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.35s ease-in;
+}
+.web-page .left-img img:hover{transition: all 0.35s ease-in;}
+.web-page .left-img .fir-img{
+    top: 0;
+    z-index: 2;
+    width: 95%;
+}
+.web-page .left-img .sec-img{
+    top: 65px;
+    z-index: 1;
+    width: 95%;
+}
+.web-page .left-img .to-top{
+    animation: top 1s ease-in;
+    top: 0;
+    z-index: 2;
+}
+@keyframes top {
+    from{opacity: 0; top: 65px;}
+    to{opacity: 1;top: 0;}
+}
+.web-page .left-img .to-bottom{
+    top: 65px;
+    animation: top 1s ease-in;
+    z-index: 1;
+}
+@keyframes to-bottom {
+    from{opacity: 0; top: 0;}
+    to{opacity: 1;top: 65px;}
+}
+.web-page .right-con{
+    overflow: hidden;
+    width: 32%;
+    float: left;
+}
+.web-page .right-con span{
+    overflow: hidden;
+    display: block;
+    font-size: 24px;
+    line-height: 36px;
+}
+.web-page .right-con span.size{
+    font-size: 42px;
+    line-height: normal;
+    font-weight: bold;
+}
+.web-page .right-con span.margintop{margin: 90px 0 20px 0;}
+.web-page .right-con p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 28px;
+}
+.web-page .right-con p span{
+    display: inline;
+    color: #ff9100;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: bold;
+}
+.web-page .title{
+    overflow: hidden;
+    width: 100%;
+}
+.web-page .title span{
+    overflow: hidden;
+    display: block;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 48px;
+    text-align: center;
+}
+.web-page .title span.circle{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: #666;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    vertical-align: top;
+    margin-top: 20px;
+}
+.web-page .title p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 48px;
+    text-align: center;
+}
+.web-page .title a{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    width: 100px;
+    line-height: 32px;
+    margin: 10px auto;
+    background: #ff9100;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+.web-page .title a:hover{
+    background: #ff9100;
+    transition: all 0.35s ease-in;
+    color: #ff9100;
+}
+.web-page .title a::after{
+    content: "→";
+    position: absolute;
+    width: 100px;
+    height: 32px;
+    font-size: 24px;
+    color: #fff;
+    opacity: 0;
+    -webkit-transform: translate(0, 30%);
+    transform: translate(0, 30%);
+    transition: all 0.35s ease-in;
+    background: transparent;
+    margin-left: -80px;
+    margin-top: -1px;
+}
+.web-page .title a:hover::after {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+.web-page .con-list{
+    overflow: hidden;
+    margin-top: 30px;
+}
+.web-page .con-list ul{
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.web-page .con-list ul li{
+    overflow: hidden;
+    list-style: none;
+    margin: 0 60px;
+    width: 332px;
+    height: 373px;
+    background: url("//img.getfc.com.cn/source/www/zt/crude/con-bg.png") no-repeat;
+    position: relative;
+    transition: all 0.35s ease-in;
+    cursor: pointer;
+}
+.web-page .con-list ul li:hover{
+    transition: all 0.35s ease-in;
+    transform: scale(1.05);
+}
+.web-page .con-list ul li span{
+    overflow: hidden;
+    width: 100%;
+    display: block;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin: 145px 0 10px 0;
+}
+.web-page .con-list ul li span.last{
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 63px;
+    height: 63px;
+    background: rgba(255,255,255,.2);
+    margin: 0;
+    position: absolute;
+    bottom: 19px;
+}
+.web-page .con-list ul li img{margin: 0 auto}
+.web-page .con-list .item-list{
+    overflow: hidden;
+    width: 360px;
+    height: 180px;
+    box-shadow: 0 0 10px rgba(108,108,108,.2);
+    display: flex;
+    justify-content: flex-start;
+    background: #fff;
+    float: left;
+    margin: 40px 0 10px 0;
+}
+.web-page .con-list .item-list .left{
+    overflow: hidden;
+    width: 130px;
+    background: #f7f7f7;
+}
+.web-page .con-list .item-list .left span{
+    overflow: hidden;
+    display: block;
+    width: 88px;
+    height: 88px;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    background: #fff;
+    margin: 0 auto;
+}
+.web-page .con-list .item-list .left img{margin: 18px auto}
+.web-page .con-list .item-list .right{
+    overflow: hidden;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 33px;
+}
+.web-page .con-list .item-list .right span{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 48px;
+}
+.web-page .con-list .item-list .right a{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    width: 100px;
+    line-height: 32px;
+    margin: 0;
+    background: #ff9100;
+    color: #fff;
+}
+.web-page .con-list .item-list .right a:hover{
+    background: #ff9100;
+    transition: all 0.35s ease-in;
+    color: #ff9100;
+}
+.web-page .con-list .item-list .right a::after{
+    content: "→";
+    position: absolute;
+    width: 100px;
+    height: 32px;
+    font-size: 24px;
+    color: #fff;
+    opacity: 0;
+    -webkit-transform: translate(0, 30%);
+    transform: translate(0, 30%);
+    transition: all 0.35s ease-in;
+    background: transparent;
+    margin-left: -80px;
+    margin-top: -1px;
+}
+.web-page .con-list .item-list .right a:hover::after {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+.web-page .con-list .item-list .right a.color{
+    background: transparent;
+    display: inline-block;
+    color: #ff9100;
+    border-bottom: solid 1px #ff9100;
+    width: auto;
+    margin: 15px 0 3px 0;
+    line-height: normal;
+}
+.web-page .con-list .item-list .right a.color::after{content: none}
+.web-page .con-list .item-list .right a.color:hover{
+    background: #fff4e6;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.web-page .con-list .item-list01{
+    overflow: hidden;
+    font-size: 38px;
+    line-height: 64px;
+    color: #ccc;
+    float: left;
+    margin: 94px 10px 0 14px;
+}
+.web-page .con-list .layout{
+    overflow: hidden;
+    width: 50%;
+    float: left;
+    position: relative;
+}
+.web-page .con-list .layout .item{
+    overflow: hidden;
+    margin-top: 35px;
+}
+.web-page .con-list .layout .item p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+.web-page .con-list .layout .item p span{
+    overflow: hidden;
+    display: inline;
+    color: #ff9100;
+}
+.web-page .con-list .layout .item01{
+    overflow: hidden;
+    background: #f7f7f7;
+    padding: 10px 0;
+}
+.web-page .con-list .layout .item01 span{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 28px;
+    color: #130e1e;
+    width: 84%;
+    margin: 0 18px;
+}
+.web-page .con-list .layout .item01 span.arrow-bottom{
+    width: 19px;
+    height: 11px;
+    background: url("//img.getfc.com.cn/source/www/zt/crude/arrow-bottom.png") no-repeat;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+.web-page .con-list .layout .item01 span.arrow-top{background: url("//img.getfc.com.cn/source/www/zt/crude/arrow-top.png") no-repeat;}
+.web-page .con-list .layout .item01 .hide{
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.web-page .con-list .layout .item01 .show{
+    display: none;
+    padding: 15px 0 5px 0;
+}
+.web-page .con-masking{
+    overflow: hidden;
+    width: 520px;
+    height: 100%;
+    background: rgba(255,255,255,.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.web-page .con-list01{
+    overflow: hidden;
+    width: 520px;
+    height: 480px;
+    padding-bottom: 30px;
+    background: #fff;
+}
+.web-page .con-list01 span{
+    overflow: hidden;
+    display: block;
+    font-size: 24px;
+    line-height: 48px;
+    color: #130e1e;
+    padding-left: 36px;
+    margin-top: 25px;
+}
+.web-page .con-list01 p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0 36px;
+    text-align: justify;
+}
+.web-page .con-list .layout img{
+    margin-left: 7%;
+}
+.web-page .con-list .layout .rect{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 7%;
+    width: 549px;
+    height: 351px;
+    z-index: 1;
+    background: #fff;
+}
+.web-page .con-list .layout .rect.move{
+    animation: appear 2s linear forwards;
+    -webkit-animation:appear 2s linear forwards;
+}
+@-webkit-keyframes appear {
+    from {left: 7%}
+    to {left: 549px}
+}
+@keyframes appear {
+    from {left: 7%}
+    to {left: 549px}
+}
+.web-page .slider-list{
+    overflow: hidden;
+    margin-top: 50px;
+}
+.web-page .slider-list ul{
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.web-page .slider-list ul li{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: last-baseline;
+    margin-top: 10px;
+    transition: all .5s ease-in;
+    cursor: pointer;
+}
+.web-page .slider-list ul li:hover{margin: 0;transition: all .5s ease-in;}
+.web-page .slider-list ul li:nth-child(2){padding-top: 8px}
+.web-page .slider-list ul li img{margin: 0 auto}
+.web-page .slider-list ul li span{
+    overflow: hidden;
+    display: block;
+    list-style: none;
+    font-size: 16px;
+    text-align: center;
+}
+.web-page .slider-list ul li span.size{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.web-btn{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+}
+.web-btn a{
+    overflow: hidden;
+    display: block;
+    width:280px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    border: solid 1px #ff9100;
+    margin: 0 62px;
+}
+.web-btn a.item-1{
+    background: #ff9100;
+    color: #fff;
+}
+.web-btn a:hover{
+     background: #ff9100;
+     transition: all 0.35s ease-in;
+     border: solid 1px #ff9100;
+     color: #ff9100;
+ }
+.web-btn a::after{
+    content: "→";
+    position: absolute;
+    width: 280px;
+    height: 60px;
+    font-size: 24px;
+    color: #fff;
+    opacity: 0;
+    -webkit-transform: translate(0, 30%);
+    transform: translate(0, 30%);
+    transition: all 0.35s ease-in;
+    background: transparent;
+    margin-left: -167px;
+    margin-top: -1px;
+}
+.web-btn a:hover::after {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+.web-btn a.item-2{
+    color: #ff9100;
+}
+.web-brand{
+    background:url(//img.getfc.com.cn/source/www/zt/campaign1802/p-con-bg01.jpg) no-repeat;
+    width: 100%;
+    height: 620px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 54px;
+}
+.web-brand ul li{
+    float: left;
+    opacity: 0.5;
+    text-align: center;
+    width: 16.6%;
+}
+.web-brand .brand-title{
+    font-size: 20px;
+    color: #f3dac1;
+    margin-bottom: 10px;
+}
+.web-brand .brandd-title{
+    font-size: 40px;
+    color: #fff;
+}
+.web-brand .item-1{
+    margin-top: 200px;
+}
+.web-brand .brand-detail{
+    color: #fff;
+    font-size: 16px;
+}
+.web-brand span.bg-icon_02 {
+    margin-bottom: 32px;
+    display: inline-block;
+    width: 70px; height: 70px;
+    background: url(//img.getfc.com.cn/source/www/zt/campaign1802/css_sprites.png) -94px -192px;
+}
+.web-brand span.bg-icon_03 {
+    margin-bottom: 32px;
+    display: inline-block;
+    width: 70px; height: 70px;
+    background: url(//img.getfc.com.cn/source/www/zt/campaign1802/css_sprites.png) -184px -192px;
+}
+.web-brand ul li.active span.bg-icon_03 {
+    background: url(//img.getfc.com.cn/source/www/zt/annual-interest/icon4-4-pc.png) no-repeat;
+}
+
+.web-brand span.bg-icon_04 {
+    margin-bottom: 32px;
+    display: inline-block;
+    width: 70px; height: 70px;
+    background: url(//img.getfc.com.cn/source/www/zt/campaign1802/css_sprites.png) -274px -192px;
+}
+
+.web-brand ul li.active span.bg-icon_04 {
+    background: url(//img.getfc.com.cn/source/www/zt/annual-interest/icon5-5-pc.png) no-repeat;
+}
+
+.web-brand span.bg-icon_05 {
+    margin-bottom: 32px;
+    display: inline-block;
+    width: 70px; height: 70px;
+    background: url(//img.getfc.com.cn/source/www/zt/campaign1802/css_sprites.png) -366px -10px;
+}
+.web-brand ul li.active span.bg-icon_05 {
+    background: url(//img.getfc.com.cn/source/www/zt/annual-interest/icon6-6-pc.png) no-repeat;
+}
+.bg-p_img_03 {
+    display: inline-block;
+    width: 28px; height: 28px;
+    background: url(//img.getfc.com.cn/source/www/zt/campaign1802/css_sprites.png) -366px -190px;
+    background-size: 446px 299px;
+    vertical-align: middle;
+    margin: 0 20px;
+}
+.web-brand span.bg-p_img_05 {
+    margin-bottom: 12px;
+    display: inline-block;
+    width: 64px; height: 97px;
+    background: url(//img.getfc.com.cn/source/www/zt/campaign1802/css_sprites.png) -10px -192px;
+}
+
+.web-brand ul li.active span.bg-p_img_05 {
+    background: url(//img.getfc.com.cn/source/www/zt/annual-interest/icon3-3-pc.png) no-repeat;
+}
+.web-brand span.bg-icon_01 {
+    margin-bottom: 32px;
+    display: inline-block;
+    width: 70px; height: 70px;
+    background: url(//img.getfc.com.cn/source/www/zt/campaign1802/css_sprites.png) -366px -100px;
+}
+.web-brand ul li.active{
+    background: url(//img.getfc.com.cn/source/www/zt/campaign1802/p-img-07.png) no-repeat;
+    opacity: 1;
+    width: 200px;
+    height: 390px;
+    background-size: 200px 390px;
+    position: relative;
+    top: -150px;
+    padding-top: 85px;
+    cursor: pointer;
+}
+/*弹窗*/
+.popup-box {
+    max-width: 1000px;
+    height: 650px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    margin-top: -325px;
+    background: #fff;
+    z-index: 99999;
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+    padding: 0 20px 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.popup-box .box-in {
+    margin: 3% 3% 5% 5%;
+    color: #333333;
+    overflow: auto;
+    height: 500px;
+    padding: 0% 2% 0 0;
+}
+.popup-box table.data-box {
+    width: 100%;
+    margin: 16px auto 25px;
+    text-align: center;
+    border: 0 !important;
+    font-size: 1.6em;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.popup-box  .box-in .section1 .detailContent{
+    width:670px;
+
+    font-size:18px;
+    text-align: center;
+    margin-left:50px;
+}
+
+
+.popup-box  .box-in .section1{
+    margin-top:0px;
+}
+.popup-box  .box-in .section1 p{
+    font-size:16px;
+}
+.popup-box  .box-in .section1 ul li:nth-child(2){
+    margin:8px 63px;
+}
+.popup-box  .box-in div.title,.popup-box  .box-in div.bottom{
+    height:50px;
+    width:100%;
+    line-height: 50px;
+    background:#e4f2f8;
+}
+.popup-box  .box-in div.bottom{
+    background:#f1f8fa;
+}
+
+.popup-box  .box-in .section1 .detailContent ul li span{
+    display: inline-block;
+    font-size:20px;
+    color:#e84c00;
+    position:relative;
+    left:-2px;
+    top:-1px;
+}
+.popup-box  .box-in div.bottom{
+    text-align: left;
+    padding-left:20px;
+}
+.popup-box  .box-in .section1 .detailContent  img{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    position:relative;
+    top:-90px;
+    left:-110px;
+}
+.popup-box  .box-in .section1 .detailContent  img.pic{
+    position:relative;
+    top:-90px;
+    left:108px;
+}
+
+.section3 ol li{
+    font-size:16px;
+}
+.section4 ol li{
+    font-size:16px;
+    line-height:2.2;
+    text-align: justify;
+    display: -webkit-box;  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box;     /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox;  /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex;         /* 新版本语法: Opera 12.1, Firefox 22+ */
+}
+.popup-box table.data-box thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box thead th {
+    font-size: 16px;
+    text-align: center;
+    padding: 15px;
+    color: #FFFFFF;
+    background: #dcb08e;
+    line-height: 1.0;
+}
+.popup-box table.data-box thead tr {
+    border: 1px solid #dcb08e;
+}
+.popup-box table.data-box tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box tbody td {
+    line-height: 1.0;
+    text-align: center;
+    color: #333333;
+    padding: 1.44%;
+    font-size: 16px;
+    border: 0.025rem solid #ead5c2;
+    font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+}
+.popup-box table.data-box tbody .unit {
+    font-size: 0.8em;
+}
+.popup-box table.data-box tbody tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    background: #FFFFFF;
+}
+.popup-box table.data-box tbody tr.white {
+//background: #f7efe8;
+}
+.popup-box table.data-box tbody tr.last-row td {
+    border-bottom: 1px solid #CCCCCC;
+}
+.popup-box table.data-box .first-child {
+    text-align: center;
+    font-size: 16px;
+}
+.popup-box table.data-box .first-child a {
+    color: #666666;
+    text-decoration: none;
+}
+.popup-box .table1 td,
+.popup-box .table2 td {
+    width: 25%;
+}
+.popup-box .table4 td {
+    width: 16%;
+}
+.popup-box .table3 td {
+    width: 33.333333%;
+}
+.popup-box .close-top {
+    height: 60px;
+    color:  #b78255;
+    border-bottom: 1px solid #b78255;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.popup-box .close-top a {
+    display: block;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    background: url(//img.getfc.com.cn/source/www/zt/campaign1710/close.png) no-repeat;
+    top: 25px;
+    right: 25px;
+    text-decoration: none;
+}
+.popup-box h2 {
+    font-size:24px;
+    margin: 38px 0 18px;
+    color: #b78255
+;
+    position: relative;
+}
+.popup-box h2.ver-line {
+    padding-left: 45px;
+}
+.popup-box h2.ver-line i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #b78255
+;
+    color:#fff;
+    position: absolute;
+    left: 0;
+    top: -3px;
+    text-align: center;
+    line-height: 30px;
+}
+.popup-box p {
+    line-height: 1.9;
+    color: #333333;
+    text-align: justify;
+}
+.popup-box p span{
+    overflow: hidden;
+    display: inline;
+    color: #d8505a;
+}
+
+#certify {
+    width: 1200px;
+    margin: 160px auto 0 auto;
+}
+.swiper-container{margin-left: -40px}
+.swiper-slide{
+    width: 520px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(108,108,108,.2);
+    cursor: pointer;
+}
+.swiper-pagination {
+    width: 100%;
+    height: 100px;
+    top: 100px;
+}
+.swiper-slide .con-masking{display: block}
+.swiper-slide-active .con-masking{display: none}
+.swiper-slide-active{
+    margin-left: -20px;
+    transform: scale(1)!important;
+}
+.swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 171px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 0;
+    font-size: 16px;
+    color: #666;
+    opacity: 1;
+    border: solid 1px #ddd;
+    background: #fff;
+}
+.swiper-pagination-bullets .swiper-pagination-bullet-active {
+    color: #ff9100;
+    border: solid 1px #ff9100;
+}
+@media screen and (max-width: 1440px) {
+    .web-page .right-con{width: 45%}
+    .web-page .left-img{height: 400px}
+    .web-page .right-con span.margintop{margin-top: 50px}
+}

@@ -1,0 +1,540 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0; color: #333;}
+img{ overflow:hidden;border: none;display: block;}
+.e-header .header{
+    background: none;
+}
+.m-banner{
+    overflow: hidden;
+    width: 100%;
+    background: url("../../images/old-campaign1905/banner-bg.jpg") no-repeat top center;
+    background-size: 100% 100%;
+    height: 9.32rem;
+    position: relative;
+    z-index: 1;
+}
+.banner-font img{width: 4.06rem;margin: 1.12rem auto 0}
+.btn{
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    bottom: -.1rem;
+    display: flex;
+    justify-content: center;
+}
+.btn a{
+    overflow: hidden;
+    display: block;
+    font-weight: bold;
+    font-size: .3rem;
+    color: #fff;
+    text-align: center;
+}
+.btn a.acc{
+    background: url("../../images/old-campaign1905/btn-bg.png") no-repeat;
+    background-size: 100% 100%;
+    width: 3.16rem;
+    height: 1.48rem;
+    line-height: .9rem;
+}
+.btn a.register{
+    width: 2.5rem;
+    height: .68rem;
+    line-height: .68rem;
+    border-radius: .35rem;
+    border: solid .02rem #fff;
+    margin-top: .1rem;
+}
+.m-page{
+    overflow: hidden;
+    position: relative;
+}
+.m-page.bg1{
+    background: url("../../images/old-campaign1905/neiye-bg1.jpg") no-repeat top center;
+    background-size: 100% 100%;
+    height: 9.7rem;
+}
+.m-page.bgColor2{background: #62bce2}
+.m-page.bg3{
+    background: url("../../images/old-campaign1905/neiye-bg3.jpg") no-repeat top center;
+    background-size: 100% 100%;
+    height: 7.35rem;
+}
+.m-page.bgColor4{background: #00013e}
+.m-page .title {
+    overflow: hidden;
+    margin: .7rem auto 0;
+    text-align: center;
+    width: 7rem;
+}
+.m-page.bgColor2 .title,.m-page.bgColor4 .title{margin-top: .4rem}
+.m-page .title .item{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.m-page .title .item img{width: .25rem}
+.m-page.bgColor2 .title .item img,.m-page.bgColor4 .title .item img{width: .45rem;margin-top: .25rem;}
+.m-page .title .item span{
+    overflow: hidden;
+    font-size: .36rem;
+    font-style: italic;
+    background:linear-gradient(to left, #1e319b, #219ed4);
+    background: -webkit-linear-gradient(left, #1e319b, #219ed4);
+    background: -o-linear-gradient(left, #1e319b, #219ed4);
+    background: -moz-linear-gradient(left, #1e319b, #219ed4);
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 0 .3rem 0 .2rem;
+    position: relative;
+    z-index: 1;
+}
+.m-page.bgColor2 .title .item span,.m-page.bgColor4 .title .item span{
+    background:linear-gradient(to left, #f3dc5c, #ffeaaa);
+    background: -webkit-linear-gradient(left, #f3dc5c, #ffeaaa);
+    background: -o-linear-gradient(left, #f3dc5c, #ffeaaa);
+    background: -moz-linear-gradient(left, #f3dc5c, #ffeaaa);
+    -webkit-background-clip: text;
+    color: transparent;
+    padding-left: 0;
+}
+.m-page .title .item img.rect{
+    position: absolute;
+    width: 1.22rem;
+    height: .1rem;
+    bottom: .05rem;
+    left: 2.8rem;
+    z-index: 0;
+}
+.m-page .title .item span em{
+    display: inline;
+    font-weight: bold;
+    font-style: italic;
+}
+.m-page .title p{
+    overflow: hidden;
+    font-size: .24rem;
+    line-height: .36rem;
+    color: #666;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .15rem 0 .1rem;
+}
+.m-page .title a{
+    overflow: hidden;
+    display: block;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    background: url("../../images/old-campaign1905/btn-bg.png") no-repeat;
+    background-size: 100% 100%;
+    width: 3.16rem;
+    height: 1.48rem;
+    line-height: .9rem;
+    transition: all .5s;
+    margin: 0 auto;
+    font-size: .3rem;
+    font-weight: bold;
+}
+.m-page .swiperList {
+    overflow: hidden;
+    background: url("../../images/old-campaign1905/li-bg.png") no-repeat;
+    background-size: 100% 100%;
+    width: 5.63rem;
+    height: 4.52rem;
+}
+.m-page .swiperList .listTit{
+    overflow: hidden;
+    height: 1.04rem;
+    line-height: 1.04rem;
+    color: #fff;
+    font-size: .24rem;
+    font-weight: bold;
+    text-align: center;
+    padding-right: .6rem;
+}
+.m-page .swiperList .listCon{overflow: hidden;margin-top: .3rem}
+.m-page .swiperList .listCon ul{
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.m-page .swiperList .listCon ul li {
+    overflow: hidden;
+    list-style: none;
+    display: block;
+    margin-bottom: .14rem;
+}
+.m-page .swiperList .listCon ul li span{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    color: #666;
+    text-align: center;
+    width: 31%;
+    float: left;
+}
+.m-page .swiperList .listCon ul li span:nth-child(2){color: #1f2c99;font-weight: bold}
+.swiper-container {
+    width: 100%;
+    height: 4.52rem;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    width: 5.63rem;
+}
+.m-page .explain{
+    overflow: hidden;
+    font-size: .22rem;
+    color: #666;
+    text-align: center;
+    line-height: .3rem;
+    font-style: italic;
+}
+.m-page .conList{overflow: hidden;margin: .35rem auto .45rem;width: 5rem}
+.m-page .conList ul{
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.m-page .conList ul li {
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: .14rem;
+}
+.m-page .conList ul li:nth-child(4){margin-top: .56rem}
+.m-page .conList ul li.arrow{margin: 0 .3rem .8rem .2rem}
+.m-page .conList ul li.arrow.rotate{transform: rotateY(180deg)}
+.m-page .conList ul li.arrow img{width: .46rem;}
+.m-page .conList ul li .arrBot {
+    height: .46rem;
+    width: .11rem;
+    margin-bottom: .1rem;
+}
+.m-page .conList ul li p{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    color: #fef1d7;
+    text-align: center;
+    font-weight: bold;
+}
+.m-page .conList ul li span{
+    overflow: hidden;
+    display: block;
+    width: 1.66rem;
+    height: 1.66rem;
+    background: #fff;
+    border-radius: 100%;
+    margin: 0 .1rem .3rem 0;
+}
+.m-page .conList ul li.checked span {
+    box-shadow: .08rem .08rem .03rem rgba(0,31,84,.32) ;
+    background:linear-gradient(to left, #f3dc5c, #ffeaaa);
+    background: -webkit-linear-gradient(left, #f3dc5c, #ffeaaa);
+    background: -o-linear-gradient(left, #f3dc5c, #ffeaaa);
+    background: -moz-linear-gradient(left, #f3dc5c, #ffeaaa);
+}
+.m-page .conList ul li span img{width: .9rem;margin: .38rem auto 0}
+.m-page .layout {
+    overflow: hidden;
+    position: relative;
+    width: 7.2rem;
+    float: right;
+    padding-top: 1.2rem;
+}
+.m-page .layout img{width: 7.2rem}
+.m-page .layout .pos{overflow: hidden;position: absolute;z-index: 1;width: 1.2rem}
+.m-page .layout .pos img{width: 1.12rem;margin: 0 auto .05rem}
+.m-page .layout .pos span{
+    overflow: hidden;
+    display: block;
+    font-weight: bold;
+    font-size: .24rem;
+    color: #666;
+    text-align: center;
+}
+.m-page .layout .pos.pos1{
+    top: 1.5rem;
+    left: .15rem;
+}
+.m-page .layout .pos.pos2{
+    top: .55rem;
+    left: 2.9rem;
+}
+.m-page .layout .pos.pos3{
+    top: 1.6rem;
+    right: .45rem;
+}
+.m-page .layout .pos.pos4{
+    bottom: 1.55rem;
+    right: 1.75rem;
+}
+.m-page .layout .pos.pos5{
+    bottom: 1.55rem;
+    left: 1.5rem;
+}
+.m-page .conList1 {
+    overflow: hidden;
+    margin: .45rem auto .6rem;
+}
+.m-page .conList1 ul{
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.m-page .conList1 ul li {
+    overflow: hidden;
+    list-style: none;
+    display: block;
+    width: 50%;
+    float: left;
+    margin-bottom: .2rem;
+}
+.m-page .conList1 ul li img{width: 1.2rem;margin: 0 auto .05rem}
+.m-page .conList1 ul li span{
+    overflow: hidden;
+    display: block;
+    font-weight: bold;
+    font-size: .24rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: .1rem;
+    font-style: italic;
+}
+.m-page .conList1 ul li p{
+    overflow: hidden;
+    display: block;
+    font-size: .22rem;
+    line-height: .3rem;
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+}
+.bot-fixed{
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    width: 7.5rem;
+    background: rgba(255,255,255,.9);
+    box-shadow: 0 -.1rem .08rem rgba(221,221,221,.4);
+    padding-bottom:  env(safe-area-inset-bottom);
+}
+.bot-fixed ul{
+    overflow: hidden;
+    list-style: none;
+    height: .9rem;
+    margin: 0;
+    padding: 0 .25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bot-fixed ul li{
+    overflow: hidden;
+    width: 50%;
+    list-style: none;
+    margin: 0 .3rem;
+}
+.bot-fixed ul li a img{width: .5rem;margin: 0 .1rem}
+.bot-fixed ul li a{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    font-size: .24rem;
+    color: #333;
+}
+/*弹窗*/
+.tc-hide{
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
+.masking{
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+}
+.popup-box {
+    overflow: hidden;
+    max-width:95%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top:10%;
+    background: #fff;
+    z-index: 99999;
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.popup-box .box-in {
+    margin: 3% 4% 5% 4%;
+    overflow-y: auto;
+    height: 8rem;
+}
+.popup-box .close-top{
+    padding:0.3rem 0.3rem;
+    font-size: 0.44rem;
+    color:#b78255;
+    text-align: center;
+    border-bottom: 1px solid #b78255;
+    width:6rem;
+    margin: 0 auto;
+    position: relative;
+}
+.popup-box .close-top a{
+    background: url(../../images/campaign1710/close-b.png) no-repeat;
+    width: 0.21rem;
+    height:0.21rem;
+    background-size: 0.21rem 0.21rem;
+    position: absolute;
+    right: 0;
+    margin-top: .2rem;
+    text-decoration: none;
+}
+.popup-box  .box-in .section1 .item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: .1rem;
+}
+.popup-box .section1 h2{
+    font-size: 0.28rem;
+    font-weight: bold;
+    color: #b78255;
+}
+.popup-box table.data-box {
+    width: 100%;
+    margin: 6px auto 25px;
+    text-align: center;
+    border: 0 !important;
+    font-size: 1.6em;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.popup-box .box-in .line-throw{font-size: 0.3rem;}
+.popup-box .box-in .section1 p{
+    font-size:0.28rem;
+    line-height: 1.8;
+}
+.popup-box .box-in .section3 p{
+    font-size:0.28rem;
+    /*margin-bottom: 0.2rem;*/
+    line-height: 1.8;
+}
+.popup-box .box-in .section3 p a{color: #0096dc}
+.popup-box .box-in .section3 p span{
+    color: #f00;
+    font-weight: bold;
+}
+.popup-box .box-in .section4  h2{
+    font-size: 0.3rem;
+    margin-bottom: 0.1rem;
+    color: #b78255;
+}
+.popup-box .box-in .section4 li{
+    font-size: 0.28rem;
+    line-height: 1.8;
+}
+.popup-box .box-in .section4 li p{
+    display: flex;
+}
+
+.popup-box table.data-box thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box thead th {
+    font-size: .28rem;
+    text-align: center;
+    padding: .15rem .05rem;
+    color: #FFFFFF;
+    background: #dcb08e;
+    line-height: 1.0;
+}
+.popup-box table.data-box thead tr {
+    border: 1px solid #dcb08e;
+}
+.popup-box table.data-box tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box tbody td {
+    line-height: 1.0;
+    text-align: center;
+    color: #333333;
+    padding: 1.44%;
+    font-size: 14px;
+    border: 0.025rem solid #ead5c2;
+    font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+}
+.popup-box table.data-box tbody .unit {
+    font-size: 0.8em;
+}
+.popup-box table.data-box tbody tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.popup-box table.data-box tbody tr.grey {
+    background: #fff;
+}
+.popup-box table.data-box tbody tr.last-row td {
+    border-bottom: 1px solid #CCCCCC;
+}
+.popup-box table.data-box .first-child {
+    text-align: center;
+    font-size: 16px;
+}
+.popup-box table.data-box .first-child a {
+    color: #666666;
+    text-decoration: none;
+}
+.popup-box .table1 td,
+.popup-box .table2 td {
+    width: 25%;
+}
+.popup-box .table4 td {
+    width: 16%;
+}
+.popup-box .table3 td {
+    width: 33.333333%;
+}
+.popup-box .note{line-height: 1.8;font-size: 0.24rem;margin-bottom: 0.1rem}
+.popup-box .note span{color: #f00}

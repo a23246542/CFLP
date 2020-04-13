@@ -1,0 +1,643 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0;color:#333;position: relative;background: #f6f6f6;}
+.inner{overflow: hidden;width: 100%; margin: 0 auto; position: relative}
+img{ overflow:hidden;display:block;border: none;}
+.m-header{
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    font-size: 0;
+}
+.m-header .layout-1{
+    height:1rem;
+    display: flex;
+    align-items: center;
+    padding-left: .25rem;
+}
+.m-header .layout-1 .item-1{
+    background: url(/cn/zt/images/common/header43.png) no-repeat;
+    background-size: 1.63rem 0.63rem;
+    width: 1.63rem;
+    height:0.63rem;
+}
+.m-header .layout-1 .item-1 a{
+    display: block;
+    height: 0.63rem;
+}
+.web-banner{
+    width: 100%;
+    height: 9.54rem;
+    background: url("/cn/zt/images/IST/banner-bg.png") no-repeat center;
+    background-size: 100% 9.54rem;
+    position: relative;
+    overflow: hidden;
+}
+.web-banner .layout-1{
+    overflow: hidden;
+    padding-top: 1.34rem;
+    position: relative;
+}
+.web-banner .layout-1 img{
+    margin: 0 auto;
+    width: 5.97rem;
+}
+.web-page{
+    overflow: hidden;
+    width: 100%;
+    background: #f6f6f6;
+    padding: .73rem 0 .99rem 0;
+}
+.web-page.bg{
+    background: #fff;
+    position: relative;
+    padding: .8rem 0 0 0;
+}
+.web-page.bg01{
+    background: url("/cn/zt/images/IST/neiye-bg04.jpg") no-repeat;
+    height: 11.15rem;
+    padding: .85rem 0 0 0;
+    position: relative;
+}
+.web-page.bg-color{
+    background: #f3f9fd;
+    padding: 10px 0 68px 0;
+}
+.web-page.bg-color01{background: #fff}
+.web-page.bg-color02{background: #f3f9fd;padding: .75rem 0 .6rem 0}
+.web-page .con-left{
+    overflow: hidden;
+    width: 100%;
+    margin-top: .35rem;
+}
+.web-page .con-left .item{
+    overflow: hidden;
+    width: 7rem;
+    margin: 0 auto;
+}
+.web-page .con-left .item span{
+    overflow: hidden;
+    display: inline;
+    font-size: .28rem;
+    line-height: .48rem;
+    color: #ff9100;
+    font-weight: bold;
+}
+.web-page .con-left .item p{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    line-height: .48rem;
+    text-align: justify;
+}
+.web-page .con-left .item a{
+    overflow: hidden;
+    display: inline;
+    font-size: .28rem;
+    line-height: .48rem;
+    color: #ff9100;
+    float: right;
+    cursor: pointer;
+}
+.web-page .con-right{
+    overflow: hidden;
+    width: 5.65rem;
+    height: 2.71rem;
+    background: url("/cn/zt/images/IST/table-bg.jpg") no-repeat;
+    background-size: 100% 2.71rem;
+    margin: .5rem auto 0 auto;
+}
+.web-page .con-right .item{
+    overflow: hidden;
+    width: 1.9rem;
+    float: left;
+    padding-top: .2rem;
+    margin-left: .2rem
+}
+.web-page .con-right .item.height{
+    width: 1.39rem;
+    height: .74rem;
+    padding-top: .12rem;
+    margin-left: 0;
+}
+.web-page .con-right .item.width{
+    width: 1rem;
+    margin-left: 0;
+}
+.web-page .con-right .item span{
+    overflow: hidden;
+    display: block;
+    height: .65rem;
+    font-size: .24rem;
+    line-height: .65rem;
+    font-weight: bold;
+    color: #666;
+}
+.web-page .con-right .item.height span{
+    color: #fff;
+    height: auto;
+    line-height: .28rem;
+    font-weight: normal;
+    text-align: center;
+}
+.web-page .con-right .item.width span{
+    text-align: center;
+    color: #ff9100;
+}
+.web-page .con-right .item.color span{
+    color: #666;
+}
+.web-page .con-right .item span.color{
+    color: #fff;
+    height: auto;
+    line-height: normal;
+    padding-bottom: .24rem;
+    font-weight: normal;
+}
+.web-page .con-right .item.marginleft span{text-align: left}
+.web-page .item-btn{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-top: .7rem;
+}
+.web-page .item-btn a{
+    overflow: hidden;
+    display: block;
+    width: 2.5rem;
+    height: .6rem;
+    font-size: .28rem;
+    line-height: .6rem;
+    background: #ff9100;
+    color: #fff;
+    text-align: center;
+    transition:all .25s;
+}
+.web-page .item-btn a.chat{
+    background: transparent;
+    color: #ff9100;
+    border: solid .02rem #ff9100;
+    margin-left: .3rem;
+}
+.web-page .item-btn a:hover{background: #ee8700;transition:all .25s;}
+.web-page .con-right01{
+    overflow: hidden;
+    width: 100%;
+    margin: .36rem 0 .45rem 0;
+}
+.web-page .con-right01 .item{
+    overflow: hidden;
+    width: 7rem;
+    margin-left: .25rem;
+}
+.web-page .con-right01 .item img{width: 7rem; margin: 0 auto}
+.web-page .con-right01 .appear{
+    animation: appear 1.5s linear 1;
+    -webkit-animation:appear 1.5s linear 1;
+}
+@keyframes appear{
+    from {width: 0}
+    to {width: 7rem;}
+}
+@-webkit-keyframes appear{
+    from {width: 0}
+    to {width: 7rem;}
+}
+.web-page .title{
+    overflow: hidden;
+    width: 7rem;
+    margin: 0 auto;
+}
+.web-page .title span{
+    overflow: hidden;
+    display: block;
+    font-size: .44rem;
+    font-weight: bold;
+    color: #457ba3;
+    text-align: center;
+}
+.web-page .title span.inline{display: inline;font-size: .3rem;font-weight: normal}
+.web-page.bg01 .title span{color: #fff}
+.web-page .title p{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    margin: .3rem 0 .55rem 0;
+}
+.web-page.bg-color02 .title p{
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: .12rem;
+    font-size: .24rem;
+}
+.web-page .con-list{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    padding: .4rem 0 0 0;
+}
+.web-page .con-list ul{
+    overflow: hidden;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.web-page .con-list ul li{
+    overflow: hidden;
+    list-style: none;
+    width: 3.7rem;
+    height: 2.69rem;
+    float: left;
+    background: #fff;
+    border: solid .02rem #f6f6f6;
+    cursor: pointer;
+    position: relative;
+}
+.web-page .con-list ul li.background{background: #f6f6f6}
+.web-page .con-list ul li p{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    line-height: .28rem;
+    text-align: center;
+}
+.web-page .con-list ul li span{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    font-weight: bold;
+    text-align: center;
+    margin: .2rem 0 .15rem;
+}
+.web-page .con-list ul li span.num{
+    width: .365rem;
+    height: .365rem;
+    border-radius: 100%;
+    font-size: .26rem;
+    color: #fff;
+    text-align: center;
+    line-height: .365rem;
+    background: #009de6;
+    margin: 0 0 0 .05rem;
+    position: absolute;
+}
+.web-page .con-list ul li img{
+    margin: .3rem auto 0 auto;
+    width: 1.84rem;
+}
+.web-page .con-list ul li img.margintop{margin-top: .13rem}
+.web-page .con-list01{
+    overflow: hidden;
+    width: 4.1rem;
+    height: 6.6rem;
+    margin: 0 auto;
+    background: #e8f4fc;
+    padding: .2rem;
+}
+.web-page .con-list01 img{
+    width: 4.12rem;
+    margin: 0 auto;
+}
+.web-page .con-list01 span{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    line-height: .24rem;
+    margin: .4rem 0 .12rem 0;
+}
+.web-page .con-list01 p{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    line-height: .36rem;
+    margin-left: .25rem;
+    text-align: justify;
+}
+.web-page .con-list02{
+    overflow: hidden;
+    width: 100%;
+    margin-top: .72rem;
+}
+.web-page .con-list02 ul{
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.web-page .con-list02 ul li{
+    overflow: hidden;
+    list-style: none;
+    width: 6.6rem;
+    margin: 0 auto .1rem auto;
+    background: #fff;
+}
+.web-page .con-list02 ul li p{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    line-height: .48rem;
+    text-align: justify;
+    color: #fff;
+    margin: .2rem auto 0 auto;
+    width: 6rem;
+}
+.web-page .con-list02 ul li span{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    font-weight: bold;
+    color: #ffb34e;
+    margin-left: .26rem;
+}
+.web-page .con-list02 ul li span.color{
+    color: #333;
+    font-size: .32rem;margin-bottom: .05rem;
+}
+.web-page .con-list02 ul li .show-list{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    padding: .12rem 0;
+}
+.web-page .con-list02 ul li .show-list.background{background: #0096dc}
+.web-page .con-list02 ul li .show-list.background span.color{color: #fff}
+.web-page .con-list02 ul li .show-list .right{
+    overflow: hidden;
+    float: right;
+    margin: .35rem .29rem 0 0;
+    width: .38rem;
+}
+.web-page .con-list02 ul li .show-list .right span{
+    overflow: hidden;
+    display: block;
+    width: .38rem;
+    height: .22rem;
+    background: url("/cn/zt/images/IST/arrow-bottom.png") no-repeat;
+    background-size: .38rem .22rem;
+    margin: 0;
+}
+.web-page .con-list02 ul li .show-list .right span.arrow-top{
+    background: url("/cn/zt/images/IST/arrow-top.png") no-repeat;
+    background-size: .38rem .22rem;
+}
+.web-page .con-list02 ul li .show-list .right img{width: 6.6rem}
+.web-page .con-list02 ul li .item{
+    overflow: hidden;
+    height: 3.7rem;
+    display: none;
+}
+.web-page .con-list02 ul li .hide-list01{
+    background: url("/cn/zt/images/IST/img-bg01.jpg") no-repeat;
+    background-size: 6.6rem 3.7rem;
+    display: block;
+}
+.web-page .con-list02 ul li .hide-list02{
+    background: url("/cn/zt/images/IST/img-bg02.jpg") no-repeat;
+    background-size: 6.6rem 3.7rem;
+}
+.web-page .con-list02 ul li .hide-list03{
+    background: url("/cn/zt/images/IST/img-bg03.jpg") no-repeat;
+    background-size: 6.6rem 3.7rem;
+}
+.web-page .con-list02 ul li .hide-list04{
+    background: url("/cn/zt/images/IST/img-bg04.jpg") no-repeat;
+    background-size: 6.6rem 3.7rem;
+}
+.web-page .con-list03{
+    overflow: hidden;
+    width: 100%;
+    padding: .55rem 0 0 0;
+    position: relative;
+}
+.web-page .con-list03 ul{
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.web-page .con-list03 ul li{
+    overflow: hidden;
+    list-style: none;
+    width: 5.5rem;
+    height: 2.1rem;
+    background: url("/cn/zt/images/IST/img-bg05.png") no-repeat;
+    background-size: 5.5rem 2.1rem;
+    margin: 0 0 .25rem 0;
+    padding-top: .25rem;
+    position: relative;
+}
+.web-page .con-list03 ul li .right-img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.web-page .con-list03 ul li .right-img img{width: .43rem;}
+.web-page .con-list03 ul li span{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    line-height: .48rem;
+    text-align: center;
+}
+.web-page .con-list03 ul li span.size{
+    font-size: .28rem;
+    font-weight: bold;
+    line-height: normal;
+    margin: .15rem 0 -.03rem 0;
+}
+.web-page .con-list03 ul li a{
+    overflow: hidden;
+    display: block;
+    width: 2.5rem;
+    height: .6rem;
+    line-height: .6rem;
+    font-size: .28rem;
+    color: #fff;
+    text-align: center;
+    margin: .3rem auto 0 auto;
+    background: #ff9100;
+    text-decoration: none;
+    transition: all .25s;
+}
+.web-page .con-list03 ul li a:hover{
+    background: #ee8700;
+    transition: all .25s;
+}
+.web-page .con-list03 ul li img{
+    margin: 0 auto;
+    width: .42rem;
+}
+.web-page .con-list03 ul li .item{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.web-page .con-list03 ul li .item img{
+    margin: 0 .3rem;
+    cursor: pointer;
+}
+.web-page .con-list03 ul li .item a{
+    width: auto;
+    height: auto;
+    background: transparent;
+    margin: 0;
+}
+
+/*弹窗*/
+.popup-box {
+    max-width: 7rem;
+    height: 9rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: -4.5rem auto 0 auto;
+    top: 50%;
+    background: #fff;
+    z-index: 9999;
+    box-shadow: 0 0 .1rem #ccc;
+}
+.popup-box .box-in {
+    margin: .3rem;
+    color: #333333;
+    overflow: auto;
+    height: 7rem;
+}
+.popup-box table.data-box {
+    width: 5.6rem;
+    margin: .3rem 0 .1rem .6rem;
+    text-align: center;
+    border: 0 !important;
+    font-size: .28rem;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.popup-box .section1 ul li{
+    float:left;
+    font-size: .28rem;
+}
+.popup-box .section2 ul li{
+    font-size: .28rem;
+}
+.popup-box .section2 ol li{
+    font-size: .28rem;
+}
+.popup-box .section2 ol li i{
+    margin-left: .3rem;
+    font-weight: bold;
+}
+.popup-box .section4 ol li{
+    font-size: .28rem;
+    line-height:1.9;
+    padding-left: .6rem;
+    width: 5.6rem;
+}
+.popup-box table.data-box thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box thead th {
+    font-size: .28rem;
+    text-align: center;
+    padding: .3rem .1rem;
+    color: #FFFFFF;
+    background: #0096DB;
+    line-height: 1.0;
+}
+.popup-box table.data-box thead tr {
+    border: 1px solid #0096DB;
+}
+.popup-box table.data-box tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box tbody td {
+    line-height: 1.0;
+    text-align: center;
+    color: #333333;
+    padding: .2rem .1rem;
+    font-size: .28rem;
+    border: 1px solid #CCC;
+}
+.popup-box table.data-box tbody tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    background: #FFFFFF;
+}
+.popup-box table.data-box .first-child {
+    text-align: center;
+    font-size: .28rem;
+    width: 2rem;
+}
+.popup-box table.data-box .first-child a {
+    color: #666666;
+}
+.popup-box .close-top {
+    background: #035B83;
+    height: 1rem;
+    color: #fff;
+    text-align: center;
+    line-height: 1rem;
+    font-size: .38rem;
+    font-weight: bold;
+}
+.popup-box .close-top a {
+    display: block;
+    width: .21rem;
+    height: .21rem;
+    position: absolute;
+    background: url(/cn/zt/images/IST/close.png) no-repeat;
+    background-size: .21rem .21rem;
+    top: .4rem;
+    right: .25rem;
+}
+.popup-box h2 {
+    font-size:.32rem;
+    margin: .3rem 0 .18rem;
+    color: #035B83;
+    position: relative;
+}
+.popup-box h2.ver-line {
+    padding-left: .6rem;
+}
+.popup-box h2.ver-line i {
+    width: .45rem;
+    height: .45rem;
+    line-height: .5rem;
+    border-radius: 100%;
+    background: #035B83;
+    color:#fff;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    margin-right: .1rem;
+}
+.popup-box p {
+    width: 5.6rem;
+    font-size: .28rem;
+    line-height: 1.9;
+    color: #333333;
+    padding-left:.6rem;
+    text-align: justify;
+}
+.swiper-button-next, .swiper-button-prev{
+    width: .55rem;
+    height: .55rem;
+    top: 45%;
+}
+.swiper-button-prev{
+    left: .4rem;
+    background: url("/cn/zt/images/IST/arrow-left.png") no-repeat;
+    background-size: .55rem .55rem;
+}
+.swiper-button-next{
+    right: .4rem;
+    background: url("/cn/zt/images/IST/arrow-right.png") no-repeat;
+    background-size: .55rem .55rem;
+}
+

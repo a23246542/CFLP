@@ -1,0 +1,716 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0; color: #333;}
+.inner{overflow: hidden;width: 100%; margin: 0 auto; position: relative}
+img{ overflow:hidden;border: none;display: block}
+body,html{background: #fff;font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;}
+.web-banner{
+    background: url("https://img.getfc.com.cn/source/www/zt/lp-img/mobile/campaign1912/banner.png") no-repeat center;
+    background-size: 100% 100%;
+    height: 8.74rem;
+    position: relative;
+    z-index: 1;
+}
+.web-page{
+    overflow: hidden;
+    position: relative;
+}
+.web-page .title {
+    overflow: hidden;
+    margin-top: .8rem;
+    text-align: center
+}
+.banner-img{
+	width: 6.9rem;
+	margin: 0 auto;
+}
+.banner-img img{
+	width: 4.73rem;
+	float: left;
+	margin:3.4rem 0 0 2.05rem;
+}
+.web-page .title img{margin: 0 auto;width: 4.24rem}
+.web-page .title img:last-child {transform: rotateY(180deg);}
+.web-page .title p,.web-page .title span{
+    overflow: hidden;
+    display: block;
+    font-size: .3rem;
+    color: #013748;
+    text-align: center;
+    margin: .1rem 0 .15rem;
+}
+
+.swiper-pagination {
+    width: 100%;
+    height: 4px;
+    bottom: 4px;
+}
+.web-page .inner{
+	width: 6.9rem;
+	margin: 0 auto;
+	overflow: hidden;
+	zoom: 1;
+}
+.item-001 .inner{
+	width: 100%;
+}
+.web-page .conList{
+	overflow: hidden;
+	margin-top: 0.8rem;
+	height: 5rem;
+}
+.web-page .conList ul{
+    display: flex;
+	width: 3.78rem;
+    justify-content: center;
+    height: 4.49rem;
+}
+.item-001{
+	height: 9.68rem;
+}
+.web-page .conList ul li{
+    overflow: hidden;
+    width: 3.37rem;
+    height: 4.49rem;
+    position: relative;
+    margin: 0 0.21rem 0.4rem;
+    transition: all .25s;
+	background-image: url("https://img.getfc.com.cn/source/www/zt/lp-img/mobile/campaign1912/1912-first-01.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: transparent;
+	background-size: 3.37rem 4.49rem;
+}
+.swiper-slide{
+	width: 3.78rem!important;
+}
+.web-page .conList .swiper-slide:nth-child(2n) ul li{
+	background-image: url("https://img.getfc.com.cn/source/www/zt/lp-img/mobile/campaign1912/1912-first-02.png");
+}
+.swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 0.5rem;
+    height: 0.04rem;
+    line-height: 0.04rem;
+    border-radius: 0.04rem;
+    opacity: 1;
+	margin: 0 0.15rem;
+    background: #e1dfc7;
+}
+.swiper-pagination-bullets .swiper-pagination-bullet cite{
+	font-style: normal;
+	color: #2aa1bd;
+}
+.swiper-pagination-bullets .swiper-pagination-bullet-active {
+    background-color: #dab132;
+}
+/* .web-page .conList ul li:hover{
+    transition: all .25s;
+    margin-top: 10px;
+} */
+.web-page .conList ul li p,.web-page .conList ul li span{
+    overflow: hidden;
+    display: block;
+    font-size: 0.3rem;
+    color: #fff;
+    text-align: center;
+}
+.web-page .conList .swiper-slide:nth-child(2n) ul li span{
+	color: #da9918;
+}
+.web-page .conList ul li p{
+	width: 3.2rem;
+	height: 0.92rem;
+	line-height: 0.92rem;
+	color: #fff;
+	font-weight: bold;
+}
+.web-page .conList ul li p.last-p{
+	line-height: 0.32rem;
+	height: 0.64rem;
+	font-weight: 400;
+	font-size: 0.26rem;
+	color: #b47247;
+}
+.web-page .conList ul li p.last-p cite{
+	font-weight: bold;
+	font-style: normal;
+}
+.web-page .conList ul li span {
+    font-size: 0.68rem;
+    font-weight: bold;
+    line-height: 0.68rem;
+    margin-bottom: 0.47rem;
+    margin-top: 1.12rem;
+	color: #b47247;
+}
+.web-page .conList ul li .item{
+    overflow: hidden;
+    width: 3.2rem;
+    height: 100%;
+}
+
+
+.web-page .title span{font-size: .4rem}
+.web-page .title p {
+    margin: .3rem auto 0;
+    width: 6.3rem;
+    line-height: .5rem;
+}
+.web-page .conList{overflow: hidden;}
+.web-page .conList .slider{
+    overflow: hidden;
+    width: 4rem;
+    height: 4.04rem;
+    border-radius: .125rem;
+    background: #c71b32;
+    box-shadow: 0 .03rem .13rem rgba(0,0,0,.52);
+    position: relative;
+    margin: .4rem auto;
+}
+.web-page .conList .slider p,.web-page .conList .slider span{
+    overflow: hidden;
+    display: block;
+    font-size: .36rem;
+    color: #fff;
+    text-align: center;
+}
+.web-page .conList .slider span {
+    font-size: .52rem;
+    font-weight: bold;
+    line-height: .56rem;
+    margin-bottom: .25rem;
+}
+.web-page .conList .slider .item span{margin-top: .8rem}
+.web-page .conList .slider span em{display: inline;color: #f8e489}
+.web-page .conList .slider p.first {
+    font-weight: bold;
+    font-size: .4rem;
+    line-height: .44rem;
+    margin: .4rem 0 -.8rem;
+}
+.web-page .conList .slider p.last{
+    overflow: hidden;
+    width: 3.9rem;
+    height: .9rem;
+    line-height: .9rem;
+    margin: 0 auto;
+    background:-webkit-linear-gradient(top, #fbe78a, #cdb175);
+    background: -o-linear-gradient(top, #fbe78a, #cdb175);
+    background: -moz-linear-gradient(top, #fbe78a, #cdb175);
+    background: linear-gradient(to top, #fbe78a, #cdb175);
+    border-bottom-left-radius: .1rem;
+    border-bottom-right-radius: .1rem;
+    color: #013748;
+    font-weight: bold;
+    font-size: .34rem;
+}
+.web-page .conList .slider p.last.color{color: #a50606}
+.web-page .conList .slider .item{
+    overflow: hidden;
+    background: url("https://img.getfc.com.cn/source/www/zt/lp-img/mobile/campaign1912/li.png");
+    background-size: 100% 100%;
+    width: 3.83rem;
+    height: 2.91rem;
+    margin: .1rem auto .08rem;
+}
+.web-page .conList .swiper-container{height: 4.75rem}
+.web-page .conList .swiper-button-next, .swiper-button-prev{
+    width: .35rem;
+    height: .6rem;
+    bottom: 2.075rem;
+    top: auto;
+}
+.web-page .conList .swiper-button-prev{
+    background: url("https://img.getfc.com.cn/source/www/zt/lp-img/mobile/campaign1912/arrow.png") no-repeat;
+    background-size: 100% 100%;
+    left: .85rem;
+    transform: rotateY(180deg);
+}
+.web-page .conList .swiper-button-prev.swiper-button-disabled{
+    opacity: 1;
+}
+.web-page .conList .swiper-button-next{
+    background: url("https://img.getfc.com.cn/source/www/zt/lp-img/mobile/campaign1912/arrow.png") no-repeat;
+    background-size: 100% 100%;
+    right: .85rem;
+}
+.web-page .btn{overflow: hidden;margin-bottom: .5rem}
+.web-page .btn a{
+    overflow: hidden;
+    display: block;
+    width: 4.32rem;
+    height: .8rem;
+    background: #f1c74b;
+    color: #333;
+    font-size: .3rem;
+    font-weight: bold;
+    border-radius: .125rem;
+    text-align: center;
+    line-height: .8rem;
+    margin: .05rem auto .1rem;
+    cursor: pointer;
+}
+
+.anli-ex{
+	width: 100%;
+	height: 6.2rem;
+	box-sizing: border-box;
+	margin-bottom: 0.9rem;
+}
+.anli-ex img{
+	display: block;
+	margin: 0 auto;
+	width: 1.72rem;
+	zoom: 1;
+	overflow: hidden;
+}
+.anli-ex .anli-ex-cont{
+	width: 5.9rem;
+	margin: 0 auto;
+	height: auto!important;
+	min-height: 4.4rem;
+	height: 4.4rem;
+	zoom: 1;
+	overflow: hidden;
+}
+.anli-ex .anli-ex-cont .ex-title{
+	width: 100%;
+	height: 0.48rem;
+	line-height: 0.48rem;
+	font-size: 0.32rem;
+	font-weight: bold;
+	color: #333333;
+	text-align: center;
+	margin-bottom: 0.38rem;
+	float: left;
+	zoom: 1;
+	overflow: hidden;
+}
+.anli-ex .anli-ex-cont .ex-text{
+	width: 100%;
+	height: auto!important;
+	line-height: 0.47rem;
+	min-height: 1.2rem;
+	height: 1.2rem;
+	font-size: 0.32rem;
+	text-align: left;
+	float: left;
+	zoom: 1;
+	overflow: hidden;
+	margin-bottom: 0.48rem;
+}
+.anli-ex .anli-ex-cont span{
+	display: block;
+	float: left;
+	width: 100%;
+	height: auto!important;
+	min-height: 0.5rem;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	font-size: 0.38rem;
+	color: #f1c74b;
+	word-break:break-all;
+	font-weight: bold;
+}
+
+.item-003.web-page .title p,.item-003.web-page .title span{
+	color: #fff;
+}.
+.item-003.web-page .title span{
+	font-weight: bold;
+}
+.item-003{
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#85d5e4), color-stop(100%,#3a819b))  ;
+	background: -webkit-linear-gradient(top, #85d5e4 0%,#3a819b 100%) ;
+	background: -o-linear-gradient(top, #85d5e4 0%,#3a819b 100%) ;
+	background: -ms-linear-gradient(top, #85d5e4 0%,#3a819b 100%) ;
+
+	background-position: center;
+	height: 10.54rem;
+	background-repeat: no-repeat;
+}
+.layout{
+	width: 100%;
+	height: 7.26rem;
+	
+}
+.web-page .layout .leftCon,.web-page .layout .rightCon{overflow: hidden;width: 100%;float: left;margin-top: 0.63rem;}
+.web-page .layout .leftCon ul{
+	display: flex;
+	justify-content: center;
+}
+.web-page .layout .leftCon li{
+    overflow: hidden;
+	width: 2.3rem;
+	height: 3.18rem;
+}
+.web-page .layout .leftCon li span{
+    overflow: hidden;
+    width: 2.3rem;
+	position: relative;
+    height: 1.42rem;
+    align-items: center;
+    margin-bottom: 0.11rem;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.web-page .layout .leftCon li span img{
+	display: inline-block;
+	width: 1.14rem;
+}
+.web-page .layout .leftCon li:nth-child(1) span img{
+	width: 1.65rem;
+}
+.web-page .layout .leftCon li:nth-child(2) span img{
+	width: 1.2rem;
+}
+.web-page .layout .leftCon li:nth-child(3) span img{
+	width: .88rem;
+}
+.web-page .layout .leftCon .order-li li:nth-child(1) span img,.web-page .layout .leftCon .order-li li:nth-child(2) span img{
+	width: 1.14rem;
+}
+
+.web-page .layout .leftCon li p{
+    overflow: hidden;
+    display: block;
+    color: #013748;
+    font-size: 0.32rem;
+	line-height: 0.4rem;
+	height: 0.4rem;
+	color: #fff;
+	text-align: center;
+}
+.web-page .layout .leftCon li p:first-child{
+	font-weight: bold;
+	color: #f1c74b;
+}
+.web-page .layout .leftCon li p:last-child{
+	font-size: 0.28rem;
+}
+.web-page .layout .leftCon li .item{overflow: hidden}
+.web-page .layout .leftCon1{
+    overflow: hidden;
+    width: 50%;
+    float: left;
+    margin-top: 0.28rem;
+}
+.web-page .layout .leftCon1 li{
+    overflow: hidden;
+    width: 40%;
+    float: left;
+    margin-right: 5%;
+}
+.web-page .layout .leftCon1 li img{margin: 0 auto 10px}
+.web-page .layout .leftCon1 li span{
+    overflow: hidden;
+    display: block;
+    color: #013748;
+    font-size: 0.3rem;
+    text-align: center;
+}
+
+
+.web-page .btn p{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    color: #013748;
+    text-align: center;
+}
+.web-page .conList1{
+	overflow: hidden;
+}
+.web-page .conList1 ul{
+	display: flex;
+	justify-content: center;
+}
+.web-page .conList1 li{
+    overflow: hidden;
+    display: block;
+    width: 1.9rem;
+	border-radius: 0.17rem;
+	margin: .3rem .06rem;
+	margin-bottom: .66rem;
+	box-shadow: 0 .03rem .13rem rgba(48,67,112,.52);
+}
+.web-page .conList1 li img{
+	width: 100%;
+}
+.item-005{
+	height: 9.06rem;
+	background-color: #ebf2f5;
+}
+.item-005 .title span{
+	font-weight: bold;
+}
+.conList2{
+	width: 100%;
+	margin-top: 0.3rem;
+}
+.conList2 ul li{
+	width: 3.12rem;
+	height: 3.26rem;
+	display: flex;
+	justify-content: center;
+	float: left;
+	margin-left: 0.32rem;
+	position: relative;
+}
+.conList2 ul li:nth-child(2n){
+	margin-left: 0;
+}
+.conList2 ul li span{
+	display: block;
+	width: 2.77rem;
+	height: 2.9rem;
+}
+.conList2 ul li span img{
+	width: 100%;
+}
+.conList2 ul li p{
+	width: 100%;
+	height: 0.66rem;
+	position: absolute;
+	left: 0;
+	line-height: 0.66rem;
+	top: 1.91rem;
+	font-size: 0.32rem;
+	color: #388099;
+	text-align: center;
+}
+
+.down-footer{background: #eae8d9;padding-bottom: 1.2rem}
+.down-footer .copyright span{color: #013748;}
+.bot-fixed{
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    width: 7.5rem;
+    background: #05587d;
+    box-shadow: 0 -.1rem .08rem rgba(221,221,221,.4);
+    height: calc(1.2rem) + constant(safe-area-inset-bottom));
+    height: calc(1.2rem) + env(safe-area-inset-bottom));
+}
+.bot-fixed ul{
+    overflow: hidden;
+    list-style: none;
+    height: .9rem;
+    margin: .1rem 0;
+    padding: 0 .25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bot-fixed ul li{
+    overflow: hidden;
+    list-style: none;
+    width: 1.96rem;
+    height: .7rem;
+    border-radius: .185rem;
+    margin: 0 .16rem;
+}
+.bot-fixed ul li a img{width: .5rem;margin: 0 auto}
+.bot-fixed ul li a{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: .3rem;
+    color: #333;
+	font-weight: bold;
+    height: .7rem;
+}
+.bot-fixed ul li.account{
+    background: #f1c74b;
+	
+}
+.bot-fixed ul li.border{
+	background-color: #ebf2f5;
+	color: #333333;
+}
+/*弹窗*/
+.tc-hide{
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    line-height: 1.8;
+}
+.masking{
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+}
+.popup-box {
+    overflow: hidden;
+    max-width:95%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top:10%;
+    background: #fff;
+    z-index: 99999;
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 .1rem rgba(0, 0, 0, 0.3);
+}
+.popup-box .box-in {
+    margin: 3% 4% 5% 4%;
+    overflow-y: auto;
+    height: 8rem;
+}
+.popup-box .close-top{
+    padding:0.3rem 0.3rem;
+    font-size: 0.44rem;
+    color:#b78255;
+    text-align: center;
+    border-bottom: 1px solid #b78255;
+    width:6rem;
+    margin: 0 auto;
+    position: relative;
+}
+.popup-box .close-top a{
+    background: url(../../images/campaign1710/close-b.png) no-repeat;
+    width: 0.21rem;
+    height:0.21rem;
+    background-size: 0.21rem 0.21rem;
+    position: absolute;
+    right: 0;
+    margin-top: .2rem;
+    text-decoration: none;
+}
+.popup-box  .box-in .section1 .item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: .1rem;
+}
+.popup-box .section1 h2{
+    font-size: 0.28rem;
+    font-weight: bold;
+    color: #b78255;
+}
+.popup-box table.data-box {
+    width: 100%;
+    margin: 16px auto .25rem;
+    text-align: center;
+    border: 0 !important;
+    font-size: 1.6em;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.popup-box .box-in .line-throw{font-size: 0.3rem;}
+.popup-box .box-in .section1 p{
+    font-size:0.28rem;
+    line-height: 1.8;
+}
+.popup-box .box-in .section3 p{
+    font-size:0.28rem;
+    /*margin-bottom: 0.2rem;*/
+    line-height: 1.8;
+}
+.popup-box .box-in .section3 p a{color: #0096dc}
+.popup-box .box-in .section3 p span{
+    color: #f00;
+    font-weight: bold;
+}
+.popup-box .box-in .section4  h2{
+    font-size: 0.3rem;
+    margin-bottom: 0.1rem;
+    color: #b78255;
+}
+.popup-box .box-in .section4 li{
+    font-size: 0.28rem;
+    line-height: 1.8;
+}
+.popup-box .box-in .section4 li span{
+    /*margin-right: 0.15rem;*/
+}
+.popup-box .box-in .section4 li p{
+    display: flex;
+}
+
+.popup-box table.data-box thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box thead th {
+    font-size: .28rem;
+    text-align: center;
+    padding: .15rem .05rem;
+    color: #FFFFFF;
+    background: #dcb08e;
+    line-height: 1.0;
+}
+.popup-box table.data-box thead tr {
+    border: 1px solid #dcb08e;
+}
+.popup-box table.data-box tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box tbody td {
+    line-height: 1.0;
+    text-align: center;
+    color: #333333;
+    padding: 1.44%;
+    font-size: .28rem;
+    border: 0.025rem solid #ead5c2;
+    font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+}
+.popup-box table.data-box tbody .unit {
+    font-size: 0.8em;
+}
+.popup-box table.data-box tbody tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+//background: #f7efe8;
+}
+.popup-box table.data-box tbody tr.grey {
+    background: #fff;
+}
+.popup-box table.data-box tbody tr.last-row td {
+    border-bottom: 1px solid #CCCCCC;
+}
+.popup-box table.data-box .first-child {
+    text-align: center;
+    font-size: .28rem;
+}
+.popup-box table.data-box .first-child a {
+    color: #666666;
+    text-decoration: none;
+}
+.popup-box .table1 td,
+.popup-box .table2 td {
+    width: 25%;
+}
+.popup-box .table4 td {
+    width: 16%;
+}
+.popup-box .table3 td {
+    width: 33.333333%;
+}
+.popup-box .note{line-height: 1.8;font-size: 0.24rem;margin-bottom: 0.1rem}
+.popup-box .note span{color: #f00}
+.down-footer span{
+    line-height: 1.8;
+}
+.bot-fixed li{
+    line-height: 1.8;
+}

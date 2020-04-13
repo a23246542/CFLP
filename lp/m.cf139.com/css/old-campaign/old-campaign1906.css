@@ -1,0 +1,511 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0; color: #333;}
+.inner{overflow: hidden;width: 100%; margin: 0 auto; position: relative}
+img{ overflow:hidden;border: none;}
+
+.web-banner{
+    width: 7.5rem;
+    background: url("//img.getfc.com.cn/source/www/zt/old-campaign1906/banner-bgm.png") no-repeat top center;
+    background-size: 7.5rem 10.62rem;
+    height: 10.62rem;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+.banner-font img{width: 4.91rem;margin: .74rem auto 0}
+.web-page{
+    overflow: hidden;
+    position: relative;
+}
+.btn a{
+    cursor: pointer;
+    display: inline-block;
+    font-size: .3rem;
+    text-align: center;
+    color: #fff;
+    width:3rem;
+    height:.8rem;
+    line-height: .8rem;
+    font-weight: 400;
+}
+.btn  a.account{
+    background:linear-gradient(0deg,rgba(4,106,255,1),rgba(75,148,255,1));
+    box-shadow:0px .25rem .5rem 0px rgba(2,12,27,0.4);
+    border-radius:.4rem;
+}
+
+.btn  a.chat{
+    background: #fff;
+    color: #066BFF;
+    border:.02rem solid #066BFF;
+    border-radius:.4rem;
+    margin-top:4.8rem;
+}
+
+.web-page{
+    overflow: hidden;
+    position: relative;
+}
+
+
+.web-page.bg2{
+    background: url("//img.getfc.com.cn/source/www/zt/old-campaign1906/bg01-m.jpg") no-repeat center;
+    background-size: 7.5rem 9.71rem;
+    width: 7.5rem;
+    height: 9.71rem;
+}
+.web-page.bg3{
+    background: url("//img.getfc.com.cn/source/www/zt/old-campaign1906/bg02-m.jpg") no-repeat center;
+    background-size: 7.5rem 13.85rem;
+    width: 7.5rem;
+    height: 13.85rem;
+}
+.web-page.bg4{
+    background: url("//img.getfc.com.cn/source/www/zt/old-campaign1906/bg03-m.png") no-repeat center;
+    background-size: 7.5rem 2.04rem;
+    width: 7.5rem;
+    height: 2.04rem;
+    padding-top: .3rem;
+    box-sizing: border-box;
+}
+.bg1-wrapper{
+    text-align: center;
+    margin-top: .35rem;
+}
+.bg1-wrapper .line{
+    margin: .1rem auto .15rem;
+}
+.bg2 .number{
+    margin: .78rem auto .1rem;
+}
+.bg2 .title-info{
+    margin: .29rem auto .6rem;
+}
+.bg3 .line{
+    margin: 10px auto 29px;
+}
+.bg3 .title-info{
+    margin: .1rem auto .8rem;
+}
+.title-info{
+    color: #3E3520;
+    font-size: .36rem;
+    font-weight: bold;
+}
+.title-info01{
+    color: #666;
+    font-size:.24rem;
+    margin: .28rem auto .3rem;
+    line-height: 1.6;
+    padding: 0 .47rem;
+}
+.title-info span{
+    color: #FF7908;
+}
+.rule a{
+    cursor: pointer;
+    display: block;
+    margin: 0 auto .4rem;
+    width:2.2rem;
+    height:.6rem;
+    line-height: .6rem;
+    font-size: .24rem;
+    color: #066BFF;
+    text-align: center;
+    border:1px solid rgba(6,107,255,1);
+    background:#fff;
+    border-radius:.3rem;
+}
+.title-text{
+    color: #3E3520;
+    font-size: .36rem;
+}
+.line{
+    width:.6rem;
+    height:.04rem;
+    background:rgba(255,116,0,1);
+    border-radius:.02rem;
+    margin: 0 auto;
+}
+
+.web-page.bg02{
+    width:100%;
+    height:616px;
+    background:linear-gradient(-90deg,rgba(39,44,74,1),rgba(79,86,127,1));
+}
+.bg1-wrapper .table-box{
+    width:5.8rem;
+    height:3.45rem;
+    margin: 0 auto;
+    background:rgba(255,255,255,1);
+    box-shadow:0px .15rem .25rem 0px rgba(0,1,1,0.1);
+    border-radius:.25rem;
+    font-size: .24rem;
+}
+.bg1-wrapper .table-box .top{
+    width:5.8rem;
+    height:1.3rem;
+    background:linear-gradient(-90deg,rgba(4,106,255,1),rgba(75,148,255,1));
+    border-radius:.25rem .25rem 0px 0px;
+    color: #fff;
+}
+.bg1-wrapper  .table-box .top ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    line-height: 1.6;
+    padding-top:.22rem;
+}
+.bg1-wrapper .table-box .bottom ul.first li{
+    padding-top: .34rem;
+}
+.bg1-wrapper  .table-box .bottom ul.last li{
+    padding-bottom: .37rem;
+}
+.bg1-wrapper  .table-box .bottom ul li ul {
+    display: flex;
+    color: #FF7908;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.bg1-wrapper  .table-box .bottom ul li ul li{
+    flex: 1;
+    line-height: 2;
+    border-right: .02rem solid rgba(224,224,224,0.3);
+}
+.bg1-wrapper  .table-box .bottom ul li ul li:first-child{
+    color: #666;
+}
+.title{
+    text-align: center;
+}
+.table-info{
+    color: #FF7B0C;
+    font-size: .18rem;
+    margin-top: .3rem;
+}
+.number{
+    color: #999;
+    font-size: .18rem;
+}
+.bg2-wrapper ul{
+    padding:0 .7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bg2-wrapper ul li{
+    text-align: center;
+    width:2.5rem;
+    margin: 0 0 .3rem;
+    height:3.2rem;
+    background:transparent;
+    border-radius:.06rem;
+}
+.bg2-wrapper ul li.hover{
+    box-shadow:0px .15rem .25rem 0px rgba(0,1,1,0.1);
+}
+.bg2-text01{
+    color: #666;
+    font-size: .24rem;
+}
+.bg2-text02{
+    color: #333;
+    font-size: .24rem;
+    font-weight: bold;
+}
+.bg2-wrapper .left-icon{
+    float: left;
+    margin-bottom: .27rem;
+    width: .56rem;
+    height:.56rem;
+    line-height: .56rem;
+    text-align: center;
+    font-size: .18rem;
+    color: #666;
+}
+.bg2-wrapper ul li.hover .left-icon{
+    background: url("//img.getfc.com.cn/source/www/zt/old-campaign1906/icon-bg.png") no-repeat;
+    background-size:.56rem .56rem;
+}
+.bg2-wrapper .bg2-icon{
+    margin:.83rem auto .3rem;
+    width: 1rem;
+    height: 1rem;
+    text-align: center;
+}
+.bg2-wrapper ul li:first-child img{
+   width: .85rem;
+}
+.bg2-wrapper ul li:nth-child(2) img{
+   width: .8rem;
+}
+.bg2-wrapper ul li:nth-child(3) img{
+   width: .82rem;
+}
+.bg2-wrapper ul li:nth-child(4) img{
+   width: .82rem;
+}
+.bg3-wrapper{
+    position: relative;
+    padding:0 .75rem;
+}
+.bg3-wrapper .pic-ab img{
+  width: 5.35rem;
+}
+.bg3-wrapper ul.item{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto .5rem;
+}
+.bg3-wrapper ul.item-3{
+    margin-bottom: 0;
+}
+
+.bg3-wrapper ul li{
+    width:2.6rem;
+    height:1.8rem;
+    background:rgba(255,255,255,1);
+    border:1px solid rgba(6,107,255,1);
+    border-radius:.06rem;
+    font-size:.24rem;
+    color: #333;
+    text-align: center;
+    line-height: 1.6;
+}
+.bg3-wrapper ul li .top{
+    width:2.6rem;
+    height:.9rem;
+    background:linear-gradient(-90deg,rgba(4,106,255,1),rgba(75,148,255,1));
+    border-radius:.06rem .06rem 0px 0px;
+    font-size: .24rem;
+    color: #fff;
+    padding-top: .07rem;
+}
+.bg3-wrapper ul li .top .item-1{
+    font-weight: bold;
+}
+.bg3-wrapper ul li .bottom{
+    text-align: left;
+    padding-left: .11rem;
+}
+.bg4 .btn{
+    font-size: 0;
+    display: flex;
+    width: 6.9rem;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.bg4 .btn a{
+    width:3.3rem;
+    height:.8rem;
+    line-height: .8rem;
+    border-radius:.06rem;
+    display: inline-block;
+    text-align: center;
+}
+.bg4 .btn a.btn01{
+    background:linear-gradient(0deg,rgba(4,106,255,1),rgba(75,148,255,1));
+    box-shadow:0 .25rem.5rem 0px rgba(2,12,27,0.4);
+}
+.bg4 .btn span,.account span{
+    content: "";
+    width: 0;
+    height: 0;
+    border-width:.1rem;
+    border-style: solid;
+    border-color: transparent transparent  transparent #FF7400 ;
+    font-size: 0;
+    display: inline-block;
+    vertical-align: inherit;
+    margin-left: .2rem;
+}
+.bg4 .btn a.btn02{
+    color: #0E70FF;
+    background:rgba(255,255,255,1);
+    border:.02rem solid rgba(6,107,255,1);
+}
+/*弹窗*/
+.tc-hide{
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    line-height: 1.8;
+}
+.masking{
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+}
+.popup-box {
+    overflow: hidden;
+    max-width:95%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top:10%;
+    background: #fff;
+    z-index: 99999;
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.popup-box .box-in {
+    margin: 3% 4% 5% 4%;
+    overflow-y: auto;
+    height: 8rem;
+}
+.popup-box .close-top{
+    padding:0.3rem 0.3rem;
+    font-size: 0.44rem;
+    color:#b78255;
+    text-align: center;
+    border-bottom: 1px solid #b78255;
+    width:6rem;
+    margin: 0 auto;
+    position: relative;
+}
+.popup-box .close-top a{
+    background: url(../../images/campaign1710/close-b.png) no-repeat;
+    width: 0.21rem;
+    height:0.21rem;
+    background-size: 0.21rem 0.21rem;
+    position: absolute;
+    right: 0;
+    margin-top: .2rem;
+    text-decoration: none;
+}
+.popup-box  .box-in .section1 .item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: .1rem;
+}
+.popup-box .section1 h2{
+    font-size: 0.28rem;
+    font-weight: bold;
+    color: #b78255;
+}
+.popup-box table.data-box {
+    width: 100%;
+    margin: 16px auto 25px;
+    text-align: center;
+    border: 0 !important;
+    font-size: 1.6em;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.popup-box .box-in .line-throw{font-size: 0.3rem;}
+.popup-box .box-in .section1 p{
+    font-size:0.28rem;
+    line-height: 1.8;
+}
+.popup-box .box-in .section3 p{
+    font-size:0.28rem;
+    /*margin-bottom: 0.2rem;*/
+    line-height: 1.8;
+}
+.popup-box .box-in .section3 p a{color: #0096dc}
+.popup-box .box-in .section3 p span{
+    color: #f00;
+    font-weight: bold;
+}
+.popup-box .box-in .section4  h2{
+    font-size: 0.3rem;
+    margin-bottom: 0.1rem;
+    color: #b78255;
+}
+.popup-box .box-in .section4 li{
+    font-size: 0.28rem;
+    line-height: 1.8;
+}
+.popup-box .box-in .section4 li span{
+    /*margin-right: 0.15rem;*/
+}
+.popup-box .box-in .section4 li p{
+    display: flex;
+}
+
+.popup-box table.data-box thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box thead th {
+    font-size: .28rem;
+    text-align: center;
+    padding: .15rem .05rem;
+    color: #FFFFFF;
+    background: #dcb08e;
+    line-height: 1.0;
+}
+.popup-box table.data-box thead tr {
+    border: 1px solid #dcb08e;
+}
+.popup-box table.data-box tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box tbody td {
+    line-height: 1.0;
+    text-align: center;
+    color: #333333;
+    padding: 1.44%;
+    font-size: 14px;
+    border: 0.025rem solid #ead5c2;
+    font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+}
+.popup-box table.data-box tbody .unit {
+    font-size: 0.8em;
+}
+.popup-box table.data-box tbody tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+//background: #f7efe8;
+}
+.popup-box table.data-box tbody tr.grey {
+    background: #fff;
+}
+.popup-box table.data-box tbody tr.last-row td {
+    border-bottom: 1px solid #CCCCCC;
+}
+.popup-box table.data-box .first-child {
+    text-align: center;
+    font-size: 16px;
+}
+.popup-box table.data-box .first-child a {
+    color: #666666;
+    text-decoration: none;
+}
+.popup-box .table1 td,
+.popup-box .table2 td {
+    width: 25%;
+}
+.popup-box .table4 td {
+    width: 16%;
+}
+.popup-box .table3 td {
+    width: 33.333333%;
+}
+.popup-box .note{line-height: 1.8;font-size: 0.24rem;margin-bottom: 0.1rem}
+.popup-box .note span{color: #f00}
+.down-footer span{
+    line-height: 1.8;
+}
+.bot-fixed li{
+    line-height: 1.8;
+}

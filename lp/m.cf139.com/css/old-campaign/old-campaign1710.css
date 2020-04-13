@@ -1,0 +1,726 @@
+#main{ overflow: hidden; width:100%;margin: 0; padding: 0;}
+.old-banner{
+    overflow: hidden;
+    background: url("../../images/old-campaign1710/banner-bg.jpg") no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+}
+.old-banner img{
+    overflow: hidden;
+    display: block;
+    margin: 1.87rem auto 4.62rem auto;
+    width: 7.07rem;
+}
+.old-page{
+    overflow: hidden;
+    width: 100%;
+    margin: 1rem 0 .08rem 0;
+}
+.old-page-title{
+    overflow: hidden;
+}
+.old-page-title span{
+    overflow: hidden;
+    display: block;
+    color: #333;
+    font-size: .32rem;
+    text-align: center;
+}
+.old-page-title span.size{
+    font-size: .44rem;
+    font-weight: bold;
+    line-height: .44rem;
+    margin-bottom: .2rem;
+}
+.old-page-title span.color{
+    color: #ff9100;
+    display: inline;
+    margin: 0 .1rem;
+    font-size: .4rem;
+    line-height: .4rem;
+}
+.old-page-title span.size-01{
+    font-size: .28rem;
+    width: 6.5rem;
+    text-align: center;
+    margin: 0 auto;
+}
+.old-page-con{
+    overflow: hidden;
+    width: 7rem;
+    margin: .56rem auto;
+}
+.old-page-con .list{
+    overflow: hidden;
+    border: solid .02rem #f5f5f5;
+    padding: .29rem 0 .05rem 0;
+    margin-bottom: .33rem;
+}
+.old-page-con .list .title{
+    overflow: hidden;
+}
+.old-page-con .list .title span{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    text-align: center;
+    color: #666;
+}
+.old-page-con .list .title span.size-1{
+    font-size: .36rem;
+    font-weight: bold;
+    margin-bottom: .03rem;
+    color: #333;
+}
+.old-page-con .list .title span.size-2{
+    font-size: .32rem;
+    margin: .22rem 0 .35rem 0;
+    color: #333;
+}
+.old-page-con .list .title span.font{
+    display: inline;
+    font-weight: bold;
+    font-size: .4rem;
+    color: #333;
+    margin: 0 .05rem;
+}
+.old-page-con .list .con{
+    overflow: hidden;
+    width: 6.5rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.old-page-con .list .con.right{float: right;}
+.old-page-con .list .con ul{
+    overflow: hidden;
+    margin-bottom: .22rem;
+    width: 3rem;
+}
+.old-page-con .list .con ul.right{
+    margin-left: .3rem;
+}
+.old-page-con .list .con ul li{
+    overflow: hidden;
+    float: left;
+    width: 1.2rem;
+}
+.old-page-con .list .con.right ul li{float: right}
+.old-page-con .list .con ul li.width{width: .8rem;}
+.old-page-con .list .con ul li.padding{ width: 1rem;}
+.old-page-con .list .con ul li span{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    text-align: center;
+    color: #333;
+}
+.old-page-con .list .con ul li span.font{ font-weight: bold;}
+.old-page-con .list .con ul li span.margin{ margin-top: .39rem; font-size: .24rem;}
+
+.old-page-con .list .con ul li img{
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    width: .42rem;
+}
+.old-page-con .list .con ul li img.margin{margin-top: .14rem;width: .7rem;}
+.old-page .btn-list{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    width: 6.6rem;
+    margin: .37rem auto 0px auto;
+}
+.old-page .btn-list a{
+    overflow: hidden;
+    display: block;
+    width: 2.9rem;
+    height: .7rem;
+    line-height: .7rem;
+    background: #0096dc;
+    color: #fff;
+    text-align: center;
+    font-size: .32rem;
+    border-radius: .06rem;
+    -moz-border-radius: .06rem;
+}
+.old-page .btn-list a.account{
+    height: .66rem;
+    line-height: .66rem;
+    background: #fff;
+    border: solid .02rem #0096dc;
+    color: #0096dc;
+}
+.old-page-2{
+    overflow: hidden;
+    background: url("../../images/old-campaign1710/bg-01.jpg") no-repeat;
+    background-size: 100% 100%;
+    padding: .99rem 0 4.87rem 0;
+}
+.old-page-2.bg{
+    background: #fff;
+    padding:0;
+    margin-bottom: .8rem;
+}
+.old-page-2 .right-img{
+    overflow: hidden;
+    float: right;
+}
+.old-page-2 .right-img img{
+    overflow: hidden;
+    display: block;
+    border: 0;
+}
+.old-page-2 .right-con{
+    overflow: hidden;
+    width: 7rem;
+    margin: 0 auto;
+}
+.old-page-2 .right-con .title{
+    overflow: hidden;
+    width: 7rem;
+    margin: 0 auto .6rem auto;
+}
+.old-page-2 .right-con .title span{
+    overflow: hidden;
+    display: block;
+    color: #333;
+    font-size: .32rem;
+    text-align: center;
+}
+.old-page-2 .right-con .title span.size{
+    font-size: .44rem;
+    font-weight: bold;
+    margin-bottom: .17rem;
+    line-height: .44rem;
+}
+.old-page-2.bg .right-con .title span.size{
+    margin:1.03rem 0 .26rem 0;
+}
+.old-page-2 .right-con .title span.color{
+    color: #ff9100;
+    display: inline;
+    margin: 0 .05rem;
+    font-size: .4rem;
+}
+.old-page-2 .right-con .img-con{
+    overflow: hidden;
+}
+.old-page-2 .right-con .img-con img{
+    overflow: hidden;
+    display: block;
+    width: 4.95rem;
+    margin: .3rem auto 0 auto;
+}
+.old-page-2 .right-con .con{
+    overflow: hidden;
+    width: 6.4rem;
+    margin: 0 auto;
+}
+.old-page-2 .right-con .con ul{
+    overflow: hidden;
+}
+.old-page-2 .right-con .con ul li{
+    overflow: hidden;
+    float: left;
+}
+.old-page-2 .right-con .con ul li img{
+    overflow: hidden;
+    display: block;
+    width: .46rem;
+    margin-top: .2rem;
+    margin-right: .15rem;
+}
+.old-page-2 .right-con .con ul li span{
+    overflow: hidden;
+    display: block;
+    color: #333;
+    font-size: .28rem;
+    line-height: .48rem;
+    margin-bottom: .1rem;
+    margin-right: .1rem;
+}
+.old-page-2 .right-con .con ul li span.size{
+    font-size: .32rem;
+    font-weight: bold;
+}
+.old-page-2 .right-con .btn{
+    overflow: hidden;
+    background: #0096dc;
+    color: #fff;
+    width: 4rem;
+    height: .8rem;
+    line-height: .8rem;
+    text-align: center;
+    font-size: .32rem;
+    margin: .9rem auto 0 auto;
+    border-radius: .06rem;
+    -moz-border-radius: .06rem;
+}
+.old-page-2 .right-con .btn a{color: #fff}
+.old-page-2.bg .right-con .btn{margin-top: 22px}
+.old-page-2.bg .right-con .con{
+    overflow: hidden;
+    width: 6rem;
+    margin: 0 auto;
+    background: #e8f5fc;
+    border-radius: .06rem;
+    -moz-border-radius: .06rem;
+    padding: .3rem .25rem .4rem .25rem;
+}
+.old-page-2.bg .right-con .con span{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    line-height: .48rem;
+    color: #333;
+}
+.old-page-2.bg .right-con .con span.size{
+    font-size: .32rem;
+    margin-top: .15rem;
+}
+.old-page-4{
+    overflow: hidden;
+    margin: 90px auto;
+}
+.old-page-4 .title{
+    overflow: hidden;
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+}
+.old-page-4 .list-btn{
+    overflow: hidden;
+    width: 730px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.old-page-4 .list-btn a{
+    overflow: hidden;
+    background: #0096dc;
+    color: #fff;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 52px;
+}
+.old-page-4 .list-btn a.account{
+    height: 48px;
+    line-height: 48px;
+    background: #fff;
+    border: solid 1px #0096dc;
+    color: #0096dc;
+    transform: translate(0,0);
+    transition: all .2s ease-in 0s;
+}
+.old-page-4 .list-btn a:hover{
+    background: #035b83;
+    transform: translate(0,0);
+    transition: all .2s ease-in 0s;
+}
+.old-page-4 .list-btn a.account:hover{
+    color: #fff;
+    transform: translate(0,0);
+    transition: all .2s ease-in 0s;
+}
+
+.orig-page4{
+    overflow: hidden;
+    background: url("../../images/old-campaign1710/con-bg02.jpg") no-repeat;
+    background-size: 100% 100%;
+    padding: .73rem .25rem .73rem .25rem;
+    height: 6.84rem;
+}
+.orig-page4 .title{
+    overflow: hidden;
+}
+.orig-page4 .title span{
+    overflow: hidden;
+    display: block;
+    float: left;
+    color: #fff;
+    font-size: .44rem;
+    font-weight: bold;
+    text-align: center;
+    width: 7rem;
+}
+.orig-page4 .list-block{
+    overflow: hidden;
+}
+.orig-page4 .list-block .block{
+    overflow: hidden;
+    position: absolute;
+    width: 2.4rem;
+    padding-top: .37rem;
+    text-align: center;
+    margin-top: 3.58rem;
+}
+.orig-page4 .list-block .block.list-2{
+    margin-left: 1.5rem;
+    margin-top: .85rem;
+    width: 4.5rem;
+}
+.orig-page4 .list-block .block.list-3{
+    margin-top: 2.35rem;
+    margin-left: 1.2rem;
+    width: 2.8rem;
+}
+.orig-page4 .list-block .block.list-4{
+    margin-left: 4.5rem;
+    margin-top: 3.1rem;
+}
+.orig-page4 .list-block .block span{
+    overflow: hidden;
+    display: block;
+    font-size: .32rem;
+    color: #fff;
+    padding-bottom: .1rem;
+    font-weight: bold;
+}
+.orig-page4 .list-block .block span.size{
+    font-size: .28rem;
+    font-weight: normal;
+}
+.orig-page4 .list-block .block.list-2 span.margin{ margin-left: .48rem !important;}
+
+
+/*活动条款*/
+.popup-tc{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+}
+.popup-tc .masking{
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color:rgba(0,0,0,0.6);
+}
+
+.popup-box {
+    display: block;
+    max-width: 95%;
+    height:9rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 1.5rem;
+    background: #fff;
+    z-index: 99999;
+    padding: 0;
+    border-radius: .1rem;
+    box-shadow: 0 0 .1rem rgba(0, 0, 0, 0.3);
+}
+.popup-box .box-in {
+    padding: 3% 5% 0% 5%;
+    overflow-y: auto;
+    height:7.6rem;
+}
+
+.popup-box table.data-box {
+    width: 100%;
+    margin: .16rem auto .25rem auto;
+    text-align: center;
+    border: 0 !important;
+    font-size: 1.6em;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.popup-box  .box-in .section1{
+    margin-top:0px;
+}
+.popup-box  .box-in .section1 p{
+    font-size:.26rem;
+}
+.popup-box  .box-in .section1 ul li:nth-child(2){
+    margin:.08rem .63rem;
+}
+.section3{overflow: hidden;
+}
+.section3 ol li i{
+    overflow: hidden;
+    display: block;
+    float: left;
+    font-size:.26rem;
+    color: #333;
+    margin-right: .1rem;
+    margin-bottom: .1rem;
+}
+.section3 ol li span{
+    overflow: hidden;
+    display: block;
+    float: left;
+    width: 6rem;
+    font-size:.26rem;
+    color: #333;
+    margin-bottom: .1rem;
+
+}
+.section3 ol li .note{
+    overflow: hidden;
+    line-height: .48rem;
+    color: #333;
+    text-align: justify;
+    font-size:.26rem;
+}
+.section3 ol li .note span{
+    overflow: hidden;
+    display: inline;
+    width: .1rem;
+    color: #f00;
+    margin-right: .1rem;
+    margin-bottom: 0;
+}
+.section4 ol li{
+    font-size:.26rem;
+    line-height:2;
+    text-align: justify;
+    padding: .05rem 0;
+    display: -webkit-box;  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box;     /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox;  /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex;         /* 新版本语法: Opera 12.1, Firefox 22+ */
+}
+.popup-box table.data-box thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box thead th {
+    font-size: .3rem;
+    text-align: center;
+    line-height: 1.2;
+    padding: .15rem;
+    color: #FFFFFF;
+    background: #0096dc;
+}
+.popup-box table.data-box thead tr {
+    border: .02rem solid #0096dc;
+}
+.popup-box table.data-box tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box tbody td {
+    line-height: 1.2;
+    text-align: center;
+    color: #333333;
+    padding: 1.44% 1% 1.44% 1%;
+    font-size: .28rem;
+    border: .02rem solid #CCC;
+}
+.popup-box table.data-box tbody .unit {
+    font-size: 0.8em;
+}
+.popup-box table.data-box tbody tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    background: #FFFFFF;
+}
+.popup-box table.data-box tbody tr.grey {
+    background: #eef6f9;
+}
+.popup-box table.data-box tbody tr.last-row td {
+    border-bottom: .02rem solid #CCCCCC;
+}
+.popup-box table.data-box .first-child {
+    text-align: center;
+    font-size: .3rem;
+    line-height: .36rem;
+}
+.popup-box table.data-box .first-child a {
+    color: #666666;
+}
+.popup-box .table1 td,
+.popup-box .table2 td {
+    width: 25%;
+}
+.popup-box .table4 td {
+    width: 16%;
+}
+.popup-box .table3 td {
+    width: 33.333333%;
+}
+.popup-box .close-top {
+    height:1rem;
+    color:  #0096dc;
+    border-bottom: .02rem solid #0096dc;
+    text-align: center;
+    line-height: 1rem;
+    font-size: .4rem;
+    font-weight: bold;
+}
+.popup-box .close-top a {
+    display: block;
+    width: .21rem;
+    height: .21rem;
+    position: absolute;
+    background: url(../../images/old-campaign1710/close-b.png) no-repeat;
+    background-size:.21rem .21rem ;
+    top: .4rem;
+    right: .25rem;
+}
+.popup-box h2 {
+    font-size:.28rem;
+    margin: .18rem 0;
+    color: #0096dc;
+    position: relative;
+}
+.popup-box h2.ver-line {
+    padding-left: .5rem;
+}
+.popup-box h2.ver-line i {
+    width: .4rem;
+    height: .4rem;
+    border-radius: 50%;
+    background: #0096dc;
+    color:#fff;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    line-height: .4rem;
+    top: -.01rem;
+}
+.popup-box p {
+    line-height: 1.9;
+    color: #333333;
+    text-align: justify;
+    font-size: .26rem;
+    padding: .02rem 0;
+}
+
+
+/*头部*/
+.m-header{
+    background-color: #fff;
+    border-bottom: 0.02rem solid #eee;
+    font-size: 0;
+    height:0.8rem;
+    padding-top:0.3rem ;
+    /*padding-left: 0.3rem;*/
+}
+
+
+/*toutyu*/
+
+.m-header .layout-1 .item-1 .left-2 {
+    width: 0.27rem;
+    height: 0.43rem;
+    background: url(../../images/common/header155.png)no-repeat;
+    display: block;
+    float: left;
+    background-size: 0.27rem 0.43rem;
+    margin-top: 0.4rem;
+}
+.m-header .layout-1 .item-1 .left-3 {
+    color: #fff;
+    font-size: .34rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: .15rem;
+}
+.m-header .layout-1 .item-1 .left-1 {
+    display: inline-block;
+    background: url(../../images/common/header43.png) no-repeat;
+    background-size: 1.63rem 0.63rem;
+    width: 1.63rem;
+    height: 0.63rem;
+}
+
+/*头部结束*/
+/*底部*/
+.footer {
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 0.9rem;
+    line-height: 0.9rem;
+    background: #fff;
+    box-shadow: 0 -0.04rem 0.2rem #ddd;
+}
+.footer ul{
+    display: flex;
+}
+.footer ul li {
+    width: 33.3%;
+}
+.footer ul li a {
+    display: block;
+    color: #003355;
+    font-size: 0.28rem;
+}
+.footer ul li a span {
+    display: inline-block;
+    background: url(../../images/common/header57.png) no-repeat;
+    width: 0.56rem;
+    height: 0.56rem;
+    background-size: 100%;
+    vertical-align: middle;
+    margin-right: 0.08rem;
+}
+.footer ul li a em {
+    vertical-align: middle;
+}
+.footer ul li a i {
+    font-style: normal;
+    color: #ddd;
+    position: relative;
+    right: -0.35rem;
+}
+.footer ul li:nth-child(2) a span {
+    display: inline-block;
+    background: url(../../images/common/header12.png) no-repeat;
+    width: 0.56rem;
+    height: 0.56rem;
+    background-size: 100%;
+    vertical-align: middle;
+    margin-right: 0.1rem;
+}
+.footer ul li:nth-child(3) a span {
+    background: url(../../images/common/header13.gif) no-repeat;
+    width: 0.56rem;
+    height: 0.56rem;
+    background-size: 0.56rem 0.56rem;
+}
+
+/*footer end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

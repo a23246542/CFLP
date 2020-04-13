@@ -1,0 +1,379 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0; color: #333;}
+.inner{overflow: hidden;width: 100%; margin: 0 auto; position: relative}
+img{ overflow:hidden;display:block;border: none;}
+.web-banner{
+    width: 100%;
+    background: url("../../images/campaign1901/banner-bg.jpg") no-repeat;
+    background-size: 100% 100%;
+    height: 8.48rem;
+    position: relative;
+}
+.web-banner img{
+    overflow: hidden;
+    width: 6.81rem;
+    margin: 1.28rem auto 0;
+}
+.web-page{
+    overflow: hidden;
+    position: relative;
+}
+.web-page.bg02{background: url("../../images/campaign1901/neiye-bg02.jpg") no-repeat center;background-size: 100% 100%;height: 10.2rem}
+.web-page .title{overflow: hidden;margin-top: .9rem}
+.web-page .title.marginTop{margin-top: 0}
+.web-page .title img{margin: 0 auto .35rem;position: relative;z-index: 1;width: 1.94rem}
+.web-page .title.marginTop img{width: 4.9rem}
+.web-page .title p{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-size: .28rem;
+    line-height: .48rem;
+}
+.web-page .title a{
+    overflow: hidden;
+    display: block;
+    color: #eeb55b;
+    font-size: .32rem;
+    text-align: center;
+    width: 1.8rem;
+    height: .6rem;
+    line-height: .6rem;
+    margin: .15rem auto 0 auto;
+    border: solid .02rem #eeb55b;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: .3rem;
+}
+.web-page .title a:hover{background: #eeb55b;color: #fff}
+.web-page .con-list{overflow: hidden;position: relative;margin-top: .5rem}
+.web-page .con-list .item {
+    overflow: hidden;
+    width: 4.4rem;
+    height: 6.53rem;
+    background: url("../../images/campaign1901/li-bg.png") no-repeat center top;
+    background-size: 100% 100%;
+}
+.web-page .con-list .item img{margin: 0 auto;width: 2.49rem}
+.web-page .con-list .item img.width{width: 1.94rem}
+.web-page .con-list .item p{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-size: .3rem;
+    color: #fff;
+    margin: .8rem 0 .43rem;
+}
+.web-page .con-list .item span{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-size: .33rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: .45rem;
+}
+.web-page .con-list .item span.size{font-size: .36rem;margin: 0 0 .03rem;line-height: .38rem}
+.web-page .con-list .item a{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-size: .32rem;
+    color: #fff;
+    width: 2.3rem;
+    height: .6rem;
+    line-height: .6rem;
+    background: rgba(229,203,125,.7);
+    border-radius: .3rem;
+    margin: .37rem auto 0;
+    transition: all .25s;
+}
+.web-page .con-list .item a.marginTop{margin-top: 1rem}
+.web-page .con-list01{overflow: hidden;margin-top: .55rem}
+.web-page .con-list01 ul{
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.web-page .con-list01 ul li {
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 1.06rem;
+    margin-bottom: .52rem;
+}
+.web-page .con-list01 ul li .num{
+    overflow: hidden;
+    width: .48rem;
+    height: .48rem;
+    background: #ccc;
+    color: #666;
+    font-size: .26rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: .48rem;
+    border-radius: 100%;
+}
+.web-page .con-list01 ul li .pic img{width: 1.83rem;margin: 0 .13rem 0 .93rem}
+.web-page .con-list01 ul li .words span{
+    overflow: hidden;
+    display: block;
+    font-size: .36rem;
+    line-height: .38rem;
+    font-weight: bold;
+    margin: -.2rem 0 .2rem .25rem;
+}
+.web-page .con-list01 ul li .words a{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-size: .32rem;
+    color: #fff;
+    width: 2rem;
+    height: .6rem;
+    line-height: .6rem;
+    background: #eeb55b;
+    border-radius: .3rem;
+    transition: all .25s;
+}
+.web-page .con-masking{
+    overflow: hidden;
+    width: 4rem;
+    height: 100%;
+    background: rgba(255,255,255,.4);
+    position: absolute;
+    top: 0;
+    left: .2rem;
+    z-index: 1;
+}
+#certify {
+    overflow: hidden;
+    position: relative;
+    height: 6.53rem;
+}
+.swiper-slide{
+    width: 4.4rem;
+    position: relative;
+    cursor: pointer;
+}
+.swiper-slide .con-masking{display: block}
+.swiper-slide-active .con-masking{display: none}
+.swiper-slide .con-list02 p.size{display: none}
+.swiper-slide-active .con-list02 p.size{display: block}
+.fixedCon{
+    overflow: hidden;
+    position: fixed;
+    z-index: 9999;
+    bottom: .8rem;
+    left: 0;
+    width: 100%;
+    height: 1rem;
+    background: #fff;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 -0.04rem 0.2rem #ddd;
+    padding-bottom:  env(safe-area-inset-bottom);
+}
+.fixedCon a{
+    overflow: hidden;
+    width: 2.6rem;
+    height: .7rem;
+    text-align: center;
+    border-radius: .35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    font-size: .32rem;
+    margin: 0 .4rem;
+}
+.fixedCon a.account{background: #edab43}
+.fixedCon a.chat{border: solid .02rem #edab43;color: #edab43}
+.brand-footer{padding-bottom: 1rem}
+/*弹窗*/
+.tc-hide{
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
+.masking{
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+}
+.popup-box {
+    overflow: hidden;
+    max-width:95%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top:10%;
+    background: #fff;
+    z-index: 99999;
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.popup-box .box-in {
+    margin: 3% 4% 5% 4%;
+    overflow-y: auto;
+    height: 8rem;
+}
+.popup-box .close-top{
+    padding:0.3rem 0.3rem;
+    font-size: 0.44rem;
+    color:#b78255;
+    text-align: center;
+    border-bottom: 1px solid #b78255;
+    width:6rem;
+    margin: 0 auto;
+    position: relative;
+}
+.popup-box .close-top a{
+    background: url(../../images/campaign1710/close-b.png) no-repeat;
+    width: 0.21rem;
+    height:0.21rem;
+    background-size: 0.21rem 0.21rem;
+    position: absolute;
+    right: 0;
+    margin-top: .2rem;
+    text-decoration: none;
+}
+.popup-box  .box-in .section1 .item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: .1rem;
+}
+.popup-box .section1 h2{
+    font-size: 0.28rem;
+    font-weight: bold;
+    color: #b78255;
+}
+.popup-box table.data-box {
+    width: 100%;
+    margin: 16px auto 25px;
+    text-align: center;
+    border: 0 !important;
+    font-size: 1.6em;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.popup-box .box-in .line-throw{font-size: 0.3rem;}
+.popup-box .box-in .section1 p{
+    font-size:0.28rem;
+    line-height: 1.8;
+}
+.popup-box .box-in .section3 p{
+    font-size:0.28rem;
+    /*margin-bottom: 0.2rem;*/
+    line-height: 1.8;
+}
+.popup-box .box-in .section3 p a{color: #0096dc}
+.popup-box .box-in .section3 p span{
+    padding-right:0.15rem;
+}
+.popup-box .box-in .section4  h2{
+    font-size: 0.3rem;
+    margin-bottom: 0.1rem;
+    color: #b78255;
+}
+.popup-box .box-in .section4 li{
+    font-size: 0.28rem;
+    line-height: 1.8;
+}
+.popup-box .box-in .section4 li span{
+    /*margin-right: 0.15rem;*/
+}
+.popup-box .box-in .section4 li p{
+    display: flex;
+}
+
+.popup-box table.data-box thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box thead th {
+    font-size: .28rem;
+    text-align: center;
+    padding: .15rem .05rem;
+    color: #FFFFFF;
+    background: #dcb08e;
+    line-height: 1.0;
+}
+.popup-box table.data-box thead tr {
+    border: 1px solid #dcb08e;
+}
+.popup-box table.data-box tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box tbody td {
+    line-height: 1.0;
+    text-align: center;
+    color: #333333;
+    padding: 1.44%;
+    font-size: 14px;
+    border: 0.025rem solid #ead5c2;
+    font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+}
+.popup-box table.data-box tbody .unit {
+    font-size: 0.8em;
+}
+.popup-box table.data-box tbody tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+//background: #f7efe8;
+}
+.popup-box table.data-box tbody tr.grey {
+    background: #fff;
+}
+.popup-box table.data-box tbody tr.last-row td {
+    border-bottom: 1px solid #CCCCCC;
+}
+.popup-box table.data-box .first-child {
+    text-align: center;
+    font-size: 16px;
+}
+.popup-box table.data-box .first-child a {
+    color: #666666;
+    text-decoration: none;
+}
+.popup-box .table1 td,
+.popup-box .table2 td {
+    width: 25%;
+}
+.popup-box .table4 td {
+    width: 16%;
+}
+.popup-box .table3 td {
+    width: 33.333333%;
+}
+.popup-box .note{line-height: 1.8;font-size: 0.24rem;margin-bottom: 0.1rem}
+.popup-box .note span{color: #f00}
+@media only screen and (device-width: 375px) and (device-height: 812px){
+    .fixed-footer{padding-top: .1rem}
+}
+@media only screen and (device-width: 414px) and (device-height: 896px){
+    #main{background: url("../../images/APP_LP.HTML/ofo/bg-x.jpg") no-repeat;background-size: 100% 100%;}
+    .fixed-footer{padding-top: .1rem}
+}

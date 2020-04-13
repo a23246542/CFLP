@@ -1,0 +1,885 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0;color: #333}
+.inner{overflow: hidden;width: 100%; margin: 0 auto;position: relative}
+img{ overflow:hidden;display:block;border: none;}
+.e-header .header{
+    background: none;
+}
+.web-banner{
+    width: 100%;
+    height: 9.32rem;
+    background: url("../../images/non-farm1808/banner-bg.jpg") no-repeat center;
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+}
+.web-banner.nfn1809{
+    background: url("../../images/non-farm1809/banner-bg.png") no-repeat center;
+    background-size: 100% 100%;
+}
+.web-banner.nfn1810{
+    background: url("../../images/non-farm1810/banner-bg.jpg") no-repeat center;
+    background-size: 100% 100%;
+}
+.web-banner.nfn1811{
+    background: url("../../images/non-farm1811/banner-bg.jpg") no-repeat center;
+    background-size: 100% 100%;
+}
+.web-banner.nfn1812{
+    background: url("../../images/non-farm1812/banner-bg.jpg") no-repeat center;
+    background-size: 100% 100%;
+}
+.web-banner .img-font{
+    overflow: hidden;
+    padding: .95rem 0 .2rem 0;
+    width: 100%;
+}
+.web-banner.nfn1809 .img-font{padding: 3.5rem 0 .35rem}
+.web-banner.nfn1811 .img-font{padding: 0}
+.web-banner.nfn1812 .img-font{padding: 0}
+.web-banner .img-font img{width: 4.24rem;margin-left: 1.5rem}
+.web-banner.nfn1809 .img-font img{width: 6.2rem;margin: 0 auto}
+.web-banner.nfn1811 .img-font img{width: 4.78rem;margin: 1.62rem auto 2.1rem auto}
+.web-banner.nfn1812 .img-font img{width: 7.23rem;margin: 1.87rem auto .3rem auto}
+.web-banner .btn{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.web-banner.nfn1809 .btn{
+    flex-direction: row;
+}
+.web-banner.nfn1810 .btn{
+    flex-direction: row;
+    margin-top: 3.89rem;
+}
+.web-banner.nfn1811 .btn{
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 1.42rem;
+}
+.web-banner.nfn1812 .btn{flex-direction: row}
+.web-banner .btn a{
+    overflow: hidden;
+    display: block;
+    width: 2.9rem;
+    height: .8rem;
+    line-height: .8rem;
+    font-size: .28rem;
+    color: #fff;
+    text-align: center;
+    border-radius: .1rem;
+    margin: .1rem 0;
+    border: solid 1px #fff;
+}
+.web-banner.nfn1809 .btn a{
+    border-radius: 0;
+    margin: 0 .1rem;
+    width: 1.92rem;
+    height: .6rem;
+    line-height: .6rem;
+    font-weight: bold;
+}
+.web-banner.nfn1810 .btn a{
+    border-radius: .06rem;
+    margin: 0 .1rem;
+    width: 1.92rem;
+    height: .6rem;
+    line-height: .6rem;
+    font-weight: bold;
+}
+.web-banner.nfn1811 .btn a{
+    border-radius: .06rem;
+    margin: 0 0 .25rem 0;
+    width: 2.2rem;
+    height: .7rem;
+    line-height: .7rem;
+    font-weight: bold;
+}
+.web-banner.nfn1812 .btn a{
+    border-radius: 0;
+    margin: 0 .15rem;
+    width: 2.2rem;
+    height: .58rem;
+    line-height: .58rem;
+    font-weight: bold;
+}
+.web-banner .btn a.account{
+    border: solid 1px #fff;
+    color: #fff;
+}
+.web-banner.nfn1811 .btn a.account{
+    border: solid 1px #ff6c00;
+    color: #ff6c00;
+}
+.web-banner.nfn1812 .btn a.account{
+    border: solid 1px #fff;
+    color: #0a528d;
+    background: #fff;
+    font-weight: normal;
+}
+.web-banner .btn a.chat{
+    background: #fff;
+    color: #333;
+}
+.web-banner.nfn1809 .btn a.chat{
+    background: #0096dc;
+    color: #fff;
+    border: solid 1px #0096dc;
+}
+.web-banner.nfn1810 .btn a.chat{
+    background: #0096dc;
+    color: #fff;
+    border: solid 1px #0096dc;
+}
+.web-banner.nfn1811 .btn a.chat{
+    background: #ff6c00;
+    color: #fff;
+    border: solid 1px #ff6c00;
+}
+.web-banner.nfn1812 .btn a.chat{
+    background: #0096dc;
+    color: #fff;
+    border: solid 1px #0096dc;
+}
+.web-page{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+.web-page.z-index{
+    z-index: 1;
+    margin-top: -75px;
+    padding-bottom: 0;
+}
+.web-page.bg02{
+    background: url("../../images/non-farm1808/neiye-bg02.jpg") no-repeat;
+    background-size: 100% 100%;
+    height: 9.1rem;
+}
+.web-page.bg03{
+    background: url("../../images/non-farm1808/neiye-bg03.jpg") no-repeat;
+    background-size: 100% 100%;
+    height: 9.79rem;
+}
+.web-page.nfn1809.bg03{
+    background: url("../../images/non-farm1809/neiye-bg03.png") no-repeat;
+    background-size: 100% 100%;
+    height: 9.79rem;
+}
+.web-page.nfn1810.bg03{
+    background: url("../../images/non-farm1810/neiye-bg03.png") no-repeat;
+    background-size: 100% 100%;
+    height: 9.79rem;
+}
+.web-page.bg05{
+    background: url("../../images/non-farm1808/neiye-bg05.jpg") no-repeat;
+    background-size: 100% 100%;
+    height: 10.68rem;
+}
+.web-page.bg06{
+    background: url("../../images/non-farm1808/neiye-bg06.jpg") no-repeat;
+    background-size: 100% 100%;
+    height: 11.5rem;
+}
+.web-page.nfn1809.bg06{
+    background: url("../../images/non-farm1809/neiye-bg06.png") no-repeat;
+    background-size: 100% 100%;
+    height: 11.5rem;
+}
+.web-page .title{
+    overflow: hidden;
+    margin-top: .9rem;
+}
+.web-page .title .item{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.web-page .title .item span{
+    overflow: hidden;
+    display: block;
+    font-size: .36rem;
+    line-height: .4rem;
+}
+.web-page.bg03 .title .item span{color: #fff}
+.web-page .title .item span.line{
+    width: .16rem;
+    height: .04rem;
+    background: #666;
+    margin: 0 .1rem;
+}
+.web-page.bg03 .title .item span.line{background: #fff}
+.web-page .title .item span.bold{font-weight: bold}
+.web-page .title .arrow-bottom {
+    overflow: hidden;
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: .15rem solid #0096dc;
+    border-right: .1rem solid rgba(0,0,0,0);
+    border-bottom: 0 solid rgba(0,0,0,0);
+    border-left: .1rem solid rgba(0,0,0,0);
+    margin: .2rem auto 0 auto;
+}
+.web-page .con-list{
+    overflow: hidden;
+    margin-bottom: .8rem;
+}
+.web-page .con-list ul{
+    overflow: hidden;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: url("../../images/non-farm1808/neiye-bg01.png") no-repeat top;
+    background-size: 100% 1.26rem;
+}
+.web-page .con-list ul li{
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    width: 3.74rem;
+    float: left;
+    margin: .85rem 0 .05rem 0;
+}
+.web-page .con-list ul li.width{
+    width: .02rem;
+    height: .69rem;
+    background: #d2d2d2;
+    margin-top: 1.4rem;
+}
+.web-page .con-list ul li p{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    line-height: .36rem;
+    color: #666;
+    text-align: center;
+}
+.web-page .con-list ul li:hover p{color: #0096dc}
+.web-page .con-list ul li span{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    line-height: .36rem;
+    font-weight: bold;
+    text-align: center;
+}
+.web-page .con-list ul li span.size{
+    font-size: .48rem;
+    display: inline;
+}
+.web-page .con-list ul li:hover span{color: #0096dc}
+.web-page .con-list ul li .span-item{
+    width: .7rem;
+    height: .6rem;
+    margin: .1rem auto .07rem auto
+}
+.web-page .con-list ul li .span-item.span-bg01{
+    background: url("../../images/non-farm1808/icon-01.png") no-repeat;
+    background-size: 100% 100%;
+}
+.web-page .con-list ul li:hover .span-item.span-bg01{
+    background: url("../../images/non-farm1808/icon-01-hover.png") no-repeat;
+    background-size: 100% 100%;
+}
+.web-page .con-list ul li .span-item.span-bg02{
+    background: url("../../images/non-farm1808/icon-02.png") no-repeat;
+    background-size: 100% 100%;
+}
+.web-page .con-list ul li:hover .span-item.span-bg02{
+    background: url("../../images/non-farm1808/icon-02-hover.png") no-repeat;
+    background-size: 100% 100%;
+}
+.web-page .con-list ul li .span-item.span-bg03{
+    background: url("../../images/non-farm1808/icon-03.png") no-repeat;
+    background-size: 100% 100%;
+}
+.web-page .con-list ul li:hover .span-item.span-bg03{
+    background: url("../../images/non-farm1808/icon-03-hover.png") no-repeat;
+    background-size: 100% 100%;
+}
+.web-page .con-list ul li .span-item.span-bg04{
+    background: url("../../images/non-farm1808/icon-04.png") no-repeat;
+    background-size: 100% 100%;
+}
+.web-page .con-list ul li:hover .span-item.span-bg04{
+    background: url("../../images/non-farm1808/icon-04-hover.png") no-repeat;
+    background-size: 100% 100%;
+}
+.web-page .con-list01{
+    overflow: hidden;
+    margin-top: 38px;
+}
+.web-page .con-list01 ul{
+    overflow: hidden;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.web-page .con-list01 ul li{
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    width: 50%;
+}
+.web-page .con-list01 ul li img{width: 1.39rem;}
+.web-page .con-list01 ul li span{
+    overflow: hidden;
+    display: block;
+    font-size: .32rem;
+    line-height: .36rem;
+    text-align: center;
+    margin: .3rem 0 .1rem;
+}
+.web-page.nfn1812 .con-list01 ul li span{font-size: .24rem;line-height: .28rem;margin: 0}
+.web-page .con-list01 ul li p{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    line-height: .3rem;
+    text-align: center;
+}
+.web-page.nfn1812 .con-list01 ul li p{font-size: .32rem; line-height: .36rem;font-weight: bold;margin: .3rem 0 .1rem;}
+.web-page .con-list01 ul li p span{
+    display: inline;
+    color: #0096dc;
+    font-size: .28rem;
+    line-height: .3rem;
+}
+.web-page.nfn1812 .con-list01 ul li p span{font-size: .32rem; line-height: .36rem;font-weight: bold}
+.web-page .btn-list{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: .6rem;
+}
+.web-page.bg06 .btn-list{flex-direction: row}
+.web-page .btn-list a{
+    overflow: hidden;
+    display: block;
+    width: 2.9rem;
+    height: .8rem;
+    line-height: .8rem;
+    font-size: .28rem;
+    text-align: center;
+    border: solid 1px #0096dc;
+    color: #333;
+    margin: .1rem 0;
+    border-radius: .1rem;
+}
+.web-page.bg06 .btn-list a{ margin: 0 .23rem;font-weight: bold;border: solid 1px #333}
+.web-page .btn-list a.chat{
+    background: #0096dc;
+    color: #fff;
+    border: solid 1px #0096dc;
+}
+.web-page .act-con{
+    overflow: hidden;
+    font-size: .28rem;
+    line-height: .28rem;
+    color: #0096dc;
+    text-align: center;
+    margin-top: .7rem;
+}
+.web-page .slider-con{
+    overflow: hidden;
+    position: relative;
+    margin-top: .46rem;
+}
+.web-page .slider-con .slider-list{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.web-page .slider-con .slider-list img{width: 3.6rem}
+.web-page .slider-con .slider-list .item{
+    overflow: hidden;
+    background: #fff;
+    padding: .1rem .15rem 0 .15rem;
+}
+.web-page .slider-con .slider-list .item span{
+    overflow: hidden;
+    display: block;
+    font-size: .32rem;
+    line-height: .6rem;
+    font-weight: bold;
+    color: #0096dc;
+}
+.web-page.nfn1812 .slider-con .slider-list .item span{line-height: .4rem;margin-top: .1rem}
+.web-page .slider-con .slider-list .item p{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    line-height: .46rem;
+}
+.web-page.nfn1810 .slider-con .slider-list .item p span{
+    display: inline;
+    font-size: .28rem;
+    line-height: .48rem;
+    color: #0096dc;
+}
+.web-page.nfn1812 .slider-con .slider-list .item p span{
+    display: inline;
+    font-size: .28rem;
+    line-height: .48rem;
+    color: #ff8500;
+}
+.web-page .slider-con .slider-list .item p.size{
+    font-weight: bold;
+    line-height: .48rem;
+    margin-bottom: .1rem;
+}
+.web-page.nfn1812 .slider-con .slider-list .item p.size{margin: .1rem 0}
+.web-page .table{
+    overflow: hidden;
+    margin-top: 40px;
+}
+.web-page .table .tab-title{
+    overflow: hidden;
+    font-size: .32rem;
+    line-height: .36rem;
+    margin: .05rem 0 .4rem;
+    text-align: center;
+}
+.web-page .table .tab-con{
+    overflow-y: hidden;
+    overflow-x: auto;
+    width: 7rem;
+    border-bottom: solid 8px #0096dc;
+    padding-bottom: 15px;
+    margin: 0 auto .3rem auto;
+}
+.web-page.bg05 .table .tab-con{border-bottom: none;padding-bottom: 0}
+.web-page .table table{
+    overflow: hidden;
+    width: 200%;
+}
+.web-page .table table tr{
+    overflow: hidden;
+}
+.web-page .table table tr.first{
+    background: #0096dc;
+    border-bottom: none;
+}
+.web-page.bg05 .table table tr.first{height: .7rem}
+.web-page .table table tr.first.border{border-bottom: none;}
+.web-page .table table tr td .item{
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .15rem 0 0 0;
+    font-size: .24rem;
+    line-height: .36rem;
+    color: #666;
+}
+.web-page.bg05 .table table tr td .item{padding: .2rem 0;font-size: .28rem;border-bottom: solid 1px #bfbfbf}
+.web-page .table table tr td.yellow .item{border-bottom: solid .04rem #eba73c}
+.web-page .table table tr td.red .item{border-bottom: solid .04rem #e72418;}
+.web-page .table table tr td.green .item{border-bottom: solid .04rem #59b75b}
+.web-page .table table tr td.white{border-bottom: solid 1px rgba(255,255,255,.5)}
+.web-page .table table tr.first td .item{padding: 0;height: .5rem; border-bottom: none}
+.web-page .table table tr td span{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+}
+.web-page .table table tr td span.red{color: #e72418;}
+.web-page .table table tr td span.green{color: #59b75b;}
+.web-page .table table tr.first td span{
+    color: #fff;
+    font-size: .24rem;
+    line-height: .28rem;
+    text-align: center;
+}
+.web-page.bg05 .table table tr.first td span{font-size: .28rem}
+.web-page .table table tr td p{
+    overflow: hidden;
+    display: block;
+}
+.web-page .table table tr td p:first-child {
+    width: 1.8rem;
+    text-align: center;
+}
+/*.tab-list-bg-1 {
+    width: .58rem; height: .23rem;
+    background-size: 3.13rem 2.2rem;
+    background: url('../../images/non-farm1808/css_sprites.png') -2.44rem -1.39rem;
+}
+.tab-list-bg-2 {
+    width: .58rem; height: .23rem;
+    background-size: 3.13rem 2.2rem;
+    background: url('../../images/non-farm1808/css_sprites.png') -2.44rem -.53rem;
+}
+.tab-list-bg-3 {
+    width: .58rem; height: .23rem;
+    background-size: 3.13rem 2.2rem;
+    background: url('../../images/non-farm1808/css_sprites.png') -2.44rem -.96rem;
+}
+.tab-list-bg-4 {
+    width: .58rem; height: .23rem;
+    background-size: 3.13rem 2.2rem;
+    background: url('../../images/non-farm1808/css_sprites.png') -.88rem -.54rem;
+}
+.tab-list-bg-5 {
+    width: .58rem; height: .23rem;
+    background-size: 3.13rem 2.2rem;
+    background: url('../../images/non-farm1808/css_sprites.png') -.10rem -.98rem;
+}
+.tab-list-bg-6 {
+    width: .58rem; height: .23rem;
+    background-size: 3.13rem 2.2rem;
+    background: url('../../images/non-farm1808/css_sprites.png') -.88rem -.98rem;
+}
+.tab-list-bg-7 {
+    width: 59px; height: 23px;
+    background-size: 3.13rem 2.2rem;
+    background: url('../../images/non-farm1808/css_sprites.png') -2.44rem -.10rem;
+}
+.tab-list-bg-8 {
+    width: .58rem; height: .23rem;
+    background-size: 3.13rem 2.2rem;
+    background: url('../../images/non-farm1808/css_sprites.png') -1.66rem -.54rem;
+}
+.tab-list-bg-9 {
+    width: .58rem; height: .23rem;
+    background-size: 3.13rem 2.2rem;
+    background: url('../../images/non-farm1808/css_sprites.png') -1.66rem -.98rem;
+}
+.tab-list-bg-10 {
+    width: .58rem; height: .23rem;
+    background-size: 3.13rem 2.2rem;
+    background: url('../../images/non-farm1808/css_sprites.png') -.10rem -.10rem;
+}
+.tab-list-bg-11 {
+    width: .58rem; height: .23rem;
+    background-size: 3.13rem 2.2rem;
+    background: url('../../images/non-farm1808/css_sprites.png') -.88rem -1.42rem;
+}
+.tab-list-bg-12 {
+    width: .58rem; height: .23rem;
+    background-size: 3.13rem 2.2rem;
+    background: url('../../images/non-farm1808/css_sprites.png') -1.66rem -1.42rem;
+}
+.tab-list-bg-13 {
+    width: .58rem; height: .23rem;
+    background-size: 3.13rem 2.2rem;
+    background: url('../../images/non-farm1808/css_sprites.png') -.10rem -1.86rem;
+}
+.tab-list-bg-14 {
+    width: .58rem; height: .23rem;
+    background-size: 3.13rem 2.2rem;
+    background: url('../../images/non-farm1808/css_sprites.png') -.88rem -1.86rem;
+}
+.tab-list-bg-15 {
+    width: .58rem; height: .23rem;
+    background-size: 3.13rem 2.2rem;
+    background: url('../../images/non-farm1808/css_sprites.png') -.10rem -1.42rem;
+}
+.tab-list-bg-16 {
+    width: .58rem; height: .23rem;
+    background-size: 3.13rem 2.2rem;
+    background: url('../../images/non-farm1808/css_sprites.png') -1.66rem -.10rem;
+}
+.tab-list-bg-17 {
+    width: .58rem; height: .23rem;
+    background-size: 3.13rem 2.2rem;
+    background: url('../../images/non-farm1808/css_sprites.png') -.10rem -.54rem;
+}
+.tab-list-bg-18 {
+    width: .58rem; height: .23rem;
+    background-size: 3.13rem 2.2rem;
+    background: url('../../images/non-farm1808/css_sprites.png') -.88rem -.10rem;
+}*/
+.tab-list-bg-1 {
+    width: 58px; height: 23px;
+    background: url('../../images/non-farm1808/css_sprites.png') -244px -139px;
+}
+.tab-list-bg-2 {
+    width: 58px; height: 23px;
+    background: url('../../images/non-farm1808/css_sprites.png') -244px -53px;
+}
+.tab-list-bg-3 {
+    width: 58px; height: 23px;
+    background: url('../../images/non-farm1808/css_sprites.png') -244px -96px;
+}
+.tab-list-bg-4 {
+    width: 58px; height: 24px;
+    background: url('../../images/non-farm1808/css_sprites.png') -88px -54px;
+}
+.tab-list-bg-5 {
+    width: 58px; height: 24px;
+    background: url('../../images/non-farm1808/css_sprites.png') -10px -98px;
+}
+.tab-list-bg-6 {
+    width: 58px; height: 24px;
+    background: url('../../images/non-farm1808/css_sprites.png') -88px -98px;
+}
+.tab-list-bg-7 {
+    width: 59px; height: 23px;
+    background: url('../../images/non-farm1808/css_sprites.png') -244px -10px;
+}
+.tab-list-bg-8 {
+    width: 58px; height: 24px;
+    background: url('../../images/non-farm1808/css_sprites.png') -166px -54px;
+}
+.tab-list-bg-9 {
+    width: 58px; height: 24px;
+    background: url('../../images/non-farm1808/css_sprites.png') -166px -98px;
+}
+.tab-list-bg-10 {
+    width: 58px; height: 24px;
+    background: url('../../images/non-farm1808/css_sprites.png') -10px -10px;
+}
+.tab-list-bg-11 {
+    width: 58px; height: 24px;
+    background: url('../../images/non-farm1808/css_sprites.png') -88px -142px;
+}
+.tab-list-bg-12 {
+    width: 58px; height: 24px;
+    background: url('../../images/non-farm1808/css_sprites.png') -166px -142px;
+}
+.tab-list-bg-13 {
+    width: 58px; height: 24px;
+    background: url('../../images/non-farm1808/css_sprites.png') -10px -186px;
+}
+.tab-list-bg-14 {
+    width: 58px; height: 24px;
+    background: url('../../images/non-farm1808/css_sprites.png') -88px -186px;
+}
+.tab-list-bg-15 {
+    width: 58px; height: 24px;
+    background: url('../../images/non-farm1808/css_sprites.png') -10px -142px;
+}
+.tab-list-bg-16 {
+    width: 58px; height: 24px;
+    background: url('../../images/non-farm1808/css_sprites.png') -166px -10px;
+}
+.tab-list-bg-17 {
+    width: 58px; height: 24px;
+    background: url('../../images/non-farm1808/css_sprites.png') -10px -54px;
+}
+.tab-list-bg-18 {
+    width: 58px; height: 24px;
+    background: url('../../images/non-farm1808/css_sprites.png') -88px -10px;
+}
+.web-page .con-explain{
+    overflow: hidden;
+    width: 7rem;
+    font-size: .28rem;
+    line-height: .48rem;
+    margin: .45rem auto .8rem auto;
+}
+.web-page .con-explain a{
+    overflow: hidden;
+    display: inline;
+    color: #0096dc;
+    border-bottom: solid 1px #0096dc;
+}
+.web-page.bg05 .con-explain a{border-bottom: none}
+.web-page .data{
+    overflow: hidden;
+    width: 100%;
+    background: rgba(255,255,255,.5);
+    padding-bottom: .4rem;
+}
+.web-page.nfn1809 .data{background: transparent}
+.web-page .data .con-title{
+    overflow: hidden;
+    width: 3.94rem;
+    height: .54rem;
+    line-height: .54rem;
+    text-align: center;
+    color: #fff;
+    background: #0096dc;
+    margin: .6rem auto .38rem auto;
+    font-size: .32rem;
+}
+.web-page .data .data-tab{
+    overflow: hidden;
+    width: 7rem;
+    border-top: solid .1rem #a5d2e7;
+    border-bottom: solid .1rem #a5d2e7;
+    padding: 0 0 .34rem;
+    margin: 0 auto;
+}
+.web-page .data .data-tab .item{
+    overflow: hidden;
+}
+.web-page .data .data-tab .item .left-time{
+    overflow: hidden;
+    float: left;
+    width: 8%;
+    margin-top: 1.25rem;
+}
+.web-page .data .data-tab .item .left-time span{
+    overflow: hidden;
+    display: block;
+    font-size: .22rem;
+    line-height: .24rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: .26rem;
+}
+.web-page .data .con-rect{
+    overflow: hidden;
+    width: 92%;
+    float: left;
+    display: flex;
+    justify-content: space-around;
+    margin-top: .45rem;
+}
+.web-page .data .con-rect .rect-list{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 16.6666%;
+}
+.web-page .data .con-rect .rect-list .num{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.web-page .data .con-rect .rect-list .num span{
+    overflow: hidden;
+    display: inline-block;
+    font-size: .28rem;
+    color: #0096dc;
+    font-weight: bold;
+}
+.web-page .data .con-rect .rect-list .rect{
+    overflow: hidden;
+    width: .29rem;
+    background: #0096dc;
+}
+.web-page .data .con-rect .rect-list .ic-img{
+    margin: .05rem 0 .1rem;
+}
+.web-page .data .con-rect .rect-list .ic-img img{width: .38rem}
+.web-page .data .con-time{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    width: 92%;;
+    margin: .22rem auto 0 auto;
+    float: right;
+}
+.web-page .data .con-time span{
+    overflow: hidden;
+    font-size: .22rem;
+    color: #666;
+    text-align: center;
+    width: 16.6666%;
+}
+/*轮播*/
+#certify {
+    position: relative;
+    width: 7rem;
+    margin: 0 auto
+}
+#certify  .swiper-slide {
+    width: 3.6rem;
+    height: 6.53rem;
+    background: #fff;
+    box-shadow: 0 0 .43rem rgba(0,0,0,.45);
+}
+/*弹窗*/
+.tc-hide{
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+}
+.masking{
+    display: block;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+}
+.tc-con{
+    overflow: hidden;
+    width: 6.5rem;
+    margin: 2rem auto 0 auto;
+    background: #fff;
+    border-radius: .06rem;
+    -moz-border-radius: .06rem;
+    padding-bottom: .3rem;
+}
+.tc-con span{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    line-height: .48rem;
+    padding: 0 .2rem;
+    text-align: justify;
+}
+.tc-con span.center{
+    text-align: center;
+    font-size: .36rem;
+    padding: .2rem 0;
+    color: #346faf;
+    border-bottom: solid .02rem #346faf;
+    margin-bottom: .3rem;
+    position: relative;
+}
+.tc-con span.close{
+    overflow: hidden;
+    background: url("../../images/non-farm1804/X.png") no-repeat;
+    background-size: .21rem .21rem;
+    height: .21rem;
+    display: inline;
+    position: absolute;
+    right: 0;
+    top: .34rem;
+    cursor: pointer;
+}
+.tc-con span.color{
+    font-size: .32rem;
+    padding: 0 .2rem .1rem .2rem;
+    color: #346faf;
+}
+.tc-con p{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    line-height: .48rem;
+    padding: 0 .2rem;
+    text-align: justify;
+}
+.tc-con p.color{color: #346faf;font-weight: bold}
+
+
+
+
+
+
+
+

@@ -1,0 +1,1114 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0; color: #333;}
+.inner{overflow: hidden;width: 1200px; margin: 0 auto; position: relative}
+img{ overflow:hidden;display:block;border: none;}
+input{resize: none;border: none}
+.m-banner{
+    width: 100%;
+    background: url("//img.getfc.com.cn/source/www/zt/newyear19/banner-bg.jpg") no-repeat center;
+    height: 559px;
+    position: relative;
+    top:-74px;
+    margin-bottom: -74px;
+    padding-top: 70px;
+}
+.campaign1902-banner{
+    width: 100%;
+    background: url("//img.getfc.com.cn/source/www/zt/campaign1902/banner-1902.png") no-repeat center;
+    height: 652px;
+    position: relative;
+    top:-74px;
+    margin-bottom: -74px;
+    padding-top: 70px;
+}
+.campaign1902-banner .banner-img{
+    float: right;
+    padding-top: 100px;
+}
+.campaign1902-banner .banner-img img{
+    display: block;
+    width: 100%;
+}
+.m-banner img{
+    overflow: hidden;
+    margin: 0 auto -120px;
+    position: relative;
+    z-index: 4;
+    padding-left: 100px;
+}
+.big{
+    animation:slowBig 1.5s ease-in-out infinite;
+    -webkit-animation:slowBig 1.5s ease-in-out infinite;
+}
+@keyframes slowBig {
+    0%{transform:scale(.9);}
+    50%{transform:scale(1);}
+    100%{-webkit-transform:scale(.9);}
+}
+@-webkit-keyframes slowBig {
+    0%{-webkit-transform:scale(.9);}
+    50%{-webkit-transform:scale(1);}
+    100%{-webkit-transform:scale(.9);}
+}
+img.bling01{
+    position: absolute;
+    margin: 0;
+    z-index: 1;
+}
+img.bling01.pos01{
+    top: 183px;
+    left: 10%;
+}
+img.bling01.pos02{
+    bottom: 30%;
+    left: 0;
+}
+img.bling01.pos03{
+    bottom: 294px;
+    left: 0;
+}
+img.bling02{
+    position: absolute;
+    margin: 0;
+    z-index: 1;
+}
+img.bling02.pos02{
+    bottom: 112px;
+    left: 15%;
+}
+img.bling02.pos03{
+    bottom: 20%;
+    right: 85px;
+}
+img.bling02.pos04{
+    bottom: 170px;
+    right: 10px;
+}
+img.bling02.pos05{
+    bottom: 99px;
+    right: 22%;
+}
+img.bling03{
+    position: absolute;
+    margin: 0;
+    z-index: 1;
+}
+img.bling03.pos03{
+    top: 67px;
+    right: 15%;
+}
+img.bling03.pos04{
+    top: 241px;
+    left: 106px;
+}
+img.bling03.pos05{
+    top: 62px;
+    left: 48px;
+}
+.m-btn {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    z-index: 11;
+}
+.m-btn a{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    cursor: pointer;
+    width: 230px;
+    height: 76px;
+    margin: 0 28px;
+}
+.m-page.bg02 a{margin: 0 40px}
+.m-btn a.all{
+    background: url("//img.getfc.com.cn/source/www/zt/newyear19/btn-bg01.png") no-repeat;
+}
+.m-btn a.all:hover{
+    background: transparent;
+    border: solid 2px #79d0d4;
+    border-radius: 2px;
+}
+.m-page.bg02 .m-btn a.all{
+    background: url("//img.getfc.com.cn/source/www/zt/newyear19/btn-bg02.png?v0131") no-repeat;
+    width: 266px;
+    height: 88px;
+}
+.m-page.bg02 .m-btn a.all:hover{
+    background: transparent;
+    border-color: #ffd9b7;
+    color: #ffd9b7;
+}
+.m-btn a.new{
+    width: 230px;
+    height: 76px;
+    border: solid 2px #79d0d4;
+    border-radius: 2px;
+}
+.m-btn a.new:hover{
+    background: url("//img.getfc.com.cn/source/www/zt/newyear19/btn-bg01.png") no-repeat;
+    border: none;
+}
+.m-page.bg02 .m-btn a.new {
+    border-color: #ffd9b7;
+    width: 266px;
+    height: 88px;
+    color: #ffd9b7;
+}
+.m-page.bg02 .m-btn a.new:hover{
+    background: url("//img.getfc.com.cn/source/www/zt/newyear19/btn-bg02.png") no-repeat;
+    border: none;
+    color: #fff;
+}
+.m-btn a span{
+    overflow: hidden;
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: -5px;
+}
+.m-btn a.all span{
+    text-shadow: 5px 2px 13px rgba(4,36,83,.38);
+    padding: 0 13px;
+}
+.m-btn a.all:hover span{
+    text-shadow: none;
+    padding: 0;
+}
+.m-btn a.new:hover span{
+    text-shadow: 5px 2px 13px rgba(4,36,83,.38);
+    padding: 5px 13px 0 13px;
+}
+.m-page.bg02 .m-btn a span{font-size: 36px;}
+.m-btn a p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+}
+.m-btn a.new:hover p{margin-bottom: 4px}
+.m-page.bg02 .m-btn a p{font-size: 22px;}
+.m-page{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.m-page.bg01{
+    background: url("//img.getfc.com.cn/source/www/zt/newyear19/neiye-bg01.png") no-repeat center;
+    height: 1669px;
+    z-index: 1;
+    margin-top: -185px;
+}
+.m-page.bg02{
+    background: url("//img.getfc.com.cn/source/www/zt/newyear19/neiye-bg02.jpg") no-repeat;
+    height: 1394px;
+}
+.m-page.bg03{
+    background: url("//img.getfc.com.cn/source/www/zt/newyear19/neiye-bg03.jpg") no-repeat;
+    height: 949px;
+    position: relative;
+}
+.m-page .countdown {
+    overflow: hidden;
+    background: url("//img.getfc.com.cn/source/www/zt/newyear19/icon-bg01.png") no-repeat;
+    width: 444px;
+    height: 132px;
+    margin: 215px auto -20px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.m-page .countdown .imgCon{overflow: hidden;margin-top: 30px}
+.m-page .countdown .imgCon img{width: 32px;margin-right: 10px}
+.m-page .countdown .timeCon {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 28px;
+    font-size: 24px;
+    color: #ffd9b7;
+}
+.m-page .countdown .timeCon span{
+    overflow: hidden;
+    display: block;
+    font-weight: bold;
+    font-size: 24px;
+    color: #ffd9b7;
+    margin: 0 5px;
+}
+.m-page .countdown .timeCon p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    color: #ffd9b7;
+}
+.m-page .title{
+    overflow: hidden;
+    margin-top: 145px;
+    width: 100%;
+}
+.m-page.bg01 .title{margin-top: 0;}
+.m-page .title img{ margin: 0 auto}
+.m-page.bg02 .title img{margin-bottom: .05rem}
+.m-page .title span{
+    overflow: hidden;
+    display: block;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 58px;
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+}
+.m-page .title span p{
+    overflow: hidden;
+    display: inline;
+    color: #ffd9b7;
+}
+.m-page .title a{
+    overflow: hidden;
+    display: block;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 88px;
+    color: #ffd9b7;
+    text-align: center;
+    background: url("//img.getfc.com.cn/source/www/zt/newyear19/icon-bg03.png") no-repeat;
+    width: 325px;
+    height: 128px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.m-page .turntable{overflow: hidden}
+.m-page .turntable .user{
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+.m-page .turntable .user p{
+    overflow: hidden;
+    color: #ffd9b7;
+    margin: 0 .05rem;
+    padding: 0 .05rem;
+}
+.m-page .turntable .user p.account{border-bottom: solid .02rem #ffd9b7;}
+.m-page .turntable .lottery {
+    overflow: hidden;
+    position: relative;
+    width: 750px;
+    margin: 36px auto 0;
+}
+.m-page .turntable .lottery img.lotteryBg{width: 750px;margin: 25px auto 0}
+.m-page .turntable .lottery img.lotteryCon{
+    width: 669px;
+    position: absolute;
+    z-index: 1;
+    top: 18px;
+    left: 40.5px;
+}
+.m-page .turntable .lottery img.lotteryCon.rotate{
+    -webkit-animation: rotate 10s linear infinite;
+    -moz-animation: rotate 10s linear infinite;
+    -o-animation: rotate 10s linear infinite;
+    animation: rotate 10s linear infinite;
+}
+@keyframes rotate {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+@-webkit-keyframes rotate {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+.m-page .turntable .lottery img.lotterySuc{
+    width: 39px;
+    position: absolute;
+    z-index: 2;
+    left: 357px;
+    top: 15px;
+}
+.m-page .turntable .lottery img.lotteryStart{
+    width: 210px;
+    position: absolute;
+    z-index: 5;
+    top: 265px;
+    left: 270px;
+    cursor: pointer;
+}
+.m-page .turntable .lottery .light {
+    overflow: hidden;
+    width: 750px;
+    height: 700px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+.m-page .turntable .lottery .light img.pic{
+    position: absolute;
+    animation:appear .25s ease-in-out;
+    transform-origin: 50% 60%;
+    -webkit-animation:appear .25s ease-in-out;
+    -webkit-transform-origin: 50% 60%;
+    display: none;
+    width: 72px;
+}
+@keyframes appear {
+    0%{transform:scale(0);}
+    100%{transform:scale(1);}
+}
+@-webkit-keyframes appear {
+    0%{-webkit-transform:scale(0);}
+    100%{-webkit-transform:scale(1);}
+}
+.m-page .turntable .lottery .light img.pic.pic-1{
+    left: 280px;
+    top: 3px;
+}
+.m-page .turntable .lottery .light img.pic.pic-2{
+    left: 180px;
+    top: 35px;
+}
+.m-page .turntable .lottery .light img.pic.pic-3{
+    left: 106px;
+    top: 95px;
+}
+.m-page .turntable .lottery .light img.pic.pic-4{
+    left: 52px;
+    top: 177px;
+}
+.m-page .turntable .lottery .light img.pic.pic-5{
+    left: 23px;
+    top: 270px;
+}
+.m-page .turntable .lottery .light img.pic.pic-6{
+    left: 23px;
+    bottom: 252px;
+}
+.m-page .turntable .lottery .light img.pic.pic-7{
+    left: 62px;
+    bottom: 158px;
+}
+.m-page .turntable .lottery .light img.pic.pic-8{
+    left: 130px;
+    bottom: 75px;
+}
+.m-page .turntable .lottery .light img.pic.pic-9{
+    left: 213px;
+    bottom: 23px;
+}
+.m-page .turntable .lottery .light img.pic.pic-10{
+    left: 306px;
+    bottom: 0;
+}
+.m-page .turntable .lottery .light img.pic.pic-11{
+    right: 278px;
+    bottom: 0;
+}
+.m-page .turntable .lottery .light img.pic.pic-12{
+    right: 180px;
+    bottom: 35px;
+}
+.m-page .turntable .lottery .light img.pic.pic-13{
+    right: 105px;
+    bottom: 96px;
+}
+.m-page .turntable .lottery .light img.pic.pic-14{
+    right: 50px;
+    bottom: 177px;
+}
+.m-page .turntable .lottery .light img.pic.pic-15{
+    right: 20px;
+    bottom: 270px;
+}
+.m-page .turntable .lottery .light img.pic.pic-16{
+    right: 20px;
+    top: 250px;
+}
+.m-page .turntable .lottery .light img.pic.pic-17{
+    right: 60px;
+    top: 156px;
+}
+.m-page .turntable .lottery .light img.pic.pic-18{
+    right: 128px;
+    top: 70px;
+}
+.m-page .turntable .lottery .light img.pic.pic-19{
+    right: 212px;
+    top: 22px;
+}
+.m-page .turntable .lottery .light img.pic.pic-20{
+    right: 306px;
+    top: 0;
+}
+.m-page .turntable .rule{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 6;
+    margin-top: -10px;
+}
+.m-page .turntable .rule .item{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 60px;
+    cursor: pointer;
+}
+.m-page .turntable .rule .item span{
+    overflow: hidden;
+    display: block;
+    font-size: 24px;
+    color: #ffd9b7;
+    text-decoration: underline;
+    margin-left: 15px;
+}
+.m-page .marquee{
+    overflow: hidden;
+    background: url("//img.getfc.com.cn/source/www/zt/newyear19/icon-bg02.png") no-repeat;
+    width: 1268px;
+    height: 204px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 45px auto 0;
+}
+.m-page .marquee ul li {
+    margin-right: 20px;
+    float: left;
+    text-align: left;
+    width: auto !important;
+}
+.m-page .marquee .layout{
+    overflow: hidden;
+    width: 1000px;
+    margin-left: 175px;
+    margin-bottom: 45px;
+}
+.m-page .marquee .item {
+    overflow: hidden;
+    font-size: 18px;
+    color: #ffd9b7;
+    text-align: center;
+}
+.m-page .marquee .item span{
+    overflow: hidden;
+    display: block;
+}
+.m-page .slider01 {
+    overflow: hidden;
+    position: relative;
+    margin: 10px 0 55px;
+    z-index: 2;
+}
+.m-page .slider01 .layout{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.m-page .slider01 .list{
+    overflow: hidden;
+    background: url("//img.getfc.com.cn/source/www/zt/newyear19/li-bg.png") no-repeat;
+    width: 406px;
+    height: 615px;
+    padding-top: 190px;
+    margin: 0 26px;
+}
+.m-page .slider01 .list .item{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.m-page .slider01 .list .item:nth-child(2){margin-top: 165px}
+.m-page .slider01 .list .item.marginTop{margin-top: 190px}
+.m-page .slider01 .list .item span{
+    overflow: hidden;
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f7df99;
+}
+.m-page .slider01 .list .item img.star{margin: 0 5px}
+.m-page .slider01 .list .item img.plus{margin: 8px 0}
+.m-page .sliderCon{overflow: hidden;}
+.m-page .sliderCon ul li{
+    float: left;
+}
+.m-page .sliderNav{
+    overflow: hidden;
+    width: 100%;
+    z-index: 1;
+}
+.m-page .sliderNav ul{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.m-page .sliderNav li {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    text-indent: -9999px;
+    overflow: hidden;
+    margin: 0 10px;
+    border: solid 1px #fff;
+    background: transparent;
+    cursor: pointer;
+}
+.m-page .sliderNav li.on {
+    background: #ffd9b7;
+    border: none;
+    width: 40px;
+    border-radius: 8px;
+}
+.m-page .sliderNav .prev,.m-page .sliderNav .next{
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    top: 45%;
+    z-index: 11;
+    width: 22px;
+    height: 39px;
+    left: 0;
+    background: url("//img.getfc.com.cn/source/www/zt/newyear19/icon-arrow.png") no-repeat;
+    opacity: .5;
+    cursor: pointer;
+}
+.m-page .sliderNav .next{
+    transform: rotate(180deg);
+    float: right;
+    left: auto;
+    right: 0;
+}
+.m-page .slider02 {
+    overflow: hidden;
+    position: relative;
+    margin: 76px 0 55px;
+    display: flex;
+    justify-content: center;
+}
+.m-page .slider02 .layout{
+    overflow: hidden;
+    background: url("//img.getfc.com.cn/source/www/zt/newyear19/bg-metal.png") no-repeat;
+    width: 566px;
+    height: 410px;
+    margin: 10px 20px 40px 20px;
+    transition: all .25s;
+}
+.m-page .slider02 .layout:hover{
+    box-shadow: 0 10px 40px rgba(174,103,33,.55);
+    margin-top: 0;
+    transition: all .25s;
+}
+.m-page .slider02 .layout.liBg{
+    background: url("//img.getfc.com.cn/source/www/zt/newyear19/bg-oil.png") no-repeat;
+}
+.m-page .slider02 .layout .left{
+    overflow: hidden;
+    width: 240px;
+    margin: 28px 0 0 22px;
+}
+.m-page .slider02 .layout img{margin: 0 auto 15px}
+.m-page .slider02 .layout span{
+    overflow: hidden;
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffd9b7;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.m-page .slider02 .layout span.marginTop{
+    text-align: left;
+    font-size: 18px;
+    margin-top: 25px;
+}
+.m-page .slider02 .layout p{
+    overflow: hidden;
+    display: block;
+    font-size: 14px;
+    line-height: 26px;
+    color: #f3f3f3;
+    text-align: justify;
+}
+.m-page .slider02 .layout .item{
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.m-page .slider02 .layout .item img{margin: 0 5px 0 0}
+/*弹窗*/
+.tc-hide{
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
+.masking{
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+}
+/*弹窗*/
+.popup-box {
+    max-width: 1000px;
+    height: 650px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: -325px auto 0 auto;
+    top: 50%;
+    background: #fff;
+    z-index: 99999;
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+    padding: 0 20px 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.popup-box .box-in {
+    margin: 3% 3% 5% 5%;
+    color: #333333;
+    overflow: auto;
+    height: 500px;
+    padding: 0% 2% 0 0;
+}
+.popup-box table.data-box {
+    width: 100%;
+    margin: 16px auto;
+    text-align: center;
+    font-size: 1.6em;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #ead5c2;
+}
+.popup-box .box-in .section1 .detailContent{
+    width:670px;
+    font-size:18px;
+    text-align: center;
+    margin-left:50px;
+}
+.popup-box .box-in .section1{
+    margin-top:0px;
+}
+.popup-box .box-in .section1 .item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+.popup-box .box-in .section1 p{
+    font-size:20px;
+}
+.popup-box .box-in .section1 ul li:nth-child(2){
+    margin:8px 63px;
+}
+.popup-box .box-in div.title,.popup-box  .box-in div.bottom{
+    height:50px;
+    width:100%;
+    line-height: 50px;
+    background:#e4f2f8;
+}
+.popup-box .box-in div.bottom{
+    background:#f1f8fa;
+}
+
+.popup-box .box-in .section1 .detailContent ul li span{
+    display: inline-block;
+    font-size:20px;
+    color:#e84c00;
+    position:relative;
+    left:-2px;
+    top:-1px;
+}
+.popup-box .box-in div.bottom{
+    text-align: left;
+    padding-left:20px;
+}
+.popup-box .box-in .section1 .detailContent  img{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    position:relative;
+    top:-90px;
+    left:-110px;
+}
+.popup-box .box-in .section1 .detailContent  img.pic{
+    position:relative;
+    top:-90px;
+    left:108px;
+}
+
+.section3 ol li{
+    font-size:16px;
+    margin-top: 10px;
+}
+.section4 ol li{
+    font-size:16px;
+    line-height:2.2;
+    text-align: justify;
+    display: -webkit-box;  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box;     /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox;  /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex;         /* 新版本语法: Opera 12.1, Firefox 22+ */
+}
+.popup-box table.data-box thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box thead th {
+    font-size: 16px;
+    text-align: center;
+    padding: 15px;
+    color: #FFFFFF;
+    background: #dcb08e;
+    line-height: 1.0;
+    border: 1px dotted #ccc;
+}
+.popup-box table.data-box thead tr {
+    border: 1px dotted #ccc;
+}
+.popup-box table.data-box tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box tbody td {
+    line-height: 1.6;
+    text-align: center;
+    color: #333333;
+    padding: 1.44%;
+    font-size: 16px;
+    border: 1px dotted #ccc;
+    font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+}
+.popup-box table.data-box tbody .unit {
+    font-size: 0.8em;
+}
+.popup-box table.data-box tbody tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    background: #FFFFFF;
+}
+.popup-box table.data-box tbody tr.white {
+//background: #f7efe8;
+}
+.popup-box table.data-box tbody tr.last-row td {
+    border-bottom: 1px solid #CCCCCC;
+}
+.popup-box .table1 td,
+.popup-box .table2 td {
+//width: 25%;
+}
+.popup-box .table4 td {
+    width: 16%;
+}
+.popup-box .table3 td {
+    width: 33.333333%;
+}
+.popup-box .close-top {
+    height: 60px;
+    color:  #b78255;
+    border-bottom: 1px solid #b78255;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.popup-box .close-top a {
+    display: block;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    background: url(//img.getfc.com.cn/source/www/zt/campaign1710/close.png) no-repeat;
+    top: 25px;
+    right: 25px;
+    text-decoration: none;
+}
+.popup-box h2 {
+    font-size:20px;
+    color: #b78255;
+    font-weight: bold;
+    position: relative;
+}
+.popup-box h2.ver-line {
+    /*padding-left: 45px;*/
+}
+.popup-box h2.ver-line i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #b78255;
+    color:#fff;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    text-align: center;
+    line-height: 30px;
+}
+.popup-box .note{line-height: 30px;}
+.popup-box .note span{color: #f00}
+.popup-box p {
+    line-height: 1.9;
+    color: #333333;
+    text-align: justify;
+}
+.popup-box p span{
+    overflow: hidden;
+    display: inline;
+    color: #d8505a;
+}
+.popup-box p a{
+    overflow: hidden;
+    display: inline;
+    color: #225b76;
+    text-decoration: underline;
+}
+/*登录*/
+.m-tcCon{
+    overflow: hidden;
+    max-width:95%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top:20%;
+    z-index: 99999;
+    padding: 0;
+}
+.m-tcCon .title{overflow: hidden;position: relative;z-index: 1;}
+.m-tcCon .con.bg .title{margin-top: 35px}
+.m-tcCon .title img{margin: 0 auto}
+.m-tcCon .con{
+    overflow: hidden;
+    background: url("//img.getfc.com.cn/source/www/zt/newyear19/tc-bg.png") no-repeat;
+    width: 666px;
+    height: 466px;
+    position: relative;
+    z-index: 0;
+    margin: -52px auto 0;
+}
+.m-tcCon .con.bg{
+    margin-top: 0
+}
+.m-tcCon .con.record{
+    background: url("//img.getfc.com.cn/source/www/zt/newyear19/tc-bg01.png") no-repeat;
+    height: 666px;
+}
+.m-tcCon .con .input-tip{
+    overflow: hidden;
+    margin-left: 185px;
+    width: 350px;
+    color: #cc2417;
+    font-size: 16px;
+    text-align: left;
+    height: 30px;
+    line-height: 30px;
+}
+.m-tcCon .con .sub_error {
+    color: #cc2417;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+}
+.m-tcCon .con .clickLogin{
+    overflow: hidden;
+    width: 400px;
+    height: 50px;
+    background: #cc2417;
+    margin: 0 auto;
+}
+.m-tcCon .con .clickLogin a{
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+.m-tcCon .con .close{
+    overflow: hidden;
+    position: absolute;
+    top: 50px;
+    right: 45px;
+    z-index: 2;
+}
+.m-tcCon .con .item{
+    overflow: hidden;
+    width: 402px;
+    height: 50px;
+    border: solid 1px #ccc;
+    margin: 0 auto;
+}
+.m-tcCon .con .item.marginTop{margin-top: 110px}
+.m-tcCon .con .item .leftImg{
+    overflow: hidden;
+    float: left;
+    width: 50px;
+    background: #fff3e6;
+    height: 50px;
+}
+.m-tcCon .con .item .leftImg img{margin: 10px auto}
+.m-tcCon .con .item .rightCon{
+    overflow: hidden;
+    float: left;
+    width: 350px;
+}
+.m-tcCon .con .item .rightCon input{
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    color: #666;
+    font-size: 16px;
+    line-height: 50px;
+    padding: 0 10px;
+}
+.m-tcCon .con .item-1{
+    overflow: hidden;
+    width: 400px;
+    margin: 5px auto 0;
+}
+.m-tcCon .con .item-1 a{
+    overflow: hidden;
+    display: block;
+    width: 50%;
+    float: left;
+    font-size: 18px;
+    color: #cc2417;
+}
+.m-tcCon .con .item-1 a:last-child{text-align: right}
+.m-tcCon .con .item-2{
+    overflow: hidden;
+    background: url("//img.getfc.com.cn/source/www/zt/newyear19/suc-gift.png") no-repeat;
+    width: 254px;
+    height: 326px;
+    margin: 55px auto -35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.m-tcCon .con .item-2 img{margin-top: 20px}
+.m-tcCon .con .item-2 p{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    background: linear-gradient(to right, #fba42f, #ffcb60);
+    background:-webkit-linear-gradient(right, #fba42f, #ffcb60);
+    background: -o-linear-gradient(right, #fba42f, #ffcb60);
+    background: -moz-linear-gradient(right, #fba42f, #ffcb60);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 5px;
+}
+.m-tcCon .con .item-3 p{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: #cc2417;
+}
+.m-tcCon .con .item-3 p a{
+    overflow: hidden;
+    display: inline;
+    text-decoration: underline;
+}
+.m-tcCon .con .item-4 img{margin: 55px auto 0}
+.m-tcCon .con .recordCon{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: 490px;
+    width: 550px;
+    margin: 70px auto 0;
+}
+.m-tcCon .con .recordCon::-webkit-scrollbar{
+    width: 8px;
+    height: 1px;
+}
+.m-tcCon .con .recordCon::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: rgba(0,0,0,.1);
+}
+.m-tcCon .con .recordCon::-webkit-scrollbar-track{
+    background: transparent;
+}
+.m-tcCon .con .recordCon ul{
+    overflow: hidden;
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.m-tcCon .con .recordCon ul li{
+    overflow: hidden;
+    display: block;
+    list-style: none;
+    border-bottom: solid 1px #cc2417;
+    height: 65px;
+    line-height: 65px;
+    padding: 0 50px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #cc2417;
+    text-align: center;
+}
+.m-tcCon .con .recordCon ul li span{
+    overflow: hidden;
+    display: block;
+    font-size: 24px;
+    color: #cc2417;
+    width: 50%;
+    float: left;
+}
+.m-tcCon .con .recordCon ul li span:last-child{text-align: right}
+@media screen and (max-width: 1360px){
+    .m-banner img{padding-left: 0}
+}
+
+
+
+
+
+
+
+
+
+
+
+

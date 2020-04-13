@@ -1,0 +1,473 @@
+/*css*/
+
+body {
+    background-color: #fff;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font: 10px/1em 'Microsoft JhengHei', 'Microsoft YaHei', arial;
+}
+/*@font-face{
+	font-family:font_strong;
+src: url('/‘../fonts/flexslider-icon.ttf’') format(‘truetype’),
+url(‘../fonts/flexslider-icon.eot’) format(’embedded-opentype’),
+url(‘../fonts/flexslider-icon.woff’) format(‘woff’);
+font-weight:normal;
+ font-style:normal;
+}*/
+.clearfix:before,
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+
+/* start commented backslash hack \*/
+
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+
+.header .header-bg {
+    background: transparent;
+}
+
+.container-gigi {
+    background: url(//img.getfc.com.cn/source/www/zt/gigi/bg-gigi.jpg) repeat left top #1b5d71;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin:  0 auto;
+}
+
+.item {
+    display: block;
+}
+.e-header .header{
+    background: none;
+}
+.banner-gigi {
+    display: block;
+    position: relative;
+    margin-top: -95px;
+}
+
+.banner-gigi img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 1100px;
+    margin: 0 auto;
+    display: block;
+}
+
+.intro-company {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 145px;
+    display: block;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: -4.6%;
+}
+.white-bg {
+    position: absolute;
+    bottom: -319px;
+    left: 50%;
+    margin-left: -513.5px;
+    filter: alpha(opacity=20);
+    opacity: 0.2;
+}
+
+.logo-introCo {
+    float: left;
+    padding-top: 1%;
+    box-sizing: border-box;
+    width: 7%;
+}
+
+.text-introCo {
+    color: #fff;
+    font-size: 1.6em;
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 2;
+    margin-left: 0.3%;
+    padding-top: 2%;
+	text-align:justify;
+	display:block;
+}
+
+.video {
+    display: block;
+    padding: 70px 0;
+}
+
+.title-gallery {
+    font-size: 3.2em;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+.title-video{
+    font-size: 3.2em;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 37px;
+}
+.flex-direction-nav a {
+    width: 30px !important;
+    height: 22px !important;
+}
+.flex-direction-nav a:before {
+    padding-bottom: 11px;
+}
+.flex-direction-nav a:after {
+    padding-bottom: 11px;
+}
+
+#carousel ul li.flex-active-slide {
+    border: 3px solid #a21313;
+}
+
+#carousel .slides li {
+    border: 3px solid #fff;
+    margin-right: 20px !important;
+}
+
+#carousel {
+    background: #0d2c3c;
+    border: none;
+    /*padding: 17px;*/
+}
+
+.news {
+    background: url(//img.getfc.com.cn/source/www/zt/gigi/bg-logo.png) no-repeat center center;
+    background-size: 100% 100%;
+    display: block;
+    padding: 4% 0;
+}
+
+.news-1 {
+    display: block;
+    overflow: auto;
+}
+
+.title-news {
+    font-size: 2.6em;
+    color: #fff;
+    line-height: 1.6;
+    font-weight: bold;
+    transition: all .15s ease-in;
+}
+.title-news:hover {
+    opacity: 0.8;
+}
+
+.text-des {
+    font-size: 1.6em;
+    color: #fff;
+    line-height: 2.0;
+    padding-top: 2%;
+    opacity: 0.8;
+}
+
+.text-news {
+    float: left;
+    width: 80%;
+}
+
+.logo-min {
+    float: left;
+    background: url(//img.getfc.com.cn/source/www/zt/gigi/logo-1.jpg) no-repeat left center;
+    width: 20%;
+    height: 138px;
+}
+
+.news-2 {
+    display: block;
+    overflow: auto;
+    padding-top: 4%;
+}
+
+.text-title {
+    font-size: 2em;
+    color: #fff;
+    line-height: 1.6;
+    font-weight: bold;
+    transition: all .15s ease-in;
+}
+
+.text-title:hover {
+    opacity: 0.5;
+}
+
+.logo-news {
+    width: 20%;
+    float: left;
+}
+
+.logo-1 {
+    background: url(//img.getfc.com.cn/source/www/zt/gigi/logo-2.jpg) no-repeat left center;
+    height: 56px;
+}
+
+.logo-2 {
+    background: url(//img.getfc.com.cn/source/www/zt/gigi/logo-3.jpg) no-repeat left center;
+    height: 56px;
+}
+
+.logo-3 {
+    background: url(//img.getfc.com.cn/source/www/zt/gigi/logo-4.jpg) no-repeat left center;
+    height: 56px;
+}
+
+.logo-4 {
+    background: url(//img.getfc.com.cn/source/www/zt/gigi/logo-5.jpg) no-repeat left center;
+    height: 56px;
+}
+
+.introduce {
+    background: url(//img.getfc.com.cn/source/www/zt/gigi/bg-gigi-about.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.text-intro {
+    //width: 45%;
+    padding: 110px 0;
+    padding-left: 47%;
+}
+
+.flexslider {
+    background: transparent !important;
+    border: 0 !important;
+    margin: 0 0 25px !important;
+}
+
+.bg-videos {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 25px;
+}
+
+.day-conbox {
+    margin-bottom: 70px;
+}
+
+.day-conbox .w1206 {
+    background: none;
+}
+
+.w1206 {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+}
+
+.jscarousal {
+    width: 85%;
+    height: 433px;
+    margin: 0 auto;
+    padding: 0;
+    padding: 2px 8px 2px 8px;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.jscarousal .jscarousal-left {
+    background-image: url(//img.getfc.com.cn/source/www/zt/gigi/icon-pre.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    left: -13.15%;
+    top: 180px;
+}
+
+.jscarousal .jscarousal-right {
+    background-image: url(//img.getfc.com.cn/source/www/zt/gigi/icon-next.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    right: -13.15%;
+    top: 180px;
+}
+
+.jscarousal .jscarousal-left,
+.jscarousal .jscarousal-right {
+    float: left;
+    width: 52px;
+    height: 93px;
+    color: White;
+    position: absolute;
+    top: 153px;
+    cursor: pointer;
+}
+
+.jscarousal-contents {
+    width: 100%;
+    height: 433px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.jscarousal-contents > div {
+    position: absolute;
+    width: 100%;
+    height: 433px;
+}
+
+.hidden {
+    display: none;
+}
+
+.jscarousal-contents > div > div {
+    float: left;
+/*    margin-left: 8px;
+    margin-right: 8px;*/
+    width: 33.33333%;
+    box-sizing: border-box;
+}
+
+/*.jscarousal-contents img {
+    width: 293px;
+    height: 433px;
+}*/
+
+.img-responsive {
+    max-width: 100%;
+    height: auto !important;
+    display: block;
+    margin: 0   auto
+}
+.bg-slide{
+	margin: 0 0 60px;
+    background: #fff !important;
+    border: 4px solid #fff !important;
+    position: relative;
+    zoom: 1;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow:  0 1px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow:  0 1px 4px rgba(0, 0, 0, 0.2);
+    -o-box-shadow:  0 1px 4px rgba(0, 0, 0, 0.2);
+    box-shadow:  0 1px 4px rgba(0, 0, 0, 0.2);
+}
+.flex-direction-nav a {
+    padding-top: 20px;
+}
+img {
+    border: 0 none;
+}
+
+#carousel1 img {
+    display: block;
+    opacity: .5;
+    cursor: pointer;
+}
+#carousel1 .flex-active-slide img {
+    opacity: 1;
+    cursor: default;
+}
+#carousel1 li {
+    margin-right: 5px;
+}
+.backtop{display: none}
+
+@media (max-width: 479px) {
+    .page {
+        width: 91.99%;
+        ;
+    }
+    .wrapper {
+        width: 90.5%;
+    }
+}
+
+@media (min-width: 480px) {
+    .page {
+        width: 95%;
+    }
+    .wrapper {
+        width: 93.5%;
+    }
+}
+
+@media (min-width: 768px) {
+    .page {
+        width: 96%;
+    }
+    .wrapper {
+        width: 96%;
+    }
+}
+
+@media (min-width: 992px) {
+    .page {
+        width: 96.5%;
+    }
+    .wrapper {
+        width: 96.5%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .page {
+        width: 96.5%;
+    }
+    .wrapper {
+        width: 96.5%;
+    }
+    .jscarousal .jscarousal-left {
+        left: -5.15%;
+    }
+    .jscarousal .jscarousal-right {
+        right: -5.15%;
+    }
+}
+
+@media (min-width: 1218px) {
+    .page {
+        width: 1100px;
+    }
+    .wrapper {
+        width: 1100px;
+    }
+    .jscarousal .jscarousal-left {
+        left: -13.15%;
+    }
+    .jscarousal .jscarousal-right {
+        right: -13.15%;
+    }
+}
+@media (max-width: 1366px){
+	.intro-company {
+    margin-top: -5.5%;
+}
+}

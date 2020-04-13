@@ -1,0 +1,390 @@
+
+*{
+    box-sizing: border-box;
+}
+.m-title{
+    background: url(../../images/newyear-lottery/banner-bg-m.png) no-repeat;
+    width: 7.5rem;
+    height: 9.31rem;
+    background-size: 7.5rem 9.31rem;
+    text-align: center;
+      padding-top: 1rem;
+}
+.m-title img{
+    width: 6.94rem;
+    height: 5.77rem;
+}
+.m-prize{
+    padding: 0 0.25rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+.m-prize .layout-1{
+    font-size: 0.44rem;
+    color: #eb393b;
+    padding-bottom: 0.3rem;
+}
+.m-prize .layout-2{
+    font-size: 0.28rem;
+    color: #333;
+    line-height: 0.48rem;
+    text-align: justify;
+}
+.m-prize .layout-3{
+    padding-top: 0.5rem;
+}
+.m-prize .layout-3 ul li ul li {
+    float: left;
+    width: 25%;
+}
+.m-prize .layout-3 .prize-img{
+    width:1.6rem ;
+    height: 4.03rem;
+}
+.m-prize .layout-4{
+    padding-top: 0.6rem;
+}
+.m-prize .layout-4 a.item-1{
+    display: block;
+    margin: 0 auto;
+    border:0.025rem solid #dc7d00;
+    color: #dc7d00;
+    padding:0.1rem;
+    font-size: 0.28rem;
+    width: 3.1rem;
+    border-radius: 0.1rem;
+    margin-bottom: 0.1rem;
+}
+.m-prize .layout-4 a.item-2{
+    display: block;
+    margin: 0 auto;
+    color: #dc7d00;
+    padding:0.1rem;
+    font-size: 0.28rem;
+    border-bottom: 0.025rem solid #dc7d00;
+    width: 3.6rem;
+}
+.m-cannon{
+    text-align: center;
+    padding:0 0.25rem 1.3rem;
+    margin-top: 0.5rem;
+}
+.m-cannon .layout-1{
+    font-size: 0.44rem;
+    color: #eb393b;
+    padding-bottom: 0.3rem;
+}
+.m-cannon .layout-2{
+    font-size:0.28rem;
+    color: #333;
+    padding-bottom: 0.8rem;
+    text-align: left;
+}
+.m-cannon .layout-2 span{
+    font-weight: bold;
+}
+.m-cannon .layout-3{
+    background: url(../../images/newyear-lottery/pao-bg-m.png) no-repeat;
+    width: 6.3rem;
+    height: 6.76rem;
+    background-size: 6.3rem 6.76rem;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+.m-cannon .layout-3 .item-1{
+    padding-top: 1.6rem;
+    position: relative;
+    z-index: 10;
+}
+
+.m-cannon .layout-3 .item-1 img{
+    width: 2.9rem;
+    height: 5.26rem;
+}
+.m-cannon .layout-3 .item-2{
+    position: absolute;
+    top: -0.5rem;
+    left: 2.7rem;
+    z-index: 5;
+}
+.m-cannon .layout-3 .item-2 .match{
+    width: 0.99rem;
+    height: 1.01rem;
+    display: block;
+    position: relative;
+    right: -0.5rem;
+}
+.m-cannon .layout-3 .item-2 .core-fire{
+    width: 0.78rem;
+    height: 4.32rem;
+    display: block;
+}
+.m-cannon .layout-3 .item-2 .core-tuan{
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 0.3rem;
+    left: 0.25rem;
+    display: none;
+}
+.to_down{
+    animation: to_down .5s infinite;
+    -webkit-animation: to_down .5s infinite;
+    animation-timing-function:ease-in-out;
+    -webkit-animation-timing-function:ease-in-out;
+    animation-direction:alternate;
+    -webkit-animation-direction:alternate;
+}
+@keyframes to_down{
+    from {transform: translateY(0)}
+    to {transform: translateY(0.2rem)}
+}
+@-webkit-keyframes to_down{
+    from {transform: translateY(0)}
+    to {transform: translateY(0.2rem)}
+}
+.m-cannon .layout-3 .item-3{
+    font-size: 0.28rem;
+    color: #333;
+    position: absolute;
+    top: 0.8rem;
+    left: 4rem;
+}
+.m-list{
+    background: #eb393b;
+    text-align: center;
+    padding:0.75rem 0;
+    position: relative;
+}
+.m-list .layout-1{
+    font-size: 0.36rem;
+    color: #fff;
+}
+.m-list ul li{
+   font-size: 0.28rem;
+    color: #fff;
+    margin-bottom: 0.3rem;
+}
+.m-list .layout-2{
+    position: absolute;
+    z-index: 10;
+    top:0;
+    left: 0.5rem;
+}
+.m-list .layout-2 img{
+    width: 2.1rem;
+    height: 3.57rem;
+}
+.txtMarquee-top{
+    padding-top: 0.8rem;
+    position: relative;
+    z-index: 11;
+    text-align: left;
+    padding-left: 1rem;
+}
+.tempWrap {
+    height: 6rem!important;
+}
+.m-userInfo{
+    background: #fff4e5;
+    text-align: center;
+    padding-top: 0.8rem;
+}
+.m-userInfo .layout-1,.m-userInfo .layout-3{
+    font-size: 0.36rem;
+     color: #eb393b;
+    padding-bottom: 0.3rem;
+}
+.m-userInfo .layout-1{
+    padding-bottom: 0.2rem;
+}
+.m-userInfo .layout-2{
+    padding-bottom: 0.5rem;
+}
+.m-userInfo .layout-2 a{
+   display: block;
+    margin: 0 auto;
+  width: 2.4rem;
+    color: #dc7d00;
+    border-bottom: 0.025rem solid #dc7d00;
+    padding-bottom: 0.1rem;
+    font-size: 0.28rem;
+}
+.m-userInfo .layout-4 .item-1{
+    display: flex;
+    font-size: 0.28rem;
+    text-align: left;
+    padding-left: 0.25rem;
+}
+.m-userInfo .layout-4{
+    padding-bottom: 0.8rem;
+    line-height: 0.48rem;
+}
+.m-warn{
+    padding:0.5rem 0.2rem 1rem;
+    text-align: center;
+    line-height: 0.48rem;
+}
+.m-warn .item-1{
+    font-size: 0.22rem;
+    color: #333;
+    letter-spacing:-1px;
+}
+.m-warn .item-2{
+    color: #999;
+    font-size: 0.22rem;
+}
+
+.fire-space{
+    overflow: hidden;
+    position: fixed;
+    z-index: 99999;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*display: none;*/
+}
+.fire-space .prizewinning,.fire-space .nowinning{
+    background:  rgba(235,57,59,.9);
+    width: 6.6rem;
+    font-size: 0.32rem;
+    color: #fff;
+    position: absolute;
+    top:30%;
+    left: 50%;
+    margin-left: -3.3rem;
+    z-index: 1;
+    padding: 0.5rem;
+}
+.fire-space .nowinning{
+    background: rgba(215,180,127,0.9);
+}
+.fire-space .prizewinning .size{
+    font-size: 0.44rem;
+}
+.fire-space .prizewinning .close,.fire-space .nowinning .close{
+    position: absolute;
+    right: 0.2rem;
+    top: 0.14rem;
+}
+.service-m{
+    color: #ffd59d;
+    display: inline-block;
+    border-bottom: 0.025rem solid #ffd59d;
+}
+
+.to_bottom{
+    animation: to_bottom .2s linear both;
+    -webkit-animation: to_bottom .2s linear both;
+    transition-timing-function: linear;
+}
+@keyframes to_bottom{
+    from {top: 0;}
+    to {top: 0.7rem;}
+
+}
+@-webkit-keyframes to_bottom{
+    from {top: 0;}
+    to {top: 0.7rem;}
+}
+
+.to_bottom1{
+    animation: to_bottom1 .8s ease-out both;
+    -webkit-animation: to_bottom1 .8s ease-out both;
+    transition-timing-function: ease-out;
+}
+@keyframes to_bottom1{
+    0% {top: -0.5rem;}
+    50% {top: 0.2rem}
+    100% {top: 1.2rem}
+}
+@-webkit-keyframes to_bottom1{
+    0% {top: -0.5rem;}
+    50% {top: 0.2rem}
+    100% {top: 1.2rem}
+}
+.to_bottom2{
+    animation: to_bottom2 .8s ease-out both;
+    -webkit-animation: to_bottom2 .8s ease-out both;
+    transition-timing-function: ease-out;
+}
+@keyframes to_bottom2{
+    0% {top: 0.3rem;}
+    50% {top: 0.8rem}
+    100% {top: 1.5rem}
+}
+@-webkit-keyframes to_bottom1{
+    0% {top: 0.3rem;}
+    50% {top: 0.8rem}
+    100% {top: 1.5rem}
+}
+.fire-pic{
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+     top:0;
+    display: none;
+    background: url(../../images/newyear-lottery/huo.png) no-repeat;
+    height: 15.93rem;
+    background-size: 7.5rem 15.93rem;
+}
+
+@keyframes to_big{
+    0% {transform: scale(0.1) }
+    20% {transform: scale(0.2) }
+    30% {transform: scale(0.3) }
+    40% {transform: scale(0.4) }
+    50% {transform: scale(0.5) }
+    60% {transform: scale(0.6)}
+    70% {transform: scale(0.7)}
+    80% {transform: scale(0.8)}
+    90% {transform: scale(0.9)}
+    100% {transform: scale(1) }
+}
+.to_big{
+    animation: to_big .2s linear both;
+    -webkit-animation: to_big .2s linear both;
+    transition-timing-function: linear;
+}
+.height {
+    overflow: hidden;
+    position: fixed!important;
+    height: 100%;
+}
+.scale-img{
+    width: 4.08rem;
+    height: 4.38rem;
+    position: absolute;
+    right: -1.34rem;
+    top: 2rem;
+}
+.scale-img2{
+    left: -0.34rem;
+    top: 5rem;
+}
+.to_scale{
+    animation: to_scale .5s infinite;
+    -webkit-animation: to_scale .5s infinite;
+    animation-timing-function:ease-in-out;
+    -webkit-animation-timing-function:ease-in-out;
+    animation-direction:alternate;
+    -webkit-animation-direction:alternate;
+}
+@keyframes to_scale{
+    from {transform: scale(0.5)}
+    to {transform: scale(1)}
+}
+@-webkit-keyframes to_scale{
+    from {transform: scale(0.5)}
+    to {transform: scale(1)}
+}
+.layout-m{
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,531 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header-top{
+    background: url(https://img.getfc.com.cn/source/www/zt/lp-img/pc/gelx/topbg.jpg?v0401) no-repeat center;
+    background-size: cover;
+    height: 600px;
+    top:-74px;
+    position: relative;
+    margin-bottom: -74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-top-money{
+    text-align: right;
+    padding-top: 80px;
+}
+.header-top-money img{
+    object-fit: contain;
+}
+.header-top-right{
+    width: 1200px;
+}
+.header-top-right img{
+    float: right;
+    margin: 100px 100px 0 0;
+    object-fit: contain;
+    width: 424px;
+}
+.section1-title{
+    color: rgb(26,71,84);
+    text-align: center;
+    font-size: 37px;
+    font-weight: bold;
+    margin-top: 100px;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+.section1-titletext{
+    color: rgb(26,71,84);
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 76px;
+    padding-top: 19px;
+}
+.section1-box{
+    display: flex;
+    justify-content: center;
+    margin-bottom: -30px;
+}
+.section1-box-left{
+    margin-right: 100px;
+}
+.section1-box-left img{
+    object-fit: cover;
+}
+.section1-box-right img{
+    object-fit: cover;
+}
+.section1-button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 90px;
+}
+.section1-button-left,.section1-button-right{
+    background: rgb(253,221,0);
+    width: 320px;
+    border-radius: 20px;
+    height: 80px;
+    color: rgb(26,71,84);
+    text-align: center;
+    padding-top: 7px;
+    margin: 50px 30px 0px 0;
+    font-size: 30px;
+    line-height: 70px;
+    cursor: pointer;
+
+}
+.section1-button-right{
+    background:rgb(41,107,127);
+    color: white;
+}
+.section2{
+    background: rgb(248,248,248);
+    padding: 90px 0;
+}
+.section2 .sectLayout{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 66%;
+    margin: 0 auto;
+}
+.section2-left{
+    display: inline-block;
+    width: 40%;
+}
+.section2-left img{
+    width: 100%;
+    object-fit: contain;
+}
+.section2-right{
+    display: inline-block;
+    width: 60%;
+}
+.section2-right p{
+    overflow: hidden;
+    display: block;
+    text-align: left;
+}
+.section2-right-p1{
+    color:  rgb(26,71,84);
+    font-size: 37px;
+    font-weight: bold;
+    margin: -30px 0 0 20px;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+.section2-right-p2{
+    color:  rgb(26,71,84);
+    font-size: 19px;
+    margin-top: 55px;
+}
+.section2-right-p3{
+    color:rgb(146,81,56);
+    font-size: 22px;
+    font-weight: bold;
+
+    padding-top: 10px;
+}
+.section3{
+    background: linear-gradient(to bottom, rgb(41,109,128),rgb(26,71,84)) ;
+    padding-bottom: 120px;
+}
+.section3-content{
+    display: flex;
+    justify-content: center;
+    padding: 70px 0 0;
+}
+.section3-title{
+    color: white;
+    font-size: 37px;
+    text-align: center;
+    padding-top: 100px;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+.section3-content-box{
+    text-align: center;
+}
+.section3-content-box img{
+    width: 100%;
+    object-fit: contain;
+}
+.section3-content-p{
+    color: white;
+    font-size: 23px;
+}
+.section3-mr{
+    margin-right: 110px;
+}
+
+.ml{
+    margin-left: -20px;
+}
+.section4{padding-bottom: 90px}
+.section4-content{
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+.section4-title{
+    color: rgb(26,71,84);
+    text-align: center;
+    font-size: 37px;
+    font-weight: bold;
+    padding-top: 100px;
+}
+.section4-box{
+    background: rgb(248,248,248);
+    width:220px ;
+    height: 320px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-right: 30px;
+    border: 1px solid white;
+    text-align: center;
+}
+.section4-box:hover{
+    box-shadow: 0px 0px 10px #888888;
+}
+.section4-img{
+    width: 100%;
+    height: 45%;
+}
+.section4-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.section4-box-p{
+    overflow: hidden;
+    display: inline-block;
+    color: rgb(26,71,84);
+    text-align: center;
+    border-bottom:2px solid rgb(26,71,84);
+    padding: 20px 0 5px 0;
+    font-weight: bold;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 23px;
+}
+.section4-box-p2{
+    color: rgb(26,71,84);
+    font-size: 19px;
+    text-align: center;
+    padding-top: 20px;
+}
+.section5{
+    background:rgb(50,106,122);
+    padding-bottom: 120px;
+}
+.app-apple{
+    overflow: hidden;
+    width: 220px;
+    display: inline-block;
+    margin: 0 20px;
+}
+.app-apple p{
+    color: white;
+    text-align: center;
+    font-size: 31px;
+    padding-top: 20px;
+}
+.app-apple img{
+    object-fit: cover;
+    width: 100%;
+}
+.section5-content{
+    padding: 100px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section5-left {
+    display: inline-block;
+    margin-right: 100px;
+}
+.section5-right{
+    display: inline-block;
+}
+.section5-right-p{
+    color: white;
+    background:linear-gradient(to right, rgb(108,148,160), rgb(50,106,122)) ;
+    font-size: 23px;
+    padding-left: 20px;
+    margin: 0 0 26px 0;
+
+}
+.mt{
+    margin-top: 0;
+}
+.footer-bottom{
+    background: rgb(26,71,84);
+    padding-bottom: 40px;
+}
+.footer-bottom p{
+    color: rgb(163,181,187);
+    font-size: 20px;
+    text-align: center;
+    padding: 40px 0 0;
+}
+.footer-bottom .p2{
+    color: rgb(163,181,187);
+    font-size: 20px;
+    text-align: center;
+    padding: 15px 0 0 0;
+    margin: 0px;
+}
+.m-popCon{overflow: hidden}
+.m-popCon .pop-tit{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    margin: 45px 0;
+    font-size:32px;
+    font-weight: bolder;
+}
+.m-popCon .popItem{
+    margin: 20px 30px 0;
+}
+.m-popCon .popItem p{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-size: 24px;
+}
+.m-popCon .popItem span{
+    overflow: hidden;
+    display: block;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    background: #3e62eb;
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 50px auto;
+    cursor: pointer;
+}
+.m-popCon .popItem ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.m-popCon .popItem ul li{margin: 0 15px}
+.m-popCon .popItem ul li img{margin: 0 auto}
+/*弹窗*/
+.popup-box {
+    max-width: 1000px;
+    height: 650px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: -325px auto 0 auto;
+    top: 50%;
+    background: #fff;
+    z-index: 99999;
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+    padding: 0 20px 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.popup-box#scanCode{max-height: 650px;height: auto}
+.popup-box .box-in {
+    margin: 3% 3% 5% 5%;
+    color: #333333;
+    overflow: auto;
+    height: 500px;
+    padding: 0% 2% 0 0;
+}
+.popup-box table.data-box {
+    width: 100%;
+    margin: 16px auto;
+    text-align: center;
+    font-size: 1.6em;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #ead5c2;
+}
+.popup-box .box-in .layout1 .detailContent{
+    width:670px;
+    font-size:18px;
+    text-align: center;
+    margin-left:50px;
+}
+.popup-box .box-in .layout1{
+    margin-top:0px;
+}
+.popup-box .box-in .layout1 .item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+.popup-box .box-in .layout1 p{
+    font-size:20px;
+}
+.popup-box .box-in .layout1 ul li:nth-child(2){
+    margin:8px 63px;
+}
+.popup-box .box-in div.title,.popup-box  .box-in div.bottom{
+    height:50px;
+    width:100%;
+    line-height: 50px;
+    background:#e4f2f8;
+}
+.popup-box .box-in div.bottom{
+    background:#f1f8fa;
+}
+
+.popup-box .box-in .layout1 .detailContent ul li span{
+    display: inline-block;
+    font-size:20px;
+    color:#e84c00;
+    position:relative;
+    left:-2px;
+    top:-1px;
+}
+.popup-box .box-in div.bottom{
+    text-align: left;
+    padding-left:20px;
+}
+.popup-box .box-in .layout1 .detailContent  img{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    position:relative;
+    top:-90px;
+    left:-110px;
+}
+.popup-box .box-in .layout1 .detailContent  img.pic{
+    position:relative;
+    top:-90px;
+    left:108px;
+}
+
+.layout3 ol li{
+    font-size:16px;
+    margin-top: 10px;
+}
+.layout4 ol li{
+    font-size:16px;
+    line-height:2.2;
+    text-align: justify;
+    display: -webkit-box;  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box;     /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox;  /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex;         /* 新版本语法: Opera 12.1, Firefox 22+ */
+}
+.popup-box table.data-box thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box thead th {
+    font-size: 16px;
+    text-align: center;
+    padding: 15px;
+    color: #FFFFFF;
+    background: #dcb08e;
+    line-height: 1.0;
+    border: 1px dotted #ccc;
+}
+.popup-box table.data-box thead tr {
+    border: 1px dotted #ccc;
+}
+.popup-box table.data-box tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box tbody td {
+    line-height: 1.6;
+    text-align: center;
+    color: #333333;
+    padding: 1.44%;
+    font-size: 16px;
+    border: 1px dotted #ccc;
+    font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+}
+.popup-box table.data-box tbody .unit {
+    font-size: 0.8em;
+}
+.popup-box table.data-box tbody tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    background: #FFFFFF;
+}
+.popup-box table.data-box tbody tr.white {
+}
+.popup-box table.data-box tbody tr.last-row td {
+    border-bottom: 1px solid #CCCCCC;
+}
+.popup-box .table1 td,
+.popup-box .table2 td {
+}
+.popup-box .table4 td {
+    width: 16%;
+}
+.popup-box .table3 td {
+    width: 33.333333%;
+}
+.popup-box .close-top {
+    height: 60px;
+    color:  #b78255;
+    border-bottom: 1px solid #b78255;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.popup-box .close-top a {
+    display: block;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    background: url(//img.getfc.com.cn/source/www/zt/campaign1710/close.png) no-repeat;
+    top: 25px;
+    right: 25px;
+    text-decoration: none;
+}
+.popup-box h2 {
+    font-size:20px;
+    color: #b78255;
+    font-weight: bold;
+    position: relative;
+}
+.popup-box h2.ver-line {
+}
+.popup-box h2.ver-line i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #b78255;
+    color:#fff;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    text-align: center;
+    line-height: 30px;
+}
+.popup-box .note{line-height: 30px;}
+.popup-box .note span{color: #f00}
+.popup-box p {
+    line-height: 1.9;
+    color: #333333;
+    text-align: justify;
+}
+.popup-box p span{
+    overflow: hidden;
+    display: inline;
+    color: #d8505a;
+}
+.popup-box p a{
+    overflow: hidden;
+    display: inline;
+    color: #225b76;
+    text-decoration: underline;
+}

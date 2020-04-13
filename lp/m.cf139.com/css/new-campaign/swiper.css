@@ -1,0 +1,141 @@
+.swiper-container {
+	overflow: hidden;
+	width: 100%;
+	/*height: 100%;*/
+	padding-bottom: 1.4rem;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1
+}
+.swiper-container.padding{
+	padding-bottom: 2rem;
+}
+.swiper-wrapper {
+	position: relative;
+	width: 100%;
+	/*height: 100%;*/
+	z-index: 1;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-transition-property: -webkit-transform;
+	-moz-transition-property: -moz-transform;
+	-o-transition-property: -o-transform;
+	-ms-transition-property: -ms-transform;
+	transition-property: transform;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box
+}
+
+.swiper-slide {
+	-webkit-flex-shrink: 0;
+	-ms-flex: 0 0 auto;
+	flex-shrink: 0;
+	/*display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;*/
+	background: url("../../images/new-campaign1712/m-con-bg01.png") no-repeat center;
+	background-size: 4rem 5.22rem;
+	position: relative;
+	width: 7.5rem;
+	height: 5.22rem;
+	padding-top: .3rem;
+}
+.swiper-slide.bg{
+	background: none;
+}
+.swiper-slide span{
+	overflow: hidden;
+	display: block;
+	text-align: center;
+	width: 7.5rem;
+	font-size: .32rem;
+	color: #fff;
+}
+.swiper-slide span.margin{
+	margin-top: .9rem;
+}
+.swiper-slide span.size{
+	font-size: .24rem;
+}
+.swiper-slide img{
+	width: 3rem;
+	height: 1.14rem;
+	margin: .3rem auto .7rem auto;
+}
+.swiper-slide.bg span{ width: 3rem}
+
+/* 按钮*/
+
+.swiper-pagination {
+	position: absolute;
+	text-align: center;
+	z-index: 10;
+}
+.swiper-pagination.color{overflow: hidden}
+.swiper-pagination.swiper-pagination-hidden {
+	opacity: 0
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+	bottom: .86rem;
+	width:100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.swiper-pagination-bullet {
+	width: .2rem;
+	height: .2rem;
+	border-radius: 100%;
+	background: #e5494d;
+	opacity: .5;
+	display:inline-block;
+}
+button.swiper-pagination-bullet {
+	border: none;
+	margin: 0;
+	padding: 0;
+	box-shadow: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-webkit-appearance: none;
+	appearance: none
+}
+.swiper-pagination-clickable .swiper-pagination-bullet {
+	cursor: pointer
+}
+.swiper-pagination-white .swiper-pagination-bullet {
+	background: #e5494d;
+}
+.swiper-pagination-bullet-active {
+	opacity: 1;
+	background: #e5494d;
+	width: .3rem;
+	height: .3rem;
+}
+.swiper-pagination-white .swiper-pagination-bullet-active {
+	background: #e5494d;
+}
+.swiper-pagination-black .swiper-pagination-bullet-active {
+	background: #e5494d;
+}
+.swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: .1rem 0;
+	display: block
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: 0 .1rem;
+}
+

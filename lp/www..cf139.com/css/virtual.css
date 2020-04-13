@@ -1,0 +1,653 @@
+body{background: #f6f9ff}
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0;color: #333}
+.inner{width: 1200px; margin: 0 auto; position: relative}
+img{ overflow:hidden;display:block;border: none;}
+.e-header .header{
+    background: none;
+}
+.web-banner{
+    width: 100%;
+    height: 700px;
+    background: url("//img.getfc.com.cn/source/www/zt/virtual/banner-bg.jpg") no-repeat center;
+    margin-top:-76px;
+    position: relative;
+    overflow: hidden;
+}
+.web-banner .layout{
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    margin-top: 189px;
+}
+.web-banner .layout img{margin: 0 auto}
+#canvas{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+}
+.web-page{
+    overflow: hidden;
+    width: 100%;
+    padding: 73px 0;
+}
+.web-page.bg01{
+    background: url("//img.getfc.com.cn/source/www/zt/virtual/neiye-bg01.png") no-repeat bottom center;
+    height: 700px;
+}
+.web-page.bg03{
+    background: url("//img.getfc.com.cn/source/www/zt/virtual/neiye-bg03.png") no-repeat bottom center;
+    height: 600px;
+}
+.web-page.bg-color{
+    background: #fff;
+}
+.web-page.bg-height{height: 760px}
+.web-page .title{
+    overflow: hidden;
+    width: 100%;
+}
+.web-page .title .item{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: bold;
+    color: #03286e;
+}
+.web-page .title .item img{
+    position: relative;
+    z-index: 1;
+}
+.web-page .title .item img:first-child{margin: 0 -30px 0 0}
+.web-page .title .item img:last-child{margin: 20px 0 0 -30px}
+.web-page .title p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 48px;
+    text-align: center;
+}
+.web-page .title p span{
+    overflow: hidden;
+    display: inline;
+    font-size: 20px;
+    font-weight: bold;
+}
+.web-page .title .btn{
+    overflow: hidden;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+.web-page .title .btn img{margin-left: 5px}
+.web-page .title .btn a{
+    overflow: hidden;
+    display: block;
+    width: 140px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #ff9d1b;
+    border: solid 1px #ff9d1b;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.web-page .title .btn a:hover{background: #ff9d1b;color: #fff}
+.web-page .con-list{
+    overflow: hidden;
+    width: 100%;
+}
+.web-page .con-list .item{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #03286e;
+    float: left;
+    position: relative;
+}
+.web-page .con-list .item.marginleft{
+    margin-left: 10%;
+    margin-top: 200px;
+}
+.web-page .con-list .item.marginright{
+    margin-right: 18%;
+    margin-top: 20px;
+}
+.web-page .con-list .item.margintop{
+    margin-top: 20px;
+}
+.web-page .con-list .item.position{
+    position: absolute;
+    right: 13%;
+    margin-top: 200px;
+}
+.web-page .con-list .item span{
+    overflow: hidden;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+.web-page .con-list .item img{
+    margin-bottom: 9px;
+    position: relative;
+    z-index: 1;
+}
+.web-page .con-list .item .icon-bg{
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    margin: 5px;
+    top: 0;
+    left: 0;
+    animation: icon-bg 10s linear infinite;
+    -moz-animation: icon-bg 10s linear infinite;
+    -webkit-animation: icon-bg 10s linear infinite;
+    -o-animation: icon-bg 10s linear infinite;
+}
+@keyframes icon-bg{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+@-webkit-keyframes icon-bg {
+    from{-webkit-transform: rotate(0deg);}
+    to{-webkit-transform: rotate(360deg);}
+}
+.web-page .con-list .item01{
+    overflow: hidden;
+    float: left;
+    width: 26%;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-left: 4%;
+}
+.web-page .con-list .item01.margintop{margin-top: 120px}
+.web-page .con-list .item01.margintop01{margin-top: 170px}
+.web-page .con-list .item01 .left-img{
+    overflow: hidden;
+}
+.web-page .con-list .item01 .right-con{
+    overflow: hidden;
+    margin-left: 35px;
+    width: 70%;
+}
+.web-page .con-list .item01 .right-con span{
+    overflow: hidden;
+    display: block;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: bold;
+}
+.web-page .con-list .item01 .right-con p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 28px;
+}
+.web-page .con-list .item01 .right-con a{
+    overflow: hidden;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 28px;
+    color: #dca309;
+    border-bottom: solid 1px #dca309;
+    margin-top: 5px;
+}
+.web-page .con-list .item01 .right-con a:hover{
+    background: #f7ead9;
+}
+.web-page .con-list .item01 .right-con a.btn{
+    background: url("//img.getfc.com.cn/source/www/zt/virtual/btn-bg.png") no-repeat;
+    width: 155px;
+    height: 44px;
+    line-height: 50px;
+    text-align: center;
+    border-bottom: none;
+    margin-top: 8px;
+}
+.web-page .con-list .item01 .right-con a.btn:hover{
+    background: url("//img.getfc.com.cn/source/www/zt/virtual/btn-bg-hover.png") no-repeat;
+    color: #fff;
+}
+.web-page .con-list .item02{
+    overflow: hidden;
+    width: 50%;
+    float: left;
+}
+.web-page .con-list .item02 .list{
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 100px 0 40px 0;
+}
+.web-page .con-list .item02 .list01{
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: bold;
+    color: #03286e;
+    background: url("//img.getfc.com.cn/source/www/zt/virtual/li-bg03.png") no-repeat;
+    width: 416px;
+    height: 99px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.web-page .con-list .item02 .list01 span{margin: 0 30px 0 90px;}
+.web-page .con-list .item02 .list01 a{
+    overflow: hidden;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background: #c69512;
+    color: #fff;
+    cursor: pointer;
+}
+.web-page .con-list .item02 .list01 a img{margin: 4px auto 0 auto;}
+.web-page .con-list .item02 .list02{
+    overflow: hidden;
+    width: 400px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(148,165,196,.7);
+    margin: 30px 10px 10px 10px;
+    border-radius: 4px;
+    font-size: 20px;
+    color: #03286e;
+    font-weight: bold;
+    display: none;
+}
+.web-page .con-list .item02 .list03{
+    overflow: hidden;
+    margin-top: 60px;
+    width: 100%;
+}
+.web-page .con-list .item02 .list03.appear{
+    animation: appear 3s linear 1;
+    -moz-animation: appear 3s linear 1;
+    -webkit-animation: appear 3s linear 1;
+    -o-animation: appear 3s linear 1
+}
+@keyframes appear {
+    from{width: 0}
+    to{width: 100%}
+}
+@-webkit-keyframes appear {
+    from{width: 0}
+    to{width: 100%}
+}
+.web-page .con-list ul{
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.web-page .con-list ul li{
+    overflow: hidden;
+    list-style: none;
+    background: url("//img.getfc.com.cn/source/www/zt/virtual/li-bg01.png") no-repeat;
+    width: 361px;
+    height: 540px;
+    padding: 50px 15px 0 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+    cursor: pointer;
+    transition: all .25s;
+}
+.web-page .con-list ul li:hover{
+    margin-top: 25px;
+    transition: all .25s;
+}
+.web-page .con-list ul li span{
+    overflow: hidden;
+    display: block;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+.web-page .con-list ul li p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 28px;
+    color: #666;
+    text-align: justify;
+ }
+.web-page .con-list ul li img{
+    position: absolute;
+    bottom: 50px;
+}
+.web-page .con-list01{
+    overflow: hidden;
+    width: 100%;
+}
+.web-page .con-list01 ul{
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.web-page .con-list01 ul li{
+    overflow: hidden;
+    list-style: none;
+    background: url("//img.getfc.com.cn/source/www/zt/virtual/li-bg02.png") no-repeat;
+    width: 273px;
+    height: 446px;
+    padding: 28px 15px 0 15px;
+    position: relative;
+    margin-top: 35px;
+    cursor: pointer;
+    transition: all .25s;
+}
+.web-page .con-list01 ul li:hover{
+    margin-top: 25px;
+    transition: all .25s;
+}
+.web-page .con-list01 ul li span{
+    overflow: hidden;
+    display: block;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 20px 0;
+}
+.web-page .con-list01 ul li p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 28px;
+    color: #666;
+    text-align: justify;
+}
+.web-page .con-list01 ul li a{
+    overflow: hidden;
+    display: block;
+    color: #dca309;
+    font-size: 16px;
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+}
+.web-page .con-list01 ul li img{margin: 0 auto}
+.web-page .con-list02{
+    overflow: hidden;
+    position: relative;
+    z-index: 11;
+    margin-top: -40px;
+}
+.web-page .con-list02 span{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    text-align: center;
+}
+.web-page .con-list02 span.color{
+    font-size: 28px;
+    color: #0d61ff;
+    font-weight: bold;
+}
+.web-brand .title span{
+    font-weight: bold;
+    color: #03286e;
+}
+/*弹窗*/
+.popup-box {
+    max-width: 1000px;
+    height: 650px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    margin-top: -325px;
+    background: #fff;
+    z-index: 99999;
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+    padding: 0 20px 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.popup-box .box-in {
+    margin: 3% 3% 5% 5%;
+    color: #333333;
+    overflow: auto;
+    height: 500px;
+    padding: 0% 2% 0 0;
+}
+.popup-box table.data-box {
+    width: 100%;
+    margin: 16px auto 25px;
+    text-align: center;
+    border: 0 !important;
+    font-size: 1.6em;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.popup-box  .box-in .section1 .detailContent{
+    width:670px;
+    font-size:18px;
+    text-align: center;
+    margin-left:50px;
+}
+.popup-box  .box-in .section1{
+    margin-top:0px;
+}
+.popup-box  .box-in .section1 p{
+    font-size:16px;
+}
+.popup-box  .box-in .section1 ul li:nth-child(2){
+    margin:8px 63px;
+}
+.popup-box  .box-in div.title,.popup-box  .box-in div.bottom{
+    height:50px;
+    width:100%;
+    line-height: 50px;
+    background:#e4f2f8;
+}
+.popup-box  .box-in div.bottom{
+    background:#f1f8fa;
+}
+
+.popup-box  .box-in .section1 .detailContent ul li span{
+    display: inline-block;
+    font-size:20px;
+    color:#e84c00;
+    position:relative;
+    left:-2px;
+    top:-1px;
+}
+.popup-box  .box-in div.bottom{
+    text-align: left;
+    padding-left:20px;
+}
+.popup-box  .box-in .section1 .detailContent  img{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    position:relative;
+    top:-90px;
+    left:-110px;
+}
+.popup-box  .box-in .section1 .detailContent  img.pic{
+    position:relative;
+    top:-90px;
+    left:108px;
+}
+
+.section3 ol li{
+    font-size:16px;
+}
+.section4 ol li{
+    font-size:16px;
+    line-height:2.2;
+    text-align: justify;
+    display: -webkit-box;  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box;     /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox;  /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex;         /* 新版本语法: Opera 12.1, Firefox 22+ */
+}
+.popup-box table.data-box thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box thead th {
+    font-size: 16px;
+    text-align: center;
+    padding: 15px;
+    color: #FFFFFF;
+    background: #dcb08e;
+    line-height: 1.0;
+}
+.popup-box table.data-box thead tr {
+    border: 1px solid #dcb08e;
+}
+.popup-box table.data-box tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box tbody td {
+    line-height: 1.2;
+    text-align: center;
+    color: #333333;
+    padding: 1.44%;
+    font-size: 16px;
+    border: 0.025rem solid #ead5c2;
+    font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+}
+.popup-box table.data-box tbody .unit {
+    font-size: 0.8em;
+}
+.popup-box table.data-box tbody tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    background: #FFFFFF;
+}
+.popup-box table.data-box tbody tr.white {
+//background: #f7efe8;
+}
+.popup-box table.data-box tbody tr.last-row td {
+    border-bottom: 1px solid #CCCCCC;
+}
+.popup-box .table1 td,
+.popup-box .table2 td {
+//width: 25%;
+}
+.popup-box .table4 td {
+    width: 16%;
+}
+.popup-box .table3 td {
+    width: 33.333333%;
+}
+.popup-box .close-top {
+    height: 60px;
+    color:  #b78255;
+    border-bottom: 1px solid #b78255;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.popup-box .close-top a {
+    display: block;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    background: url(//img.getfc.com.cn/source/www/zt/campaign1710/close.png) no-repeat;
+    top: 25px;
+    right: 25px;
+    text-decoration: none;
+}
+.popup-box h2 {
+    font-size:24px;
+    margin: 38px 0 18px;
+    color: #b78255
+;
+    position: relative;
+}
+.popup-box h2.ver-line {
+    padding-left: 45px;
+}
+.popup-box h2.ver-line i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #b78255;
+    color:#fff;
+    position: absolute;
+    left: 0;
+    top: -3px;
+    text-align: center;
+    line-height: 30px;
+}
+.popup-box .note{line-height: 30px;}
+.popup-box .note span{color: #f00}
+.popup-box p {
+    line-height: 1.9;
+    color: #333333;
+    text-align: justify;
+}
+.popup-box p span{
+    overflow: hidden;
+    display: inline;
+    color: #d8505a;
+}
+.popup-box p a{
+    overflow: hidden;
+    display: inline;
+    color: #225b76;
+    text-decoration: underline;
+}
+@media (max-width: 1200px){
+    .inner{width: 90%}
+    .web-page .con-list ul li{
+        width: 31%;
+        background-size: 100% 100%;
+    }
+    .web-page .con-list01 ul li{
+        width: 23%;
+        background-size: 100% 100%;
+    }
+    .web-page .con-list .item02{width: 48%}
+    .web-page .con-list .item.marginleft{margin-left: 0}
+    .web-page .con-list .item.position{right: 6%}
+    .web-page .con-list ul li img{display: none}
+    .web-page .con-list01 ul li img{width: 60%;}
+
+}
+
+
+
+
+
+
+
+
+
+

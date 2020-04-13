@@ -1,0 +1,743 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0; color: #333}
+.inner{overflow: hidden;width: 100%; margin: 0 auto; position: relative}
+img{ overflow:hidden;display:block;border: none;}
+.web-banner{
+    width: 100%;
+    background: url("../../images/campaign1810/banner-bg.jpg") no-repeat;
+    background-size: 100% 100%;
+    height: 9.32rem;
+    position: relative;
+}
+.web-banner img{width: 5.27rem;margin: 1.18rem auto 4.2rem auto}
+.web-banner .btn{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.web-banner .btn a{
+    overflow: hidden;
+    display: block;
+    width: 2rem;
+    height: .6rem;
+    line-height: .6rem;
+    text-align: center;
+    margin: 0 .3rem;
+    border-radius: .05rem;
+    font-size: .3rem;
+    border: solid 1px #d8b872;
+    text-decoration: none;
+}
+.web-banner .btn a.account{
+    color: #fff;
+    background: #d8b872;
+    transition: all .25s;
+}
+.web-banner .btn a.account:hover{
+    background: transparent;
+    color: #d8b872;
+    transition: all .25s;
+}
+.web-banner .btn a.chat{
+    color: #d8b872;
+    transition: all .25s;
+}
+.web-banner .btn a.chat:hover{
+    background: #d8b872;
+    color: #fff;
+    transition: all .25s;
+}
+.web-page{
+    overflow: hidden;
+}
+.web-page.bg-color{background: #f6f8ff}
+.web-page.bg02 {
+    background:-webkit-linear-gradient(left, #24335c, #526bb0);
+    background: -o-linear-gradient(left, #24335c, #526bb0);
+    background: -moz-linear-gradient(left, #24335c, #526bb0);
+    background: linear-gradient(to left, #24335c, #526bb0);
+    height: 6.55rem;
+}
+.web-page.bg04 {
+    background:-webkit-linear-gradient(left, #24335c, #526bb0);
+    background: -o-linear-gradient(left, #24335c, #526bb0);
+    background: -moz-linear-gradient(left, #24335c, #526bb0);
+    background: linear-gradient(to left, #24335c, #526bb0);
+    height: 7.11rem;
+}
+.web-page .tit-bg{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: .2rem;
+    background: url("../../images/campaign1810/tit-bg.png") no-repeat;
+    background-size: 100% 100%;
+    width: 1.39rem;
+    height: 1.17rem;
+    padding-top: .2rem;
+}
+.web-page .tit-bg span{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-size: .22rem;
+    line-height: .25rem;
+    font-weight: bold;
+}
+.web-page .tit-bg span.size{
+    font-size: .41rem;
+    line-height: .42rem;
+    font-family: "Myriad Pro";
+}
+.web-page .tit-bg span.size01{
+    font-size: .25rem;
+    line-height: .27rem;
+}
+.web-page .title{
+    overflow: hidden;
+    margin: .5rem 0 .2rem;
+}
+.web-page.bg02 .title{margin-top: .7rem}
+.web-page.bg04 .title{margin: .7rem 0}
+.web-page .title .item{
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: .24rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.web-page.bg04 .title .item{
+    background: url("../../images/campaign1810/icon-tit02.png") no-repeat;
+    background-size: 100% 100%;
+    width: 2.38rem;
+    height: .61rem;
+    margin: 0 auto;
+}
+.web-page .title .item span{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    background: url("../../images/campaign1809/icon-tit.png") no-repeat;
+    background-size: 100% 100%;
+    width: 1.49rem;
+    height: .43rem;
+    line-height: .43rem;
+    margin: 0 auto;
+    color: #3d7797;
+    text-align: center;
+}
+.web-page.bg02 .title .item span{
+    background: url("../../images/campaign1810/icon-tit01.png") no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+}
+.web-page .title .item span.size{
+    font-size: .42rem;
+    font-weight: bold;
+    margin-top: .15rem;
+    background-image: -webkit-linear-gradient(left, #24335c, #405590);
+    background-image: -o-linear-gradient(left, #24335c, #405590);
+    background-image: -moz-linear-gradient(left, #24335c, #405590);
+    background-image: linear-gradient(to left, #24335c, #405590);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: auto;
+}
+.web-page .title .item img{width: 2.3rem;margin: .2rem auto 0 auto}
+.web-page.bg04 .title .item img{margin: 0}
+.web-page .title p{
+    overflow: hidden;
+    display: block;
+    font-size: .22rem;
+    line-height: .36rem;
+    text-align: center;
+    color: #3d7797;
+    margin: 0 auto;
+}
+.web-page .title p span {
+    color: #d8b872;
+    display: inline;
+    font-weight: bold;
+}
+.web-page .title a{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    width: 1.8rem;
+    height: .5rem;
+    line-height: .5rem;
+    background: #d8b872;
+    margin: .3rem auto 0 auto;
+    border-radius: .06rem;
+    text-decoration: none;
+    transition: all .25s;
+}
+.web-page .title a:hover{
+    background: transparent;
+    border: solid 1px #d8b872;
+    color: #d8b872;
+    transition: all .25s;
+}
+.web-page .con-list{
+    overflow: hidden;
+    width: 7rem;
+    margin: .65rem auto .2rem;
+}
+.web-page .con-list ul{
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.web-page .con-list ul li{
+    overflow: hidden;
+    display: block;
+    float: left;
+    background: url("../../images/campaign1810/icon-bg.png") no-repeat;
+    background-size: 2.34rem 3.14rem;
+    width: 2.34rem;
+    height: 3.14rem;
+    cursor: pointer;
+    position: relative;
+}
+.web-page .con-list ul li.hover{
+    background: url("../../images/campaign1810/icon-bg-hover.png") no-repeat;
+    background-size: 2.34rem 3.14rem;
+    width: 2.34rem;
+    height: 3.14rem;
+}
+.web-page .con-list ul li .item{margin-top: .63rem;}
+.web-page .con-list ul li span{
+    overflow: hidden;
+    display: block;
+    font-size: .22rem;
+    text-align: center;
+    color: #fff;
+}
+.web-page .con-list ul li span.color {
+    color: #a9a3a3;
+    font-size: .24rem;
+    line-height: .17rem;
+}
+.web-page .con-list ul li.ntn-03 span.color{margin-top: -.05rem}
+.web-page .con-list ul li span.size {
+    margin: .3rem auto .05rem;
+    width: 1.34rem;
+    height: .43rem;
+    background: url("../../images/campaign1810/600.png") no-repeat center;
+    background-size: 1.07rem .43rem;
+}
+.web-page .con-list ul li.ntn-02 span.size {
+    background: url("../../images/campaign1810/1800.png") no-repeat center;
+    background-size: 1.34rem .43rem;
+}
+.web-page .con-list ul li.ntn-03 span.size {
+    background: url("../../images/campaign1810/5000.png") no-repeat center;
+    background-size: 1.34rem .43rem;
+    margin-bottom: 0;
+}
+.web-page .con-list ul li.ntn-04 span.size {
+    background: url("../../images/campaign1810/150.png") no-repeat center;
+    background-size: 1.07rem .43rem;
+}
+.web-page .con-list ul li.ntn-05 span.size {
+    background: url("../../images/campaign1810/100.png") no-repeat center;
+    background-size: 1.07rem .43rem;
+    margin-top: .5rem
+}
+.web-page .con-list ul li.hover span.size{color: #85a7f6;}
+.web-page .con-list ul li p{
+    overflow: hidden;
+    display: block;
+    font-size: .22rem;
+    line-height: .3rem;
+    text-align: center;
+    color: #999;
+}
+.web-page .con-list ul li p.size{font-size: .22rem;font-weight: bold}
+.web-page .con-list ul li a{
+    overflow: hidden;
+    position: absolute;
+    bottom: .42rem;
+    color: #fff;
+    font-size: .24rem;
+    width: 100%;
+    text-align: center;
+}
+.web-page .con-list01{
+    overflow: hidden;
+}
+.web-page .con-list01 .item{
+    overflow: hidden;
+    display: block;
+    width: 3.77rem;
+    height: 3.73rem;
+    cursor: pointer;
+}
+.web-page .con-list01 .item.ic-bg01{background: url("../../images/campaign1810/icon-bg01.png") no-repeat;background-size: 100% 100%;}
+.web-page .con-list01 .item.ic-bg02{background: url("../../images/campaign1810/icon-bg02.png") no-repeat;background-size: 100% 100%;}
+.web-page .con-list01 .item.ic-bg03{background: url("../../images/campaign1810/icon-bg03.png") no-repeat;background-size: 100% 100%;}
+.web-page .con-list01 .item img{margin: .45rem auto 0 auto;width: .8rem}
+.web-page .con-list01 .item p{
+    overflow: hidden;
+    display: block;
+    font-size: .22rem;
+    text-align: center;
+    color: #2e3f6f;
+    margin-bottom: .25rem;
+}
+.web-page .con-list01 .item span{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    line-height: .32rem;
+    text-align: center;
+    color: #2e3f6f;
+}
+.web-page .con-list01 .item a{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    text-align: center;
+    color: #2e3f6f;
+    width: 1.4rem;
+    height: .45rem;
+    line-height: .45rem;
+    border: solid 1px #2e3f6f;
+    margin: .3rem auto 0 auto;
+    text-decoration: none;
+}
+.web-page .con-list01 .item a:hover{
+    background: #fff;
+    color: #333;
+}
+.web-page .con-list02{
+    overflow: hidden;
+    width: 7rem;
+    margin: 0 auto;
+    padding-bottom: .9rem;
+    position: relative;
+}
+.web-page .con-list02 .slider ul{
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.web-page .con-list02 .slider ul li{
+    overflow: hidden;
+    display: block;
+    height: 6.35rem;
+}
+.web-page .con-list02 .slider ul li .item{
+    overflow: hidden;
+    width: 4.91rem;
+    height: 5.75rem;
+    background: #fff;
+    box-shadow: 0 0 .13rem rgba(170,130,51,.09);
+    margin: .15rem auto;
+    border-radius: .05rem;
+    position: relative;
+}
+.web-page .con-list02 .slider ul li img {
+    margin: 0 auto .8rem auto;
+    width: 4.89rem;
+}
+.web-page .con-list02 .slider ul li span{
+    overflow: hidden;
+    display: block;
+    color: #fff;
+}
+.web-page .con-list02 .slider ul li span.rect{
+    width: 1.6rem;
+    height: .8rem;
+    font-size: .36rem;
+    line-height: .38rem;
+    text-align: center;
+    background: #de3a1a;
+    border-radius: .05rem;
+    position: absolute;
+    z-index: 1;
+    top: .75rem;
+    left: 1.67rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.web-page .con-list02 .slider ul li span.size{font-size: .18rem;line-height: .2rem}
+.web-page .con-list02 .slider ul li span.rect.bgcolor02{background: #1a6abb}
+.web-page .con-list02 .slider ul li span.rect.bgcolor03{background: #d8b872}
+.web-page .con-list02 .slider ul li span.rect.bgcolor04{background: #5d83d7}
+.web-page .con-list02 .slider ul li span.line{
+    width: .44rem;
+    height: 1px;
+    background: #de3a1a;
+    margin: .25rem 0 .25rem .3rem;
+}
+.web-page .con-list02 .slider ul li span.line.color02{background: #1a6abb}
+.web-page .con-list02 .slider ul li span.line.color03{background: #5d83d7}
+.web-page .con-list02 .slider ul li span.line.color04{background: #d8b872}
+.web-page .con-list02 .slider ul li p{
+    overflow: hidden;
+    display: block;
+    font-size: .3rem;
+    line-height: .36rem;
+    margin: 0 .3rem .1rem .3rem;
+    font-weight: bold;
+}
+.web-page .con-list02 .slider ul li.one p{color: #de3a1a;}
+.web-page .con-list02 .slider ul li.two p{color: #1a6abb;}
+.web-page .con-list02 .slider ul li.three p{color: #d8b872;}
+.web-page .con-list02 .slider ul li.four p{color: #5d83d7;}
+.web-page .con-list02 .slider ul li p.bold{font-size: .28rem;margin-bottom: 0;font-weight: bold}
+.web-page .con-list02 .slider ul li p.size {
+    font-size: .24rem;
+    margin-bottom: 0;
+    text-align: justify;
+    color: #333!important;
+    font-weight: normal;
+}
+.web-page .con-list02 .slider ul li .item-1{
+    overflow: hidden;
+    width: 2.8rem;
+    height: 1.1rem;
+    border-radius: .05rem;
+    position: absolute;
+    bottom: 0;
+    margin-left: 2.1rem;
+}
+.web-page .con-list02 .slider ul li .item-1.color01{background: #de3a1a}
+.web-page .con-list02 .slider ul li .item-1.color02{background: #1a6abb}
+.web-page .con-list02 .slider ul li .item-1.color03{background: #5d83d7}
+.web-page .con-list02 .slider ul li .item-1 p{
+    overflow: hidden;
+    display: block;
+    font-weight: bold;
+    font-size: .24rem;
+    line-height: .32rem;
+    text-align: center;
+    color: #fff!important;
+    margin: .1rem 0;
+}
+.web-page .con-list02 .slider ul li .item-1 img{width: 1.34rem;margin: 0 auto}
+.web-page .layout {
+    overflow: hidden;
+    width: 6.8rem;
+    margin: 0 auto
+}
+.web-page .layout .item{
+    overflow: hidden;
+    background: url("../../images/campaign1810/icon-bg05.png") no-repeat;
+    background-size: 100% 100%;
+    width: 3rem;
+    height: 3.97rem;
+    margin: 0 .2rem;
+    position: relative;
+}
+.web-page .layout .item img{margin: 0 auto;width: 1.72rem}
+.web-page .layout .item img.logo{width: .34rem;margin: .05rem auto .35rem}
+.web-page .layout .item img.num {
+    width: 1.72rem;
+    position: absolute;
+    bottom: .4rem;
+    left: .6rem;
+}
+.web-page .layout .item span{
+    overflow: hidden;
+    display: block;
+    color: #fff;
+    font-size: .36rem;
+    line-height: .38rem;
+    text-align: center;
+    font-weight: bold;
+    margin: .16rem 0 .06rem;
+}
+.web-page .layout .item p{
+    overflow: hidden;
+    display: block;
+    color: #fff;
+    font-size: .22rem;
+    line-height: .24rem;
+    text-align: center;
+    font-weight: bold;
+}
+.web-page .layout .item p.bold{font-size: .28rem;color: #333;line-height: .3rem;margin-bottom: .05rem}
+.web-page .layout .item p.color{font-size: .24rem;font-weight: normal;color: #333;line-height: .36rem}
+.web-page .layout .item p.color01 {
+    font-size: .22rem;
+    font-weight: normal;
+    color: #333;
+    position: absolute;
+    bottom: .85rem;
+    width: 100%;
+    text-align: center;
+}
+.web-page .more{
+    overflow: hidden;
+    font-weight: lighter;
+    color: #273661;
+    font-size: .24rem;
+    text-align: center;
+    margin-bottom: .6rem;
+}
+.web-page .more p span{
+    color: #d8b872;
+    font-weight: bold;
+}
+/*弹窗*/
+.tc-hide{
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
+.masking{
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+}
+.popup-box {
+    overflow: hidden;
+    max-width:95%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top:10%;
+    background: #fff;
+    z-index: 99999;
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.popup-box .box-in {
+    margin: 3% 4% 5% 4%;
+    overflow-y: auto;
+    height: 8rem;
+}
+.popup-box .close-top{
+    padding:0.5rem 0.3rem;
+    font-size: 0.44rem;
+    color:#b78255;
+    text-align: center;
+    border-bottom: 1px solid #b78255;
+    width:5.5rem;
+    margin: 0 auto;
+    position: relative;
+}
+.popup-box .close-top a{
+    background: url(../../images/campaign1710/close-b.png) no-repeat;
+    width: 0.21rem;
+    height:0.21rem;
+    background-size: 0.21rem 0.21rem;
+    position: absolute;
+    right: 0;
+    margin-top: .2rem;
+    text-decoration: none;
+}
+.popup-box .section1 h2{
+    font-size: 0.36rem;
+    margin-bottom: 0.1rem;
+    color: #b78255;
+}
+.popup-box table.data-box {
+    width: 100%;
+    margin: 16px auto 25px;
+    text-align: center;
+    border: 0 !important;
+    font-size: 1.6em;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.popup-box .box-in .line-throw{font-size: 0.32rem;}
+.popup-box  .box-in .section1 p{
+    font-size:0.28rem;
+    margin-bottom: 0.2rem;
+    line-height: 1.8;
+}
+.popup-box  .box-in .section3 p{
+    font-size:0.28rem;
+    margin-bottom: 0.2rem;
+    line-height: 1.8;
+}
+.popup-box .box-in .section3 p a{color: #0096dc}
+.popup-box  .box-in .section3 p span{
+    padding-right:0.15rem;
+}
+.popup-box  .box-in .section4  h2{
+    font-size: 0.36rem;
+    margin-bottom: 0.1rem;
+    color: #b78255;
+}
+.popup-box  .box-in .section4 li{
+    font-size: 0.28rem;
+    line-height: 1.8;
+}
+.popup-box  .box-in .section4 li span{
+    margin-right: 0.15rem;
+}
+.popup-box  .box-in .section4 li p{
+    display: flex;
+}
+
+.popup-box table.data-box thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box thead th {
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 5px;
+    color: #FFFFFF;
+    background: #dcb08e;
+    line-height: 1.0;
+}
+.popup-box table.data-box thead tr {
+    border: 1px solid #dcb08e;
+}
+.popup-box table.data-box tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box tbody td {
+    line-height: 1.0;
+    text-align: center;
+    color: #333333;
+    padding: 1.44%;
+    font-size: 14px;
+    border: 0.025rem solid #ead5c2;
+    font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+}
+.popup-box table.data-box tbody .unit {
+    font-size: 0.8em;
+}
+.popup-box table.data-box tbody tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+//background: #f7efe8;
+}
+.popup-box table.data-box tbody tr.grey {
+    background: #fff;
+}
+.popup-box table.data-box tbody tr.last-row td {
+    border-bottom: 1px solid #CCCCCC;
+}
+.popup-box table.data-box .first-child {
+    text-align: center;
+    font-size: 16px;
+}
+.popup-box table.data-box .first-child a {
+    color: #666666;
+    text-decoration: none;
+}
+.popup-box .table1 td,
+.popup-box .table2 td {
+    width: 25%;
+}
+.popup-box .table4 td {
+    width: 16%;
+}
+.popup-box .table3 td {
+    width: 33.333333%;
+}
+.popup-box .note{line-height: 1.8;font-size: 0.24rem;margin-bottom: 0.1rem}
+.popup-box .note span{color: #f00}
+/*轮播*/
+#certify {
+    position: relative;
+    height: 3.74rem;
+}
+#certify  .swiper-slide {
+    width: 3.77rem;
+    height: 3.74rem;
+    filter: blur(.02rem);
+}
+.swiper-slide-active{filter: blur(0)!important;}
+.web-page .layout .swiper-container{height: 4.75rem}
+.web-page .layout .swiper-slide{width: 3.4rem!important;}
+.web-page .layout .swiper-button-next, .swiper-button-prev{
+    width: .5rem;
+    height: .49rem;
+    bottom: 0;
+    top: auto;
+}
+.web-page .layout .swiper-button-prev{
+    background: url("../../images/campaign1810/arrow-left.png") no-repeat;
+    background-size: 100% 100%;
+    left: 2.85rem;
+}
+.web-page .layout .swiper-button-prev.swiper-button-disabled{
+    opacity: 1;
+}
+.web-page .layout .swiper-button-next{
+    background: url("../../images/campaign1810/arrow-right.png") no-repeat;
+    background-size: 100% 100%;
+    right: 2.85rem;
+}
+.hd{
+    overflow: hidden;
+    width: 100%;
+}
+.hd .prev,.hd .next{
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    top: 35%;
+    z-index: 11;
+    width: .52rem;
+    height: .98rem;
+    left: 0;
+    background: url("../../images/campaign1810/arrow.png") no-repeat;
+    background-size: 1.04rem .98rem;
+    background-position: 0 0;
+    opacity: .5;
+}
+.hd .next{
+    background-position: -.52rem 0;
+    float: right;
+    left: auto;
+    right: 0;
+}
+.hd ul {
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    bottom: .4rem;
+    display: flex;
+    justify-content: center;
+}
+.hd ul li {
+    overflow: hidden;
+    width: .16rem;
+    height: .16rem;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: solid 1px #3e67b7;
+    margin: 0 .05rem;
+}
+.hd ul li.on {
+    background: #3e67b7;
+}

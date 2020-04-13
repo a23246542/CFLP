@@ -1,0 +1,231 @@
+@charset "utf-8";
+/*css reset 整体布局*/
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+p,
+blockquote,
+pre,
+form,
+fieldset,
+table,
+th,
+td,
+span,
+input,
+textarea {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+li,
+ol {
+    list-style: none;
+}
+i,
+em {
+    font-style: normal;
+}
+a {
+    text-decoration: none;
+}
+input,
+textarea {
+    -webkit-appearance: none;
+}
+
+img{ border: 0;}
+html {
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background: #fff;
+    font-size: .28rem;
+    color: #333;
+
+}
+.super_topic{width: 7.5rem;overflow: hidden}
+.down-footer{
+    padding-bottom: 0;
+}
+.add-info{
+    /*padding:0 .8rem;*/
+    text-align: center;
+    font-size: .2rem;
+    color: #999;
+    line-height: .48rem;
+}
+.copyright {
+    width: 7rem;
+    padding: .3rem .25rem 1rem;
+}
+.copyright span {
+    overflow: hidden;
+    display: block;
+    font-size: .22rem;
+    text-align: center;
+    margin-bottom: .1rem;
+}
+.top-topic{
+    background: #f7f7f7;
+    box-sizing: border-box;
+    padding-bottom: .2rem;
+}
+.top-topic .layout-1{
+    background: #fff;
+    padding:.4rem .3rem;
+    line-height: .48rem;
+}
+.topic .layout-1 .topic-title{
+    font-size: .32rem;
+    color: #003355;
+    font-weight: bold;
+}
+.topic .layout-1 .topic-sub{
+    font-size: .28rem;
+    color: #333;
+}
+.topic .layout-2{
+    padding: .7rem .3rem 0;
+    background: #fff;
+}
+.topic .layout-2   .item-1{
+    background: url(../../images/super-topic/example.jpg) no-repeat;
+    width: 6.9rem;
+    height: 3.8rem;
+    background-size: 6.9rem 3.8rem;
+    padding-top: .2rem;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: .2rem;
+}
+
+.topic .layout-2   .item-1 .label{
+    font-size:.24rem ;
+    color: #fff;
+    padding:.1rem .2rem;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    display: inline-block;
+    background: rgba(0,0,0,.7);
+}
+
+.topic .layout-2   .item-1  .label.blue{
+    background: #4a84ee;
+}
+.topic .layout-2 .layout-content{
+    border-bottom: .025rem solid #e9e9e9;
+    margin-bottom: .4rem;
+    position: relative;
+    display: block;
+}
+.layout-content .item-1{
+    display: block;
+}
+.status{
+    font-size: 0;
+}
+.status  img{
+    width: .34rem;
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin-right: .1rem;
+}
+.topic .layout-2   .item-1  .label.red{
+    background: #ee4a4a;
+}
+.topic .layout-2   .item-1  .label.grey{
+    background: #ff8500;
+}
+.topic .layout-2   .item-1 .count{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.topic .layout-2   .item-1 .count-content{
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    font-size:.24rem ;
+    padding:.1rem .3rem;
+    border-top-left-radius: .1rem;
+    border-bottom-right-radius: .1rem;
+}
+.topic .layout-2   .item-2{
+    padding: .3rem 0 ;
+}
+
+.topic .layout-2   .item-2 .news-title{
+    font-size: .32rem;
+    color: #333;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+.topic .layout-2   .item-2 .news-time{
+    font-size: .26rem;
+    color: #999;
+    margin-top: .1rem;
+}
+.topic .layout-2   .item-3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topic .layout-2   .item-3 img{
+    display: inline-block;
+    width: .34rem;
+    vertical-align: middle;
+    margin-right: .05rem;
+}
+.topic .layout-2   .item-3{
+    margin:.2rem 0 .3rem ;
+}
+.topic .layout-2   .item-3 .news-time{
+    font-size: .24rem;
+    color: #333;
+}
+.topic .layout-2   .item-3 .news-title{
+    font-size: .24rem;
+    color: #333;
+}
+.load-more{
+    font-size: .28rem;
+    color: #333;
+    height: .8rem;
+    line-height: .8rem;
+    text-align: center;
+    margin: .5rem auto .1rem;
+}
+.load-more:active{
+    background: #666;
+}
+
+.future-popup{
+    position: absolute;
+    top:30%;
+    left: 50%;
+    width: 4rem;
+    height: .8rem;
+    line-height: .8rem;
+    border-radius: .5rem;
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    font-size: .28rem;
+    text-align: center;
+    margin-left: -2rem;
+    margin-top: .04rem;
+    display: none;
+}
+

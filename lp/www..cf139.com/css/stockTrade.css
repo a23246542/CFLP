@@ -1,0 +1,432 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0;color:#333;position: relative}
+.inner{overflow: hidden;width: 1200px; margin: 0 auto; position: relative}
+img{ overflow:hidden;border: none;}
+.e-header .header{
+    background: none;
+}
+body{
+    font-family: "微软雅黑", Helvetica, STHeiTi, sans-serif;
+}
+.web-banner{
+    width: 100%;
+    height: 800px;
+    background: url("//img.getfc.com.cn/source/www/zt/stockTrade/banner-bg.jpg") no-repeat center;
+    margin-top:-76px;
+    position: relative;
+}
+
+.web-banner .inner{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 200px;
+    text-align: center;
+}
+.web-banner .inner img{
+    display: inline;
+}
+.web-banner .button{
+    text-align: center;
+    position: relative;
+}
+.btn-active{
+   display: none;
+    position: absolute;
+}
+.btn-circle{
+    cursor: pointer;
+    position: absolute;
+    left: 266px;
+    top: 136px;
+    -webkit-animation-name: scaleDraw; /*关键帧名称*/
+    -webkit-animation-timing-function: ease-in-out; /*动画的速度曲线*/
+    -webkit-animation-iteration-count: infinite;  /*动画播放的次数*/
+    -webkit-animation-duration: 3s; /*动画所花费的时间*/
+}
+@keyframes scaleDraw {  /*定义关键帧、scaleDrew是需要绑定到选择器的关键帧名称*/
+    0%{
+        transform: scale(1);  /*开始为原始大小*/
+    }
+    25%{
+        transform: scale(1.5); /*放大1.1倍*/
+    }
+    50%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(1.5);
+    }
+}
+.btn-circle:hover   .btn-active{
+    opacity: 1;
+}
+.btn-flower{
+    margin-top: 80px;
+ }
+.web-page{
+    overflow: hidden;
+    width: 100%;
+    background: #fff;
+   text-align: center;
+}
+.title{
+    margin-bottom: 70px;
+}
+.title span{
+   font-weight: bold;
+    font-size: 30px;
+    color: #333;
+    margin:0 20px;
+}
+.title img.first{
+    transform: rotateY(180deg);
+}
+.bg-01{
+    margin-top: 170px;
+}
+.adv-list ul {
+    display: flex;
+    align-items: center;
+    width: 1153px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.adv-list ul li{
+    width: 150px;
+    height: 190px;
+    padding-top: 35px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.btn-open {
+    position: relative;
+    height: 228px;
+}
+.adv-list ul li:hover{;
+    box-shadow: 0 0 10px rgba(15,113,147,.6) ;
+}
+.adv-list ul li .item-1{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 18px auto 7px;
+}
+.btn-open .shadow-btn{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.adv-list ul li .item-2{
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+}
+.btn-open a{
+    display: block;
+    width: 384px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: #138ce9;
+    /*margin: 100px auto 90px;*/
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.stock-info{
+    width: 1167px;
+    height: 296px;
+    background: url("//img.getfc.com.cn/source/www/zt/stockTrade/bg-w.png") no-repeat;
+    background-size:1167px 296px;
+}
+.stock-info .info-detail{
+    margin-left: 470px;
+    padding: 70px 0 0 70px;
+    text-align: left;
+    width: 606px;
+}
+.stock-info .info-detail .item-2{
+    margin: 20px auto;
+}
+.bg-01{
+    background-attachment: fixed;
+    background-image: url("//img.getfc.com.cn/source/www/zt/stockTrade/text.jpg")
+}
+.bg-03{
+    padding-top: 100px;
+}
+.bg-03{
+    background-attachment: fixed;
+    background-image: url("//img.getfc.com.cn/source/www/zt/stockTrade/text.jpg")
+}
+.bg-05{
+    background-attachment: fixed;
+    background-image: url("//img.getfc.com.cn/source/www/zt/stockTrade/text.jpg")
+}
+.bg-02{
+    background: #f6f6f6;
+    padding:90px 0 60px;
+}
+.bg-02 .bg-inner{
+    width: 100%;
+    height: 476px;
+    background-repeat: repeat;
+    background-image: url("//img.getfc.com.cn/source/www/zt/stockTrade/k-bg.png") ;
+    background-position: center center;
+}
+.bg-03{
+    padding-bottom: 90px;
+}
+.why{
+    display: flex;
+    align-items: center;
+    padding: 0 177px;
+    justify-content: space-between;
+}
+.why .why-item img{
+    display:block;
+    margin:0 auto 10px;
+}
+.why .why-item {
+    text-align: center;
+}
+.why .why-item li:first-child{
+    margin-bottom: 120px;
+}
+.why .why-item li{
+    font-size: 16px;
+    font-weight: bold;
+}
+.bg-04{
+    width: 100%;
+    height: 782px;
+    background: url("//img.getfc.com.cn/source/www/zt/stockTrade/bg01.png") no-repeat center;
+}
+.bg-04 span{
+    color: #fff;
+}
+.bg-04{
+    padding-top: 90px;
+}
+.stock-classify ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.stock-classify ul.first-list{
+    width: 548px;
+    margin-bottom: 43px;
+}
+.stock-classify ul.second-list{
+    width: 938px;
+}
+.stock-classify ul li{
+    position: relative;
+    transition: all .3s;
+}
+.stock-classify ul li:hover {
+    transform: translate(0, -10px);
+    -webkit-transform: translate(0, -10px);
+    -moz-transform: translate(0, -10px);
+    -o-transform: translate(0, -10px);
+    -ms-transform: translate(0, -10px);
+}
+
+.bg-05 ul li{
+    float: left;
+    border-top:1px solid #e6e6e6;
+    border-right:1px solid #e6e6e6;
+    padding:30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.bg-04 ul li a{
+    display: block;
+    cursor: pointer;
+}
+.bg-05{
+    padding: 95px 0 100px;
+}
+.bg-05 ul li img{
+    display: block;
+    margin-bottom: 20px;
+}
+.bg-05 ul li:first-child,.bg-05 ul li:nth-child(4){
+    border-left: 1px solid #e6e6e6;
+}
+.bg-05 ul li:nth-child(4),.bg-05 ul li:nth-child(5),.bg-05 ul li:nth-child(6){
+    border-bottom: 1px solid #e6e6e6;
+}
+.join-bottom{
+    background: #f6f6f6;
+    padding:90px 0;
+}
+.join-bottom .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.join-bottom .left{
+   width:770px ;
+}
+.load-text{
+    font-weight: bold;
+    font-size: 16px;
+    color: #666;
+    padding-bottom: 30px;
+    margin-top: 15px;
+    border-bottom: 1px solid #c4c4c4;
+}
+.copyright{
+    margin-top: 36px;
+    line-height: 28px;
+    color: #666;
+    font-size: 14px;
+}
+.join-bottom .right a{
+    display: block;
+    width: 134px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.join-bottom .right .item-1{
+    margin-right: 40px;
+}
+.join-bottom .right .item-1 a{
+    background: #138ce9;
+}
+.join-bottom .right .item-2 a{
+    color: #138ce9;
+    border: 1px solid #138ce9;
+}
+.join-bottom .right{
+    display: flex;
+}
+@media screen and (max-width: 1680px){
+
+}
+@media screen and (max-width: 1600px){
+
+}
+@media screen and (max-width: 1400px){
+
+}
+@media screen and (max-width: 1366px){
+
+}
+@media screen and (max-width: 1280px){
+    .inner{
+        width: 1000px;
+    }
+    .luck-box img.second-img{
+        width: 420px;
+    }
+    .market-img img {
+        width: 350px;
+        height: auto;
+    }
+    .market-show a{
+        top: -89px;
+        left: -24px;
+    }
+    .market-show a.move{
+        top: -56px;
+        left: 195px;
+    }
+    .market-box {
+        width: 900px;
+        height: 337px;
+    }
+    .market-add img {
+       width: 900px;
+    }
+    .market-add  .marketImg img{
+        width:220px;
+    }
+    .market-show {
+        right: 60px;
+    }
+    .assist-top {
+        width: 1175px;
+        height: 218px;
+        background-size: 80%;
+        margin: 0 auto;
+        padding-left: 157px;
+    }
+    .assist-bottom {
+        background-size: 81%;
+        padding-top: 10px;
+    }
+    .assist ul li {
+        width: 14.8%;
+    }
+    .assist-top ul li span {
+        font-size: 24px;
+    }
+    .assist ul li:nth-child(3) {
+        margin-right: 42px;
+    }
+    .market-box .market-left {
+        padding-right: 4%;
+        border: none;
+    }
+    .gold .gold-left, .gold .gold-right {
+        width: 400px;
+    }
+    .gold-image img{
+        width: 400px;
+    }
+    .gold-detail ul li ul {
+        padding: 4px 0;
+    }
+    .gold-right .gold-detail {
+        margin-bottom: 34px;
+    }
+    .trade-title .first-title img {
+        left: 291px;
+    }
+    .bg-03 .trade-title .first-title img {
+        left: 206px;
+    }
+    .bg-04 .trade-title .first-title img {
+        left: 332px;
+    }
+    .bg-05 .trade-title .first-title img {
+        left: 271px;
+    }
+  .swiper-button-next{
+      right: 33px;
+  }
+  .swiper-button-prev{
+      left: 33px;
+  }
+    .trade-title .first-title:before {
+        left: 485px;
+    }
+    .luck-box .left-bg{
+        background-size: 73%;
+    }
+    .luck-box .changeLevel {
+        position: absolute;
+        top: 88px;
+        right: 184px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .inner{
+        width: 900px;
+    }
+
+}

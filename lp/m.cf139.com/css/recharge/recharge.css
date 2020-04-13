@@ -1,0 +1,242 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0; color: #333}
+.inner{overflow: hidden;width: 100%; margin: 0 auto; position: relative}
+img{ overflow:hidden;display:block;border: none;}
+.web-banner{
+    width: 100%;
+    height: 9.3rem;
+    background: url("/cn/zt/images/recharge/banner.jpg") no-repeat center;
+    background-size: auto 9.3rem;
+    position: relative;
+    overflow: hidden;
+}
+.web-banner .layout-1{
+    overflow: hidden;
+    padding-top: 1.93rem;
+    position: relative;
+    margin-left: .25rem;
+}
+.web-banner .layout-1 img{
+    width: 4.1rem;
+}
+.web-banner .layout-2{
+    overflow: hidden;
+    margin-left: .25rem;
+    padding-top:1.65rem;
+}
+.web-banner .layout-2 a{
+    overflow: hidden;
+    display: block;
+    width:1.9rem;
+    height: .6rem;
+    line-height: .6rem;
+    font-size: .28rem;
+    border-radius: .1rem;
+    -moz-border-radius: .1rem;
+    text-align: center;
+    text-decoration: none;
+}
+.web-banner .layout-2 a.item-1{
+    background: #b27c20;
+    color: #fff;
+    margin-bottom: .2rem;
+}
+.web-banner .layout-2 a.item-2{
+    width:1.86rem;
+    height: .56rem;
+    line-height: .56rem;
+    border: solid .02rem #b27c20;
+    color: #b27c20;
+}
+.web-page{
+    overflow: hidden;
+    width: 100%;
+    padding: .5rem 0 .8rem 0;
+}
+.web-page.bg-color{
+    background: #eae9e3;
+    padding-top: .75rem;
+}
+.web-page .img-con{
+    overflow: hidden;
+    width: 100%;
+}
+.web-page .img-con img{
+    width: 4.05rem;
+    margin: 0 auto;
+}
+.web-page .list-con{
+    overflow: hidden;
+    width: 100%;
+}
+.web-page.bg-color .list-con{
+    width: 100%;
+}
+.web-page .list-con .title{
+    overflow: hidden;
+    width: 6.8rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.web-page .list-con .title span{
+    overflow: hidden;
+    display: block;
+    font-size: .44rem;
+    font-weight: bold;
+    color: #b27c20;
+    margin-bottom: .3rem;
+    text-align: center;
+}
+.web-page .list-con .title p{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    line-height: .48rem;
+    text-align: center;
+}
+.web-page .list-con .title p span{
+    display: inline;
+    font-size: .28rem;
+    line-height: .48rem;
+    color: #b27c20;
+    font-weight: bold;
+}
+.web-page .list-con .title p a{
+    display: inline;
+}
+.web-page .list-con .title a{
+    overflow: hidden;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: solid .02rem #b27c20;
+    font-size: .28rem;
+    color: #b27c20;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+.web-page .list-con .btn-list{
+     overflow: hidden;
+    margin-top: .5rem;
+    display: flex;
+    justify-content: center;
+ }
+.web-page .list-con .btn-list a{
+    overflow: hidden;
+    display: block;
+    width:1.9rem;
+    height: .6rem;
+    line-height: .6rem;
+    font-size: .28rem;
+    border-radius: .1rem;
+    -moz-border-radius: .1rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 .15rem;
+}
+.web-page .list-con .btn-list a.item-1{
+    background: #b27c20;
+    color: #fff;
+}
+.web-page .list-con .btn-list a.item-2{
+    width:1.86rem;
+    height: .56rem;
+    line-height: .56rem;
+    border: solid .02rem #b27c20;
+    color: #b27c20;
+}
+.note{
+    overflow: hidden;
+    border-bottom: solid .02rem #959595;
+    padding: .25rem .45rem .5rem .45rem;
+}
+.note p{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    line-height: .48rem;
+}
+.web-page .con-title{
+    overflow: hidden;
+    font-size: .44rem;
+    color: #b27c20;
+    margin-bottom: .65rem;
+    text-align: center;
+}
+.web-page .con-nav{
+    overflow: hidden;
+}
+.web-page .con-nav ul{
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.web-page .con-nav ul li{
+    overflow: hidden;
+    list-style: none;
+    position: relative;
+}
+.web-page .con-nav ul li .list{
+    overflow: hidden;
+    position: relative;
+    float: left;
+    width: 2.81rem;
+    height: 4.5rem;
+    margin: 0 .38rem;
+}
+.web-page .con-nav ul li .list-bg01{
+
+    background: url("/cn/zt/images/recharge/img-03.png") no-repeat;
+    background-size: 2.81rem 4.5rem;
+}
+.web-page .con-nav ul li .list-bg02{
+    background: url("/cn/zt/images/recharge/img-04.png") no-repeat;
+    background-size: 2.81rem 4.5rem;
+}
+.web-page .con-nav ul li .list-bg03{
+    background: url("/cn/zt/images/recharge/img-05.png") no-repeat;
+    background-size: 2.81rem 4.5rem;
+}
+.web-page .con-nav ul li .list-bg04{
+    background: url("/cn/zt/images/recharge/img-06.png") no-repeat;
+    background-size: 2.81rem 4.5rem;
+}
+.web-page .con-nav ul li .item{
+    overflow: hidden;
+    position: absolute;
+    bottom: .42rem;
+    left: .2rem;
+}
+.web-page .con-nav ul li span{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    line-height: .38rem;
+}
+.web-page .con-nav ul li span:first-child{
+    font-size: .36rem;
+    line-height: .48rem;
+    font-weight: bold;
+}
+.tempWrap{
+    width: 7rem;
+    margin: 0 auto .6rem auto;
+}
+.hd ul{
+    display: flex;
+    justify-content: center;
+}
+.hd li{
+    width: .16rem;
+    height: .16rem;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    background: #f1ddbc;
+    margin: 0 .13rem;
+}
+.hd li.on{background: #b27c20}
+.web-footer{background: #fff}
+
+
+
+
+

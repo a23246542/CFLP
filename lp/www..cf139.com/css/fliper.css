@@ -1,0 +1,54 @@
+
+/*倒计时*/
+.fliper-timer{
+    text-align: center;
+    width: 100%;
+    background: rgba(255,255,255,0.8);
+    height: 90px;
+    line-height: 90px;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+}
+.fliper-timer .fliper-text{
+    font-size: 18px;
+}
+.fliper-timer .item-wrapper span{
+    font-size: 30px;
+    color: #787aa4;
+}
+.item-wrapper span.time-text{
+    font-size: 18px;
+    color: #999;
+}
+.fliper-timer .open-account{
+    display: inline-block;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    background: #f4483c;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 100px;
+}
+.fliper-timer .open-account a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+.fliper-text i{
+    background: url(/source/www/zt/new-campaign1712/tel-icon.png) no-repeat;
+    background-size: 20px 20px;
+    width:20px;
+    height: 20px;
+    display: inline-block;
+    -webkit-animation:back-x-spin 5s linear infinite;
+    -moz-animation:back-x-spin 5s linear infinite;
+    animation:back-x-spin 5s linear infinite;
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+}

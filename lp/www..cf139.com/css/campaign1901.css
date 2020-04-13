@@ -1,0 +1,577 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0; color: #333;}
+.inner{overflow: hidden;width: 1200px; margin: 0 auto; position: relative}
+img{ overflow:hidden;display:block;border: none;}
+.e-header .header{
+    background: none;
+}
+.web-banner{
+    width: 100%;
+    background: url("//img.getfc.com.cn/source/www/zt/campaign1901/banner-bg.jpg") no-repeat top center;
+    height: 809px;
+    top:-74px;
+    position: relative;
+    margin-bottom: -74px;
+}
+.web-banner img{
+    overflow: hidden;
+    margin: 170px auto 42px;
+}
+.web-page{
+    overflow: hidden;
+    position: relative;
+}
+.web-page.bg02{background: url("//img.getfc.com.cn/source/www/zt/campaign1901/neiye-bg02.jpg") no-repeat center;height: 549px}
+.web-page.bg04{background: url("//img.getfc.com.cn/source/www/zt/campaign1901/neiye-bg04.jpg") no-repeat center;height: 590px}
+.web-page .title{overflow: hidden;margin-top: 90px}
+.web-page .title.marginTop{margin-top: 0}
+.web-page .title img{margin: 0 auto 15px;position: relative;z-index: 1}
+.web-page .title p{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+}
+.web-page .title p span{
+    display: inline;
+    font-size: 18px;
+    width: auto;
+    height: auto;
+    font-weight: bold;
+    padding-left: 0;
+}
+.web-page .title a{
+    overflow: hidden;
+    display: block;
+    color: #eeb55b;
+    font-size: 14px;
+    text-align: center;
+    width: 110px;
+    height: 32px;
+    line-height: 32px;
+    margin: 30px auto 25px auto;
+    border: solid 1px #eeb55b;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 6px;
+}
+.web-page .title a:hover{background: #eeb55b;color: #fff}
+.web-page .con-list{overflow: hidden;position: relative;margin-top: 25px}
+.web-page .con-list ul li{width: 300px;float: left}
+.web-page .con-list .item {
+    overflow: hidden;
+    width: 262px;
+    height: 468px;
+    background: url("//img.getfc.com.cn/source/www/zt/campaign1901/li-bg.png") no-repeat center top;
+}
+.web-page .con-list ul li:hover .item{background: url("//img.getfc.com.cn/source/www/zt/campaign1901/li-bg-hover.png") no-repeat center top;}
+.web-page .con-list .item img{margin: 0 auto}
+.web-page .con-list .item p{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    margin: 50px 0 30px;
+}
+.web-page .con-list .item span{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.web-page .con-list .item span.size{font-size: 24px;margin: 0 0 3px;line-height: 26px}
+.web-page .con-list .item a{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    width: 150px;
+    height: 38px;
+    line-height: 38px;
+    background: rgba(229,203,125,.7);
+    border-radius: 20px;
+    margin: 25px auto 0;
+    transition: all .25s;
+}
+.web-page .con-list .item a.marginTop{margin-top: 80px}
+.web-page .con-list .item a:hover{
+    width: 160px;
+    transition: all .25s;
+}
+.web-page .con-list .slider-nav {
+    overflow: hidden;
+    width: 100%;
+}
+.web-page .con-list .slider-nav .prev,.web-page .con-list .slider-nav .next {
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    background: url("//img.getfc.com.cn/source/www/zt/campaign1901/arrow-left.png") no-repeat;
+    width: 65px;
+    height: 65px;
+    transform: rotate(-180deg);
+    display: none;
+    position: absolute;
+    top:35%;
+    left: 0;
+    z-index: 11;
+}
+.web-page .con-list:hover .slider-nav .prev,.web-page .con-list:hover .slider-nav .next{display: block}
+.web-page .con-list .slider-nav .next{
+    background: url("//img.getfc.com.cn/source/www/zt/campaign1901/arrow-left.png") no-repeat;
+    float: right;
+    transform: rotate(0);
+    left: auto;
+    right: 0;
+}
+.web-page .con-list .slider-nav .prev.prevStop,.web-page .con-list .slider-nav .next.nextStop{display: none}
+.web-page .con-list01{overflow: hidden;margin-top: 116px}
+.web-page .con-list01 ul{
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.web-page .con-list01 ul li {
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+}
+.web-page .con-list01 ul li:nth-child(even){width: 5%}
+.web-page .con-list01 ul li span{
+    overflow: hidden;
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 33px 0 5px;
+}
+.web-page .con-list01 ul li a{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    width: 120px;
+    height: 32px;
+    line-height: 32px;
+    background: #eeb55b;
+    border-radius: 20px;
+    margin: 0 auto;
+    transition: all .25s;
+}
+.web-page .con-list01 ul li a:hover{
+    width: 130px;
+    transition: all .25s;
+}
+.web-page .con-masking{
+    overflow: hidden;
+    width: 520px;
+    height: 100%;
+    background: rgba(255,255,255,.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.web-page .con-list02{
+    overflow: hidden;
+    width: 520px;
+    height: 420px;
+    padding-bottom: 30px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(108,108,108,.2);
+    margin-bottom: 10px;
+}
+.web-page .con-list02 span{
+    overflow: hidden;
+    display: block;
+    font-size: 20px;
+    line-height: 48px;
+    color: #e64955;
+    padding-left: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.web-page .con-list02 p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 20px;
+    text-align: justify;
+}
+.web-page .con-list02 p.size{color: #666;font-size: 14px;}
+#certify {
+    overflow: hidden;
+    position: relative;
+    margin: 60px 0 74px;
+}
+.swiper-container{margin-top: 90px}
+.swiper-slide{
+    width: 520px;
+    position: relative;
+    cursor: pointer;
+}
+.swiper-pagination {
+    width: 100%;
+    height: 100px;
+    top: 0;
+}
+.swiper-slide .con-masking{display: block}
+.swiper-slide-active .con-masking{display: none}
+.swiper-slide .con-list02 p.size{display: none}
+.swiper-slide-active .con-list02 p.size{display: block}
+.swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 175px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 0;
+    font-size: 16px;
+    color: #666;
+    opacity: 1;
+    border: solid 1px #ddd;
+    background: #fff;
+}
+.swiper-pagination-bullets .swiper-pagination-bullet-active {
+    color: #ff9100;
+    border: solid 1px #ff9100;
+}
+.swiper-pagination span:first-child.swiper-pagination-bullet-active{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.swiper-pagination span:last-child.swiper-pagination-bullet-active{
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.web-page .layout {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.web-page .layout .item {
+    overflow: hidden;
+    position: relative;
+}
+.web-page .layout .item .avatar{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.web-page .layout .item .avatarCon{
+    overflow: hidden;
+}
+.web-page .layout .item .avatarCon .phone{
+    overflow: hidden;
+    font-size: 16px;
+    color: #fff;
+    margin: 10px 0 5px 85px;
+}
+.web-page .layout .item .avatarCon .info{
+    overflow: hidden;
+    width: 409px;
+    height: 252px;
+    background: #e64955;
+    padding: 36px 0 36px 90px;
+    margin-left: 33px;
+}
+.web-page .layout .item .avatarCon .info.bgColor{background: rgba(255,255,255,.2)}
+.web-page .layout .item .avatarCon .info p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    color: #fff;
+}
+.web-page .layout .item .avatarCon .info span{
+    overflow: hidden;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 20px;
+    color: #fff;
+}
+.web-page .layout .item .avatarCon .info span.color{color: #fdc368;font-size: 24px}
+.fixedCon{
+    overflow: hidden;
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: rgba(255,255,255,.7);
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fixedCon .item{
+    overflow: hidden;
+    width: 310px;
+    margin: 0 190px;
+}
+.fixedCon a{
+    overflow: hidden;
+    width: 300px;
+    height: 65px;
+    text-align: center;
+    border-radius: 32.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    transition: all .25s;
+    margin: 0 auto;
+}
+.fixedCon a:hover{
+    transition: all .25s;
+    width: 310px;
+}
+.fixedCon a.account{background: #edab43}
+.fixedCon a.chat{background: #e64955}
+.fixedCon a span{
+    overflow: hidden;
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+.fixedCon a p{
+    overflow: hidden;
+    display: block;
+    font-size: 14px;
+    color: #fff;
+}
+.web-footer{padding-bottom: 100px}
+/*弹窗*/
+.popup-box {
+    max-width: 1000px;
+    height: 650px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: -325px auto 0 auto;
+    top: 50%;
+    background: #fff;
+    z-index: 99999;
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+    padding: 0 20px 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.popup-box .box-in {
+    margin: 3% 3% 5% 5%;
+    color: #333333;
+    overflow: auto;
+    height: 500px;
+    padding: 0% 2% 0 0;
+}
+.popup-box table.data-box {
+    width: 100%;
+    margin: 16px auto;
+    text-align: center;
+    font-size: 1.6em;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #ead5c2;
+}
+.popup-box .box-in .section1 .detailContent{
+    width:670px;
+    font-size:18px;
+    text-align: center;
+    margin-left:50px;
+}
+.popup-box .box-in .section1{
+    margin-top:0px;
+}
+.popup-box .box-in .section1 .item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+.popup-box .box-in .section1 p{
+    font-size:20px;
+}
+.popup-box .box-in .section1 ul li:nth-child(2){
+    margin:8px 63px;
+}
+.popup-box .box-in div.title,.popup-box  .box-in div.bottom{
+    height:50px;
+    width:100%;
+    line-height: 50px;
+    background:#e4f2f8;
+}
+.popup-box .box-in div.bottom{
+    background:#f1f8fa;
+}
+
+.popup-box .box-in .section1 .detailContent ul li span{
+    display: inline-block;
+    font-size:20px;
+    color:#e84c00;
+    position:relative;
+    left:-2px;
+    top:-1px;
+}
+.popup-box .box-in div.bottom{
+    text-align: left;
+    padding-left:20px;
+}
+.popup-box .box-in .section1 .detailContent  img{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    position:relative;
+    top:-90px;
+    left:-110px;
+}
+.popup-box .box-in .section1 .detailContent  img.pic{
+    position:relative;
+    top:-90px;
+    left:108px;
+}
+
+.section3 ol li{
+    font-size:16px;
+    margin-top: 10px;
+}
+.section4 ol li{
+    font-size:16px;
+    line-height:2.2;
+    text-align: justify;
+    display: -webkit-box;  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box;     /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox;  /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex;         /* 新版本语法: Opera 12.1, Firefox 22+ */
+}
+.popup-box table.data-box thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box thead th {
+    font-size: 16px;
+    text-align: center;
+    padding: 15px;
+    color: #FFFFFF;
+    background: #dcb08e;
+    line-height: 1.0;
+    border: 1px dotted #ccc;
+}
+.popup-box table.data-box thead tr {
+    border: 1px dotted #ccc;
+}
+.popup-box table.data-box tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box tbody td {
+    line-height: 1.6;
+    text-align: center;
+    color: #333333;
+    padding: 1.44%;
+    font-size: 16px;
+    border: 1px dotted #ccc;
+    font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+}
+.popup-box table.data-box tbody .unit {
+    font-size: 0.8em;
+}
+.popup-box table.data-box tbody tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    background: #FFFFFF;
+}
+.popup-box table.data-box tbody tr.white {
+//background: #f7efe8;
+}
+.popup-box table.data-box tbody tr.last-row td {
+    border-bottom: 1px solid #CCCCCC;
+}
+.popup-box .table1 td,
+.popup-box .table2 td {
+//width: 25%;
+}
+.popup-box .table4 td {
+    width: 16%;
+}
+.popup-box .table3 td {
+    width: 33.333333%;
+}
+.popup-box .close-top {
+    height: 60px;
+    color:  #b78255;
+    border-bottom: 1px solid #b78255;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.popup-box .close-top a {
+    display: block;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    background: url(//img.getfc.com.cn/source/www/zt/campaign1710/close.png) no-repeat;
+    top: 25px;
+    right: 25px;
+    text-decoration: none;
+}
+.popup-box h2 {
+    font-size:20px;
+    color: #b78255;
+    font-weight: bold;
+    position: relative;
+}
+.popup-box h2.ver-line {
+    /*padding-left: 45px;*/
+}
+.popup-box h2.ver-line i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #b78255;
+    color:#fff;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    text-align: center;
+    line-height: 30px;
+}
+.popup-box .note{line-height: 30px;}
+.popup-box .note span{color: #f00}
+.popup-box p {
+    line-height: 1.9;
+    color: #333333;
+    text-align: justify;
+}
+.popup-box p span{
+    overflow: hidden;
+    display: inline;
+    color: #d8505a;
+}
+.popup-box p a{
+    overflow: hidden;
+    display: inline;
+    color: #225b76;
+    text-decoration: underline;
+}

@@ -1,0 +1,209 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0; color: #333}
+.inner{overflow: hidden;width: 1200px; margin: 0 auto; position: relative}
+img{ overflow:hidden;display:block;border: none;}
+.e-header .header{
+    background: none;
+}
+.web-banner{
+    width: 100%;
+    height: 679px;
+    background: url("//img.getfc.com.cn/source/www/zt/recharge/banner.jpg") no-repeat center;
+    margin-top:-76px;
+    position: relative;
+    overflow: hidden;
+}
+.web-banner .layout-1{
+    overflow: hidden;
+    padding-top: 200px;
+    position: relative;
+}
+.web-banner .layout-2{
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    padding-top:110px;
+}
+.web-banner .layout-2 a{
+    overflow: hidden;
+    display: block;
+    width:142px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 24px;
+    text-align: center;
+    margin-right: 20px;
+    text-decoration: none;
+}
+.web-banner .layout-2 a.item-1{
+    background: #b27c20;
+    color: #fff;
+}
+.web-banner .layout-2 a.item-1:hover{
+    background: #845609;
+}
+.web-banner .layout-2 a.item-2{
+    border: solid 1px #b27c20;
+    color: #b27c20;
+}
+.web-page{
+    overflow: hidden;
+    width: 100%;
+    padding: 50px 0;
+}
+.web-page.bg-color{
+    background: #eae9e3;
+    padding-top: 75px;
+}
+.web-page .img-con{
+    overflow: hidden;
+    width: 40%;
+    float: left;
+}
+.web-page .list-con{
+    overflow: hidden;
+    width: 60%;
+    float: left;
+}
+.web-page.bg-color .list-con{
+    width: 55%;
+    margin-right: 5%;
+}
+.web-page .list-con .title{
+    overflow: hidden;
+}
+.web-page .list-con .title span{
+    overflow: hidden;
+    display: block;
+    font-size: 44px;
+    color: #b27c20;
+    margin-bottom: 65px;
+}
+.web-page.bg-color .list-con .title span{text-align: right}
+.web-page .list-con .title p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 30px;
+}
+.web-page .list-con .title p span{
+    display: inline;
+    font-size: 16px;
+    line-height: 30px;
+    color: #b27c20;
+    font-weight: bold;
+}
+.web-page .list-con .title p a{
+    display: inline;
+}
+.web-page.bg-color .list-con .title p{text-align: right}
+.web-page .list-con .title a{
+    overflow: hidden;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: solid 1px #b27c20;
+    font-size: 16px;
+    color: #b27c20;
+}
+.web-page .list-con .btn-list{
+     overflow: hidden;
+    margin-top: 70px;
+ }
+.web-page.bg-color .list-con .btn-list{float: right}
+.web-page .list-con .btn-list a{
+    overflow: hidden;
+    display: block;
+    float: left;
+    width:142px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 24px;
+    text-align: center;
+    margin-right: 20px;
+    text-decoration: none;
+}
+.web-page.bg-color .list-con .btn-list a{margin-right: 0;margin-left: 20px}
+.web-page .list-con .btn-list a.item-1{
+    background: #b27c20;
+    color: #fff;
+}
+.web-page .list-con .btn-list a.item-1:hover{
+    background: #845609;
+}
+.web-page .list-con .btn-list a.item-2{
+    border: solid 1px #b27c20;
+    color: #b27c20;
+}
+.note{
+    overflow: hidden;
+    border-bottom: solid 1px #959595;
+    padding: 45px;
+}
+.note p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 30px;
+}
+.note p:last-child{
+    text-indent: 30px;
+}
+.web-page .con-title{
+    overflow: hidden;
+    font-size: 44px;
+    color: #b27c20;
+    margin-bottom: 65px;
+    text-align: center;
+}
+.web-page .con-nav{
+    overflow: hidden;
+}
+.web-page .con-nav ul{
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.web-page .con-nav ul li{
+    overflow: hidden;
+    list-style: none;
+    position: relative;
+    width: 276px;
+    height: 436px;
+}
+.web-page .con-nav ul li.list-bg01{
+    background: url("//img.getfc.com.cn/source/www/zt/recharge/img-03.png") no-repeat;
+}
+.web-page .con-nav ul li.list-bg02{
+    background: url("//img.getfc.com.cn/source/www/zt/recharge/img-04.png") no-repeat;
+}
+.web-page .con-nav ul li.list-bg03{
+    background: url("//img.getfc.com.cn/source/www/zt/recharge/img-05.png") no-repeat;
+}
+.web-page .con-nav ul li.list-bg04{
+    background: url("//img.getfc.com.cn/source/www/zt/recharge/img-06.png") no-repeat;
+}
+.web-page .con-nav ul li .item{
+    overflow: hidden;
+    position: absolute;
+    bottom: 42px;
+    left: 20px;
+}
+.web-page .con-nav ul li span{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 28px;
+}
+.web-page .con-nav ul li span:first-child{
+    font-size: 22px;
+    line-height: 48px;
+    font-weight: bold;
+}
+.web-footer{background: #fff}
+
+
+
+
+

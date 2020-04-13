@@ -1,0 +1,293 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0; color: #333;}
+.inner{overflow: hidden;width: 1200px;height: 100%; margin: 0 auto; position: relative}
+img{ overflow:hidden;border: none;display: block;}
+.e-header .header{
+    background: none;
+}
+.m-banner{
+    overflow: hidden;
+    width: 100%;
+    background: url("//img.getfc.com.cn/source/www/zt/produce/banner-bg.jpg") no-repeat top center;
+    height: 700px;
+    top:-74px;
+    position: relative;
+    margin-bottom: -74px;
+    z-index: 1;
+}
+.m-banner .leftCon{width: 50%;position: relative;padding-bottom: 169px}
+.banner-font img{margin: 125px auto 0;}
+.btn{
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-start;
+    left: -20px;
+}
+.btn a{
+    overflow: hidden;
+    display: block;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+.btn a.acc{
+    background: url("//img.getfc.com.cn/source/www/zt/produce/btn-bg.png") no-repeat;
+    width: 322px;
+    height: 148px;
+    line-height: 90px;
+    color: #857e6d;
+    font-weight: bold;
+}
+.btn a.register{
+    width: 250px;
+    height: 72px;
+    line-height: 72px;
+    border-radius: 10px;
+    background: #44331f;
+    margin-top: 10px;
+}
+.m-page{
+    overflow: hidden;
+    position: relative;
+}
+.m-page.bgColor1{
+    background:linear-gradient(to right, #cccacc, #f1f6f9);
+    background: -webkit-linear-gradient(right, #cccacc, #f1f6f9);
+    background: -o-linear-gradient(right, #cccacc, #f1f6f9);
+    background: -moz-linear-gradient(right, #cccacc, #f1f6f9);
+    padding-bottom: 75px;
+}
+.m-page.bgColor4{
+    background:linear-gradient(to bottom, #423625, #675d4f);
+    background: -webkit-linear-gradient(bottom, #423625, #675d4f);
+    background: -o-linear-gradient(bottom, #423625, #675d4f);
+    background: -moz-linear-gradient(bottom, #423625, #675d4f);
+}
+.m-page.bgColor1 .background{
+    background:url("//img.getfc.com.cn/source/www/zt/produce/neiye-bg1.jpg") no-repeat center;
+    height: 600px;
+    z-index: 0;
+}
+.m-page.bgColor1 .inner{
+    z-index: 1;
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.m-page.bgColor1 .background .inner{display: block;margin-top: 0;padding: 0}
+.m-page.bgColor1 .itemList{overflow: hidden;padding-right: 60px;width: 33%}
+.m-page.bgColor1 .itemList:last-child{width: 50%}
+.m-page.bgColor1 .itemList span{
+    overflow: hidden;
+    display: inline-block;
+    font-size: 36px;
+    font-style: italic;
+    color: #fff;
+    margin-bottom: 25px;
+    z-index: 1;
+}
+.m-page.bgColor1 .itemList span em{
+    display: inline;
+    font-weight: bold;
+    font-style: italic;
+}
+.m-page.bgColor1 .itemList .pColor{
+    overflow: hidden;
+}
+.m-page.bgColor1 .itemList p{
+    overflow: hidden;
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    color: #666;
+    font-style: italic;
+    padding: 15px 0;
+}
+.m-page.bgColor2{
+    background:linear-gradient(to bottom, #cac9cb, #f2f6f9);
+    background: -webkit-linear-gradient(bottom, #cac9cb, #f2f6f9);
+    background: -o-linear-gradient(bottom, #cac9cb, #f2f6f9);
+    background: -moz-linear-gradient(bottom, #cac9cb, #f2f6f9);
+    padding-bottom: 25px;
+}
+.m-page .title {
+    overflow: hidden;
+    margin: 70px auto 0;
+    text-align: center;
+}
+.m-page .title .item{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.m-page .title .item img:last-child{transform: rotate(180deg)}
+.m-page .title .item span{
+    overflow: hidden;
+    font-size: 36px;
+    font-style: italic;
+    padding: 0 30px 0 20px;
+    z-index: 1;
+    background:linear-gradient(to bottom, #4e3c24, #cda35c);
+    background: -webkit-linear-gradient(bottom, #4e3c24, #cda35c);
+    background: -o-linear-gradient(bottom, #4e3c24, #cda35c);
+    background: -moz-linear-gradient(bottom, #4e3c24, #cda35c);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: lighter;
+}
+.m-page.bgColor1 .title .item span,.m-page.bgColor4 .title .item span {
+    color: #fff;
+}
+.m-page .title .item span em{
+    display: inline;
+    font-weight: bold;
+    font-style: italic;
+}
+.m-page .title p{
+    overflow: hidden;
+    display: block;
+    width: 35px;
+    height: 2px;
+    background: #c5c5c5;
+    margin: 15px auto 0;
+}
+.m-page .conList {
+    overflow: hidden;
+    margin: 55px auto 5px;
+}
+.m-page .conList ul{
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.m-page.bgColor4 .conList ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.m-page .conList ul li {
+    overflow: hidden;
+    list-style: none;
+    display: block;
+    width: 25%;
+    float: left;
+    margin-bottom: 35px;
+}
+.m-page.bgColor4 .conList ul li{width: 20%;margin-bottom: 50px}
+.m-page .conList ul li img{margin: 0 auto -10px;padding-left: 30px}
+.m-page.bgColor4 .conList ul li img{margin-bottom: 15px}
+.m-page .conList ul li span{
+    overflow: hidden;
+    display: block;
+    font-weight: bold;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+.m-page.bgColor1.paddingBottom .conList ul li span{font-size: .26rem}
+.m-page .conList ul li p{
+    overflow: hidden;
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+}
+.m-page .conList1 {
+    overflow: hidden;
+    margin: 50px auto 5px;
+}
+.m-page .conList1 ul{
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.m-page .conList1 ul li {
+    overflow: hidden;
+    list-style: none;
+    display: block;
+    width: 25%;
+    float: left;
+    margin-bottom: -5px;
+}
+.m-page .conList1 ul li img{margin: 0 auto}
+.m-page .conList1 ul li a{
+    overflow: hidden;
+    display: block;
+    font-weight: bold;
+    font-size: 30px;
+    color: #776d62;
+    text-align: center;
+    background: url("//img.getfc.com.cn/source/www/zt/produce/btn-bg1.png") no-repeat;
+    width: 290px;
+    height: 136px;
+    margin: 0 auto;
+    line-height: 80px;
+}
+.m-page .conList2 {
+    overflow: hidden;
+    margin: 55px auto 80px;
+}
+.m-page .conList2 ul{
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.m-page .conList2 ul li {
+    overflow: hidden;
+    list-style: none;
+    display: block;
+    width: 32%;
+    float: left;
+}
+.m-page .conList2 ul li:nth-child(2){margin: 0 2%}
+.m-page .conList2 ul li .item{
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 8px;
+}
+.m-page .conList2 ul li img{margin: 0 auto}
+.m-page .conList2 ul li span{
+    overflow: hidden;
+    display: block;
+    font-size: 24px;
+    color: #fff;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,958 @@
+#main{overflow: hidden;width: 100%; margin: 0 0 .9rem 0; padding: 0; color: #333;}
+img{ overflow:hidden;display:block;border: none;}
+input{resize: none;border: none}
+.m-banner{
+    overflow: hidden;
+    width: 100%;
+    background: url("//img.getfc.com.cn/source/www/zt/mobile/newyear19/banner-bg.jpg") no-repeat;
+    background-size: 100% 100%;
+    height: 9.31rem;
+    position: relative;
+}
+.campaign1902-banner{
+    overflow: hidden;
+    width: 100%;
+    background: url("//img.getfc.com.cn/source/www/zt/mobile/campaign1902/bg-m.png") no-repeat;
+    background-size: 100% 100%;
+    height: 9.27rem;
+    position: relative;
+}
+.campaign1902-banner img{
+    width: 5.15rem;
+    margin: 2rem auto 0;
+}
+.m-banner img{
+    overflow: hidden;
+    width: 7.5rem;
+    margin: 1.07rem auto -.3rem;
+}
+.big{
+    animation:slowBig 1.5s ease-in-out infinite;
+    -webkit-animation:slowBig 1.5s ease-in-out infinite;
+}
+@keyframes slowBig {
+    0%{transform:scale(.9);}
+    50%{transform:scale(1);}
+    100%{-webkit-transform:scale(.9);}
+}
+@-webkit-keyframes slowBig {
+    0%{-webkit-transform:scale(.9);}
+    50%{-webkit-transform:scale(1);}
+    100%{-webkit-transform:scale(.9);}
+}
+ img.bling01{
+    position: absolute;
+    width: .74rem;
+    margin: 0;
+}
+img.bling01.pos01{
+    bottom: 3.24rem;
+    left: .52rem;
+}
+img.bling01.pos02{
+    bottom: 3.9rem;
+    left: .37rem;
+}
+img.bling01.pos03{
+    bottom: 1.79rem;
+    left: -.2rem;
+}
+img.bling02{
+    position: absolute;
+    width: .59rem;
+    margin: 0;
+}
+img.bling02.pos02{
+    bottom: 1.72rem;
+    right: .19rem;
+}
+img.bling02.pos03{
+    top: 5rem;
+    right: .31rem;
+}
+img.bling02.pos04{
+    bottom: 1.06rem;
+    right: 0;
+}
+img.bling03{
+    position: absolute;
+    width: 1.47rem;
+    margin: 0;
+}
+img.bling03.pos03{
+    top: .96rem;
+    right: .36rem;
+}
+img.bling03.pos04{
+    top: .81rem;
+    left: .16rem;
+}
+img.bling03.pos05{
+    top: .36rem;
+    left: .35rem;
+}
+.m-btn {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.m-btn a{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+.m-btn a.all{
+    background: url("//img.getfc.com.cn/source/www/zt/mobile/newyear19/btn-bg01.png") no-repeat;
+    background-size: 100% 100%;
+    width: 3.2rem;
+    height: 1.42rem;
+}
+.m-page.bg02 .m-btn a.all{
+    background: url("//img.getfc.com.cn/source/www/zt/mobile/newyear19/btn-bg02.png") no-repeat;
+    background-size: 100% 100%;
+}
+.m-btn a.new{
+    width: 2.66rem;
+    height: .85rem;
+    border: solid .02rem #79d0d4;
+    border-radius: .02rem;
+    margin-top: .1rem;
+}
+.m-page.bg02 .m-btn a.new{border-color: #ffd9b7}
+.m-btn a span{
+    overflow: hidden;
+    display: block;
+    font-size: .3rem;
+    font-weight: bold;
+}
+.m-page.bg02 .m-btn a span{font-size: .36rem}
+.m-btn a.all span{
+    text-shadow: .05em .02rem .13rem rgba(4,36,83,.38);
+}
+.m-btn a p{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+}
+.m-page.bg02 .m-btn a p{font-size: .22rem}
+.m-btn a.all p{margin-bottom: .35rem}
+.m-page{
+    overflow: hidden;
+    position: relative;
+}
+.m-page.bg01{
+    background: url("//img.getfc.com.cn/source/www/zt/mobile/newyear19/neiye-bg01.png") no-repeat;
+    background-size: 100% 100%;
+    width: 7.5rem;
+    height: 16.1rem;
+    z-index: 1;
+    margin-top: -1.41rem;
+}
+.m-page.bg02{
+    background: url("//img.getfc.com.cn/source/www/zt/mobile/newyear19/neiye-bg02.jpg") no-repeat;
+    background-size: 100% 100%;
+    width: 7.5rem;
+    height: 13.48rem;
+}
+.m-page.bg03{
+    background: url("//img.getfc.com.cn/source/www/zt/mobile/newyear19/neiye-bg03.jpg") no-repeat;
+    background-size: 100% 100%;
+    width: 7.5rem;
+    height: 10.84rem;
+    position: relative;
+}
+.m-page .countdown {
+    overflow: hidden;
+    background: url("//img.getfc.com.cn/source/www/zt/mobile/newyear19/icon-bg01.png") no-repeat;
+    background-size: 100% 100%;
+    width: 6.35rem;
+    height: 1.38rem;
+    margin: 1.7rem auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.m-page .countdown .imgCon{overflow: hidden;margin-top: .25rem}
+.m-page .countdown .imgCon img{width: .42rem;margin-right: .2rem}
+.m-page .countdown .timeCon {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .25rem;
+    font-size: .3rem;
+    color: #ffd9b7;
+}
+.m-page .countdown .timeCon span{
+    overflow: hidden;
+    display: block;
+    font-weight: bold;
+    font-size: .3rem;
+    color: #ffd9b7;
+    margin: 0 .05rem;
+}
+.m-page .countdown .timeCon p{
+    overflow: hidden;
+    display: block;
+    font-weight: bold;
+    font-size: .24rem;
+    color: #ffd9b7;
+}
+.m-page .title{
+    overflow: hidden;
+    margin-top: 1.45rem
+}
+.m-page.bg01 .title{margin-top: 0}
+.m-page .title img{width: 7.5rem}
+.m-page.bg02 .title img{margin-bottom: .05rem}
+.m-page .title span{
+    overflow: hidden;
+    display: block;
+    font-weight: bold;
+    font-size: .24rem;
+    line-height: .48rem;
+    color: #fff;
+    text-align: center;
+}
+.m-page .title span p{
+    overflow: hidden;
+    display: inline;
+    color: #ffd9b7;
+}
+.m-page .title a{
+    overflow: hidden;
+    display: block;
+    font-weight: bold;
+    font-size: .24rem;
+    line-height: .88rem;
+    color: #ffd9b7;
+    text-align: center;
+    background: url("//img.getfc.com.cn/source/www/zt/mobile/newyear19/icon-bg03.png") no-repeat;
+    background-size: 100% 100%;
+    width: 3.31rem;
+    height: 1.34rem;
+    margin: .18rem auto 0;
+}
+.m-page .turntable{overflow: hidden}
+.m-page .turntable .user{
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+    font-size: .24rem;
+    font-weight: bold;
+    margin-top: .15rem;
+    display: flex;
+    justify-content: center;
+}
+.m-page .turntable .user p{
+    overflow: hidden;
+    color: #ffd9b7;
+    margin: 0 .05rem;
+    padding: 0 .05rem;
+}
+.m-page .turntable .user p.account{border-bottom: solid .02rem #ffd9b7;}
+.m-page .turntable .lottery {
+    overflow: hidden;
+    margin-top: .36rem;
+    position: relative;
+}
+.m-page .turntable .lottery img.lotteryBg{width: 7.5rem;margin: .25rem auto 0}
+.m-page .turntable .lottery img.lotteryCon{
+    width: 6.69rem;
+    position: absolute;
+    z-index: 1;
+    top: .18rem;
+    left: .405rem;
+}
+.m-page .turntable .lottery img.lotteryCon.rotate{
+    -webkit-animation: rotate 10s linear infinite;
+    -moz-animation: rotate 10s linear infinite;
+    -o-animation: rotate 10s linear infinite;
+    animation: rotate 10s linear infinite;
+}
+@keyframes rotate {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+@-webkit-keyframes rotate {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+.m-page .turntable .lottery img.lotterySuc{
+    width: .39rem;
+    position: absolute;
+    z-index: 2;
+    left: 3.57rem;
+    top: .15rem;
+}
+.m-page .turntable .lottery img.lotteryStart{
+    width: 2.26rem;
+    height: 2.26rem;
+    position: absolute;
+    z-index: 5;
+    top: 2.6rem;
+    left: 2.62rem;
+}
+.m-page .turntable .lottery .light {
+    overflow: hidden;
+    width: 7.5rem;
+    height: 7rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+.m-page .turntable .lottery .light img.pic{
+    position: absolute;
+    animation:appear .25s ease-in-out;
+    transform-origin: 50% 60%;
+    -webkit-animation:appear .25s ease-in-out;
+    -webkit-transform-origin: 50% 60%;
+    display: none;
+    width: .72rem;
+}
+@keyframes appear {
+    0%{transform:scale(0);}
+    100%{transform:scale(1);}
+}
+@-webkit-keyframes appear {
+    0%{-webkit-transform:scale(0);}
+    100%{-webkit-transform:scale(1);}
+}
+.m-page .turntable .lottery .light img.pic.pic-1{
+    left: 2.8rem;
+    top: .03rem;
+}
+.m-page .turntable .lottery .light img.pic.pic-2{
+    left: 1.8rem;
+    top: .35rem;
+}
+.m-page .turntable .lottery .light img.pic.pic-3{
+    left: 1.06rem;
+    top: .95rem;
+}
+.m-page .turntable .lottery .light img.pic.pic-4{
+    left: .52rem;
+    top: 1.77rem;
+}
+.m-page .turntable .lottery .light img.pic.pic-5{
+    left: .23rem;
+    top: 2.7rem;
+}
+.m-page .turntable .lottery .light img.pic.pic-6{
+    left: .23rem;
+    bottom: 2.52rem;
+}
+.m-page .turntable .lottery .light img.pic.pic-7{
+    left: .62rem;
+    bottom: 1.58rem;
+}
+.m-page .turntable .lottery .light img.pic.pic-8{
+    left: 1.3rem;
+    bottom: .75rem;
+}
+.m-page .turntable .lottery .light img.pic.pic-9{
+    left: 2.13rem;
+    bottom: .23rem;
+}
+.m-page .turntable .lottery .light img.pic.pic-10{
+    left: 3.06rem;
+    bottom: 0;
+}
+.m-page .turntable .lottery .light img.pic.pic-11{
+    right: 2.78rem;
+    bottom: 0;
+}
+.m-page .turntable .lottery .light img.pic.pic-12{
+    right: 1.8rem;
+    bottom: .35rem;
+}
+.m-page .turntable .lottery .light img.pic.pic-13{
+    right: 1.05rem;
+    bottom: .96rem;
+}
+.m-page .turntable .lottery .light img.pic.pic-14{
+    right: .5rem;
+    bottom: 1.77rem;
+}
+.m-page .turntable .lottery .light img.pic.pic-15{
+    right: .2rem;
+    bottom: 2.7rem;
+}
+.m-page .turntable .lottery .light img.pic.pic-16{
+    right: .2rem;
+    top: 2.5rem;
+}
+.m-page .turntable .lottery .light img.pic.pic-17{
+    right: .6rem;
+    top: 1.56rem;
+}
+.m-page .turntable .lottery .light img.pic.pic-18{
+    right: 1.28rem;
+    top: .7rem;
+}
+.m-page .turntable .lottery .light img.pic.pic-19{
+    right: 2.12rem;
+    top: .22rem;
+}
+.m-page .turntable .lottery .light img.pic.pic-20{
+    right: 3.06rem;
+    top: 0;
+}
+.m-page .turntable .rule{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 6;
+    margin-top: -.2rem;
+}
+.m-page .turntable .rule .item{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 .6rem;
+}
+.m-page .turntable .rule .item img{width: .52rem}
+.m-page .turntable .rule .item span{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    color: #ffd9b7;
+    text-decoration: underline;
+    margin-left: .15rem;
+}
+.m-page .turntable .marquee{
+    overflow: hidden;
+    background: url("//img.getfc.com.cn/source/www/zt/mobile/newyear19/icon-bg02.png") no-repeat;
+    background-size: 100% 100%;
+    width: 7.5rem;
+    height: 2.08rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: .45rem;
+}
+.m-page .turntable .marquee ul li {
+    margin-right: .2rem;
+    float: left;
+    text-align: left;
+    width: auto !important;
+}
+.m-page .turntable .marquee .layout{
+    overflow: hidden;
+    width: 5.7rem;
+    margin-left: 1.1rem;
+    margin-bottom: .4rem;
+}
+.m-page .turntable .marquee .item {
+    overflow: hidden;
+    font-size: .22rem;
+    color: #ffd9b7;
+    text-align: center;
+}
+.m-page .turntable .marquee .item span{
+    overflow: hidden;
+    display: block;
+}
+.m-page .slider01{overflow: hidden;position: relative;margin: -.1rem 0 .55rem}
+.m-page .slider01 .layout{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.m-page .slider01 .list{
+    overflow: hidden;
+    background: url("//img.getfc.com.cn/source/www/zt/mobile/newyear19/li-bg.png") no-repeat;
+    background-size: 100% 100%;
+    width: 3.73rem;
+    height: 4.1rem;
+    padding-top: 1.45rem;
+    margin: 0 -.26rem;
+}
+.m-page .slider01 .list .item{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.m-page .slider01 .list .item:nth-child(2){margin-top: 1.65rem}
+.m-page .slider01 .list .item.marginTop{margin-top: 1.9rem}
+.m-page .slider01 .list .item span{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    font-weight: bold;
+    color: #f7df99;
+}
+.m-page .slider01 .list .item img.star{width: .09rem;margin: 0 .05rem}
+.m-page .slider01 .list .item img.plus{width: .12rem;margin: .1rem 0 .08rem}
+.m-page .slider01 .list .item img.red{width: 1.73rem;}
+.m-page .slider01 .list .item img.pic-1{width: .75rem;}
+.m-page .slider01 .list .item img.pic-2{width: .59rem;}
+.m-page .slider01 .list .item img.pic-3{width: .55rem;}
+.m-page .slider01 .list .item img.pic-4{width: .7rem;}
+.m-page .sliderCon{overflow: hidden}
+.m-page .sliderNav{
+    position: absolute;
+    width: 100%;
+    height: .3rem;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.m-page .sliderNav li {
+    display: inline-block;
+    width: .18rem;
+    height: .18rem;
+    -webkit-border-radius: .18rem;;
+    -moz-border-radius: .18rem;;
+    border-radius: .18rem;;
+    text-indent: -9999px;
+    overflow: hidden;
+    margin: 0 .1rem;
+    border: solid 1px #fff;
+    background: transparent;
+}
+.m-page.bg03 .sliderNav li{border-color: #bf1b11}
+.m-page .sliderNav li.on {
+    background: #ffd9b7;
+    border: none;
+    width: .4rem;
+    border-radius: .08rem;
+}
+.m-page.bg03 .sliderNav li.on{background: #bf1b11}
+.m-page .slider02{overflow: hidden;position: relative;margin: .6rem 0 .55rem}
+.m-page .slider02 .layout{
+    overflow: hidden;
+    background: url("//img.getfc.com.cn/source/www/zt/mobile/newyear19/bg-metal.png") no-repeat;
+    background-size: 100% 100%;
+    width: 7.39rem;
+    height: 6.3rem;
+}
+.m-page .slider02 .layout.liBg{
+    background: url("//img.getfc.com.cn/source/www/zt/mobile/newyear19/bg-oil.png") no-repeat;
+    background-size: 100% 100%;
+}
+.m-page .slider02 .layout .left{
+    overflow: hidden;
+    width: 2.9rem;
+    margin: .43rem 0 0 .6rem;
+}
+.m-page .slider02 .layout img{width: .5rem;margin: 0 auto .08rem}
+.m-page .slider02 .layout span{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    font-weight: bold;
+    color: #f7df99;
+    text-align: center;
+    margin-bottom: .05rem;
+}
+.m-page .slider02 .layout span.marginTop{
+    text-align: left;
+    margin-top: .4rem;
+}
+.m-page .slider02 .layout p{
+    overflow: hidden;
+    display: block;
+    font-size: .22rem;
+    line-height: .36rem;
+    color: #f3f3f3;
+    text-align: justify;
+}
+.m-page .slider02 .layout .item{
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.m-page .slider02 .layout .item img{width: .15rem;margin: 0 .05rem 0 0}
+/*弹窗*/
+.tc-hide{
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+}
+.masking{
+    overflow: hidden;
+    display: block;
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+}
+.popup-box {
+    overflow: hidden;
+    max-width:95%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top:10%;
+    background: #fff;
+    z-index: 9999999999;
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.popup-box .box-in {
+    margin: 3% 4% 5% 4%;
+    overflow-y: auto;
+    height: 8rem;
+}
+.popup-box .close-top{
+    padding:0.3rem 0.3rem;
+    font-size: 0.44rem;
+    color:#b78255;
+    text-align: center;
+    border-bottom: 1px solid #b78255;
+    width:6rem;
+    margin: 0 auto;
+    position: relative;
+}
+.popup-box .close-top a{
+    background: url(../../images/campaign1710/close-b.png) no-repeat;
+    width: 0.21rem;
+    height:0.21rem;
+    background-size: 0.21rem 0.21rem;
+    position: absolute;
+    right: 0;
+    margin-top: .2rem;
+    text-decoration: none;
+}
+.popup-box  .box-in .section1 .item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: .1rem;
+}
+.popup-box .section1 h2{
+    font-size: 0.28rem;
+    font-weight: bold;
+    color: #b78255;
+}
+.popup-box table.data-box {
+    width: 100%;
+    margin: 16px auto 25px;
+    text-align: center;
+    border: 0 !important;
+    font-size: 1.6em;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.popup-box .box-in .line-throw{font-size: 0.3rem;}
+.popup-box .box-in .section1 p{
+    font-size:0.28rem;
+    line-height: 1.8;
+}
+.popup-box .box-in .section3 p{
+    font-size:0.28rem;
+    /*margin-bottom: 0.2rem;*/
+    line-height: 1.8;
+}
+.popup-box .box-in .section3 p a{color: #0096dc}
+.popup-box .box-in .section3 p span{
+    padding-right:0.15rem;
+}
+.popup-box .box-in .section4  h2{
+    font-size: 0.3rem;
+    margin-bottom: 0.1rem;
+    color: #b78255;
+}
+.popup-box .box-in .section4 li{
+    font-size: 0.28rem;
+    line-height: 1.8;
+}
+.popup-box .box-in .section4 li span{
+    /*margin-right: 0.15rem;*/
+}
+.popup-box .box-in .section4 li p{
+    display: flex;
+}
+
+.popup-box table.data-box thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box thead th {
+    font-size: .28rem;
+    text-align: center;
+    padding: .15rem .05rem;
+    color: #FFFFFF;
+    background: #dcb08e;
+    line-height: 1.0;
+}
+.popup-box table.data-box thead tr {
+    border: 1px solid #dcb08e;
+}
+.popup-box table.data-box tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box tbody td {
+    line-height: 1.0;
+    text-align: center;
+    color: #333333;
+    padding: 1.44%;
+    font-size: 14px;
+    border: 0.025rem solid #ead5c2;
+    font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+}
+.popup-box table.data-box tbody .unit {
+    font-size: 0.8em;
+}
+.popup-box table.data-box tbody tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+//background: #f7efe8;
+}
+.popup-box table.data-box tbody tr.grey {
+    background: #fff;
+}
+.popup-box table.data-box tbody tr.last-row td {
+    border-bottom: 1px solid #CCCCCC;
+}
+.popup-box table.data-box .first-child {
+    text-align: center;
+    font-size: 16px;
+}
+.popup-box table.data-box .first-child a {
+    color: #666666;
+    text-decoration: none;
+}
+.popup-box .table1 td,
+.popup-box .table2 td {
+    width: 25%;
+}
+.popup-box .table4 td {
+    width: 16%;
+}
+.popup-box .table3 td {
+    width: 33.333333%;
+}
+.popup-box .note{line-height: 1.8;font-size: 0.24rem;margin-bottom: 0.1rem}
+.popup-box .note span{color: #f00}
+/*登录*/
+.m-tcCon{
+    overflow: hidden;
+    width:100%;
+    position: fixed;
+    z-index: 999999999;
+    padding: 0;
+    top: 20%;
+}
+.m-tcCon .title{overflow: hidden;position: relative;z-index: 1;}
+.m-tcCon .con.bg .title{margin-top: .35rem}
+.m-tcCon .title img{width: 6.19rem;margin: 0 auto}
+.m-tcCon .con{
+    overflow: hidden;
+    background: url("//img.getfc.com.cn/source/www/zt/mobile/newyear19/tc-bg.png") no-repeat;
+    background-size: 100% 100%;
+    width: 6.66rem;
+    height: 6.66rem;
+    position: relative;
+    z-index: 0;
+    margin: -.52rem auto 0;
+}
+.m-tcCon .con.bg{
+    background: url("//img.getfc.com.cn/source/www/zt/mobile/newyear19/tc-bg01.png") no-repeat;
+    background-size: 100% 100%;
+    height: 4.66rem;
+    margin-top: 0
+}
+.m-tcCon .con .input-tip{
+    overflow: hidden;
+    margin-left: 1.85rem;
+    width: 3.5rem;
+    color: #cc2417;
+    font-size: .2rem;
+    text-align: left;
+    height: 0.3rem;
+}
+.m-tcCon .con .sub_error {
+    color: #cc2417;
+    font-size: .2rem;
+    margin-top: .1rem;
+    text-align: center;
+}
+.m-tcCon .con .clickLogin{
+    overflow: hidden;
+    width: 5rem;
+    height: .9rem;
+    background: #cc2417;
+    margin: 0 auto;
+}
+.m-tcCon .con .clickLogin a{
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: .9rem;
+    line-height: .9rem;
+    color: #fff;
+    font-size: .3rem;
+    text-align: center;
+}
+.m-tcCon .con .close{
+    overflow: hidden;
+    position: absolute;
+    top: .5rem;
+    right: .45rem;
+    z-index: 2;
+}
+.m-tcCon .con .close img{width: .4rem}
+.m-tcCon .con .item{
+    overflow: hidden;
+    width: 5rem;
+    height: .9rem;
+    border: solid 1px #ccc;
+    margin: 0 auto;
+}
+.m-tcCon .con .item.marginTop{margin-top: 1.1rem}
+.m-tcCon .con .item .leftImg{
+    overflow: hidden;
+    float: left;
+    width: .9rem;
+    background: #fff3e6;
+    height: .9rem;
+}
+.m-tcCon .con .item .leftImg img{width: .4rem;margin: .25rem auto}
+.m-tcCon .con .item .rightCon{
+    overflow: hidden;
+    float: left;
+    width: 4.1rem;
+    height: .9rem;
+    background: #fff;
+}
+.m-tcCon .con .item .rightCon input{
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    color: #666;
+    background: transparent;
+    height: .6rem;
+    font-size: .26rem;
+    line-height: .6rem;
+    padding: 0 .1rem;
+    border-radius: 0;
+    margin-top: .15rem;
+}
+.m-tcCon .con .item-1{
+    overflow: hidden;
+    width: 4rem;
+    margin: .25rem auto 0;
+}
+.m-tcCon .con .item-1 a{
+    overflow: hidden;
+    display: block;
+    width: 50%;
+    float: left;
+    font-size: .26rem;
+    color: #cc2417;
+}
+.m-tcCon .con .item-1 a:last-child{text-align: right}
+.m-tcCon .con .item-2{
+    overflow: hidden;
+    background: url("//img.getfc.com.cn/source/www/zt/mobile/newyear19/suc-gift.png") no-repeat;
+    background-size: 100% 100%;
+    width: 2.54rem;
+    height: 3.26rem;
+    margin: .55rem auto -.35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.m-tcCon .con .item-2 img{width: .85rem;margin-top: .2rem}
+.m-tcCon .con .item-2 p{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: .24rem;
+    background: linear-gradient(to right, #fba42f, #ffcb60);
+    background:-webkit-linear-gradient(right, #fba42f, #ffcb60);
+    background: -o-linear-gradient(right, #fba42f, #ffcb60);
+    background: -moz-linear-gradient(right, #fba42f, #ffcb60);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.m-tcCon .con .item-3 p{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-size: .22rem;
+    color: #cc2417;
+}
+.m-tcCon .con .item-3 p a{
+    overflow: hidden;
+    display: inline;
+    text-decoration: underline;
+}
+.m-tcCon .con .item-4 img{width: 2.66rem;margin: .65rem auto 0}
+.m-tcCon .con .recordCon{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: 4.9rem;
+    width: 5.5rem;
+    margin: .7rem auto 0;
+}
+.m-tcCon .con .recordCon ul{
+    overflow: hidden;
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.m-tcCon .con .recordCon ul li{
+    overflow: hidden;
+    display: block;
+    list-style: none;
+    border-bottom: solid 1px #cc2417;
+    height: .65rem;
+    line-height: .65rem;
+    padding: 0 .5rem;
+    margin-bottom: .15rem;
+    font-size: .24rem;
+    color: #cc2417;
+}
+.m-tcCon .con .recordCon ul li span{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    color: #cc2417;
+    width: 50%;
+    float: left;
+}
+.m-tcCon .con .recordCon ul li span:last-child{text-align: right}
+
+
+
+
+
+
+
+
+
+
+
+
+

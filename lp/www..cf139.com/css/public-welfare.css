@@ -1,0 +1,489 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0; color: #333}
+.inner{overflow: hidden;width: 1200px; margin: 0 auto; position: relative}
+img{ overflow:hidden;display:block;border: none;}
+.e-header .header{
+    background: none;
+}
+.web-banner{
+    width: 100%;
+    height: 100vh;
+    background: url("//img.getfc.com.cn/source/www/zt/public-welfare/banner-bg.jpg") no-repeat center;
+    margin-top:-76px;
+    position: relative;
+    //overflow: hidden;
+}
+.web-banner .layout-1{
+    overflow: hidden;
+    padding-top: 300px;
+
+}
+.web-banner .layout-1 img{margin: 0 auto 30px auto;}
+.web-page{
+    overflow: hidden;
+    padding-top: 100px;
+    position: relative;
+}
+.web-page.bg{
+    background: url("//img.getfc.com.cn/source/www/zt/public-welfare/neiye-bg.jpg") no-repeat center bottom;
+    height: 1556px;
+}
+.web-page .title{
+    overflow: hidden;
+}
+.web-page .title img{margin-bottom: 45px;}
+.web-page .title img.right{float: right}
+.web-page .title img.center{margin: 0 auto}
+.web-page.bg .title img{float: right}
+.web-page .title.marginbottom img{float: none}
+.web-page .title p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 10px;
+    text-align: justify;
+    width: 100%;
+}
+.web-page .title.marginbottom p{margin-bottom: 30px;width: 81%}
+.web-page .title p span{
+    overflow: hidden;
+    display: inline;
+    font-size: 16px;
+    line-height: 28px;
+    color: #648f21;
+}
+.web-page .con-left{
+    overflow: hidden;
+    width: 42%;
+    float: left;
+    margin-bottom: 69px;
+    margin-right: 5%;
+    position: relative;
+    z-index: 1;
+}
+.web-page .con-left.width{width: 46.2%;margin-right: 0}
+.web-page .con-left .item{
+    overflow: hidden;
+    margin: 55px 0 0 0;
+}
+.web-page .con-left .item p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 28px;
+}
+.web-page .con-left .item span{
+    overflow: hidden;
+    display: block;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 15px 0;
+}
+.web-page .con-right{
+    overflow: hidden;
+    width: 45%;
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+.web-page .con-right.margintop{margin-top: 16px;width: 53.6%}
+.web-page .slider{
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.web-page .slider .hd{
+    overflow: hidden;
+    position: absolute;
+    z-index: 11;
+    bottom: 10px;
+    width: 100%;
+}
+.web-page .slider .hd ul {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.web-page .slider .hd ul li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    overflow: hidden;
+    margin: 0 5px;
+    text-indent: -999px;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 100%;
+}
+.web-page .slider .hd ul li.on {
+    background: #bbb;
+}
+.web-page .con{
+    overflow: hidden;
+    margin-bottom: 158px;
+}
+.web-page .con01{
+    overflow: hidden;
+    margin-top: 55px;
+    position: relative;
+}
+.web-page .con .location{
+    overflow: hidden;
+    position: absolute;
+    right: 35px;
+    top: 380px;
+    width: 103px;
+    height: 139px;
+    background: url("//img.getfc.com.cn/source/www/zt/public-welfare/icon-02.png") no-repeat;
+    font-size: 22px;
+    color: #648f21;
+    z-index: 3;
+    text-align: center;
+    padding-top: 35px;
+    animation: location 1s linear infinite;
+    -webkit-animation: location 1s linear infinite;
+    animation-fill-mode: backwards;
+    -webkit-animation-fill-mode: backwards;
+}
+@keyframes location{
+    0% {transform: scale(.9);}
+    50% {transform: scale(1);}
+    100% {transform: scale(.9);}
+}
+@-webkit-keyframes location{
+    0% {transform: scale(.9);}
+    50% {transform: scale(1);}
+    100% {transform: scale(.9);}
+}
+.web-page .con01 .item{
+    overflow: hidden;
+    position: relative;
+}
+.web-page .con01 .item img{margin: 0 auto}
+.web-page .con01 .item .live-play{
+    overflow: hidden;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(255,255,255,.5);
+}
+.web-page .con01 .item .live-play img{width: 100%}
+.web-page .con01 .item span{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    margin: 75px 0 20px 0;
+}
+.web-page .con01 .item02{
+    overflow: hidden;
+    width: 500px;
+    margin: 0 auto 100px auto;
+    position: relative;
+}
+.web-page .con01 .item02 a{
+    overflow: hidden;
+    display: block;
+    width: 50%;
+    float: left;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.web-page .con01 .item02 a.yes{background: #f8c562}
+.web-page .con01 .item02 a.no{background: #ccc}
+.web-page .con01 .item02 span{
+    overflow: hidden;
+    position: absolute;
+    left: 230px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+.web-page .con01 .con-img{
+    overflow: hidden;
+    float: left;
+    border: solid 1px #eee;
+    width: 27%;
+    height: 191px;
+    margin-bottom: 80px;
+}
+.web-page .con01 .con-img img{margin: 0 auto}
+.web-page .con01 .con-list{
+    overflow: hidden;
+    width: 62%;
+    float: left;
+    font-size: 16px;
+    line-height: 28px;
+    margin-left: 4.5%;
+    margin-bottom: 80px;
+}
+.web-page .con01 .con-list a{
+    overflow: hidden;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 100%;
+    background: #f8c562;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+.web-page .hide-item{
+    overflow: hidden;
+    position: absolute;
+    right: 90px;
+    bottom: 48px;
+    z-index: 1;
+    display: none
+}
+.web-page .hide-item .intr{
+    overflow: hidden;
+    width: 640px;
+    background: #f6f3e4;
+    padding: 20px 18px;
+    float: left;
+}
+.web-page .hide-item .intr span{
+    overflow: hidden;
+    display: block;
+    font-size: 20px;
+    line-height: 28px;
+}
+.web-page .hide-item .intr p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: justify;
+}
+.web-page .hide-item .arrow-right{
+    overflow: hidden;
+    float: left;
+    width: 0;
+    height: 0;
+    border-top: 16px solid rgba(0,0,0,0);
+    border-right: 16px solid rgba(0,0,0,0);
+    border-bottom: 16px solid rgba(0,0,0,0);
+    border-left: 16px solid #f6f3e4;
+    margin-top: 91px;
+}
+.web-page .slider-con{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+.web-page .slider-con .item{
+    overflow: hidden;
+    position: relative;
+    width: 236px;
+    height: 400px;
+    background: url("//img.getfc.com.cn/source/www/zt/public-welfare/img-bg01.png") no-repeat;
+    cursor: pointer;
+}
+.web-page .slider-con .item.item-bg01{background: url("//img.getfc.com.cn/source/www/zt/public-welfare/img-bg02.png") no-repeat;}
+.web-page .slider-con .item.item-bg02{background: url("//img.getfc.com.cn/source/www/zt/public-welfare/img-bg03.png") no-repeat;}
+.web-page .slider-con .item.selected{
+    display: block;
+    width: 720px;
+    background: none;
+}
+.web-page .slider-con .item span{
+    overflow: hidden;
+    position: absolute;
+    right: 45px;
+    top: 25px;
+    font-size: 20px;
+    line-height: 28px;
+    color: #648f21;
+    font-weight: bold;
+    z-index: 9;
+}
+.web-page .slider-con .item p{
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 28px;
+    width: 300px;
+    float: right;
+    text-align: justify;
+    top: 95px;
+    right: 40px;
+    position: absolute;
+    z-index: 9;
+    display: none;
+}
+.web-page .slider-con .item .list{
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+}
+.tempWrap{width: 720px!important;}
+.web-page .slider-con .item .hd {
+    overflow: hidden;
+    position: absolute;
+    left: 28px;
+    bottom: 26px;
+    z-index: 11;
+}
+.web-page .slider-con .item .hd .prev,.web-page .slider-con .item .hd .next {
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    float: right;
+    cursor: pointer;
+    background: url("//img.getfc.com.cn/source/www/zt/public-welfare/arrow-left.png") no-repeat;
+    width: 25px;
+    height: 25px;
+}
+.web-page .slider-con .item .hd .next{background: url("//img.getfc.com.cn/source/www/zt/public-welfare/arrow-right.png") no-repeat; margin-left: 6px}
+.web-page .slider-con .item li{height: 400px}
+/*.web-page .slider-con .item.selected li{
+    background: url("//img.getfc.com.cn/source/www/zt/public-welfare/img-bg01.png") no-repeat;
+}*/
+.web-page .slider-con .item.selected p{display: block}
+.web-page .slider-con .item .slider-list{height: 400px}
+/*.web-page .slider-con .item.selected .slider-list{
+    overflow: hidden;
+    background: url("//img.getfc.com.cn/source/www/zt/public-welfare/img-bg01.png") no-repeat;
+    display: block;
+}*/
+.item02-tc{
+    overflow: hidden;
+    position: absolute;
+    bottom: 30px;
+    left: 460px;
+    z-index: 1;
+    background: #f6f3e4;
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 16px;
+    display: none;
+}
+.web-page .media{
+    overflow: hidden;
+    margin-top: 90px;
+}
+.web-page .con-logo{
+    overflow: hidden;
+    margin: 50px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.web-page .page8-list{
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.web-page .page8-list.hide{visibility: hidden}
+.web-page .page8-list .left-img{
+    margin-right: 10px;
+}
+.web-page .page8-list .left-img img{transition: all 0.35s ease-in;}
+.web-page .page8-list:hover .left-img img{
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    transform: scale(1.02);
+    transition: all 0.35s ease-in;
+}
+.web-page .page8-list .right-con{
+    overflow: hidden;
+}
+.web-page .page8-list .right-con p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    color: #333;
+    width: 280px;
+    margin-bottom: 10px;
+}
+.web-page .page8-list:hover .right-con p{color: #f8c562}
+.web-page .page8-list .right-con span{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    color: #999;
+}
+.tc-hide{
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+    top: 0;
+    left: 0;
+}
+.masking{
+    display: block;
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+}
+.video-con{
+    overflow: hidden;
+    width:60%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top:10%;
+    background: transparent;
+    z-index: 999999999;
+    padding: 0;
+    border-radius: 5px;
+
+}
+.tc-video {
+    overflow: hidden;
+    width: 94%;
+    margin: 0 auto;
+}
+.tc-video .video {
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.video-close{
+    overflow: hidden;
+    width: 100%;
+}
+.video-close img {
+    width: 30px;
+    height: 30px;
+    float: right;
+    transition: all .5s;
+}
+.video-close img:hover{
+    transition: all .5s;
+    transform: rotate(90deg);
+}
+
+
+
+

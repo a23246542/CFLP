@@ -1,0 +1,601 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+.icon-logo {
+    position: absolute;
+}
+
+.icon-logo a img {
+    width: 5.5rem !important;
+    margin: 1rem;
+    z-index: 1;
+}
+
+#icon-logo {
+    background-image: url('../../images/moonFestival/banner_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35rem;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#icon-logo img {
+    overflow: hidden;
+    display: block;
+    border: none;
+}
+
+.item-img.flower1 img {
+    margin-left: -3rem;
+    margin-top: -0.5rem;
+    width: 50% !important;
+    overflow: hidden;
+}
+
+.item-img.flower2 img {
+    margin-left: 17rem;
+    margin-top: -7rem;
+    width: 45%;
+}
+
+.item-img.title img {
+    width: 17.6rem;
+    margin-left: 3.4rem;
+    margin-top: -2.3rem;
+}
+
+.item-img.coin1 img {
+    width: 2.5rem;
+    margin-left: 21rem;
+    margin-top: -4rem;
+}
+
+.item-img.cloud1 img {
+    width: 15rem;
+    margin-left: 7.5rem;
+    margin-top: 4rem;
+}
+
+.item-img.cloud2 img {
+    width: 4rem;
+    margin-left: 19rem;
+    margin-top: -8rem;
+}
+
+.item-img.cloud3 img {
+    width: 10rem;
+    margin-left: 1.8rem;
+    margin-top: -2rem;
+}
+
+.item-img.ribb1 img {
+    width: 3.7rem;
+    margin-top: -11rem;
+    margin-left: 1.5rem;
+}
+
+.item-img.ribb2 img {
+    width: 3.4rem;
+    margin-left: 18.5rem;
+    margin-top: -3rem;
+}
+
+.input-tip {
+    padding: 0;
+    margin: 0;
+    width: 1rem;
+    height: 1.5rem;
+    padding-left: 1.2rem;
+    font-size: 0.5rem;
+    color: red;
+}
+
+/* ----------------------------------------------------------------------------*/
+/* 活动规则 */
+
+#rule-container {
+    background-color: #f5f2cf;
+    padding: 0.4rem .4rem 5.4rem .4rem;
+    white-space: normal;
+}
+
+#rule-container h1 {
+    text-align: center;
+    color: #a70202;
+    font-weight: bold;
+}
+
+.box-in-rule {
+    border: 2px solid #bd433a;
+    border-radius: 1rem;
+    height: fit-content;
+    padding: 0.1rem 0.5rem;
+}
+
+.section-1 {
+    margin-bottom: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+.section-1 .item {
+    display: flex;
+}
+
+.section-1 .item.item-4 {
+    display: block;
+}
+
+.section-1 .item h2 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.01rem;
+    line-height: 2rem;
+}
+
+.section-2 table {
+    background-color: #a90303;
+    color: #f3eded;
+    font-weight: 500;
+    text-align: center;
+    width: 23rem;
+    border-radius: 0.2rem;
+    border-collapse: collapse;
+    border: 2px solid #860b07;
+}
+
+.section-2 table img {
+    width: 4.5rem;
+    height: 6.5rem;
+    position: absolute;
+    margin-top: -3.2rem;
+    margin-left: -2.1rem;
+}
+
+.section-2 table th {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.6rem 0.5rem;
+    border: 1px solid #ccc;
+}
+
+.section-2 table td {
+    font-size: 1.1rem;
+    padding: 0.6rem 0.5rem;
+    border: 1px solid #ccc;
+}
+
+.section-2 span {
+    font-size: 0.7rem;
+}
+
+.section-3 {
+    text-align: center;
+    padding: 1.2rem 1rem 2rem 1rem;
+}
+
+.section-3 a {
+    border: 2px solid #a90303;
+    padding: 0.4rem 0.9rem;
+    letter-spacing: 0.01rem;
+    border-radius: 0.5rem;
+    background-color: #fbf9ea;
+    color: #a90303;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.section-4 {
+    padding: 0 0.4rem 1rem;
+}
+
+.section-4 h2 {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0.3rem 0.1rem;
+}
+
+.section-4 ol {
+    margin-left: 0.15rem;
+    font-size: 1rem;
+    line-height: 1.8rem;
+}
+
+.section-4 li {
+    margin-top: 0.5rem;
+}
+
+/* ----------------------------------------------------------------------------*/
+/* footer */
+footer {
+    text-align: center;
+    padding: 0.6667rem 0.6667rem;
+    background-color: rgb(71, 71, 71);
+    color: #f3f3f3;
+    font-size: 0.82rem;
+    line-height: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* ----------------------------------------------------------------------------*/
+/* 下载app */
+/* 开户入金 */
+/* 联系客服 */
+
+#container5 {
+    background-color: #ead396;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom:  env(safe-area-inset-bottom);
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 4.4rem;
+}
+
+.button-group a {
+    display: flex;
+    flex-direction: row-reverse;
+    border: solid 0.15rem #a90303;
+    padding: 0.5rem 1.5rem;
+    margin: 0.9rem 0.4rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.1rem 0.1rem 0.2rem 0.01rem rosybrown;
+    text-decoration: none;
+    line-height: 1.4rem;
+    color: #a90303;
+    font-weight: 900;
+}
+
+.button-group a span {
+    font-size: 1.2rem;
+    margin-left: 0.2rem;
+}
+
+.button-group a img {
+    width: 1.5rem;
+}
+
+.openAccount {
+    background-color: #a90303;
+    border: none !important;
+    color: #cccccc;
+    letter-spacing: 0.05rem;
+}
+
+.openAccount span {
+    color: #f3f3f3;
+}
+
+.openAccount {
+    line-height: 1.8rem !important;
+}
+
+.customer-service,
+.htcj_down {
+    background-color: white;
+}
+
+.htcj_down span {
+    color: #000000 !important;
+}
+
+/*=======================================*/
+/*开户end*/
+/*弹窗*/
+li,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tc-hide {
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
+
+.masking {
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.popup-box {
+    overflow: hidden;
+    max-width: 95%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 10%;
+    background: #fff;
+    z-index: 99999;
+    font-family: 'Microsoft JhengHei', 'Microsoft YaHei', arial, sans-serif;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.popup-box .box-in {
+    margin: 3% 4% 5% 4%;
+    overflow-y: auto;
+    height: 30rem;
+}
+
+.popup-box .box-in .section1,
+.popup-box .box-in .section3,
+.popup-box .box-in .section4 {
+    margin: 0;
+    padding: 0;
+}
+
+.popup-box table.data-box {
+    width: 100%;
+    margin: 1rem auto 1.2rem;
+    text-align: center;
+    font-size: 1.6em;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0 !important;
+}
+
+.popup-box .box-in .section1 .detailContent {
+    width: 44.67rem;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-left: 3.5rem;
+}
+
+.popup-box .box-in .section1 {
+    margin-top: 0rem;
+}
+
+.popup-box .box-in .section1 .item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: -0.9rem;
+}
+
+.popup-box .box-in .section1 p {
+    font-size: 0.9rem;
+}
+
+.popup-box .box-in .section1 ul li:nth-child(2) {
+    margin: 0.5rem 4.2rem;
+}
+
+.popup-box .box-in .line-throw {
+    font-size: 0.3rem;
+}
+
+.popup-box .box-in div.title,
+.popup-box .box-in div.bottom {
+    height: 3.33rem;
+    width: 100%;
+    line-height: 3.33rem;
+    background: #e4f2f8;
+}
+
+.popup-box .box-in div.bottom {
+    background: #f1f8fa;
+}
+
+.popup-box .box-in .section1 .detailContent ul li span {
+    display: inline-block;
+    font-size: 1rem;
+    color: #e84c00;
+    position: relative;
+    left: -0.15rem;
+    top: -0.1rem;
+}
+
+.popup-box .box-in div.bottom {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.popup-box .box-in .section1 .detailContent img {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    position: relative;
+    top: -6rem;
+    left: -9rem;
+}
+
+.popup-box .box-in .section1 .detailContent img.pic {
+    position: relative;
+    top: -8.4rem;
+    left: 9rem;
+}
+
+.section3 ol li {
+    font-size: 1rem;
+    margin-top: 0.7rem;
+}
+
+.section4 ol li {
+    font-size: 0.8rem;
+    line-height: 2.2;
+    text-align: justify;
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+}
+
+.popup-box .box-in .line-throw {
+    font-size: 0.3rem;
+}
+
+.popup-box table.data-box thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.popup-box table.data-box {
+    width: 100%;
+    margin: 16px auto 25px;
+    text-align: center;
+    border: 0 !important;
+    font-size: 1.6em;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.popup-box table.data-box thead th {
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 0.9rem;
+    color: #ffffff;
+    background: #dcb08e;
+    line-height: 1;
+    border: 1px dotted #ccc;
+    white-space: nowrap;
+}
+
+.popup-box table.data-box thead tr {
+    border: 1px dotted #dcb08e;
+}
+
+.popup-box table.data-box tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.popup-box table.data-box tbody td {
+    line-height: 1.6;
+    text-align: center;
+    color: #333333;
+    padding: 0.1rem;
+    font-size: 0.8rem;
+    border: 1px dotted #ccc;
+    font-family: Notol, 'Microsoft JhengHei', 'Microsoft YaHei', arial, sans-serif;
+}
+
+.popup-box table.data-box tbody .unit {
+    font-size: 0.8em;
+}
+
+.popup-box table.data-box tbody tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    background: #ffffff;
+}
+
+.popup-box table.data-box tbody tr.last-row td {
+    border-bottom: 1px solid #cccccc;
+}
+
+.popup-box .table4 td {
+    width: 16%;
+}
+
+.popup-box .table3 td {
+    width: 33.333333%;
+}
+
+.popup-box .close-top {
+    height: 4rem;
+    color: #b78255;
+    border-bottom: 1px solid #b78255;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.popup-box .close-top a {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    background: url(//img.getfc.com.cn/source/www/zt/campaign1710/close.png) no-repeat;
+    top: 1.5rem;
+    right: 1.5rem;
+    text-decoration: none;
+}
+
+.popup-box h2 {
+    font-size: 0.9rem;
+    color: #b78255;
+    font-weight: bold;
+    position: relative;
+}
+
+.popup-box h2.ver-line i {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: #b78255;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.popup-box .note {
+    line-height: 2rem;
+}
+
+.popup-box .note span {
+    color: #f00;
+}
+
+.popup-box p {
+    line-height: 1.9;
+    color: #333333;
+    text-align: justify;
+    font-size: 0.8rem;
+}
+
+.popup-box p span {
+    overflow: hidden;
+    display: inline;
+    color: #d8505a;
+}
+
+.popup-box p a {
+    overflow: hidden;
+    display: inline;
+    color: #225b76;
+    text-decoration: underline;
+}
+
+.section3 ol,
+.section4 ol {
+    width: 18.5rem;
+    white-space: normal;
+}

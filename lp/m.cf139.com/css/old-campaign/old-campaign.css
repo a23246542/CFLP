@@ -1,0 +1,944 @@
+img{ overflow:hidden;display:block;border: none;}
+#main{overflow: hidden;margin: 0;padding: 0;color: #333;width: 100%;}
+.m-banner{
+    overflow: hidden;
+    width: 100%;
+    background: -webkit-linear-gradient(right,#4087df, #11689a);
+    background: -o-linear-gradient(right,#4087df, #11689a);
+    background: -moz-linear-gradient(right,#4087df, #11689a);
+    background: linear-gradient(to right,#4087df, #11689a);
+    height: 9.32rem;
+    position: relative;
+}
+.m-banner img{width: 4.42rem;margin: .95rem auto 0 auto}
+.m-banner .btn{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.m-banner .btn a{
+    overflow: hidden;
+    display: block;
+    width: 2.19rem;
+    height: .58rem;
+    line-height: .58rem;
+    text-align: center;
+    margin: 0 .3rem;
+    font-size: .3rem;
+    text-decoration: none;
+}
+.m-banner .btn a.account{
+    color: #fff;
+    background: #374bd2;
+    transition: all .25s;
+    font-weight: bold;
+}
+.m-banner .btn a.account:hover{
+    background: #fff;
+    color: #374bd2;
+    transition: all .25s;
+    font-weight: normal;
+}
+.m-banner .btn a.chat{
+    color: #374bd2;
+    background: #fff;
+    transition: all .25s;
+    font-weight: normal;
+}
+.m-banner .btn a.chat:hover{
+    background: #374bd2;
+    color: #fff;
+    transition: all .25s;
+    font-weight: bold;
+}
+.m-banner .btn span{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    color: #f9a74f;
+    text-align: center;
+    margin-top: .1rem;
+    margin-right: 2.8rem;
+}
+.m-page{
+    overflow: hidden;
+    background: url("../../images/old-campaign/neiye-bg01.jpg") no-repeat;
+    background-size: 100% 100%;
+    height: 20.47rem;
+}
+.m-page.bg02{
+    background: url("../../images/old-campaign/neiye-bg02.jpg") no-repeat;
+    background-size: 100% 100%;
+    height: 9.19rem;
+}
+.m-page.bg03{
+    background: url("../../images/old-campaign/neiye-bg03.jpg") no-repeat;
+    background-size: 100% 100%;
+    height: 24.37rem;
+}
+.m-page .title{
+    overflow: hidden;
+    margin-top: 1.2rem;
+}
+.m-page.bg02 .title{margin-top: .8rem}
+.m-page.bg03 .title{margin-top: .65rem}
+.m-page .title span{
+    overflow: hidden;
+    display: block;
+    font-weight: normal;
+    font-size: .3rem;
+    text-align: center;
+}
+.m-page .title span.size{
+    font-size: .44rem;
+    font-weight: bold;
+}
+.m-page.bg03 .title span.size{margin-top: .05rem}
+.m-page .title span.light {
+    font-size: .44rem;
+    display: inline;
+    font-weight: normal;
+    margin-right: .25rem;
+}
+.m-page .title p{
+    overflow: hidden;
+    display: block;
+    font-weight: normal;
+    font-size: .24rem;
+    text-align: center;
+    margin: .08rem 0 .35rem;
+}
+.m-page.bg02 .title p{margin-top: 0}
+.m-page .title p span{
+    display: inline;;
+    font-size: .24rem;
+    font-weight: bold;
+    color: #374bd2;
+}
+.m-page .title a{
+    overflow: hidden;
+    display: block;
+    font-weight: normal;
+    font-size: .24rem;
+    text-align: center;
+    line-height: .48rem;
+    color: #fff;
+    background: url("../../images/old-campaign/btn-bg.png") no-repeat;
+    background-size: 100% 100%;
+    width: 5.19rem;
+    height: 2.19rem;
+    margin: 0 auto;
+}
+.m-page .con-list{
+    overflow: hidden;
+    width: 7rem;
+    margin: -.8rem auto 0 auto;
+}
+.m-page .con-list ul{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.m-page .con-list ul li{
+    overflow: hidden;
+    width: 1.8rem;
+    padding-bottom: .34rem;
+    position: relative;
+}
+.m-page .con-list ul li:hover .box{
+    overflow: hidden;
+    position: absolute;
+    width: 80%;
+    height: 3.62rem;
+    top: 0;
+    left: 10%;
+    box-shadow: 0 .1rem .34rem 0 rgba(0,0,0,.41);
+}
+.m-page .con-list ul li .item{
+    overflow: hidden;
+    width: 1.7rem;
+    height: 3.62rem;
+    border: solid .02rem #d6d6d6;
+    border-radius: .08rem;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+}
+.m-page .con-list ul li .item:hover{
+    background: #649cf6;
+    border: solid .02rem #649cf6;
+}
+.m-page .con-list ul li .item img{width: .66rem;margin: .39rem auto .1rem auto}
+.m-page .con-list ul li .item p{
+    overflow: hidden;
+    display: block;
+    font-weight: normal;
+    font-size: .22rem;
+    text-align: center;
+}
+.m-page .con-list ul li:hover .item p{color: #fff}
+.m-page .con-list ul li .item span{
+    overflow: hidden;
+    display: block;
+    font-weight: bold;
+    font-size: .22rem;
+    color: #666;
+    text-align: center;
+}
+.m-page .con-list ul li:hover .item span{color: #fff}
+.m-page .con-list ul li .item span.size{
+    font-size: .3rem;
+    width: .52rem;
+    height: .52rem;
+    line-height: .52rem;
+    border-radius: 100%;
+    margin: .15rem auto .1rem;
+    border: solid 1px #a0a0a0;
+}
+.m-page .con-list ul li:hover .item span.size{color: #fff;border: solid 1px #374bd2;background: #374bd2}
+.m-page .con-list ul li .item span.ic{
+    overflow: hidden;
+    width: 1.44rem;
+    height: .41rem;
+    margin: 0 auto .05rem;
+}
+.m-page .con-list ul li .item span.ic.icon01{
+    background: url("../../images/old-campaign/icon-200.png") no-repeat;
+    background-size: 1.15rem .41rem;
+}
+.m-page .con-list ul li:hover .item span.ic.icon01{
+    background: url("../../images/old-campaign/icon-200-hover.png") no-repeat;
+    background-size: 1.15rem .41rem;
+}
+.m-page .con-list ul li .item span.ic.icon02{
+    background: url("../../images/old-campaign/icon-1000.png") no-repeat;
+    background-size: 1.36rem .41rem;
+}
+.m-page .con-list ul li:hover .item span.ic.icon02{
+    background: url("../../images/old-campaign/icon-1000-hover.png") no-repeat;
+    background-size: 1.36rem .41rem;
+}
+.m-page .con-list ul li .item span.ic.icon03{
+    background: url("../../images/old-campaign/icon-3500.png") no-repeat;
+    background-size: 1.42rem .41rem;
+}
+.m-page .con-list ul li:hover .item span.ic.icon03{
+    background: url("../../images/old-campaign/icon-3500-hover.png") no-repeat;
+    background-size: 1.42rem .41rem;
+}
+.m-page .con-list ul li .item span.ic.icon04{
+    background: url("../../images/old-campaign/icon-8500.png") no-repeat;
+    background-size: 1.44rem .41rem;
+}
+.m-page .con-list ul li:hover .item span.ic.icon04{
+    background: url("../../images/old-campaign/icon-8500-hover.png") no-repeat;
+    background-size: 1.44rem .41rem;
+}
+.m-page .layout{
+    overflow: hidden;
+    width: 7rem;
+    height: 1rem;
+    border: solid 1px rgba(191,191,191,.64);
+    border-radius: .06rem;
+    background: rgba(255,255,255,.64);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.m-page .layout span{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    text-align: center;
+    color: #374bd2;
+}
+.m-page .layout span.size{
+    font-size: .3rem;
+    font-weight: bold;
+}
+.m-page .layout img{width: .72rem;margin-left: .1rem}
+.m-page .calculator{
+    overflow: hidden;
+    width: 6.9rem;
+    height: 4.6rem;
+    margin: 1rem auto 0 auto;
+    border: solid .05rem rgba(210,210,210,.52);
+    border-radius: .06rem;
+    background: rgba(255,255,255,.52);
+}
+.m-page .calculator .cal-tit{
+    overflow: hidden;
+    margin: .2rem 0 .25rem;
+}
+.m-page .calculator .cal-tit span{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-weight: normal;
+    font-size: .36rem;
+}
+.m-page .calculator .cal-tit span.bold{font-weight: bold;display: inline}
+.m-page .calculator .cal-list{overflow: hidden;}
+.m-page .calculator .cal-list ul{
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.m-page .calculator .cal-list ul li{
+    overflow: hidden;
+    float: left;
+    list-style: none;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: .4rem;
+}
+.m-page .calculator .cal-list ul li .item{overflow: hidden;}
+.m-page .calculator .cal-list ul li:nth-child(odd) .item{margin-left: .8rem}
+.m-page .calculator .cal-list ul li:nth-child(even) .item{margin-left: .5rem}
+.m-page .calculator .cal-list ul li .item span{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: .24rem;
+    color: #666;
+}
+.m-page .calculator .cal-list ul li .item input{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    color: #666;
+    width: 1.73rem;
+    height: .53rem;
+    border: solid 1px #000;
+    border-radius: .06rem;
+    background: #fff;
+    margin: .12rem .1rem;
+    text-align: center;
+    padding: 0 .1rem;
+}
+.m-page .calculator .cal-list ul li .item p{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-weight: normal;
+    font-size: .22rem;
+    color: #0a528d;
+}
+.m-page .calculator .cal-list ul li .item a{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-weight: normal;
+    font-size: .22rem;
+    color: #fff;
+    width: 1.93rem;
+    height: .53rem;
+    line-height: .53rem;
+    background: #374bd2;
+    border-radius: .06rem;
+    margin: 0 auto;
+}
+.m-page .calculator .cal-list ul li .item-1{
+    overflow: hidden;
+    text-align: center;
+    font-weight: bold;
+    font-size: .24rem;
+    color: #666;
+}
+.m-page .calculator .cal-list ul li:last-child .item-1{margin-bottom: .2rem}
+.m-page .slider{
+    overflow: hidden;
+    width: 7rem;
+    height: 3.6rem;
+    margin: .82rem auto 0 auto;
+    border: solid .02rem rgba(210,210,210,.46);
+    border-radius: .06rem;
+    background: rgba(255,255,255,.46);
+}
+.m-page .slider .sli-tit{
+    overflow: hidden;
+    margin: .35rem 0 .25rem;
+    text-align: center;
+}
+.m-page .slider .sli-tit span{
+    overflow: hidden;
+    display: inline-block;
+    font-weight: normal;
+    font-size: .36rem;
+    margin: 0 .05rem;
+}
+.m-page .slider .sli-tit span.bold{font-weight: bold;}
+.m-page .slider .sli-con li{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: .8rem;
+}
+.m-page .slider .sli-con li span{
+    overflow: hidden;
+    display: block;
+    font-weight: normal;
+    font-size: .24rem;
+    color: #374bd2;
+    margin: .02rem .15rem;
+}
+.m-page .slider .sli-con li span.bold {
+    display: inline;
+    font-weight: bold;
+    margin: 0
+}
+.m-page .layout-1{overflow: hidden;margin: .3rem 0 0 .2rem}
+.m-page .layout-1 .list{
+    overflow: hidden;
+    width: 3.48rem;
+    height: 6rem;
+    border-radius: .04rem;
+    background: #fff;
+    box-shadow: 0 0 .02rem rgba(0,0,0,.15);
+    margin: .02rem;
+    position: relative;
+}
+.m-page .layout-1 .list .item{
+    overflow: hidden;
+    width: 3.5rem;
+    height: 1.17rem;
+    background: url("../../images/old-campaign/img01.png") no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.m-page .layout-1 .list .item.libg02{
+    background: url("../../images/old-campaign/img02.png") no-repeat;
+    background-size: 100% 100%;
+}
+.m-page .layout-1 .list .item.libg03{
+    background: url("../../images/old-campaign/img03.png") no-repeat;
+    background-size: 100% 100%;
+}
+.m-page .layout-1 .list .item.libg04{
+    background: url("../../images/old-campaign/img04.png") no-repeat;
+    background-size: 100% 100%;
+}
+.m-page .layout-1 .list .item .item-tit{
+    overflow: hidden;
+    font-weight: bold;
+    font-size: .24rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: .1rem;
+}
+.m-page .layout-1 .list .item .item-star{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.m-page .layout-1 .list .item .item-star span{
+    overflow: hidden;
+    display: block;
+    font-weight: normal;
+    font-size: .22rem;
+    color: #fff;
+}
+.m-page .layout-1 .list .item .item-star img{width: .2rem;margin: 0 .05rem}
+.m-page .layout-1 .list .item-1 {
+    overflow: hidden;
+    padding: .25rem .15rem;
+}
+.m-page .layout-1 .list .item-1 span{
+    overflow: hidden;
+    display: block;
+    font-weight: bold;
+    font-size: .24rem;
+}
+.m-page .layout-1 .list .item-1 span.size{
+    font-weight: normal;
+    font-size: .22rem;
+    margin-bottom: .05rem;
+}
+.m-page .layout-1 .list .item-1 span.color{
+    color: #374bd2;
+    display: inline;
+}
+.m-page .layout-1 .list .item-1 p{
+    overflow: hidden;
+    display: block;
+    font-weight: normal;
+    font-size: .22rem;
+    line-height: .36rem;
+    margin: .12rem 0 .3rem;
+}
+.m-page .layout-1 .list .item-2 {
+    overflow: hidden;
+    position: absolute;
+    bottom: .28rem;
+    left: .15rem;
+}
+.m-page .layout-1 .list .item-2 span{
+    overflow: hidden;
+    display: block;
+    font-weight: normal;
+    font-size: .22rem;
+    margin-bottom: .05rem;
+}
+.m-page .layout-1 .list .item-2 span.color{
+    font-size: .24rem;
+    font-weight: bold;
+    color: #374bd2;
+    display: inline;
+}
+.m-page .layout-1 .swiper-container{height: 6.1rem}
+.m-page .layout-2{overflow: hidden;margin: .7rem 0 -.35rem;}
+.m-page .layout-2 .box{
+    overflow: hidden;
+    position: absolute;
+    width: 80%;
+    height: 5.87rem;
+    top: 0;
+    left: 10%;
+    box-shadow: 0 .45rem 1rem 0 rgba(29,112,160,.33);
+    display: none;
+}
+.m-page .layout-2 .list{
+    overflow: hidden;
+    background: url("../../images/old-campaign/li-bg01.png") no-repeat;
+    background-size: 100% 100%;
+    width: 4.1rem;
+    height: 5.87rem;
+    position: relative;
+    z-index: 1;
+}
+.m-page .layout-2 .list .item {
+    overflow: hidden;
+    margin: .32rem auto .3rem
+}
+.m-page .layout-2 .list .item span{
+    overflow: hidden;
+    display: block;
+    font-weight: bold;
+    font-size: .3rem;
+    line-height: .36rem;
+    text-align: center;
+    color: #666;
+}
+.m-page .layout-2 .list .item p{
+    overflow: hidden;
+    display: block;
+    font-size: .22rem;
+    line-height: .36rem;
+    text-align: center;
+    color: #666;
+    margin: .02rem 0 .3rem;
+}
+.m-page .layout-2 .list .item img{width: 1.56rem;margin: 0 auto}
+.m-page .layout-2 .list .item-1{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.m-page .layout-2 .list .item-1 img{width: .57rem;margin-left: .25rem}
+.m-page .layout-2 .list .item-1 img.vs{width: 1.22rem;margin: .15rem .8rem .15rem 0}
+.m-page .layout-2 .list .item-1 p{
+    overflow: hidden;
+    display: block;
+    font-weight: normal;
+    font-size: .22rem;
+    line-height: .24rem;
+    text-align: center;
+    color: #374bd2;
+    margin: 0 -.05rem;
+}
+.m-page .layout-2 .list .item-1 span{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+    font-size: .14rem;
+    line-height: .18rem;
+    text-align: center;
+    width: .37rem;
+    height: .57rem;
+    padding: 0 .1rem 0;
+    background: #bbb;
+    border-radius: .06rem;
+    margin-left: .25rem;
+    color: #4f4f4f;
+}
+.m-page .layout-2 .list .item-1.inline p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.m-page .layout-2 .list .item-1 p span{
+    overflow: hidden;
+    display: inline;
+    font-size: .16rem;
+    width: auto;
+    height: auto;
+    background: transparent;
+    margin: .1rem 0 0 0;
+    padding: 0;
+    color: #374bd2;
+}
+.m-page .layout-2 .list .item-1 p img{width: 1.22rem;margin: 0}
+.m-page .layout-2 .list .item-1.inline p img{display: inline;}
+.m-page .layout-2 .list .item-1 p.color{color: #bbb}
+.m-page .layout-2 .list .item-1 p.color span{color: #bbb}
+.m-page .layout-2 .list .item-2{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 3.85rem;
+    margin: 0 auto;
+    border-bottom: solid 1px #ccc;
+    padding: .08rem 0;
+}
+.m-page .layout-2 .list .item-2.padding{padding: .2rem 0}
+.m-page .layout-2 .list .item-2 .width{width: 45%}
+.m-page .layout-2 .list .item-2 .width01{width: 33.33%}
+.m-page .layout-2 .list .item-2 span{
+    overflow: hidden;
+    display: block;
+    font-size: .22rem;
+    font-weight: normal;
+    padding: 0;
+    width: 33.33%;
+}
+.m-page .layout-2 .list .item-2 span.other{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+    font-size: .14rem;
+    line-height: .18rem;
+    text-align: center;
+    width: .4rem;
+    height: .4rem;
+    background: #bbb;
+    border-radius: .06rem;
+    color: #4f4f4f;
+    margin: 0 auto
+}
+.m-page .layout-2 .list .item-2 span.color{
+    font-weight: bold;
+    color: #374bd2;
+    width: 45%;
+    text-align: center;
+}
+.m-page .layout-2 .list .item-2 span.center{text-align: center}
+.m-page .layout-2 .list .item-2 img{width: .4rem;margin: 0 auto}
+#certify {
+    position: relative;
+    height: 7.2rem;
+}
+#certify .swiper-slide {
+    width: 4.1rem;
+    height: 6.85rem;
+    filter: blur(.02rem);
+    position: relative;
+}
+#certify .swiper-slide-active{filter: blur(0)!important;}
+#certify .swiper-slide-active .box{display: block}
+.m-page .layout-3{
+    overflow: hidden;
+    background: url("../../images/old-campaign/li-bg02.png") no-repeat;
+    background-size: 100% 100%;
+    width: 7rem;
+    height: 5.44rem;
+    margin: .65rem auto -.3rem auto;
+    position: relative;
+}
+.m-page .layout-3 .acc-con{
+    overflow: hidden;
+    margin: .4rem 0 .32rem .4rem;
+}
+.m-page .layout-3 .acc-con span{
+    overflow: hidden;
+    display: block;
+    font-size: .22rem;
+    color: #0a528d;
+    float: left;
+    margin-right: .75rem;
+}
+.m-page .layout-3 .tab-list-1{overflow: hidden;margin: .21rem 0}
+.m-page .layout-3 .tab-list-1 ul{
+    overflow: hidden;
+    display: block;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    border: solid 1px #a0a0a0;
+    width: 6.45rem;
+}
+.m-page .layout-3 .tab-list-1 ul li{
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #a0a0a0;
+    height: .54rem;
+}
+.m-page .layout-3 .tab-list-1 ul li:nth-child(2){border: none}
+.m-page .layout-3 .tab-list-1 ul li span{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    color: #666;
+    width: 33.33%;
+    text-align: center;
+    border-right: solid 1px #a0a0a0;
+    height: .54rem;
+    line-height: .54rem;
+}
+.m-page .layout-3 .tab-list-1 ul li:nth-child(2) span{height: .6rem;line-height: .6rem;}
+.m-page .layout-3 .tab-list-1 ul li span:last-child{border: none}
+.m-page .layout-3 .tab-list-1 ul li span.size{font-size: .35rem}
+.m-page .layout-3 .tab-list-1 ul li span.color{font-size: .35rem;color: #374bd2}
+.m-page .layout-3 .item {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.m-page .layout-3 .item img{margin: 0 .1rem}
+.m-page .layout-3 .item img:nth-child(odd){width: 1.01rem}
+.m-page .layout-3 .item img:nth-child(even){width: .18rem}
+.m-page .layout-3 .item-1 {
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: .15rem 0 0 .4rem;
+}
+.m-page .layout-3 .item-1.marginleft{margin-left: 1.25rem}
+.m-page .layout-3 .item-1 span{
+    overflow: hidden;
+    display: block;
+    font-weight: normal;
+    font-size: .22rem;
+    color: #0a528d;
+    text-align: center;
+    margin-right: .35rem;
+}
+.m-page .layout-3 .item-1 span:last-child{margin-left: .18rem}
+.m-page .layout-3 .item-2{
+    overflow: hidden;
+    position: absolute;
+    right: .44rem;
+    bottom: .3rem;
+}
+.m-page .layout-3 .item-2 span{
+    overflow: hidden;
+    display: block;
+    font-weight: bold;
+    font-size: .24rem;
+    color: #374bd2;
+    text-align: center;
+}
+.m-page .layout-3 .item-2 img{width: 1.26rem}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*弹窗*/
+.tc-hide{
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
+.masking{
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+}
+.popup-box {
+    overflow: hidden;
+    max-width:95%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top:10%;
+    background: #fff;
+    z-index: 99999;
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.popup-box .box-in {
+    margin: 3% 4% 5% 4%;
+    overflow-y: auto;
+    height: 8rem;
+}
+.popup-box .close-top{
+    padding:0.5rem 0.3rem;
+    font-size: 0.44rem;
+    color:#b78255;
+    text-align: center;
+    border-bottom: 1px solid #b78255;
+    width:5.5rem;
+    margin: 0 auto;
+    position: relative;
+}
+.popup-box .close-top a{
+    background: url(../../images/campaign1710/close-b.png) no-repeat;
+    width: 0.21rem;
+    height:0.21rem;
+    background-size: 0.21rem 0.21rem;
+    position: absolute;
+    right: 0;
+    margin-top: .2rem;
+    text-decoration: none;
+}
+.popup-box .section1 h2{
+    font-size: 0.36rem;
+    margin-bottom: 0.1rem;
+    color: #b78255;
+}
+.popup-box table.data-box {
+    width: 100%;
+    margin: 16px auto 25px;
+    text-align: center;
+    border: 0 !important;
+    font-size: 1.6em;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.popup-box .box-in .line-throw{font-size: 0.32rem;}
+.popup-box  .box-in .section1 p{
+    font-size:0.28rem;
+    margin-bottom: 0.2rem;
+    line-height: 1.8;
+}
+.popup-box  .box-in .section3 p{
+    font-size:0.28rem;
+    margin-bottom: 0.2rem;
+    line-height: 1.8;
+}
+.popup-box .box-in .section3 p a{color: #0096dc}
+.popup-box  .box-in .section3 p span{
+    padding-right:0.15rem;
+}
+.popup-box  .box-in .section4  h2{
+    font-size: 0.36rem;
+    margin-bottom: 0.1rem;
+    color: #b78255;
+}
+.popup-box  .box-in .section4 li{
+    font-size: 0.28rem;
+    line-height: 1.8;
+}
+.popup-box  .box-in .section4 li span{
+    margin-right: 0.15rem;
+}
+.popup-box  .box-in .section4 li span.add-color {
+    overflow: hidden;
+    display: inline;
+    width: auto;
+    color: #f00;
+    font-weight: bold;
+}
+.popup-box  .box-in .section4 li p{
+    display: flex;
+}
+
+.popup-box table.data-box thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box thead th {
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 5px;
+    color: #FFFFFF;
+    background: #dcb08e;
+    line-height: 1.0;
+}
+.popup-box table.data-box thead tr {
+    border: 1px solid #dcb08e;
+}
+.popup-box table.data-box tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box tbody td {
+    line-height: 1.0;
+    text-align: center;
+    color: #333333;
+    padding: 1.44%;
+    font-size: 14px;
+    border: 0.025rem solid #ead5c2;
+    font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+}
+.popup-box table.data-box tbody .unit {
+    font-size: 0.8em;
+}
+.popup-box table.data-box tbody tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+//background: #f7efe8;
+}
+.popup-box table.data-box tbody tr.grey {
+    background: #fff;
+}
+.popup-box table.data-box tbody tr.last-row td {
+    border-bottom: 1px solid #CCCCCC;
+}
+.popup-box table.data-box .first-child {
+    text-align: center;
+    font-size: 16px;
+}
+.popup-box table.data-box .first-child a {
+    color: #666666;
+    text-decoration: none;
+}
+.popup-box .table1 td,
+.popup-box .table2 td {
+    width: 25%;
+}
+.popup-box .table4 td {
+    width: 16%;
+}
+.popup-box .table3 td {
+    width: 33.333333%;
+}
+.popup-box .note{line-height: 1.8;font-size: 0.24rem;margin-bottom: 0.1rem}
+.popup-box .note span{color: #f00}

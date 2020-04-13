@@ -1,0 +1,416 @@
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #efefef;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#333;
+    margin: 0;
+    padding: 0;
+}
+.m-top{
+    background: url(../../images/campaign1708-02/banner-bg1.jpg);
+    background-size:7.5rem 11.2rem;
+    width:7.5rem;
+    height:11.2rem;
+}
+.m-top .layout-1{
+    padding-top:0.3rem;
+    padding-left: 0.3rem;
+}
+.m-top .layout-1 img{
+    width:3.04rem;
+    height:0.64rem;
+}
+.m-top .layout-2{
+    text-align: center;
+    margin:1.15rem auto 0.95rem;
+    position: relative;
+}
+.m-top .layout-2 img{
+    width:5.75rem;
+    height:2.9rem;
+}
+
+.m-top .layout-2 .item-1{
+    font-size: 0.7rem;
+    color: #f8df47;
+    position: absolute;
+    top:2.1rem;
+    left:1.8rem;
+    /*-webkit-transition: all 0.5s ease-in-out;*/
+    /*-moz-transition: all 0.5s ease-in-out;*/
+    /*-o-transition: all 0.5s ease-in-out;*/
+    /*transition: all 0.5s ease-in-out;*/
+    font-weight: bold;
+}
+/*.m-top .layout-2 .item-1.show{*/
+    /*opacity: 1;*/
+    /*transform:translate(0.8rem,1rem);*/
+    /*-ms-transform:translate(0.8rem,1rem); !* IE 9 *!*/
+    /*-moz-transform:translate(0.8rem,1rem); !* Firefox *!*/
+    /*-webkit-transform:translate(0.8rem,1rem); !* Safari and Chrome *!*/
+    /*-o-transform:translate(0.8rem,1rem); !* Opera *!*/
+/*}*/
+.m-top .layout-3{
+    text-align: center;
+}
+.m-top .layout-3 a{
+    display: block;
+    width:4rem;
+    height:0.8rem;
+    line-height: 0.8rem;
+    margin:0 auto;
+    font-size: 0.32rem;
+    text-align: center;
+    background: #e72c33;
+    color: #fff;
+    border-radius: 0.12rem;
+}
+.m-top .layout-3 p{
+    font-size: 0.24rem;
+    color: #ccc;
+    margin: 0.2rem  auto 0.8rem;
+}
+
+.m-top .layout-4{
+    text-align: center;
+}
+.m-top .layout-4 a{
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+    width:1.5rem;
+    font-size: 0.28rem;
+    border-bottom: 0.025rem solid #fff;
+}
+.m-free{
+    text-align: center;
+    margin-bottom: 0.7rem;
+    margin-top: 0.55rem;
+}
+.m-free img{
+    width:5.62rem;
+    height:1.02rem;
+    margin: 0 auto;
+}
+.m-event .layout-1 img{
+    width:2.5rem;
+    height: 1.7rem;
+}
+/*滑动模块*/
+.swiper-container {
+    width: 100%;
+    height: 8.8rem;
+}
+.swiper-slide {
+    /*text-align: center;*/
+    font-size: 0;
+
+    /* Center slide text vertically */
+    /*display: -webkit-box;*/
+    /*display: -ms-flexbox;*/
+    /*display: -webkit-flex;*/
+    /*display: flex;*/
+    /*-webkit-box-pack: center;*/
+    /*-ms-flex-pack: center;*/
+    /*-webkit-justify-content: center;*/
+    /*justify-content: center;*/
+    /*-webkit-box-align: center;*/
+    /*-ms-flex-align: center;*/
+    /*-webkit-align-items: center;*/
+    /*align-items: center;*/
+}
+.swiper-button-prev{
+    background: url(../../images/campaign1708-02/jiantou2.png) no-repeat;
+    background-size: 0.5rem 0.72rem;
+    width:0.5rem;
+    height: 0.72rem;
+    left: 0.1rem;
+}
+.swiper-button-next{
+    background: url(../../images/campaign1708-02/jiantou1.png) no-repeat;
+    background-size: 0.5rem 0.72rem;
+    width:0.5rem;
+    height: 0.72rem;
+    right: 0.1rem;
+}
+.m-event .layout-1,.m-event .layout-2,.m-event .layout-3,.m-event .layout-4{
+    padding:0 0.9rem;
+}
+.m-event .layout-1 .container,.m-event .layout-2 .container,.m-event .layout-3 .container,.m-event .layout-4 .container{
+    background: #fff;
+    position: relative;
+}
+.m-event .layout-1 .event-title{
+    position: absolute;
+    top:0.7rem;
+    left:0.8rem;
+    text-align: center;
+}
+.m-event .layout-1 .event-title h1{
+  color: #081d3f;
+    font-size: 0.36rem;
+    margin: 0 auto;
+    margin-bottom: 0.1rem;
+}
+.m-event .layout-1 .event-title p{
+    font-size: 0.28rem;
+}
+.m-event .layout-2 .container{
+    padding: 0.3rem 0.3rem 0;
+}
+.m-event .layout-2 .item-1{
+    color: #666;
+    font-size: 0.28rem;
+    padding-left:0.15rem;
+}
+.m-event .layout-2 .item-1 span{
+    margin-right: 1.6rem;
+}
+.m-event .layout-2 .item-2{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    padding-top: 0.3rem;
+    justify-content: space-around;
+}
+.m-event .layout-2 .item-2 .item-b img{
+    width:2.18rem;
+    height: 2.18rem;
+}
+.m-event .layout-2 .item-2 .item-a ul li{
+    margin-bottom: 0.35rem;
+    font-size:0.32rem ;
+    line-height: 0.9;
+    color: #000;
+}
+.m-event .layout-2 .item-2 .item-a ul li:last-child{
+    margin-bottom: 0;
+}
+.m-event .layout-2 .item-2 .item-a ul li span{
+    font-size: 0.24rem;
+}
+.m-event .layout-2 .item-2 .item-c ul li{
+    margin-bottom: 0.58rem;
+}
+.m-event .layout-2 .item-2 .item-c ul li:last-child{
+    margin-bottom: 0.4rem;
+}
+.m-event .layout-2 .item-2 .item-c ul li{
+    font-size:0.32rem ;
+    color: #ff2422;
+}
+.m-event .layout-3{
+    text-align: center;
+}
+.m-event .layout-3 .container img{
+    width:5.66rem;
+    height: 2.53rem;
+    margin: 0 auto;
+}
+.m-event .layout-4 {
+    text-align: right;
+    font-size: 0.24rem;
+    color: #666;
+    margin-top: 0.2rem;
+}
+.m-label{
+    background: url(../../images/campaign1708-02/san-db.jpg) no-repeat;
+    background-size: 7.5rem 12.61rem;
+    width: 7.5rem;
+    height: 12.61rem;
+}
+
+
+.m-label .layout-1{
+    padding-top:2.12rem;
+    font-size: 0.4rem;
+    color: #fff;
+    margin:0 auto;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+.m-label .layout-2{
+    text-align: center;
+}
+.m-label .layout-2 img{
+    width:2.92rem;
+    height: 1.15rem;
+}
+.m-label .layout-2 P{
+    font-size: 0.24rem;
+    color: #fff;
+}
+.m-label .layout-3{
+    padding-top:0.6rem;
+}
+.m-label .layout-3 ul li{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    color: #fff;
+    font-size: 0.32rem;
+    padding-left:0.45rem;
+    margin-bottom: 0.3rem;
+}
+.m-label .layout-3 ul li .item-1{
+    background: url(../../images/campaign1708-02/duobian.png) no-repeat;
+    background-size:1.4rem 1.26rem;
+    width: 1.4rem;
+    height:1.26rem;
+    font-size: 0.4rem;
+    margin-right: 0.2rem;
+}
+.m-label .layout-3 ul li .item-1 span{
+  position: relative;
+    top:0.3rem;
+    left:0.25rem;
+}
+.m-label .layout-3 ul li .item-2{
+    padding-top:0.35rem;
+}
+.m-label .layout-4{
+    text-align: right;
+    padding-top:0.1rem;
+    padding-right: 0.3rem;
+    color: #666;
+    font-size: 0.24rem;
+}
+.m-open{
+    text-align: center;
+    padding-bottom: 0.4rem;
+    border: 1px solid #ddd;
+}
+.m-open p{
+    font-size:0.32rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.2rem;
+}
+.m-open .layout-2{
+    text-align: center;
+
+}
+.m-open .layout-2 a{
+    display: block;
+    width:4rem;
+    height: 0.8rem;
+    color: #fff;
+    font-size: 0.32rem;
+    background: #e72c33;
+    line-height: 0.8rem;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 0.12rem;
+}
+.m-footer{
+    margin-bottom: 0.3rem;
+}
+.m-footer .layout-1{
+    padding:0.5rem 0 0.3rem;
+    text-align: center;
+    font-size: 0.24rem;
+    line-height: 1.8;
+    color: #666;
+}
+.m-footer .layout-2{
+    text-align: right;
+    padding-right:0.3rem;
+    font-size: 0.24rem;
+    padding-bottom: 0.5rem;
+    color: #666;
+}
+.m-footer .layout-2 a{
+    border:1px solid #0096dc;
+    display: inline-block;
+    font-size: 0.28rem;
+    color: #0096dc;
+    padding:0.08rem 0.22rem;
+    border-radius: 0.12rem;
+}
+    /*弹窗*/
+.popup-box {
+    max-width:95%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top:60%;
+    margin-top: -325px;
+    background: #fff;
+    z-index: 99999;
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+    padding:0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+.popup-box .box-in {
+    margin: 3% 5% 5% 5%;
+    overflow-y: auto;
+    height: 8rem;
+}
+.popup-box .close-top{
+    padding:0.5rem 0.3rem;
+    font-size: 0.44rem;
+    color:#003355;
+    text-align: center;
+    border-bottom: 1px solid #003355;
+    width:5.5rem;
+    margin: 0 auto;
+}
+.popup-box .close-top a{
+    background: url(../../images/campaign1708-02/close-b.png) no-repeat;
+    display: inline-block;
+    width: 0.21rem;
+    height:0.21rem;
+    background-size: 0.21rem 0.21rem;
+    position: relative;
+    left:1rem;
+}
+.popup-box .section1 h2{
+    font-size: 0.36rem;
+    margin-bottom: 0.1rem;
+    color: #003355;
+}
+.popup-box table.data-box {
+    width: 100%;
+    margin: 16px auto 25px;
+    text-align: center;
+    border: 0 !important;
+    font-size: 1.6em;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.popup-box  .box-in .section1 p{
+    font-size:0.28rem;
+    margin-bottom: 0.2rem;
+    line-height: 1.8;
+}
+.popup-box  .box-in .section3 p{
+    font-size:0.28rem;
+    margin-bottom: 0.2rem;
+    line-height: 1.8;
+}
+.popup-box  .box-in .section3 p span{
+    padding-right:0.15rem;
+}
+.popup-box  .box-in .section4  h2{
+    font-size: 0.36rem;
+    margin-bottom: 0.1rem;
+    color: #003355;
+}
+.popup-box  .box-in .section4 li{
+    font-size: 0.28rem;
+    line-height: 1.8;
+}
+.popup-box  .box-in .section4 li span{
+    margin-right: 0.15rem;
+}
+.popup-box  .box-in .section4 li p{
+    display: flex;
+}

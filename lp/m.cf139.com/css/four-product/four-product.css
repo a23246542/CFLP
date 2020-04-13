@@ -1,0 +1,529 @@
+
+*{
+    box-sizing: border-box;
+    color: #333;
+}
+.m-banner{
+    background: url(../../images/four-product/banner-bg-m.jpg) no-repeat;
+    background-size: 7.5rem 9.25rem;
+    width:7.5rem;
+    height: 9.25rem;
+}
+.m-banner .layout-1{
+    padding-top:1.2rem;
+    text-align: center;
+}
+
+.m-banner .layout-1 img{
+    width: 7.34rem;
+    height:3.12rem ;
+    margin: 0 auto;
+    text-align: center;
+}
+.m-banner .layout-2{
+    text-align: center;
+}
+.m-banner .layout-2 img{
+    width: 7.38rem;
+    height:5.05rem ;
+    margin: 0 auto;
+    text-align: center;
+}
+.m-four{
+    padding: 0.7rem 0.25rem;
+    background: #f0f2f5;
+}
+.m-four .layout-1{
+    text-align: center;
+    position: relative;
+}
+.m-four .layout-1 img{
+    width: 4.46rem;
+    height:0.43rem ;
+    margin: 0 auto;
+}
+.m-four .layout-1:before{
+    position: absolute;
+    background: url(../../images/four-product/tit-icon2-m.png) no-repeat;
+    width:0.55rem;
+    height: 0.16rem;
+    background-size: 0.55rem 0.16rem;
+    bottom: 0.12rem;
+    left: 0.5rem;
+    content:"";
+}
+.m-four .layout-1:after{
+    position: absolute;
+    background: url(../../images/four-product/tit-icon1-m.png) no-repeat;
+    width:0.55rem;
+    height: 0.16rem;
+    background-size: 0.55rem 0.16rem;
+    bottom: 0.1rem;
+    right: 0.5rem;
+    content:"";
+}
+.m-four .layout-2{
+    font-size: 0.28rem;
+    padding: 0.4rem 0 0.5rem;
+    line-height: 0.48rem;
+}
+.m-four .layout-3 .top{
+    margin-bottom: 0.45rem;
+}
+.m-four .layout-3 .top ul li{
+    display: flex;
+justify-content: space-between;
+}
+.m-four .layout-3 .top ul li .item-1{
+    width:1.7rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    font-size: 0.28rem;
+    color: #fff;
+    background: #bec7da;
+    position: relative;
+    text-align: center;
+    border-radius: 0.1rem;
+}
+.m-four .layout-3 .top ul li .item-1.on{
+    background: #e5a913;
+}
+.m-four .layout-3 .top ul li .item-1.on:before{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 0.2rem solid transparent;
+    border-top: 0.2rem solid #e5a913;
+    border-right: 0.2rem solid transparent;
+    bottom: -0.15rem;
+    right: 0.27rem;
+    content:"";
+}
+.m-four .layout-3 .bottom .item-a .item-1{
+    background: url(../../images/four-product/FRA40-m.jpg) no-repeat;
+    width:5rem;
+    height: 2.1rem;
+    background-size: 5rem 2.1rem;
+    font-size: 0.28rem;
+    color: #fff;
+    padding-top: 0.2rem;
+    margin: 0 auto;
+}
+.m-four .layout-3 .bottom .item-a .item-1.uk{
+    background: url(../../images/four-product/UK100-m.jpg) no-repeat;
+    background-size: 5rem 2.1rem;
+}
+.m-four .layout-3 .bottom .item-a .item-1.gre{
+    background: url(../../images/four-product/GER30-m.jpg) no-repeat;
+    background-size: 5rem 2.1rem;
+}
+.m-four .layout-3 .bottom .item-a .item-1.tian{
+    background: url(../../images/four-product/tianranqi-m.jpg) no-repeat;
+    background-size: 5rem 2.1rem;
+}
+.m-four .layout-3 .bottom{
+    text-align: center;
+}
+.m-four .layout-3 .bottom .item-a .item-2{
+    font-size: 0.66rem;
+    color:#e5a913;
+    font-weight: bold;
+}
+.m-four .layout-3 .bottom .item-a .item-3{
+    font-size: 0.28rem;
+    color:#666;
+    margin-bottom: 0.2rem;
+}
+.m-four .layout-3 .bottom .item-a .item-1-bottom{
+    width:4.58rem;
+    margin: 0 auto;
+    background: #fff;
+    padding-top:0.44rem;
+}
+.m-four .layout-3 .bottom .item-a .item-4{
+    display: flex;
+    padding:0 0.35rem;
+    justify-content: space-between;
+}
+.m-four  .bottom .item-4 .item-a{
+    font-size: 0.24rem;
+    line-height: 0.48rem;
+}
+.m-four  .bottom .item-4 .item-a span{
+   font-size: 0.44rem;
+    color:#e5a913
+}
+.m-four  .bottom .item-4 .item-a i{
+   font-size: 0.28rem;
+    color: #666;
+}
+.m-four  .bottom .item-5{
+    font-size: 0.26rem;
+    color: #666;
+    padding:0.4rem 0 0.3rem;
+}
+.m-four  .info{
+    font-size: 0.26rem;
+    color: #999;
+    text-align: center;
+    padding-top:0.35rem;
+}
+.m-chance{
+  background: #fff;
+}
+.m-chance .layout-1,.m-example .layout-1,.m-label .layout-1{
+    text-align: center;
+    position: relative;
+    padding-top: 0.78rem;
+}
+.m-chance .layout-1 img{
+    width: 4.82rem;
+    height:0.43rem ;
+    margin: 0 auto;
+}
+.m-chance .layout-1:before,.m-example .layout-1:before,.m-label .layout-1:before{
+    position: absolute;
+    background: url(../../images/four-product/tit-icon2-m.png) no-repeat;
+    width:0.55rem;
+    height: 0.16rem;
+    background-size: 0.55rem 0.16rem;
+    bottom: 0.12rem;
+    left: 0.5rem;
+    content:"";
+}
+.m-example .layout-1:before,.m-label .layout-1:before{
+    position: absolute;
+    background: url(../../images/four-product/tit-icon2-m.png) no-repeat;
+    width: 0.55rem;
+    height: 0.16rem;
+    background-size: 0.55rem 0.16rem;
+    bottom: 0.12rem;
+    left: 0.9rem;
+    content: "";
+}
+
+.m-chance .layout-1:after,.m-example .layout-1:after,.m-label .layout-1:after{
+    position: absolute;
+    background: url(../../images/four-product/tit-icon1-m.png) no-repeat;
+    width:0.55rem;
+    height: 0.16rem;
+    background-size: 0.55rem 0.16rem;
+    bottom: 0.1rem;
+    right: 0.5rem;
+    content:"";
+}
+.m-example .layout-1:after,.m-label .layout-1:after{
+    position: absolute;
+    background: url(../../images/four-product/tit-icon1-m.png) no-repeat;
+    width:0.55rem;
+    height: 0.16rem;
+    background-size: 0.55rem 0.16rem;
+    bottom: 0.1rem;
+    right: 0.9rem;
+    content:"";
+}
+.m-chance .layout-2{
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    background: #fff;
+    padding-bottom: 0.8rem;
+}
+
+.m-chance .layout-2 .item-1 .prev{
+    position: absolute;
+    top: 4.5rem;
+    left: 0.1rem;
+    background: url(../../images/four-product/jiantou2-m.png) no-repeat;
+    background-size:0.47rem 0.72rem; ;
+    width:0.47rem;
+    height: 0.72rem;
+    display: block;
+    z-index: 100;
+}
+.bottom .tempWrap{
+    width: auto;
+}
+.tempWrap{
+    width: 6rem;
+    margin: 0 auto;
+    background: #f0f2f5;
+}
+.m-chance .layout-2 .item-1 .next{
+    position: absolute;
+    top: 4.5rem;
+    right: 0.1rem;
+    background: url(../../images/four-product/jiantou1-m.png) no-repeat;
+    background-size:0.47rem 0.72rem; ;
+    width:0.47rem;
+    height: 0.72rem;
+    display: block;
+    z-index: 100;
+}
+.m-chance .layout-2 .item-2{
+    position: relative;
+}
+.m-chance .layout-2 .item-2 .item-a{
+    height: 1rem;
+    position: relative;
+    background: #fff;
+}
+.m-chance .layout-2 .item-2 .item-a span{
+   background: url(../../images/four-product/guoqi-icon1-m.png) no-repeat;
+    background-size: 1.94rem 1.39rem;
+    width:1.94rem;
+    height: 1.39rem;
+    margin: 0 auto;
+    position: absolute;
+    top:0.3rem;
+    left: 2rem;
+}
+.m-chance .layout-2 .item-2 .item-a span{
+    background: url(../../images/four-product/guoqi-icon1-m.png) no-repeat;
+    background-size: 1.94rem 1.39rem;
+    width:1.94rem;
+    height: 1.39rem;
+    margin: 0 auto;
+    position: absolute;
+    top:0.3rem;
+    left: 2rem;
+}
+.m-chance .layout-2 .item-2 .item-a span.flag1{
+    background: url(../../images/four-product/guoqi-icon2-m.png) no-repeat;
+    background-size: 1.94rem 1.39rem;
+}
+.m-chance .layout-2 .item-2 .item-a span.flag2{
+    background: url(../../images/four-product/guoqi-icon3-m.png) no-repeat;
+    background-size: 1.94rem 1.39rem;
+}
+.m-chance .layout-2 .item-2 .item-a span.flag3{
+    background: url(../../images/four-product/guoqi-icon4-m.png) no-repeat;
+    background-size: 1.94rem 1.39rem;
+}
+.m-chance .layout-2 .item-2 .item-b{
+    font-size: 0.32rem;
+    color: #e5a913;
+    padding:0.8rem 0 0.15rem 0.25rem;
+}
+.m-chance .layout-2 .item-2 .item-c{
+    font-size: 0.28rem;
+    line-height: 0.48rem;
+    text-align: left;
+    padding:0 0.25rem 0.1rem;
+}
+.m-chance .layout-2 .item-2 .item-d img{
+    width: 5.82rem;
+    height: 2.9rem;
+    margin: 0 auto;
+    position: relative;
+    right: -0.05rem;
+}
+
+
+.special-img{
+    margin-left: 0.1rem;
+}
+.m-chance .layout-2 .item-2 .item-e{
+    font-size: 0.32rem;
+    color: #e5a913;
+    text-align: left;
+    padding:0.48rem 0 0.2rem 0.25rem;
+}
+.m-chance .layout-2 .item-2 .item-f{
+    font-size: 0.28rem;
+    text-align: left;
+    padding-left: 0.25rem;
+    padding-bottom: 0.35rem;
+    line-height: 0.48rem;
+}
+.m-chance .item-f img{
+    display: inline-block;
+    width: 0.15rem;
+    height: 0.14rem;
+    margin-right: 0.15rem;
+    vertical-align: middle;
+}
+.m-example{
+    background: #f0f2f5;
+    font-size: 0.28rem;
+    padding-bottom: 0.5rem;
+}
+
+.m-example .layout-1{
+    text-align: center;
+}
+.m-example .layout-1 img{
+    width: 3.94rem;
+    height: 0.43rem;
+    margin: 0 auto;
+}
+.m-example .layout-2{
+    display: flex;
+    padding: 0.7rem 0.25rem 0.4rem;
+}
+.m-example .layout-2 .item-1{
+    background: #e4ebfa;
+    font-size: 0.28rem;
+    width: 35%;
+    text-align: center;
+    padding-top: 0.55rem;
+    padding-bottom: 0.2rem;
+}
+.m-example .layout-2 .item-1 .item-a{
+    color: #e5a913;
+    margin-bottom: 0.77rem;
+}
+.m-example .layout-2 .item-1 ul li{
+    margin-bottom: 0.42rem;
+    width: 1.9rem;
+}
+
+.m-example .layout-2 .item-2 .item-a img,.m-example .layout-2 .item-2 .item-c img{
+    width: 0.33rem;
+    height: 0.31rem;
+}
+table{
+    border-collapse: collapse;
+}
+.m-example .layout-2 .item-2 .item-b{
+    padding-left: 0.1rem;
+    background: #fff;
+}
+.m-example .layout-2 .item-2 .item-b tr{
+    border-bottom: 0.02rem solid #dee5f3;
+}
+.m-example .layout-2 .item-2 .item-b tr:last-child{
+    border-bottom: none;
+}
+.m-example .layout-2 .item-2 .item-b th{
+    font-size: 0.28rem;
+    text-align: center;
+    color: #e5a913;
+    height: 1.14rem;
+
+}
+
+.m-example .layout-2 .item-2 .item-b th span{
+    color: #999999;
+    font-size: 0.26rem;
+}
+.m-example .layout-2 .item-2 .item-b td{
+    font-size: 0.28rem;
+    text-align: center;
+    height: 0.9rem;
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+.m-example .layout-3{
+    font-size: 0.26rem;
+    padding-left: 0.45rem;
+    line-height: 0.48rem;
+}
+.m-example .layout-3 a{
+    display: inline-block;
+    color: #0096dc;
+    border-bottom: 0.025rem solid #0096dc;
+}
+.m-example .layout-3 a:active{
+    background: #999;
+    border-radius: 0.1rem;
+}
+.m-label{
+    background: url(../../images/four-product/pinpai-bg-m.png) no-repeat;
+    width: 7.5rem;
+    height: 9.09rem;
+    background-size: 7.5rem 9.09rem;
+    margin-bottom: 0.5rem;
+}
+.m-label .layout-1 img{
+    width: 3.95rem;
+    height: 0.43rem;
+    margin: 0 auto;
+}
+.m-label .layout-1{
+    text-align: center;
+    margin-bottom: 0.56rem;
+}
+.m-label .layout-2{
+    padding-left: 2.8rem;
+}
+
+.m-label .layout-2 img{
+    width: 3.99rem;
+    height: 1.92rem;
+}
+.m-label .layout-2 div{
+    margin-bottom: 0.4rem;
+}
+.m-footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 6px 0 #ddd;
+    margin: 0 auto;
+    text-align: center;
+    background: #fff;
+    display: flex;
+    height: 1.1rem;
+    align-items: center;
+    justify-content: space-around;
+}
+.m-footer a{
+    display: block;
+    width:2.9rem;
+    height: 0.6rem;
+    text-align: center;
+    margin:0.25rem 0;
+    color: #fff;
+    background: #e5a913;
+    line-height: 0.6rem;
+    font-size: 0.32rem;
+    border-radius: 0.1rem;
+    transition: all 0.3s;
+}
+.m-footer a:active{
+    background: #cb8e06;
+}
+/*头部*/
+.m-header{
+    background-color: #fff;
+    border-bottom: 0.02rem solid #eee;
+    font-size: 0;
+    height: 1rem;
+    padding-top: 0.2rem;
+    padding-left: 0.3rem;
+}
+.m-header .layout-1 .item-1 .left-1 {
+    display: block;
+    background: url(../../images/common/header43.png) no-repeat;
+    background-size: 1.63rem 0.63rem;
+    width: 1.63rem;
+    height: 0.63rem;
+}
+.m-header .layout-1 .item-1 .left-2 {
+    display: inline-block;
+    background: url(../../images/common/header155.png) no-repeat;
+    background-size: 0.27rem 0.43rem;
+    width: .27rem;
+    height: 0.43rem;
+    color: #fff;
+    vertical-align: middle;
+    margin-top: .02rem;
+}
+.m-header .layout-1 .item-1 .left-3 {
+    color: #fff;
+    font-size: .34rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: .1rem;
+}
+.m-copy{
+   font-size: .24rem;
+    color: #666;
+    margin-bottom:1.5rem;
+    text-align: center;
+}
+
+

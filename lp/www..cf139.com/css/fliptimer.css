@@ -1,0 +1,285 @@
+/* Counter */
+.ft_counter {
+    clear:both;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:600;
+    font-style:normal;
+    margin:5px auto;
+    text-align:center;
+    font-size:36px;
+}
+.EightycloudsFlipTimer {
+    width: 575px;
+    height: 90px;
+    margin: 25px auto 0 auto;
+}
+.EightycloudsFlipTimer .block:first-child {
+    //margin-left: 0px;
+}
+.EightycloudsFlipTimer .block {
+    float: left;
+    height: 90px;
+    width: 130px;;
+    margin-left:12px;
+}
+.EightycloudsFlipTimer .block_left {
+    height: 90px;
+    width:59px;
+    float:left;
+    position: relative;
+}
+.EightycloudsFlipTimer .block_left_top {
+    height: 45px;
+    width:100%;
+    position: absolute;
+    top:0;
+    left:2px;
+    z-index: 0;
+    //background:#fff;
+    background: url("//img.getfc.com.cn/source/www/zt/non-farm-new/digit-top.png") no-repeat;
+    overflow: hidden;
+    box-shadow:  0px 1px 4px 1px rgba(0, 0, 0, 0.6);
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+.EightycloudsFlipTimer .block_middle_separator {
+    height: 45px;
+    width: 100%;
+    position: absolute;
+    top:45px;
+    left:0;
+	background:url("//img.getfc.com.cn/source/www/zt/non-farm/images/CF_a63/middle_separator.png") no-repeat;
+    z-index: 1;
+}
+.EightycloudsFlipTimer .block_left_bottom {
+    height: 45px;
+    width: 100%;
+    position: absolute;
+    top:45px;
+    left:2px;
+    z-index: 0;
+    //background:#FFF;
+    background: url("//img.getfc.com.cn/source/www/zt/non-farm-new/digit-bottom.png") no-repeat;
+    overflow: hidden;
+    box-shadow:  0px 1px 4px 1px rgba(0, 0, 0, 0.6);
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+}
+.EightycloudsFlipTimer .block_left_top_count {
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 76px;
+    color:#fff;
+    text-align: center;
+    margin-top:5px;
+    font-size: 72px;
+}
+.EightycloudsFlipTimer .block_left_bottom_count {
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 95px;
+    color:#fff;
+    text-align: center;
+    margin-top:-50px;
+    font-size: 72px;
+    
+}
+.EightycloudsFlipTimer .block_right {
+    margin-left:4px;
+    height: 90px;
+    width:59px;
+    float:left;
+    position: relative;
+}
+.EightycloudsFlipTimer .block_right_top {
+    height: 90px;
+    width:100%;
+    position: absolute;
+    top:0;
+    left:2px;
+    z-index: 0;
+    //background:#fff;
+    background: url("//img.getfc.com.cn/source/www/zt/non-farm-new/digit-top.png") no-repeat;
+    overflow: hidden;
+    box-shadow:  0px 1px 4px 1px rgba(0, 0, 0, 0.6);
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+.EightycloudsFlipTimer .block_middle_separator {
+    height: 45px;
+    width: 100%;
+    position: absolute;
+    top:45px;
+    left:0;
+    background-image:url("//img.getfc.com.cn/source/www/zt/non-farm/images/middle_separator.png");
+    z-index: 1;
+}
+.EightycloudsFlipTimer .block_right_bottom {
+    height: 45px;
+    width: 100%;
+    position: absolute;
+    top:45px;
+    left:2px;
+    z-index: 0;
+    //background:#FFF;
+    background: url("//img.getfc.com.cn/source/www/zt/non-farm-new/digit-bottom.png") no-repeat;
+    overflow: hidden;
+    box-shadow:  0px 1px 4px 1px rgba(0, 0, 0, 0.6);
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+}
+.EightycloudsFlipTimer .block_right_top_count {
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 76px;
+    color:#fff;
+    text-align: center;
+    margin-top:5px;
+    font-size: 72px;
+}
+.EightycloudsFlipTimer .block_right_bottom_count {
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 95px;
+    color:#fff;
+    text-align: center;
+    margin-top:-50px;
+    margin-left:2px;
+    font-size: 72px;
+}
+.EightycloudsFlipTimer .block_text {
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    width:100%;
+    color:#FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+	clear:both;
+}
+.EightycloudsFlipTimer .block_effect1 {
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    top:1px;
+    left:2px;
+    z-index: 0;
+    background:#FFF;
+}
+.EightycloudsFlipTimer .block_effect2 {
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    top:2px;
+    left:2px;
+    z-index: 0;
+    background:#d5d5d5;
+}
+.EightycloudsFlipTimer .block_effect3 {
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    bottom:5px;
+    left:2px;
+    z-index: 0;
+    background:#d6d6d6;
+}
+.EightycloudsFlipTimer .block_effect4 {
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    bottom:0px;
+    left:2px;
+    z-index: 0;
+    background:#ccc;
+}
+.EightycloudsFlipTimer .block_effect5 {
+    height:45px;
+    width: 100%;
+    position: absolute;
+    top:3px;
+    left:3px;
+    z-index: 0;
+    background:#e7e7e7;
+    border-top:1px solid #ccc;
+    border-left:1px solid #ccc;
+    opacity:0.9;
+    display: none;
+}
+.EightycloudsFlipTimer .block_effect6 {
+    height:0px;
+    width: 100%;
+    position: absolute;
+    top:20px;
+    left:10px;
+    z-index: 0;
+    background:#fff;
+    border-bottom:1px solid #ccc;
+    border-left:1px solid #ccc;
+    opacity:0.9;
+    display: none;
+}
+/* Seconds Specifics */
+
+/* Numbers */
+.EightycloudsFlipTimer .block.seconds .block_left_top_count {
+    color: #fff;
+}
+.EightycloudsFlipTimer .block.seconds .block_left_bottom_count {
+    color: #fff;
+}
+.EightycloudsFlipTimer .block.seconds .block_right_top_count { 
+    color:  #fff;
+}
+.EightycloudsFlipTimer .block.seconds .block_right_bottom_count { 
+    color: #fff;
+}
+/* Backgrounds */
+.EightycloudsFlipTimer .block.seconds .block_right_top {
+    //background:linear-gradient(#fff,#464646)
+    background: url("//img.getfc.com.cn/source/www/zt/non-farm-new/digit-top.png") no-repeat;
+}
+.EightycloudsFlipTimer .block.seconds .block_right_bottom {
+    //background:linear-gradient(#464646,#fff)
+    background: url("//img.getfc.com.cn/source/www/zt/non-farm-new/digit-bottom.png") no-repeat;
+}
+.EightycloudsFlipTimer .block.seconds .block_left_top {
+    //background:#fff;
+    background: url("//img.getfc.com.cn/source/www/zt/non-farm-new/digit-top.png") no-repeat;
+	//border-top:1px solid #666;
+}
+.EightycloudsFlipTimer .block.seconds .block_left_bottom {
+    //background:#fff;
+    background: url("//img.getfc.com.cn/source/www/zt/non-farm-new/digit-bottom.png") no-repeat;
+}
+/* Middle Separator */
+.EightycloudsFlipTimer .block.seconds .block_middle_separator {
+    background-image:url("//img.getfc.com.cn/source/www/zt/non-farm/images/middle_separator.png");
+}
+.EightycloudsFlipTimer .block.seconds .block_effect5 {
+    background:linear-gradient(#616161,#464646);
+	border-top:1px solid #666;
+    border-left:1px solid #666;
+}
+.EightycloudsFlipTimer .block.seconds .block_effect6 {
+    background:#666;
+	border-bottom:1px solid #666;
+    border-left:1px solid #666;
+}
+.public{
+    position: absolute;
+    width:12px;
+    height:25px;
+    background:url("//img.getfc.com.cn/source/www/zt/non-farm/images/dian_icon.png") no-repeat;
+}
+.ft_counter{
+    position:relative;
+}
+.public.point1{
+    left:68px;
+    top:7px;
+}
+.public.point2{
+    left:145px;
+    top:7px;
+}
+.public.point3{
+    left:220px;
+    top:7px;
+}

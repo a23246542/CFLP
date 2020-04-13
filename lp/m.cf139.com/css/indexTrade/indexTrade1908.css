@@ -1,0 +1,416 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0; color: #393939}
+.inner{width: 100%; margin: 0 auto; position: relative}
+img{ overflow:hidden;display:block;border: none;}
+.down-footer{padding-bottom: 1.2rem}
+.web-banner{
+    overflow: hidden;
+    width: 100%;
+    height: 10rem;
+    background: url("../../images/indexTrade1908/banner-bg.jpg") no-repeat top center;
+    background-size: 100% 100%;
+    position: relative;
+}
+.web-banner img{
+    overflow: hidden;
+    width: 5.63rem;
+    margin: 2.11rem auto 0;
+}
+.btn{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-top: env(safe-area-inset-bottom);
+}
+.btn a{
+    overflow: hidden;
+    width: 2.5rem;
+    height: .8rem;
+    line-height: .8rem;
+    text-align: center;
+    font-size: .28rem;
+    text-decoration: none;
+    border-radius: .06rem;
+    transition:  all .3s;
+    margin: .2rem .45rem 0;
+}
+.btn a.account{
+    background: #e8a70a;
+    color: #fff;
+}
+.btn a.account:hover{
+    background: transparent;
+    border: solid 1px #fff;
+    color: #fff;
+}
+.btn a.chat{
+    border: solid 1px #fff;
+    color: #fff;
+}
+.btn a.chat:hover{
+    border: solid 1px #e8a70a;
+    background: #e8a70a;
+    color: #fff;
+}
+.web-page{overflow: hidden;}
+.web-page.bgColor1{background: #f5f5f5}
+.web-page.bg4{
+    background: url("../../images/indexTrade1908/neiye-bg4.jpg") no-repeat center;
+    background-size: 100% 100%;
+    height: 1.2rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 7.5rem;
+    z-index: 999;
+    padding-bottom: env(safe-area-inset-bottom);
+}
+.web-page .title {
+    overflow: hidden;
+    margin-top: .9rem;
+    text-align: center;
+}
+.web-page .title span{
+    overflow: hidden;
+    display: block;
+    font-size: .4rem;
+    line-height: .58rem;
+    font-weight: bold;
+}
+.web-page .title p{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    line-height: .28rem;
+    text-align: center;
+    width: 5.2rem;
+    margin: .1rem auto 0;
+}
+.web-page .title a{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    width: 2rem;
+    height: .56rem;
+    line-height: .56rem;
+    border-radius: .06rem;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    background: #e8a70a;
+    margin: .2rem auto 0;
+    transition: all .5s;
+}
+.web-page .title a:hover{
+    width: 2.1rem;
+    transition: all .5s;
+}
+.web-page .conList {
+    overflow: hidden;
+    width: 7.25rem;
+    margin: .4rem 0 .9rem .25rem
+}
+.web-page .conList .swiper-container{height: 3.6rem}
+.web-page .conList .swiper-container .swiper-slide{width: 2.6rem;margin:0 .15rem 0 .15rem}
+.web-page .conList .item{
+    overflow: hidden;
+    width: 2.6rem;
+    height: 3.3rem;
+    background: #fff;
+    border-radius: .06rem;
+    margin: .2rem auto;
+    box-shadow: 0 0 .16rem rgba(39,55,87,.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.web-page .conList .item .itemWidth{
+    overflow: hidden;
+    width: 2.4rem;
+    height: 3.1rem;
+    border-radius: .06rem;
+    border: solid 1px #e7e7e7;
+}
+.web-page .conList .item .itemWidth .flag{
+    overflow: hidden;
+    position: relative;
+    width: 1.1rem;
+    height: 1.1rem;
+    margin: .4rem auto .15rem;
+}
+.web-page .conList .item .itemWidth .flag img{margin: 0 auto;width: 1rem}
+.web-page .conList .item .itemWidth .flag img.pos{
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    width: .4rem;
+}
+.web-page .conList .item .itemWidth span,.web-page .conList .item .itemWidth p{
+    overflow: hidden;
+    display: block;
+    font-weight: bold;
+    font-size: .32rem;
+    text-align: center;
+}
+.web-page .conList .item .itemWidth p{
+    font-size: .28rem;
+    color: #888;
+    font-weight: normal;
+}
+.web-page .conList .item .itemWidth em{
+    overflow: hidden;
+    display: block;
+    background: #bcbcbc;
+    width: .62rem;
+    height: .02rem;
+    margin: .15rem auto;
+}
+.web-page .layout{
+    overflow: hidden;
+    position: relative;
+    margin: .3rem 0 .7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.web-page .layout .item{
+    overflow: hidden;
+    width: 2.86rem;
+    height: 2.88rem;
+    margin: .3rem;
+}
+.web-page .layout .item.pos1{
+    background: url("../../images/indexTrade1908/icon1.png") no-repeat center;
+    background-size: 100% 100%;
+}
+.web-page .layout .item.pos2{
+    background: url("../../images/indexTrade1908/icon2.png") no-repeat center;
+    background-size: 100% 100%;
+}
+.web-page .layout .item.pos3{
+    background: url("../../images/indexTrade1908/icon3.png") no-repeat center;
+    background-size: 100% 100%;
+}
+.web-page .layout .item.pos4{
+    background: url("../../images/indexTrade1908/icon4.png") no-repeat center;
+    background-size: 100% 100%;
+}
+.web-page .layout .item span,.web-page .layout .item p{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-size: .24rem;
+    color: #fff;
+}
+.web-page .layout .item span{
+    font-size: .28rem;
+    font-weight: bold;
+    margin: 1.55rem 0 0;
+}
+.web-page .conList1{overflow: hidden;margin: .55rem 0 .6rem}
+.web-page .conList1 ul{
+    overflow: hidden;
+    width: 4.52rem;
+    margin: 0 auto;
+}
+.web-page .conList1 ul li{
+    overflow: hidden;
+    background: #fff;
+    border-radius: .06rem;
+    margin-bottom: .4rem;
+}
+.web-page .conList1 ul li img{width: 100%}
+.web-page .conList1 ul li span{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-size: .28rem;
+    height: .74rem;
+    line-height: .74rem;
+}
+/*弹窗*/
+.tc-hide{
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
+.masking{
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+}
+.popup-box {
+    overflow: hidden;
+    max-width:95%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top:10%;
+    background: #fff;
+    z-index: 99999;
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 .1rem rgba(0, 0, 0, 0.3);
+}
+.popup-box .box-in {
+    margin: 3% 4% 5% 4%;
+    overflow-y: auto;
+    height: 8rem;
+}
+.popup-box .close-top{
+    padding:0.5rem 0.3rem;
+    font-size: 0.44rem;
+    color:#b78255;
+    text-align: center;
+    border-bottom: 1px solid #b78255;
+    width:5.5rem;
+    margin: 0 auto;
+    position: relative;
+}
+.popup-box .close-top a{
+    background: url(../../images/indexTrade/close-b.png) no-repeat;
+    width: 0.21rem;
+    height:0.21rem;
+    background-size: 0.21rem 0.21rem;
+    position: absolute;
+    right: 0;
+    margin-top: .2rem;
+    text-decoration: none;
+}
+.popup-box .section1 h2{
+    font-size: 0.36rem;
+    margin-bottom: 0.1rem;
+    color: #b78255;
+}
+.popup-box .section5 h2{
+    font-size: 0.36rem;
+    margin-bottom: 0.1rem;
+    color: #b78255;
+}
+.popup-box table.data-box {
+    width: 100%;
+    margin: 16px auto .25rem;
+    text-align: center;
+    border: 0 !important;
+    font-size: 1.6em;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.popup-box .box-in .line-throw{font-size: 0.32rem;}
+.popup-box  .box-in .section1 p{
+    font-size:0.28rem;
+    margin-bottom: 0.2rem;
+    line-height: 1.8;
+}
+.popup-box  .box-in .section3 p{
+    font-size:0.28rem;
+    margin-bottom: 0.2rem;
+    line-height: 1.8;
+}
+.popup-box .box-in .section3 p a{color: #0096dc}
+.popup-box  .box-in .section3 p span{
+    padding-right:0.15rem;
+}
+.popup-box  .box-in .section4  h2{
+    font-size: 0.36rem;
+    margin-bottom: 0.1rem;
+    color: #b78255;
+}
+.popup-box  .box-in .section4 li{
+    font-size: 0.28rem;
+    line-height: 1.8;
+}
+.popup-box  .box-in .section4 li span{
+    margin-right: 0.15rem;
+}
+.popup-box  .box-in .section4 li p{
+    display: flex;
+}
+
+.popup-box table.data-box thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box thead th {
+    font-size: 16px;
+    text-align: center;
+    padding: .15rem 5px;
+    color: #FFFFFF;
+    background: #dcb08e;
+    line-height: 1.0;
+}
+.popup-box table.data-box thead tr {
+    border: 1px solid #dcb08e;
+}
+.popup-box table.data-box tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box tbody td {
+    line-height: 1.0;
+    text-align: center;
+    color: #333333;
+    padding: 1.44%;
+    font-size: 14px;
+    border: 0.025rem solid #ead5c2;
+    font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+}
+.popup-box table.data-box tbody .unit {
+    font-size: 0.8em;
+}
+.popup-box table.data-box tbody tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.popup-box table.data-box tbody tr.grey {
+    background: #fff;
+}
+.popup-box table.data-box tbody tr.last-row td {
+    border-bottom: 1px solid #CCCCCC;
+}
+.popup-box table.data-box .first-child {
+    text-align: center;
+    font-size: 16px;
+}
+.popup-box table.data-box .first-child a {
+    color: #666666;
+    text-decoration: none;
+}
+.popup-box .table1 td,
+.popup-box .table2 td {
+    width: 25%;
+}
+.popup-box .table4 td {
+    width: 16%;
+}
+.popup-box .table3 td {
+    width: 33.333333%;
+}
+.popup-box .note{line-height: 1.8;font-size: 0.24rem;margin-bottom: 0.1rem}
+.popup-box .note span{color: #f00}
+.section5 ol li{
+    font-size: .28rem;
+    line-height: 2.2;
+    text-align: justify;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}

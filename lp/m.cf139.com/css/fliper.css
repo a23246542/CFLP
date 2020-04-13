@@ -1,0 +1,24 @@
+.m-banner .layout-3{
+    background: rgba(255,255,255,0.9);
+    text-align: center;
+    margin: 0 auto;
+    font-size: 0;
+    padding: 0.25rem 0;
+    width:100%;
+    margin-bottom: 0.2rem;
+
+}
+.fliper-text{
+    font-size: 0.28rem;
+    color: #333;
+}
+.fliper-text i{
+    display: inline-block;
+    width: 0.24rem;
+    height: 0.25rem;
+    background: url(../images/campaign1710/m-tel-icon.png) no-repeat;
+    background-size: 0.24rem 0.25rem;
+    -webkit-animation:back-x-spin 5s linear infinite;
+    -moz-animation:back-x-spin 5s linear infinite;
+    animation:back-x-spin 5s linear infinite;
+}

@@ -1,0 +1,708 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0; color: #333;}
+img{ overflow:hidden;display:block;border: none;}
+.e-header .header{
+    background: none;
+}
+.web-banner{
+    width: 100%;
+    height: 1107px;
+    background: url("//img.getfc.com.cn/source/www/zt/elder/banner-bg.png") no-repeat top center;
+    margin-top:-74px;
+    position: relative;
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.web-banner img.logo{
+    margin: 166px 28% 34px 0;
+}
+.web-banner img.font{
+    margin-right: 18.5%;
+}
+.web-banner .con{
+    overflow: hidden;
+    margin-right: 24%;
+}
+.web-banner .con span{
+    overflow: hidden;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+.web-banner .con span.line{
+    width: 30px;
+    height: 2px;
+    background: #ff8500;
+    margin: 64px 0 10px 0;
+}
+.web-banner .con span.color{
+    display: inline;
+    font-size: 24px;
+    margin-right: 20px;
+}
+.web-banner .con span.size{
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+.web-banner .con span.size01{
+    display: inline;
+    font-size: 28px;
+    color: #ff8500;
+}
+.web-banner .con p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+.web-banner .con p.margintop{margin-top: 15px}
+.web-title{
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    background: url("//img.getfc.com.cn/source/www/zt/elder/icon-tit-bg.png") no-repeat top right;
+    width: 645px;
+    height: 177px;
+    margin: -130px auto 0 auto;
+    padding: 15px 0 0 0;
+}
+.web-title span{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-size: 34px;
+    line-height: 40px;
+    font-weight: bold;
+}
+.web-title span.color{color: #ff8500;display: inline}
+.web-title p{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-size: 27px;
+    line-height: 40px;
+    font-weight: lighter;
+}
+.web-title img:first-child{
+    margin:0 0 10px 116px;
+}
+.web-title img:last-child {
+    float: right;
+    margin: 15px 116px 0 0;
+}
+.web-page{
+    overflow: hidden;
+}
+.web-page.flex{
+    display: flex;
+    justify-content: left;
+}
+.web-page.bg-color {
+    background: #e7e9f2;
+    margin-top: 26px;
+    border-bottom: solid 45px #ff8500;
+    position: relative;
+}
+.web-page.position{margin-top: 80px}
+.web-page.center{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    margin: 95px 0 78px 0;
+}
+.web-page.center01{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 40px 0 30px;
+}
+.web-page .title{
+    overflow: hidden;
+    background: url("//img.getfc.com.cn/source/www/zt/elder/icon-bg02.png") no-repeat center bottom;
+    width: 1076px;
+    height: 346px;
+    margin: 84px auto 0 auto;
+    position: relative;
+    z-index: 1;
+}
+.web-page.flex .title{
+    background: url("//img.getfc.com.cn/source/www/zt/elder/icon-bg03.png") no-repeat left bottom;
+    width: 665px;
+    height: 458px;
+    margin: 122px 0 0 -45px;
+}
+.web-page.position .title{
+    background: url("//img.getfc.com.cn/source/www/zt/elder/icon-bg05.png") no-repeat center top;
+    width: 744px;
+    height: 384px;
+    margin: 0;
+    position: absolute;
+    z-index: 11;
+    left: 16%;
+}
+.web-page.center .title {
+    width: 600px;
+    height: auto;
+    margin: 0;
+    background: url("//img.getfc.com.cn/source/www/zt/elder/icon-tit-bg.png") no-repeat top right;
+    padding-bottom: 30px;
+}
+.web-page.center01 .title {
+    width: 500px;
+    height: auto;
+    margin: 0;
+    background: url("//img.getfc.com.cn/source/www/zt/elder/icon-tit-bg01.png") no-repeat top left;
+    padding-bottom: 30px;
+}
+.web-page .title .item{
+    overflow: hidden;
+    margin-top: 48px;
+}
+.web-page.position .title .item{margin-top: 100px}
+.web-page.center .title .item{margin-top: 0;margin-left: 6%}
+.web-page .title .item span{
+    overflow: hidden;
+    display: block;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+.web-page.flex .title .item span{
+    width: 76%;
+    text-align: left;
+    margin: 0 auto;
+    font-size: 30px;
+    line-height: 36px;
+}
+.web-page.position .title .item span{
+    width: 76%;
+    margin: 0 auto;
+    font-size: 30px;
+    line-height: 36px;
+}
+.web-page .title .item span.line{
+    width: 30px;
+    height: 2px;
+    background: #ff8500;
+    margin: 20px auto 18px auto;
+}
+.web-page.flex .title .item span.line{margin: 80px 0 8px 12%}
+.web-page.center .title .item span.line{margin: 70px 0 8px 0}
+.web-page.center01 .title .item span.line{margin: 10px 0 8px 95px}
+.web-page .title .item span.dot{
+    width: 3px;
+    height: 5px;
+    background: #ff8500;
+    margin: 0 0 3px 12%;
+}
+.web-page.center .title .item span.dot{margin-left: .5%}
+.web-page .title .item span.color{color: #ff8500;display: inline}
+.web-page.position .title .item span.color{display: block}
+.web-page.center .title .item span.color{color: #ff8500;display: block;text-align: left;margin-left: 0;font-size: 30px;}
+.web-page.center01 .title .item span.color{margin-left: 95px;font-size: 30px;}
+.web-page .title .item span.size {
+    color: #ff8500;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 30px;
+    text-align: left;
+    width: 76%;
+    margin: 0 auto;
+}
+.web-page.center .title .item span.size {
+    color: #ff8500;
+    font-size: 24px;
+    margin-left: 0;
+    text-align: left;
+    margin-top: 35px;
+    width: 100%;
+}
+.web-page .title .item p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 30px;
+    color: #4b4b4b;
+    width: 76%;
+    margin: 35px auto 0 auto;
+}
+.web-page.flex .title .item p{font-size: 14px;margin-bottom: 35px;margin-top: 30px}
+.web-page.flex .title .item p span{font-size: 14px;color: #ff8500;display: inline}
+.web-page.position .title .item p{font-size: 14px;margin-bottom: 0;margin-top: 0}
+.web-page.position .title .item p span{font-size: 14px;color: #ff8500;display: block;text-align: left;margin-left: 0}
+.web-page.center .title .item p{font-size: 14px;margin: 25px 0 25px 0;width: 100%}
+.web-page.center01 .title .item p{font-size: 14px;margin: 25px 0 25px 95px;width: 70%}
+.web-page .title .item-title{
+    overflow: hidden;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    background: url("//img.getfc.com.cn/source/www/zt/elder/icon-bg01.png") no-repeat;
+    width: 125px;
+    height: 100px;
+}
+.web-page.position .title .item-title{top: 12px;right: auto;left: 70px}
+.web-page .title .item-title span{
+    overflow: hidden;
+    display: block;
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    margin-top: 12px;
+}
+.web-page .title .item-title p{
+    overflow: hidden;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+.web-page .title .item-btn{
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    margin: 40px 0 0 6%;
+    position: relative;
+}
+.web-page .title .item-btn a{
+    overflow: hidden;
+    display: block;
+    width: 220px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border: solid 1px #ea7a00
+}
+.web-page .title .item-btn a.yes{
+    background: #ff8500;
+    color: #fff;
+    margin-right: 28px;
+}
+.web-page .title .item-btn a.no{
+    color: #666;
+    border: solid 1px #bfbfbf;
+}
+.web-page .title .item-btn a:hover{background: #ea7a00;color: #fff;border: solid 1px #ea7a00}
+.web-page .title .item-btn01{
+    overflow: hidden;
+    margin: 5px 0 0 6%;
+    position: absolute;
+    text-align: center;
+    font-size: 16px;
+    width: 78%;
+    bottom: 0;
+    display: none;
+}
+.web-page .masking{
+    overflow: hidden;
+    background: rgba(249,220,188,.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.web-page .slider {
+    overflow: hidden;
+    position: relative;
+    height: 713px;
+    margin-top: -155px;
+    z-index: 0;
+}
+.web-page .slider01 {
+    overflow: hidden;
+    position: relative;
+    background: url("//img.getfc.com.cn/source/www/zt/elder/icon-bg04.png") no-repeat center;
+    background-size: 100% 465px;
+    width: 90%;
+    height: 500px;
+    z-index: 0;
+    margin: 76px auto 15px auto;
+    padding-left: .5%;
+}
+.web-page .slider01 .layout{
+    overflow: hidden;
+    width: 98%;
+    margin: 45px auto 0 auto;
+    border-radius: 60px;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    position: relative;
+}
+.web-page .slider .masking{
+    overflow: hidden;
+    background: rgba(249,220,188,.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.web-page .slider .map{
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+}
+.web-page .slider .map .item{
+    overflow: hidden;
+    width: 1082px;
+    margin: 120px auto 0 auto;
+    padding-top: 91px;
+    position: relative;
+}
+.web-page .slider .map .item span{
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    color: #fff;
+    font-size: 42px;
+    cursor: pointer;
+    background: url("//img.getfc.com.cn/source/www/zt/elder/icon-map.png") no-repeat;
+}
+.web-page .slider .map .item span:hover {
+    color: #ff8500;
+    background: url("//img.getfc.com.cn/source/www/zt/elder/icon-map-hover.png") no-repeat;
+    font-weight: bold;
+}
+.web-page .slider .map .item span.hover {
+    color: #ff8500;
+    background: url("//img.getfc.com.cn/source/www/zt/elder/icon-map-hover.png") no-repeat;
+    font-weight: bold;
+}
+.web-page .slider .map .item span.dg{
+    left: 68px;
+    top: 255px;
+    background-position: bottom center;
+    padding-bottom: 30px;
+}
+.web-page .slider .map .item span:hover.dg {
+    padding-bottom: 40px;
+    top: 245px;
+}
+.web-page .slider .map .item span.hover.dg {
+    padding-bottom: 40px;
+    top: 245px;
+}
+.web-page .slider .map .item span.sg{
+    left: 206px;
+    top: 312px;
+    background-position: top center;
+    padding-top: 30px;
+}
+.web-page .slider .map .item span:hover.sg{
+    padding-top: 40px;
+    top: 300px;
+}
+.web-page .slider .map .item span.hover.sg{
+    padding-top: 40px;
+    top: 300px;
+}
+.web-page .slider .map .item span.ps{
+    left: 340px;
+    top: 230px;
+    background-position: bottom center;
+    padding-bottom: 30px;
+}
+.web-page .slider .map .item span:hover.ps{
+    top: 220px;
+    padding-bottom: 40px;
+}
+.web-page .slider .map .item span.hover.ps{
+    top: 220px;
+    padding-bottom: 40px;
+}
+.web-page .slider .map .item span.hy{
+    left: 482px;
+    top: 223px;
+    background-position: top center;
+    padding-top: 40px;
+}
+.web-page .slider .map .item span:hover.hy{
+    top: 213px;
+    padding-top: 50px;
+}
+.web-page .slider .map .item span.hover.hy{
+    top: 213px;
+    padding-top: 50px;
+}
+.web-page .slider .map .item span.hn{
+    right: 375px;
+    top: 137px;
+    background-position: bottom center;
+    padding-bottom: 30px;
+}
+.web-page .slider .map .item span:hover.hn{
+    top: 127px;
+    padding-bottom: 40px;
+}
+.web-page .slider .map .item span.hover.hn{
+    top: 127px;
+    padding-bottom: 40px;
+}
+.web-page .slider .map .item span.hz{
+    right: 246px;
+    top: 295px;
+    background-position: top center;
+    padding-top: 30px;
+}
+.web-page .slider .map .item span:hover.hz{
+    top: 285px;
+    padding-top: 40px;
+}
+.web-page .slider .map .item span.hover.hz{
+    top: 285px;
+    padding-top: 40px;
+}
+.web-page .slider .map .item span.lh{
+    right: 194px;
+    top: 130px;
+    background-position: bottom right;
+    padding-bottom: 30px;
+}
+.web-page .slider .map .item span:hover.lh{
+    top: 120px;
+    padding-bottom: 40px;
+}
+.web-page .slider .map .item span.hover.lh{
+    top: 120px;
+    padding-bottom: 40px;
+}
+.web-page .slider .map .item span.ba{
+    right: 19px;
+    top: 120px;
+    background-position: top left;
+    padding-top: 40px;
+}
+.web-page .slider .map .item span:hover.ba{
+    top: 108px;
+    padding-top: 50px;
+}
+.web-page .slider .map .item span.hover.ba{
+    top: 108px;
+    padding-top: 50px;
+}
+.web-page .slider .map .item span.dp{
+    right: 0;
+    top: 10px;
+    background-position: bottom right;
+    padding-bottom: 30px;
+}
+.web-page .slider .map .item span:hover.dp{
+    top: 0;
+    padding-bottom: 40px;
+}
+.web-page .slider .map .item span.hover.dp{
+    top: 0;
+    padding-bottom: 40px;
+}
+.web-page .slider li{float: left}
+.web-page .slider li .img-w {
+    overflow: hidden;
+    width: 237px;
+    height: 237px;
+}
+.web-page .slider li .img-w img {
+    width: 100%;
+    height: 100%;
+}
+.web-page .slider01 .layout li{float: left;width: 435px}
+.web-page .slider01 .layout li img{margin-right: 35px}
+.web-page .slider01 .layout-nav {
+    overflow: hidden;
+    margin-top: 35px;
+}
+.web-page .slider01 .layout-nav ul{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.web-page .slider01 .layout-nav ul li{
+    overflow: hidden;
+    display: block;
+    text-indent:-999px;
+    float:left;
+    margin: 0 4px;
+    width: 22px;
+    height: 5px;
+    border-radius: 2.5px;
+    background: #c1c1c1;
+    cursor: pointer;
+}
+.web-page .slider01 .layout-nav ul li.on{background: #ff8500}
+.web-page .slider-logo{
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    left: 5.8%;
+    bottom: 20px;
+    border-radius: 100%;
+}
+.web-page .slider-con{
+    overflow: hidden;
+    position: relative;
+    width: 960px;
+    margin-top: 140px;
+}
+.web-page .con-list{
+    overflow: hidden;
+    width: 600px;
+}
+.web-page .con-masking{
+    overflow: hidden;
+    width: 600px;
+    height: 100%;
+    background: rgba(255,255,255,.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.web-page .con-video{
+    overflow: hidden;
+    background: url("//img.getfc.com.cn/source/www/zt/elder/icon-bg06.png") no-repeat;
+    width: 790px;
+    height: 471px;
+}
+.web-page .con-video .video{
+    overflow: hidden;
+    display: block;
+    width: 730px;
+    height: 411px;
+    margin: 30px auto 0 auto;
+}
+.web-page .con-logo{
+    overflow: hidden;
+    margin: 0 0 50px 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.web-page .page8-list{
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 23px;
+}
+.web-page .page8-list.hide{visibility: hidden}
+.web-page .page8-list .left-img{
+    margin-right: 10px;
+}
+.web-page .page8-list .left-img img{transition: all 0.35s ease-in;}
+.web-page .page8-list:hover .left-img img{
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    transform: scale(1.02);
+    transition: all 0.35s ease-in;
+}
+.web-page .page8-list .right-con{
+    overflow: hidden;
+}
+.web-page .page8-list .right-con p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    color: #333;
+    width: 280px;
+    margin-bottom: 10px;
+}
+.web-page .page8-list:hover .right-con p{color: #ff8500}
+.web-page .page8-list .right-con span{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    color: #999;
+}
+    /*轮播*/
+.gallery-top {
+    width: 100%;
+    margin-bottom: 12px;
+}
+.swiper-container.gallery-top {
+    position: static;
+    width: 100%;
+    height: 317px;
+    margin: 0 auto;
+}
+.gallery-thumbs {
+    width: 944px;
+    height: 170px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+.swiper-container.gallery-thumbs a{
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    cursor: pointer;
+    width: 38px;
+    height: 38px;
+}
+.swiper-container.gallery-thumbs a.arrow-left {
+    left: 45.5%;
+    background: url("//img.getfc.com.cn/source/www/zt/elder/arrow-left.png") no-repeat;
+}
+.swiper-container.gallery-thumbs a.arrow-left:hover{background: url("//img.getfc.com.cn/source/www/zt/elder/arrow-left-hover.png") no-repeat;}
+.swiper-container.gallery-thumbs a.arrow-right {
+    right: 45.5%;
+    background: url("//img.getfc.com.cn/source/www/zt/elder/arrow-right-hover.png") no-repeat;
+}
+.gallery-thumbs .swiper-slide {
+    width: 308px;
+    cursor: pointer;
+}
+.gallery-thumbs .swiper-slide img{
+    width: 100%;
+}
+#certify {
+    width: 840px;
+    padding-bottom: 35px;
+    position: relative;
+    margin-top: 50px;
+}
+#certify .swiper-slide{
+    width: 600px;
+    position: relative;
+    cursor: pointer;
+}
+#certify .swiper-pagination {
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#certify .swiper-slide .con-masking{display: block}
+#certify .swiper-slide-active .con-masking{display: none}
+/*#certify .swiper-slide-active{margin-left: -160px}*/
+.swiper-pagination-bullet{opacity: 1}
+#certify .swiper-pagination-bullets .swiper-pagination-bullet {
+    overflow: hidden;
+    display: block;
+    float: left;
+    margin: 0 4px;
+    width: 22px;
+    height: 5px;
+    border-radius: 2.5px;
+    background: #ededed;
+    cursor: pointer;
+}
+#certify .swiper-pagination-bullets .swiper-pagination-bullet-active {
+    background: #ff8500;
+}

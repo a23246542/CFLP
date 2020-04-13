@@ -1,0 +1,242 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0;color:#333;position: relative}
+.inner{overflow: hidden; margin: 0 auto; position: relative}
+img{ overflow:hidden;border: none;}
+.e-header .header{
+    background: none;
+}
+body{
+    font-family: "微软雅黑", Helvetica, STHeiTi, sans-serif;
+}
+.web-banner{
+    width: 7.5rem;
+    height: 10.5rem;
+    text-align: center;
+    background: url("//img.getfc.com.cn/source/www/zt/stockTrade/mobile-banner.png") no-repeat center;
+    background-size: 7.5rem 10.5rem;
+    padding-top: .3rem;
+    box-sizing: border-box;
+}
+.web-banner img{
+    width: 6.89rem;
+}
+
+.web-page{
+    overflow: hidden;
+    width: 100%;
+    background: #fff;
+   text-align: center;
+}
+.title{
+    margin: .9rem auto .6rem;
+    font-size: 0;
+}
+.title span{
+   font-weight: bold;
+    font-size: .36rem;
+    color: #333;
+    margin:0 .2rem;
+}
+.title img{
+    width: .53rem;
+    height: .15rem;
+}
+.title img.first{
+    transform: rotateY(180deg);
+}
+
+.adv-list ul {
+    padding-left:.4rem;
+}
+.adv-list ul li{
+    float: left;
+    width: 42%;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: .6rem;
+    text-align: left;
+    margin-right: .8rem;
+}
+.adv-list ul li:nth-child(2),.adv-list ul li:nth-child(4),.adv-list ul li:nth-child(6){
+    margin-right: 0;
+}
+.adv-list ul li img{
+    width: .48rem;
+    margin-right: .15rem;
+}
+.adv-list ul li:nth-child(2) img,.adv-list ul li:nth-child(4) img{
+    width: .56rem;
+}
+.adv-list ul li:nth-child(5) img{
+    width: .61rem;
+}
+.adv-list ul li:nth-child(5),.adv-list ul li:nth-child(6){
+   padding-bottom: 0;
+}
+.adv-list ul li .item-1{
+    font-size: .28rem;
+    font-weight: bold;
+}
+.adv-list ul li .item-2{
+    font-size: .24rem;
+    color: #666;
+}
+.btn-open {
+    position: relative;
+    height: 2.5rem;
+}
+.btn-open .shadow-btn{
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.shadow-btn img{
+    width: 5.19rem;
+}
+.btn-open a{
+    display: block;
+    width: 5rem;
+    height:.8rem;
+    line-height:.8rem;
+    font-size: .32rem;
+    font-weight: bold;
+    color: #fff;
+    background: #138ce9;
+    /*margin: .4rem auto .9rem;*/
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.stock-info .info-detail{
+    font-size: .24rem;
+    color: #666;
+}
+.stock-info .info-detail .item-2{
+    margin: .3rem auto;
+}
+.bg-02{
+    background: #f6f6f6;
+    padding-bottom: .3rem;
+}
+.bg-02 .stock-info{
+    width:7.42rem;
+    height: 7.91rem;
+    background: url("//img.getfc.com.cn/source/www/zt/stockTrade/mobile-kbg.png") no-repeat center;
+    background-size: 7.42rem 7.91rem;
+    margin: 0 auto;
+    padding:3.6rem 0.65rem 0;
+    box-sizing: border-box;
+    text-align: left;
+}
+.bg-03{
+    padding-bottom: .8rem;
+}
+.why{
+    display: flex;
+    align-items: center;
+    padding: 0 .3rem;
+    justify-content: space-between;
+}
+.why .why-item img{
+    display:block;
+    margin:0 auto .2rem;
+}
+.why .why-item {
+    text-align: center;
+    font-size: .28rem;
+}
+.why .why-item li:first-child{
+    margin-bottom: .4rem
+}
+.why .why-item li img{
+    width: 1rem;
+}
+.item-middle img{
+ width: 3.95rem;
+}
+.bg-04{
+    width: 7.5rem;
+    height: 8.3rem;
+    background: url("//img.getfc.com.cn/source/www/zt/stockTrade/mobile-bgb.jpg") no-repeat center;
+    background-size: 7.5rem 8.3rem;
+}
+.bg-04 span{
+    color: #fff;
+}
+.bg-04 .title{
+    margin-bottom: .4rem;
+}
+.stock-classify ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.stock-classify ul.first-list{
+    width: 4.45rem;
+    margin-bottom: .2rem;
+}
+.stock-classify ul.second-list{
+    width: 6.9rem;
+}
+.bg-05 ul{
+    padding-left: .3rem;
+}
+.bg-05 ul li{
+    float: left;
+}
+.bg-04 ul li a{
+    display: block;
+    cursor: pointer;
+}
+.bg-04 ul li img{
+    width: 2.32rem;
+}
+.bg-05{
+    padding-bottom: .7rem;
+}
+.bg-05 ul li{
+    font-size: .28rem;
+    margin-bottom: .3rem;
+    margin-right: .3rem;
+}
+
+.bg-05 ul li img{
+    display: block;
+    width: 3.24rem;
+    margin-bottom: .1rem;
+}
+
+.join-bottom{
+    background: #f6f6f6;
+    padding:.6rem 0 1rem;
+}
+.copyright{
+    text-align: center;
+    line-height: .36rem;
+    color: #666;
+    font-size:.24rem;
+}
+.fixed-footer{
+    position: fixed;
+    bottom: 0;
+    left:0;
+    width: 7.5rem;
+    height: .9rem;
+    line-height: .9rem;
+    background: rgba(41,150,234,.9);
+    text-align: center;
+    box-shadow: 0 -1px 8px #2996ea;
+    z-index: 10
+
+}
+.fixed-footer a{
+    display: block;
+    color: #fff;
+    font-size: .36rem;
+    font-weight: bold;
+}

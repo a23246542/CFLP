@@ -1,0 +1,555 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0; color: #333;}
+.inner{overflow: hidden;width: 100%; margin: 0 auto; position: relative}
+img{ overflow:hidden;border: none;display: block;}
+.e-header .header{
+    background: none;
+}
+.web-banner{
+    width: 100%;
+    background: url("../../images/campaign1905/banner-bg.png") no-repeat top center;
+    background-size: 100% 100%;
+    height: 11rem;
+    position: relative;
+    z-index: 1;
+}
+.banner-font img{width: 5.29rem;margin: 1.1rem auto 0}
+.web-page{
+    overflow: hidden;
+    position: relative;
+}
+.web-page.bg1{
+    background: url("../../images/campaign1905/neiye-bg1.jpg") no-repeat top center;
+    background-size: 100% 100%;
+    height: 11rem;
+    position: relative;
+    z-index: 0;
+    top: -1rem;
+    margin-bottom: -1rem;
+}
+.web-page.bg3{
+    background: url("../../images/campaign1905/neiye-bg3.jpg") no-repeat top center;
+    background-size: 100% 100%;
+    height: 8.8rem;
+}
+.web-page.bg3 .rightCon{
+    width: 100%;
+}
+.web-page .title {
+    overflow: hidden;
+    margin: 1rem auto 0;
+    text-align: center;
+    width: 7rem;
+}
+.web-page.bg1 .title{margin-top: 2.15rem;}
+.web-page .title .item{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.web-page .title .item img{width: .57rem}
+.web-page .title .item img:nth-child(2){margin: 0 .2rem;width: 2.97rem}
+.web-page.bg1 .title .item img:nth-child(2){width: 4.38rem}
+.web-page.bg3 .title .item img:nth-child(2){width: 3.06rem}
+.web-page .title p{
+    overflow: hidden;
+    font-size: .24rem;
+    line-height: .36rem;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .35rem 0 .2rem;
+}
+.web-page .title a{
+    overflow: hidden;
+    display: block;
+    width: 2rem;
+    height: .6rem;
+    line-height: .6rem;
+    border-radius: .3rem;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    background: #de3f00;
+    transition: all .5s;
+    margin: 0 auto;
+    font-size: .3rem;
+    font-weight: bold;
+}
+.web-page .title p a:hover{
+    width: 2.1rem;
+    transition: all .5s;
+}
+.web-page .swiperList {
+    overflow: hidden;
+    background: url("../../images/campaign1905/li-bg.png") no-repeat top center;
+    background-size: 100% 100%;
+    width: 4.3rem;
+    height: 4.54rem;
+    margin-top: .5rem;
+}
+.web-page .swiperList .item{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .35rem 0;
+}
+.web-page .swiperList .item span{
+    width: .8rem;
+    height: 1px;
+    background: #fae164;
+}
+.web-page .swiperList .item p{
+    color: #fae164;
+    font-weight: bold;
+    font-size: .36rem;
+    margin: 0 .2rem;
+}
+.web-page .swiperList .item1{overflow: hidden;}
+.web-page .swiperList .item1 img{margin: 0 auto .05rem;width: 2.6rem}
+.web-page .swiperList .item1 img.marginTop{margin: .2rem auto 1.2rem}
+.web-page .swiperList .item1 span{
+    overflow: hidden;
+    display: block;
+    color: #39507a;
+    font-size: .42rem;
+    text-align: center;
+}
+.web-page .swiperList .item1 span em{display: inline;font-size: .45rem}
+.web-page .swiperList .item1 p{
+    overflow: hidden;
+    display: block;
+    color: #a6783c;
+    font-size: .26rem;
+    text-align: center;
+    margin-top: .65rem;
+}
+.swiper-container{
+    width:100%;
+}
+.swiper-wrapper{
+    height: 5.4rem!important;
+}
+.swiper-slide{
+    width:4.3rem;
+    height: 4.54rem;
+}
+.swiper-slide-prev .swiperList{
+    transform: scale(.8);
+    margin-left: .43rem;
+
+}
+.swiper-slide-next .swiperList{
+    transform: scale(.8);
+    margin-left: -.43rem;
+}
+.swiper-pagination-bullet{
+    width: .14rem;
+    height: .14rem;
+    background: #efd6ac;
+    border-radius: .07rem;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    width: .6rem;
+    background: #d2a654;
+}
+.web-page .conList{
+    overflow: hidden;
+    background: url("../../images/campaign1905/li-bg1.png") no-repeat center;
+    background-size: 100% 6rem;
+    width: 6.6rem;
+    height: 6.22rem;
+    margin: .69rem auto 1.1rem;
+}
+.web-page .conList ul{
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.web-page .conList ul:nth-child(2){margin-top: .55rem}
+.web-page .conList ul li{overflow: hidden;list-style: none}
+.web-page .conList ul li.opacity{margin: 0 40px}
+.web-page .conList ul li.opacity img{margin-top: .8rem;width: .07rem}
+.web-page .conList ul:nth-child(2) li.opacity img{margin-top: .4rem}
+.web-page .conList ul li span{
+    overflow: hidden;
+    display: block;
+    background: url("../../images/campaign1905/li-tit.png") no-repeat top center;
+    background-size: 100% 100%;
+    width: 2.04rem;
+    height: .54rem;
+    line-height: .54rem;
+    font-size: .3rem;
+    color: #39507a;
+    text-align: center;
+    font-weight: bold;
+}
+.web-page .conList ul:nth-child(2) span {
+    margin-top: .2rem;
+    background: url("../../images/campaign1905/li-tit1.png") no-repeat bottom center;
+    background-size: 100% 100%;
+}
+.web-page .conList ul li img {
+    width: 1.5rem;
+    margin: .25rem auto .02rem;
+}
+.web-page .conList ul:nth-child(2) img{margin-bottom: .15rem}
+.web-page .conList ul li p{
+    overflow: hidden;
+    display: block;
+    color: #fff;
+    font-size: .26rem;
+    font-weight: bold;
+    text-align: center;
+}
+.bot-fixed{
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    width: 7.5rem;
+    background: rgba(255,255,255,.9);
+    box-shadow: 0 -.1rem .08rem rgba(221,221,221,.4);
+    padding-bottom:  env(safe-area-inset-bottom);
+}
+.bot-fixed ul{
+    overflow: hidden;
+    list-style: none;
+    height: .9rem;
+    margin: 0;
+    padding: 0 .25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bot-fixed ul li{
+    overflow: hidden;
+    list-style: none;
+    margin: 0 .3rem;
+}
+.bot-fixed ul li a img{width: .5rem;margin: 0 auto}
+.bot-fixed ul li a{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: .24rem;
+    color: #333;
+}
+/*开户*/
+.plate {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    margin-top: .7rem;
+}
+.button-a {
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.common {
+    font-size: .3rem;
+    background: #daae5c;
+    width: 6rem;
+    height: .9rem;
+    line-height:.9rem;
+    margin: 0 auto;
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border-radius: .06rem;
+    border: solid 1px transparent;
+}
+.common:hover{
+    background: transparent;
+    color: #daae5c;
+    border: solid 1px #daae5c;
+}
+.sub-info {
+    width: 6rem;
+    font-size: .24rem;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: .2rem auto .25rem;
+}
+.sub-info input{
+    width: .28rem!important;
+    height: .28rem!important;
+    border: solid 1px #daae5c;
+    margin-top: 0!important;
+    line-height: normal!important;
+    padding: 0!important;
+}
+#checkbox {
+    display: none;
+}
+#checkbox + label {
+    color: transparent;
+    border: solid 1px #daae5c;
+    width: .28rem;
+    height: .28rem;
+    margin-right: .1rem;
+    background: rgba(255,255,255,.2);
+}
+#checkbox + label img{display: none;width: .16rem;margin: .06rem auto 0;}
+#checkbox:checked + label {
+    color: transparent;
+    border: solid 1px #aaa;
+}
+#checkbox:checked + label img{display: block;}
+.reg-form input{
+    height: .6rem;
+    line-height: .6rem;
+    margin-top: .15rem;
+    width: 100%;
+    color: #fff;
+    font-size: .32rem;
+    background: transparent;
+    border: none;
+    padding: 0 .2rem;
+    outline:none
+}
+.reg-form input::placeholder{
+    color: #fff;
+    font-size: .26rem;
+}
+#yanZ{width: 50%}
+.form-item{
+    overflow: hidden;
+    width: 6rem;
+    height: .9rem;
+    line-height:.9rem;
+    padding: 0;
+    border-radius: .06rem;
+    background: rgba(255,255,255,.2);
+    border: solid 1px #daae5c;
+    margin: 0 auto;
+}
+.form-item a.btn-phonecode, .form-item a.re-btn {
+    float: right;
+    height: .4rem;
+    line-height: .4rem;
+    margin: .25rem .2rem 0 0;
+    color: #d2a654;
+    font-size: .26rem;
+    font-weight: bold;
+    border-left: solid 1px #d2a654;
+    text-align: center;
+    padding-left: .15rem;
+}
+.form-item a.btn-phonecode img, .form-item a.re-btn img{
+    overflow: hidden;
+    display: block;
+    width: 1.07rem;
+    margin: .19rem auto 0;
+}
+
+.reg-form .input-tip {
+    height: .34rem !important;
+    line-height: .34rem;
+    width: 6rem;
+    margin: 0 auto;
+}
+.reg-form .input-tip span {
+    color: #de3f00;
+    padding-left: .2rem;
+    font-size: .2rem;
+}
+.zhuizong{
+    overflow: hidden;
+}
+/*开户end*/
+/*弹窗*/
+.tc-hide{
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
+.masking{
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+}
+.popup-box {
+    overflow: hidden;
+    max-width:95%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top:10%;
+    background: #fff;
+    z-index: 99999;
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.popup-box .box-in {
+    margin: 3% 4% 5% 4%;
+    overflow-y: auto;
+    height: 8rem;
+}
+.popup-box .close-top{
+    padding:0.3rem 0.3rem;
+    font-size: 0.44rem;
+    color:#b78255;
+    text-align: center;
+    border-bottom: 1px solid #b78255;
+    width:6rem;
+    margin: 0 auto;
+    position: relative;
+}
+.popup-box .close-top a{
+    background: url(../../images/campaign1710/close-b.png) no-repeat;
+    width: 0.21rem;
+    height:0.21rem;
+    background-size: 0.21rem 0.21rem;
+    position: absolute;
+    right: 0;
+    margin-top: .2rem;
+    text-decoration: none;
+}
+.popup-box  .box-in .section1 .item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: .1rem;
+}
+.popup-box .section1 h2{
+    font-size: 0.28rem;
+    font-weight: bold;
+    color: #b78255;
+}
+.popup-box table.data-box {
+    width: 100%;
+    margin: 16px auto 25px;
+    text-align: center;
+    border: 0 !important;
+    font-size: 1.6em;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.popup-box .box-in .line-throw{font-size: 0.3rem;}
+.popup-box .box-in .section1 p{
+    font-size:0.28rem;
+    line-height: 1.8;
+}
+.popup-box .box-in .section3 p{
+    font-size:0.28rem;
+    /*margin-bottom: 0.2rem;*/
+    line-height: 1.8;
+}
+.popup-box .box-in .section3 p a{color: #0096dc}
+.popup-box .box-in .section3 p span{
+    color: #f00;
+    font-weight: bold;
+}
+.popup-box .box-in .section4  h2{
+    font-size: 0.3rem;
+    margin-bottom: 0.1rem;
+    color: #b78255;
+}
+.popup-box .box-in .section4 li{
+    font-size: 0.28rem;
+    line-height: 1.8;
+}
+.popup-box .box-in .section4 li span{
+    /*margin-right: 0.15rem;*/
+}
+.popup-box .box-in .section4 li p{
+    display: flex;
+}
+
+.popup-box table.data-box thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box thead th {
+    font-size: .28rem;
+    text-align: center;
+    padding: .15rem .05rem;
+    color: #FFFFFF;
+    background: #dcb08e;
+    line-height: 1.0;
+}
+.popup-box table.data-box thead tr {
+    border: 1px solid #dcb08e;
+}
+.popup-box table.data-box tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box tbody td {
+    line-height: 1.0;
+    text-align: center;
+    color: #333333;
+    padding: 1.44%;
+    font-size: 14px;
+    border: 0.025rem solid #ead5c2;
+    font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+}
+.popup-box table.data-box tbody .unit {
+    font-size: 0.8em;
+}
+.popup-box table.data-box tbody tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+//background: #f7efe8;
+}
+.popup-box table.data-box tbody tr.grey {
+    background: #fff;
+}
+.popup-box table.data-box tbody tr.last-row td {
+    border-bottom: 1px solid #CCCCCC;
+}
+.popup-box table.data-box .first-child {
+    text-align: center;
+    font-size: 16px;
+}
+.popup-box table.data-box .first-child a {
+    color: #666666;
+    text-decoration: none;
+}
+.popup-box .table1 td,
+.popup-box .table2 td {
+    width: 25%;
+}
+.popup-box .table4 td {
+    width: 16%;
+}
+.popup-box .table3 td {
+    width: 33.333333%;
+}
+.popup-box .note{line-height: 1.8;font-size: 0.24rem;margin-bottom: 0.1rem}
+.popup-box .note span{color: #f00}

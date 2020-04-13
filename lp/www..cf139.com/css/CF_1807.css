@@ -1,0 +1,720 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0; color: #333}
+.inner{overflow: hidden;width: 1200px; margin: 0 auto;}
+img{ overflow:hidden;display:block;border: none;}
+.e-header .header{
+    background: none;
+}
+.top-banner {
+    position: relative;
+    margin-top: -76px;
+    line-height: 0;
+}
+.top-banner .img-banner-Nonfarm6_2{
+    display: block;
+    height: 680px;
+    background: url(//img.getfc.com.cn/source/www/zt/non-farm1807/banner-bg.jpg) top center no-repeat;
+    position: relative;
+}
+.nonfarmtime {
+    display: block;
+    height: 30px;
+    color: #fff;
+    font-size: 24px;
+    text-align: right;
+}
+.nfp1803{
+    width: 100%;
+    margin-top: 120px;
+    display: flex;
+    justify-content: flex-end;
+}
+.lpdirect1_banner_input {
+    width: 100%;
+    margin: 0 auto;
+    clear: both;
+}
+.lpdirect1_banner_input ul {
+    list-style: none;
+    width: 486px;
+    float: left;
+}
+
+.lpdirect2_banner{
+    float: left;
+    width: 48%;
+}
+.lpdirect1_banner{
+    position: relative;
+    height: 125px;
+    margin-right: 230px;
+}
+.lpdirect1_banner_input a.account {
+    width: 200px;
+    display: block;
+    height: 50px;
+    text-align: center;
+    line-height:50px;
+    color: #fff;
+    font-size: 24px;
+    border:1px solid #ffffff;
+    text-decoration: none;
+    transition: all .25s ease-in-out;
+}
+.lpdirect1_banner_input a.account:hover {
+    background: #fff;
+    transition: all .25s ease-in-out;
+    color: #0f0c0d;
+}
+.lpdirect1_banner_input a.real {
+    width: 200px;
+    display: block;
+    height: 50px;
+    text-align: center;
+    line-height:50px;
+    color: #0f0c0d;
+    background: #fff;
+    font-size: 24px;
+    border:1px solid #ffffff;
+    margin-right: 8px;
+    text-decoration: none;
+    transition: all .25s ease-in-out;
+}
+.lpdirect1_banner_input a.real:hover {
+    background: transparent;
+    transition: all .25s ease-in-out;
+    color: #fff;
+}
+a.register{
+    display: inline-block;
+    font-size: 16px;
+    height: 18px;
+    color: #fff;
+    margin: 20px 0 0 20px;
+    text-decoration: none;
+}
+a.register:hover{
+    border-bottom: solid 1px #fff;
+}
+.lpdirect1_banner_input  a.simulation {
+    width: 280px;
+    height: 55px;
+    display: block;
+    text-align: center;
+    line-height: 55px;
+    color: #FFFFFF;
+    border-radius: 0px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: margin 0.5s;
+    background: #0096bc;
+}
+.lpdirect1_banner_input  a.simulation:hover {
+    margin-top: -10px;
+    border: 2px solid #fff;
+    color: #fff;
+    background: none;
+}
+
+/*倒计时部分*/
+.inner_fliper {
+    width: 300px;
+    margin-top: 25px;
+    height: 50px;
+    clear: both;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    border-bottom: none;
+    position: relative;
+    float: right;
+}
+.left-time {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 5px;
+    text-align: right;
+}
+.public{
+    position: absolute;
+    width: 12px;
+    height: 25px;
+    background: url(//img.getfc.com.cn/source/www/zt/non-farm/images/dian_icon.png) no-repeat;
+}
+.time-list{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    z-index: 99;
+    height: 50px;
+    line-height: 50px;
+    width: 300px;
+    right: 0;
+    bottom: 0;
+}
+.time-list span{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    color: #fff;
+}
+.EightycloudsFlipTimer .block_right_bottom_count{margin-left: 0;margin-top: -49px}
+.EightycloudsFlipTimer .block_left_bottom_count{margin-top: -49px}
+.public.point2{left: 144px}
+/*倒计时结束*/
+.banner-font{
+    overflow: hidden;
+    width: 100%;
+    margin: 200px 0 0 0;
+}
+.banner-font img{
+    float: right;
+    margin-right: 64px;
+}
+.btn{
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 35px;
+}
+.web-content{
+    overflow: hidden;
+    width: 100%;
+}
+.web-page{
+    overflow: hidden;
+    padding: 60px 0 100px 0;
+}
+.web-page.bg{
+    overflow: hidden;
+    background: url("//img.getfc.com.cn/source/www/zt/non-farm1807/neiye-bg03.jpg") no-repeat center;
+    height: 1563px;
+}
+.web-page.bg01{
+    overflow: hidden;
+    background: url("//img.getfc.com.cn/source/www/zt/non-farm1804/neiye-bg04.jpg") no-repeat center;
+    height: 1045px;
+}
+.web-page .title{
+    overflow: hidden;
+    height: 112px;
+    background: url("//img.getfc.com.cn/source/www/zt/non-farm1804/01.png") no-repeat center;
+    margin-bottom:80px;
+}
+.web-page.bg .title{
+    background: url("//img.getfc.com.cn/source/www/zt/non-farm1804/02.png") no-repeat center;
+}
+.web-page.bg01 .title{
+    background: url("//img.getfc.com.cn/source/www/zt/non-farm1804/03.png") no-repeat center;
+}
+.web-page .title span{
+    overflow: hidden;
+    display: block;
+    color: #0d4a8c;
+    font-size: 44px;
+    text-align: center;
+    margin-top: 37px;
+}
+.web-page.bg .title span{color: #fff}
+.web-page .con{
+    overflow: hidden;
+    position: relative;
+}
+.web-page .con.bg-pic{
+    width: 100%;
+    background: url("//img.getfc.com.cn/source/www/zt/non-farm1804/con-bg03.png") no-repeat center;
+    background-size: auto auto;
+    height: 651px;
+}
+.web-page .con .left{
+    overflow: hidden;
+    float: left;
+    width: 55%;
+}
+.web-page .con .left ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.web-page .con .left ul li{
+    overflow: hidden;
+    width: 50%;
+    height: 159px;
+    float: left;
+    background: url("//img.getfc.com.cn/source/www/zt/non-farm1804/con-bg.png") no-repeat center;
+    margin-bottom: 45px;
+    position: relative;
+    cursor: pointer;
+}
+.web-page .con .left ul li img.ma-left{
+    position: absolute;
+    width: 17px;
+    height: 25px;
+    left: 5px;
+    top: 0;
+}
+.web-page .con .left ul li:hover img.ma-left{
+    animation: rotation 3s linear;
+    -moz-animation: rotation 3s linear;
+    -webkit-animation: rotation 3s linear;
+    -o-animation: rotation 3s linear;
+}
+.web-page .con .left ul li img.ma-right{
+    position: absolute;
+    width: 17px;
+    height: 25px;
+    right: 5px;
+    top: 0;
+}
+.web-page .con .left ul li:hover img.ma-right{
+    animation: rotation 3s linear;
+    -moz-animation: rotation 3s linear;
+    -webkit-animation: rotation 3s linear;
+    -o-animation: rotation 3s linear;
+}
+@keyframes rotation{
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(-90deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(90deg);}
+    100% {transform: rotate(0deg);}
+}
+@-webkit-keyframes rotation{
+    0% {-webkit-transform: rotate(0deg);}
+    25% {-webkit-transform: rotate(-90deg);}
+    50% {-webkit-transform: rotate(0deg);}
+    75% {-webkit-transform: rotate(90deg);}
+    100% {-webkit-transform: rotate(0deg);}
+}
+.web-page .con .left ul li span{
+    overflow: hidden;
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+.web-page .con .left ul li span.margintop{margin: 1px 0 40px 0}
+.web-page .con .left ul li span.margintop01{margin: 1px 0 30px 0}
+.web-page .con .right{
+    overflow: hidden;
+    float: right;
+    width: 43%;
+    height: 376px;
+    background: url("//img.getfc.com.cn/source/www/zt/non-farm1804/con-bg01.jpg") no-repeat left bottom;
+    background-size: auto 358px;
+    padding: 0 0 20px 20px;
+}
+.web-page .con .right .border{
+    overflow: hidden;
+    border: solid #b5b5b5 3px;
+    height: 361px;
+    padding: 50px 28px 0 34px;
+}
+.web-page .con .right .border p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 30px;
+}
+.web-page .con .right .border p:first-child{
+    margin-bottom: 20px;
+}
+.web-page .con .right .border p.bold{
+    font-weight: bold;
+    color: #0d4a8c;
+}
+.web-page .con .right .border span{
+    overflow: hidden;
+    display: inline;
+    font-size: 16px;
+    line-height: 30px;
+    color: #0d4a8c;
+}
+.web-page .con .line{
+    overflow: hidden;
+    position: absolute;
+    top: 25px;
+    left: 470px;
+    width: 255px;
+    height: 409px;
+    display: none;
+    animation: appear 1s linear infinite;
+    -webkit-animation:appear 1s linear infinite;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes appear {
+    from { width:255px; height:0;}
+    to { width:255px; height:409px;}
+}
+@keyframes appear {
+    from { width:255px; height:0;}
+    to { width:255px; height:409px;}
+}
+.web-page .con .pan{
+    overflow: hidden;
+    position: absolute;
+    top: 185px;
+    left: 442px;
+    -webkit-transform: rotate(90deg);
+    animation: swing 6s linear infinite;
+    -moz-animation: swing 6s linear infinite;
+    -webkit-animation: swing 6s linear infinite;
+    -o-animation: swing 6s linear infinite;
+}
+@keyframes swing{
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(-45deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(45deg);}
+    100% {transform: rotate(0deg);}
+}
+@-webkit-keyframes swing{
+    0% {-webkit-transform: rotate(0deg);}
+    25% {-webkit-transform: rotate(-45deg);}
+    50% {-webkit-transform: rotate(0deg);}
+    75% {-webkit-transform: rotate(45deg);}
+    100% {-webkit-transform: rotate(0deg);}
+}
+.web-page .con .con-list{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 63px;
+}
+.web-page .con.bg-pic .con-list{
+    height: 310px;
+    margin-bottom: 80px;
+}
+.web-page .con .con-list .item{
+    overflow: hidden;
+    width: 477px;
+    height: 211px;
+    background: rgba(255,255,255,.6);
+    padding: 0 30px 0 30px;
+}
+.web-page .con.bg-pic .con-list .item{
+    background: none;
+    display: flex;
+    justify-content: flex-start;
+    padding: 35px 25px 0 25px;
+    width: 100%;
+    height: auto;
+}
+.web-page .con.bg-pic .con-list .item.end{
+    justify-content: flex-end;
+}
+.web-page .con .con-list .item .con-bg{
+    overflow: hidden;
+    background: url("//img.getfc.com.cn/source/www/zt/non-farm1804/icon-01.png") no-repeat right bottom;
+}
+.web-page .con .con-list .item .con-bg.bg-img{background: url("//img.getfc.com.cn/source/www/zt/non-farm1804/icon-02.png") no-repeat right bottom;}
+.web-page .con .con-list .item .con-bg.bg-img01{background: url("//img.getfc.com.cn/source/www/zt/non-farm1804/icon-03.png") no-repeat right bottom;}
+.web-page .con .con-list .item .con-bg.bg-img02{background: url("//img.getfc.com.cn/source/www/zt/non-farm1804/icon-04.png") no-repeat right bottom;}
+.web-page .con .con-list .item .con-bg span{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    color: #414141;
+    padding-top: 34px;
+}
+.web-page .con .con-list .item .con-bg span.size{
+    font-size: 24px;
+    color: #666;
+    margin: 8px 0 38px 0;
+    padding-top: 0;
+}
+.web-page .con .con-list .item .con-bg a{
+    overflow: hidden;
+    display: block;
+    width: 154px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    background: #346faf;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    text-decoration: none;
+}
+.web-page .con .con-list .item .left-con{
+    overflow: hidden;
+    width: 40%;
+}
+.web-page .con .con-list .item.end .left-con{margin-left: 1%}
+.web-page .con .con-list .item .right-con{
+    overflow: hidden;
+    width: 43%;
+    margin-top: 35px;
+}
+.web-page .con .con-list .item .right-con img{width: 100%}
+.web-page .con .con-list .item .left-con span{
+    overflow: hidden;
+    font-size: 24px;
+    color: #fff;
+    line-height: 38px;
+    text-align: justify;
+}
+.web-page .con .con-list .item.end .left-con{text-align: right}
+.web-page .con .con-list .item .left-con p{
+    overflow: hidden;
+    font-size: 16px;
+    color: #fff;
+    line-height: 30px;
+    margin-top: 30px;
+    width: 95%;
+    text-align: justify;
+}
+.web-page .con .con-list .item.end .left-con p{float: right}
+.web-page .data{
+    overflow: hidden;
+    width: 100%;
+    background: rgba(255,255,255,.5);
+    padding-bottom: 30px;
+}
+.web-page .data .con-title{
+    overflow: hidden;
+}
+.web-page .data .con-title span{
+    overflow: hidden;
+    display: block;
+    font-size: 20px;
+    color: #414141;
+    text-align: center;
+    margin: 1px 0;
+}
+.web-page .data .con-title span.size{
+    color: #0d4a8c;
+    font-size: 40px;
+    margin-top: 32px;
+}
+.web-page .data .con-title a{
+    overflow: hidden;
+    display: block;
+    width: 197px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    background: #0d4a8c;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    margin: 15px auto;
+    font-size: 24px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.web-page .data .con-rect{
+    overflow: hidden;
+    width: 96%;
+    height: 347px;
+    background: url("//img.getfc.com.cn/source/www/zt/non-farm1804/con-bg02.png") no-repeat;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.web-page .data .con-rect .rect-list{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 12px;
+    width: 12%;
+}
+.web-page .data .con-rect .rect-list .num{
+    overflow: hidden;
+    width: 58px;
+    height: 73px;
+    line-height: 73px;
+    background: url("//img.getfc.com.cn/source/www/zt/non-farm1804/icon-bg.png") no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.web-page .data .con-rect .rect-list .num.neiye-bg{
+    width: 68px;
+    height: 85px;
+    line-height: 85px;
+    background: url("//img.getfc.com.cn/source/www/zt/non-farm1804/icon-bg01.png") no-repeat;
+    background-size: 100% 100%;
+}
+.web-page .data .con-rect .rect-list .num.neiye-bg01{
+    background: url("//img.getfc.com.cn/source/www/zt/non-farm1804/icon-bg02.png") no-repeat;
+    background-size: 100% 100%;
+}
+.web-page .data .con-rect .rect-list .num span{
+    overflow: hidden;
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+}
+.web-page .data .con-rect .rect-list .rect{
+    overflow: hidden;
+    width: 32px;
+    background: #346faf;
+}
+.web-page .data .con-rect .rect-list .rect.bg-color{
+    background: #0d4a8c;
+}
+.web-page .data .con-time{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    width: 96%;
+    margin: 0 auto;
+}
+.web-page .data .con-time span{
+    overflow: hidden;
+    font-size: 20px;
+    color: #666;
+    width: 12%;
+    text-align: center;
+}
+.web-page .data .con-line{
+    overflow: hidden;
+    width: 87%;
+    margin: 5px auto 0 auto;
+    display: flex;
+    justify-content: flex-start;
+}
+.web-page .data .con-line .left-line{
+    overflow: hidden;
+    width: 15.5%;
+    height: 10px;
+    border-bottom: dashed 1px #000;
+    border-left: solid 1px #000;
+}
+.web-page .data .con-line .right-line{
+    overflow: hidden;
+    width: 84.5%;
+    height: 10px;
+    border-bottom: dashed 1px #000;
+    border-left: solid 1px #000;
+    border-right: solid 1px #000;
+}
+.web-page .data .con-year{
+    overflow: hidden;
+    width: 87%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+}
+.web-page .data .con-year span{
+    overflow: hidden;
+    font-size: 20px;
+    text-align: center;
+    color: #666;
+}
+.web-page .data .con-year .left-year{
+    width: 15.5%;
+}
+.web-page .data .con-year .right-year{
+    width: 84.5%;
+}
+.ban-btn{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    margin: 56px auto;
+}
+.ban-btn a{
+    overflow: hidden;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    border: solid 1px #346faf;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.ban-btn a.login{
+    color: #346faf;
+}
+.ban-btn a.account{
+    background: #346faf;
+    color: #fff;
+    transition:all .2s ease-in 0s;
+}
+.ban-btn a.account:hover{
+    background: #0d4a8c;
+    transition:all .2s ease-in 0s;
+}
+.web-brand .title span{color: #0d4a8c!important;}
+.tc-hide{
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+}
+.masking{
+    display: block;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+}
+.tc-con{
+    overflow: hidden;
+    width: 800px;
+    margin: 200px auto 0 auto;
+    background: #fff;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    padding-bottom: 30px;
+}
+.tc-con span{
+    overflow: hidden;
+    display: block;
+    font-size: 24px;
+    line-height: 48px;
+    padding: 0 20px;
+    text-align: justify;
+}
+.tc-con span.center{
+    text-align: center;
+    font-size: 24px;
+    padding: 20px 0;
+    color: #346faf;
+    border-bottom: solid 1px #346faf;
+    margin-bottom: 20px;
+    position: relative;
+}
+.tc-con span.close{
+    overflow: hidden;
+    background: url("//img.getfc.com.cn/source/www/zt/non-farm1804/X.png") no-repeat;
+    width: 21px;
+    height: 21px;
+    display: inline;
+    position: absolute;
+    right: 0;
+    top: 34px;
+    cursor: pointer;
+}
+.tc-con span.color{
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0 20px 10px 20px;
+    color: #346faf;
+}
+.tc-con p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0 20px;
+    text-align: justify;
+}
+.tc-con p.color{color: #346faf;font-weight: bold}
+@media screen and (max-width: 1200px) {
+    .inner {
+        width: 100%;
+    }
+}

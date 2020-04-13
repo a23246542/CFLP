@@ -1,0 +1,527 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0; color: #333}
+.inner{overflow: hidden;width: 100%; margin: 0 auto; position: relative}
+img{ overflow:hidden;display:block;border: none;}
+.web-banner{
+    width: 100%;
+    height:9.3rem;
+    background: url("../images/indexTrade/banner_bg_m.jpg") no-repeat top center;
+    position: relative;
+    background-size: 100% 9.3rem;
+    padding-top: 4.5rem;
+    box-sizing: border-box;
+}
+.web-banner img{
+    overflow: hidden;
+    width: 6.16rem;
+    height: 3rem;
+    display: block;
+    margin: 0 auto;
+}
+.web-banner .btn{
+    overflow: hidden;
+    font-size: 0;
+    margin-top: .5rem;
+    text-align: center;
+}
+.web-banner .btn a{
+    overflow: hidden;
+    display: inline-block;
+    width: 2.4rem;
+    height: .66rem;
+    line-height: .66rem;
+    text-align: center;
+    font-size: .3rem;
+    text-decoration: none;
+
+}
+.web-banner .btn a.account{
+    background: #7267d2;
+    color: #fff;
+}
+.web-banner .btn a.chat{
+    border: solid .025rem #7267d2;
+    color: #7267d2;
+    margin-right: .5rem;
+}
+.re-wrapper{
+    padding-left: 4.15rem
+}
+.re-wrapper a{
+    font-size: .22rem;
+    color: #666;
+}
+.web-page{
+    overflow: hidden;
+    text-align: center;
+}
+.trade-title .first-title{
+    font-size: .42rem;
+    position: relative;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+.trade-title .sub-title{
+    font-size: .24rem;
+    /*font-weight: bold;*/
+    margin: .2rem auto .6rem;
+}
+.trade-title .sub-title span{
+    color: #ff8500;
+}
+.trade-title .first-title span{
+    font-weight: normal;
+}
+.trade-title .first-title:before{
+    content:'';
+    background-image:url("../images/indexTrade/tit_icon_m.png");
+    background-size:.6rem .12rem;
+    width:.6rem;
+    height: .12rem;
+    position: absolute;
+    top:.2rem;
+    left: 1.2rem;
+    background-repeat: no-repeat;
+
+}
+.trade-title .first-title:after{
+    content:'';
+    background-image:url("../images/indexTrade/tit_icon_m.png");
+    background-size:.6rem .12rem;
+    width:.6rem;
+    height: .12rem;
+    position: absolute;
+    top: .2rem;
+    right: 1.2rem;
+    background-repeat: no-repeat;
+    transform:rotateY(180deg) rotateX(360deg);
+}
+.bg-04 .first-title:after{
+    right: .2rem;
+}
+.bg-04 .first-title:before{
+    left: .2rem;
+}
+.country-content{
+    margin: 0 auto .4rem;
+
+}
+.country-content ul{
+    overflow-x: scroll;
+    display: flex;
+    padding-left: .22rem;
+}
+.country-content ul li{
+    border: 1px solid #ccc;
+    border-radius: 13px;
+    margin-right: .46rem;
+    height: 2.3rem;
+    box-sizing: border-box;
+}
+.country-content ul li .item-1 img{
+    width: 2.3rem;
+    height: 1.2rem;
+}
+.country-content ul li .item-2{
+    font-size:.22rem;
+}
+.country-content ul li .item-3{
+    font-size: .22rem;
+}
+.country-content ul li .item-3 span{
+    font-size: .4rem;
+    color: #ff8500;
+    font-weight: bold;
+
+}
+.country-reward{
+    background: url("../images/indexTrade/explain.jpg") no-repeat;
+    width:7.02rem;
+    height: 2.18rem;
+    background-size: 7.02rem 2.18rem;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.strategy{
+    margin:.5rem auto .8rem;
+}
+.strategy a{
+    display: block;
+    background: url("//img.getfc.com.cn/source/www/zt/indexTrade/buttom_a.png") no-repeat;
+    background-size: 2.4rem .6rem;
+    width: 2.4rem;
+    height: .6rem;
+    line-height: .6rem;
+    text-align: center;
+    font-size: .36rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 auto;
+}
+.twoWay-wrapper ul{
+    padding: .35rem;
+}
+.twoWay-wrapper ul li{
+    float: left;
+    border: 1px solid #ccc;
+    border-radius: 13px;
+    overflow: hidden;
+    margin-bottom: .5rem;
+    padding-bottom: .5rem;
+
+}
+.twoWay-wrapper ul li.active{
+    box-shadow: 0 0 10px #d1d0f2;
+}
+.twoWay-wrapper ul li:nth-child(1),.twoWay-wrapper ul li:nth-child(3),.twoWay-wrapper ul li:nth-child(5){
+ margin-right: .25rem;
+}
+.twoWay-wrapper ul li img{
+    width: 3.2rem;
+    height: 1.15rem;
+}
+.twoWay-wrapper ul li .item-2{
+    font-weight: bold;
+    font-size: .3rem;
+    margin-top: .5rem;
+
+}
+.twoWay-wrapper ul li .item-3{
+    color: #6c60d0;
+    font-size: .2rem;
+}
+.twoWay-wrapper ul li .item-4{
+    font-size: .22rem;
+}
+.chance-wrapper{
+    /*height: 506px;*/
+    margin-bottom:.5rem;
+    padding-left: .8rem;
+}
+.hd{
+    padding-left: 2.7rem;
+    margin-bottom: 1rem;
+}
+.bd ul li{
+    background:url("../images/indexTrade/index_1_m.png") no-repeat;
+    width: 6.1rem ;
+    height: 5.53rem;
+    background-size:6.1rem 5.53rem;
+    text-align: left;
+    padding-top: 1.4rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.bd ul li.am{
+    background:url("../images/indexTrade/index_2_m.png") no-repeat;
+    background-size:6.1rem 5.53rem;
+}
+.bd ul li.eng{
+    background:url("../images/indexTrade/index_3_m.png") no-repeat;
+    background-size:6.1rem 5.53rem;
+}
+
+.bd ul li.jan{
+    background:url("../images/indexTrade/index_4_m.png") no-repeat;
+    background-size:6.1rem 5.53rem;
+}
+
+.bd ul li .item-1{
+    font-size: .24rem;
+    padding-left: .7rem;
+}
+.bd ul li .item-2{
+    font-size: .3rem;
+    color: #ff8500;
+    padding-left: .7rem;
+    font-weight: bold;
+}
+.bd ul li .item-3{
+    padding: .4rem .7rem 0;
+    width: 4.8rem;
+}
+
+.bd ul li .item-3 .text{
+    font-size:.24rem;
+    color: #999;
+    text-align: justify;
+    line-height: .36rem;
+}
+
+.bd ul li .item-3 span{
+    display: block;
+    width: .6rem;
+    height: 2px;
+    background: #ff8500;
+    margin-bottom: .3rem;
+}
+.hd ul li{
+    width: 0.4rem;
+    height: 0.1rem;
+    border-radius: .1rem;
+    background: #e6e6e6;
+    float: left;
+    margin-right: 0.2rem;
+    font-size: 0;
+}
+.hd ul li.on {
+    background: #636ad4;
+}
+
+
+.step-wrapper ul li{
+    float: left;
+    background: url("//img.getfc.com.cn/source/www/zt/indexTrade/step1.png?v=321") no-repeat;
+    background-size:2.9rem 4.1rem ;
+    width: 2.9rem;
+    height: 4.1rem;
+    padding-top: 1.55rem;
+    margin-right: 5%;
+    box-sizing: border-box;
+}
+.step-wrapper ul li.active{
+    background: url("//img.getfc.com.cn/source/www/zt/indexTrade/step1_p.png?v=321") no-repeat;
+    background-size:2.9rem 4.1rem ;
+}
+.step-wrapper{
+    padding-left: .6rem;
+    margin-top: .5rem;
+}
+
+.step-wrapper ul li:last-child{
+    margin-right: 0;
+}
+
+.step-wrapper ul li .item-1{
+    color: #fff;
+    font-size: .2rem;
+}
+.step-wrapper ul li .item-2{
+    color: #ff8500;
+    font-size: .36rem;
+    margin-top:.7rem;
+    font-weight: bold;
+}
+.step-wrapper ul li:first-child .item-2{
+    margin-top: .55rem
+}
+.step-wrapper ul li:nth-child(2){
+    background: url("//img.getfc.com.cn/source/www/zt/indexTrade/step2.png?v=357") no-repeat;
+    background-size:2.9rem 4.1rem ;
+}
+.step-wrapper ul li:nth-child(2).active{
+    background: url("//img.getfc.com.cn/source/www/zt/indexTrade/step2_p.png?v=357") no-repeat;
+    background-size:2.9rem 4.1rem ;
+}
+
+.step-wrapper ul li:nth-child(3){
+    background: url("//img.getfc.com.cn/source/www/zt/indexTrade/step3.png?v=357") no-repeat;
+    background-size:2.9rem 4.1rem ;
+}
+.step-wrapper ul li:nth-child(3).active{
+    background: url("//img.getfc.com.cn/source/www/zt/indexTrade/step3_p.png?v=357") no-repeat;
+    background-size:2.9rem 4.1rem ;
+}
+
+.step-wrapper ul li:nth-child(4){
+    background: url("//img.getfc.com.cn/source/www/zt/indexTrade/step4.png?v=357") no-repeat;
+    background-size:2.9rem 4.1rem ;
+}
+.step-wrapper ul li:nth-child(4).active{
+    background: url("//img.getfc.com.cn/source/www/zt/indexTrade/step4_p.png?v=357") no-repeat;
+    background-size:2.9rem 4.1rem ;
+}
+.bg-02,.bg-04{
+    background: #f6f9fe;
+}
+.bg-02 .first-title:before{
+  left: .8rem;
+}
+.bg-02 .first-title:after{
+  right: .8rem;
+}
+
+/*弹窗*/
+.tc-hide{
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
+.masking{
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+}
+.popup-box {
+    overflow: hidden;
+    max-width:95%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top:10%;
+    background: #fff;
+    z-index: 99999;
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.popup-box .box-in {
+    margin: 3% 4% 5% 4%;
+    overflow-y: auto;
+    height: 8rem;
+}
+.popup-box .close-top{
+    padding:0.5rem 0.3rem;
+    font-size: 0.44rem;
+    color:#b78255;
+    text-align: center;
+    border-bottom: 1px solid #b78255;
+    width:5.5rem;
+    margin: 0 auto;
+    position: relative;
+}
+.popup-box .close-top a{
+    background: url(../images/indexTrade/close-b.png) no-repeat;
+    width: 0.21rem;
+    height:0.21rem;
+    background-size: 0.21rem 0.21rem;
+    position: absolute;
+    right: 0;
+    margin-top: .2rem;
+    text-decoration: none;
+}
+.popup-box .section1 h2{
+    font-size: 0.36rem;
+    margin-bottom: 0.1rem;
+    color: #b78255;
+}
+.popup-box .section5 h2{
+    font-size: 0.36rem;
+    margin-bottom: 0.1rem;
+    color: #b78255;
+}
+.popup-box table.data-box {
+    width: 100%;
+    margin: 16px auto 25px;
+    text-align: center;
+    border: 0 !important;
+    font-size: 1.6em;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.popup-box .box-in .line-throw{font-size: 0.32rem;}
+.popup-box  .box-in .section1 p{
+    font-size:0.28rem;
+    margin-bottom: 0.2rem;
+    line-height: 1.8;
+}
+.popup-box  .box-in .section3 p{
+    font-size:0.28rem;
+    margin-bottom: 0.2rem;
+    line-height: 1.8;
+}
+.popup-box .box-in .section3 p a{color: #0096dc}
+.popup-box  .box-in .section3 p span{
+    padding-right:0.15rem;
+}
+.popup-box  .box-in .section4  h2{
+    font-size: 0.36rem;
+    margin-bottom: 0.1rem;
+    color: #b78255;
+}
+.popup-box  .box-in .section4 li{
+    font-size: 0.28rem;
+    line-height: 1.8;
+}
+.popup-box  .box-in .section4 li span{
+    margin-right: 0.15rem;
+}
+.popup-box  .box-in .section4 li p{
+    display: flex;
+}
+
+.popup-box table.data-box thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box thead th {
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 5px;
+    color: #FFFFFF;
+    background: #dcb08e;
+    line-height: 1.0;
+}
+.popup-box table.data-box thead tr {
+    border: 1px solid #dcb08e;
+}
+.popup-box table.data-box tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box tbody td {
+    line-height: 1.0;
+    text-align: center;
+    color: #333333;
+    padding: 1.44%;
+    font-size: 14px;
+    border: 0.025rem solid #ead5c2;
+    font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+}
+.popup-box table.data-box tbody .unit {
+    font-size: 0.8em;
+}
+.popup-box table.data-box tbody tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+//background: #f7efe8;
+}
+.popup-box table.data-box tbody tr.grey {
+    background: #fff;
+}
+.popup-box table.data-box tbody tr.last-row td {
+    border-bottom: 1px solid #CCCCCC;
+}
+.popup-box table.data-box .first-child {
+    text-align: center;
+    font-size: 16px;
+}
+.popup-box table.data-box .first-child a {
+    color: #666666;
+    text-decoration: none;
+}
+.popup-box .table1 td,
+.popup-box .table2 td {
+    width: 25%;
+}
+.popup-box .table4 td {
+    width: 16%;
+}
+.popup-box .table3 td {
+    width: 33.333333%;
+}
+.popup-box .note{line-height: 1.8;font-size: 0.24rem;margin-bottom: 0.1rem}
+.popup-box .note span{color: #f00}
+.section5 ol li{
+    font-size: .28rem;
+    line-height: 2.2;
+    text-align: justify;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}

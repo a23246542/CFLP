@@ -1,0 +1,614 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0; color: #333}
+img{ overflow:hidden;display:block;border: none;}
+.m-banner{
+    overflow: hidden;
+    background: url("/cn/zt/images/non-farm1804/banner-bg.jpg") no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 9.29rem;
+}
+.m-banner .ban-font{
+    overflow: hidden;
+}
+.m-banner .ban-font img{
+    width: 7.5rem;
+    margin-bottom: 3rem;
+}
+.m-banner .ban-font span{
+    overflow: hidden;
+    display: block;
+    font-size: .32rem;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+.m-banner .ban-btn{
+    overflow: hidden;
+    width: 4.3rem;
+    display: flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    margin: .2rem auto;
+}
+.m-banner .ban-btn a{
+    overflow: hidden;
+    width: 2rem;
+    height: .6rem;
+    line-height: .6rem;
+    text-align: center;
+    font-size: .28rem;
+    border-radius: .04rem;
+    -moz-border-radius: .04rem;
+    border: solid .02rem #fff;
+    text-decoration: none;
+}
+.m-banner .ban-btn a.login{
+    background: #fff;
+    color: #0f0c0d;
+}
+.m-banner .ban-btn a.account{
+    color: #fff;
+}
+.m-page{
+    overflow: hidden;
+     padding: .6rem .2rem;
+}
+.m-page.bg{
+    background: url("/cn/zt/images/non-farm1804/neiye-bg-2.jpg") no-repeat;
+    background-size: 100% 100%;
+    height: 12.71rem;
+}
+.m-page.bg01{
+    background: url("/cn/zt/images/non-farm1804/neiye-bg-3.jpg") no-repeat;
+    background-size: 100% 100%;
+    height: 7.37rem;
+    padding-bottom: 0;
+}
+.m-page .title{
+    overflow: hidden;
+    background: url("/cn/zt/images/non-farm1804/01.png") no-repeat center;
+    background-size: .95rem 1.12rem;
+    height: 1.12rem;
+}
+.m-page.bg .title{
+    background: url("/cn/zt/images/non-farm1804/02.png") no-repeat center;
+    background-size: .95rem 1.12rem;
+}
+.m-page.bg01 .title{
+    background: url("/cn/zt/images/non-farm1804/03.png") no-repeat center;
+    background-size: .95rem 1.12rem;
+}
+.m-page .title span{
+    overflow: hidden;
+    display: block;
+    color: #0d4a8c;
+    font-size: .4rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: .4rem;
+}
+.m-page.bg .title span{color: #fff}
+.m-page .p-list{
+    overflow: hidden;
+}
+.m-page .p-list p{
+    overflow: hidden;
+    display: block;
+    color: #666;
+    font-size: .28rem;
+    line-height: .48rem;
+    text-align: justify;
+}
+.m-page .p-list p.bold{
+    font-weight: bold;
+    color: #0d4a8c;
+}
+.m-page .p-list span{
+    overflow: hidden;
+    display: inline;
+    font-size: .28rem;
+    line-height: .48rem;
+    color: #0d4a8c;
+}
+.m-page .slider-item{
+    overflow: hidden;
+    height: 3.16rem;
+    background: url("/cn/zt/images/non-farm1804/slider-bg.png") no-repeat center;
+    background-size: 6.43rem 3.16rem;
+    margin: .4rem auto;
+}
+.m-page .slider-item.marginbottom span:first-child{margin-bottom: .6rem}
+.m-page .slider-item span{
+    overflow: hidden;
+    text-align: center;
+    display: block;
+    color: #fff;
+    font-size: .28rem;
+    line-height: .48rem;
+}
+.m-page .slider-item span:first-child{
+    margin-bottom: .84rem;
+    margin-top: .03rem;
+}
+.swiper-container{height: 4.6rem}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{bottom: .4rem}
+.swiper-pagination-bullet{
+    background: #6b9acd;
+    opacity: 1;
+}
+/*.swiper-pagination-bullet:nth-child(2){
+    background: #346faf;
+}
+.swiper-pagination-bullet:nth-child(3){
+    background: #6b9acd;
+}
+
+.swiper-pagination-bullet:last-child{
+    background: #aecced;
+}*/
+.swiper-pagination-bullet-active{
+    background: #0d4a8c;
+}
+.swiper-button-next{
+    width: .34rem;
+    height: .62rem;
+    background: url("/cn/zt/images/non-farm1804/arrow-right.png") no-repeat;
+    background-size: 100% 100%;
+}
+.swiper-button-prev{
+    width: .34rem;
+    height: .62rem;
+    background: url("/cn/zt/images/non-farm1804/arrow-left.png") no-repeat;
+    background-size: 100% 100%;
+}
+.swiper-button-next, .swiper-button-prev{margin-top: -.5rem}
+.m-page .slider-item01{
+    overflow: hidden;
+    width: 5.83rem;
+    height: 3.05rem;
+    background: rgba(255,255,255,.5);
+    border-radius: .06rem;
+    -moz-border-radius: .06rem;
+    margin: .6rem auto;
+}
+.m-page .slider-item01 .con-list{
+    overflow: hidden;
+    width: 5.43rem;
+    background: url("/cn/zt/images/non-farm1804/icon-01.png") no-repeat right center;
+    background-size: 2.77rem 2.23rem;
+    padding: .45rem .2rem;
+}
+.m-page .slider-item01 .con-list.neiye-bg{
+    background: url("/cn/zt/images/non-farm1804/icon-02.png") no-repeat 2.9rem center;
+    background-size: 2.77rem 2.23rem;
+}
+.m-page .slider-item01 .con-list.neiye-bg01{
+    background: url("/cn/zt/images/non-farm1804/icon-03.png") no-repeat right center;
+    background-size: 2.77rem 2.23rem;
+}
+.m-page .slider-item01 .con-list.neiye-bg02{
+    background: url("/cn/zt/images/non-farm1804/icon-04.png") no-repeat right center;
+    background-size: 2.77rem 2.23rem;
+}
+.m-page .slider-item01 .con-list span{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    color: #414141;
+    margin-bottom: .18rem;
+    width: 60%;
+}
+.m-page .slider-item01 .con-list span.color{
+    color: #666;
+    font-weight: bold;
+    font-size: .24rem;
+}
+.m-page .slider-item01 .con-list a{
+    overflow: hidden;
+    display: block;
+    width: 2.4rem;
+    height: .64rem;
+    line-height: .64rem;
+    text-align: center;
+    background: #346faf;
+    border-radius: .04rem;
+    -moz-border-radius: .04rem;
+    color: #fff;
+    font-size: .26rem;
+    margin-top: .7rem;
+    text-decoration: none;
+}
+.m-page .slider-item01 .con-list.neiye-bg a{margin-top: .3rem}
+.m-page .slider-item01 .con-list.neiye-bg01 a{margin-top: .3rem}
+.m-page .slider-item01 .con-list.neiye-bg02 a{margin-top: .3rem}
+.m-page .slider-item02{
+    overflow: hidden;
+    width: 6.7rem;
+    height: 4.86rem;
+    background: url("/cn/zt/images/non-farm1804/slider-bg-1.png") no-repeat;
+    background-size: 100% 100%;
+    display:flex;
+    justify-content: space-between;
+    padding: 0 .2rem;
+}
+.m-page .slider-item02 .left-con{
+    overflow: hidden;
+    width: 3.35rem;
+    margin-top: 1.5rem;
+}
+.m-page .slider-item02 .left-con p{
+    overflow: hidden;
+    font-size: .28rem;
+    line-height: .48rem;
+    color: #fff;
+    margin-bottom: .3rem;
+}
+.m-page .slider-item02 .right-img{
+    overflow: hidden;
+    margin-top: .28rem;
+}
+.m-page .slider-item02 .right-img img{
+    width: 3rem;
+    margin-top: 1.5rem;
+}
+.m-page .slider-item02 span{
+    overflow: hidden;
+    display: block;
+    font-size: .2rem;
+    color: #0d4a8c;
+    text-align: right;
+    margin-right: .45rem;
+}
+
+
+.m-page .data{
+    overflow: hidden;
+    width: 7.1rem;
+    background: rgba(255,255,255,.5);
+    padding-bottom: .2rem;
+}
+.m-page .data .con-title{
+    overflow: hidden;
+}
+.m-page .data .con-title span{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    color: #414141;
+    text-align: center;
+    margin: .1rem 0;
+}
+.m-page .data .con-title span.size{
+    color: #0d4a8c;
+    font-size: .4rem;
+    margin-top: .32rem;
+}
+.m-page .data .con-title a{
+    overflow: hidden;
+    display: block;
+    width: 1.97rem;
+    height: .4rem;
+    line-height: .4rem;
+    text-align: center;
+    color: #fff;
+    background: #0d4a8c;
+    border-radius: .06rem;
+    -moz-border-radius: .06rem;
+    margin: .15rem auto;
+    font-size: .28rem;
+    text-decoration: none;
+}
+.m-page .data .con-rect{
+    overflow: hidden;
+    width: 6.71rem;
+    height: 4.02rem;
+    background: url("/cn/zt/images/non-farm1804/icon-bg.png") no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 .1rem 0 .1rem;
+    margin: 0 auto;
+}
+.m-page .data .con-rect .rect-list{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: .1rem;
+}
+.m-page .data .con-rect .rect-list .num{
+    overflow: hidden;
+    width: .58rem;
+    height: .73rem;
+    line-height: .73rem;
+    background: url("/cn/zt/images/non-farm1804/icon-bg-1.png") no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: .1rem;
+}
+.m-page .data .con-rect .rect-list .num.neiye-bg{
+    width: .68rem;
+    height: .85rem;
+    line-height: .85rem;
+    background: url("/cn/zt/images/non-farm1804/icon-bg-3.png") no-repeat;
+    background-size: 100% 100%;
+}
+.m-page .data .con-rect .rect-list .num.neiye-bg01{
+    background: url("/cn/zt/images/non-farm1804/icon-bg-2.png") no-repeat;
+    background-size: 100% 100%;
+}
+.m-page .data .con-rect .rect-list .num span{
+    overflow: hidden;
+    display: inline-block;
+    font-size: .2rem;
+    color: #fff;
+}
+.m-page .data .con-rect .rect-list .rect{
+    overflow: hidden;
+    width: .32rem;
+    background: #346faf;
+}
+.m-page .data .con-rect .rect-list .rect.bg-color{
+    background: #0d4a8c;
+}
+.m-page .data .con-time{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    width: 6.6rem;
+    margin: 0 auto;
+}
+.m-page .data .con-time span{
+    overflow: hidden;
+    font-size: .2rem;
+    color: #666;
+}
+.m-page .data .con-line{
+    overflow: hidden;
+    width: 6.2rem;
+    margin: .15rem auto 0 auto;
+    display: flex;
+    justify-content: flex-start;
+}
+.m-page .data .con-line .left-line{
+    overflow: hidden;
+    width: 3.8rem;
+    height: .1rem;
+    border-bottom: dashed .02rem #000;
+    border-left: solid .02rem #000;
+}
+.m-page .data .con-line .right-line{
+    overflow: hidden;
+    width: 2.3rem;
+    height: .1rem;
+    border-bottom: dashed .02rem #000;
+    border-left: solid .02rem #000;
+    border-right: solid .02rem #000;
+}
+.m-page .data .con-year{
+    overflow: hidden;
+    width: 6.2rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+}
+.m-page .data .con-year span{
+    overflow: hidden;
+    font-size: .2rem;
+    text-align: center;
+    color: #666;
+}
+.m-page .data .con-year .left-year{
+    width: 3.8rem;
+}
+.m-page .data .con-year .right-year{
+    width: 2.3rem;
+}
+.ban-btn{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    margin: .45rem auto;
+}
+.ban-btn a{
+    overflow: hidden;
+    width: 2rem;
+    height: .6rem;
+    line-height: .6rem;
+    text-align: center;
+    font-size: .28rem;
+    border-radius: .04rem;
+    -moz-border-radius: .04rem;
+    border: solid .02rem #346faf;
+    text-decoration: none;
+    margin: 0 .1rem;
+}
+.ban-btn a.login{
+    background: #346faf;
+    color: #fff;
+}
+.ban-btn a.account{
+    color: #346faf;
+}
+.m-brand{
+    background: url(/cn/zt/images/campaign1802/m-con-bg04.jpg) no-repeat;
+    width: 100%;
+    height: 8rem;
+    background-size: 100% 8.8rem;
+    padding-top: 0.8rem;
+    text-align: center;
+}
+.m-brand .layout-1{
+    font-size: 0.4rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+.m-brand .layout-2 ul {
+    display: flex;
+}
+.m-brand .layout-2 ul li{
+    width: 33.3%;
+    opacity: 0.5;
+    text-align: center;
+}
+.m-brand .layout-2 ul li:nth-child(2){
+    opacity: 1;
+    position: relative;
+    top: -0.3rem;
+}
+.m-brand .layout-2 ul li .item-1{
+    font-size: 0.3rem;
+    color: #f3dac1;
+    margin-bottom: 0.1rem;
+}
+.m-brand .layout-2 ul li .item-2{
+    font-size: 0.24rem;
+    color: #fff;
+}
+.m-brand span.bg-icon_03 {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: url(/cn/zt/images/campaign1802/icon-003.png) no-repeat;
+    background-size: 1rem 1rem;
+}
+.m-brand span.bg-p_img_05 {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: url(/cn/zt/images/campaign1802/icon-001.png) no-repeat;
+    background-size: 1rem 1rem;
+}
+.m-brand span.bg-icon_02 {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: url(/cn/zt/images/campaign1802/icon-002.png) no-repeat;
+    background-size: 1rem 1rem;
+}
+.m-brand .layout-2 ul.second-brand li:nth-child(2) {
+    opacity: 0.5;
+    position: inherit;
+}
+.m-brand .layout-2 ul.second-brand{
+    margin-top: 1rem;
+}
+.m-brand .second-brand .bg-icon_02{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: url(/cn/zt/images/campaign1802/icon-004.png) no-repeat;
+    background-size: 1rem 1rem;
+}
+.m-brand .second-brand .bg-p_img_05{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: url(/cn/zt/images/campaign1802/icon-006.png) no-repeat;
+    background-size: 1rem 1rem;
+}
+.m-brand .second-brand .bg-icon_03{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: url(/cn/zt/images/campaign1802/icon-005.png) no-repeat;
+    background-size: 1rem 1rem;
+}
+.m-copyright{
+    overflow: hidden;
+}
+.m-copyright span{
+    overflow: hidden;
+    display: block;
+    font-size: 0.24rem;
+    color: #999;
+    text-align: center;
+    padding: 0.5rem 0 .15rem 0;
+}
+.m-copyright p{
+    overflow: hidden;
+    display: block;
+    font-size: 0.14rem;
+    color: #999;
+    text-align: center;
+    padding: 0.1rem .2rem;
+    background: #f7f7f7;
+}
+.tc-hide{
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+}
+.masking{
+    display: block;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+}
+.tc-con{
+    overflow: hidden;
+    width: 6.5rem;
+    margin: 2rem auto 0 auto;
+    background: #fff;
+    border-radius: .06rem;
+    -moz-border-radius: .06rem;
+    padding-bottom: .3rem;
+}
+.tc-con span{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    line-height: .48rem;
+    padding: 0 .2rem;
+    text-align: justify;
+}
+.tc-con span.center{
+    text-align: center;
+    font-size: .36rem;
+    padding: .2rem 0;
+    color: #346faf;
+    border-bottom: solid .02rem #346faf;
+    margin-bottom: .3rem;
+    position: relative;
+}
+.tc-con span.close{
+    overflow: hidden;
+    background: url("/cn/zt/images/non-farm1804/X.png") no-repeat;
+    background-size: .21rem .21rem;
+    height: .21rem;
+    display: inline;
+    position: absolute;
+    right: 0;
+    top: .34rem;
+    cursor: pointer;
+}
+.tc-con span.color{
+    font-size: .32rem;
+    padding: 0 .2rem .1rem .2rem;
+    color: #346faf;
+}
+.tc-con p{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    line-height: .48rem;
+    padding: 0 .2rem;
+    text-align: justify;
+}
+.tc-con p.color{color: #346faf;font-weight: bold}
+
+
+
+
+
+
+

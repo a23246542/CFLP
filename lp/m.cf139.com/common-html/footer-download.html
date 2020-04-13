@@ -1,0 +1,22 @@
+<!-- footer-s -->
+<div class="down-footer">
+    <div class="footer-con">
+        <a href="javascript:;">
+            <div class="words"><span>更多精彩点评请下载官方 APP</span></div>
+            <div class="download"><span>立即下载</span><img src="../images/m-footer/arrow.png"/></div>
+        </a>
+    </div>
+    <!--<div class="copyright">-->
+        <!--<span>风险警告：保证金交易具高风险，投资者考虑投资金额时需视乎自身能力。投资有盈有亏，您可能因此损失全部本金。 </span>-->
+        <!--<span>Copyright © 2018 创富国际有限公司 版权所有 不得转载</span>-->
+    <!--</div>-->
+</div>
+<script src="../common-js/app.js"></script>
+<script>
+    var href = window.location.href ;
+    if(href.indexOf("app")!=-1 || href.indexOf("noneheader")!=-1){
+        $(".footer-con").hide();
+    }else {
+        $(".footer-con").show();
+    }
+</script>

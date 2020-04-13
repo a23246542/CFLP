@@ -1,0 +1,679 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0; color: #333;}
+.inner{overflow: hidden;width: 100%; margin: 0 auto; position: relative}
+img{ overflow:hidden;border: none;display: block}
+body,html{background: #fff;font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;}
+.web-banner{
+    background: url("../../images/oldCampaign1911/banner.png") no-repeat center;
+    background-size: 100% 100%;
+    height: 10.03rem;
+    position: relative;
+    z-index: 1;
+}
+.web-banner .inner img{
+	width: 5.9rem;
+	margin:0.78rem auto 0;
+}
+.web-page{
+    overflow: hidden;
+    position: relative;
+}
+.web-page .title {
+    overflow: hidden;
+    margin-top: .25rem;
+    text-align: center
+}
+.web-page.block1{
+	width:100%;
+	height: 8.35rem;
+	
+}
+.list {
+  display: flex;
+  justify-content: center;
+  color: black;
+  flex-flow: column;
+}
+.list .list-down {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+}
+.list .list-up{
+	width: 100%;
+	text-align: center;
+}
+.list-up table{
+  background-color: #e5e5e5;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top:18px;
+  margin: 0 auto;
+  zoom: 1;
+  overflow: hidden; 
+}
+.list-up table thead{
+  
+}
+.list-up table thead tr{
+	background-color: #38374f;
+}
+.list-up table thead tr th{
+	color: #fff;
+	font-weight: bold;
+	font-size: .3rem;
+}
+.list-up tr th,.list-up tr td{
+  text-align: center;
+  font-size: .3rem;
+  color: #231815;
+}
+.list-up tr td.rigth-0,.list-up tr th.rigth-0{
+  border-right:0;
+}
+.ed-bold{
+  font-weight: bold;
+  color: #ec6300!important;
+}
+.list-up tr:nth-child(2){
+	background-color: #decc8e;
+}
+.list-up tr:nth-child(2) td{
+  border-bottom: 0;
+}
+.list-up tr{
+  line-height: 1rem;
+  text-align: center;
+}
+
+.table-tip{
+	width: 100%;
+	height: .76rem;
+	line-height: .76rem;
+	font-size: .24rem;
+	color: #262827;
+	margin: 0 auto;
+	zoom: 1;
+	overflow: hidden;
+	text-align: center;
+	margin-bottom: 38px;
+}
+.web-page.block2{
+	width: 100%;
+	height: 17.26rem;
+	background: url("../../images/oldCampaign1911/block2-bj.png") no-repeat;
+	background-position: center top;
+	background-size: 100% 6.42rem;
+}
+.web-page.block2 .title img{
+	width: 3.91rem;
+	margin: .55rem auto .53rem;
+}
+.web-footer{
+	width: 100%;
+	height: 2.96rem;
+	background-color: #2aa1bd;
+	zoom: 1;
+	margin-bottom: 1.1rem;
+	overflow: hidden;
+}
+.web-footer .item-1{
+	width: 6.35rem;
+	height: auto;
+	line-height: 0.4rem;
+	margin: 0.68rem auto;
+	zoom: 1;
+	overflow: hidden;
+	font-size: 0.2rem;
+	color: #fff;
+	text-align: center;
+}
+.a-btn-open{
+	position: fixed;
+	right: 0;
+	top: 50%;
+	margin-top: -0.98rem;
+	height: 1.96rem;
+	background-image: url("../../images/oldCampaign1911/m-old-1911-rigth-1.png");
+	background-size: .65rem 1.96rem;
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 9900;
+	width: .65rem;
+}
+.bg4{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* height: 1.1rem; */
+    z-index: 999;
+    background-color: #07668c;
+    text-align: center;
+    line-height: 1rem;
+    height: calc(1.1rem) + constant(safe-area-inset-bottom));
+    height: calc(1.1rem) + env(safe-area-inset-bottom));
+}
+.bg4 .btn{
+    width: 6.9rem;
+    height: 1.1rem;
+    margin: 0 auto;
+}
+.btn p{
+	width: 4.08rem;
+	height: 1.1rem;
+	line-height: 1.1rem;
+	float: left;
+	font-size: 0.32rem;
+	text-align: center;
+	color: #fff;
+}
+.bg4 a{
+    display: block;
+    font-size: 0.32rem;
+	font-weight: bold;
+    color: #fff;
+	width: 2.58rem;
+    height: 1.07rem;
+    text-align: center;
+    line-height: .9rem;
+    float: left;
+	margin-top: .11rem;
+	margin-left: .15rem;
+    box-sizing: border-box;
+	background-image: url("../../images/oldCampaign1911/btn-bg.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 2.58rem 1.07rem;
+}
+.swiper-pagination {
+    width: 100%;
+    height: .5rem;
+    bottom: .1rem;
+	line-height:0;
+}
+.swiper-pagination-bullets .swiper-pagination-bullet {
+    width: .66rem;
+    height: 0.13rem;
+    border-radius: 0;
+    color: #35344c;
+    opacity: 1;
+    background: #fff;
+	border:1px solid #2aa1bd;
+	margin:0 .225rem;
+}
+.swiper-pagination-bullets .swiper-pagination-bullet-active {
+    color: #2aa1bd;
+	background: #2aa1bd;
+}
+.swiper-pagination-bullets .swiper-pagination-bullet:hover{
+    color: #2aa1bd;
+	background: #2aa1bd;
+}
+.task_tip{
+	width:100%;
+	height:.7rem;
+	line-height: .7rem;
+	text-align: center;
+	font-size: 0.24rem;
+	color: #262827;
+	
+}
+
+.conList{
+	width: 6.9rem;
+	height: auto;
+	min-height: 13.78rem;
+	margin: 0 auto;
+}
+.swiper-container{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	
+}
+.swiper-container .swiper-wrapper{
+	width:100%;
+	height: 12.94rem;
+}
+.swiper-container .swiper-wrapper .swiper-slide{
+	width:100%;
+	height: 12.94rem;
+}
+.swiper-container .item{
+	width: 100%;
+}
+.item-cont{
+	width: 5.8rem;
+	height: 4.28rem;
+	zoom: 1;
+	overflow: hidden;
+	margin: 0 auto;
+	background-image:url("../../images/oldCampaign1911/m-1911-old-pic1.png");
+	background-position: center;
+	background-size: 5.8rem 4.28rem;
+	background-repeat: no-repeat;
+	margin-bottom: .08rem;
+}
+.item-cont .item-text{
+	width: 100%;
+	height: 0.57rem;
+	float: left;
+	zoom: 1;
+	overflow: hidden;
+	margin-top: 2.15rem;
+	line-height: 0.57rem;
+	font-size: 0.32rem;
+	font-weight: bold;
+	color: #606060;
+	text-align: left;
+	box-sizing: border-box;
+	padding-left: 1.2rem;
+}
+.item-cont .item-xx-span{
+	display: block;
+	float: left;
+	width: 100%;
+	height: 0.57rem;
+	line-height: 0.57rem;
+	zoom: 1;
+	overflow: hidden;
+	font-size: 0.28rem;
+	color: #2aa1bd;
+	text-align: left;
+	box-sizing: border-box;
+	padding-left: 1.2rem;
+}
+.item-cont .item-xx-span cite{
+	font-style:normal;
+	color:#606060;
+}
+.swiper-container .item-img-2{
+	background-image:url("../../images/oldCampaign1911/m-1911-old-pic2.png");
+}
+.swiper-container .item-img-3{
+	background-image:url("../../images/oldCampaign1911/m-1911-old-pic3.png");
+}
+.swiper-container .item-img-4{
+	background-image:url("../../images/oldCampaign1911/m-1911-old-pic4.png");
+}
+.swiper-container .item-img-5{
+	background-image:url("../../images/oldCampaign1911/m-1911-old-pic5.png");
+}
+.swiper-container .item-img-6{
+	background-image:url("../../images/oldCampaign1911/m-1911-old-pic6.png");
+}
+.swiper-container .item-img-7{
+	background-image:url("../../images/oldCampaign1911/m-1911-old-pic7.png");
+}
+.swiper-container .item-img-8{
+	background-image:url("../../images/oldCampaign1911/m-1911-old-pic8.png");
+}
+.swiper-container .item-img-9{
+	background-image:url("../../images/oldCampaign1911/m-1911-old-pic9.png");
+}
+.conList .swiper-button-next,.conList .swiper-button-prev{
+	overflow: hidden;
+	display: block;
+	position: absolute;
+	top: 45%;
+	z-index: 11;
+	width: 0.71rem;
+	height: 0.71rem;
+	background-size: 0.71rem 0.71rem;
+	background-position: 0 0;
+}
+
+
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+	background-image: url('../../images/oldCampaign1911/m-old-1911-icon-2.png')!important;
+	right: .25rem!important;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+	background-image: url('../../images/oldCampaign1911/m-old-1911-icon-1.png')!important;
+	left: .25rem!important;
+}
+
+.web-page .title img{margin: 0 auto;width: 5.9rem}
+.web-page .title p,.web-page .title span{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    color: #013748;
+    text-align: center;
+    margin: .1rem 0 .15rem;
+}
+.web-page .title span{font-size: .4rem}
+.web-page .title p {
+    margin: .46rem auto .61rem;
+    width: 6.3rem;
+    line-height: .4rem;
+}
+.web-page .conList{overflow: hidden;}
+.web-page .conList .slider{
+    overflow: hidden;
+    width: 4rem;
+    height: 4.04rem;
+    border-radius: .125rem;
+    background: #c71b32;
+    box-shadow: 0 .03rem .13rem rgba(0,0,0,.52);
+    position: relative;
+    margin: .4rem auto;
+}
+.web-page .conList .slider p,.web-page .conList .slider span{
+    overflow: hidden;
+    display: block;
+    font-size: .36rem;
+    color: #fff;
+    text-align: center;
+}
+.web-page .conList .slider span {
+    font-size: .52rem;
+    font-weight: bold;
+    line-height: .56rem;
+    margin-bottom: .25rem;
+}
+.web-page .conList .slider .item span{margin-top: .8rem}
+.web-page .conList .slider span em{display: inline;color: #f8e489}
+.web-page .conList .slider p.first {
+    font-weight: bold;
+    font-size: .4rem;
+    line-height: .44rem;
+    margin: .4rem 0 -.8rem;
+}
+.web-page .conList .slider p.last{
+    overflow: hidden;
+    width: 3.9rem;
+    height: .9rem;
+    line-height: .9rem;
+    margin: 0 auto;
+    background:-webkit-linear-gradient(top, #fbe78a, #cdb175);
+    background: -o-linear-gradient(top, #fbe78a, #cdb175);
+    background: -moz-linear-gradient(top, #fbe78a, #cdb175);
+    background: linear-gradient(to top, #fbe78a, #cdb175);
+    border-bottom-left-radius: .1rem;
+    border-bottom-right-radius: .1rem;
+    color: #013748;
+    font-weight: bold;
+    font-size: .34rem;
+}
+.web-page .conList .slider p.last.color{color: #a50606}
+.web-page .conList .slider .item{
+    overflow: hidden;
+    background: url("../../images/campaign1911_new/li.png");
+    background-size: 100% 100%;
+    width: 3.83rem;
+    height: 2.91rem;
+    margin: .1rem auto .08rem;
+}
+.web-page .conList .swiper-button-prev.swiper-button-disabled{
+    opacity: 1;
+}
+.web-page .conList1{overflow: hidden;margin: .3rem 0 0}
+.web-page .conList1 li{
+    overflow: hidden;
+    display: block;
+    width: 50%;
+    float: left;
+    margin-bottom: .55rem;
+}
+.web-page .conList1 li span{
+    overflow: hidden;
+    background: url("../../images/campaign1911_new/icon-bg.png") no-repeat;
+    background-size: 100% 100%;
+    width: 1.2rem;
+    height: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto .1rem;
+}
+.web-page .conList1 li span img{width: .7rem}
+.web-page .conList1 li p{
+    overflow: hidden;
+    display: block;
+    color: #013748;
+    font-size: .22rem;
+    text-align: center;
+}
+.web-page .conList1 li p:last-child{
+    font-size: .3rem;
+    font-weight: bold;
+    margin-top: .05rem;
+}
+.down-footer{background: #eae8d9;padding-bottom: 1.5rem}
+.down-footer .copyright span{color: #013748;}
+.bot-fixed{
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    width: 7.5rem;
+    background: #05587d;
+    box-shadow: 0 -.1rem .08rem rgba(221,221,221,.4);
+    padding-bottom:  env(safe-area-inset-bottom);
+}
+.bot-fixed ul{
+    overflow: hidden;
+    list-style: none;
+    height: .9rem;
+    margin: .1rem 0;
+    padding: 0 .25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bot-fixed ul li{
+    overflow: hidden;
+    list-style: none;
+    width: 1.96rem;
+    height: .78rem;
+    border-radius: .185rem;
+    margin: 0 .16rem;
+}
+.bot-fixed ul li a img{width: .5rem;margin: 0 auto}
+.bot-fixed ul li a{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: .3rem;
+    color: #f7e288;
+    height: .78rem;
+}
+.bot-fixed ul li.account{
+    background:-webkit-linear-gradient(top, #068bb5, #16a1e2);
+    background: -o-linear-gradient(top, #068bb5, #16a1e2);
+    background: -moz-linear-gradient(top, #068bb5, #16a1e2);
+    background: linear-gradient(to top, #068bb5, #16a1e2);
+    box-shadow: 5px 5px 7px rgba(0,0,0,.52);
+}
+.bot-fixed ul li.border{
+    border: solid 2px #57bfe3;
+    box-shadow: 5px 5px 7px rgba(0,0,0,.52);
+}
+/*弹窗*/
+.tc-hide{
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    line-height: 1.8;
+}
+.masking{
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+}
+.popup-box {
+    overflow: hidden;
+    max-width:95%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top:10%;
+    background: #fff;
+    z-index: 99999;
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 .1rem rgba(0, 0, 0, 0.3);
+}
+.popup-box .box-in {
+    margin: 3% 4% 5% 4%;
+    overflow-y: auto;
+    height: 8rem;
+}
+.popup-box .close-top{
+    padding:0.3rem 0.3rem;
+    font-size: 0.44rem;
+    color:#b78255;
+    text-align: center;
+    border-bottom: 1px solid #b78255;
+    width:6rem;
+    margin: 0 auto;
+    position: relative;
+}
+.popup-box .close-top a{
+    background: url(../../images/campaign1710/close-b.png) no-repeat;
+    width: 0.21rem;
+    height:0.21rem;
+    background-size: 0.21rem 0.21rem;
+    position: absolute;
+    right: 0;
+    margin-top: .2rem;
+    text-decoration: none;
+}
+.popup-box  .box-in .section1 .item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: .1rem;
+}
+.popup-box .section1 h2{
+    font-size: 0.28rem;
+    font-weight: bold;
+    color: #b78255;
+}
+.popup-box table.data-box {
+    width: 100%;
+    margin: 16px auto .25rem;
+    text-align: center;
+    border: 0 !important;
+    font-size: 1.6em;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.popup-box .box-in .line-throw{font-size: 0.3rem;}
+.popup-box .box-in .section1 p{
+    font-size:0.28rem;
+    line-height: 1.8;
+}
+.popup-box .box-in .section3 p{
+    font-size:0.28rem;
+    /*margin-bottom: 0.2rem;*/
+    line-height: 1.8;
+}
+.popup-box .box-in .section3 p a{color: #0096dc}
+.popup-box .box-in .section3 p span{
+    color: #f00;
+    font-weight: bold;
+}
+.popup-box .box-in .section4  h2{
+    font-size: 0.3rem;
+    margin-bottom: 0.1rem;
+    color: #b78255;
+}
+.popup-box .box-in .section4 li{
+    font-size: 0.28rem;
+    line-height: 1.8;
+}
+.popup-box .box-in .section4 li span{
+    /*margin-right: 0.15rem;*/
+}
+.popup-box .box-in .section4 li p{
+    display: flex;
+}
+
+.popup-box table.data-box thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box thead th {
+    font-size: .28rem;
+    text-align: center;
+    padding: .15rem .05rem;
+    color: #FFFFFF;
+    background: #dcb08e;
+    line-height: 1.0;
+}
+.popup-box table.data-box thead tr {
+    border: 1px solid #dcb08e;
+}
+.popup-box table.data-box tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box tbody td {
+    line-height: 1.0;
+    text-align: center;
+    color: #333333;
+    padding: 1.44%;
+    font-size: .28rem;
+    border: 0.025rem solid #ead5c2;
+    font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+}
+.popup-box table.data-box tbody .unit {
+    font-size: 0.8em;
+}
+.popup-box table.data-box tbody tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+//background: #f7efe8;
+}
+.popup-box table.data-box tbody tr.grey {
+    background: #fff;
+}
+.popup-box table.data-box tbody tr.last-row td {
+    border-bottom: 1px solid #CCCCCC;
+}
+.popup-box table.data-box .first-child {
+    text-align: center;
+    font-size: .28rem;
+}
+.popup-box table.data-box .first-child a {
+    color: #666666;
+    text-decoration: none;
+}
+.popup-box .table1 td,
+.popup-box .table2 td {
+    width: 25%;
+}
+.popup-box .table4 td {
+    width: 16%;
+}
+.popup-box .table3 td {
+    width: 33.333333%;
+}
+.popup-box .note{line-height: 1.8;font-size: 0.24rem;margin-bottom: 0.1rem}
+.popup-box .note span{color: #f00}
+.down-footer span{
+    line-height: 1.8;
+}
+.bot-fixed li{
+    line-height: 1.8;
+}

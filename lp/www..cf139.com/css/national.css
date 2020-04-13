@@ -1,0 +1,846 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0;color: #333;background: #edf0f1}
+.inner{overflow: hidden;width: 1200px; margin: 0 auto; position: relative}
+img{ overflow:hidden;display:block;border: none;}
+.e-header .header{
+    background: none;
+}
+.web-banner{
+    width: 100%;
+    height: 721px;
+    background: url("//img.getfc.com.cn/source/www/zt/national/banner-bg.jpg") no-repeat center;
+    margin-top:-76px;
+    //position: relative;
+}
+.web-banner .img-font{
+    overflow: hidden;
+    width: 100%;
+    margin: 150px 0 0 0;
+}
+.web-banner .img-font img:first-child{margin-left: 290px}
+.web-banner .img-font img:last-child{margin: 15px 0 0 70px}
+.web-banner .btn{
+    overflow: hidden;
+    margin: 35px 0 0 230px;
+}
+.web-banner .btn a{
+    overflow: hidden;
+    display: inline-block;
+    width: 154px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-right: 30px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.web-banner .btn a.item{
+    background: #03354b;
+}
+.web-banner .btn a.item:hover{
+    background: transparent;
+    border: solid 1px #03354b;
+    color: #03354b;
+}
+.web-banner .btn a.chat{
+    border: solid 1px #03354b;
+    color: #03354b;
+}
+.web-banner .btn a.chat:hover{
+    background: #03354b;
+    color: #fff;
+}
+.web-page{
+    overflow: hidden;
+    width: 100%;
+    padding: 80px 0 100px;
+    background: #fff;
+}
+.web-page.bg{
+    background: url("//img.getfc.com.cn/source/www/zt/national/neiye-bg01.jpg") no-repeat;
+    height: 834px;
+}
+.web-page.bg03{
+    background: url("//img.getfc.com.cn/source/www/zt/national/neiye-bg03.jpg") no-repeat;
+    height: 1189px;
+}
+.web-page.bg04{
+    background: url("//img.getfc.com.cn/source/www/zt/national/neiye-bg04.png") no-repeat bottom center;
+    margin-bottom: 77px;
+    height: 899px;
+}
+.web-page.bg-color{
+    background: -o-linear-gradient(top,#f1f3f4,#edeff0);
+    background: -moz-linear-gradient(top,#f1f3f4,#edeff0);
+    background: -webkit-linear-gradient(top,#f1f3f4,#edeff0);
+    background: linear-gradient(to top,#edeff0,#f1f3f4);
+}
+.web-page .title{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.web-page .title .item{
+    overflow: hidden;
+}
+.web-page .title span{
+    overflow: hidden;
+    font-size: 22px;
+    line-height: 36px;
+    color: #0d597c;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-style: italic;
+}
+.web-page .title span.size{font-size: 36px;margin-left: -2px}
+.web-page .title span img{display: inline;margin-left: 26px}
+.web-page .title p{
+    overflow: hidden;
+    display: block;
+    font-size: 18px;
+    line-height: 28px;
+    color: #0d597c;
+    text-align: right;
+}
+.web-page .title p span{
+    display: inline;
+    color: #ff7600;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: right;
+    font-style: normal;
+}
+.web-page .line-item{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 25px 0 45px;
+}
+.web-page .line-item a{
+    overflow: hidden;
+    display: block;
+    font-size: 18px;
+    color: #f07900;
+    width: 143px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 17px;
+    border: solid 1px #f07900;
+    cursor: pointer;
+    text-decoration: none;
+}
+.web-page .line-item a:hover{
+    background: #f07900;
+    color: #fff;
+}
+.web-page .con-list{
+    overflow: hidden;
+}
+.web-page .con-list ul{
+    overflow: hidden;
+    margin: 10px 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.web-page .con-list ul li{
+    overflow: hidden;
+    list-style: none;
+    position: relative;
+}
+.web-page .con-list ul li span{
+    overflow: hidden;
+    display: block;
+    font-size: 18px;
+    color: #0d597c;
+    width: 143px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    margin: 5px auto 0 auto;
+}
+.web-page .con-list ul li:hover .masking {
+    overflow: hidden;
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 250px;
+    opacity: 0;
+    background: rgba(224,229,234,.5);
+    background: -o-linear-gradient(left,rgba(255,255,255,.1),rgba(255,255,255,.3));
+    background: -moz-linear-gradient(left,rgba(255,255,255,.1),rgba(255,255,255,.3));
+    background: -webkit-linear-gradient(left,rgba(255,255,255,.1),rgba(255,255,255,.3));
+    background: linear-gradient(to right,rgba(255,255,255,.1),rgba(255,255,255,.3));
+    animation: masking .5s 1 linear;
+    -webkit-animation: masking .5s 1 linear;
+}
+@-webkit-keyframes masking {
+    0% { left:0;opacity: 0; width: 0}
+    50% { left:50%;opacity: .5; width: 60%}
+    100%{ left:100%;opacity: 0; width: 0}
+}
+@keyframes masking {
+    0% { left:0;opacity: 0; width: 0}
+    50% { left:50%;opacity: .5; width: 60%}
+    100%{ left:100%;opacity: 0; width: 0}
+}
+.web-page .con-list01{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.web-page .con-list01 .img-con{
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    bottom: 90px;
+    z-index: 11;
+}
+.web-page .con-list01 ul{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 33.3333%;
+}
+.web-page .con-list01 ul li{
+    overflow: hidden;
+    display: block;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    margin-bottom: 47px;
+    color: #0d597c;
+}
+.web-page .con-list01 ul li span{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 36px;
+}
+.web-page .con-list01 ul li .layout{
+    overflow: hidden;
+}
+.web-page .con-list01 ul li .layout .item{
+    overflow: hidden;
+    width: 385px;
+    height: 136px;
+    background: #b7d8f3;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.web-page .con-list01 ul li .layout .item.radius{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.web-page .con-list01 ul li .layout .item img{
+    position: absolute;
+    top: 33px;
+    left: 15px;
+}
+.web-page .con-list01 ul li .layout .item-arrow{
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 55px;
+}
+.web-page .con-list01 ul li .layout .item-arrow.bottom{
+    right: 181px;
+    top: 123px;
+}
+.web-page .con-list01 ul li .layout-list{
+    overflow: hidden;
+    background: #fff;
+    width: 385px;
+    padding: 65px 30px 0 30px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.web-page .con-list01 ul li .layout-list.height01{height: 405px}
+.web-page .con-list01 ul li .layout-list.height02{height: 587px;padding-right: 38px}
+.web-page .con-list01 ul li .layout-list p{
+    overflow: hidden;
+    display: block;
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: bold;
+}
+.web-page .con-list01 ul li .layout-list img{
+    float: right;
+    margin-bottom: 62px;
+}
+.web-page .con-list01 ul li .layout-list .slider{
+    overflow: hidden;
+    margin: 20px 0 0;
+}
+.web-page .con-list01 ul li .layout-list .slider ol{
+    list-style: none;
+    width: 100%;
+}
+.web-page .con-list01 ul li .layout-list .slider ol li{
+    overflow: hidden;
+    list-style: none;
+    margin-bottom: 0;
+}
+.web-page .btn{
+    overflow: hidden;
+    margin-top: 70px;
+}
+.web-page .btn.margintop{margin-top: 20px}
+.web-page .btn a{
+    overflow: hidden;
+    display: block;
+    width: 299px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background: #f57b00;
+    border-radius: 27px;
+    margin: 0 auto 10px auto;
+    text-decoration: none;
+    cursor: pointer;
+}
+.web-page .btn a:hover{
+    border: solid 1px #f57b00;
+    color: #f57b00;
+    background: transparent;
+}
+.web-page .btn.margintop a{
+    width: 178px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 10px;
+}
+.web-page .btn p {
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: #0d597c;
+}
+.web-page .btn01{
+    overflow: hidden;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+.web-page .btn01 img{display: none}
+.web-page .btn01 a{
+    overflow: hidden;
+    display: block;
+    width: 176px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background: #f57b00;
+    border-radius: 20px;
+    margin: 0 26px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.web-page .btn01 a.chat {
+    border: solid 1px #f57b00;
+    color: #f57b00;
+    background: transparent
+}
+.web-page .btn01 a:hover{
+    background: transparent;
+    border: solid 1px #f57b00;
+    color: #f57b00;
+}
+.web-page .btn01 a.chat:hover{
+    background: #f57b00;
+    color: #fff;
+}
+.web-page .down-list{
+    overflow: hidden;
+}
+.web-page .down-list ul{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.web-page .down-list ul li{
+    overflow: hidden;
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+}
+.web-page .down-list ul li .down-btn{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(203,229,241,.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.web-page .down-list ul li .down-btn a{
+    overflow: hidden;
+    display: block;
+    width: 134px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    background: #f57b00;
+    border-radius: 15px;
+    font-size: 16px;
+}
+.web-page .con{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -15px;
+}
+.web-page .con .slider{overflow: hidden;}
+.web-page .con .map{overflow: hidden;position: relative}
+.web-page .con .map .item{
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #0d597c;
+}
+.web-page .con .map .item.right01{
+    left: 62%;
+    top: 5px;
+}
+.web-page .con .map .item.right02{
+    left: 23%;
+    top: 13%;
+}
+.web-page .con .map .item.bottom01{
+    top: auto;
+    bottom: 25px;
+    left: 63%;
+}
+.web-page .con .map .item.bottom02{
+    top: auto;
+    bottom: 185px;
+    left: 49%;
+}
+.web-page .con .map .item.bottom03{
+    top: auto;
+    bottom: 118px;
+    left: 10%;
+}
+.web-page .con .map .item .time {
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-bottom: 15px;
+}
+.web-page .con .map .item .time img{margin: 0 0 3px 10px}
+.web-page .con .map .item .time span{
+    overflow: hidden;
+    display: block;
+    font-size: 24px;
+    line-height: 25px;
+}
+.web-page .con .map .item .time span:first-child {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: bold;
+    font-family: "MyriadPro Black;
+}
+.web-page .con .map .item .time span:nth-child(2) {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: bold;
+    font-family: "MyriadPro Black;
+}
+.web-page .con .map .item p{
+    overflow: hidden;
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+    font-style: italic;
+    padding-right: 10px;
+}
+.web-page .con .map .item p.bold{font-weight: bold}
+.web-page .con .left-slider{
+    overflow: hidden;
+    width: 362px;
+    height: 600px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: -10px 0 0 #fff, 10px 0 0 #fff, 0 0 0 #fff, 0 10px 25px rgba(13,87,122,.32);
+    margin: 25px;
+    padding: 35px 12px;
+}
+.web-page .con .left-slider ul li {
+    overflow: hidden;
+    display: block;
+    width: 338px;
+    border-radius: 15px;
+}
+.web-page .con .right-slider {
+    overflow: hidden;
+    padding-top: 35px;
+}
+.web-page .con .right-slider .slider {
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    width: 737px;
+    height: 293px;
+    background: #fff;
+    box-shadow: -10px 0 0 #fff, 10px 0 0 #fff, 0 0 0 #fff, 0 10px 25px rgba(13,87,122,.32);
+    margin: -10px 25px 25px;
+    padding: 22px 10px;
+}
+.web-page .con .right-slider .slider ul li {
+    overflow: hidden;
+    display: block;
+    border-radius: 5px;
+    width: 160px;
+    margin: 0 10px;
+    float: left;
+}
+.web-page .con .right-slider .slider ul li img{width: 100%}
+.web-page .con .right-slider .slider .top-nav{
+    overflow: hidden;
+    width: 98%;
+    position: absolute;
+    top: 45%;
+    z-index: 1;
+}
+.web-page .con .right-slider .slider .top-nav .prev, .web-page .con .right-slider .slider .top-nav .next {
+    overflow: hidden;
+    display: block;
+    width: 32px;
+    height: 32px;
+    float: right;
+    background: url("//img.getfc.com.cn/source/www/zt/national/arrow-right01.png") no-repeat;
+    cursor: pointer;
+}
+.web-page .con .right-slider .slider .top-nav .prev{
+    float: left;
+    background: url("//img.getfc.com.cn/source/www/zt/national/arrow-left.png") no-repeat;
+    cursor: pointer;
+}
+.web-page .con .right-slider .slider .top-nav .prevStop {
+    background-position: -60px 0;
+}
+.web-page .con .right-slider .slider .top-nav .nextStop {
+    background-position: -60px -50px;
+}
+/*弹窗*/
+.popup-box {
+    max-width: 1000px;
+    height: 650px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: -325px auto 0 auto;
+    top: 50%;
+    background: #fff;
+    z-index: 99999;
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+    padding: 0 20px 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.popup-box .box-in {
+    margin: 3% 3% 5% 5%;
+    color: #333333;
+    overflow: auto;
+    height: 500px;
+    padding: 0% 2% 0 0;
+}
+.popup-box table.data-box {
+    width: 100%;
+    margin: 16px auto;
+    text-align: center;
+    border: 0 !important;
+    font-size: 1.6em;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.popup-box  .box-in .section1 .detailContent{
+    width:670px;
+    font-size:18px;
+    text-align: center;
+    margin-left:50px;
+}
+.popup-box  .box-in .section1{
+    margin-top:0px;
+}
+.popup-box  .box-in .section1 p{
+    font-size:16px;
+}
+.popup-box  .box-in .section1 ul li:nth-child(2){
+    margin:8px 63px;
+}
+.popup-box  .box-in div.title,.popup-box  .box-in div.bottom{
+    height:50px;
+    width:100%;
+    line-height: 50px;
+    background:#e4f2f8;
+}
+.popup-box  .box-in div.bottom{
+    background:#f1f8fa;
+}
+
+.popup-box  .box-in .section1 .detailContent ul li span{
+    display: inline-block;
+    font-size:20px;
+    color:#e84c00;
+    position:relative;
+    left:-2px;
+    top:-1px;
+}
+.popup-box  .box-in div.bottom{
+    text-align: left;
+    padding-left:20px;
+}
+.popup-box  .box-in .section1 .detailContent  img{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    position:relative;
+    top:-90px;
+    left:-110px;
+}
+.popup-box  .box-in .section1 .detailContent  img.pic{
+    position:relative;
+    top:-90px;
+    left:108px;
+}
+
+.section3 ol li{
+    font-size:16px;
+    margin-top: 10px;
+}
+.section4 ol li{
+    font-size:16px;
+    line-height:2.2;
+    text-align: justify;
+    display: -webkit-box;  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box;     /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox;  /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex;         /* 新版本语法: Opera 12.1, Firefox 22+ */
+}
+.popup-box table.data-box thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box thead th {
+    font-size: 16px;
+    text-align: center;
+    padding: 15px;
+    color: #FFFFFF;
+    background: #dcb08e;
+    line-height: 1.0;
+}
+.popup-box table.data-box thead tr {
+    border: 1px solid #dcb08e;
+}
+.popup-box table.data-box tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box tbody td {
+    line-height: 1.6;
+    text-align: center;
+    color: #333333;
+    padding: 1.44%;
+    font-size: 16px;
+    border: 0.025rem solid #ead5c2;
+    font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+}
+.popup-box table.data-box tbody .unit {
+    font-size: 0.8em;
+}
+.popup-box table.data-box tbody tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    background: #FFFFFF;
+}
+.popup-box table.data-box tbody tr.white {
+//background: #f7efe8;
+}
+.popup-box table.data-box tbody tr.last-row td {
+    border-bottom: 1px solid #CCCCCC;
+}
+.popup-box .table1 td,
+.popup-box .table2 td {
+//width: 25%;
+}
+.popup-box .table4 td {
+    width: 16%;
+}
+.popup-box .table3 td {
+    width: 33.333333%;
+}
+.popup-box .close-top {
+    height: 60px;
+    color:  #b78255;
+    border-bottom: 1px solid #b78255;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.popup-box .close-top a {
+    display: block;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    background: url(//img.getfc.com.cn/source/www/zt/campaign1710/close.png) no-repeat;
+    top: 25px;
+    right: 25px;
+    text-decoration: none;
+}
+.popup-box h2 {
+    font-size:24px;
+    margin: 30px 0 18px;
+    color: #b78255
+;
+    position: relative;
+}
+.popup-box h2.ver-line {
+    padding-left: 45px;
+}
+.popup-box h2.ver-line i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #b78255;
+    color:#fff;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    text-align: center;
+    line-height: 30px;
+}
+.popup-box .note{line-height: 30px;}
+.popup-box .note span{color: #f00}
+.popup-box p {
+    line-height: 1.9;
+    color: #333333;
+    text-align: justify;
+}
+.popup-box p span{
+    overflow: hidden;
+    display: inline;
+    color: #d8505a;
+}
+.popup-box p a{
+    overflow: hidden;
+    display: inline;
+    color: #225b76;
+    text-decoration: underline;
+}
+/*轮播*/
+.slider-con{
+    overflow: hidden;
+    position: relative;
+    width: 371px;
+    margin: 0 auto;
+}
+.swiper-container {
+    position: static;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-container .arrow-left,.swiper-container .arrow-right {
+    background: url("//img.getfc.com.cn/source/www/zt/national/arrow.png") no-repeat 0 0;
+    background-size: 34px 32px;
+    position: absolute;
+    left: 0;
+    top: 52%;
+    margin-top: -25px;
+    width: 17px;
+    height: 32px;
+    z-index: 10;
+    cursor: pointer;
+}
+.swiper-container .arrow-right {
+    background-position: -17px 0;
+    right: 0;
+    left: auto;
+}
+.swiper-slide img{margin: 0 auto;width: 100%}
+.gallery-top {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 22px;
+}
+.gallery-thumbs {
+    width: 300px;
+    height: 144px;
+    box-sizing: border-box;
+}
+.gallery-thumbs .swiper-slide {
+    width: 85px;
+    cursor: pointer;
+    margin-top: 3px;
+}
+.gallery-thumbs .swiper-slide img{
+    width: 100%;
+}
+.gallery-thumbs .swiper-slide-active {
+    border: solid 3px #89d2fd;
+    width: 100px!important;
+    height: 144px;
+    margin-top: 0;
+}
+.gallery-thumbs .swiper-slide-active img{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 1200px) {
+    .inner {
+        width: 90%
+    }
+    .web-page .con-list ul li img{width: 100%}
+    .web-page .down-list ul li img{width: 95%}
+    .web-page .con-list01 ul li .layout .item{width: 95%}
+    .web-page .con-list01 ul li .layout-list{width: 95%}
+    .web-page .con-list01 ul li .layout-list img{width: 100%}
+    .web-page .con-list01 .img-con img{width: 88%}
+    .web-page .con .map{width:600px }
+    .web-page .con .map img{width: 100%}
+    .web-page .con .map .item .time{margin-bottom: 5px}
+    .web-page .con .map .item .time img{width: auto}
+    .web-page .con .map .item .time span{font-size: 20px}
+    .web-page .con .map .item .time span:nth-child(2){font-size: 30px;}
+    .slider-con{width: 300px}
+    .web-page .con .map .item.right02{top: 11.5%;}
+    .web-page .con .map .item.bottom01{bottom: 9.5%}
+    /*.web-page .con .map .item.bottom02{bottom: 41%}*/
+    .web-page .con .map .item.bottom03{bottom: 21.5%}
+    .web-page .con .right-slider .slider{width: 90%}
+}

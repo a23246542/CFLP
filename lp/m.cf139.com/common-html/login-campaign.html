@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*登录框*/
+        .zhezhao {
+            width: 100%;
+            height: 200%;
+            background: rgba(0,0,0,.5);
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 10000;
+            position: fixed;
+        }
+        .login {
+            box-shadow: 0 0 0 8px rgba(250,250,250,0.5);
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin: -4rem 0 0 -3.3rem;
+            width:6.6rem;
+            background: #fff;
+            z-index: 10001;
+            overflow: hidden;
+            border-radius: 5px;
+            padding-bottom: 1rem;
+        }
+        #login-inner #btclose {
+            width: 21px;
+            height: 21px;
+            background: url(/cn/zt/images/newyear-lottery/close-b.png) no-repeat;
+            display: block;
+            position: absolute;
+            top: 16px;
+            right: 23px;
+        }
+        .login .content .login-title {
+            font-size: 0.36rem;
+            color: #333333;
+            text-align: center;
+            margin-top: 0.6rem;
+            font-weight: normal;
+            font-weight: bold;
+        }
+        .login .content .login-title span{display: inline;font-size: .32rem;color: #ff7c00}
+        .login .content .info {
+            padding: 0 0.5rem;
+            text-align: center;
+            margin-top: 0.4rem;
+
+        }
+        .login .content .Lookcode {
+            display: block;
+            width:5.6rem;
+            height: 0.8rem;
+            line-height: 0.8rem;
+            color: #fff;
+            font-size: 0.36rem;
+            text-align: center;
+            background: #0664ac;
+            transition: all 0.3s;
+            margin: 0 auto;
+            margin-top: 0.2rem;
+            border-radius: 0.1rem;
+        }
+        .login .content .sub_error {
+            color: #ef392b;
+            font-size: 14px;
+            margin-top: 10px;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        .login .content input {
+            width: 5.6rem;
+            display: block;
+            height: 0.8rem;
+            color: #333333;
+            font-size: 0.28rem;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            -webkit-appearance: none;
+            background-color: transparent;
+            border-radius: 0;
+            outline: medium;
+        }
+        .login .input-tip {
+            color: #ef392b;
+            font-size: 14px;
+            text-align: left;
+            height: 0.2rem;
+        }
+
+        .con-btn{
+            overflow: hidden;
+            width: 100%;
+        }
+        .con-btn a{
+            overflow: hidden;
+            display: block;
+            width: 3.4rem;
+            height: 0.6rem;
+            line-height: 0.6rem;
+            text-align: center;
+            color: #0664ac;
+            border-bottom: solid 1px #0664ac;
+            margin:0 auto;
+            font-size: 0.28rem;
+            transition:all .3s ease-in 0s;
+        }
+        .con-btn a:active{
+            background: #a5c0d4;
+            transition:all .3s ease-in 0s;
+            color: #fff;
+        }
+        .login a.pass-icon {
+            display: inline-block;
+            background: url(/cn/zt/images/newyear-lottery/ckey-m.png) no-repeat;
+            width: 2rem;
+            height: 0.92rem;
+            position: absolute;
+            right: -0.4rem;
+            top: -0.1rem;
+            background-size: 2rem 0.92rem;
+        }
+        .login a.pass-icon.active {
+            display: inline-block;
+            background: url(/cn/zt/images/newyear-lottery/key-m.png) no-repeat;
+            width: 2rem;
+            height: 0.92rem;
+            position: absolute;
+            right: -0.4rem;
+            top: -0.1rem;
+            background-size: 2rem 0.92rem;
+        }
+        .loading {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin: -4rem 0 0 -3.3rem;
+            width: 6.6rem;
+            background: #fff;
+            z-index: 10001;
+            overflow: hidden;
+            border-radius: .05rem;
+            padding: 1.6rem 0;
+            text-align: center;
+        }
+        .loading img{
+            overflow: hidden;
+            display: block;
+            width: 1.38rem;
+            margin: 1.37rem auto .3rem auto;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 登录弹窗-->
+<div id="loginKuang" style="display: none" >
+    <!--登陆框-->
+    <div class="zhezhao" id="zhezhao"></div>
+    <div class="login" id="login">
+        <div id="login-inner">
+            <div>
+                <a id="btclose" onclick="$('#loginKuang').hide();"></a>
+            </div>
+            <div class="content">
+                <div class="login-title"> 提交信息  赢<span>688</span>元现金大奖</div>
+                <div class="info">
+                    <div>
+                        <input id="phone" placeholder="请使用手机号或帐号登录" class="phonee-f1" maxlength="11" >
+                    </div>
+
+                    <div class="input-tip phone-tip"></div>
+                    <div style="position: relative">
+                        <input id="upwd" class="upwd-f1" type="password" placeholder="请输入帐号密码">
+                        <a href="javascript:;" class="pass-icon"></a>
+                    </div>
+                    <div class="input-tip upwd-tip"></div>
+                </div>
+                <a href="javascript:void(0)"  id="confirm1" class="Lookcode" onclick="$.login()">确认登录</a>
+                <div class="sub_error" >
+                    <div style="display: none" class="error-info">账号或密码错误</div>
+                </div>
+            </div>
+        </div>
+        <div class="con-btn">
+            <a class="account" onclick="ga('send', 'event', 'Reg_Real', 'ClickAccount', 'newyear-lottery', '1');" target="_blank">还没有账户？马上开立账户</a>
+        </div>
+    </div>
+    <div class="loading" id="loading" style="display: none">
+        <img src='<!--#echo var='IMG_URL' default=''-->/source/www/zt/newyear-lottery/jiazai.gif' />
+    </div>
+</div>
+</body>
+<script>
+    $(".pass-icon").click(function(){
+        if($("#upwd").attr("type") == "password"){
+            $(this).addClass("active");
+            $("#upwd").attr("type","text")
+        }else{
+            $(this).removeClass("active");
+            $("#upwd").attr("type","password")
+        }
+
+    })
+    $(".con-btn a.account").attr("href","<!--#echo var='ID_URL' default=''-->/cn/mobile/rcfd_account"+window.location.search);
+</script>
+</html>

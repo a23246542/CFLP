@@ -1,0 +1,114 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0; color: #333}
+.inner{overflow: hidden;width: 1200px; margin: 0 auto;}
+img{ overflow:hidden;display:block;border: none;}
+.e-header .header{
+    background: none;
+}
+.web-banner{
+    position: relative;
+    margin-top: -74px;
+    width: 100%;
+    height: 350px;
+    background: url("//img.getfc.com.cn/source/www/notice/banner.jpg?v0503") no-repeat center;
+    padding-top: 200px;
+}
+.web-banner span{
+    overflow: hidden;
+    display: block;
+    font-size: 24px;
+    color: #fff;
+}
+.web-banner span.size{
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+.web-content{overflow: hidden}
+.notice-tit{
+    overflow: hidden;
+    margin-top: 55px;
+    border-bottom: 3px solid #035B83;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+.notice-tit .item{
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.notice-tit .item span{
+    overflow: hidden;
+    display: block;
+    font-size: 24px;
+    color: #035B83;
+    margin-left: 17px;
+}
+.notice-tit .item a{
+    overflow: hidden;
+    display: block;
+    color: #666;
+    font-size: 16px;
+    text-align: right;
+}
+.notice-con{
+    overflow: hidden;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #CCCCCC;
+}
+.notice-con .title{
+    overflow: hidden;
+    color: #035B83;
+    font-size: 20px;
+}
+.notice-con .con{
+    overflow: hidden;
+    margin-top: 20px;
+}
+.notice-con .con p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+.notice-con .con p.indent{
+    text-indent: 25px;
+}
+.notice-con .con p.marginbottom{margin-bottom: 20px}
+.notice-con .con p a{
+    overflow: hidden;
+    display: inline;
+    color: #333;
+}
+.notice-more{
+    overflow: hidden;
+    margin: 30px 0 80px;
+}
+.notice-more span{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    color: #666;
+}
+.notice-more a{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    color: #0096DB;
+    padding-top: 15px;
+}
+.notice-more a:hover{color: #035B83;}
+
+
+
+
+
+
+
+
+
+
+

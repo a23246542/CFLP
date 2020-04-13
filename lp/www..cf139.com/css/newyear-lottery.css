@@ -1,0 +1,573 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0; /*position: relative*/}
+.height{
+    overflow: hidden;
+    position: fixed!important;
+    height: 100%;
+}
+.inner{overflow: hidden;width: 1200px; margin: 0 auto;}
+img{ overflow:hidden;display:block;border: none;}
+.e-header .header{
+    background: none;
+}
+.banner{
+    overflow: hidden;
+    width: 100%;
+    background: url("//img.getfc.com.cn/source/www/zt/newyear-lottery/banner-bg.png") no-repeat center;
+    background-size: 100% 100%;
+    height: 723px;
+    margin-top: -74px;
+    position: relative;
+    padding-top: 150px;
+}
+.banner .animated{
+    position: absolute;
+    right:280px;
+    top: 120px;
+    animation: animated 20s infinite;
+    -webkit-animation: animated 20s infinite;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+}
+@keyframes animated{
+    from {transform: rotate(0);}
+    to {transform: rotate(360deg);}
+}
+@-webkit-keyframes arrow{
+    from {transform: rotate(0);}
+    to {transform: rotate(360deg);}
+}
+.banner .animated.ani-1{
+    left: 140px;
+    top: 300px;
+}
+.banner .animated.ani-2{
+    right:360px;
+    top: 360px;
+}
+.banner .animated
+.banner .ban-con{
+    overflow: hidden;
+}
+.banner .ban-con img{
+    margin: 0 auto;
+}
+.banner .ban-con img.pic{
+    margin: 30px auto 0 auto;
+}
+.page{
+    overflow: hidden;
+    width:100%;
+    background: #fff;
+    padding: 80px 0 0;
+}
+.page .title{
+    overflow: hidden;
+    width: 100%;
+}
+.page .title img{
+    margin: 0 auto;
+}
+.page .title span{
+    overflow: hidden;
+    text-align: center;
+    color: #333;
+    font-size: 16px;
+    width: 100%;
+    display: block;
+    padding: 30px 0 50px 0;
+}
+.page .title span.margin{padding-bottom: 0}
+.page .title span.bold{
+    font-size: 18px;
+    font-weight: bold;
+    display: inline;
+}
+.page .con-nav{
+    overflow: hidden;
+    width: 100%;
+    background: url("//img.getfc.com.cn/source/www/zt/newyear-lottery/neiye-bg.png") no-repeat center 203px;
+    background-size: 100%;
+}
+.page .con-nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.page .con-nav ul li{
+    overflow: hidden;
+    list-style: none;
+    float: left;
+    background: url("//img.getfc.com.cn/source/www/zt/newyear-lottery/jd.png") no-repeat;
+    background-size: 100% 100%;
+    width: 130px;
+    height: 298px;
+    margin-right: 20px;
+    transition:all .2s ease-in 0s;
+    transform: translate(0,0);
+    margin-top: 10px;
+}
+.page .con-nav ul li:hover{
+    margin-top: 0;
+    transform: translate(0,0);
+    transition:all .2s ease-in 0s;
+}
+.page .con-nav ul li.jd{
+    background: url("//img.getfc.com.cn/source/www/zt/newyear-lottery/jd-1.png") no-repeat;
+}
+.page .con-nav ul li.cf{
+    background: url("//img.getfc.com.cn/source/www/zt/newyear-lottery/cf.png") no-repeat;
+}
+.page .con-nav ul li.cf-1{
+    background: url("//img.getfc.com.cn/source/www/zt/newyear-lottery/cf-1.png") no-repeat;
+}
+.page .con-nav ul li span{
+    overflow: hidden;
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+.page .con-nav ul li span:first-child{
+    margin-top: 120px;
+}
+.page .con-nav ul li span.size{
+    font-size: 36px;
+    display: inline;
+}
+.page .con-nav ul li span.size-1{
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 0;
+    font-weight: normal;
+}
+.page .con-nav ul li span.size-2{
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 0;
+    font-weight: normal;
+}
+.page .con-nav ul li span.size-3{
+    width: 20px;
+    display: inline-block;
+    line-height: 18px;
+}
+.page .con-nav ul li span.size-4{
+    font-size: 16px;
+    margin-top: 0;
+    font-weight: normal;
+}
+.page .con-nav ul li.cf span{
+    color: #eb393b;
+    font-weight: bold;
+}
+.page .con-nav ul li.cf span:first-child{
+    margin-top: 92px;
+}
+.page .con-nav ul li.cf span.size{
+    line-height: 36px;
+    display: inline-block;
+    margin-top: 0;
+}
+.page .con-nav ul li.cf-1 span{
+    color: #eb393b;
+    font-weight: bold;
+}
+.page .con-nav ul li.cf-1 span:first-child{
+    margin-top: 90px;
+}
+.page .con-nav ul li.cf-1 span.size{
+    line-height: 36px;
+    display: inline-block;
+    margin-top: 0;
+}
+ .con-btn{
+    overflow: hidden;
+    width: 100%;
+}
+.con-btn a{
+    overflow: hidden;
+    display: block;
+    width: 250px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #dc7d00;
+    border: solid 1px #dc7d00;
+    margin: 30px auto 0 auto;
+    font-size: 16px;
+    transition:all .3s ease-in 0s;
+}
+ .con-btn a:hover{
+    background: #ae6607;
+    transition:all .3s ease-in 0s;
+    color: #fff;
+}
+ .con-btn a.account{
+    border-bottom: solid 1px #dc7d00;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin-top: 10px;
+    width: 194px;
+    height: 30px;
+    line-height: 30px;
+}
+.con-btn a.account:hover{
+    background: #edd1ab;
+    color: #dc7d00;
+}
+.con-pao{
+    overflow: hidden;
+    width: 100%;
+    height: 736px;
+    background: url("//img.getfc.com.cn/source/www/zt/newyear-lottery/newyear.png") no-repeat center bottom;
+    background-size: 630px 676px;
+    position: relative;
+}
+.con-pao img.pao{
+    position: absolute;
+    z-index: 99;
+    margin-left: 470px;
+    /*top:1760px;*/
+    bottom: 30px;
+}
+/*.to_top{
+    animation: to_top .5s linear both;
+    -webkit-animation: to_top .5s linear both;
+    transition-timing-function: linear;
+}
+@keyframes to_top{
+    from {top:1760px;}
+    to {top:150px;}
+}
+@-webkit-keyframes to_left{
+    from {top:1760px;}
+    to {top:150px;}
+}*/
+.con-pao .huocai{
+    overflow: hidden;
+    width: 100%;
+}
+.con-pao img.huo{
+    position: absolute;
+    right: 37%;
+    /*top:1650px;*/
+    margin-top: 100px;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.con-pao .huocai span{
+    position: absolute;
+    right: 28%;
+    margin-top: 164px;
+    z-index: 9;
+    font-size: 16px;
+    cursor: pointer;
+}
+.to_bottom3{
+    animation: to_bottom3 .2s linear both;
+    -webkit-animation: to_bottom3 .2s linear both;
+    transition-timing-function: linear;
+}
+@keyframes to_bottom3{
+    from {margin-top: 100px;}
+    to {margin-top: 234px;}
+}
+@-webkit-keyframes to_bottom3{
+    from {margin-top: 100px;}
+    to {margin-top: 234px;}
+}
+.to_left{
+    animation: to_left .2s ease-out both;
+    -webkit-animation: to_left .2s ease-out both;
+    transition-timing-function: ease-out;
+}
+@keyframes to_left{
+    from {right: 40%;}
+    to {right: 44%;}
+}
+@-webkit-keyframes to_left{
+    from {right: 40%;}
+    to {right: 44%;}
+}
+.to_arrow{
+    animation: to_arrow .5s infinite;
+    -webkit-animation: to_arrow .5s infinite;
+    animation-timing-function:ease-in-out;
+    -webkit-animation-timing-function:ease-in-out;
+    animation-direction:alternate;
+    -webkit-animation-direction:alternate;
+ }
+@keyframes to_arrow{
+    from {transform: translateY(0)}
+    to {transform: translateY(20px)}
+}
+@-webkit-keyframes to_arrow{
+    from {transform: translateY(0)}
+    to {transform: translateY(20px)}
+}
+.con-pao img.xin{
+    position: absolute;
+    margin-left: 560px;
+    /*top: 1650px;*/
+    margin-top: 125px;
+    z-index: 1;
+}
+.to_bottom{
+    animation: to_bottom .3s linear both;
+    -webkit-animation: to_bottom .3s linear both;
+    transition-timing-function: linear;
+}
+@keyframes to_bottom{
+    /*from {top: 1650px;}
+    to {top: 1730px;}*/
+    from {margin-top: 125px;}
+    to {margin-top: 240px;}
+}
+@-webkit-keyframes to_bottom{
+    from {top: 125px;}
+    to {top: 240px;}
+}
+.con-pao img.xin-huo{
+    position: absolute;
+    margin-left: 520px;
+    z-index: 2;
+    top: 140px;
+    /*top: 1500px;*/
+    display: none;
+}
+.to_bottom1{
+    animation: to_bottom1 .4s linear both;
+    -webkit-animation: to_bottom1 .4s linear both;
+    transition-timing-function: linear;
+}
+@keyframes to_bottom1{
+    from {top: -30px}
+    to {top: 230px;}
+}
+@-webkit-keyframes to_bottom1{
+    /*from {top: 1500px;}
+    to {top: 1600px;}*/
+    from {top: -30px}
+    to {top: 230px;}
+}
+.pag-1{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+.pag-1 .bian{
+    overflow: hidden;
+    position: absolute;
+    left: 10%;
+}
+.pag-1 .gift{
+    overflow: hidden;
+    position: absolute;
+    right: 2%;
+    bottom: 0;
+}
+.pag-1 .con-left{
+    overflow: hidden;
+    width: 50%;
+    height: 550px;
+    float: left;
+    background-color: #eb393b;
+    color: #fff;
+    position: relative;
+}
+.pag-1 .con-left .bg-width{
+    overflow: hidden;
+    width: 450px;
+    right: 0;
+    position: absolute;
+}
+.pag-1 .con-left .title{
+    overflow: hidden;
+    font-size: 24px;
+    margin: 70px 0 30px 0;
+}
+.pag-1 .con-left ul{
+    list-style: none;
+    width: 100%;
+}
+.pag-1 .con-left ul li{
+    overflow: hidden;
+    list-style: none;
+    display: block;
+    font-size: 16px;
+}
+.pag-1 .con-left ul li span{
+    overflow: hidden;
+    display: block;
+    margin: 5px 0;
+}
+.pag-1 .con-right{
+    overflow: hidden;
+    background: #fff4e5;
+    height: 550px;
+    padding-top: 80px;
+    padding-left: 70px;
+    position: relative;
+}
+.pag-1 .con-right a{
+    overflow: hidden;
+    display: inline-block;
+    font-size: 16px;
+    color: #dc7d00;
+    border-bottom: solid 1px #dc7d00;
+    margin-bottom: 40px;
+    margin-top: -12px;
+}
+.pag-1 .con-right a:hover{
+    background: #edd1ab;
+}
+.pag-1 .con-right span{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+    position: relative;
+}
+.pag-1 .con-right span.size{
+    font-size: 24px;
+    color: #eb393b;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.footer-newyear{
+    overflow: hidden;
+    width: 100%;
+    padding: 40px 0;
+}
+.footer-newyear span{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    color: #333;
+    font-size: 16px;
+    padding-bottom: 8px;
+}
+.footer-newyear span.color{
+    color: #999;
+}
+.tc-con{
+    overflow: hidden;
+    position: fixed;
+    z-index: 99999;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.tc-con img.yanghua{
+    overflow: hidden;
+    width: 100%;
+    /*animation: yanghua .5s linear both;
+    -webkit-animation: yanghua .5s linear both;
+    transition-timing-function: linear;*/
+}
+/*@keyframes yanghua{
+    from {opacity: 0}
+    to {opacity: 1}
+}
+@-webkit-keyframes yanghua{
+    from {opacity: 0}
+    to {opacity: 1}
+}*/
+.tc{
+    overflow: hidden;
+    background: rgba(235,57,59,.9);
+    color: #fff;
+    width: 800px;
+    height: 220px;
+    padding: 60px 0;
+    /*margin-top: 270px;*/
+    position: absolute;
+    left: 30%;
+    z-index: 1;
+}
+.tc.changeColor{
+    background: rgba(220,125,0,.9);
+}
+/*.tc .masking{
+    overflow: hidden;
+    width: 400px;
+}*/
+.tc span{
+    overflow: hidden;
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.tc span.size{
+    font-size: 48px;
+    display: inline;
+}
+.tc span.close{
+    position: absolute;
+    right: 15px;
+    top:10px;
+    text-align: right;
+    cursor: pointer;
+}
+.tc a{
+    overflow: hidden;
+    display: inline;
+    color: #ffd59d;
+    border-bottom: solid 1px #ffd59d;
+}
+.to_bottom2{
+    animation: to_bottom2 .4s ease-out both;
+    -webkit-animation: to_bottom2 .4s ease-out both;
+    transition-timing-function: ease-out;
+}
+@keyframes to_bottom2{
+    0% {bottom: -220px;}
+    90% {bottom: 500px;}
+    100% {bottom: 480px;}
+}
+@-webkit-keyframes to_bottom2{
+    0% {bottom: -220px;}
+    90% {bottom: 500px;}
+    100% {bottom: 480px;}
+}
+
+
+/*未中奖*/
+
+.nowinning{
+    text-align: center;
+    font-size: 24px;
+}
+
+.nologin-info{
+    position: absolute;
+    text-align: center;
+    top: 4%;
+    left: 50%;
+    margin-left: -89px;
+    font-size: 18px;
+}
+.nologin-info a{
+    color:#dc7d00 ;
+    display: inline-block;
+    border-bottom: 1px solid #dc7d00;
+}
+
+
+
+
+
+
+
+
+
+
+

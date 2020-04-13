@@ -1,0 +1,750 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0;color: #333}
+.inner{overflow: hidden;width: 100%; margin: 0 auto; position: relative}
+img{ overflow:hidden;display:block;border: none;}
+.e-header .header{
+    background: none;
+}
+.web-banner{
+    width: 100%;
+    height: 9.3rem;
+    background: url("../../images/non-farm6/banner-bg.jpg") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+}
+.web-banner .img-font{
+    overflow: hidden;
+    padding: 1.5rem 0 0;
+    width: 100%;
+}
+.web-banner .img-font img{margin: 0 auto;width: 7.12rem}
+.countdown{
+    overflow: hidden;
+    margin-bottom: .64rem;
+}
+.countdown .list-title{
+    overflow: hidden;
+    font-weight: bold;
+    font-size: .32rem;
+    line-height: .36rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: .1rem;
+}
+.countdown .list-title span{
+    overflow: hidden;
+    display: block;
+    margin: .1rem 0;
+    text-shadow: 0 0 .1rem rgba(34,30,31,.3);
+}
+.countdown .line-con {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.countdown .line-con ul{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.countdown .line-con ul li{
+    overflow: hidden;
+    display: block;
+    margin: .57rem .05rem 0 .78rem;
+    float: left;
+}
+.countdown .line-con ul li span{
+    overflow: hidden;
+    display: block;
+    width: .78rem;
+    height: .02rem;
+    background: rgba(255,255,255,.6);
+    margin: 0 auto 1px;
+}
+.wrapper {
+    overflow: hidden;
+    position: relative;
+}
+#elapseClock{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#elapseClock span{
+    overflow: hidden;
+    display: block;
+    height: 1.18rem;
+    width: 1.08rem;
+    margin: 0 .1rem;
+    background: url("../../images/non-farm6/digit.png") no-repeat;
+    background-size: 100% 100%;
+    line-height: 1.15rem;
+    text-align: center;
+    font-size: .58rem;
+    font-weight: bold;
+    text-shadow: 0 0 .1rem rgba(34,30,31,.3);
+}
+#elapseClock p{
+    overflow: hidden;
+    display: block;
+    font-size: .33rem;
+    font-weight: bold;
+    color: #fff;
+    margin: .1rem 0;
+    text-shadow: 0 0 .1rem rgba(34,30,31,.3);
+}
+.web-banner .btn{
+    overflow: hidden;
+    width: 2.9rem;
+    height: .8rem;
+    margin: 0 auto;
+    background: #0096dc;
+    border-radius: .4rem;
+    line-height: .8rem;
+}
+.web-banner .btn a{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+.web-page{
+    overflow: hidden;
+    width: 100%;
+}
+.web-page.bg01{
+    background: #eee;
+    padding-bottom: 1.1rem;
+}
+.web-page.bg03{
+    background: url("../../images/non-farm-new/neiye-bg03.jpg") no-repeat;
+    background-size: 100% 100%;
+    height: 12.94rem;
+}
+.web-page.bg05{
+    background: url("../../images/non-farm6/neiye-bg05.jpg") no-repeat;
+    background-size: 100% 100%;
+    height: 13.9rem;
+}
+.web-page.bg06{
+    background: url("../../images/non-farm6/neiye-bg06.jpg") no-repeat;
+    background-size: 100% 100%;
+    height: 9.19rem;
+}
+.web-page.bg08{
+    background: url("../../images/non-farm-new/neiye-bg08.jpg") no-repeat;
+    background-size: 100% 100%;
+    height: 9.84rem;
+}
+.web-page.bg09{
+    background: url("../../images/non-farm-new/neiye-bg09.jpg") no-repeat bottom;
+    background-size: 100% 6.31rem;
+}
+.web-page.bg-color{
+    background: #0096dc;
+    padding-bottom: 0;
+}
+.web-page.bg-color01{
+    background: #eee;
+    padding: .66rem 0 1rem;
+}
+.web-page .title{
+    overflow: hidden;
+    margin: 1.02rem 0 .34rem 0;
+}
+.web-page .title span{
+    overflow: hidden;
+    display: block;
+    font-size: .36rem;
+    line-height: .38rem;
+    font-weight: bold;
+    text-align: center;
+}
+.web-page .title span.line{
+    width: .81rem;
+    height: .02rem;
+    background: #0096dc;
+    margin: .25rem auto 0 auto;
+}
+.web-page.bg06 .title span{color: #fff}
+.web-page.bg06 .title span.line{background: #fff}
+.web-page .title span.light{font-weight: normal;display: inline}
+.web-page .title span.bold{font-weight: bold;display: inline}
+.web-page .title span#map-tit{font-weight: lighter}
+.web-page .title p{
+    overflow: hidden;
+    display: block;
+    font-size: .32rem;
+    line-height: .48rem;
+    text-align: center;
+    margin-top: .1rem;
+}
+.web-page.bg06 .title p{color: #fff}
+.web-page .nav-tab{overflow: hidden;margin-top: 1rem}
+.web-page .nav-tab ul{
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.web-page .nav-tab ul li{
+    overflow: hidden;
+    list-style: none;
+    width: 2.3rem;
+    height: .73rem;
+}
+.web-page .nav-tab ul li span{
+    overflow: hidden;
+    display: block;
+    font-size: .36rem;
+    text-align: center;
+    height: .6rem;
+    line-height: .6rem;
+}
+.web-page .nav-tab ul li p{
+    overflow: hidden;
+    display: block;
+    width: 2.3rem;
+    border-bottom: solid .02rem #bfbfbf;
+    margin-top: .02rem;
+}
+.web-page .nav-tab ul li.checked span{font-weight: bold}
+.web-page .nav-tab ul li.checked p{
+    background: url("../../images/non-farm6/line.png") no-repeat center top;
+    background-size: 2.3rem .13rem;
+    height: .13rem;
+    border-bottom: none;
+    margin-top: 0;
+}
+.web-page .layout-tab .tab-tit{overflow: hidden;margin-top: .25rem}
+.web-page .layout-tab .tab-tit p{
+    overflow: hidden;
+    display: block;
+    font-size: .32rem;
+    text-align: center;
+}
+.web-page .layout-tab{display: none}
+.web-page .con-list{
+    overflow: hidden;
+}
+.web-page .con-list ul{
+    overflow: hidden;
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.web-page .con-list ul li{
+    overflow: hidden;
+    list-style: none;
+    width: 7rem;
+    height: 2.5rem;
+    margin: 0 auto .2rem auto;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .3rem;
+}
+.web-page .con-list ul li .item{
+    overflow: hidden;
+    width: 1.33rem;
+    height: 1.33rem;
+    border-radius: 100%;
+    background: #0096dc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 .65rem 0 .77rem;
+}
+.web-page .con-list ul li .item img{width: .75rem}
+.web-page .con-list ul li .item01 {
+    overflow: hidden;
+    width: 4.3rem;
+}
+.web-page .con-list ul li p{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    line-height: .48rem;
+}
+.web-page .con-list ul li p.bold{
+    font-size: .32rem;
+    font-weight: bold;
+}
+.web-page .con-list ul li p.line{
+    width: .27rem;
+    height: .06rem;
+    background: #0096dc;
+    margin: .1rem 0 .25rem 0;
+}
+.web-page .con-list01{
+    overflow: hidden;
+    padding-bottom: .3rem;
+}
+.web-page .con-list01 .layout{
+    overflow: hidden;
+    list-style: none;
+    width: 4.66rem;
+    height: 7.73rem;
+    position: relative;
+    cursor: pointer;
+    border-radius: .2rem;
+    box-shadow: 0 .3rem .6rem rgba(0,0,0,.48);
+}
+.web-page .con-list01 .layout .item{
+    overflow: hidden;
+    border-left: solid .02rem #0096dc;
+    border-right: solid .02rem #0096dc;
+    border-bottom: solid .02rem #0096dc;
+    border-bottom-left-radius: .2rem;
+    border-bottom-right-radius: .2rem;
+    padding: .2rem;
+    height: 4.54rem;
+}
+.web-page .con-list01 .layout img{
+    width: 4.66rem;
+}
+.web-page .con-list01 .layout span{
+    overflow: hidden;
+    display: block;
+    font-size: .32rem;
+    line-height: .36rem;
+    font-weight: bold;
+    color: #0096dc;
+}
+.web-page .con-list01 .layout span.line{
+    width: .3rem;
+    height: 1px;
+    background: #0096dc;
+    margin: .15rem 0 .1rem;
+}
+.web-page .con-list01 .layout p{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    line-height: .48rem;
+    color: #0096dc;
+    text-align: justify;
+}
+.web-page .con-list02{
+    overflow: hidden;
+    margin: .8rem 0 .55rem;
+}
+.web-page .con-list02 ul{
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.web-page .con-list02 ul li{
+    overflow: hidden;
+    list-style: none;
+    width: 7rem;
+    height: 2.21rem;
+    background: #fff;
+    border-radius: .2rem;
+    cursor: pointer;
+    margin: 0 auto .17rem auto;
+    box-shadow: 0 .07rem .13rem rgba(0,0,0,.12);
+}
+.web-page .con-list02 ul li a{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.web-page .con-list02 ul li .item{
+    overflow: hidden;
+    width: 2.75rem;
+    padding-left: .55rem;
+}
+.web-page .con-list02 ul li img{width: 3.71rem}
+.web-page .con-list02 ul li span{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    line-height: .3rem;
+    font-weight: bold;
+    color: #0096dc;
+    margin: .1rem 0 .3rem;
+}
+.web-page .con-list02 ul li span.line{
+    width: .47rem;
+    height: 1px;
+    background: #0096dc;
+}
+.web-page .con-list02 ul li p{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    line-height: .48rem;
+    color: #0096dc;
+}
+.web-page .con-explain{
+    overflow: hidden;
+    width: 7rem;
+    font-size: .28rem;
+    line-height: .48rem;
+    margin: .35rem auto .4rem auto;
+    text-align: center;
+}
+.web-page .con-explain span{
+    overflow: hidden;
+    display: inline;
+    color: #0096dc;
+}
+.web-page .histogram{
+    overflow: hidden;
+    width: 7rem;
+    margin: 0 auto;
+    padding: .2rem 0 0 0;
+}
+.web-page .map{
+    overflow: hidden;
+    position: relative;
+    margin: .9rem 0 1.1rem;
+}
+.web-page .map img{
+    width: 7.23rem;
+    margin: 1.2rem auto;
+}
+.web-page .map .layout{
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.web-page .map .layout .list{position: relative;height: 100%}
+.web-page .map .layout .item{
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+}
+.web-page .map .layout .item.left01{left: .25rem;top: 1.3rem}
+.web-page .map .layout .item.left02{left: 1.4rem;top: 0}
+.web-page .map .layout .item.left03{left: 2.6rem;top: 1.3rem}
+.web-page .map .layout .item.left04{right: 1.3rem;}
+.web-page .map .layout .item.left05{right:.25rem;top: 1.4rem;}
+.web-page .map .layout .item.left06{left:.8rem;bottom: .5rem}
+.web-page .map .layout .item.left07{bottom: 2.1rem;left: 2rem}
+.web-page .map .layout .item.left08{bottom: 0;right: 2.2rem;}
+.web-page .map .layout .item.left09{bottom: 1.5rem;right:.25rem;}
+.web-page .map .layout .item span{
+    overflow: hidden;
+    display: block;
+    font-weight: bold;
+    font-size: .28rem;
+    line-height: .36rem;
+    color: #0096dc;
+    margin-bottom: .05rem;
+}
+.web-page .map .layout .item p{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    line-height: .36rem;
+    color: #0096dc;
+}
+.web-page .table{
+    overflow: hidden;
+    width: 7rem;
+    margin: .75rem auto 0;
+}
+.web-page .table .tab-title{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .32rem;
+    line-height: .36rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.web-page .table .tab-title p{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    color: #0096dc;
+}
+.web-page .table .tab-con{
+    overflow: hidden;
+    width: 6.96rem;
+    border-radius: .2rem;
+    border: solid .02rem #0096dc;
+}
+.web-page .table table{
+    overflow: hidden;
+    width: 100%;
+}
+.web-page .table table tr{
+    overflow: hidden;
+}
+.web-page .table table tr:last-child{border-bottom: none}
+.web-page .table table thead tr{
+    background: #0096dc;
+    height: 1.14rem;
+    border-bottom: none;
+}
+.web-page .table table tr td{
+    font-size: .24rem;
+    text-align: center;
+    border-bottom: solid 1px #959595;
+}
+.web-page .table table tr td.first{
+    font-size: .32rem;
+    color: #0096dc;
+    font-weight: bold;
+    border-right: solid 1px #959595;
+    width: 18%;
+}
+.web-page .table table tr td.yellow{color: #eba73c}
+.web-page .table table tr td.red{color: #e72418;font-weight: bold}
+.web-page .table table tr td.green{color: #59b75b}
+.web-page .table table thead tr td {
+    color: #fff;
+    font-size: .28rem;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: none;
+}
+.web-page .table table tr td span{
+    overflow: hidden;
+    display: block;
+}
+.web-page .table table tr td span.red{color: #e72418;font-weight: bold}
+.web-page .table table tr td span.green{color: #59b75b;font-weight: bold}
+.web-page .table .tab-explain{
+    overflow: hidden;
+    margin: .5rem auto 0 auto;
+}
+.web-page .table .tab-explain .item{
+    overflow: hidden;
+    font-weight: bold;
+    font-size: .32rem;
+    line-height: .48rem;
+    color: #0096dc;
+    margin-bottom: .16rem;
+}
+.web-page .table .tab-explain .item-list{
+    overflow: hidden;
+}
+.web-page .table .tab-explain .item-list ul{
+    overflow: hidden;
+    list-style: none;
+    margin: 0 0 .2rem 0;
+    padding: 0;
+}
+.web-page .table .tab-explain .item-list ul li{
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: .24rem;
+    line-height: .36rem;
+    font-weight: bold;
+    margin: .1rem 0 0 0;
+}
+.web-page .table .tab-explain .item-list ul li img{margin: 0 .05rem;width: .26rem}
+.web-page .table .tab-explain .item-list ul li img.marginright{margin-right: .2rem;width: .09rem}
+.web-page .table .tab-explain .item-list ul li img.width{width: .09rem}
+.web-page .table .tab-explain .item-list ul li p{color: #0096dc;}
+.web-page .table .tab-explain .item-list ul li span.red{color: #e72418;display: inline;}
+.web-page .table .tab-explain .item-list ul li span.green{color: #59b75b;display: inline;}
+.web-page .slider{overflow: hidden;margin-top: .5rem}
+.web-page .slider ul{
+    overflow: hidden;
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.web-page .slider ul li{
+    overflow: hidden;
+    list-style: none;
+}
+.web-page .text-9{
+    overflow: hidden;
+    padding: .3rem .2rem 0 .2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.web-page .text-9 .left-img{overflow: hidden;width: 2.58rem; margin-right: .25rem}
+.web-page .text-9 .left-img img{width: 2.58rem}
+.web-page .text-9 .right-con{overflow: hidden;width: 3.2rem}
+.web-page .text-9 .right-con p{
+    color: #fff;
+    font-size: .28rem;
+    line-height: .48rem;
+    text-align: justify;
+}
+.web-page .slider-list{
+    overflow: hidden;
+    width: 3.98rem;
+    height: 6.17rem;
+    border-radius: .2rem;
+    background: #fff;
+    padding: 0 .2rem;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.web-page .slider-list img{margin: .3rem auto .5rem auto;width: .94rem}
+.web-page .slider-list span{
+    overflow: hidden;
+    display: block;
+    font-size: .32rem;
+    line-height: .34rem;
+    font-weight: bold;
+    color: #0096dc;
+    text-align: center;
+}
+.web-page .slider-list span.line{
+    width: .3rem;
+    height: 1px;
+    background: #0096dc;
+    margin: .25rem auto .2rem auto;
+}
+.web-page .slider-list p{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    line-height: .48rem;
+    text-align: center;
+}
+.web-page .slider-con{
+    overflow: hidden;
+    position: relative;
+    margin-top: .8rem;
+}
+.web-page .slider-con ul li{float: left}
+.web-page .chat-con{
+    overflow: hidden;
+    width: 100%;
+    height: 1.02rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.web-page .chat-con a{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    color: #fff;
+    margin-right: .15rem;
+}
+.web-page .chat-con span {
+    overflow: hidden;
+    display: block;
+    color: rgba(255,255,255,.7);
+    border-radius: 100%;
+    width: .25rem;
+    height: .25rem;
+    line-height: .2rem;
+    font-size: .25rem;
+    border: solid 1px #fff;
+    text-align: center;
+}
+.web-page .disclaimer{
+    overflow: hidden;
+    width: 7rem;
+    font-size: .24rem;
+    line-height: .48rem;
+    color: #666;
+    margin: .6rem auto;
+}
+.web-page .list-btn{
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: .4rem;
+}
+.web-page .list-btn .item{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 .29rem;
+}
+.web-page .list-btn .item a{
+    overflow: hidden;
+    width: 2.9rem;
+    height: .8rem;
+    line-height: .8rem;
+    font-size: .28rem;
+    text-align: center;
+    border-radius: .4rem;
+    margin: .16rem .235rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.web-page .list-btn .item a span{
+    overflow: hidden;
+    display: block;
+    margin: 0 .24rem 0 .37rem;
+}
+.web-page .list-btn .item a.real{
+    background: #0096dc;
+    color: #fff;
+}
+.web-page .list-btn .item a.real span{
+    background: url("../../images/non-farm6/icon-11-hover.png") no-repeat;
+    background-size: .51rem .49rem;
+    width: .51rem;
+    height: .49rem;
+}
+.web-page .list-btn .item a.demo{
+    border: solid 1px #0096dc;
+    color: #0096dc;
+}
+.web-page .list-btn .item a.demo span{
+    background: url("../../images/non-farm6/icon-11.png") no-repeat;
+    background-size: .51rem .49rem;
+    width: .51rem;
+    height: .49rem;
+}
+.web-page .list-btn .item a.download{
+    background: #0096dc;
+    color: #fff;
+}
+.web-page .list-btn .item a.download span{
+    background: url("../../images/non-farm6/icon-12.png") no-repeat;
+    background-size: .49rem .49rem;
+    width: .49rem;
+    height: .49rem;
+}
+.web-page .list-btn .item a.chat{
+    border: solid 1px #0096dc;
+    color: #0096dc;
+}
+.web-page .list-btn .item a.chat span{
+    background: url("../../images/non-farm6/icon-13.png") no-repeat;
+    background-size: .47rem .49rem;
+    width: .47rem;
+    height: .49rem;
+}
+/*轮播*/
+#certify {
+    position: relative;
+    height: 8.6rem;
+}
+#certify  .swiper-slide {
+    width: 4.66rem;
+    height: 7.73rem;
+    background: #fff;
+    border-radius: .2rem;
+}

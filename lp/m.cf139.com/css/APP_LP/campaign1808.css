@@ -1,0 +1,560 @@
+img{ overflow:hidden;display:block;border: none;}
+#main {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: #666;
+    background: url("../../images/APP_LP.HTML/campaign1808/banner-bg.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+#main.camp1809{
+    background: url("../../images/APP_LP.HTML/campaign1809/banner-bg.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+#main.camp1810{
+    background: url("../../images/APP_LP.HTML/campaign1810/banner-bg.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.con{
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    width: 7rem;
+    height: 7rem;
+    margin: 0 .25rem;
+    border-top-left-radius: .1rem;
+    border-top-right-radius: .1rem;
+    box-shadow: 0 0 .35rem rgba(0,0,0,.11);
+    background: -webkit-linear-gradient(#c8e7e9, #f0feff);
+    background: -o-linear-gradient(#c8e7e9, #f0feff);
+    background: -moz-linear-gradient(#c8e7e9, #f0feff);
+    background: linear-gradient(#c8e7e9, #f0feff);
+    padding-top: .3rem;
+}
+#main.camp1809 .con{background: #fff;padding-top: .35rem}
+#main.camp1810 .con{background: #fff;padding-top: .35rem}
+.con .title{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.con .title span{
+    overflow: hidden;
+    width: .6rem;
+    height: 1px;
+    background: #fd890a;
+}
+#main.camp1810 .con .title span{background: #24335c}
+.con .title p{
+    overflow: hidden;
+    font-size: .36rem;
+    line-height: .4rem;
+    font-weight: bold;
+    color: #fd890a;
+    margin: 0 .3rem;
+}
+#main.camp1809 .con .title p.size {
+    font-size: .24rem;
+    margin: .1rem 0 0 0;
+    color: #666;
+    font-weight: normal;
+}
+#main.camp1810 .con .title p {
+    background-image: -webkit-linear-gradient(left, #24335c, #405590);
+    background-image: -o-linear-gradient(left, #24335c, #405590);
+    background-image: -moz-linear-gradient(left, #24335c, #405590);
+    background-image: linear-gradient(to left, #24335c, #405590);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#main.camp1810 .con .title p.size {
+    background-image: none;
+    -webkit-text-fill-color: #666;
+    font-size: .24rem;
+    margin: .1rem 0 0 0;
+    color: #666;
+    font-weight: normal;
+}
+.con .con-list{
+    overflow: hidden;
+    margin-top: .3rem;
+}
+#main.camp1809 .con .con-list{margin: .15rem 0 .1rem}
+#main.camp1810 .con .con-list{margin: .15rem 0 .1rem}
+.con .con-list .nav-list{
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    width: 6.5rem;
+    margin: 0 auto;
+}
+.con .con-list .nav-list ul{
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.con .con-list .nav-list ul li{
+    overflow: hidden;
+    list-style: none;
+    width: 1.25rem;
+    height: .6rem;
+}
+.con .con-list .nav-list ul li span{
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: .5rem;
+    line-height: .5rem;
+    text-align: center;
+    color: #fff;
+    font-size: .24rem;
+    border-top-left-radius: .1rem;
+    border-top-right-radius: .1rem;
+    background: #fd890a;
+}
+.con .con-list .nav-list ul li p{
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    border-top: .08rem solid #0d597c;
+    border-right: .08rem solid rgba(0,0,0,0);
+    border-bottom: 0 solid rgba(0,0,0,0);
+    border-left: .08rem solid rgba(0,0,0,0);
+    margin: .02rem auto 0 auto;
+    display: none;
+}
+.con .con-list .nav-list ul li.on span{
+    background: #0d597c;
+}
+.con .con-list .nav-list ul li.on p{
+    display: block;
+}
+.con .con-list .layout{
+    overflow: hidden;
+    height: 2rem;
+    border-bottom-left-radius: .1rem;
+    border-bottom-right-radius: .1rem;
+    box-shadow: 0 0 .16rem rgba(0,0,0,.1);
+    background: -webkit-linear-gradient(#eefeff, #fff, #eefeff);
+    background: -o-linear-gradient(#eefeff, #fff, #eefeff);
+    background: -moz-linear-gradient(#eefeff, #fff, #eefeff);
+    background: linear-gradient(#eefeff, #fff, #eefeff);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: -.1rem .25rem .2rem .25rem;
+}
+.con .con-list .layout .item{
+    overflow: hidden;
+}
+.con .con-list .layout .item img{width: 1.52rem;margin: 0 auto}
+.con .con-list .layout .item span{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    color: #fd890a;
+    font-weight: bold;
+    text-align: center;
+}
+.con .con-list .layout .item span.size{font-size: .46rem}
+.con .con-list .layout .item p{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    line-height: .36rem;
+    text-align: center;
+}
+.con .con-list .layout-1 {
+    overflow: hidden;
+    margin-left: .2rem;
+}
+.con .con-list .layout-1 .item{
+    overflow: hidden;
+    background: url("../../images/APP_LP.HTML/campaign1809/icon-bg.png") no-repeat;
+    background-size: 2.38rem 2.51rem;
+    width: 2.38rem;
+    height: 2.06rem;
+    position: relative;
+    padding-top: .45rem
+}
+#main.camp1810 .con .con-list .layout-1 .item{
+    background: url("../../images/APP_LP.HTML/campaign1810/icon-bg.png") no-repeat center;
+    background-size: 2.58rem 2.61rem;
+    width: 2.58rem;
+    height: 2.16rem;
+}
+.con .con-list .layout-1 .item span{
+    overflow: hidden;
+    display: block;
+    font-size: .22rem;
+    color: #a9a3a3;
+    text-align: center;
+}
+#main.camp1810 .con .con-list .layout-1 .item span{color: #fff;margin-top: .03rem}
+.con .con-list .layout-1 .item span.size{
+    font-size: .44rem;
+    line-height: .45rem;
+    color: #fd890a;
+    font-family: "Myriad Pro";
+    margin: .3rem 0 .05rem;
+    font-weight: bold;
+}
+.con .con-list .layout-1 .item span.size.marginbottom{margin-bottom: 0}
+.con .con-list .layout-1 .item span.size.margintop{margin-top: .5rem}
+#main.camp1810 .con .con-list .layout-1 .item span.size{
+    width: 1.34rem;
+    height: .43rem;
+    margin: .3rem auto .05rem;
+    background: url("../../images/APP_LP.HTML/campaign1810/600.png") no-repeat center;
+    background-size: 1.07rem .43rem;
+}
+#main.camp1810 .con .con-list .layout-1 .item span.size.ntn02{
+    background: url("../../images/APP_LP.HTML/campaign1810/1800.png") no-repeat center;
+    background-size: 1.34rem .43rem;
+}
+#main.camp1810 .con .con-list .layout-1 .item span.size.ntn03{
+    background: url("../../images/APP_LP.HTML/campaign1810/5000.png") no-repeat center;
+    background-size: 1.34rem .43rem;
+    margin-bottom: 0
+}
+#main.camp1810 .con .con-list .layout-1 .item span.size.ntn04{
+    background: url("../../images/APP_LP.HTML/campaign1810/150.png") no-repeat center;
+    background-size: 1.07rem .43rem;
+}
+#main.camp1810 .con .con-list .layout-1 .item span.size.ntn05{
+    background: url("../../images/APP_LP.HTML/campaign1810/100.png") no-repeat center;
+    background-size: 1.07rem .43rem;
+    margin-top: .5rem
+}
+.con .con-list .layout-1 .item span.color{
+    font-size: .24rem;
+    line-height: .18rem;
+    margin: 0;
+    color: #999;
+}
+#main.camp1810 .con .con-list .layout-1 .item span.color{color: #999}
+.con .con-list .layout-1 .item p{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    line-height: .3rem;
+    text-align: center;
+    color: #999;
+}
+.con .con-list .layout-1 .item p.size{font-size: .2rem}
+.con .con-list01{
+    overflow: hidden;
+    width: 6.5rem;
+    margin: 0 auto;
+    height: 1.94rem;
+    padding-top: .2rem;
+    border-radius: .1rem;
+    box-shadow: 0 0 .16rem rgba(0,0,0,.1);
+    background: -webkit-linear-gradient(#eefeff, #fff, #eefeff);
+    background: -o-linear-gradient(#eefeff, #fff, #eefeff);
+    background: -moz-linear-gradient(#eefeff, #fff, #eefeff);
+    background: linear-gradient(#eefeff, #fff, #eefeff);
+}
+#main.camp1809 .con .con-list01{background: #fff;box-shadow: none}
+#main.camp1810 .con .con-list01{background: #fff;box-shadow: none}
+.con .con-list01 .layout{
+    overflow: hidden;
+    margin-top: .2rem;
+}
+.con .con-list01 .layout ul{
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.con .con-list01 .layout ul li{
+    overflow: hidden;
+    display: block;
+    list-style: none;
+}
+.con .con-list01 .layout ul li img{width: .68rem;margin: 0 auto}
+.con .con-list01 .layout ul li img.width{width: .27rem;margin: .2rem 0 0 0;}
+.con .con-list01 .layout ul li img.margin{margin: 0 .42rem}
+.con .con-list01 .layout ul li span{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    text-align: center;
+    margin: .1rem 0;
+}
+.top-fixed{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: .4rem;
+    width: .84rem;
+    height: .8rem;
+    background: #0d597c;
+    border-bottom-left-radius: .42rem;
+    border-bottom-right-radius: .42rem;
+    padding-top: .05rem;
+}
+#main.camp1809 .top-fixed{
+    height: .77rem;
+    background: url("../../images/APP_LP.HTML/campaign1809/tit-bg.png") no-repeat;
+    background-size: 100% 100%;
+    border-radius: 0;
+}
+#main.camp1810 .top-fixed{
+    height: .82rem;
+    background: url("../../images/APP_LP.HTML/campaign1810/tit-bg.png") no-repeat;
+    background-size: 100% 100%;
+    border-radius: 0;
+}
+.top-fixed span{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    line-height: .3rem;
+    color: #fff;
+    text-align: center;
+}
+.bot-fixed{
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 1.2rem;
+    background: #d8f0f2;
+    display: flex;
+    justify-content: space-between;
+}
+.bot-fixed a{
+    overflow: hidden;
+    width: 3.2rem;
+    height: .9rem;
+    text-align: center;
+    color: #fff;
+    font-size: .36rem;
+    line-height: .38rem;
+    border-radius: .1rem;
+    margin-top: .15rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bot-fixed a.chat{background: #0d597c;margin-left: .25rem}
+#main.camp1809 .bot-fixed a.chat{
+    background: -webkit-linear-gradient(right,#5dfeff, #87a3f6);
+    background: -o-linear-gradient(right,#5dfeff, #87a3f6);
+    background: -moz-linear-gradient(right,#5dfeff, #87a3f6);
+    background: linear-gradient(to right,#5dfeff, #87a3f6);
+}
+#main.camp1810 .bot-fixed a.chat{
+    background: -webkit-linear-gradient(left,#24335c, #405590);
+    background: -o-linear-gradient(left,#24335c, #405590);
+    background: -moz-linear-gradient(left,#24335c, #405590);
+    background: linear-gradient(to left,#24335c, #405590);
+}
+.bot-fixed a.account{background: #fd890a;margin-right: .25rem}
+#main.camp1809 .bot-fixed a.account{
+    background: -webkit-linear-gradient(right,#ffa700, #ff7900);
+    background: -o-linear-gradient(right,#ffa700, #ff7900);
+    background: -moz-linear-gradient(right,#ffa700, #ff7900);
+    background: linear-gradient(to right,#ffa700, #ff7900);
+}
+#main.camp1810 .bot-fixed a.account{
+    background: url("../../images/APP_LP.HTML/campaign1810/btn-bg.png") no-repeat;
+    background-size: 3.2rem .9rem;
+}
+.bot-fixed a span{
+    overflow: hidden;
+    display: block;
+}
+.bot-fixed a span:first-child{font-size: .2rem;line-height: .22rem;margin: .05rem 0}
+/*轮播*/
+.swiper-container {
+    width: 100%;
+    height: 2.51rem;
+}
+.swiper-slide {
+    text-align: center;
+    background: #fff;
+    width: 2.38rem;
+}
+#main.camp1810  .swiper-slide{width: 2.58rem}
+/*弹窗*/
+.tc-hide{
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
+.masking{
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+}
+.popup-box {
+    overflow: hidden;
+    max-width:95%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top:10%;
+    background: #fff;
+    z-index: 99999;
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.popup-box .box-in {
+    margin: 3% 4% 5% 4%;
+    overflow-y: auto;
+    height: 8rem;
+}
+.popup-box .close-top{
+    padding:0.5rem 0.3rem;
+    font-size: 0.44rem;
+    color:#b78255;
+    text-align: center;
+    border-bottom: 1px solid #b78255;
+    width:5.5rem;
+    margin: 0 auto;
+    position: relative;
+}
+.popup-box .close-top a{
+    background: url(../../images/campaign1710/close-b.png) no-repeat;
+    width: 0.21rem;
+    height:0.21rem;
+    background-size: 0.21rem 0.21rem;
+    position: absolute;
+    right: 0;
+    margin-top: .2rem;
+    text-decoration: none;
+}
+.popup-box .section1 h2{
+    font-size: 0.36rem;
+    margin-bottom: 0.1rem;
+    color: #b78255;
+}
+.popup-box table.data-box {
+    width: 100%;
+    margin: 16px auto 25px;
+    text-align: center;
+    border: 0 !important;
+    font-size: 1.6em;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.popup-box .box-in .line-throw{font-size: 0.32rem;}
+.popup-box  .box-in .section1 p{
+    font-size:0.28rem;
+    margin-bottom: 0.2rem;
+    line-height: 1.8;
+}
+.popup-box  .box-in .section3 p{
+    font-size:0.28rem;
+    margin-bottom: 0.2rem;
+    line-height: 1.8;
+}
+.popup-box .box-in .section3 p a{color: #0096dc}
+.popup-box  .box-in .section3 p span{
+    padding-right:0.15rem;
+}
+.popup-box  .box-in .section4  h2{
+    font-size: 0.36rem;
+    margin-bottom: 0.1rem;
+    color: #b78255;
+}
+.popup-box  .box-in .section4 li{
+    font-size: 0.28rem;
+    line-height: 1.8;
+}
+.popup-box  .box-in .section4 li span{
+    margin-right: 0.15rem;
+}
+.popup-box  .box-in .section4 li p{
+    display: flex;
+}
+
+.popup-box table.data-box thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box thead th {
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 5px;
+    color: #FFFFFF;
+    background: #dcb08e;
+    line-height: 1.0;
+}
+.popup-box table.data-box thead tr {
+    border: 1px solid #dcb08e;
+}
+.popup-box table.data-box tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box tbody td {
+    line-height: 1.0;
+    text-align: center;
+    color: #333333;
+    padding: 1.44%;
+    font-size: 14px;
+    border: 0.025rem solid #ead5c2;
+    font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+}
+.popup-box table.data-box tbody .unit {
+    font-size: 0.8em;
+}
+.popup-box table.data-box tbody tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+//background: #f7efe8;
+}
+.popup-box table.data-box tbody tr.grey {
+    background: #fff;
+}
+.popup-box table.data-box tbody tr.last-row td {
+    border-bottom: 1px solid #CCCCCC;
+}
+.popup-box table.data-box .first-child {
+    text-align: center;
+    font-size: 16px;
+}
+.popup-box table.data-box .first-child a {
+    color: #666666;
+    text-decoration: none;
+}
+.popup-box .table1 td,
+.popup-box .table2 td {
+    width: 25%;
+}
+.popup-box .table4 td {
+    width: 16%;
+}
+.popup-box .table3 td {
+    width: 33.333333%;
+}
+.popup-box .note{line-height: 1.8;font-size: 0.24rem;margin-bottom: 0.1rem}
+.popup-box .note span{color: #f00}

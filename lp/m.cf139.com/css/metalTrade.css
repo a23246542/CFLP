@@ -1,0 +1,815 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0;color:#333;position: relative}
+.inner{overflow: hidden; margin: 0 auto; position: relative;padding: 0 .25rem}
+img{border: 0}
+*{
+box-sizing: border-box;
+}
+.web-banner{
+    width: 7.5rem;
+    height: 9.3rem;
+    background: url("../images/metalTrade/banner.jpg") no-repeat center;
+    background-size: 7.5rem 9.3rem;
+    position: relative;
+    padding-top:.9rem
+}
+
+.web-banner  img{
+    display: block;
+    width: 3.79rem;
+    height:3.54rem;
+    margin: 0 auto;
+}
+ .button{
+    /*width: 6.05rem;*/
+    font-size: 0;
+    margin:  0 auto;
+}
+.bg-05{
+    padding-bottom: .2rem;
+}
+.button a{
+    display: block;
+    width:2.2rem;
+    height: .7rem;
+    line-height: .7rem;
+    text-align: center;
+    border-radius: .1rem;
+    font-size: .28rem;
+    font-weight: bold;
+    margin-top: .7rem;
+    transition:  all .3s;
+}
+
+.button a.real{
+    background: url("../images/metalTrade/btn02.png") no-repeat;
+    width: 2.7rem;
+    height: 1.19rem;
+    background-size: 2.7rem 1.19rem;
+    color: #fff;
+    margin-top: .2rem;
+    line-height: .8rem;
+}
+
+ .button a.real{
+    margin-right: .8rem;
+     margin-left: 1rem;
+}
+
+.button a.service{
+    color: #0096dc;
+    border: .025rem solid #0096dc;
+    margin-left: 1.2rem;
+}
+.button a.service:active{
+    background: #035b83;
+    color: #fff;
+    border: .025rem solid #035b83;
+}
+.bg-06{
+    background: #2e3566;
+}
+.bg-06 .button{
+    width: 5.6rem;
+   margin: 0 auto;
+    padding: .6rem 0;
+    text-align: center;
+}
+.bg-06 a{
+    display: inline-block;
+    margin: 0 auto;
+}
+.bg-06 a.service{
+    display: inline-block;
+   margin-left: 0;
+}
+.bg-06 a.real{
+    margin-left: .4rem;
+    margin-right: 0;
+}
+.trade-left{
+    height: 5.5rem;
+}
+.web-page{
+    overflow: hidden;
+    width: 100%;
+    background: #fff;
+}
+.trade-title{
+    margin-top: .7rem;
+}
+.trade-title .first-title{
+    font-size: .4rem;
+    color: #313547;
+    text-align: center;
+    margin-bottom: .8rem;
+    margin-top: .2rem;
+    position: relative;
+    /*font-weight: bold;*/
+}
+.title-logo{
+    text-align: center;
+}
+.title-logo img{
+   width: .59rem;
+    height: .58rem;
+}
+.trade-title .first-title span{
+    font-weight: bold;
+}
+.trade-title .first-title:before{
+    content: '';
+    position: absolute;
+    width: .3rem;
+    height: .02rem;
+    background: #000;
+    left: 3.35rem;
+    top: .7rem;
+}
+.bg-01 .trade-title .first-title:before{
+    top: 1.2rem;
+}
+.bg-02 .trade-title .first-title:before{
+    top: 1.2rem;
+}
+.bg-03 .trade-title .first-title:before{
+    top: 1.2rem;
+    left: 3.65rem;
+}
+.bg-03{
+    padding-bottom: .6rem;
+}
+.bg-03 .first-title{
+    margin-bottom: .5rem;
+}
+.bg-04{
+    background: #f7f7f7;
+}
+.bg-01{
+   background: #fff;
+    padding-bottom: .5rem;
+}
+.bg-01 .first-title{
+    margin-bottom: .42rem;
+}
+.trade-title .sub-title{
+    font-size: .28rem;
+    text-align: center;
+    margin-bottom: .2rem;
+}
+.trade-title .sub-title span{
+    color: #e6a03a;
+    font-weight: bold;
+}
+.icon-top{
+    position: absolute;
+    left: 0;
+}
+.icon-top img{
+    width: 2.68rem;
+    height: 2.28rem;
+}
+.bg-02 .icon-top img{
+    width:2.32rem;
+    height: 1.75rem;
+}
+.popup{
+    width: 2.06rem;
+    height: 1rem;
+    background: url("../images/metalTrade/btn01.png") no-repeat;
+    background-size: 2.06rem 1rem;
+    border-radius: .1rem;
+    color: #fff;
+    font-size: .28rem;
+    text-align: center;
+    margin:  0 auto;
+    line-height: .6rem;
+}
+.bg-02{
+    background:#f7f7f7;
+    padding-bottom: .8rem;
+}
+.bg-02 .inner .trade-title .first-title{
+    margin-bottom: .5rem;
+}
+.market-box{
+
+}
+.market-box .market-left{
+ margin-bottom: .8rem;
+}
+.market-img{
+    background: #fff;
+    width: 7rem;
+    margin: 0 auto;
+    box-shadow: 0 0 .4rem #c7ecf9;
+    padding: .5rem 0;
+}
+.market-img img{
+    display: block;
+    width: 6.13rem;
+    height: 3.42rem;
+    margin:  0 auto;
+}
+.market-right .market-img img{
+    width: 6.13rem;
+}
+.market-box .market-title img{
+    width:.4rem;
+    height: .34rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.market-box .market-title{
+    font-size: .28rem;
+    color: #48507c;
+    margin-bottom: .5rem;
+    padding:0 .25rem
+}
+.market-add{
+    text-align: center;
+    margin-top: .2rem;
+    font-size:.28rem ;
+    color: #48507c;
+}
+.market-add img{
+    width: 7.09rem;
+    height: 2.57rem;
+}
+.add-bottom{
+    font-size: .22rem;
+    color: #999;
+    text-align: left;
+    padding-left: .25rem;
+    margin-top: .1rem;
+}
+.add-title{
+    padding-left: .25rem;
+    text-align: left;
+    margin: .4rem auto .2rem;
+}
+.add-title img{
+    width: .4rem;
+    height: .25rem;
+}
+.luck-box{
+    font-size: 0;
+    margin-top: .6rem;
+}
+.luck-box img{
+    display: block;
+   width: 7.1rem;
+    height: 3.3rem;
+    margin:  0 auto;
+}
+.luck-box img:first-child{
+    margin-bottom: .35rem;
+    height: 3.8rem;
+}
+
+
+.assist{
+    background: #fff;
+    width: 7rem;
+    margin: 0 auto .9rem;
+    padding:.5rem .3rem;
+    box-shadow: 0 0 .3rem #ccc;
+}
+.assist ul li{
+    font-size: .28rem;
+    text-align: center;
+    height: 1.8rem;
+    padding-top: 1.5rem;
+}
+
+.assist-top{
+    float: left;
+    background: url("../images/metalTrade/left.jpg") no-repeat;
+    width: 3.09rem;
+    height: 9.77rem;
+    background-size: 3.09rem 9.77rem;
+    padding-top: 1.2rem;
+}
+.assist-bottom{
+    background: url("../images/metalTrade/right.png") no-repeat;
+    width: 3.1rem;
+    height: 9.77rem;
+    background-size: 3.1rem 9.77rem;
+    padding-top: 1.6rem;
+}
+.assist-bottom{
+    margin-left: 3.3rem;
+}
+.assist-bottom ul li span{
+    font-weight: bold;
+}
+.assist-top ul li{
+    position: relative;
+    font-size: .24rem;
+    color: #fff;
+}
+.assist-top ul li div{
+    position: absolute;
+    top: .2rem;
+    left: .1rem;
+}
+.assist-top ul li div.item-1{
+    top: .25rem;
+    left: .8rem;
+}
+.assist-top ul li div.item-4{
+    top: .35rem;
+    left: .8rem;
+}
+
+.assist-top ul li span{
+    color: #ff8700;
+    font-size: .36rem;
+
+}
+.title-nav{
+    width: 3.82rem;
+    margin:  0 auto .9rem;
+    font-size: 0;
+}
+.title-nav a{
+    display: inline-block;
+    width: 1.5rem;
+    height: .5rem;
+    line-height: .5rem;
+    font-size: .28rem;
+    text-align: center;
+    border-radius: .1rem;
+    color: #999;
+    border: .025rem solid transparent;
+}
+.title-nav a.one{
+    margin-right: .8rem;
+    border: .025rem solid #999;
+}
+.title-nav a.two{
+    border: .025rem solid #999;
+}
+.title-nav a.active{
+    background: #0a95ff;
+    color: #fff;
+    border: .025rem solid #0a95ff;
+}
+.gold{
+    text-align: center;
+}
+.gold .gold-img{
+    position: absolute;
+    top: -.6rem;
+    right: 2.5rem;
+}
+.gold .gold-id{
+    font-size: .22rem;
+    color: #999999;
+    margin-bottom:.4rem;
+}
+.gold .gold-result{
+    font-weight: bold;
+    font-size: .5rem;
+    color: #e6a03a;
+    margin-bottom: .4rem;
+}
+.gold  .gold-action{
+    font-size: .3rem;
+    font-weight: bold;
+}
+.gold .gold-img img{
+    width: 1.16rem;
+    height: 1.17rem;
+    text-align: center;
+}
+.gold .gold-left,.gold .gold-right{
+    width: 6rem;
+    height: 6.2rem;
+    background: #fff;
+    border-radius: .1rem;
+    position: relative;
+    padding-top: .7rem;
+     margin: 0 auto .4rem;
+    box-shadow: 0 0 0.4rem #ddd;
+}
+.gold-right.ds,.gold-left.ds{
+    display: block;
+}
+.gold-right.dn,.gold-left.dn{
+    display: none;
+}
+
+.trade-right img{
+    display: block;
+    width: 5.62rem;
+    height: 2.59rem;
+    margin:  0 auto;
+}
+.gold-image.dn{
+    display: none;
+}
+.gold-image img{
+ width: 6rem;
+    height: 2.65rem;
+}
+.gold-image.ds{
+    display: block;
+}
+.gold-detail.dn{
+    display: none;
+}
+.gold-detail.ds{
+    display: block;
+}
+.gold-detail{
+    margin-bottom: 10px;
+    padding:0 .4rem;
+    font-size:.22rem;
+    font-weight: bold;
+}
+.gold-right .gold-detail{
+    line-height: 1.8;
+}
+.gold-detail span{
+    color: #e6a03a;
+    font-weight: bold;
+}
+.gold-detail ul li span{
+    color: #e6a03a;
+    font-weight: bold;
+}
+.gold-detail ul li ul li{
+    width: 35%;
+}
+.gold-detail ul li ul li img{
+    width:.58rem ;
+    height: .43rem;
+    display: inline-block;
+}
+.gold-detail ul li ul li:first-child{
+    width: 38%;
+    text-align: left;
+   font-weight: normal;
+}
+.gold-detail ul li ul li:last-child{
+    width:26%;
+    text-align: center;
+   font-weight: normal;
+}
+.gold-detail ul li ul{
+    border-bottom: .025rem solid #ccc;
+    padding: .1rem 0;
+}
+.gold-detail ul li ul li{
+    float: left;
+    font-size: .22rem;
+    text-align: center;
+
+}
+.gold-title{
+    color: #0096dc;
+    font-size: .24rem;
+}
+.gold-right .gold-detail{
+    margin-bottom: .2rem;
+}
+.gold-title i{
+    background: url("../images/metalTrade/next.png") no-repeat;
+    width: .18rem;
+    height: .1rem;
+    background-size: .18rem .1rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.gold-title.close i{
+    transform: rotate(180deg);
+}
+.bg-05  .first-title{
+    margin-bottom: .75rem;
+}
+
+@font-face {
+    font-family: 'num01';
+    src: url('https://www.cf139.com/cn/zt/css/metalTrade/metalTrade/IMPACT.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'num02';
+    src: url('https://www.cf139.com/cn/zt/css/metalTrade/metalTrade/兰亭特黑 GBK.TTF');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*.swiper-slider .item-1{*/
+/*background: url("//img.getfc.com.cn/source/www/zt/new-metal/move.jpg") no-repeat;*/
+/*background-size: 354px 488px;*/
+/*}*/
+.swiper-slide {
+    width: 3.55rem ;
+    height: 4.9rem;
+    text-align: center;
+    font-size: 18px;
+    background: linear-gradient(to right, #f3e6b7 , #e8d39c);
+    padding-top: .3rem;
+    border-radius: .2rem;
+    box-shadow:0 0 .2rem rgba(0,0,0,.2);
+    margin: .2rem auto;
+}
+.swiper-slide .item-1{
+    font-size: .28rem;
+    color: #fff;
+    text-shadow: 0 0 5px #b76e0f;
+    margin-bottom: .2rem;
+}
+.swiper-slide .item-2{
+    padding-top: 20px;
+    width: 2.95rem;
+    height: 3.79rem;
+    margin: 0 auto;
+    background: url(../images/metalTrade/move.png);
+    background-size: 2.95rem 3.79rem;
+}
+.swiper-slide .item-2{
+    text-align: center;
+}
+.swiper-slide .item-2 .num01 img{
+   width: 1.48rem;
+    height: .52rem;
+}
+.swiper-slide .item-2  .plus{
+    margin: .2rem auto;
+}
+.swiper-slide .item-2 .plus img{
+  width: .22rem;
+    height: .23rem;
+}
+.swiper-slide .num05 img{
+    width: 1.38rem;
+    height: .52rem;
+}
+.swiper-slide .num04 img{
+    width: 1.14rem;
+    height: .52rem;
+}
+
+.swiper-slide .num06 img{
+    width: .9rem;
+    height: .52rem;
+}
+.swiper-slide .num07 img{
+    width: 1.05rem;
+    height: .52rem;
+}
+.swiper-slide .num08 img{
+    width: 1.05rem;
+    height: .52rem;
+}
+.swiper-slide .num09 img{
+    width: 1.15rem;
+    height: .52rem;
+}
+
+.swiper-slide .item-2 .num02{
+    font-size: .22rem;
+    color: #ad6421;
+    width: 1.15rem;
+    height: .33rem;
+    line-height: .33rem;
+    border: .025rem solid #ad6421;
+    border-radius: .1rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: .1rem;
+}
+.swiper-slide .item-2 .num03{
+    font-size: .22rem;
+    color: #ad6421;
+    font-weight: bold;
+    margin-top: .42rem;
+}
+.special-sw .item-2{
+    padding-top: 1rem;
+}
+
+
+/*弹窗*/
+.tc-hide{
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
+.masking{
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+}
+.popup-box {
+    overflow: hidden;
+    max-width:95%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top:10%;
+    background: #fff;
+    z-index: 99999;
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.popup-box .box-in {
+    margin: 3% 4% 5% 4%;
+    overflow-y: auto;
+    height: 8rem;
+}
+.popup-box .close-top{
+    padding:0.5rem 0.3rem;
+    font-size: 0.44rem;
+    color:#b78255;
+    text-align: center;
+    border-bottom: 1px solid #b78255;
+    width:5.5rem;
+    margin: 0 auto;
+    position: relative;
+}
+.popup-box .close-top a{
+    background: url(../images/metalTrade/close-b.png) no-repeat;
+    width: 0.21rem;
+    height:0.21rem;
+    background-size: 0.21rem 0.21rem;
+    position: absolute;
+    right: 0;
+    margin-top: .2rem;
+    text-decoration: none;
+}
+.popup-box .section1 h2{
+    font-size: 0.36rem;
+    margin-bottom: 0.1rem;
+    color: #b78255;
+}
+.popup-box .section5 h2{
+    font-size: 0.36rem;
+    margin-bottom: 0.1rem;
+    color: #b78255;
+}
+.popup-box table.data-box {
+    width: 100%;
+    margin: 16px auto 25px;
+    text-align: center;
+    border: 0 !important;
+    font-size: 1.6em;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.popup-box .box-in .line-throw{font-size: 0.32rem;}
+.popup-box  .box-in .section1 p{
+    font-size:0.28rem;
+    margin-bottom: 0.2rem;
+    line-height: 1.8;
+}
+.popup-box  .box-in .section3 p{
+    font-size:0.28rem;
+    margin-bottom: 0.2rem;
+    line-height: 1.8;
+}
+.popup-box .box-in .section3 p a{color: #0096dc}
+.popup-box  .box-in .section3 p span{
+    padding-right:0.15rem;
+}
+.popup-box  .box-in .section4  h2{
+    font-size: 0.36rem;
+    margin-bottom: 0.1rem;
+    color: #b78255;
+}
+.popup-box  .box-in .section4 li{
+    font-size: 0.28rem;
+    line-height: 1.8;
+}
+.popup-box  .box-in .section4 li span{
+    margin-right: 0.15rem;
+}
+.popup-box  .box-in .section4 li p{
+    display: flex;
+}
+
+.popup-box table.data-box thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box thead th {
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 5px;
+    color: #FFFFFF;
+    background: #dcb08e;
+    line-height: 1.0;
+}
+.popup-box table.data-box thead tr {
+    border: 1px solid #dcb08e;
+}
+.popup-box table.data-box tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box tbody td {
+    line-height: 1.0;
+    text-align: center;
+    color: #333333;
+    padding: 1.44%;
+    font-size: 14px;
+    border: 0.025rem solid #ead5c2;
+    font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+}
+.popup-box table.data-box tbody .unit {
+    font-size: 0.8em;
+}
+.popup-box table.data-box tbody tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+//background: #f7efe8;
+}
+.popup-box table.data-box tbody tr.grey {
+    background: #fff;
+}
+.popup-box table.data-box tbody tr.last-row td {
+    border-bottom: 1px solid #CCCCCC;
+}
+.popup-box table.data-box .first-child {
+    text-align: center;
+    font-size: 16px;
+}
+.popup-box table.data-box .first-child a {
+    color: #666666;
+    text-decoration: none;
+}
+.popup-box .table1 td,
+.popup-box .table2 td {
+    width: 25%;
+}
+.popup-box .table4 td {
+    width: 16%;
+}
+.popup-box .table3 td {
+    width: 33.333333%;
+}
+.popup-box .note{line-height: 1.8;font-size: 0.24rem;margin-bottom: 0.1rem}
+.popup-box .note span{color: #f00}
+.section5 ol li{
+    font-size: .28rem;
+    line-height: 2.2;
+    text-align: justify;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.section3 ul li ul li{
+    float: left;
+    font-size: 12px;
+    width: 16%;
+    text-align: center;
+    height: 2.5rem;
+    border-right: 0.025rem solid #ccc;
+    border-bottom: 0.025rem solid #ccc;
+    padding-top:1rem;
+}
+
+#head-ul{
+    background: #b78255;
+    color: #fff;
+    height: 1rem;
+}
+.section3 ul li ul li.last{
+    width:20%;
+    padding-top:.5rem;
+}
+#head-ul li{
+    width: 16%;
+    text-align: center;
+    height: 1rem;
+    line-height: 1rem;
+    padding-top:0;
+}
+#head-ul li.last{
+    width: 20%;
+
+}
+.section3 .first{
+    border-left: .025rem solid #ccc;
+}

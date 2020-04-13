@@ -1,0 +1,442 @@
+#main{overflow:hidden;width:100%;margin:0;padding:0;color:#333}
+.inner{overflow:hidden;width:7rem;margin:0 auto;position:relative}
+img{overflow:hidden;display:block;border:none}
+.web-banner {
+    overflow: hidden;
+    width: 100%;
+    height: 10.34rem;
+    background: url(../images/tradeWar1812/banner-bg.jpg) no-repeat top center;
+    position: relative;
+    background-size: 100% 10.34rem;
+}
+.web-banner img {
+    overflow: hidden;
+    width: 6.2rem;
+    height: 2.14rem;
+    display: block;
+    margin: 0 auto
+}
+.web-banner .btn {
+    overflow: hidden;
+    position: absolute;
+    bottom: 1.14rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.web-banner .btn a {
+    overflow: hidden;
+    display: block;
+    width: 2.19rem;
+    height: .58rem;
+    line-height: .58rem;
+    text-align: center;
+    font-size: .3rem;
+    text-decoration: none;
+    margin: 0 .15rem;
+}
+.web-banner .btn a.account {
+    background: #0096dc;
+    color: #fff;
+    font-weight: bold;
+}
+.web-banner .btn a.chat {
+    background: #fff;
+    color: #0a528d;
+}
+.trade-title {
+    margin-top: .8rem
+}
+.trade-title .first-title {
+    font-size: .44rem;
+    color: #313547;
+    text-align: center;
+    margin-bottom: .2rem
+}
+.trade-title .first-title span {
+    font-weight: 700
+}
+.trade-title .first-title i {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #333;
+    vertical-align: middle;
+    margin: 0 14px
+}
+.trade-title .sub-title {
+    font-size: .24rem;
+    text-align: center;
+    margin-bottom: .5rem;
+    line-height: 1.8
+}
+.trade-title .title-img img{
+    width: .5rem;
+    display: inline-block;
+}
+.title-img{
+    text-align: center;
+    margin-bottom: .1rem;
+}
+.trade-box{
+    width:6.85rem ;
+    height: 6.2rem;
+    box-shadow: 0 0 .15rem #ddd;
+    margin:  0 auto;
+    border-radius: .2rem;
+   margin-bottom: .8rem;
+}
+.trade-box .hd li{
+    width: 3.44rem;
+    height: .79rem;
+    line-height: .79rem;
+    float: left;
+    background: #ededed;
+    font-size: .3rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.trade-box .hd li:first-child{
+    border-top-left-radius: .2rem;
+    -webkit-border-top-left-radius:.2rem ;
+}
+.trade-box .hd li:first-child.on{
+   background: url("../images/tradeWar/title01.png") no-repeat;
+    width: 3.41rem;
+    height: .79rem;
+    background-size: 3.41rem .79rem;
+    color: #fff;
+}
+.trade-box .hd li:last-child.on{
+   background: url("../images/tradeWar/title02.png") no-repeat;
+    width: 3.41rem;
+    height: .79rem;
+    background-size: 3.41rem .79rem;
+    color: #fff;
+}
+.trade-box .hd li:last-child{
+    border-top-right-radius: .2rem;
+    -webkit-border-top-right-radius:.2rem ;
+}
+
+.trade-box .bd{position:relative}
+.trade-box .bd .trade-text{font-size:.22rem;margin-left:1.2rem;padding-left: .6rem;padding-right: .5rem;}
+.trade-box .bd .trade-content{font-size:.24rem;padding-bottom:.5rem;line-height:1.8;text-align:justify}
+.trade-box .bd .trade-content span{color:#0096dc}
+.trade-time{font-size:.22rem;color:#313547;margin-bottom:.05rem}
+
+.trade-top{
+    padding-top: 1.05rem;
+}
+.trade-text .item-1{
+    color: #0096dc;
+    font-size: .28rem;
+    margin: .35rem auto .1rem;
+}
+.trade-text .content{
+    color: #313547;
+    font-size: .24rem;
+    line-height: .36rem;
+}
+.market-box .hd{padding:0 20px;position:relative}
+.market-box .hd ul{width:6rem;margin:0 auto;border-bottom:.025rem solid #ccc}
+.market-box .hd ul li{float:left;cursor:pointer;width:1.4rem;text-align:center;margin-right:.9rem}
+.market-box .hd ul li.on{}
+.market-box .hd ul li:last-child{margin-right:0}
+.icon-market.icon01{background:url(../images/tradeWar/gold.png) no-repeat;background-size:.44rem .31rem;width:.44rem;height:.31rem;margin:0 auto 5px}
+.icon-market.icon02{background:url(../images/tradeWar/cc.png) no-repeat;background-size:.49rem .32rem;width:.49rem;height:.32rem;margin:0 auto 5px}
+.icon-market.icon03{background:url(../images/tradeWar/up.png) no-repeat;background-size:.32rem .32rem;width:.32rem;height:.32rem;margin:0 auto 5px}
+.market-box .hd ul li.on .icon03{background:url(../images/tradeWar/3.png) no-repeat;background-size:.32rem .32rem}
+.market-box .hd ul li.on .icon02{background:url(../images/tradeWar/2.png) no-repeat;background-size:.49rem .32rem}
+.market-box .hd ul li.on .icon01{background:url(../images/tradeWar/1.png) no-repeat;background-size:.44rem .31rem}
+.bd-img img{display:block;width:7.01rem;margin:0 auto}
+.market-text{margin-bottom:5px;font-size:.28rem}
+.market-box .hd ul li.on .market-text{color:#313547}
+.bg-02{width:100%;
+background: #d3e9f7;
+    padding-bottom: .84rem;
+}
+
+.teach ul li{margin-bottom:.4rem}
+.teach ul li .teach-left{float:left}
+.teach ul li .teach-left img{width:2.7rem;height:1.8rem}
+.teach ul li .teach-right{padding:.3rem .2rem 0 .2rem;float:left;background:#fafafa;border-top:.025rem solid #eee;border-right:.025rem solid #eee;width:4.3rem;height:1.8rem;box-sizing:border-box}
+.teach-right .teach-title{font-size:.36rem;font-weight:700}
+.teach-right .sub-teachTitle{font-size:.3rem;color:#fcac42;font-weight:700;margin:10px 0 15px}
+.teach ul li:nth-child(2) .teach-right{padding:.1rem .2rem 0 .2rem}
+.teach ul li:nth-child(2) .teach-right .sub-teachTitle{margin:0 0 15px}
+.teach ul li:nth-child(3) .teach-right .sub-teachTitle{margin:0 0 15px}
+.teach-bottom{background:#fafafa;border:.025rem solid #eee;border-top:none}
+.teach-bottom .teach-text{font-size:.24rem;padding:.3rem .25rem;line-height:1.6;color:#666}
+.know-more a{
+    display: block;
+    width: 2.26rem;
+    height: .46rem;
+    line-height: .46rem;
+    font-size: .24rem;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: .5rem;
+    background: #5077c0;
+    box-shadow: 0 .15rem .1rem -0.1rem #5077c0;
+    margin-bottom: .2rem;
+}
+.assist-top,.assist-bottom{
+    font-size: 0;
+}
+.assist-text{
+    color: #313547;
+    font-size: .24rem;
+    text-align: center;
+    margin: .5rem auto .3rem;
+}
+.assist-top img{
+    width: 3.44rem;
+    display: inline;
+}
+.assist-bottom img{
+    width: 3.39rem;
+    display: inline;
+}
+.assist-bottom img:first-child{
+    margin-right: .1rem;
+}
+    /*.point ul li{float:left;}*/
+
+.point .bank-img{
+    float: left;
+}
+.point .bank-img img{
+    width: 3.54rem;
+}
+.point-text {
+    float: right;
+    padding-top: 1.29rem;
+}
+.point ul li:nth-child(2) .bank-img img{
+  width: 3.22rem;
+}
+.point ul li:nth-child(3) .bank-img img{
+  width: 3.25rem;
+}
+.point ul li:nth-child(4) .bank-img img{
+  width: 3.09rem;
+}
+.point ul li:nth-child(2) .point-text {
+    padding-right: .4rem;
+}
+.point ul li:nth-child(3) .point-text {
+    padding-right: .5rem;
+}
+.point ul li:nth-child(4) .point-text {
+    padding-right: .2rem;
+}
+.point-text .item-1{
+  font-size: .3rem;
+    color: #313547;
+}
+.point-text .item-2{
+    width: .3rem;
+    height: .025rem;
+    background: #313547;
+    margin: .15rem 0;
+}
+.point-text .item-3{
+  font-size: .22rem;
+    color: #707488;
+    margin-bottom: .8rem;
+}
+.point-text .item-4{
+    width: 3.32rem;
+    height: .5rem;
+    line-height: .5rem;
+    border: .025rem dashed #1a4376;
+    color: #1a4376;
+    font-size: .22rem;
+    text-align: center;
+    border-radius: .1rem;
+}
+.point-text .item-5 a{
+    display: inline-block;
+    padding:0 .2rem;
+    height: .6rem;
+    line-height: .6rem;
+    background: #1a4376;
+    color: #fff;
+    font-size: .24rem;
+    text-align: center;
+    border-radius: .1rem;
+    box-shadow: 0 .1rem .03rem -0.01rem #1a4376;
+}
+.point-text .item-5.special a{
+    width:2.5rem ;
+}
+
+.bg-03 .hd ul{margin:.7rem auto;padding-left:3.1rem}
+
+.bg-03 .hd ul li{float:left;width:.15rem;height:.15rem;border-radius:50%;border: .025rem solid #1a4376;margin-right:.2rem}
+.bg-03 .hd ul li.on{background:#1a4376}
+.open{font-size:0;overflow:hidden;width: 4.45rem;margin: 0 auto}
+.open a{margin: .6rem auto .3rem;display:inline-block;height:.6rem;line-height:.6rem;width:1.92rem;font-size:.28rem;text-align:center;border-radius:.1rem;overflow:hidden;transition:all .3s}
+.open a.real{background:#1a4376;color:#fff;margin-right:.5rem;box-shadow: 0 .1rem .02rem -.02rem #1a4376}
+.open a.admin{border:.025rem solid #1a4376;color:#1a4376;background:#fff}
+.open a.admin:active{background:#035b83;color:#fff}
+.open a.real:active{background:#035b83;color:#fff}
+.web-banner .btn a.account:hover{background:#035b83;color:#fff}
+.web-banner .btn a.chat:hover{background:#035b83;color:#fff}
+.bg-03 .first-title{
+    margin-bottom: .6rem;
+}
+.web-page .add-con{
+    overflow: hidden;
+    background: url("../images/tradeWar1812/con-bg.png") no-repeat;
+    background-size: 100% 100%;
+    width: 7.05rem;
+    height: 6.46rem;
+}
+.web-page .add-con .add-tit{
+    overflow: hidden;
+    width: 1.9rem;
+    height: .52rem;
+    text-align: center;
+    line-height: .5rem;
+    font-weight: bold;
+    font-size: .24rem;
+    color: #fff;
+    margin: .5rem 0 0 .25rem;
+}
+.web-page .add-con .add-list{overflow: hidden;margin: 1.25rem 0 0 1.04rem}
+.web-page .add-con .add-list time{
+    overflow: hidden;
+    display: block;
+    font-size: .22rem;
+    line-height: .32rem;
+    color: #313547;
+    font-weight: normal;
+}
+.web-page .add-con .add-list p{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    color: #313547;
+    line-height: .28rem;
+    margin: .1rem 0 .35rem;
+}
+.web-page .add-con .add-list span{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    line-height: .42rem;
+    color: #0096dc;
+}
+.web-page .add-con .add-list span.bold{font-weight: bold;margin-top: .18rem}
+.web-page .add-con .add-list a{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    color: #fff;
+    background: #1a4376;
+    width: 2.2rem;
+    height: .5rem;
+    line-height: .5rem;
+    text-align: center;
+    margin: .3rem 0 0 1.5rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+.web-page .add-con .add-list a:hover{
+    background: #fff;
+    border: solid 1px #1a4376;
+    color: #1a4376;
+}
+.web-page .add-tit01 {
+    overflow: hidden;
+    width: 6.64rem;
+    margin: .55rem auto 0 auto;
+}
+.web-page .add-tit01 span{
+    overflow: hidden;
+    display: block;
+    font-weight: bold;
+    font-size: .3rem;
+    color: #313547;
+}
+.web-page .add-tit01 span.line{
+    width: .53rem;
+    height: .02rem;
+    background: #ababae;
+    margin: .1rem 0 .25rem;
+}
+.web-page .add-list01 {
+    overflow: hidden;
+    position: relative;
+    width: 7.05rem;
+    margin: 0 auto;
+    padding-bottom: .7rem
+}
+.web-page .add-list01 .item{
+    overflow: hidden;
+    width: 3.1rem;
+    height: 5.45rem;
+    border-radius: .06rem;
+    background: #f8f8f8;
+    position: relative;
+    float: left;
+    margin: 0 .2rem;
+}
+.web-page .add-list01 .item img{width: 3.1rem}
+.web-page .add-list01 .item time{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    line-height: .28rem;
+    color: #313547;
+    margin: .32rem .14rem .08rem .14rem;
+}
+.web-page .add-list01 .item p{
+    overflow: hidden;
+    display: block;
+    font-weight: normal;
+    font-size: .22rem;
+    color: #313547;
+    line-height: .36rem;
+    margin: 0 .14rem;
+}
+.web-page .add-list01 .item span{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    line-height: .36rem;
+    color: #0096dc;
+}
+.web-page .add-list01 .item span.bold{font-weight: bold;margin-top: .1rem}
+.web-page .add-list01 .item span.normal{display: inline;font-weight: normal}
+.web-page .add-list01 .item .pos{
+    overflow: hidden;
+    position: absolute;
+    bottom: .38rem;
+    left: .14rem;
+    width: 2.82rem;
+}
+.add-dot ul{
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+.add-dot ul li{
+    overflow: hidden;
+    width: .57rem;
+    height: .03rem;
+    background: #ededed;
+    margin: 0 .05rem;
+    text-indent: -9999px;
+}
+.add-dot ul li.on{
+    background: #ababae;
+}

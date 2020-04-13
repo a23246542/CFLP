@@ -1,0 +1,496 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0; color: #333}
+.inner{overflow: hidden;width: 100%; margin: 0 auto; position: relative}
+img{ overflow:hidden;display:block;border: none;}
+.e-header .header{
+    background: none;
+}
+.web-banner{
+    width: 100%;
+    height: 9.3rem;
+    background: url("../../images/public-welfare/banner-bg.jpg") no-repeat center;
+    background-size: 100% 9.3rem;
+    position: relative;
+    overflow: hidden;
+}
+.web-banner .layout-1{
+    overflow: hidden;
+    padding-top: 3.5rem;
+
+}
+.web-banner .layout-1 img{margin: 0 auto .3rem auto;}
+.web-banner .layout-1 img.logo{width: 2.31rem}
+.web-banner .layout-1 img.font{width: 6.3rem}
+.web-page{
+    overflow: hidden;
+    padding-top: 1.05rem;
+    position: relative;
+}
+.web-page.bg{
+    background: url("../../images/public-welfare/neiye-bg.jpg") no-repeat center bottom;
+    background-size: 100% 21.46rem;
+    height: 22.02rem;
+}
+.web-page .title{
+    overflow: hidden;
+    width: 7rem;
+    margin: 0 auto;
+}
+.web-page .title img{margin: 0 auto .3rem auto;width: 7rem}
+.web-page .title p{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    line-height: .38rem;
+    margin-bottom: .35rem;
+    text-align: justify;
+    width: 100%;
+}
+.web-page .title.marginbottom {
+    width: 100%;
+    margin: 0 0 1.25rem
+}
+.web-page .title.marginbottom p{width: 81%;margin: 0 auto}
+.web-page .title p span{
+    overflow: hidden;
+    display: inline;
+    font-size: .24rem;
+    line-height: .38rem;
+    color: #648f21;
+}
+.web-page .con-left{
+    overflow: hidden;
+    width: 7rem;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+}
+.web-page .con-left.float{
+    width: 4.06rem;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: .01rem;
+}
+.web-page .con-left .item{
+    overflow: hidden;
+}
+.web-page .con-left .item p{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    line-height: .38rem;
+}
+.web-page .con-left .item span{
+    overflow: hidden;
+    display: block;
+    font-size: .32rem;
+    margin: .15rem 0 .3rem 0;
+    font-weight: bold;
+}
+.web-page .con-left .item img.t1{
+    width: 5.14rem;
+}
+.web-page .con-left .item img.ic{
+    width: .45rem;
+    margin-top: 1.58rem;
+}
+.web-page .con-left .slider-list{
+    overflow: hidden;
+}
+.web-page .con-left .slider-list img{width: 4.06rem}
+.web-page .con-right{
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: .01rem;
+    width: 3.42rem;
+}
+.web-page .con-right img{width: 3.42rem}
+.web-page .slider{
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 3.6rem;
+}
+.web-page .slider ul li img{width: 4.37rem}
+.web-page .con{
+    overflow: hidden;
+    margin-bottom: .2rem;
+}
+.web-page .con01{
+    overflow: hidden;
+    margin-top: .1rem;
+    position: relative;
+}
+.web-page .con .add-locate{
+    overflow: hidden;
+    margin: .7rem 0 .75rem;
+}
+.web-page .con .add-locate img:first-child{width: 7.42rem;float: right}
+.web-page .con .add-locate img:nth-child(2){width: 6.72rem;margin-top: -.3rem;display: inline-block}
+.web-page .con .add-locate img:last-child{width: 6.13rem;float: right;margin-top: -.45rem;display: inline-block;position: relative;z-index: 1}
+.web-page .con .location{
+    overflow: hidden;
+    position: absolute;
+    right: 1.4rem;
+    top: 4.5rem;
+    width: .78rem;
+    height: 1.07rem;
+    background: url("../../images/public-welfare/icon-02.png") no-repeat;
+    background-size: .78rem 1.07rem;
+    font-size: .22rem;
+    color: #648f21;
+    z-index: 3;
+    text-align: center;
+    padding-top: .25rem;
+    animation: location 1s linear infinite;
+    -webkit-animation: location 1s linear infinite;
+    animation-fill-mode: backwards;
+    -webkit-animation-fill-mode: backwards;
+}
+@keyframes location{
+    0% {transform: scale(.9);}
+    50% {transform: scale(1);}
+    100% {transform: scale(.9);}
+}
+@-webkit-keyframes location{
+    0% {transform: scale(.9);}
+    50% {transform: scale(1);}
+    100% {transform: scale(.9);}
+}
+.web-page .con01 .item{
+    overflow: hidden;
+    position: relative;
+}
+.web-page .con01 .item img{margin: 0 auto;width: 7.5rem}
+.web-page .con01 .item .live-play{
+    overflow: hidden;
+    position: absolute;
+    right: .1rem;
+    bottom: .1rem;
+    z-index: 1;
+    width: .8rem;
+    height: .8rem;
+    border-radius: .8rem;
+    cursor: pointer;
+    box-shadow: .02rem .02rem .05rem rgba(255,255,255,.5);
+}
+.web-page .con01 .item .live-play img{width: 100%}
+.web-page .con01 .item span{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-size: .32rem;
+    margin: .75rem 0 .4rem 0;
+}
+.web-page .con01 .item02{
+    overflow: hidden;
+    width: 6.98rem;
+    margin: 0 auto .84rem auto;
+    position: relative;
+}
+.web-page .con01 .item02 a{
+    overflow: hidden;
+    display: block;
+    width: 48%;
+    float: left;
+    height: .7rem;
+    line-height: .7rem;
+    color: #fff;
+    font-size: .28rem;
+    cursor: pointer;
+}
+.web-page .con01 .item02 a.yes{background: #f8c562;padding-left: 2%;}
+.web-page .con01 .item02 a.no{background: #ccc;text-align: right;padding-right: 4%;width: 44%}
+.web-page .con01 .item02 span{
+    overflow: hidden;
+    position: absolute;
+    left: 3.04rem;
+    width: .7rem;
+    height: .7rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+.web-page .con01 .item02 span img{width: .52rem}
+.web-page .con01 .con-img{
+    overflow: hidden;
+    border: solid 1px #eee;
+    width: 1.6rem;
+    height: 1.3rem;
+    margin: 0 auto .35rem auto;
+}
+.web-page .con01 .con-img img{margin: 0 auto;width: 1.18rem}
+.web-page .con01 .con-list{
+    overflow: hidden;
+    font-size: .24rem;
+    line-height: .38rem;
+    width: 7rem;
+    margin: 0 auto .8rem auto;
+    text-align: justify;
+}
+.web-page .con01 .con-list a{
+    overflow: hidden;
+    display: inline-block;
+    width: .38rem;
+    height: .38rem;
+    line-height: .38rem;
+    border-radius: 100%;
+    background: #f8c562;
+    color: #fff;
+    font-size: .32rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+.web-page .hide-item{
+    overflow: hidden;
+    position: absolute;
+    left: .5rem;
+    top: .6rem;
+    z-index: 1;
+    display: none
+}
+.web-page .hide-item .intr{
+    overflow: hidden;
+    width: 6rem;
+    background: #f6f3e4;
+    padding: .2rem;
+}
+.web-page .hide-item .intr span{
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    font-size: .24rem;
+    line-height: .38rem;
+}
+.web-page .hide-item .intr span a{
+    overflow: hidden;
+    display: inline;
+    float: right;
+    background: url("../../images/public-welfare/close.png") no-repeat;
+    background-size: .24rem .24rem;
+    width: .24rem;
+    height: .24rem;
+}
+.web-page .hide-item .intr p{
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    font-size: .2rem;
+    line-height: .28rem;
+    text-align: justify;
+}
+.web-page .hide-item .arrow-right{
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    border-top: .16rem solid #f6f3e4;
+    border-right: .16rem solid rgba(0,0,0,0);
+    border-bottom: .16rem solid rgba(0,0,0,0);
+    border-left: .16rem solid rgba(0,0,0,0);
+    margin-left: 3.6rem;
+}
+.web-page .slider-con{
+    overflow: hidden;
+}
+.web-page .slider-con .item-nav{
+    overflow: hidden;
+    width: 5.01rem;
+    margin: 0 auto .47rem auto;
+    border-top: solid .02rem #f6f3e4;
+    border-bottom: solid .02rem #f6f3e4;
+    border-left: solid 1px #f6f3e4;
+    border-right: solid 1px #f6f3e4;
+}
+.web-page .slider-con .item-nav ul{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.web-page .slider-con .item-nav ul li{
+    overflow: hidden;
+    display: block;
+    list-style: none;
+    width: 1.67rem;
+    height: .6rem;
+    line-height: .6rem;
+    text-align: center;
+    font-size: .24rem;
+    border-left: solid 1px #f6f3e4;
+    border-right: solid 1px #f6f3e4;
+}
+.web-page .slider-con .item-nav ul li.selected{background: #f8c562}
+.web-page .slider-con .item{
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.web-page .slider-con .item p{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    line-height: .38rem;
+    width: 3.4rem;
+    float: right;
+    //margin: .89rem .3rem 0 0;
+    text-align: justify;
+    position: absolute;
+    top: .7rem;
+    right: .4rem;
+    z-index: 999999999;
+}
+.web-page .slider-con .item img{width: 7rem}
+.web-page .slider-con .item .list{
+    overflow: hidden;
+    position: relative;
+    display: block;
+    width: 7.01rem;
+    height: 5.77rem;
+    margin: 0 auto;
+}
+
+.web-page .slider-con .item .hd a{
+    overflow: hidden;
+    position: absolute;
+    width: .54rem;
+    height: .54rem;
+    bottom: .3rem;
+    top: auto;
+}
+.web-page .slider-con .item .hd a.prev {
+    background: url("../../images/public-welfare/arrow-left.png") no-repeat;
+    background-size: 100% 100%;
+    right: 1.55rem;
+    left: auto;
+}
+.web-page .slider-con .item .hd a.next {
+    background: url("../../images/public-welfare/arrow-right.png") no-repeat;
+    background-size: 100% 100%;
+    right: .64rem;
+}
+.item02-tc{
+    overflow: hidden;
+    position: absolute;
+    bottom: .1rem;
+    left: 1.75rem;
+    z-index: 1;
+    background: #f6f3e4;
+    width: 4rem;
+    height: .6rem;
+    line-height: .6rem;
+    text-align: center;
+    font-size: .24rem;
+    display: none;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets{bottom: .3rem}
+.swiper-pagination-bullet{background: #fff;opacity: 1}
+.swiper-pagination-bullet-active{background: #f8c562;opacity: 1}
+.web-page .media{
+    overflow: hidden;
+    margin-top: .9rem;
+}
+.web-page .con-logo{
+    overflow: hidden;
+}
+.con-logo .swiper-container{height: 6rem}
+.con-logo .swiper-pagination-bullet{background: #c1c1c1;}
+.con-logo .swiper-pagination-bullet-active{
+    background: #ff8500
+}
+.web-page .page8-list{
+    overflow: hidden;
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+.web-page .page8-list .left-img{
+    overflow: hidden;
+    width: 2.81rem;
+    margin: 0 .2rem 0 .25rem;
+}
+.web-page .page8-list .left-img img{ width: 2.81rem;}
+.web-page .page8-list .right-con{
+    overflow: hidden;
+    width: 3.9rem;
+}
+.web-page .page8-list .right-con p{
+    overflow: hidden;
+    display: block;
+    font-size: .28rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: .05rem;
+}
+.web-page .page8-list:hover .right-con p{color: #ff8500}
+.web-page .page8-list .right-con span{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    color: #999;
+}
+.tc-hide{
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+    top: 0;
+    left: 0;
+}
+.masking{
+    display: block;
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+}
+.video-con{
+    overflow: hidden;
+    width:100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top:20%;
+    background: transparent;
+    z-index: 999999999;
+    padding: 0;
+    border-radius: .05rem;
+
+}
+.tc-video {
+    overflow: hidden;
+    width: 7rem;
+    height: 4rem;
+    margin: 0 auto;
+}
+.tc-video .video {
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.video-close{
+    overflow: hidden;
+    margin-top: .3rem;
+}
+.video-close img {
+    width: .6rem;
+    height: .6rem;
+    margin: 0 auto;
+}
+
+
+
+
+

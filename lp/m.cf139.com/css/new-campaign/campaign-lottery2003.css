@@ -1,0 +1,990 @@
+body,
+html {
+	background: #cb4c36
+}
+
+img {
+	overflow: hidden;
+	display: block;
+	border: none;
+}
+
+input {
+	resize: none;
+	border: none
+}
+
+#main {
+	overflow: hidden;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	height: auto !important;
+	min-height: 15rem;
+	height: 15rem;
+	color: #333;
+	background: url("//img.getfc.com.cn/source/www/zt/lp-img/mobile/campaign-lottery2019/banner-bj.jpg") no-repeat center top;
+	background-size: 7.5rem 15rem;
+}
+
+.m-banner img {
+	overflow: hidden;
+	width: 5.35rem;
+	margin: .82rem auto 2.87rem;
+}
+
+.m-page {
+	overflow: hidden;
+}
+
+.m-page .marquee {
+	overflow: hidden;
+	background: url("//img.getfc.com.cn/source/www/zt/lp-img/mobile/campaign-lottery2019/icon-cf.png") no-repeat;
+	background-size: 0.33rem 0.3rem;
+	background-position: 1.13rem 0.25rem;
+	width: 6.33rem;
+	height: 0.82rem;
+	margin: 0 auto;
+}
+
+.m-page .marquee p {
+	overflow: hidden;
+	display: block;
+	font-size: .28rem;
+	color: #fbfbdc;
+}
+
+.m-page .marquee p span {
+	overflow: hidden;
+	display: inline;
+	color: #f7ee01;
+	font-weight: bold;
+}
+
+.m-page .marquee .layout {
+	overflow: hidden;
+	width: 5rem;
+	margin: .22rem auto 0;
+	height: .35rem;
+	padding-left: .8rem;
+	box-sizing: border-box;
+}
+
+.m-page .lottery {
+	overflow: hidden;
+	position: relative;
+	padding-bottom: .2rem;
+}
+
+.m-page .lottery .lotteryCon {
+	width: 5.8rem;
+	height: 5.8rem;
+	margin: 0 auto 0;
+	position: relative;
+	z-index: 1;
+	/* -moz-transform:rotate(-90deg);
+	-webkit-transform:rotate(-90deg); */
+}
+
+.m-page .lottery .lotteryCon.rotate {
+	-webkit-animation: rotate 10s linear infinite;
+	-moz-animation: rotate 10s linear infinite;
+	-o-animation: rotate 10s linear infinite;
+	animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.m-page .lottery .lotterySuc {
+	width: 1.06rem;
+	height: 1.25rem;
+	position: absolute;
+	left: 3.22rem;
+	top: 0;
+	z-index: 2;
+}
+
+.m-page .lottery .lotteryStart {
+	overflow: hidden;
+	display: block;
+	width: 1.76rem;
+	height: 2.04rem;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -1.12rem 0 0 -0.88rem;
+	z-index: 2;
+}
+
+.m-page .lottery .lotteryStart img {
+	width: 100%
+}
+
+.m-page .lottery .lotteryShadow {
+	width: 5.57rem;
+	height: .7rem;
+	position: absolute;
+	bottom: 0;
+	left: .965rem;
+}
+
+.m-page .lottery .lotteryMoney {
+	width: 1.25rem;
+	height: 1.3rem;
+	position: absolute;
+	bottom: .16rem;
+	left: 1.31rem;
+	z-index: 2;
+}
+
+.m-page .loginCon {
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: -.05rem;
+}
+
+.m-page .loginCon p {
+	overflow: hidden;
+	font-size: .32rem;
+	line-height: .34rem;
+	color: #fbfbdc;
+	margin: 0 .1rem;
+}
+
+.m-page .loginCon p span {
+	overflow: hidden;
+	display: inline-block;
+	color: #f7ee01;
+	font-weight: bold;
+	border-bottom: solid .03rem #f7ee01;
+}
+
+.m-page .loginCon img {
+	width: .12rem
+}
+
+.m-page .loginCon img:last-child {
+	transform: rotate(180deg);
+}
+
+.m-page .explain {
+	overflow: hidden;
+	font-size: .24rem;
+	line-height: .32rem;
+	color: #626093;
+	margin: .1rem .3rem .35rem;
+	text-align: justify;
+}
+
+.m-page .btnList {
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: .2rem;
+	margin-top: 0.4rem;
+}
+
+.m-page .btnList a {
+	overflow: hidden;
+	background: url("//img.getfc.com.cn/source/www/zt/lp-img/mobile/campaign-lottery2019/btn-01.png") no-repeat;
+	background-size: 100% .92rem;
+	width: 2.60rem;
+	line-height: 0.84rem;
+	height: .92rem;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 .52rem;
+	padding-bottom: .2rem;
+	font-size: 0.3rem;
+}
+
+.m-page .btnList a img {
+	width: .35rem;
+	margin: 0 .1rem
+}
+
+.m-page .btnList a span {
+	overflow: hidden;
+	font-size: .32rem;
+	font-weight: bold;
+	padding-right: .2rem;
+}
+
+.m-page .btnList a.activity {
+	color: #fbfbdc;
+}
+
+.m-page .btnList a.prize {
+	color: #ae371a;
+	background-image: url("//img.getfc.com.cn/source/www/zt/lp-img/mobile/campaign-lottery2019/btn-02.png");
+	background-size: 2.6rem .92rem;
+}
+
+/*弹窗*/
+.tc-hide {
+	display: none;
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+}
+
+.masking {
+	display: block;
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.m-tcCon {
+	overflow: hidden;
+	background: url("//img.getfc.com.cn/source/www/zt/lp-img/mobile/campaign-lottery2019/open-bg.png") no-repeat center top;
+	background-size: 7.5rem 11.42rem;
+	width: 100%;
+	height: 11.42rem;
+	position: fixed;
+	z-index: 999999999;
+	padding: 0;
+	top: .6rem;
+}
+
+.m-tcCon.order-tcCon {
+	background: url("//img.getfc.com.cn/source/www/zt/lp-img/mobile/campaign-lottery2019/record-bg.png") no-repeat center;
+	background-size: 7.5rem 9.92rem;
+	height: 11rem;
+	top: 50% !important;
+	margin-top: -5.5rem;
+}
+
+.m-tcCon.noneBg {
+	background: transparent;
+	height: auto;
+}
+
+.m-tcCon .con {
+	overflow: hidden;
+	background: url("//img.getfc.com.cn/source/www/zt/lp-img/mobile/campaign-lottery2019/order-record.png") no-repeat center;
+	background-size: 100% 100%;
+	width: 6rem;
+	height: 4.9rem;
+	margin: 0 auto;
+}
+
+.m-tcCon .con.order-record {
+	width: 6.22rem;
+	height: 8.93rem;
+	margin-top: .2rem;
+}
+
+.m-tcCon.noneBg .con {
+	background: transparent;
+	width: 6.4rem;
+	height: auto
+}
+
+.m-tcCon .con.bg {
+	background: url("//img.getfc.com.cn/source/www/zt/lp-img/mobile/campaign-lottery2019/tc-conBg1.png") no-repeat center;
+	background-size: 5.25rem 7.82rem;
+	width: 5.25rem;
+	height: 7.82rem;
+	margin-top: 1.1rem;
+}
+
+.m-tcCon .con .layout.order-layout {
+	margin-top: 2.5rem;
+}
+
+.m-tcCon.noneBg .con.bgColor {
+	background: #fff;
+	border-radius: .2rem;
+	width: 6rem;
+	height: 3.44rem;
+	margin-top: .3rem;
+}
+
+.m-tcCon .close {
+	overflow: hidden;
+	margin: 2.71rem .75rem 1.2rem 0;
+}
+
+.m-tcCon .close.order {
+	overflow: hidden;
+	margin: 0;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin-top: 0.48rem;
+}
+
+.m-tcCon .close.order img {
+	display: inline;
+	float: none;
+}
+
+.m-tcCon.noneBg .close {
+	margin-top: 0;
+	margin-bottom: 0
+}
+
+.m-tcCon .close img {
+	width: .66rem;
+	height: .66rem;
+	float: right
+}
+
+.m-tcCon .con .title {
+	overflow: hidden;
+	font-weight: bold;
+	font-size: .34rem;
+	text-align: center;
+	height: .94rem;
+	line-height: .94rem;
+}
+
+.order-tcCon .order-record .title {
+	margin-top: 1.5rem;
+	color: #fbfbdc;
+	font-size: 0.36rem;
+}
+
+.m-tcCon.noneBg .con .title {
+	box-shadow: inset 0 0 .16rem #bdbffe;
+	height: .67rem;
+	line-height: .67rem;
+	margin: 0 auto;
+	width: 3.34rem;
+	background: #2c45e0;
+	color: #fbfbdc;
+	font-size: .34rem;
+	font-weight: bold;
+	border-radius: .1rem;
+	position: relative;
+	z-index: 1;
+}
+
+.m-tcCon.noneBg .con.bgColor .title {
+	background: transparent;
+	width: 100%;
+	height: .93rem;
+	line-height: .93rem;
+	border-bottom: solid 1px #cacaca;
+	text-align: center;
+	color: #333;
+	font-weight: bold;
+	font-size: .34rem;
+	box-shadow: none;
+}
+
+.m-tcCon .con .conList {
+	overflow-x: hidden;
+	overflow-y: scroll;
+	height: 2.5rem;
+	width: 100%;
+	margin: .3rem auto 0;
+	padding-bottom: .3rem;
+	border-bottom: solid 1px #cacaca;
+}
+
+.m-tcCon .con.order-record .conList {
+	height: 4.85rem;
+	border-bottom: 0;
+}
+
+.m-tcCon .con .conList ul {
+	overflow: hidden;
+	display: block;
+	margin: 0 .3rem;
+	padding: 0;
+	list-style: none;
+}
+
+.m-tcCon .con .conList ul li {
+	overflow: hidden;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: .05rem 0;
+}
+
+.m-tcCon .con .conList ul li .item {
+	overflow: hidden;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.m-tcCon .con .conList ul li .num {
+	overflow: hidden;
+	width: .3rem;
+	height: .3rem;
+	border-radius: 100%;
+	text-align: center;
+	font-size: .26rem;
+	line-height: .28rem;
+	border: solid 1px #333;
+	margin-right: .1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.m-tcCon .con .conList ul li p {
+	overflow: hidden;
+	font-size: .26rem;
+	line-height: .3rem;
+	color: #fbfbdc;
+}
+
+.m-tcCon .con .conList ul li .money {
+	overflow: hidden;
+	background: url("//img.getfc.com.cn/source/www/zt/lp-img/mobile/campaign-lottery2019/money-bg.png");
+	background-size: 100% 100%;
+	width: 1.34rem;
+	height: .62rem;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.m-tcCon .con .conList ul li .money span {
+	overflow: hidden;
+	display: inline;
+	font-size: .28rem;
+	line-height: .3rem;
+	color: #c31e1e;
+	font-weight: bold;
+	border-bottom: solid .025rem #c31e1e;
+	text-align: center;
+	margin-bottom: .07rem;
+}
+
+.m-tcCon .con .conList ul li time {
+	overflow: hidden;
+	font-size: .26rem;
+	color: #949393;
+}
+
+.m-tcCon .con .total {
+	overflow: hidden;
+	margin: 0 .3rem;
+	height: 1.4rem;
+}
+
+.m-tcCon .con .total ul {
+	overflow: hidden;
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.m-tcCon .con .total ul li {
+	overflow: hidden;
+	width: 50%;
+	float: left;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.m-tcCon .con .total ul li:last-child {
+	justify-content: flex-end
+}
+
+.m-tcCon .con .total ul li span,
+.m-tcCon .con .total ul li p {
+	overflow: hidden;
+	font-size: .2rem;
+	color: #fff;
+	line-height: .84rem;
+}
+
+.m-tcCon .con .conList01 {
+	overflow-x: hidden;
+	overflow-y: scroll;
+	height: 5.5rem;
+	width: 95%;
+	margin: 0 auto;
+	border-radius: .2rem;
+	padding: .3rem 0;
+}
+
+.m-tcCon .con .conList01 ul {
+	overflow: hidden;
+	display: block;
+	margin: 0 .3rem 0 .3rem;
+	padding: 0;
+	list-style: none;
+}
+
+.m-tcCon .con .conList01 ul li {
+	overflow: hidden;
+	display: block;
+	list-style: none;
+}
+
+.m-tcCon .con .conList01 ul li .item {
+	overflow: hidden;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.m-tcCon .con .conList01 ul li .item p {
+	overflow: hidden;
+	width: 100%;
+	font-size: .24rem;
+	line-height: .3rem;
+	color: #fbfbdc;
+	margin: 0 0 .26rem .24rem;
+}
+
+.m-tcCon .con .conList01 ul li .item span {
+	overflow: hidden;
+	font-size: .28rem;
+	line-height: .43rem;
+	color: #fbfbdc;
+	margin-left: 0.24rem;
+	margin-bottom: .1rem;
+}
+
+.m-tcCon .con .conList01 ul li .item span.dot {
+	width: .14rem;
+	height: .14rem;
+	border-radius: 100%;
+	background: #7173e2;
+	margin-right: .1rem;
+}
+
+.m-tcCon .con .layout {
+	overflow: hidden;
+	margin: 0 .3rem;
+}
+
+.m-tcCon .con .layout p {
+	overflow: hidden;
+	display: block;
+	font-size: .28rem;
+	line-height: .36rem;
+	text-align: center;
+	margin: 1.75rem 0 .25rem;
+}
+
+.m-tcCon .con .layout p.this-p {
+	font-size: 0.34rem;
+	color: #a92a17;
+	margin-top: 1.1rem;
+	font-weight: bold;
+}
+
+.m-tcCon .con .layout p.marginTop {
+	margin: .35rem 0;
+	text-align: left;
+	line-height: .36rem
+}
+
+.m-tcCon .con .layout span {
+	overflow: hidden;
+	display: block;
+	font-size: 1.08rem;
+	font-weight: bold;
+	color: #c31e1e;
+	text-align: center;
+	height: 1.6rem;
+	line-height: 1.6rem;
+}
+
+.m-tcCon .con .layout a {
+	overflow: hidden;
+	display: block;
+	width: 3.6rem;
+	height: .68rem;
+	line-height: .68rem;
+	margin: 0 auto;
+	background: #2945e5;
+	color: #fff;
+	font-size: .32rem;
+	text-align: center;
+	border-radius: .1rem;
+}
+
+.m-tcCon .con .layout img {
+	width: 2.58rem;
+	margin: 0 auto
+}
+
+@media screen and (min-width: 751px) {
+	#main {
+		background-size: 750px 1500px;
+		min-height: 880px;
+	}
+	/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
+	::-webkit-scrollbar  
+	{  
+	    width: 4px;    
+	    background-color: #6a5646;  
+	}  
+	
+	/*定义滚动条轨道 内阴影+圆角*/  
+	::-webkit-scrollbar-track  
+	{  
+	    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  
+	    border-radius: 4px;  
+	    background-color: lightgray;  
+	}  
+	
+	/*定义滑块 内阴影+圆角*/  
+	::-webkit-scrollbar-thumb  
+	{  
+	    border-radius: 4px;  
+	    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);  
+	    background-color: #dedebd;  
+	}  
+	/*定义最上方和最下方的按钮*/
+	::-webkit-scrollbar-button{
+	     background-color: #6a5646;
+	}
+	.m-banner img {
+		width: 535px;
+		margin: 82px auto 287px;
+	}
+
+	.m-page .marquee {
+		width: 633px;
+		height: 102px;
+		background-position: 113px 25px;
+		background-size:33px 30px;
+	}
+
+	.m-page .marquee p {
+		font-size: 28px
+	}
+
+	.m-page .marquee .layout {
+		width: 480px;
+		margin: 16px auto 0;
+		padding-left: 30px;
+		height: 51px;
+		line-height: 51px;
+		padding-left: 80px;
+	}
+
+	.m-page .lottery {
+		padding-bottom: 20px;
+		width: 750px;
+		margin: 10px auto 0
+	}
+
+	.m-page .lottery .lotteryCon {
+		width: 580px;
+		height: 580px;
+		margin-top: 25px
+	}
+
+	.m-page .lottery .lotterySuc {
+		width: 106px;
+		height: 125px;
+		left: 322px
+	}
+
+	.m-page .lottery .lotteryStart {
+		width: 176px;
+		height: 204px;
+		left: 50%;
+		top: 50%;
+		margin: -114px 0 0 -84px;
+	}
+
+	.m-page .lottery .lotteryShadow {
+		width: 557px;
+		height: 70px;
+		left: 96.5px
+	}
+
+	.m-page .lottery .lotteryMoney {
+		width: 125px;
+		height: 130px;
+		bottom: 16px;
+		left: 131px
+	}
+
+	.m-page .loginCon {
+		margin-top: -5px
+	}
+
+	.m-page .loginCon p {
+		font-size: 32px;
+		line-height: 34px;
+		margin: 0 10px
+	}
+
+	.m-page .loginCon p span {
+		border-bottom-width: 3px
+	}
+
+	.m-page .loginCon img {
+		width: 12px
+	}
+
+	.m-page .explain {
+		font-size: 24px;
+		line-height: 32px;
+		margin: 10px auto 35px;
+		width: 750px
+	}
+
+	.m-page .btnList {
+		margin-bottom: 20px
+	}
+
+	.m-page .btnList a {
+		background-size: 100% 85px;
+		background-size: 260px 92px!important;
+		width: 260px;
+		height: 92px;
+		margin: 0 52px;
+		font-size: 30px;
+		padding-bottom: 20px
+	}
+
+	.m-page .btnList a img {
+		width: 35px;
+		margin: 0 10px
+	}
+
+	.m-page .btnList a span {
+		font-size: 32px;
+		padding-right: 20px
+	}
+
+	.m-tcCon {
+		background-size: 750px 1274px;
+		height: 1274px;
+		top: -15%;
+	}
+
+	.m-tcCon.noneBg {
+		top: 5%
+	}
+
+	#login .m-tcCon.noneBg,
+	#deposit .m-tcCon.noneBg {
+		top: 15%
+	}
+
+	.m-tcCon .close {
+		width: 750px;
+		margin: 271px auto 120px
+	}
+
+	.m-tcCon .close img {
+		width: 54px;
+		height: 54px;
+	}
+
+	.m-tcCon .con {
+		width: 600px;
+		height: 690px
+	}
+	.m-tcCon .con.order-record{
+		width: 600px;
+		height: 690px
+	}
+	.m-tcCon.order-tcCon{
+		top: 50%!important;
+		margin-top: -425px;
+	}
+	.m-tcCon.noneBg .con {
+		width: 640px;
+	}
+
+	.m-tcCon .con.bg {
+		width: 614px;
+		height: 690px;
+		margin-top: 30px;
+	}
+
+	.m-tcCon.noneBg .con.bgColor {
+		border-radius: 20px;
+		width: 600px;
+		height: 344px;
+		margin-top: 30px;
+	}
+
+	.m-tcCon .con .title {
+		font-size: 34px;
+		height: 94px;
+		line-height: 94px
+	}
+	.order-tcCon .order-record .title{
+		margin-top: 100px;
+	}
+	.m-tcCon.noneBg .con .title {
+		box-shadow: inset 0 0 16px #bdbffe;
+		height: 67px;
+		line-height: 67px;
+		width: 334px;
+		font-size: 34px;
+		border-radius: 10px;
+	}
+
+	.m-tcCon.noneBg .con.bgColor .title {
+		height: 93px;
+		line-height: 93px;
+		font-size: 34px;
+	}
+
+	.m-tcCon .con .conList {
+		height: 250px;
+		margin-top: 30px;
+		padding-bottom: 30px
+	}
+
+	.m-tcCon .con .conList ul {
+		margin: 0 30px
+	}
+
+	.m-tcCon .con .conList ul li {
+		margin: 5px 0
+	}
+
+	.m-tcCon .con .conList ul li .num {
+		width: 30px;
+		height: 30px;
+		font-size: 22px;
+		margin-right: 10px;
+		line-height: 28px;
+	}
+	.m-tcCon .close.order{
+		margin: 48px auto 0;
+	}
+	.m-tcCon .con .conList ul li p {
+		font-size: 26px;
+		line-height: 30px
+	}
+
+	.m-tcCon .con .conList ul li .money {
+		width: 134px;
+		height: 62px;
+	}
+
+	.m-tcCon .con .conList ul li .money span {
+		font-size: 28px;
+		line-height: 30px;
+		border-bottom-width: 2.5px;
+		margin-bottom: 7px
+	}
+
+	.m-tcCon .con .conList ul li time {
+		font-size: 26px;
+	}
+
+	.m-tcCon .con .total {
+		margin: 0 30px;
+		height: 84px
+	}
+
+	.m-tcCon .con .total ul li span,
+	.m-tcCon .con .total ul li p {
+		font-size: 26px;
+		line-height: 84px
+	}
+	.m-page {
+		overflow: hidden;
+		width: 750px;
+		margin: 0 auto;
+	}
+	.m-tcCon .con.order-record .conList{
+		height: 420px;
+	}
+	.m-tcCon .con .conList01 {
+		height: 420px;
+		border-radius: 20px;
+		padding: 30px 0
+	}
+
+	.m-tcCon .con .conList01 ul {
+		margin: 0 30px 0 30px
+	}
+
+	.m-tcCon .con .conList01 ul li .item p {
+		font-size: 24px;
+		line-height: 30px;
+		margin: 0 0 26px 24px
+	}
+
+	.m-tcCon .con .conList01 ul li .item span {
+		font-size: 28px;
+		line-height: 43px
+	}
+
+	.m-tcCon .con .conList01 ul li .item span.dot {
+		width: 14px;
+		height: 14px;
+		margin-right: 10px
+	}
+
+	.m-tcCon .con .layout {
+		margin: 0 30px
+	}
+
+	.m-tcCon .con .layout p {
+		font-size: 28px!important;
+		line-height: 36px;
+		margin: 175px 0 25px;
+		margin-top: 10px!important;
+	}
+
+	.m-tcCon .con .layout p.marginTop {
+		margin: 35px 0;
+		line-height: 36px
+	}
+
+	.m-tcCon .con .layout span {
+		font-size: 46px;
+		line-height: 70px;
+		height: 78px
+	}
+
+	.m-tcCon .con .layout img {
+		width: 258px
+	}
+
+	.m-tcCon .con .layout a {
+		width: 360px;
+		height: 68px;
+		line-height: 68px;
+		font-size: 32px;
+		border-radius: 10px;
+	}
+}

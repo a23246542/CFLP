@@ -1,0 +1,1078 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0; color: #333;}
+.inner{overflow: hidden;width: 100%; margin: 0 auto; position: relative}
+img{ overflow:hidden;border: none;display: block}
+body,html{background: #e6e6e5;font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;}
+.web-banner{
+    background: url("https://img.getfc.com.cn/source/www/zt/lp-img/mobile/campaign2002/banner.png") no-repeat center;
+    background-size: 100% 100%;
+    height: 9rem;
+    position: relative;
+    z-index: 1;
+}
+.web-banner .inner img{
+	width: 5.23rem;
+	height: 2.78rem;
+	margin:5.65rem auto 0;
+}
+.web-page{
+    overflow: hidden;
+    position: relative;
+}
+.web-page .title {
+    overflow: hidden;
+    margin-top: .6rem;
+    text-align: center
+}
+.web-page.block1{
+	width:100%;
+	height: 6.55rem;
+	background-color: #1bc8d2;
+}
+.web-page.block3{
+	width:100%;
+	height: 6.64rem;
+	background-color: transparent;
+}
+
+.block3 .item-block{
+	width: 6.9rem;
+	margin: .6rem auto 0;
+}
+.block3 .item-block ul{
+	width: 6.6rem;
+	height: 1.92rem;
+	zoom: 1;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 0.42rem;
+}
+.block3 .item-block ul li{
+	width: 50%;
+	height: 1.92rem;
+}
+.block3 .item-block ul li p{
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	flex-direction: column;
+	zoom: 1;
+	overflow: hidden;
+	float: left;
+	width: 100%;
+	height: 1.22rem;
+}
+.block3 .item-block ul li p img{
+	width: 1.22rem;
+	height: 1.21rem;
+}
+.block3 .item-block ul li p img.order-img-02{
+	width: 1.2rem;
+	height: 1.21rem;
+}
+.block3 .item-block ul li p img.order-img-03{
+	width: 1.18rem;
+	height: 1.22rem;
+}
+.block3 .item-block ul li p img.order-img-04{
+	width: 1.28rem;
+	height: 1.1rem;
+}
+.block3 .item-block ul li span{
+	display: block;
+	float: left;
+	width: 100%;
+	zoom: 1;
+	overflow: hidden;
+	height: 0.7rem;
+	line-height: 0.7rem;
+	font-size: 0.26rem;
+	text-align: center;
+	color: #5f5f5f;
+	font-weight: bold;
+}
+
+.item-001{
+	height: 9.68rem;
+}
+.item-001 .inner{
+	width: 100%;
+}
+.item-001 .inner{
+	width: 100%;
+}
+.web-page.item-001 .conList{
+	overflow: hidden;
+	height: 4.5rem;
+	width: 100%;
+}
+.web-page.item-001 .conList ul{
+    display: flex;
+	width: 3rem;
+    justify-content: center;
+    height: 4.49rem;
+}
+.item-001{
+	height: 9.18rem;
+	background-color: #fff;
+}
+.web-page.item-001 .conList ul li{
+    overflow: hidden;
+    width: 3rem;
+    height: 4.04rem;
+    position: relative;
+    margin: 0 0 0.4rem;
+    transition: all .25s;
+	background-image: url("https://img.getfc.com.cn/source/www/zt/lp-img/mobile/campaign2002/cont-bg-1.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: transparent;
+	background-size: 3rem 4.04rem;
+}
+.item-001 .swiper-slide{
+	width: 3.42rem!important;
+	display: flex;
+	justify-content: center;
+}
+.item-001 .swiper-pagination-bullets.swiper-pagination-order .swiper-pagination-bullet {
+    width: .66rem;
+    height: 0.13rem;
+    border-radius: 0;
+    color: #35344c;
+    opacity: 1;
+    background: #c7c7c7;
+	border:0;
+	margin:0 .225rem;
+}
+.item-001 .swiper-container .swiper-wrapper .swiper-slide{
+	width:100%;
+	height: 4.75rem;
+}
+
+.item-001 .swiper-pagination-order {
+    width: 100%;
+    height: .2rem;
+    bottom: .1rem;
+	line-height:0;
+	display: flex;
+	justify-content: center;
+}
+.item-001 .swiper-pagination-bullets.swiper-pagination-order .swiper-pagination-bullet {
+    width: 0.88rem;
+    height: 0.07rem;
+    line-height: 0.07rem;
+    border-radius:0;
+    opacity: 1;
+	margin: 0 0.1rem;
+    background: #e1dfc7;
+}
+.item-001 .swiper-pagination-bullets.swiper-pagination-order .swiper-pagination-bullet cite{
+	font-style: normal;
+	color: #2aa1bd;
+}
+.item-001 .swiper-pagination-bullets.swiper-pagination-order .swiper-pagination-bullet-active {
+    background-color: #85e9e4;
+	box-shadow: none;
+}
+/* .web-page .conList ul li:hover{
+    transition: all .25s;
+    margin-top: 10px;
+} */
+.web-page.item-001 .conList ul li p,.web-page .conList ul li span{
+    overflow: hidden;
+    display: block;
+    font-size: 0.27rem;
+    color: #fff;
+    text-align: center;
+}
+.web-page.item-001 .conList .swiper-slide:nth-child(2n) ul li span{
+	color: #da9918;
+}
+.web-page.item-001 .conList ul li p{
+	width:2.9rem;
+	height: 0.76rem;
+	line-height: 0.76rem;
+	color: #fff;
+	font-weight: bold;
+}
+.web-page.item-001 .conList ul li p.last-p{
+	line-height: 0.38rem;
+	height: 1rem;
+	font-weight: bold;
+	font-size: 0.26rem;
+	color: #fff;
+}
+.web-page.item-001 .conList ul li p.last-p cite{
+	font-weight: bold;
+	font-style: normal;
+	font-size: 0.36rem;
+	line-height: 0.54rem;
+}
+.web-page.item-001 .conList ul li span {
+    font-size: 0.68rem;
+    font-weight: bold;
+    line-height: 0.68rem;
+    margin-bottom: 0.12rem;
+    margin-top: 1.24rem;
+	color: #b47247;
+	display: flex;
+	justify-content: center;
+}
+.web-page.item-001 .conList ul li .item{
+    overflow: hidden;
+    width: 3rem;
+    height: 100%;
+}
+
+.web-page.item-001 .title span{font-size: .4rem}
+.web-page .title p {
+    margin: .3rem auto 0;
+    width: 6.3rem;
+    line-height: .5rem;
+}
+
+.web-page.item-001 .conList .slider{
+    overflow: hidden;
+    width: 4rem;
+    height: 4.04rem;
+    border-radius: .125rem;
+    background: #c71b32;
+    box-shadow: 0 .03rem .13rem rgba(0,0,0,.52);
+    position: relative;
+    margin: .4rem auto;
+}
+.web-page.item-001 .conList .slider p,.web-page.item-001 .conList .slider span{
+    overflow: hidden;
+    display: block;
+    font-size: .36rem;
+    color: #fff;
+    text-align: center;
+}
+.web-page .conList.item-001 .slider span {
+    font-size: .52rem;
+    font-weight: bold;
+    line-height: .56rem;
+    margin-bottom: .25rem;
+}
+.web-page.item-001 .conList .slider .item span{margin-top: .8rem}
+.web-page.item-001 .conList .slider span em{display: inline;color: #f8e489}
+.web-page.item-001 .conList ul li span img{
+	width: 1.95rem;
+	height: 0.63rem;
+}
+.web-page.item-001 .conList ul li span img.img-02{
+	width: 2.28rem;
+}
+.web-page.item-001 .conList ul li span img.img-03{
+	width: 2.37rem;
+}
+.web-page.item-001 .conList ul li span img.img-04{
+	width: 2.37rem;
+}
+
+.web-page.item-001 .conList .slider p.first {
+    font-weight: bold;
+    font-size: .4rem;
+    line-height: .44rem;
+    margin: .4rem 0 -.8rem;
+}
+.web-page.item-001 .conList .slider p.last{
+    overflow: hidden;
+    width: 3.9rem;
+    height: .9rem;
+    line-height: .9rem;
+    margin: 0 auto;
+    background:-webkit-linear-gradient(top, #fbe78a, #cdb175);
+    background: -o-linear-gradient(top, #fbe78a, #cdb175);
+    background: -moz-linear-gradient(top, #fbe78a, #cdb175);
+    background: linear-gradient(to top, #fbe78a, #cdb175);
+    border-bottom-left-radius: .1rem;
+    border-bottom-right-radius: .1rem;
+    color: #013748;
+    font-weight: bold;
+    font-size: .34rem;
+}
+.web-page.item-001 .conList .slider p.last.color{color: #a50606}
+.web-page.item-001 .conList .slider .item{
+    overflow: hidden;
+    background: url("https://img.getfc.com.cn/source/www/zt/lp-img/mobile/campaign1912/li.png");
+    background-size: 100% 100%;
+    width: 3.83rem;
+    height: 2.91rem;
+    margin: .1rem auto .08rem;
+}
+.web-page.item-001 .conList .swiper-container{height: 4.25rem}
+.web-page.item-001 .conList .swiper-button-next, .swiper-button-prev{
+    width: .35rem;
+    height: .6rem;
+    bottom: 2.075rem;
+    top: auto;
+}
+.web-page.item-001  .conList .swiper-button-next,.conList .swiper-button-prev{
+	overflow: hidden;
+	display: block;
+	position: absolute;
+	top: 45%;
+	z-index: 11;
+	width: 0.73rem;
+	height: 0.73rem;
+	background-size: 0.73rem 0.73rem;
+	background-position: 0 0;
+}
+
+
+
+.web-page.item-001 .swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+	background-image: url('https://img.getfc.com.cn/source/www/zt/lp-img/mobile/campaign2002/jiaotou-you.png')!important;
+	right: 1rem!important;
+}
+.web-page.item-001 .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+	background-image: url('https://img.getfc.com.cn/source/www/zt/lp-img/mobile/campaign2002/jiaotou-zuo.png')!important;
+	left: 1rem!important;
+}
+.web-page.item-001 .conList .swiper-button-prev.swiper-button-disabled{
+    opacity: 1;
+}
+
+.web-page .btn{overflow: hidden;margin-bottom: .5rem}
+.web-page .btn a{
+    overflow: hidden;
+    display: block;
+    width: 3.53rem;
+    height: .95rem;
+    background: #7578bd;
+    color: #fff;
+    font-size: .32rem;
+    font-weight: bold;
+    border-radius: .125rem;
+    text-align: center;
+    line-height: .95rem;
+    margin: .05rem auto .2rem;
+    cursor: pointer;
+	box-shadow: 0 .06rem .13rem rgba(0,0,0,.3);
+}
+
+
+
+
+
+
+
+
+
+.list {
+  display: flex;
+  justify-content: center;
+  color: black;
+  flex-flow: column;
+}
+.list .list-down {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+}
+.list .list-up{
+	width: 100%;
+	text-align: center;
+}
+.list .list-up ul{
+	width: 100%;
+	height: 3rem;
+	zoom: 1;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+}
+.list .list-up ul li{
+	width: 2.22rem;
+	height: 1.76rem;
+}
+.list .list-up ul li p{
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	flex-direction: column;
+	zoom: 1;
+	overflow: hidden;
+	float: left;
+	width: 100%;
+}
+.list .list-up ul li p img:nth-child(1){
+	width: 1.77rem;
+	height: 1.6rem;
+}
+.list .list-up ul li p img:nth-child(2){
+	width: 2.16rem;
+	height: 1.7rem;
+}
+.list .list-up ul li p img:nth-child(3){
+	width: 2.22rem;
+	height: 1.76rem;
+}
+.list .list-up ul li span{
+	display: block;
+	float: left;
+	width: 100%;
+	zoom: 1;
+	overflow: hidden;
+	height: 0.32rem;
+	line-height: 0.32rem;
+	font-size: 0.26rem;
+	text-align: center;
+	color: #000;
+	font-weight: bold;
+	margin-bottom: 0.1rem;
+}
+.list .list-up ul li span.order-span{
+	color: #5f5f5f;
+}
+
+.table-tip{
+	width: 100%;
+	height: .76rem;
+	line-height: .76rem;
+	font-size: .24rem;
+	color: #262827;
+	margin: 0 auto;
+	zoom: 1;
+	overflow: hidden;
+	text-align: center;
+	margin-bottom: 38px;
+}
+.web-page.block2{
+	width: 100%;
+	height: 12.60rem;
+	background-color: #7578be;
+}
+.web-page.block2 .title img{
+	width: 3.91rem;
+	margin: .55rem auto .33rem;
+}
+.web-footer{
+	width: 100%;
+	height: calc(1.6rem) + constant(safe-area-inset-bottom);
+	height: calc(1.6rem) + env(safe-area-inset-bottom);
+	background-color: #e6e6e5;
+	zoom: 1;
+	margin-bottom: 1.4rem;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding-top: 0.24rem;
+}
+.web-footer .item-1{
+	width: 6.9rem;
+	height: auto;
+	line-height: 0.28rem;
+	margin: 0 auto;
+	zoom: 1;
+	overflow: hidden;
+	font-size: 0.18rem;
+	color: #5f5f5f;
+	text-align: center;
+	margin-bottom: 0.19rem;
+}
+.a-btn-open{
+	position: fixed;
+	right: 0;
+	top: 50%;
+	margin-top: -0.98rem;
+	height: 1.96rem;
+	background-image: url("../../images/oldCampaign1911/m-old-1911-rigth-1.png");
+	background-size: .65rem 1.96rem;
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 9900;
+	width: .65rem;
+}
+.bg4{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* height: 1.1rem; */
+    z-index: 999;
+    background-color: #07668c;
+    text-align: center;
+    line-height: 1rem;
+    height: calc(1.1rem) + constant(safe-area-inset-bottom));
+    height: calc(1.1rem) + env(safe-area-inset-bottom));
+}
+.bg4 .btn{
+    width: 6.9rem;
+    height: 1.1rem;
+    margin: 0 auto;
+}
+.btn p{
+	width: 4.08rem;
+	height: 1.1rem;
+	line-height: 1.1rem;
+	float: left;
+	font-size: 0.32rem;
+	text-align: center;
+	color: #fff;
+}
+.bg4 a{
+    display: block;
+    font-size: 0.32rem;
+	font-weight: bold;
+    color: #fff;
+	width: 2.58rem;
+    height: 1.07rem;
+    text-align: center;
+    line-height: .9rem;
+    float: left;
+	margin-top: .11rem;
+	margin-left: .15rem;
+    box-sizing: border-box;
+	background-image: url("../../images/oldCampaign1911/btn-bg.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 2.58rem 1.07rem;
+}
+
+.task_tip{
+	width:100%;
+	height:.7rem;
+	line-height: .7rem;
+	text-align: center;
+	font-size: 0.24rem;
+	color: #262827;
+	
+}
+
+.swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 2.24rem;
+    height: .7rem;
+    border-radius: 0;
+    color: #fff;
+    opacity: 1;
+    background: #7d7fc2;
+	border:0;
+	font-size: 0.26rem;
+	line-height: .7rem;
+	font-weight: bold;
+	z-index: 1;
+	position: relative;
+}
+.swiper-pagination {
+    width: 100%;
+    height: .7rem;
+    top: 0;
+	line-height:0;
+	position: relative;
+	margin-bottom: 0.42rem;
+	margin-top: 0.2rem;
+}
+.swiper-slide .con-masking{display: block}
+.swiper-slide-active .con-masking{display: none}
+.swiper-slide .con-list02 p.size{display: none}
+.swiper-slide-active .con-list02 p.size{display: block}
+.swiper-pagination-bullets .swiper-pagination-bullet cite{
+	font-style: normal;
+	color: #2aa1bd;
+}
+.swiper-pagination-bullets .swiper-pagination-bullet-active cite{
+    color: #35344c;
+}
+.swiper-pagination-bullets:hover cite{
+    color: #35344c;
+}
+.swiper-pagination-bullets .swiper-pagination-bullet-active {
+    color: #85e9e5;
+	background: #7d7fc2;
+	box-shadow: 0 0 .2rem rgba(90,83,170,.54);
+	z-index: 2;
+}
+.swiper-pagination-bullets .swiper-pagination-bullet:hover{
+    color: #85e9e5;
+	background: #7d7fc2;
+	box-shadow: 0 0 .2rem rgba(90,83,170,.54);
+	z-index: 2;
+}
+.block2 .conList .swiper-wrapper .swiper-slide-active .item-cont{
+	box-shadow: none;
+}
+
+
+
+
+.conList{
+	width: 100%;
+	height: auto;
+	min-height: 4.75rem;
+	margin: 0 auto;
+}
+.swiper-container{
+	width: 100%;
+	height: 10.35rem;
+	overflow: hidden;
+	
+}
+.swiper-container .swiper-wrapper{
+	width:100%;
+	height: 8.35rem;
+}
+.swiper-container .swiper-wrapper .swiper-slide{
+	width:3.9rem;
+	height: 8.35rem;
+}
+.swiper-container .item{
+	width: 100%;
+}
+.item-cont{
+	width: 3.9rem;
+	height: 8.27rem;
+	zoom: 1;
+	overflow: hidden;
+	margin: 0 auto;
+	background-color: #888ac7;
+	box-shadow: 0 .04rem .17rem rgba(90,83,170,.54);
+}
+.item-cont .item-text{
+	width: 100%;
+	height: 0.44rem;
+	float: left;
+	zoom: 1;
+	overflow: hidden;
+	margin-top: .3rem;
+	line-height: 0.44rem;
+	font-size: 0.26rem;
+	font-weight: bold;
+	color: #ffcad1;
+	text-align: left;
+	box-sizing: border-box;
+	padding-left: .25rem;
+	margin-bottom: 0.13rem;
+	padding-right: .36rem;
+}
+.item-cont img{
+	width: 100%;
+	height: 2.83rem;
+}
+.item-cont .item-xx-span{
+	display: block;
+	float: left;
+	width: 100%;
+	min-height: 0.44rem;
+	height: auto!important;
+	height: 0.44rem;
+	line-height: 0.44rem;
+	zoom: 1;
+	overflow: hidden;
+	font-size: 0.26rem;
+	color: #fff;
+	text-align: left;
+	box-sizing: border-box;
+	padding-left: .25rem;
+	padding-right: .36rem;
+	margin-bottom: 0.17rem;
+}
+.item-cont .clo-2aa1bd{
+	font-weight: bold;
+}
+.item-cont .item-xx-span cite{
+	font-style:normal;
+	color:#606060;
+}
+.swiper-container .item-img-2{
+	background-image:url("../../images/oldCampaign1911/m-1911-old-pic2.png");
+}
+.swiper-container .item-img-3{
+	background-image:url("../../images/oldCampaign1911/m-1911-old-pic3.png");
+}
+.swiper-container .item-img-4{
+	background-image:url("../../images/oldCampaign1911/m-1911-old-pic4.png");
+}
+.swiper-container .item-img-5{
+	background-image:url("../../images/oldCampaign1911/m-1911-old-pic5.png");
+}
+.swiper-container .item-img-6{
+	background-image:url("../../images/oldCampaign1911/m-1911-old-pic6.png");
+}
+.swiper-container .item-img-7{
+	background-image:url("../../images/oldCampaign1911/m-1911-old-pic7.png");
+}
+.swiper-container .item-img-8{
+	background-image:url("../../images/oldCampaign1911/m-1911-old-pic8.png");
+}
+.swiper-container .item-img-9{
+	background-image:url("../../images/oldCampaign1911/m-1911-old-pic9.png");
+}
+.conList .swiper-button-next,.conList .swiper-button-prev{
+	overflow: hidden;
+	display: block;
+	position: absolute;
+	top: 45%;
+	z-index: 11;
+	width: 0.71rem;
+	height: 0.71rem;
+	background-size: 0.71rem 0.71rem;
+	background-position: 0 0;
+}
+
+
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+	background-image: url('../../images/oldCampaign1911/m-old-1911-icon-2.png')!important;
+	right: .25rem!important;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+	background-image: url('../../images/oldCampaign1911/m-old-1911-icon-1.png')!important;
+	left: .25rem!important;
+}
+
+.web-page .title img{margin: 0 auto;width: 3.75rem}
+
+.web-page .title p,.web-page .title span{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    color: #013748;
+    text-align: center;
+    margin: .1rem 0 .15rem;
+}
+.web-page .title span{font-size: .4rem}
+.web-page .title p {
+    margin: .19rem auto .27rem;
+    width: 6.9rem;
+    line-height: .40rem;
+	font-size: .26rem;
+	color: #606060;
+}
+.web-page .conList{overflow: hidden;}
+.web-page .conList .slider{
+    overflow: hidden;
+    width: 4rem;
+    height: 4.04rem;
+    border-radius: .125rem;
+    background: #c71b32;
+    box-shadow: 0 .03rem .13rem rgba(0,0,0,.52);
+    position: relative;
+    margin: .4rem auto;
+}
+.web-page .conList .slider p,.web-page .conList .slider span{
+    overflow: hidden;
+    display: block;
+    font-size: .36rem;
+    color: #fff;
+    text-align: center;
+}
+.web-page .conList .slider span {
+    font-size: .52rem;
+    font-weight: bold;
+    line-height: .56rem;
+    margin-bottom: .25rem;
+}
+.web-page .conList .slider .item span{margin-top: .8rem}
+.web-page .conList .slider span em{display: inline;color: #f8e489}
+.web-page .conList .slider p.first {
+    font-weight: bold;
+    font-size: .4rem;
+    line-height: .44rem;
+    margin: .4rem 0 -.8rem;
+}
+.web-page .conList .slider p.last{
+    overflow: hidden;
+    width: 3.9rem;
+    height: .9rem;
+    line-height: .9rem;
+    margin: 0 auto;
+    background:-webkit-linear-gradient(top, #fbe78a, #cdb175);
+    background: -o-linear-gradient(top, #fbe78a, #cdb175);
+    background: -moz-linear-gradient(top, #fbe78a, #cdb175);
+    background: linear-gradient(to top, #fbe78a, #cdb175);
+    border-bottom-left-radius: .1rem;
+    border-bottom-right-radius: .1rem;
+    color: #013748;
+    font-weight: bold;
+    font-size: .34rem;
+}
+.web-page .conList .slider p.last.color{color: #a50606}
+.web-page .conList .slider .item{
+    overflow: hidden;
+    background: url("../../images/campaign1911_new/li.png");
+    background-size: 100% 100%;
+    width: 3.83rem;
+    height: 2.91rem;
+    margin: .1rem auto .08rem;
+}
+.web-page .conList .swiper-button-prev.swiper-button-disabled{
+    opacity: 1;
+}
+.web-page .conList1{overflow: hidden;margin: .3rem 0 0}
+.web-page .conList1 li{
+    overflow: hidden;
+    display: block;
+    width: 50%;
+    float: left;
+    margin-bottom: .55rem;
+}
+.web-page .conList1 li span{
+    overflow: hidden;
+    background: url("../../images/campaign1911_new/icon-bg.png") no-repeat;
+    background-size: 100% 100%;
+    width: 1.2rem;
+    height: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto .1rem;
+}
+.web-page .conList1 li span img{width: .7rem}
+.web-page .conList1 li p{
+    overflow: hidden;
+    display: block;
+    color: #013748;
+    font-size: .22rem;
+    text-align: center;
+}
+.web-page .conList1 li p:last-child{
+    font-size: .3rem;
+    font-weight: bold;
+    margin-top: .05rem;
+}
+.down-footer{background: #eae8d9;padding-bottom: 1.5rem}
+.down-footer .copyright span{color: #013748;}
+.bot-fixed{
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    width: 7.5rem;
+    background: #ffcad1;
+    box-shadow: 0 -.1rem .08rem rgba(221,221,221,.4);
+    padding-bottom:  env(safe-area-inset-bottom);
+}
+.bot-fixed ul{
+    overflow: hidden;
+    list-style: none;
+    height: .9rem;
+    margin: .1rem 0;
+    padding: 0 .25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	padding-bottom: 0.2rem;
+}
+.bot-fixed ul li{
+    overflow: hidden;
+    list-style: none;
+    width: 1.96rem;
+    height: .78rem;
+    border-radius: .185rem;
+    margin: 0 .16rem;
+}
+.bot-fixed ul li a img{width: .5rem;margin: 0 auto}
+.bot-fixed ul li a{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: .3rem;
+    color: #fff;
+    height: .78rem;
+	font-weight: bold;
+}
+.bot-fixed ul li.account{
+    background:-webkit-linear-gradient(top, #b95067, #b95067);
+    background: -o-linear-gradient(top, #b95067, #b95067);
+    background: -moz-linear-gradient(top, #b95067, #b95067);
+    background: linear-gradient(to top, #b95067, #b95067);
+    box-shadow: 5px 5px 7px rgba(0,0,0,.52);
+}
+.bot-fixed ul li.border{
+    border: solid 2px #b95067;
+    box-shadow: 5px 5px 7px rgba(0,0,0,.52);
+}
+.bot-fixed ul li.border a{
+	color: #b95067;
+}
+/*弹窗*/
+.tc-hide{
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    line-height: 1.8;
+}
+.masking{
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+}
+.popup-box {
+    overflow: hidden;
+    max-width:95%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top:10%;
+    background: #fff;
+    z-index: 99999;
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 .1rem rgba(0, 0, 0, 0.3);
+}
+.popup-box .box-in {
+    margin: 3% 4% 5% 4%;
+    overflow-y: auto;
+    height: 8rem;
+}
+.popup-box .close-top{
+    padding:0.3rem 0.3rem;
+    font-size: 0.44rem;
+    color:#b78255;
+    text-align: center;
+    border-bottom: 1px solid #b78255;
+    width:6rem;
+    margin: 0 auto;
+    position: relative;
+}
+.popup-box .close-top a{
+    background: url(../../images/campaign1710/close-b.png) no-repeat;
+    width: 0.21rem;
+    height:0.21rem;
+    background-size: 0.21rem 0.21rem;
+    position: absolute;
+    right: 0;
+    margin-top: .2rem;
+    text-decoration: none;
+}
+.popup-box  .box-in .section1 .item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: .1rem;
+}
+.popup-box .section1 h2{
+    font-size: 0.28rem;
+    font-weight: bold;
+    color: #b78255;
+}
+.popup-box table.data-box {
+    width: 100%;
+    margin: 16px auto .25rem;
+    text-align: center;
+    border: 0 !important;
+    font-size: 1.6em;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.popup-box .box-in .line-throw{font-size: 0.3rem;}
+.popup-box .box-in .section1 p{
+    font-size:0.28rem;
+    line-height: 1.8;
+}
+.popup-box .box-in .section3 p{
+    font-size:0.28rem;
+    /*margin-bottom: 0.2rem;*/
+    line-height: 1.8;
+}
+.popup-box .box-in .section3 p a{color: #0096dc}
+.popup-box .box-in .section3 p span{
+    color: #f00;
+    font-weight: bold;
+}
+.popup-box .box-in .section4  h2{
+    font-size: 0.3rem;
+    margin-bottom: 0.1rem;
+    color: #b78255;
+}
+.popup-box .box-in .section4 li{
+    font-size: 0.28rem;
+    line-height: 1.8;
+}
+.popup-box .box-in .section4 li span{
+    /*margin-right: 0.15rem;*/
+}
+.popup-box .box-in .section4 li p{
+    display: flex;
+}
+
+.popup-box table.data-box thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box thead th {
+    font-size: .28rem;
+    text-align: center;
+    padding: .15rem .05rem;
+    color: #FFFFFF;
+    background: #dcb08e;
+    line-height: 1.0;
+}
+.popup-box table.data-box thead tr {
+    border: 1px solid #dcb08e;
+}
+.popup-box table.data-box tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box tbody td {
+    line-height: 1.0;
+    text-align: center;
+    color: #333333;
+    padding: 1.44%;
+    font-size: .28rem;
+    border: 0.025rem solid #ead5c2;
+    font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+}
+.popup-box table.data-box tbody .unit {
+    font-size: 0.8em;
+}
+.popup-box table.data-box tbody tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+//background: #f7efe8;
+}
+.popup-box table.data-box tbody tr.grey {
+    background: #fff;
+}
+.popup-box table.data-box tbody tr.last-row td {
+    border-bottom: 1px solid #CCCCCC;
+}
+.popup-box table.data-box .first-child {
+    text-align: center;
+    font-size: .28rem;
+}
+.popup-box table.data-box .first-child a {
+    color: #666666;
+    text-decoration: none;
+}
+.popup-box .table1 td,
+.popup-box .table2 td {
+    width: 25%;
+}
+.popup-box .table4 td {
+    width: 16%;
+}
+.popup-box .table3 td {
+    width: 33.333333%;
+}
+.popup-box .note{line-height: 1.8;font-size: 0.24rem;margin-bottom: 0.1rem}
+.popup-box .note span{color: #f00}
+.down-footer span{
+    line-height: 1.8;
+}
+.bot-fixed li{
+    line-height: 1.8;
+}

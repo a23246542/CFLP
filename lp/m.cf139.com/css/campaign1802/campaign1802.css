@@ -1,0 +1,643 @@
+*{
+    box-sizing: border-box;
+}
+
+.m-banner{
+    background: url(/cn/zt/images/campaign1802/m-banner-bg.jpg) no-repeat;
+    width: 100%;
+    height: 10rem;
+    background-size: 100% 10rem;
+    text-align: center;
+    padding-top: 1.6rem;
+}
+.m-banner img{
+    margin: 0 auto;
+    width: 5.17rem;
+    height: 4.56rem;
+}
+.m-banner a{
+    width: 4.8rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin: 0 auto;
+    display: block;
+    font-size: 0.36rem;
+    text-align: center;
+    border-radius: 0.1rem;
+
+}
+.m-banner .mm-open{
+    background: #fff;
+    color: #f16b6b;
+    margin-bottom: 0.4rem;
+}
+.m-banner .m-service{
+    border: 0.025rem solid #fff;
+    color: #fff;
+}
+.banner-font{
+    padding-bottom: 1rem;
+}
+.m-gift .layout-1{
+    font-size: 0.44rem;
+    color: #c28b6c;
+    padding-bottom: 0.1rem;
+}
+.m-gift{
+    text-align: center;
+    padding-top: 1rem;
+}
+.m-gift .layout-1 span{
+    font-weight: bold;
+}
+.m-gift .layout-2{
+    font-size: 0.24rem;
+     color: #999;
+    padding-bottom: 0.3rem;
+}
+.m-gift .layout-3{
+    margin-bottom: 0.7rem;
+}
+.m-gift .layout-3 a{
+    display: block;
+    width: 1.6rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    color: #c28b6c;
+    border-radius: 0.1rem;
+    border: 0.025rem solid #c28b6c;
+    font-size: 0.28rem;
+    margin: 0 auto;
+}
+.m-gift .bd ul li{
+
+    text-align: center;
+    margin: 0 auto;
+}
+.m-gift ul li .back-text .item-a{
+    font-size: 0.42rem;
+    color: #c28b6c;
+    margin-bottom: 0.4rem;
+}
+.m-gift ul li .back-text .item-b{
+    border-radius: 50%;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 0.05rem solid #c28b6c;
+    font-size: 0.42rem;
+    padding-top: 0.25rem;
+    margin: 0 auto;
+    background: #f3d7bf;
+    color: #c89b7d;
+}
+.m-gift ul li .back-text .item-c{
+    font-size: 1.1rem;
+    color: #f16b6b;
+    margin: 0.2rem 0;
+}
+.m-gift ul li .back-text .item-d{
+    font-size: 0.28rem;
+    color: #c28b6c;
+    line-height: 0.48rem;
+}
+.m-gift .layout-4{
+    padding-bottom: 1rem;
+}
+.m-gift .layout-4 .hd ul li{
+     float: left;
+    width: 0.2rem;
+    height: 0.2rem;
+    border-radius: 50%;
+    background: #e7d1c4;
+    font-size: 0;
+    margin-right: 0.1rem;
+}
+.m-gift .layout-4 .hd{
+  text-align: center;
+    padding-left: 3.2rem;
+    padding-top: 0.5rem;
+}
+.m-gift .layout-4 .hd ul li.on{
+    background: #c28b6c;
+}
+.m-gift .layout-4 .back-text{
+    margin: 0 auto;
+    text-align: center;
+    background: url(/cn/zt/images/campaign1802/m-con-bg.jpg) no-repeat;
+    width: 5.5rem;
+    height: 5.8rem;
+    background-size: 5.5rem 5.8rem;
+    padding-top: 0.5rem;
+}
+.m-step{
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    background: url(/cn/zt/images/campaign1802/m-con-bg02.jpg) no-repeat;
+    width: 100%;
+    height: 8rem;
+    background-size: 100%  8rem;
+    padding-top: 1.9rem;
+}
+.m-step li .layout-1{
+    width: 3.9rem;
+    height: 5.2rem;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 0.1rem;
+    padding-top: 0.4rem;
+    position: relative;
+}
+.m-step .layout-1  .item-1:after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 0.14rem solid transparent;
+    border-left: 0.24rem solid #c28b6c;
+    border-bottom: 0.18rem solid transparent;
+    position: absolute;
+    right: 1.35rem;
+    top: 0
+}
+.m-step .layout-1 .item-1 span {
+    background: #c28b6c;
+    font-size: 0.24rem;
+    color: #fff;
+    display: block;
+    width: 0.8rem;
+    height: 0.32rem;
+    line-height: 0.32rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-radius:0.05rem;
+}
+.m-step .layout-1  .item-1{
+    background: #fff;
+    border-radius: 0.1rem;
+    position: relative;
+    font-size: 0.24rem;
+    margin-bottom: 0.2rem;
+}
+.m-step .layout-1  .item-2{
+    font-size: 0.3rem;
+    color: #333;
+}
+.m-step .layout-1  .item-3{
+    width:2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 0.04rem solid #c28b6c;
+    margin: 0 auto;
+    padding-top: 0.4rem;
+    font-weight: bold;
+}
+
+.m-step .layout-1  .item-3{
+    color: #f16b6b;
+    font-size: 0.32rem;
+    margin: 0.3rem auto 0.4rem auto;
+}
+.m-step .layout-1 .item-3 span{
+    font-size: 0.56rem;
+}
+
+.m-step .layout-1 .item-4{
+    width: 2rem;
+    height: 0.64rem;
+
+    line-height: 0.64rem;
+    text-align: center;
+    margin: 0 auto;
+font-size: 0;
+    margin-top:0.5rem;
+}
+.m-step .layout-1 .item-4 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0.02rem solid #c28b6c;
+    border-radius: 0.1rem;
+    color: #c28b6c;
+    transition: all 0.3s;
+    font-size: 0.28rem;
+}
+.m-step .layout-1 .item-4 a:active{
+    color: #fff;
+    background:#c28b6c ;
+}
+.m-step .layout-1 .item-5{
+    font-size: 0.28rem;
+    color: #c28b6c;
+    position: absolute;
+    bottom: 1.4rem;
+    background: #fff;
+    left: 1.3rem;
+}
+.m-step  span.next{
+    position: absolute;
+    right: 0.5rem;
+    top: 4.15rem;
+    display: block;
+    text-align: center;
+    background: url(/cn/zt/images/campaign1802/m-jt.png) no-repeat;
+    width: 0.34rem;
+    height: 0.62rem;
+    background-size: 0.34rem 0.62rem;
+    z-index: 100;
+}
+.m-news .layout-1{
+    text-align: center;
+    font-size: 0.4rem;
+    color: #c28b6c;
+    margin: 0.95rem 0 0.6rem;
+}
+.m-news .layout-1 span{
+  font-weight: bold
+}
+.m-news .layout-2{
+    padding:0 0.2rem;
+}
+.m-news .layout-2 .item-1{
+    padding: 0 0.2rem;
+}
+.m-news .layout-2 .item-1 .item-a{
+    display: flex;
+    text-align: center;
+}
+.m-news .layout-2 .item-a .left{
+    background: #eeeeee;
+    padding: 0.6rem 0.65rem 0;
+
+}
+.m-news .layout-2  .left .country{
+    color: #0c0d41;
+    font-size: 0.3rem;
+    margin-bottom: 0.2rem;
+}
+.m-news .layout-2  .left img{
+    width: 1.5rem;
+    height: 1rem;
+}
+.m-news .layout-2  .right{
+    background: url(/cn/zt/images/campaign1802/m-con-icon02.png) no-repeat;
+    width: 4.3rem;
+    height: 2.9rem;
+    background-size: 4.3rem 2.9rem;
+    color: #fff;
+    padding:0.25rem 0.2rem 0;
+}
+.m-news .layout-2  .right .item-a{
+  font-size: 0.28rem;
+    margin: 0 auto;
+    width: 1.2rem;
+}
+.m-news .layout-2  .right .item-b{
+  font-size: 0.4rem;
+    margin: 0.2rem 0 0.3rem;
+}
+.m-news .layout-2  .right .item-c{
+  font-size: 0.24rem;
+    line-height: 0.48rem;
+}
+.m-news .layout-2 .item-e{
+    font-size: 0.28rem;
+    color: #333;
+    line-height: 0.48rem;
+    border: 0.02rem solid #eee;
+    padding: 0.4rem 0.2rem;
+    margin-bottom: 0.3rem;
+}
+.m-promotion{
+    background: url(/cn/zt/images/campaign1802/m-con-bg03.jpg) no-repeat;
+    width: 100%;
+    height: 8rem;
+    background-size: 100% 8rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 0.3rem;
+}
+.m-promotion .layout-1{
+ font-size: 0.4rem;
+    padding:0.85rem 0 0.6rem;
+}
+.m-promotion .layout-1 span{
+    font-weight: bold;
+}
+.m-promotion .layout-2{
+    font-size: 0.28rem;
+    text-align: left;
+    padding:0 0.25rem;
+    line-height: 0.48rem;
+}
+.m-promotion .layout-3{
+    font-size: 0.36rem;
+    padding: 0.5rem 0 0.4rem;
+}
+.m-promotion .layout-4{
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 0 0.55rem;
+    justify-content: space-between;
+}
+.m-promotion .layout-4 .item-4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -1.6rem;
+    margin-top: 0.5rem;
+}
+.m-promotion .layout-4 .item-4 img{
+   width: 3.1rem;
+    height: 2.1rem;
+}
+.m-promotion .layout-4 .item-1,.m-promotion .layout-4 .item-3{
+    background: url(/cn/zt/images/campaign1802/m-con-icon04.png) no-repeat;
+    width: 2.6rem;
+    height: 0.94rem;
+    background-size: 2.6rem 0.94rem;
+    line-height: 0.94rem;
+    font-size: 0.3rem;
+    text-align: center;
+}
+.m-promotion .layout-4 .item-2 img{
+    width: 0.25rem;
+    height: 0.25rem;
+}
+.open{
+   padding:1rem ;
+    margin: 0 auto;
+}
+.open a{
+    display: block;
+    width: 4.8rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 0.3rem;
+    border-radius: 0.1rem;
+}
+.open a.item-1{
+    background:#f16b6b ;
+    color: #fff;
+    margin-bottom: 0.4rem;
+}
+.open a.item-2{
+    color: #c69172;
+    border: 0.02rem solid #c69172;
+}
+.m-brand{
+    background: url(/cn/zt/images/campaign1802/m-con-bg04.jpg) no-repeat;
+    width: 100%;
+    height: 8.8rem;
+    background-size: 100% 8.8rem;
+    padding-top: 0.8rem;
+    text-align: center;
+}
+.m-brand .layout-1{
+    font-size: 0.4rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+.m-brand .layout-2 ul {
+ display: flex;
+}
+.m-brand .layout-2 ul li{
+    width: 33.3%;
+    opacity: 0.5;
+    text-align: center;
+}
+.m-brand .layout-2 ul li:nth-child(2){
+    opacity: 1;
+    position: relative;
+    top: -0.3rem;
+}
+.m-brand .layout-2 ul li .item-1{
+    font-size: 0.3rem;
+    color: #f3dac1;
+    margin-bottom: 0.1rem;
+}
+.m-brand .layout-2 ul li .item-2{
+    font-size: 0.24rem;
+    color: #fff;
+}
+.m-brand span.bg-icon_03 {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: url(/cn/zt/images/campaign1802/icon-003.png) no-repeat;
+    background-size: 1rem 1rem;
+}
+.m-brand span.bg-p_img_05 {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: url(/cn/zt/images/campaign1802/icon-001.png) no-repeat;
+    background-size: 1rem 1rem;
+}
+.m-brand span.bg-icon_02 {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: url(/cn/zt/images/campaign1802/icon-002.png) no-repeat;
+    background-size: 1rem 1rem;
+}
+.m-brand .layout-2 ul.second-brand li:nth-child(2) {
+    opacity: 0.5;
+    position: inherit;
+}
+.m-brand .layout-2 ul.second-brand{
+    margin-top: 1rem;
+}
+.copyright{
+    font-size: 0.24rem;
+    color: #999;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0.5rem;
+
+}
+.m-brand .second-brand .bg-icon_02{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: url(/cn/zt/images/campaign1802/icon-004.png) no-repeat;
+    background-size: 1rem 1rem;
+}
+.m-brand .second-brand .bg-p_img_05{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: url(/cn/zt/images/campaign1802/icon-006.png) no-repeat;
+    background-size: 1rem 1rem;
+}
+.m-brand .second-brand .bg-icon_03{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: url(/cn/zt/images/campaign1802/icon-005.png) no-repeat;
+    background-size: 1rem 1rem;
+}
+/*弹窗*/
+.tc-hide{
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
+.masking{
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+}
+.popup-box {
+    overflow: hidden;
+    max-width:95%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top:10%;
+    background: #fff;
+    z-index: 99999;
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.popup-box .box-in {
+    margin: 3% 4% 5% 4%;
+    overflow-y: auto;
+    height: 8rem;
+}
+.popup-box .close-top{
+    padding:0.5rem 0.3rem;
+    font-size: 0.44rem;
+    color:#b78255;
+    text-align: center;
+    border-bottom: 1px solid #b78255;
+    width:5.5rem;
+    margin: 0 auto;
+}
+.popup-box .close-top a{
+    background: url(../../images/campaign1710/close-b.png) no-repeat;
+    display: inline-block;
+    width: 0.21rem;
+    height:0.21rem;
+    background-size: 0.21rem 0.21rem;
+    position: relative;
+    left:1rem;
+}
+.popup-box .section1 h2{
+    font-size: 0.36rem;
+    margin-bottom: 0.1rem;
+    color: #b78255;
+}
+.popup-box table.data-box {
+    width: 100%;
+    margin: 16px auto 25px;
+    text-align: center;
+    border: 0 !important;
+    font-size: 1.6em;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.popup-box  .box-in .section1 p{
+    font-size:0.28rem;
+    margin-bottom: 0.2rem;
+    line-height: 1.8;
+}
+.popup-box  .box-in .section3 p{
+    font-size:0.28rem;
+    margin-bottom: 0.2rem;
+    line-height: 1.8;
+}
+.popup-box  .box-in .section3 p span{
+    padding-right:0.15rem;
+}
+.popup-box  .box-in .section4  h2{
+    font-size: 0.36rem;
+    margin-bottom: 0.1rem;
+    color: #b78255;
+}
+.popup-box  .box-in .section4 li{
+    font-size: 0.28rem;
+    line-height: 1.8;
+}
+.popup-box  .box-in .section4 li span{
+    margin-right: 0.15rem;
+}
+.popup-box  .box-in .section4 li p{
+    display: flex;
+}
+
+.popup-box table.data-box thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box thead th {
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 5px;
+    color: #FFFFFF;
+    background: #dcb08e;
+    line-height: 1.0;
+}
+.popup-box table.data-box thead tr {
+    border: 1px solid #dcb08e;
+}
+.popup-box table.data-box tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box tbody td {
+    line-height: 1.0;
+    text-align: center;
+    color: #333333;
+    padding: 1.44%;
+    font-size: 14px;
+    border: 0.025rem solid #ead5c2;
+    font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+}
+.popup-box table.data-box tbody .unit {
+    font-size: 0.8em;
+}
+.popup-box table.data-box tbody tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    background: #f7efe8;
+}
+.popup-box table.data-box tbody tr.grey {
+    background: #fff;
+}
+.popup-box table.data-box tbody tr.last-row td {
+    border-bottom: 1px solid #CCCCCC;
+}
+.popup-box table.data-box .first-child {
+    text-align: center;
+    font-size: 16px;
+}
+.popup-box table.data-box .first-child a {
+    color: #666666;
+}
+.popup-box .table1 td,
+.popup-box .table2 td {
+    width: 25%;
+}
+.popup-box .table4 td {
+    width: 16%;
+}
+.popup-box .table3 td {
+    width: 33.333333%;
+}

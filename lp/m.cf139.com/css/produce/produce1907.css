@@ -1,0 +1,374 @@
+body{font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;}
+#main {
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #666;
+}
+
+.inner {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    position: relative
+}
+
+img {
+    overflow: hidden;
+    border: none;
+    display: block;
+}
+.e-header .header{
+    background: none;
+}
+.web-banner{
+    width: 100%;
+    background: url("../../images/produce1907/banner-bg.jpg") no-repeat top center;
+    background-size: 100% 100%;
+    height: 8.34rem;
+    position: relative;
+    z-index: 2;
+}
+.web-banner .pic1{
+    position: absolute;
+    bottom: -.5rem;
+    right: 0;
+    width: 2.48rem;
+}
+.web-banner .banner-font img{margin: .73rem auto 0;width: 3.34rem}
+.web-btn{
+    overflow: hidden;
+    width: 100%;
+    height: 1rem;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    bottom: 0;
+    box-shadow: -.2rem 0 .02rem #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+.web-btn a{
+    overflow: hidden;
+    display: block;
+    font-size: .3rem;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    border-radius: .06rem;
+    width: 3.2rem;
+    height: .8rem;
+    line-height: .8rem;
+    margin: 0 .2rem;
+}
+.web-btn a.acc,.web-btn a.download{
+    font-weight: bold;
+    background: #f5e279;
+    color: #74582a;
+}
+.web-btn a.acc{display: none}
+.web-btn a.register{
+    background: #505050;
+}
+.web-page{
+    position: relative;
+    width: 100%;
+}
+.web-page.bg02{
+    background: url("../../images/produce1907/neiye-bg2.jpg") no-repeat center;
+    background-size: 100% 100%;
+    height: 6.94rem;
+    z-index: 1;
+}
+.web-page .title {
+    overflow: hidden;
+    margin: .8rem auto 0;
+    text-align: center;
+}
+.web-page .title .item{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.web-page .title .item img{width: .49rem}
+.web-page .title .item img:last-child{transform: rotateY(180deg)}
+.web-page .title .item span{
+    overflow: hidden;
+    font-size: .36rem;
+    line-height: .38rem;
+    padding: 0 .2rem;
+    z-index: 1;
+    background: #505050;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: lighter;
+}
+.web-page.bg02 .title .item span{color: #fff}
+.web-page .title .item span em{
+    display: inline;
+    font-weight: bold;
+}
+.web-page .title p{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    line-height: .36rem;
+    margin: .2rem auto .25rem;
+    width: 5.6rem;
+}
+.web-page .title p span{display: inline;font-weight: bold}
+.web-page .title a{
+    overflow: hidden;
+    display: block;
+    width: 2.8rem;
+    height: .58rem;
+    line-height: .58rem;
+    background: #4b9ca4;
+    border-radius: .27rem;
+    color: #fff;
+    text-align: center;
+    font-size: .3rem;
+    font-weight: bold;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.web-page .conList {
+    overflow: hidden;
+    margin: .3rem auto .45rem;
+}
+.web-page .conList ul{
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.web-page .conList ul li {
+    overflow: hidden;
+    list-style: none;
+    display: block;
+    position: relative;
+    margin: .35rem .4rem;
+}
+.web-page .conList.width ul li{width: 50%;margin: .3rem 0}
+.web-page .conList ul li span{
+    overflow: hidden;
+    display: block;
+    font-size: .36rem;
+    line-height: .38rem;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: rgba(80,80,80,.4);
+    font-family: "Microsoft JhengHei";
+    margin-top: .2rem;
+}
+.web-page .conList ul li:nth-child(3) span{color: #fff}
+.web-page.bg02 .conList ul li span {
+    position: static;
+    color: #fff;
+    margin: .15rem 0 .1rem;
+    font-size: .3rem;
+    font-weight: bold;
+}
+.web-page .conList ul li img{margin: 0 auto;width: 2.37rem}
+.web-page.bg02 .conList ul li img{width: 1.16rem}
+.web-page .conList ul li p{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    line-height: .3rem;
+    color: #fff;
+    text-align: center;
+}
+/*弹窗*/
+.tc-hide{
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    line-height: 1.8;
+}
+.masking{
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+}
+.popup-box {
+    overflow: hidden;
+    max-width:95%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top:10%;
+    background: #fff;
+    z-index: 99999;
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.popup-box .box-in {
+    margin: 3% 4% 5% 4%;
+    overflow-y: auto;
+    height: 8rem;
+}
+.popup-box .close-top{
+    padding:0.3rem 0.3rem;
+    font-size: 0.44rem;
+    color:#b78255;
+    text-align: center;
+    border-bottom: 1px solid #b78255;
+    width:6rem;
+    margin: 0 auto;
+    position: relative;
+}
+.popup-box .close-top a{
+    background: url(../../images/campaign1710/close-b.png) no-repeat;
+    width: 0.21rem;
+    height:0.21rem;
+    background-size: 0.21rem 0.21rem;
+    position: absolute;
+    right: 0;
+    margin-top: .2rem;
+    text-decoration: none;
+}
+.popup-box  .box-in .section1 .item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: .1rem;
+}
+.popup-box .section1 h2{
+    font-size: 0.28rem;
+    font-weight: bold;
+    color: #b78255;
+}
+.popup-box table.data-box {
+    width: 100%;
+    margin: 16px auto 25px;
+    text-align: center;
+    border: 0 !important;
+    font-size: 1.6em;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.popup-box .box-in .line-throw{font-size: 0.3rem;}
+.popup-box .box-in .section1 p{
+    font-size:0.28rem;
+    line-height: 1.8;
+}
+.popup-box .box-in .section3 p{
+    font-size:0.28rem;
+    /*margin-bottom: 0.2rem;*/
+    line-height: 1.8;
+}
+.popup-box .box-in .section3 p a{color: #0096dc}
+.popup-box .box-in .section3 p span{
+    color: #f00;
+    font-weight: bold;
+}
+.popup-box .box-in .section4  h2{
+    font-size: 0.3rem;
+    margin-bottom: 0.1rem;
+    color: #b78255;
+}
+.popup-box .box-in .section4 li{
+    font-size: 0.28rem;
+    line-height: 1.8;
+}
+.popup-box .box-in .section4 li span{
+    /*margin-right: 0.15rem;*/
+}
+.popup-box .box-in .section4 li p{
+    display: flex;
+}
+
+.popup-box table.data-box thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box thead th {
+    font-size: .28rem;
+    text-align: center;
+    padding: .15rem .05rem;
+    color: #FFFFFF;
+    background: #dcb08e;
+    line-height: 1.0;
+}
+.popup-box table.data-box thead tr {
+    border: 1px solid #dcb08e;
+}
+.popup-box table.data-box tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box tbody td {
+    line-height: 1.0;
+    text-align: center;
+    color: #333333;
+    padding: 1.44%;
+    font-size: 14px;
+    border: 0.025rem solid #ead5c2;
+    font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+}
+.popup-box table.data-box tbody .unit {
+    font-size: 0.8em;
+}
+.popup-box table.data-box tbody tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+//background: #f7efe8;
+}
+.popup-box table.data-box tbody tr.grey {
+    background: #fff;
+}
+.popup-box table.data-box tbody tr.last-row td {
+    border-bottom: 1px solid #CCCCCC;
+}
+.popup-box table.data-box .first-child {
+    text-align: center;
+    font-size: 16px;
+}
+.popup-box table.data-box .first-child a {
+    color: #666666;
+    text-decoration: none;
+}
+.popup-box .table1 td,
+.popup-box .table2 td {
+    width: 25%;
+}
+.popup-box .table4 td {
+    width: 16%;
+}
+.popup-box .table3 td {
+    width: 33.333333%;
+}
+.popup-box .note{line-height: 1.8;font-size: 0.24rem;margin-bottom: 0.1rem}
+.popup-box .note span{color: #f00}
+.down-footer span{
+    line-height: 1.8;
+}
+.bot-fixed li{
+    line-height: 1.8;
+}

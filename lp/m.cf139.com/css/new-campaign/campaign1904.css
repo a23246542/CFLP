@@ -1,0 +1,436 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0; color: #333;}
+.inner{overflow: hidden;width: 100%;height: 100%; margin: 0 auto; position: relative}
+img{ overflow:hidden;border: none;}
+.e-header .header{
+    background: none;
+}
+
+.web-banner{
+    width: 100%;
+    background: url("../../images/campaign1904/pic.jpg") no-repeat top;
+    background-size: 100% 9.32rem;
+    height: 9.32rem;
+    position: relative;
+    text-align: center;
+    padding-top: 1.4rem;
+    box-sizing: border-box;
+}
+.web-banner img{
+    width: 7.1rem;
+    margin: 0 auto;
+}
+.btn{
+    margin-top: 4rem;
+    font-size: 0;
+}
+.btn a{
+    display: inline-block;
+    width:2.5rem;
+    height:.72rem;
+    padding-top: .1rem;
+}
+.btn img{
+    width: 1.25rem;
+    height: .57rem;
+    margin: 0 auto;
+}
+.btn a.account{
+    background: url("//img.getfc.com.cn/source/www/zt/campaign1904/yello-btn.png") no-repeat;
+    background-size: 2.5rem .72rem;
+    transition: all .1s;
+    margin-right: .4rem;
+}
+.btn a.chat{
+    background: url("//img.getfc.com.cn/source/www/zt/campaign1904/write-btn.png") no-repeat;
+    background-size: 2.5rem .72rem;
+    transition: all .1s;
+}
+.bottom-btn.btn{
+    margin-top: 0;
+    text-align: center;
+}
+.web-page{
+    overflow: hidden;
+    position: relative;
+}
+.web-page.bg1{
+    background: url("../../images/campaign1904/bg02.jpg") no-repeat center;
+    background-size: 100% 100%;
+    height: 8.65rem;
+}
+.web-page.bg2{
+    background: url("../../images/campaign1904/bg.png") no-repeat center;
+    background-size: 100% 100%;
+    height: 10.76rem;
+    top: -.005rem;
+}
+.web-page .title .item{
+    font-size: 0;
+}
+.web-page .title{overflow: hidden;margin-top: 1rem;text-align: center}
+.web-page .title .item img{
+    width: 3.08rem;
+}
+.web-page .title .item img.icon{
+    margin: 0 .3rem;
+    width: .48rem;
+    position: relative;
+    top: -.05rem;
+}
+.web-page .title .item img.icon-process{
+    width: .48rem;
+}
+/*.web-page .title .item img:last-child {transform: rotateY(180deg);}*/
+.web-page .title .item span{
+    overflow: hidden;
+    font-size: .36rem;
+    color: #faf1d7;
+    font-weight: bold;
+    margin: 0 .3rem;
+}
+.web-page .title .item span.light{
+    display: inline;
+    font-weight: lighter;
+    margin-left: .1rem;
+}
+.web-page .title p{
+    overflow: hidden;
+    width: 5rem;
+    font-size: .24rem;
+    line-height: .36rem;
+    color: #666;
+    text-align: center;
+    border-bottom: solid 1px rgba(102,102,102,.3);
+    margin: 0.2rem auto 0;
+}
+.web-page .title p.text-info{
+    width: 3.5rem;
+    margin-top: 0;
+    margin-bottom: .3rem;
+}
+.web-page .title p span{
+    display: inline;
+    margin: 0 .1rem;
+    font-size: .24rem;
+    color: #82a732;
+    font-weight: bold;
+}
+.web-page .title a {
+    overflow: hidden;
+    display: block;
+    width: 2.56rem;
+    height: .68rem;
+    position: relative;
+    color: #fff;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.web-page .title a:hover{color: #b29957}
+.web-page .title a .item-a img{
+    overflow: hidden;
+   width: 2.56rem;
+
+}
+.web-page .title a:hover .item-a{
+    background: transparent;
+    border: solid 1px #b29957;
+}
+.web-page .title a .shadow{
+    overflow: hidden;
+    position: absolute;
+    width: 60%;
+    height: .4rem;
+    left: 20%;
+    top: 0;
+    z-index: 0;
+    box-shadow: 0 0 .28rem rgba(0,0,0,.56);
+}
+.web-page .title a:hover .shadow{display: none}
+.web-page .conList{overflow: hidden;position: relative;margin-top: 1rem}
+.web-page .conList .item{
+    overflow: hidden;
+    list-style: none;
+    background: url("//img.getfc.com.cn/source/www/zt/campaign1904/price-bg.png") no-repeat;
+    width: 3.28rem;
+    height: 2.47rem;
+    background-size: 3.28rem 2.47rem;
+    position: relative;
+    padding-top: .5rem;
+    float: left;
+    margin: 0 .2rem;
+    text-align: center;
+}
+.web-page .conList .item img{
+    width: 2rem;
+}
+.web-page .conList .item.special{
+    padding-top: .8rem;
+    margin: 0 auto;
+    float: none;
+}
+.web-page .slider-nav{
+    overflow: hidden;
+    width: 100%;
+
+}
+.web-page .slider-nav ul {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.web-page .slider-nav ul li {
+    float: left;
+    width: .2rem;
+    height: .2rem;
+    overflow: hidden;
+    margin: 0 .05rem;
+    text-indent: -999px;
+    cursor: pointer;
+    background: url("//img.getfc.com.cn/source/www/zt/campaign1904/circle.png");
+    border-radius: 100%;
+    background-size: .2rem .2rem;
+}
+.web-page .slider-nav ul li.on {
+    background: url("//img.getfc.com.cn/source/www/zt/campaign1904/active.png");
+    background-size: .35rem .35rem;
+    width: .35rem;
+    height: .35rem;
+}
+.web-page .conList1{overflow: hidden;margin: .75rem 0 .45rem}
+.process-detail{
+    margin-top: .6rem;
+}
+.process-detail ul li{
+    position: relative;
+    float: left;
+    margin-bottom: .8rem;
+    width: 50%;
+    text-align: center;
+}
+ .process-detail ul li:last-child{
+    margin-right: 0;
+}
+
+ .process-detail ul li .process-item{
+     background: url("//img.getfc.com.cn/source/www/zt/campaign1904/circle03.png") no-repeat;
+    width:2.02rem;
+    height: 2rem;
+    background-size:2.02rem 2rem;
+    text-align: center;
+    padding-top: .52rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.process-detail ul li:first-child .process-item{
+    background: url("//img.getfc.com.cn/source/www/zt/campaign1904/circle02.png") no-repeat;
+    background-size:2.02rem 2rem;
+}
+.process-item img{
+    width: 1.04rem;
+    height:1.04rem;
+}
+ .process-detail ul li i{
+    font-size: .3rem;
+    color: #faf1d7;
+     margin-top: .25rem;
+     display: inline-block;
+}
+ .process-detail ul li:before{
+    position: absolute;
+    content: "";
+    background: url("//img.getfc.com.cn/source/www/zt/campaign1904/arrow.png") no-repeat;
+    width: .46rem;
+    height: .11rem;
+    background-size: .46rem .11rem;
+    top: 1rem;
+    right: -0.2rem;
+}
+ .process-detail ul li:nth-child(2):before{
+    transform: rotate(90deg);
+     top: 3rem;
+     left: 1.6rem;
+}
+ .process-detail ul li:nth-child(3):before{
+    transform: rotate(180deg);
+
+}
+.process-detail ul li:last-child:before{
+    display: none;
+}
+
+/*弹窗*/
+.tc-hide{
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
+.masking{
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+}
+.popup-box {
+    overflow: hidden;
+    max-width:95%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top:10%;
+    background: #fff;
+    z-index: 99999;
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.popup-box .box-in {
+    margin: 3% 4% 5% 4%;
+    overflow-y: auto;
+    height: 8rem;
+}
+.popup-box .close-top{
+    padding:0.3rem 0.3rem;
+    font-size: 0.44rem;
+    color:#b78255;
+    text-align: center;
+    border-bottom: 1px solid #b78255;
+    width:6rem;
+    margin: 0 auto;
+    position: relative;
+}
+.popup-box .close-top a{
+    background: url(../../images/campaign1710/close-b.png) no-repeat;
+    width: 0.21rem;
+    height:0.21rem;
+    background-size: 0.21rem 0.21rem;
+    position: absolute;
+    right: 0;
+    margin-top: .2rem;
+    text-decoration: none;
+}
+.popup-box  .box-in .section1 .item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: .1rem;
+}
+.popup-box .section1 h2{
+    font-size: 0.28rem;
+    font-weight: bold;
+    color: #b78255;
+}
+.popup-box table.data-box {
+    width: 100%;
+    margin: 16px auto 25px;
+    text-align: center;
+    border: 0 !important;
+    font-size: 1.6em;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.popup-box .box-in .line-throw{font-size: 0.3rem;}
+.popup-box .box-in .section1 p{
+    font-size:0.28rem;
+    line-height: 1.8;
+}
+.popup-box .box-in .section3 p{
+    font-size:0.28rem;
+    /*margin-bottom: 0.2rem;*/
+    line-height: 1.8;
+}
+.popup-box .box-in .section3 p a{color: #0096dc}
+.popup-box .box-in .section3 p span{
+    padding-right:0.15rem;
+}
+.popup-box .box-in .section4  h2{
+    font-size: 0.3rem;
+    margin-bottom: 0.1rem;
+    color: #b78255;
+}
+.popup-box .box-in .section4 li{
+    font-size: 0.28rem;
+    line-height: 1.8;
+}
+.popup-box .box-in .section4 li span{
+    /*margin-right: 0.15rem;*/
+}
+.popup-box .box-in .section4 li p{
+    display: flex;
+}
+
+.popup-box table.data-box thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box thead th {
+    font-size: .28rem;
+    text-align: center;
+    padding: .15rem .05rem;
+    color: #FFFFFF;
+    background: #dcb08e;
+    line-height: 1.0;
+}
+.popup-box table.data-box thead tr {
+    border: 1px solid #dcb08e;
+}
+.popup-box table.data-box tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box tbody td {
+    line-height: 1.0;
+    text-align: center;
+    color: #333333;
+    padding: 1.44%;
+    font-size: 14px;
+    border: 0.025rem solid #ead5c2;
+    font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+}
+.popup-box table.data-box tbody .unit {
+    font-size: 0.8em;
+}
+.popup-box table.data-box tbody tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+//background: #f7efe8;
+}
+.popup-box table.data-box tbody tr.grey {
+    background: #fff;
+}
+.popup-box table.data-box tbody tr.last-row td {
+    border-bottom: 1px solid #CCCCCC;
+}
+.popup-box table.data-box .first-child {
+    text-align: center;
+    font-size: 16px;
+}
+.popup-box table.data-box .first-child a {
+    color: #666666;
+    text-decoration: none;
+}
+.popup-box .table1 td,
+.popup-box .table2 td {
+    width: 25%;
+}
+.popup-box .table4 td {
+    width: 16%;
+}
+.popup-box .table3 td {
+    width: 33.333333%;
+}
+.popup-box .note{line-height: 1.8;font-size: 0.24rem;margin-bottom: 0.1rem}
+.popup-box .note span{color: #f00}

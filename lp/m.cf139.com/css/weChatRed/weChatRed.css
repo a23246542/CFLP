@@ -1,0 +1,242 @@
+.m-banner{
+    background: url("https://img.getfc.com.cn/source/www/zt/lp-img/mobile/weChatRed/banner-bg.jpg") no-repeat center;
+    background-size: 100% 100%;
+    height: 10.3rem;
+    position: relative;
+    z-index: 1;
+}
+.m-banner img{width: 4.7rem;margin: 1.6rem 0 0 1.7rem}
+.m-page{
+    overflow: hidden;
+    background: #deeeb4;
+}
+.m-page .m-active{
+    overflow: hidden;
+    background: url("https://img.getfc.com.cn/source/www/zt/lp-img/mobile/weChatRed/bg1.png") no-repeat center;
+    background-size: 7.32rem 12rem;
+    width: 7.5rem;
+    height: 12rem;
+    margin: .15rem 0 0 0;
+}
+.m-page .m-active .m-layout{
+    border: solid .04rem #99d48d;
+    border-radius: .25rem;
+    margin: 1rem auto 0;
+    width: 6.5rem;
+    position: relative;
+}
+.m-page .m-active .m-layout .title{
+    position: absolute;
+    top: -.25rem;
+    text-align: center;
+    width: 100%;
+}
+.m-page .m-active .m-layout .title p{
+    display: inline-block;
+    background: #f6f8ec;
+    text-align: center;
+    padding: 0 .2rem;
+    position: relative;
+}
+.m-page .m-active .m-layout .title span{
+    overflow: hidden;
+    display: inline-block;
+    font-size: .4rem;
+    line-height: .44rem;
+    background-image: -webkit-linear-gradient(bottom, #65be55, #4e9841);
+    background-image: -o-linear-gradient(bottom, #65be55, #4e9841);
+    background-image: -moz-linear-gradient(bottom, #65be55, #4e9841);
+    background-image: linear-gradient(to bottom, #65be55, #4e9841);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+}
+.m-page .m-active .m-layout .title em{
+    position: absolute;
+    width: .12rem;
+    height: .12rem;
+    left: -.05rem;
+    top: .17rem;
+    background: url("https://sc.tfejy.com/source/www/zt/lp-img/mobile/weChatRed/dot.png") no-repeat;
+    background-size: 100% 100%;
+}
+.m-page .m-active .m-layout .title em:last-child{left: auto;right: -.05rem}
+.m-page .m-active .m-layout .activeCon{margin-top: .55rem}
+.m-page .m-active .m-layout .activeCon ul li {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: .2rem;
+    padding: 0 .35rem;
+}
+.m-page .m-active .m-layout .activeCon ul li em{
+    position: absolute;
+    width: .12rem;
+    height: .12rem;
+    left: -.07rem;
+    top: .1rem;
+    background: url("https://sc.tfejy.com/source/www/zt/lp-img/mobile/weChatRed/dot.png") no-repeat;
+    background-size: 100% 100%;
+}
+.m-page .m-active .m-layout .activeCon ul li span,
+.m-page .m-active .m-layout .activeCon ul li p{
+    overflow: hidden;
+    font-size: .26rem;
+    line-height: .36rem;
+    color: #4e9841;
+}
+.m-page .m-active .m-layout .activeCon ul li span{font-weight: bold}
+.m-page .m-active .m-layout .activeCon table{
+    overflow: hidden;
+    display: table;
+    border: solid .04rem #4e9841;
+    background: #e5ec01;
+    border-radius: .2rem;
+    border-spacing: 0;
+    width: 6.6rem;
+    margin: 0 0 -.05rem -.05rem;
+}
+.m-page .m-active .m-layout .activeCon table th,
+.m-page .m-active .m-layout .activeCon table td{
+    overflow: hidden;
+    font-size: .26rem;
+    border-bottom: solid 1px #b2b701;
+    border-right: solid 1px #b2b701;
+    padding: .25rem .1rem;
+    text-align: center;
+    font-weight: bold;
+}
+.m-page .m-active .m-layout .activeCon table thead th{padding: .1rem}
+.m-page .m-active .m-layout .activeCon table thead th,
+.m-page .m-active .m-layout .activeCon table tbody td:first-child{color: #4e9841;font-weight: normal}
+.m-page .m-active .m-layout .activeCon table td img{width: 1.55rem}
+.m-page .m-active .m-btn a{
+    display: block;
+    font-size: .28rem;
+    color: #fff;
+    text-align: center;
+    width: 4.2rem;
+    height: .8rem;
+    line-height: .8rem;
+    margin: .5rem auto 0;
+    box-shadow: 0 0 .1rem rgba(41,83,34,.47);
+    background: -webkit-linear-gradient(bottom, #65be55, #4e9841);
+    background: -o-linear-gradient(bottom, #65be55, #4e9841);
+    background: -moz-linear-gradient(bottom, #65be55, #4e9841);
+    background: linear-gradient(to bottom, #65be55, #4e9841);
+    border-radius: .4rem;
+}
+.m-page .m-rule{
+    border: solid .02rem #a5905c;
+    border-radius: .2rem;
+    margin: .85rem auto 0;
+    width: 6.9rem;
+    position: relative;
+}
+.m-page .m-rule .title{
+    overflow: hidden;
+    position: absolute;
+    left: .3rem;
+    top: -.3rem;
+    background: url("https://img.getfc.com.cn/source/www/zt/lp-img/mobile/weChatRed/pic.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 4.11rem;
+    height: .72rem;
+}
+.m-page .m-rule .title span{
+    overflow: hidden;
+    display: block;
+    font-size: .26rem;
+    color: #fff;
+    line-height: .6rem;
+    margin-left: .18rem;
+}
+.m-page .m-rule .m-layout{margin: .66rem 0 .35rem .32rem}
+.m-page .m-rule .m-layout li {
+    margin-bottom: .15rem;
+    position: relative;
+}
+.m-page .m-rule .m-layout li p{
+    overflow: hidden;
+    display: block;
+    font-size: .26rem;
+    line-height: .36rem;
+    color: #4e9841;
+    text-indent: .35rem;
+}
+.m-page .m-rule .m-layout li em{
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: .03rem;
+    width: .3rem;
+    height: .3rem;
+    border-radius: 100%;
+    font-size: .24rem;
+    line-height: .3rem;
+    color: #fff;
+    text-align: center;
+    background: -webkit-linear-gradient(bottom, #65be55, #4e9841);
+    background: -o-linear-gradient(bottom, #65be55, #4e9841);
+    background: -moz-linear-gradient(bottom, #65be55, #4e9841);
+    background: linear-gradient(to bottom, #65be55, #4e9841);
+}
+.down-footer{background: #deeeb4;padding-bottom: 1.2rem}
+.down-footer .copyright span {
+    font-size: .24rem;
+    color: #4e9841;
+    line-height: .34rem;
+}
+.bot-fixed{
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    width: 7.5rem;
+    background: #4e9841;
+    box-shadow: 0 -.1rem .15rem rgba(48,55,15,.3);
+    padding-bottom:  env(safe-area-inset-bottom);
+}
+.bot-fixed ul{
+    overflow: hidden;
+    list-style: none;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bot-fixed ul li{
+    overflow: hidden;
+    list-style: none;
+    margin: 0 .5rem;
+}
+.bot-fixed ul li a img{width: .46rem;margin: 0 auto}
+.bot-fixed ul li a{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: .24rem;
+    color: #fff;
+    height: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

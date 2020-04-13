@@ -1,0 +1,1732 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0;color: #333}
+.inner{overflow: hidden;width: 1200px; margin: 0 auto; position: relative}
+img{ overflow:hidden;display:block;border: none;}
+.e-header .header{
+    background: none;
+}
+.right-nav{
+    overflow: hidden;
+    position: fixed;
+    z-index: 99;
+    right: 10px;
+    top: 160px;
+    width: 153px;
+    height: 434px;
+    background: url("//img.getfc.com.cn/source/www/zt/supercar/icon-bg.png?0607") no-repeat;
+    background-size: 100% 434px;
+    display: none;
+}
+.right-nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 112px 0 10px 0;
+}
+.right-nav ul li{
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    align-items: center;
+    -webkit-align-items: center;
+    padding-left: 20px;
+    cursor: pointer;
+    margin-bottom: 28px;
+}
+.right-nav ul li a{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    margin-right: 5px;
+    color: #fff;
+}
+.right-nav ul li.check a,.right-nav ul li:hover a{color: #c0201d;}
+.right-nav ul li span:first-child{
+    width: 22px;
+    height: 22px;
+}
+.right-nav ul li span.icon-img01{
+    background: url("//img.getfc.com.cn/source/www/zt/supercar/icon-01.png?0410") no-repeat center;
+    background-size: 19px 19px;
+}
+.right-nav ul li.check span.icon-img01,.right-nav ul li:hover span.icon-img01{
+    background: url("//img.getfc.com.cn/source/www/zt/supercar/icon-01-hover.png?0410") no-repeat center;
+    background-size: 19px 19px;
+}
+.right-nav ul li span.icon-img02{
+    background: url("//img.getfc.com.cn/source/www/zt/supercar/icon-02.png?0410") no-repeat center;
+    background-size: 18px 15px;
+}
+.right-nav ul li.check span.icon-img02,.right-nav ul li:hover span.icon-img02{
+    background: url("//img.getfc.com.cn/source/www/zt/supercar/icon-02-hover.png?0410") no-repeat center;
+    background-size: 18px 15px;
+}
+.right-nav ul li span.icon-img03{
+    background: url("//img.getfc.com.cn/source/www/zt/supercar/icon-03.png?0410") no-repeat center;
+    background-size: 18px 18px;
+}
+.right-nav ul li.check span.icon-img03,.right-nav ul li:hover span.icon-img03{
+    background: url("//img.getfc.com.cn/source/www/zt/supercar/icon-03-hover.png?0410") no-repeat center;
+    background-size: 18px 18px;
+}
+.right-nav ul li span.icon-img04{
+    background: url("//img.getfc.com.cn/source/www/zt/supercar/icon-04.png?0410") no-repeat center;
+    background-size: 18px 13px;
+}
+.right-nav ul li.check span.icon-img04,.right-nav ul li:hover span.icon-img04{
+    background: url("//img.getfc.com.cn/source/www/zt/supercar/icon-04-hover.png?0410") no-repeat center;
+    background-size: 18px 13px;
+}
+.right-nav ul li span.icon-img05{
+    background: url("//img.getfc.com.cn/source/www/zt/supercar/icon-05.png?0410") no-repeat center;
+    background-size: 17px 18px;
+}
+.right-nav ul li.check span.icon-img05,.right-nav ul li:hover span.icon-img05{
+    background: url("//img.getfc.com.cn/source/www/zt/supercar/icon-05-hover.png?0410") no-repeat center;
+    background-size: 17px 18px;
+}
+.right-nav ul li span.icon-img06{
+    background: url("//img.getfc.com.cn/source/www/zt/supercar/icon-06.png?0410") no-repeat center;
+    background-size: 16px 22px;
+}
+.right-nav ul li.check span.icon-img06,.right-nav ul li:hover span.icon-img06{
+    background: url("//img.getfc.com.cn/source/www/zt/supercar/icon-06-hover.png?0410") no-repeat center;
+    background-size: 16px 22px;
+}
+.right-nav ul li span.icon-img07{
+    background: url("//img.getfc.com.cn/source/www/zt/supercar/icon-07.png?0410") no-repeat center;
+    background-size: 15px 18px;
+}
+.right-nav ul li.check span.icon-img07,.right-nav ul li:hover span.icon-img07{
+    background: url("//img.getfc.com.cn/source/www/zt/supercar/icon-07-hover.png?0410") no-repeat center;
+    background-size: 15px 18px;
+}
+.right-nav ul li span.icon-img08{
+    background: url("//img.getfc.com.cn/source/www/zt/supercar/icon-08.png?0410") no-repeat center;
+    background-size: 16px 16px;
+}
+.right-nav ul li.check span.icon-img08,.right-nav ul li:hover span.icon-img08{
+    background: url("//img.getfc.com.cn/source/www/zt/supercar/icon-08-hover.png?0410") no-repeat center;
+    background-size: 16px 16px;
+}
+.web-banner{
+    width: 100%;
+    height: 680px;
+    background: url("//img.getfc.com.cn/source/www/zt/supercar/banner.jpg?0711") no-repeat center;
+    margin-top:-76px;
+    position: relative;
+    overflow: hidden;
+}
+.web-banner.japan{
+    background: url("//img.getfc.com.cn/source/www/zt/D1/banner.jpg") no-repeat center;
+}
+.web-banner.hz{
+    background: url("//img.getfc.com.cn/source/www/zt/D1-hz/banner-bg.jpg") no-repeat center;
+}
+.web-banner.hz img{margin: 213px 0 39px}
+.web-banner a{
+    overflow: hidden;
+    display: block;
+    width: 233px;
+    height: 58px;
+    line-height: 54px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    border: solid 2px #fff;
+    background: #9e0322;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.web-page{
+    overflow: hidden;
+    padding: 60px 0 0 0;
+    width: 100%;
+    position: relative;
+}
+.web-page.bg{
+    background: url("//img.getfc.com.cn/source/www/zt/supercar/neiye-bg06.jpg") no-repeat center;
+    height: 964px;
+}
+.web-page.bg01{
+    background: url("//img.getfc.com.cn/source/www/zt/D1/con-bg01.jpg") no-repeat center;
+    height: 800px;
+ }
+.web-page.bg-color{
+    background: #dfdfdf;
+    padding: 0;
+}
+.web-page .video{
+    overflow: hidden;
+    display: block;
+    width: 1000px;
+    height: 560px;
+    margin: 0 auto;
+}
+.web-page .title{
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 25px;
+}
+.web-page .title img{
+    margin: 0 auto;
+}
+.web-page .title a{
+    overflow: hidden;
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto 30px auto;
+    background: #952f2e;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    cursor: pointer;
+}
+.web-page .title span{
+    overflow: hidden;
+    display: block;
+    font-size: 28px;
+    color: #343031;
+    text-align: center;
+    vertical-align: top;
+    font-weight: bold;
+}
+.web-page .title span.inline{
+    font-size: 28px;
+    color: #d47271;
+    line-height: normal;
+    display: inline-block;
+    margin-top: 12px;
+}
+.web-page.bg .title span{color: #fff}
+.web-page.bg01 .title span{color: #fff}
+.web-page .title p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    margin: 45px 0 35px 0;
+}
+.web-page.bg .title p{color: #fff}
+.web-page.bg .title p span{
+    display: inline;
+    color: #e51816;
+    font-size: 16px;
+    line-height: 30px;
+}
+.web-page .title p a{
+    display: inline;
+    font-size: 16px;
+    line-height: 30px;
+    background: transparent;
+    width: auto;
+    height: auto;
+    color: #333;
+    border-bottom: solid 1px #333;
+    border-radius: 0;
+}
+.web-page .con{
+    overflow: hidden;
+    width: 100%;
+}
+.web-page .con01{
+    overflow: hidden;
+    width: 100%;
+}
+.web-page .con03{
+    overflow: hidden;
+    width: 100%;
+    margin-top: 35px;
+}
+.web-page .page2-bg{
+    overflow: hidden;
+    width: 100%;
+    //height: 800px;
+    position: relative;
+    padding-top: 120px;
+}
+.web-page .page2-bg .hd {
+    overflow: hidden;
+    position: absolute;
+    left: 100px;
+    bottom: 5px;
+    z-index: 1;
+    width: 450px;
+}
+.web-page .page2-bg .hd ul {
+    overflow: hidden;
+    zoom: 1;
+    float: left;
+}
+.web-page .page2-bg .hd ul li {
+    float: left;
+    margin-right: 14px;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    background: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+}
+.web-page .page2-bg .hd ul li.on {
+    background: #952f2e;
+    color: #fff;
+}
+.web-page .page2-bg .con-list{
+    overflow: hidden;
+    width: 510px;
+    margin-left: 80px;
+    padding-bottom: 40px;
+}
+.web-page .page2-bg img{
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+.web-page .page2-bg .img-list{
+    margin-top: 120px;
+    margin-left: 47%;
+}
+.web-page .page2-bg .img-list01{
+    margin-top: 60px;
+    margin-left: 60%;
+}
+.web-page .page2-bg .img-list02{
+    bottom: 65px;
+    margin-left: 18%;
+}
+.web-page .page2-bg .img-list03{
+    bottom: 88px;
+    margin-left: 50%;
+}
+.web-page .page2-list{
+    overflow: hidden;
+    padding: 16px 20px;
+    z-index: 2;
+    color: #fff;
+}
+.web-page .page2-list.posit03{
+    margin-top: 0;
+    margin-left: 23%;
+    bottom: 57px;
+}
+.web-page .page2-list span{
+    overflow: hidden;
+    display: block;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.web-page .page2-list p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: justify;
+}
+.web-page .page3-left{
+    overflow: hidden;
+    width: 54%;
+    float: left;
+    margin-right: 5%;
+    margin-top: 30px;
+}
+.web-page .page3-left .item{
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    align-items: center;
+    -webkit-align-items: center;
+    margin-bottom: 40px;
+}
+.web-page .page3-left .item img{
+    overflow: visible;
+    margin-right: 4%;
+}
+.web-page .page3-left .item p{
+    overflow: hidden;
+    color: #171717;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: justify;
+}
+.web-page .page3-right{
+    overflow: hidden;
+    width: 39%;
+    float: left;
+    border: dashed 1px #242424;
+    padding: 45px 0 20px 0;
+    color: #171717;
+    line-height: 30px;
+}
+.web-page .page3-right img{
+    margin: 0 auto;
+}
+.web-page .page3-right span{
+    overflow: hidden;
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 35px 32px 23px 32px;
+}
+.web-page .page3-right p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    padding: 0 32px;
+}
+.web-page .page5-list{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+.web-page .page5-list .item{
+    overflow: hidden;
+    width: 570px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.web-page .page5-list .item .neiye-title{
+    overflow: hidden;
+    font-size: 30px;
+    color: #952f2e;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.web-page .page5-list .juan{
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    color: #fff;
+    background: #213040;
+}
+.web-page .page5-list .juan span{
+    overflow: hidden;
+    width: 392px;
+    height: 185px;
+    background: url("//img.getfc.com.cn/source/www/zt/supercar/img-02.jpg") no-repeat;
+    background-size: 100% 185px;
+    font-size: 22px;
+    line-height: 28px;
+    padding-top: 142px;
+    text-align: center;
+}
+.web-page .page5-list .juan a{
+    overflow: hidden;
+    color: #fff;
+    width: 180px;
+    line-height: 185px;
+    text-align: center;
+    font-size: 36px;
+    text-decoration: none;
+}
+.web-page .page5-list .juan .code:hover{
+    background: url("//img.getfc.com.cn/source/www/zt/supercar/code.png?04031735") no-repeat;
+    color: transparent;
+}
+.web-page .page6-list{
+    overflow: hidden;
+    float: left;
+    width: 50%;
+    background: rgba(255,255,255,.62);
+    padding: 40px 0;
+    cursor: pointer;
+}
+.web-page .page6-list.check{background: rgba(255,255,255,.84);}
+.web-page .page6-list span{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+}
+.web-page .page6-list .fir-span{
+    color: #e51816;
+    font-size: 44px;
+    margin: 0 0 25px 0;
+}
+.web-page .page6-list .sec-gif{
+    width: 360px;
+    height: 240px;
+    margin: 0 auto;
+    background: url("//img.getfc.com.cn/source/www/zt/supercar/img-03.gif") no-repeat;
+}
+.web-page .page6-list .sec-gif.bg-gif{
+    background: url("//img.getfc.com.cn/source/www/zt/supercar/img-04.gif") no-repeat;
+}
+.web-page .page6-list p{
+    overflow: hidden;
+    display: block;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 30px;
+    width: 86%;
+    margin: 25px auto;
+}
+.web-page .page7-slider{
+    overflow: hidden;
+    width: 100%;
+    height: 512px;
+    background: url("//img.getfc.com.cn/source/www/zt/supercar/con-bg02.png") no-repeat center;
+    margin-top: 90px;
+    position: relative;
+}
+.web-page .page7-slider ul{
+    overflow: hidden;
+    list-style: none;
+    width: 96.2%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.web-page .page7-slider ul li{
+    overflow: hidden;
+    list-style: none;
+    font-size: 24px;
+    line-height: 28px;
+    color: #1b1b1b;
+    float: left;
+    width: 5.6%;
+    height: 380px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    position: relative;
+    cursor: pointer;
+}
+.web-page .page7-slider ul li.width{width: 20.6%;}
+.web-page .page7-slider ul li.child-2{
+    margin-top: 35px;
+    height: 385px;
+}
+.web-page .page7-slider ul li.child-3{
+    margin-top: 40px;
+    height: 390px;
+}
+.web-page .page7-slider ul li.child-4{
+    margin-top: 45px;
+    height: 395px;
+}
+.web-page .page7-slider ul li.child-5{
+    margin-top: 50px;
+    height: 400px;
+}
+.web-page .page7-slider ul li span{
+    overflow: hidden;
+    display: block;
+    width: 73%;
+    margin: 0 auto;
+}
+.web-page .page7-slider ul li span.time{font-size: 20px;width: 86%}
+.web-page .page7-slider ul li.width span{
+    font-size: 44px;
+    line-height: normal;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 55px;
+}
+.web-page .page7-slider ul li img{
+    position: absolute;
+    bottom: 0;
+}
+.web-page .page7-slider .close{
+    overflow: hidden;
+    position: absolute;
+    right: 50px;
+    top: 40px;
+    cursor: pointer;
+    display: none;
+    z-index: 11;
+}
+.web-page .page7-slider #hide-con{display: none}
+.web-page .page7-slider .check-con{
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    left: 90px;
+    top: 0;
+    z-index: 1;
+    display: none;
+}
+.web-page .page7-slider .check-con .hd {
+    overflow: hidden;
+    padding: 0 10px;
+    position: absolute;
+    bottom: 45px;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    z-index: 11;
+}
+.web-page .page7-slider .check-con .hd .prev,.web-page .page7-slider .check-con .hd .next {
+    overflow: hidden;
+    display: block;
+    width: 108px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    float: right;
+    cursor: pointer;
+    border: solid 1px #fff;
+    border-radius: 4px;
+    color: #fff;
+    margin: 0 21px;
+    font-size: 24px;
+}
+.web-page .page7-slider .check-con .hd .prevStop {
+    display: none;
+}
+.web-page .page7-slider .check-con .hd .nextStop {
+    display: none;
+}
+.web-page .page7-slider .check-con .bd{
+    overflow: hidden;
+    width: 100%;
+}
+.web-page .page7-slider .check-con .bd ul{
+    display: block;
+    width: 100%;
+}
+.web-page .page7-slider .check-con .bd ul li{
+    width: 100%;
+    height: 512px;
+    margin-top: 0;
+    display: block;
+}
+.web-page .page7-slider .hide-list{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.web-page .page7-slider .hide-list a{
+    overflow: hidden;
+    width: 15.1%;
+    height: 512px;
+    float: left;
+    margin-top: 0;
+}
+.web-page .layout{
+    overflow: hidden;
+    position: absolute;
+    top: 48px;
+    z-index: 2;
+    margin-left: 250px;
+    width: 65.8%;
+    display: none;
+}
+.web-page .layout img{
+    margin: 0 auto;
+}
+.web-page .layout .bd{
+    margin: 0 auto;
+}
+.web-page .layout .hd {
+    overflow: hidden;
+    padding: 0 10px;
+    position: absolute;
+    top: 45%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 11;
+}
+.web-page .layout .hd .prev,.web-page .layout .hd .next {
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    float: right;
+    cursor: pointer;
+    background: url("//img.getfc.com.cn/source/www/zt/supercar/icon-right-02.png") no-repeat;
+    width: 34px;
+    height: 62px;
+}
+.web-page .layout .hd .next{background: url("//img.getfc.com.cn/source/www/zt/supercar/icon-left-02.png") no-repeat;}
+.web-page .layout .hd .prevStop {
+    display: none;
+}
+.web-page .layout .hd .nextStop {
+    display: none;
+}
+.web-page .close01{
+    overflow: hidden;
+    position: absolute;
+    right: 176px;
+    top: 48px;
+    cursor: pointer;
+    z-index: 11;
+    background: #ddd;
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+.web-page .close01 img{margin: 1px auto 0 auto;}
+.web-page .page8-list{
+    overflow: hidden;
+    width: 50%;
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 17px;
+}
+.web-page .page8-list .left-img{
+    margin: 0 auto;
+}
+.web-page .page8-list .right-con{
+    overflow: hidden;
+    margin-top: 30px;
+}
+.web-page .page8-list .right-con p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    color: #333;
+}
+.web-page .page8-list .right-con span{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    color: #999;
+}
+.web-page .page9-slider{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+.web-page .masking{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 22;
+    width: 100%;
+    height: 100%;
+    background: rgba(13,28,43,.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 32px;
+}
+.web-page .page9-slider ul li{
+    width: 100%;
+}
+.web-page .page9-slider .hd{
+    position: absolute;
+    top: 45%;
+    z-index: 11;
+    width: 50%;
+    margin-left: 6%;
+}
+.web-page .page9-slider .hd .prev,.web-page .page9-slider .hd .next {
+    display: block;
+    width: 54px;
+    height: 54px;
+    float: left;
+    overflow: hidden;
+    cursor: pointer;
+    background: url("//img.getfc.com.cn/source/www/zt/D1/icon-pc-l.png") no-repeat;
+}
+.web-page .page9-slider .hd .next{float:right;background: url("//img.getfc.com.cn/source/www/zt/D1/icon-pc-r.png") no-repeat;}
+.web-page .page9-list{
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    bottom: 57px;
+}
+.web-page .page9-list ul{
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.web-page .page9-list ul li{
+    overflow: hidden;
+    list-style: none;
+    width: 425px;
+    height: 84px;
+    background: rgba(233,233,233,.6);
+    box-shadow: 2px 2px 5px rgba(0,0,0,.15);
+    margin-right: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.web-page .page9-list ul li.width{
+    height: auto;
+    background: none;
+    box-shadow: none;
+    margin: 9px 0;
+}
+.web-page .page9-list ul li img{
+    margin: 0 39px;
+
+    overflow: visible;
+}
+.web-page .page9-list ul li.width img{margin: 0 auto;}
+.web-page .page9-list ul li span{
+    overflow: hidden;
+    display: block;
+    font-size: 24px;
+    color: #213040;
+    text-align: center;
+}
+.web-page .btn{
+    overflow: hidden;
+    font-size: 24px;
+    text-align: center;
+    margin: 20px auto 80px auto;
+    background: #952f2e;
+    width: 184px;
+    height: 53px;
+    line-height: 53px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    cursor: pointer;
+}
+.web-page .btn a{color: #fff;text-decoration: none;}
+.web-page .page10-con{
+    overflow: hidden;
+    width: 100%;
+    height: 432px;
+    background: url("//img.getfc.com.cn/source/www/zt/supercar/neiye-bg10.png?0410") no-repeat left 120px;
+    background-size: auto 275px;
+}
+.web-page .page10-con img{margin: 84px 0 50px 0}
+.web-page .page10-con span{
+    overflow: hidden;
+    display: block;
+    color: #090909;
+    font-size: 35px;
+}
+.web-brand{
+    background:url(//img.getfc.com.cn/source/www/zt/campaign1802/p-con-bg01.jpg) no-repeat;
+    width: 100%;
+    height: 620px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 54px;
+}
+.web-brand ul li{
+    float: left;
+    opacity: 0.5;
+    text-align: center;
+    width: 16.6%;
+}
+.web-brand .brand-title{
+    font-size: 20px;
+    color: #f3dac1;
+    margin-bottom: 10px;
+}
+.web-brand .brandd-title{
+    font-size: 40px;
+    color: #fff;
+}
+.web-brand .item-1{
+    margin-top: 200px;
+}
+.web-brand .brand-detail{
+    color: #fff;
+    font-size: 16px;
+}
+.web-brand span.bg-icon_02 {
+    margin-bottom: 32px;
+    display: inline-block;
+    width: 70px; height: 70px;
+    background: url(//img.getfc.com.cn/source/www/zt/campaign1802/css_sprites.png) -94px -192px;
+}
+.web-brand span.bg-icon_03 {
+    margin-bottom: 32px;
+    display: inline-block;
+    width: 70px; height: 70px;
+    background: url(//img.getfc.com.cn/source/www/zt/campaign1802/css_sprites.png) -184px -192px;
+}
+.web-brand ul li.active span.bg-icon_03 {
+    background: url(//img.getfc.com.cn/source/www/zt/annual-interest/icon4-4-pc.png) no-repeat;
+}
+
+.web-brand span.bg-icon_04 {
+    margin-bottom: 32px;
+    display: inline-block;
+    width: 70px; height: 70px;
+    background: url(//img.getfc.com.cn/source/www/zt/campaign1802/css_sprites.png) -274px -192px;
+}
+
+.web-brand ul li.active span.bg-icon_04 {
+    background: url(//img.getfc.com.cn/source/www/zt/annual-interest/icon5-5-pc.png) no-repeat;
+}
+
+.web-brand span.bg-icon_05 {
+    margin-bottom: 32px;
+    display: inline-block;
+    width: 70px; height: 70px;
+    background: url(//img.getfc.com.cn/source/www/zt/campaign1802/css_sprites.png) -366px -10px;
+}
+.web-brand ul li.active span.bg-icon_05 {
+    background: url(//img.getfc.com.cn/source/www/zt/annual-interest/icon6-6-pc.png) no-repeat;
+}
+.bg-p_img_03 {
+    display: inline-block;
+    width: 28px; height: 28px;
+    background: url(//img.getfc.com.cn/source/www/zt/campaign1802/css_sprites.png) -366px -190px;
+    background-size: 446px 299px;
+    vertical-align: middle;
+    margin: 0 20px;
+}
+.web-brand span.bg-p_img_05 {
+    margin-bottom: 12px;
+    display: inline-block;
+    width: 64px; height: 97px;
+    background: url(//img.getfc.com.cn/source/www/zt/campaign1802/css_sprites.png) -10px -192px;
+}
+
+.web-brand ul li.active span.bg-p_img_05 {
+    background: url(//img.getfc.com.cn/source/www/zt/annual-interest/icon3-3-pc.png) no-repeat;
+}
+.web-brand span.bg-icon_01 {
+    margin-bottom: 32px;
+    display: inline-block;
+    width: 70px; height: 70px;
+    background: url(//img.getfc.com.cn/source/www/zt/campaign1802/css_sprites.png) -366px -100px;
+}
+.web-brand ul li.active{
+    background: url(//img.getfc.com.cn/source/www/zt/campaign1802/p-img-07.png) no-repeat;
+    opacity: 1;
+    width: 200px;
+    height: 390px;
+    background-size: 200px 390px;
+    position: relative;
+    top: -150px;
+    padding-top: 85px;
+    cursor: pointer;
+}
+.add-page{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    width: 83%;
+    margin: 0 auto;
+    position: relative;
+}
+.add-page.bg-width{
+    display: block;
+    width: 100%;
+    background: #f7f7f7;
+    padding-bottom: 100px;
+}
+.add-page .list{
+    overflow: hidden;
+    width: 50%;
+}
+.add-page .list .name{
+    overflow: hidden;
+    font-size: 16px;
+    color: #999;
+    margin-bottom: 10px;
+}
+.add-page .list ul{
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.add-page .list ul li{
+    overflow: hidden;
+    list-style: none;
+    width: 100px;
+    height: 90px;
+    margin-right: 13px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+.add-page .list ul li a{color: #888}
+.add-page .list ul li p{display: none;margin-top: 5px}
+.add-page .list ul li .item{
+    overflow: hidden;
+    width: 100%;
+    height: 60px;
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.add-page .list ul li .item.past{background: #213040;color: #fff}
+.add-page .list ul li .item.next{background: #f6dcdc;}
+.add-page .list ul li .item.checked{background: #e51816;color: #fff}
+.add-page .list ul li .arrow-bottom{
+    overflow: hidden;
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 10px solid #e51816;
+    border-right: 15px solid rgba(0,0,0,0);
+    border-bottom: 0 solid rgba(0,0,0,0);
+    border-left: 15px solid rgba(0,0,0,0);
+    margin-left: 35px;
+}
+.add-page .list ul li .next-start{
+    overflow: hidden;
+    display: block;
+    border: none;
+    font-size: 16px;
+    line-height: 16px;
+}
+.add-page .add-nav{
+    overflow: hidden;
+    width: 100%;
+    margin: 50px 0 45px;
+}
+.add-page .add-nav ul{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-page .add-nav ul li{
+    overflow: hidden;
+    display: block;
+    padding: 0 20px;
+    color: #666;
+    font-size: 18px;
+    line-height: 19px;
+    border-right: solid 1px #ccc;
+    font-weight: bold;
+    cursor: pointer;
+}
+.add-page .add-nav ul li.on{color: #e51816}
+.add-page .add-nav ul li:last-child{border-right: none}
+/*轮播*/
+.slider-con{
+    overflow: hidden;
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+.swiper-container {
+    position: static;
+    width: 100%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-container .arrow-left {
+    background: url("//img.getfc.com.cn/source/www/zt/D1/icon-pc-l.png") no-repeat;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    margin-top: -25px;
+    width: 54px;
+    height: 54px;
+    z-index: 10;
+    cursor: pointer;
+}
+.swiper-container .arrow-right {
+    background: url("//img.getfc.com.cn/source/www/zt/D1/icon-pc-r.png") no-repeat left bottom;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -25px;
+    width: 54px;
+    height: 54px;
+    z-index: 10;
+    cursor: pointer;
+}
+.swiper-slide img{margin: 0 auto}
+.gallery-top {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 12px;
+}
+.gallery-thumbs {
+    width: 920px;
+    height: 120px;
+    box-sizing: border-box;
+}
+.gallery-thumbs .swiper-slide {
+    width: 220px;
+    //opacity: 1;
+    cursor: pointer;
+}
+.gallery-thumbs .swiper-slide img{
+    width: 220px;
+}
+.gallery-thumbs .swiper-slide-active {
+    //opacity: 1;
+}
+
+/*弹窗*/
+.tc-hide{
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+}
+.masking{
+    display: block;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+}
+.tc-con{
+    overflow: hidden;
+    width: 800px;
+    margin: 100px auto 0 auto;
+    background: #fff;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    padding-bottom: 30px;
+}
+.tc-con01{
+    overflow: hidden;
+    width: 1200px;
+    margin: 100px auto 0 auto;
+    background: #fff;
+    padding: 50px 0;
+    position: relative;
+}
+.tc-con01.hbs{padding: 20px 0;margin-top: 80px;width: 1140px}
+.tc-con01.dj{margin-top: 50px}
+.tc-con02{
+    overflow: hidden;
+    width: 488px;
+    margin: 350px auto 0 auto;
+    background: #fff;
+    padding: 45px 0 45px;
+}
+.tc-con02.hbs{
+    background: url("//img.getfc.com.cn/source/www/zt/D1-hbs/bg.jpg") no-repeat;
+    height: 216px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.tc-con02.rus{
+    width: 448px;
+    height: 226px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tc-con02.rus .item{overflow: hidden}
+.tc-con02.rus .tc-close{
+    position: absolute;
+    right: 10px;
+    top: -20px;
+}
+.tc-con03{
+    overflow: hidden;
+    width: 488px;
+    margin: 350px auto 0 auto;
+    background: #fff;
+    padding: 45px 0 45px;
+}
+.tc-con .scroll{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 500px;
+}
+.tc-con span{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 36px;
+    padding: 0 20px;
+    text-align: justify;
+}
+.tc-con span.center{
+    text-align: center;
+    font-size: 24px;
+    padding: 20px 0;
+    color: #e51816;
+    border-bottom: solid 1px #e51816;
+    margin-bottom: 20px;
+    position: relative;
+}
+.tc-con span.close{
+    overflow: hidden;
+    background: url("//img.getfc.com.cn/source/www/zt/supercar/X.png") no-repeat;
+    width: 21px;
+    height: 21px;
+    display: inline;
+    position: absolute;
+    right: 0;
+    top: 34px;
+    cursor: pointer;
+}
+.tc-con p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0 20px;
+    text-align: justify;
+    text-indent: 16px;
+}
+.tc-con p.color{color: #e51816;font-weight: bold}
+.tc-con01 .tc-close{
+    overflow: hidden;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+.tc-con01 .title{
+    overflow: hidden;
+    width: 100%;
+}
+.tc-con01 .title img{
+    margin: 0 auto;
+}
+.tc-con01 .title span{
+    overflow: hidden;
+    display: block;
+    font-size: 28px;
+    color: #343031;
+    text-align: center;
+    vertical-align: top;
+    font-weight: bold;
+}
+.tc-con01 .title p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    margin: 10px 0 30px 0;
+}
+.tc-con01.hbs .title p{margin-bottom: 10px}
+.tc-con01 .layout{
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+}
+.tc-con01 .layout .list{
+    overflow: hidden;
+    width: 100%;
+}
+.tc-con01 .layout .list#left{margin-left: 60px;}
+.tc-con01 .layout .list#right{margin-left: 45px;}
+.tc-con01 .layout .list .list-tit{
+    overflow: hidden;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+}
+.tc-con01 .layout .item{
+    overflow: hidden;
+    width: 49.8%;
+    border-right: solid 1px #ccc;
+}
+.tc-con01 .layout .item.border{border-right: none;padding-left: 10px}
+.tc-con01 .layout .item ul{
+    overflow: hidden;
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.tc-con01 .layout .item ul li{
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.tc-con01 .layout .item ul li .topic{
+    overflow: hidden;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: 57px;
+}
+.tc-con01 .layout .item ul li .answer{
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+.tc-con01 .layout .item ul li .answer .ans-list{
+    overflow: hidden;
+    width: 57px;
+    height: 42px;
+}
+.tc-con01 .layout .item ul li .answer .ans-list.yes{
+    background: url("//img.getfc.com.cn/source/www/zt/D1-hz/yes.png") no-repeat 19px bottom;
+}
+.tc-con01 .layout .item ul li .answer .ans-list.no{
+    background: url("//img.getfc.com.cn/source/www/zt/D1-hz/no.png") no-repeat 19px bottom;
+}
+.tc-con01 .layout .item ul li .answer .list{
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    height: 42px;
+    line-height: 42px;
+    font-size: 16px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.tc-con01 .layout .item ul li .answer .list:last-child{margin-right: 0}
+.tc-con01 .layout .item ul li .answer .list span{
+    overflow: hidden;
+    display: block;
+    width: 34px;
+    background: #c9c6c6;
+    text-align: center;
+    color: #fff;
+}
+.tc-con01 .layout .item ul li .answer .list.checked span{background: #e51816}
+.tc-con01 .layout .item ul li .answer .list p{
+    overflow: hidden;
+    display: block;
+    width: 189px;
+    background: #eee;
+    text-align: center;
+}
+.tc-con01 .layout .item-hbs{
+    overflow: hidden;
+    width: 500px;
+    height: 393px;
+    background: url("//img.getfc.com.cn/source/www/zt/D1-hbs/tc-bg.png") no-repeat left center;
+    margin: 0 auto;
+    position: relative;
+}
+.tc-con01 .layout .item-hbs .item-list{
+    list-style: none;
+    position: absolute;
+    cursor: pointer;
+    padding-top: 30px;
+}
+.tc-con01 .layout #right .item-hbs .item-list {
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tc-con01 .layout .item-hbs .item-list img.checked{
+    position: absolute;
+    z-index: 11;
+    display: none;
+}
+.tc-con01 .layout .item-hbs .item-list.margin01{
+    top: 3px;
+    left: 95px;
+    z-index: 1;
+}
+.tc-con01 .layout .item-hbs .item-list.margin02{
+    top: 14px;
+    left: 158px;
+    z-index: 1;
+}
+.tc-con01 .layout .item-hbs .item-list.margin03{
+    top: 14px;
+    left: 257px;
+    z-index: 1;
+}
+.tc-con01 .layout .item-hbs .item-list.margin04{
+    top: 20px;
+    left: 370px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin05{
+    top: 47px;
+    left: 39px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin06{
+    top: 76px;
+    left: 121px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin07{
+    top: 56px;
+    left: 208px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin08{
+    top: 73px;
+    left: 274px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin09{
+    top: 86px;
+    left: 369px;
+    z-index: 1;
+}
+.tc-con01 .layout .item-hbs .item-list.margin10{
+    top: 114px;
+    left: 33px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin11{
+    top: 135px;
+    left: 114px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin12{
+    top: 147px;
+    left: 215px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin13{
+    top: 126px;
+    left: 311px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin14{
+    top: 128px;
+    right: 35px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin14 img{float: right}
+.tc-con01 .layout .item-hbs .item-list.margin15{
+    bottom: 100px;
+    left: 44px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin16{
+    bottom: 121px;
+    left: 116px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin17{
+    bottom: 80px;
+    left: 238px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin18{
+    bottom: 118px;
+    left: 341px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin19{
+    bottom: 109px;
+    right: 63px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin20{
+    bottom: 51px;
+    left: 31px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin21{
+    bottom: 47px;
+    left: 109px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin22{
+    bottom: 57px;
+    left: 174px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin23{
+    bottom: 53px;
+    left: 238px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin24{
+    bottom: 58px;
+    left: 370px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin25{
+    bottom: 20px;
+    left: 164px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin26{
+    top: 66px;
+    left: 37px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin27{
+    top: 37px;
+    left: 107px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin28{
+    top: 26px;
+    left: 174px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin29{
+    padding-top: 0;
+    top: 26px;
+    left: 231px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin30{
+    top: 26px;
+    left: 367px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin31{
+    top: 120px;
+    left: 102px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin32{
+    top: 92px;
+    left: 182px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin33{
+    top: 114px;
+    left: 275px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin34{
+    top: 87px;
+    left: 360px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin35{
+    top: 170px;
+    left: 24px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin36{
+    top: 154px;
+    left: 166px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin37{
+    top: 142px;
+    left: 422px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin38{
+    top: 227px;
+    left: 27px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin39{
+    top: 204px;
+    left: 127px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin40{
+    top: 241px;
+    left: 185px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin41{
+    top: 190px;
+    left: 230px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin42{
+    bottom: 89px;
+    left: 274px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin43{
+    bottom: 104px;
+    left: 339px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin44{
+    bottom: 124px;
+    left: 393px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin45{
+    bottom: 38px;
+    left: 42px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin46{
+    bottom: 31px;
+    left: 113px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin47{
+    bottom: 15px;
+    left: 201px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin48{
+    bottom: 21px;
+    left: 268px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin49{
+    bottom: 25px;
+    left: 360px;
+}
+.tc-con01 .layout .item-hbs .item-list.margin50{
+    bottom: 67px;
+    left: 399px;
+}
+.tc-con01 .layout .item-hbs .item-list .explain{
+    overflow: hidden;
+    width: 128px;
+    height: 43px;
+    background: url("//img.getfc.com.cn/source/www/zt/D1-hbs/icon-bg.png") no-repeat;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 34px;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    display: none;
+}
+.tc-con01 .layout .item-hbs .item-list.margin14 .explain{background: url("//img.getfc.com.cn/source/www/zt/D1-hbs/icon-bg01.png") no-repeat;right: 0}
+.tc-con01 .layout .item-hbs .item-list.margin19 .explain{background: url("//img.getfc.com.cn/source/www/zt/D1-hbs/icon-bg01.png") no-repeat;right: 0}
+.tc-con01 .layout .item-hbs .item-list:hover .explain{display: block}
+.tc-con01 .layout .item-rus{
+    overflow: hidden;
+    width: 255px;
+    height: 379px;
+    box-shadow: 0 0 15px rgba(68,75,80,.1);
+    margin: 15px;
+    border-radius: 4px;
+}
+.tc-con01 .layout .item-rus .item-list{
+    overflow: hidden;
+    position: relative;
+}
+.tc-con01 .layout .item-rus .item-list .img-con{
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    height: 35px;
+    width: 100%;
+    background: rgba(0,0,0,.6);
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.tc-con01 .layout .item-rus .item-list01{
+    overflow: hidden;
+}
+.tc-con01 .layout .item-rus .item-list01 span{
+    overflow: hidden;
+    display: block;
+    margin: 16px auto 10px auto;
+    background: url("//img.getfc.com.cn/source/www/zt/D1-rus/icon.png") no-repeat;
+    width: 24px;
+    height: 23px;
+}
+.tc-con01 .layout .item-rus .item-list01 span.check{background: url("//img.getfc.com.cn/source/www/zt/D1-rus/icon-hover.png") no-repeat;}
+.tc-con01 .layout .item-rus .item-list01 a{
+    overflow: hidden;
+    display: block;
+    width: 160px;
+    height: 46px;
+    line-height: 46px;
+    border-radius: 23px;
+    background: #9e0322;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: none;
+    cursor: pointer;
+}
+.tc-slider{
+    overflow: hidden;
+    width: 1010px;
+    margin: 0 auto;
+    position: relative;
+}
+.tc-slider ul li{float: left}
+.slider-nav {
+     overflow: hidden;
+     position: absolute;
+     top:30%;
+     z-index: 11;
+     width: 100%;
+ }
+.slider-nav .prev,.slider-nav .next {
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    background: url("//img.getfc.com.cn/source/www/zt/D1-rus/arrow-left.png") no-repeat;
+    width: 28px;
+    height: 49px;
+    float: left;
+    opacity: .5;
+}
+.slider-nav .next{
+    background: url("//img.getfc.com.cn/source/www/zt/D1-rus/arrow-right.png") no-repeat;
+    float: right;
+}
+.tc-con01 .layout .explain-rus{
+    overflow: hidden;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    color: #999;
+    margin-top: 15px;
+}
+.tc-con01 .explain-words{
+    overflow: hidden;
+    font-size: 18px;
+    line-height: 30px;
+    width: 88%;
+    height: 82px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: dashed 1px #cac8c8;
+    margin: 20px auto 0 auto;
+    padding: 0 25px;
+}
+.tc-con01 .explain-words p{font-weight: bold;}
+.tc-con01 .btn{
+    overflow: hidden;
+    width: 190px;
+    height: 46px;
+    line-height: 46px;
+    background: #9e0322;
+    margin: 30px auto 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.tc-con01.hbs .btn{margin-top: 20px}
+.tc-con01 .btn a{
+    overflow: hidden;
+    display: block;
+    color: #fff;
+    font-size: 18px;
+}
+.tc-con02 span{
+    overflow: hidden;
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.tc-con02.rus span{font-size: 28px;margin-bottom: 5px}
+.tc-con02 p{
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.tc-con02.hbs p{color: #e51816}
+.tc-con02.rus p{font-size: 24px}
+.tc-con02 p span{
+    display: inline;
+    font-weight: normal;
+    font-size: 16px;
+    margin-bottom: 0;
+    color: #e51816;
+}
+#suc_tc .tc-close{
+    overflow: hidden;
+    width: 46px;
+    margin: 30px auto 0 auto;
+    cursor: pointer;
+}
+@media screen and (max-width: 1280px){
+    .inner {width: 90%;}
+    .tc-con01 {width: 1000px}
+    .tc-con01 .layout{justify-content: flex-start}
+    .tc-con01 .layout .item{border-right: none}
+    .tc-con01 .layout .item ul li .answer .list p{width: 165px}
+    .tc-con01 .layout .item ul li .topic{font-size: 16px}
+    .tc-con01 .layout .item.border{padding-left: 0}
+    .tc-slider{width: 1000px}
+}

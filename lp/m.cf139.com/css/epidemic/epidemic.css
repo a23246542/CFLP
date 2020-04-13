@@ -1,0 +1,720 @@
+body,html{
+    background: -webkit-linear-gradient(bottom, #11b6c1 0%, #2584ba 100%);
+    background: -o-linear-gradient(bottom, #11b6c1 0%, #2584ba 100%);
+    background: -moz-linear-gradient(bottom, #11b6c1 0%, #2584ba 100%);
+    background: linear-gradient(to bottom, #11b6c1 0%, #2584ba 100%);
+    color: #fff;
+}
+img{display: block;overflow: hidden}
+.inner{width: 100%; margin: 0 auto; position: relative}
+#main{
+    background: url("https://img.getfc.com.cn/source/www/zt/lp-img/mobile/epidemic/bg.png") no-repeat top center;
+    background-size: 7.5rem 7.61rem;
+    width: 100%;
+    padding-bottom: 1.4rem;
+}
+.web-banner{
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+.web-banner img {
+    width: 5.72rem;
+    margin: 0 auto;
+    padding-top: 1.16rem
+}
+.web-page{overflow: hidden;margin-top: 1rem}
+.web-page .layout{
+    overflow: hidden;
+}
+.web-page .layout .item{
+    overflow: hidden;
+    width: 6.26rem;
+    background: #fff;
+    border-radius: .2rem;
+    margin: 0 auto .9rem;
+    box-shadow: .1rem .1rem .4rem rgba(9,81,90,.5);
+}
+.web-page .layout .item .title{
+    overflow: hidden;
+    font-size: .38rem;
+    font-weight: bold;
+    text-align: center;
+    height: .98rem;
+    line-height: .98rem;
+}
+.web-page .layout .item .title.bgColor{background: #0c656f}
+.web-page .layout .item .title.bgColor1{background: #ec666b}
+.web-page .layout .item .title em{display: inline;color: #e7ec66}
+.web-page .dataTime{
+    overflow: hidden;
+    width: 5.6rem;
+    margin: .45rem auto .5rem;
+    border: solid .02rem #94bbc0;
+    border-right: none;
+    border-bottom: none;
+}
+.web-page .dataTime .timeTit,.web-page .dataTime ul{
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: solid .02rem #94bbc0;
+}
+.web-page .dataTime .timeTit{background: #c3eff4;}
+.web-page .dataTime .timeTit span,.web-page .dataTime ul li{
+    overflow: hidden;
+    color: #0c656f;
+    font-size: .26rem;
+    width: .78rem;
+    border-right: solid .02rem #94bbc0;
+    text-align: center;
+    height: .48rem;
+    line-height: .48rem;
+}
+.web-page .dataTime ul{
+    flex-wrap: wrap;
+    border-bottom: none;
+}
+.web-page .dataTime ul li{
+    height: .8rem;
+    line-height: .8rem;
+    border-bottom: solid .02rem #94bbc0;
+    position: relative;
+}
+.web-page .dataTime ul li.checked{background: #189aa9;color: #fff}
+.web-page .dataTime ul li span{
+    overflow: hidden;
+    position: relative;
+    z-index: 9;
+}
+.web-page .dataTime ul li em{
+    overflow: hidden;
+    background: url("https://img.getfc.com.cn/source/www/zt/lp-img/mobile/epidemic/icon-yes.png") no-repeat center;
+    background-size: 100% 100%;
+    width: .37rem;
+    height: .32rem;
+    position: absolute;
+    bottom: .05rem;
+    left: .26rem;
+    z-index: 0;
+    display: none;
+}
+.web-page .dataTime ul li.checked em{display: block}
+.web-page .gameData{
+    overflow: hidden;
+}
+.web-page .gameData ul{
+    overflow: hidden;
+    display: block;
+    padding: .35rem 0;
+    margin: 0 .45rem;
+    border-bottom: solid .02rem #d7dcdc;
+}
+.web-page .gameData ul li{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: .23rem 0;
+}
+.web-page .gameData ul li p,
+.web-page .gameData ul li span,
+.web-page .gameData ul li a{
+    overflow: hidden;
+    font-size: .26rem;
+    color: #0c656f;
+}
+.web-page .gameData ul li p{
+    width: .6rem;
+}
+.web-page .gameData ul li a{
+    width: 1.4rem;
+    height: .46rem;
+    line-height: .46rem;
+    text-align: center;
+    color: #fff;
+    font-size: .26rem;
+    border-radius: .06rem;
+    background: #0c656f;
+}
+.web-page .gameData ul li a.checked{
+    background: #cad5d6;
+}
+.web-page .gameData ul li a.gameOnce{
+    background: #189aa9;
+}
+.web-page .gameData .explain {
+    overflow: hidden;
+    font-size: .26rem;
+    color: #e25d62;
+    text-align: center;
+    width: 100%;
+    margin: .25rem 0 .6rem;
+}
+.web-page .btn{
+    overflow: hidden;
+    background: url("https://img.getfc.com.cn/source/www/zt/lp-img/mobile/epidemic/btn-bg.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 6.34rem;
+    height: 1.74rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: .5rem 0 0 .1rem;
+    cursor: pointer;
+}
+.web-page .btn span{
+    overflow: hidden;
+    font-size: .34rem;
+    line-height: 1rem;
+    padding-right: .4rem;
+}
+.web-page .btn img{margin: 70px 0 0 30px}
+.bot-fixed {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    width: 7.5rem;
+    background: rgb(26, 71, 84);
+    padding-bottom: env(safe-area-inset-bottom);
+}
+.bot-fixed ul {
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 1.4rem;
+}
+.bot-fixed ul li {
+    overflow: hidden;
+    list-style: none;
+    margin: 0 .16rem;
+    width: 3rem;
+    height: .8rem;
+    border-radius: .4rem;
+    box-shadow: 0 0 .12rem rgba(0,0,0,.24);
+}
+.bot-fixed ul li:first-child{
+    background: -webkit-linear-gradient(-90deg, #377c87 0%, #0e626f 100%);
+    background: -o-linear-gradient(-90deg, #377c87 0%, #0e626f 100%);
+    background: -moz-linear-gradient(-90deg, #377c87 0%, #0e626f 100%);
+    background: linear-gradient(90deg, #377c87 0%, #0e626f 100%);
+}
+.bot-fixed ul li:last-child{
+    background: -webkit-linear-gradient(-90deg, #e27277 0%, #dc565b 100%);
+    background: -o-linear-gradient(-90deg, #e27277 0%, #dc565b 100%);
+    background: -moz-linear-gradient(-90deg, #e27277 0%, #dc565b 100%);
+    background: linear-gradient(90deg, #e27277 0%, #dc565b 100%);
+}
+.bot-fixed ul li a {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: .28rem;
+    color: #fff;
+    height: .8rem;
+    font-weight: bold;
+}
+/*弹窗*/
+.tc-hide,.tc-game{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    line-height: 1.8;
+}
+.tc-game {
+    background: url("https://img.getfc.com.cn/source/www/zt/lp-img/mobile/epidemic/bg1.jpg") no-repeat center;
+    background-size: 100% 100%;
+}
+.masking{
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+}
+.tc-hide .backClose{
+    width: .65rem;
+    height: .66rem;
+    margin: .4rem auto 0;
+}
+.tc-hide .backClose img{width: 100%}
+.m-popCon{
+    width: 7.5rem;
+    position: fixed;
+    z-index: 99999999;
+}
+.m-activity {
+    border-radius: .2rem;
+    padding: .4rem 0;
+    width: 90%;
+    background: #fff;
+    margin: 0 auto;
+}
+.m-activity .title{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.m-activity .title span{
+    overflow: hidden;
+    font-size: .32rem;
+    font-weight: bold;
+    color: #0c656f;
+    margin: 0 .3rem;
+}
+.m-activity .title em{
+    overflow: hidden;
+    height: 1px;
+    width: 2rem;
+    background: #0c656f;
+}
+.m-activity .activeCon{
+    overflow-y: scroll;
+    max-height: 6rem;
+    margin: .35rem .6rem 0;
+}
+.m-activity .activeCon p{
+    overflow: hidden;
+    display: block;
+    font-size: .26rem;
+    color: #333;
+    line-height: .38rem;
+}
+.m-activity .activeCon p em{
+    display: inline;
+    color: #e25d62;
+    font-weight: bold;
+}
+.m-activity .activeCon .marginBottom{
+    margin-bottom: .3rem
+}
+.m-activity .activeCon ul{margin-bottom: .3rem}
+.m-activity .activeCon li{
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.m-activity .activeCon li p:first-child{font-weight: bold}
+.m-activity .activeCon ul:last-child li{margin-bottom: .4rem}
+.m-activity .activeCon ul:last-child li:first-child{margin-bottom: 0}
+.m-activity .activeCon ul:last-child li p:first-child{font-weight: normal}
+.m-activity .activeCon ul:last-child li:first-child p:first-child{font-weight: bold}
+.tc-game .close{
+    position: absolute;
+    top: .3rem;
+    right: .3rem;
+    z-index: 9;
+    width: .58rem;
+}
+.tc-game .close img{width: 100%}
+.tc-game .title{
+    overflow: hidden;
+    font-size: .32rem;
+    text-align: center;
+    margin: 1.7rem 0 .2rem;
+}
+.tc-game .title em{display: inline;color: #e7ec66}
+.tc-game .stroke{
+    overflow: hidden;
+    background: rgba(255,255,255,.3);
+    width: 2.74rem;
+    height: 2rem;
+    margin: 0 auto;
+    border-radius: .2rem;
+    box-shadow: .15rem .3rem .4rem rgba(9,81,90,.5);
+}
+.tc-game .countdown{
+    overflow: hidden;
+    width: 2.6rem;
+    height: 1.86rem;
+    border-radius: .2rem;
+    background: #fff;
+    margin: .07rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.tc-game .countdown p,.tc-game .countdown span{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    color: #0c656f;
+    font-size: .36rem;
+}
+.tc-game .countdown span{
+    font-size: .8rem;
+    font-weight: bold;
+    line-height: .84rem;
+}
+.tc-game .gameCon{
+    width: 6.08rem;
+    height: 4.97rem;
+    margin: 1rem auto 0;
+    position: relative;
+}
+.tc-game .gameCon .ground{
+    background: url("https://img.getfc.com.cn/source/www/zt/lp-img/mobile/epidemic/gameBg.png") no-repeat center;
+    background-size: 6.08rem 4.97rem;
+    width: 100%;
+    height: 4.97rem;
+}
+.tc-game .gameCon #hammer{
+    background: url("https://img.getfc.com.cn/source/www/zt/lp-img/mobile/epidemic/hammer.png") no-repeat center;
+    background-size: 100% 100%;
+    position: fixed;
+    z-index: 9999;
+    width: 1.57rem;
+    height: 1.4rem;
+    display: none;
+}
+.tc-game .gameCon #hammer.hit{
+    background: url("https://img.getfc.com.cn/source/www/zt/lp-img/mobile/epidemic/hit.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 1.81rem;
+    height: 1.44rem;
+    display: none;
+}
+.gameBtn{
+    overflow: hidden;
+    background: url("https://img.getfc.com.cn/source/www/zt/lp-img/mobile/epidemic/btn-bg.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 6.34rem;
+    height: 1.74rem;
+    text-align: center;
+    margin: .5rem 0 0 0;
+    cursor: pointer;
+    font-size: .34rem;
+    line-height: 1rem;
+}
+.epidemic{
+    overflow: hidden;
+    position: absolute;
+    z-index: 9;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 100%;
+    cursor: pointer;
+    visibility: hidden;
+}
+#epidemic1{
+    left: .15rem;
+    top: -.3rem;
+}
+.epidemic11{
+    left: .15rem!important;
+    top: -.25rem!important;
+}
+#epidemic2{
+    left: 2.35rem;
+    top: -.3rem;
+}
+.epidemic22{
+    left: 2.35rem!important;
+    top: -.25rem!important;
+}
+#epidemic3{
+    right: .15rem;
+    top: -.3rem;
+}
+.epidemic33{
+    right: .15rem!important;
+    top: -.25rem!important;
+}
+#epidemic4{
+    left: .15rem;
+    top: 1.55rem;
+}
+.epidemic44{
+    left: .15rem!important;
+    top: 1.55rem!important;
+}
+#epidemic5{
+    left: 2.35rem;
+    top: 1.5rem;
+}
+.epidemic55{
+    left: 2.35rem!important;
+    top: 1.55rem!important;
+}
+#epidemic6{
+    right: .15rem;
+    top: 1.55rem;
+}
+.epidemic66{
+    right: .15rem!important;
+    top: 1.6rem!important;
+}
+#epidemic7{
+    left: .15rem;
+    bottom: .2rem;
+}
+.epidemic77{
+    left: .15rem!important;
+    bottom: .15rem!important;
+}
+#epidemic8{
+    left: 2.35rem;
+    bottom: .2rem;
+}
+.epidemic88{
+    left: 2.35rem!important;
+    bottom: .15rem!important;
+}
+#epidemic9{
+    right: .15rem;
+    bottom: .2rem;
+}
+.epidemic99{
+    right: .15rem!important;
+    bottom: .15rem!important;
+}
+.epidemic span{
+    overflow: hidden;
+    display: block;
+    background: url('https://img.getfc.com.cn/source/www/zt/lp-img/mobile/epidemic/css_sprites.png') no-repeat;
+    background-size: 6.4rem 4.8rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    position: relative;
+    z-index: 1;
+}
+#epidemic1 span,#epidemic6 span{
+    background-position: -.1rem -3.3rem;
+}
+.epidemic11 span,.epidemic66 span{
+    background-position:  -4.9rem -.1rem!important;
+}
+#epidemic2 span,#epidemic7 span{
+    background-position:  -1.7rem -3.3rem;
+}
+.epidemic22 span,.epidemic77 span{
+    background-position: -3.3rem -3.3rem!important;
+}
+#epidemic3 span,#epidemic8 span{
+    background-position: -1.7rem -.1rem;
+}
+.epidemic33 span,.epidemic88 span{
+    background-position: -.1rem -.1rem!important;
+}
+#epidemic4 span,#epidemic9 span{
+    background-position: -1.7rem -1.7rem;
+}
+.epidemic44 span,.epidemic99 span{
+    background-position: -.1rem -1.7rem!important;
+}
+#epidemic5 span {
+    background-position: -3.3rem -1.7rem;
+}
+.epidemic55 span {
+    background-position: -3.3rem -.1rem!important;
+}
+.m-popCon .popColor{
+    overflow: hidden;
+    border-radius: .2rem;
+    padding: .8rem 0;
+    width: 84%;
+    background: #fff;
+    margin: 0 auto;
+}
+.m-popCon .pop-tit{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    margin: 0 0 .3rem;
+    font-size: .36rem;
+    font-weight: bolder;
+    color: #333;
+}
+.m-popCon .popItem p{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-size: .28rem;
+    color: #0c656f;
+    width: 90%;
+    margin: 0 auto;
+}
+.m-popCon .popItem span,.m-popCon .popItem a{
+    overflow: hidden;
+    display: block;
+    width: 3rem;
+    height: .8rem;
+    line-height: .8rem;
+    background: #ec666b;
+    color: #fff;
+    font-size: .32rem;
+    text-align: center;
+    border-radius: .2rem;
+    margin: .3rem auto 0;
+}
+.m-popCon .numItem{overflow: hidden}
+.m-popCon .numItem p,.m-popCon .numItem a{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-size: .32rem;
+    color: #0c656f;
+}
+.m-popCon .numItem p.color{color: #e25d62}
+.m-popCon .numItem a{
+    font-size: .34rem;
+    color: #fff;
+    width: 3.9rem;
+    height: 1.05rem;
+    line-height: 1.05rem;
+    border-radius: .52rem;
+    margin: 0 auto;
+    background: -webkit-linear-gradient(-90deg, #e27277 0%, #dc565b 100%);
+    background: -o-linear-gradient(-90deg, #e27277 0%, #dc565b 100%);
+    background: -moz-linear-gradient(-90deg, #e27277 0%, #dc565b 100%);
+    background: linear-gradient(90deg, #e27277 0%, #dc565b 100%);
+    box-shadow: 0 0 .12rem rgba(0,0,0,.24);
+}
+.m-popCon .numItem1 {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    background: url("https://img.getfc.com.cn/source/www/zt/lp-img/mobile/epidemic/tc-bg.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 3.89rem;
+    height: 2.49rem;
+    margin: .15rem auto .55rem;
+}
+.m-popCon .numItem1 p,.m-popCon .numItem1 span{
+    overflow: hidden;
+    color: #0c656f;
+    font-size: .34rem;
+    font-weight: bold;
+}
+.m-popCon .numItem1 span{font-size: 1.73rem;line-height: 2.49rem}
+.m-popCon .unopened{width: 5.06rem;margin: 0 auto}
+.m-popCon .bgBack{
+    overflow: hidden;
+    background: url("https://img.getfc.com.cn/source/www/zt/lp-img/mobile/epidemic/red-bg1.png");
+    background-size: 100% 100%;
+    width: 7.5rem;
+    height: 10.16rem;
+    margin-top: -1.5rem;
+}
+.m-popCon .bgBack .backItem{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.m-popCon .bgBack .backItem span,.m-popCon .bgBack .backItem p{
+    overflow: hidden;
+    font-weight: bold;
+    font-size: .28rem;
+}
+.m-popCon .bgBack .backItem span{
+    font-weight: bold;
+    font-size: .4rem;
+}
+.m-popCon .bgBack .backItem:nth-child(3){
+    margin-bottom: .8rem;
+}
+.m-popCon .bgBack .backItem:nth-child(3) p{font-size: .42rem;color: #e7ec66}
+.m-popCon .bgBack .backItem:nth-child(3) span {
+    font-size: 1.18rem;
+    line-height: 1.24rem;
+    color: #e7ec66
+}
+.m-popCon .bgBack .backItem:last-child p {
+    font-size: .28rem;
+    line-height: .42rem
+}
+.m-popCon .start {
+    margin: 1rem 0 3.6rem;
+    height: 1.45rem;
+}
+.m-popCon .start img {
+    width: 3.36rem;
+    margin: 0 auto;
+    animation: fadeIn 1s linear infinite;
+    -moz-animation: fadeIn 1s linear infinite;
+    -webkit-animation: fadeIn 1s linear infinite;
+    -o-animation: fadeIn 1s linear infinite;
+}
+@-webkit-keyframes fadeIn {
+    0% {transform: scale(.95);}
+    50% {transform: scale(1);}
+    100% {transform: scale(.95);}
+}
+@keyframes fadeIn {
+    0% {transform: scale(.95);}
+    50% {transform: scale(1);}
+    100% {transform: scale(.95);}
+}
+.m-popCon .winningCon{
+    overflow: hidden;
+    background: url("https://img.getfc.com.cn/source/www/zt/lp-img/mobile/epidemic/tc-bg1.png") no-repeat center;
+    background-size: 100% 100%;
+    width: 6.3rem;
+    height: 6.5rem;
+    margin: 0 auto;
+}
+.m-popCon .winningCon span{
+    overflow: hidden;
+    display: block;
+    font-size: .36rem;
+    line-height: .4rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin: .8rem .65rem .5rem;
+    padding-bottom: .1rem;
+    border-bottom: solid .02rem #dce1e1;
+}
+.m-popCon .winningCon ul{
+    overflow-y: scroll;
+    max-height: 2rem;
+    margin: 0 .65rem;
+}
+.m-popCon .winningCon ul li{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .25rem;
+}
+.m-popCon .winningCon ul li p{
+    overflow: hidden;
+    font-size: .28rem;
+    color: #333;
+}
+.m-popCon .winningCon ul li p em{display: inline;color: #e25d62}
+.m-popCon .winningCon ul li span{
+    width: 100%;
+    height: 1.75rem;
+    font-size: .32rem;
+    font-weight: normal;
+    margin: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

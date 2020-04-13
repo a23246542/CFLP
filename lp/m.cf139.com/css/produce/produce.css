@@ -1,0 +1,293 @@
+#main{overflow: hidden;width: 100%; margin: 0; padding: 0; color: #333;}
+img{ overflow:hidden;border: none;display: block;}
+.e-header .header{
+    background: none;
+}
+.m-banner{
+    overflow: hidden;
+    width: 100%;
+    background: url("../../images/produce/banner-bg.jpg") no-repeat top center;
+    background-size: 100% 100%;
+    height: 9.32rem;
+    position: relative;
+    z-index: 1;
+}
+.banner-font img{width: 4.06rem;margin: 1.12rem auto 0}
+.btn{
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+.btn a{
+    overflow: hidden;
+    display: block;
+    font-weight: bold;
+    font-size: .3rem;
+    color: #fff;
+    text-align: center;
+}
+.btn a.acc{
+    background: url("../../images/produce/btn-bg.png") no-repeat;
+    background-size: 100% 100%;
+    width: 3.22rem;
+    height: 1.48rem;
+    line-height: .9rem;
+}
+.btn a.register{
+    width: 2.5rem;
+    height: .72rem;
+    line-height: .72rem;
+    border-radius: .1rem;
+    background: #44331f;
+    margin-top: .1rem;
+}
+.m-page{
+    overflow: hidden;
+    position: relative;
+}
+.m-page.pos{
+    position: relative;
+    margin-top: -1.88rem;
+    z-index: 1;
+}
+.m-page.bgColor1{
+    background:linear-gradient(to bottom, #44331f, #6b5d4d);
+    background: -webkit-linear-gradient(bottom, #44331f, #6b5d4d);
+    background: -o-linear-gradient(bottom, #44331f, #6b5d4d);
+    background: -moz-linear-gradient(bottom, #44331f, #6b5d4d);
+    padding-bottom: 1.88rem;
+}
+.m-page.bgColor1.paddingBottom{
+    padding-bottom: .1rem;
+}
+.m-page.bgColor2{
+    position: relative;
+    z-index: 0;
+    margin-top: -1.88rem;
+    padding: 2.35rem 0 .55rem;
+    background:linear-gradient(to bottom, #cccacc, #f1f6f9);
+    background: -webkit-linear-gradient(bottom, #cccacc, #f1f6f9);
+    background: -o-linear-gradient(bottom, #cccacc, #f1f6f9);
+    background: -moz-linear-gradient(bottom, #cccacc, #f1f6f9);
+}
+.m-page.bgColor3{
+    background:linear-gradient(to bottom, #cccacc, #f1f6f9);
+    background: -webkit-linear-gradient(bottom, #cccacc, #f1f6f9);
+    background: -o-linear-gradient(bottom, #cccacc, #f1f6f9);
+    background: -moz-linear-gradient(bottom, #cccacc, #f1f6f9);
+    padding-bottom: .1rem;
+}
+.m-page.pos img{width: 3.72rem;margin: 0 auto}
+.m-page .title {
+    overflow: hidden;
+    margin: .7rem auto 0;
+    text-align: center;
+    width: 7rem;
+}
+.m-page .title .item{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.m-page .title .item img{width: .36rem}
+.m-page .title .item img:last-child{transform: rotate(180deg)}
+.m-page .title .item span{
+    overflow: hidden;
+    font-size: .36rem;
+    font-style: italic;
+    padding: 0 .3rem 0 .2rem;
+    z-index: 1;
+    background:linear-gradient(to bottom, #4e3c24, #cda35c);
+    background: -webkit-linear-gradient(bottom, #4e3c24, #cda35c);
+    background: -o-linear-gradient(bottom, #4e3c24, #cda35c);
+    background: -moz-linear-gradient(bottom, #4e3c24, #cda35c);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.m-page.bgColor1 .title .item span {
+    color: #fff;
+}
+.m-page .title .item span em{
+    display: inline;
+    font-weight: bold;
+    font-style: italic;
+}
+.m-page .title p{
+    overflow: hidden;
+    display: block;
+    width: .35rem;
+    height: .02rem;
+    background: #c5c5c5;
+    margin: .15rem auto 0;
+}
+.m-page.bgColor2 span{
+    overflow: hidden;
+    display: block;
+    font-size: .36rem;
+    font-style: italic;
+    color: #533f26;
+    padding: 0 .3rem;
+    margin-bottom: .1rem;
+    z-index: 1;
+}
+.m-page.bgColor2 span em{
+    display: inline;
+    font-weight: bold;
+    font-style: italic;
+}
+.m-page.bgColor2 p{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    line-height: .36rem;
+    color: #533f26;
+    padding: .18rem .3rem;
+    font-style: italic;
+}
+.m-page .conList {
+    overflow: hidden;
+    margin: .55rem auto .05rem;
+}
+.m-page .conList ul{
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.m-page.bgColor1.paddingBottom .conList ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.m-page .conList ul li {
+    overflow: hidden;
+    list-style: none;
+    display: block;
+    width: 43%;
+    float: left;
+    margin-bottom: .35rem;
+}
+.m-page.bgColor1.paddingBottom .conList ul li{width: 33.333%;margin-bottom: .5rem}
+.m-page .conList ul li:nth-child(odd){padding-left: 7%}
+.m-page.bgColor1.paddingBottom .conList ul li:nth-child(odd){padding-left: 0}
+.m-page .conList ul li:nth-child(even){padding-right: 7%}
+.m-page.bgColor1.paddingBottom .conList ul li:nth-child(even){padding-right: 0}
+.m-page .conList ul li img{width: 1.4rem;margin: 0 auto -.05rem;padding-left: .3rem}
+.m-page.bgColor1.paddingBottom .conList ul li img{width: 1.2rem;padding-left: 0;margin-bottom: .15rem}
+.m-page .conList ul li span{
+    overflow: hidden;
+    display: block;
+    font-weight: bold;
+    font-size: .3rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: .1rem;
+    font-style: italic;
+}
+.m-page.bgColor1.paddingBottom .conList ul li span{font-size: .26rem}
+.m-page .conList ul li p{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    line-height: .36rem;
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+}
+.m-page .conList1 {
+    overflow: hidden;
+    margin: .55rem auto .05rem;
+}
+.m-page .conList1 ul{
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.m-page .conList1 ul li {
+    overflow: hidden;
+    list-style: none;
+    display: block;
+    width: 43%;
+    float: left;
+    margin-bottom: -.05rem;
+}
+.m-page .conList1 ul li:nth-child(odd){padding-left: 7%}
+.m-page .conList1 ul li:nth-child(even){padding-right: 7%}
+.m-page .conList1 ul li img{width: 2.64rem;margin: 0 auto}
+.m-page .conList1 ul li a{
+    overflow: hidden;
+    display: block;
+    font-weight: bold;
+    font-size: .3rem;
+    color: #776d62;
+    text-align: center;
+    background: url("../../images/produce/btn-bg1.png") no-repeat;
+    background-size: 100% 100%;
+    width: 2.9rem;
+    height: 1.36rem;
+    margin: 0 auto;
+    line-height: .8rem;
+}
+.m-page .conList2 {
+    overflow: hidden;
+    margin: .55rem auto .8rem;
+}
+.m-page .conList2 ul{
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.m-page .conList2 ul li {
+    overflow: hidden;
+    list-style: none;
+    display: block;
+    width: 2.18rem;
+    float: left;
+    margin-bottom: -.05rem;
+}
+.m-page .conList2 ul li:nth-child(2){margin: 0 .16rem}
+.m-page .conList2 ul li .item{
+    overflow: hidden;
+    position: relative;
+    margin-bottom: .05rem;
+}
+.m-page .conList2 ul li img{width: 2.18rem;margin: 0 auto}
+.m-page .conList2 ul li span{
+    overflow: hidden;
+    display: block;
+    font-size: .24rem;
+    color: #fff;
+    position: absolute;
+    top: .05rem;
+    left: .1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
