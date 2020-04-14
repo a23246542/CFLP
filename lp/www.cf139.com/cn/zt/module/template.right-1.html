@@ -1,0 +1,51 @@
+<div id="nav-right">
+    <!--<a href="&lt;!&ndash;#echo var='WWW_URL' default=''&ndash;&gt;/cn/zt/supercar-rus.html" target="_blank"><div class="first-icon"><img src="<!--#echo var='IMG_URL' default=''-->/source/www/nav-right/icon-car01.png"/><span>创富 <span class="size">X</span> D1飘移</span></div></a>-->
+    <ul>
+        <li>
+            <a href="<!--#echo var='WWW_URL' default=''-->/cn/notice.html" target="_blank">
+                <span class="icon icon-bg01"></span>
+                <span>最新公告</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;" onclick="cf.common.openLive800();ga('send', 'event', 'Chat_Live800', 'Click800', 'PC_GW', '1');countBiUtil.gwanalysis('2', '0', '2', '', '', '');">
+                <span class="icon icon-bg02"></span>
+                <span>在线客服</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;" onclick="cf.common.openQQCustomer();ga('send', 'event', 'Chat_QQ', 'ClickQQ', 'PC_GW', '1');countBiUtil.gwanalysis('2', '0', '1', '', '', '');">
+                <span class="icon icon-bg03"></span>
+                <span>QQ客服</span>
+            </a>
+        </li>
+        <li>
+            <a href="<!--#echo var='ID_URL' default=''-->/cn/pc/rcfd_account" onclick="ga('send', 'event', 'Reg_Real', 'ClickAccount', 'PC_GW', '1');" target="_blank">
+                <span class="icon icon-bg04"></span>
+                <span>开立账户</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://admin.cfxdealer.com/" target="_blank">
+                <span class="icon icon-bg05"></span>
+                <span>用户中心</span>
+            </a>
+        </li>
+        <li class="wechat">
+            <span class="icon icon-bg06"></span>
+            <span>扫二维码</span>
+        </li>
+        <li id="scroll-toparr">
+            <span class="icon icon-bg07"></span>
+            <span>置顶</span>
+        </li>
+    </ul>
+    <div class="we-code"><img src="<!--#echo var='IMG_URL' default=''-->/source/www/template/mr6-qr.png"></div>
+</div>
+<script>
+    $(".wechat").hover(function () {
+        $(".we-code").addClass("show");
+    },function () {
+        $(".we-code").removeClass("show");
+    })
+</script>
