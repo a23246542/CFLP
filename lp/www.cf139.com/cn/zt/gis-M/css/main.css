@@ -1,0 +1,317 @@
+@charset "utf-8";
+/*css reset*/
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+p,
+blockquote,
+pre,
+form,
+fieldset,
+table,
+th,
+td,
+span,
+input,
+textarea {
+  margin: 0;
+  padding: 0;
+}
+li,
+ol {
+  list-style: none;
+}
+i,
+em {
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+input,
+textarea {
+  -webkit-appearance: none;
+}
+html {
+  font-size: 50px;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background: #FFFFFF
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 56.25px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 75px;
+  }
+}
+@media screen and (min-width: 560px) {
+  html {
+    font-size: 87.5px;
+  }
+}
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 100px;
+  }
+}
+body{
+background: #FFFFFF
+}
+/* -- 整体布局 -- */
+
+.plate.one{
+	width: 100%;
+    height:9.8rem;
+    background: url(//img.getfc.com.cn/source/www/zt/gis-M/m-lp-img01.jpg)no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.plate.one.nologo{
+    background: url(../images/common14/lp-img01.png)no-repeat;
+    background-size: 100% 100%;
+}
+.plate.one.common2{
+    background: url(//img.getfc.com.cn/source/www/zt/gis-M/m-lp-img00.jpg)no-repeat;
+    background-size: 100% 100%;
+}
+.header p{
+	text-align: right;
+    color: #FFFFFF;
+    font-size: 0.28rem;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+.input_box{
+	padding: 0 1.15rem;
+    margin-top: 4rem;
+}
+.input{
+	    width: 100%;
+    height: 0.8rem;
+    border: none;
+    background: none;
+    outline: none;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 14px;
+    display: block;
+}
+.code{
+	width: 100%;
+	height: 0.8rem;
+	border: 1px solid #eeeeee;
+	margin-top:0.2rem;
+}
+.input.three{
+	width:60%;
+	float: left;
+	border: none;
+}
+.code img{
+	float: left;
+	margin-top: 0.25rem;
+}
+.code .xuanzhuan{
+	width: 8%;
+	cursor: pointer;
+}
+.code .shuzi{
+	width: 22%;
+	margin-left: 0.2rem;
+}
+.open{
+	width: 85%;
+    height: 1.3rem;
+    background: url(//img.getfc.com.cn/source/www/zt/gis-M/m-lp-anniu-bg.png)no-repeat;
+    margin: 0 auto;
+    background-size: 100% 100%;
+    margin-top: 0.3rem;
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 0.32rem;
+    line-height: 0.9rem;
+}
+.Yzm{
+	display: block;
+    width: 30%;
+    height:36%;
+    float: right;
+    color: #9a9a9a;
+    font-size: 12px;
+    margin-top: 0.26rem;
+    padding-left: 0.2rem;
+    border-left: 1px solid #e3e3e3;
+	
+}
+.text1{
+	text-align: center;
+	color: #666666;
+	font-size: 0.24rem;
+	padding-top: 1.5rem;
+}
+.text2{
+	text-align: center;
+	font-size: 0.42rem;
+	color: #333333;
+	padding-top: 0.6rem;
+}
+.text2 b{
+	font-size: 0.68rem;
+	color: #ff6400;
+}
+.uk{
+	width: 100%;
+    height: 12rem;
+    background: url(//img.getfc.com.cn/source/www/zt/gis-M/m-lp-img03.jpg)no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.taishao {
+    position: absolute;
+    top: 0.8rem;
+    left: 1.25rem;
+}
+.beitao {
+    position: absolute;
+    top: 3.85rem;
+    right: 0.86rem;
+}
+.taigao {
+    position: absolute;
+    top: 6.67rem;
+    left: 0.68rem;
+}
+.buanquan{
+	position: absolute;
+    bottom: 0.95rem;
+    right: 0.35rem;
+
+}
+.text3{
+	font-size: 0.32rem;
+	color: #FFFFFF;
+	text-align: center;
+}
+.text4{
+	font-size: 0.24rem;
+    color: #FFFFFF;
+    padding-top: 0.3rem;
+    text-align: center;
+    line-height: 0.4rem;
+}
+.top_main{
+	width: 100%;
+    background: url(//img.getfc.com.cn/source/www/zt/gis-M/m-lp-bg06.png)no-repeat;
+    background-size: 100% 100%;
+    height:11.87rem;
+}
+
+.top_main .left,.top_main .right,.center_main .left,.center_main .right{
+	flex: 1;
+}
+.text5{
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 0.32rem;
+	padding-top: 2rem;
+}
+.text6{
+	    text-align: center;
+    color: #FFFFFF;
+    font-size: 0.76rem;
+    padding-top: 2.4rem;
+    float: left;
+    width: 50%;
+}
+.text7{
+	text-align: center;
+    color: #FFFFFF;
+    font-size: 0.26rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.7rem;
+}
+.text8{
+	text-align: center;
+    color: #FFFFFF;
+    font-size: 0.32rem;
+    padding-top: 0.75rem;
+}
+.text9{
+	    text-align: center;
+    color: #FFFFFF;
+    font-size: 0.24rem;
+    padding-top: 2.1rem;
+    line-height: 0.4rem;
+}
+.text10{
+	text-align: center;
+    color: #FFFFFF;
+    font-size: 0.24rem;
+    padding-top: 2.57rem;
+}
+.open.two{
+	    margin-top: -0.3rem;
+}
+.text11{
+	text-align: center;
+	color: #333333;
+	font-size: 0.48rem;
+}
+.text12{
+	text-align: center;
+    color: #666666;
+    font-size: 0.32rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.3rem;
+}
+img{
+	width: 100%;
+}
+.plate.six{
+	width: 100%;
+	background: #f6f6f6;
+}
+.plate.six.common2{
+	height:1.4rem;
+}
+.text13{
+	color: #666666;
+    font-size: 0.16rem;
+    text-align: center;
+    padding: 0 0.4rem;
+    line-height: 0.4rem;
+    padding-top: 0.2rem;
+}
+.text14{
+	    text-align: center;
+    font-size: 0.42rem;
+    color: #333333;
+    padding-top: 0.6rem;
+}
+.text14 b{
+	 font-size: 0.68rem;
+    color: #ff6400;
+}
+.plate.six.begin{
+    padding-top: 0.2rem;
+}
+.plate.six.end{
+    padding-bottom: 0.4rem;
+}

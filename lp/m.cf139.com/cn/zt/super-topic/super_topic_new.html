@@ -1,0 +1,123 @@
+<!--#include file="/cn/zt/common-html/ssi.html"-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta content="email=no" name="format-detection">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=0">
+    <link rel="shortcut icon" href="<!--#echo var='IMG_URL' default=''-->/source/www/template/fav.ico">
+    <title>创富汇聊</title>
+    <meta name="keywords" content="平台APP下载，外汇app下载">
+    <meta name="description" content="创富国际提供各种交易和平台的下载，在软件中心，你可以下载创富国际CFD外汇交易软件.">
+    <link rel="stylesheet" href="../css/overall.css">
+    <link rel="stylesheet" href="../css/super-topic/super-topic_new.css">
+    <script src="<!--#echo var='IMG_URL' default=''-->/source/public/js/jquery-2.2.3.min.js"></script>
+    <script src="../common-js/backheader.js"></script>
+    <script type="text/javascript">
+        !(function(doc, win) {
+            var docEle = doc.documentElement, //获取html元素
+                event = "onorientationchange" in window ? "orientationchange" : "resize", //判断是屏幕旋转还是resize;
+                fn = function() {
+                    var width = docEle.clientWidth;
+                    width && (docEle.style.fontSize = 50 * (width / 375) + "px"); //设置html的fontSize，随着event的改变而改变。
+                };
+            fn();
+            win.addEventListener(event, fn, false);
+            doc.addEventListener("DOMContentLoaded", fn, false);
+        }(document, window));
+    </script>
+
+    <link href="../nav/nav.css" rel="stylesheet">
+</head>
+<body>
+<div class="panel" id="m-panel">
+    <!--header -->
+    <div class="m-header" id="m-header">
+        <div class="layout-1">
+            <div class="item-1"><a href="/" class="left-1"></a></div>
+            <div class="item-2">
+                <a href="https://admin.cfxdealer.com/" class="right-1"></a>
+                <a href="javascript:;" class="right-2" node-name="point"></a>
+            </div>
+        </div>
+    </div>
+    <div class="topic super_topic">
+        <div class="top-topic">
+            <div class="layout-1">
+                <div class="topic-title">创富汇聊</div>
+                <div class="topic-sub">聊外汇，来汇聊，与全球汇友探讨最新的交易动向</div>
+            </div>
+        </div>
+        <div class="layout-2">
+            <div class="topic-content">
+                <div class="topic-ing">
+                    <!--<div class="layout-content">-->
+                    <!--<div class="item-1">-->
+                    <!--<div class="status">-->
+                    <!--<div class=" label red">进行中</div>-->
+                    <!--</div>-->
+                    <!--<div class="count">-->
+                    <!--<div class="count-content">帖子数: <span>20</span> &nbsp;&nbsp; 参与人: <span>528</span></div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="item-2">-->
+                    <!--<div class="news-title">中国网友的目光聚焦在了黄海上一艘满载大豆中国网友的目光聚焦在了黄海上一艘满载大豆</div>-->
+                    <!--<div class="news-time">7月13日</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                </div>
+                <div class="topic-end">
+
+                </div>
+                <div class="topic-furture">
+
+                </div>
+
+            </div>
+        </div>
+        <div class="load-more" >
+            点击加载更多
+        </div>
+        <div class="add-info">
+            以上文章、言论均属于各方观点,不代表创富及合作伙伴的官方意见
+        </div>
+
+    </div>
+    <!-- end header-->
+    <!--遮罩层-->
+    <div class="overlay" node-name="overlay"></div>
+    <!--遮罩层-->
+    <!--#include file="/cn/zt/common-html/footer-download.html"-->
+    <!--footer-->
+    <script>
+        footer();
+    </script>
+    <!-- 底部结束 -->
+    <div class="copyright">
+        <span>风险警告：保证金交易具高风险，投资者考虑投资金额时需视乎自身能力。投资有盈有亏，您可能因此损失全部本金。 </span>
+        <span>Copyright © 2018 创富国际有限公司 版权所有 不得转载</span>
+    </div>
+</div>
+<!--导航部分-->
+<!--#include file="/cn/zt/nav/nav.html"-->
+<script type="text/javascript" src="<!--#echo var='IMG_URL' default=''-->/source/public/js/nav.js"></script>
+<script src="<!--#echo var='IMG_URL' default=''-->/source/channel/js/shence/sensors_Analytic.js"></script>
+<script src="../js/super-topic/md5.js"></script>
+<script src="../js/super-topic/super_topic_new.js"></script>
+<script src="../js/super-topic/common_new.js"></script>
+<script>
+    $.getStatus(10,1);
+    $.loadMore(1);
+    // app中隐藏头和尾巴
+    menu();
+    footer();
+
+
+</script>
+</body>
+</html>

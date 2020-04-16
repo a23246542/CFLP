@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8">
+    <title>跟我学开户</title>
+    <meta name="keywords" content="创富集团,金融投资,创富投资,创富团队,创富国际">
+    <meta name="description" content="创富集团总部位于英国伦敦，成立于2008年，10年匠心沉淀，懂投资更懂您。创富国际是创富集团一家实力雄厚的在线金融子公司，专业提供在线外汇、贵金属、股指、原油等产品的多元化交易服务的平台和全面的金融投资咨询服务。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no,viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="wap-font-scale" content="no">
+    <script src="../common-js/jquery-2.2.3.min.js"></script>
+    <script src="../js/html5media.min.js"></script>
+    <script type="text/javascript">
+        !(function(doc, win) {
+            var docEle = doc.documentElement, //获取html元素
+                event = "onorientationchange" in window ? "orientationchange" : "resize", //判断是屏幕旋转还是resize;
+                fn = function() {
+                    var width = docEle.clientWidth;
+                    width && (docEle.style.fontSize = 50 * (width / 375) + "px"); //设置html的fontSize，随着event的改变而改变。
+                };
+            fn();
+            win.addEventListener(event, fn, false);
+            doc.addEventListener("DOMContentLoaded", fn, false);
+        }(document, window));
+        bi_url = "https://datac.gwghk.com"
+    </script>
+    <style>
+        body{padding: 0;margin: 0;}
+        video{
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        #main{overflow: hidden;}
+        #videoCon{
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #coverCon{
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            width:7.5rem;
+            height:100%;
+            text-align:center;
+            vertical-align:middle;
+            z-index: 1;
+        }
+        #cover{
+            overflow: hidden;
+            width: 7.5rem;
+        }
+        #play{
+            overflow: hidden;
+            position: absolute;
+            z-index: 2;
+            top: 40%;
+            left: 3rem;
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+<div id="main">
+    <div id="videoCon">
+        <video id="video" src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/mobile/app/liveList_1/accout.mp4" controls="controls"></video>
+    </div>
+    <div id="coverCon">
+        <img id="cover" src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/mobile/app/liveList_1/accout.jpg"/>
+        <img id="play" src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/mobile/app/liveList/play.png" onclick="playVideo()"/>
+    </div>
+</div>
+</body>
+<script>
+    var cover = $("#cover"),results;
+    var Height = $("#coverCon").height();
+    var Width = $("#coverCon").width();
+    cover.load(function () {
+        if (cover.height() < Height) {
+            cover.css("height", Height);
+            cover.css("width", "auto");
+            results = -(cover.width() - Width) / 2 + 'px';
+            cover.css("margin-left", results)
+        } else {
+            cover.css("width", Width);
+            results = -(cover.height() - Height) / 2 + 'px';
+            cover.css("margin-top", results)
+        }
+    });
+    function playVideo() {
+        document.getElementById("video").play();
+        $("#play").hide();
+        cover.hide();
+    }
+</script>
+</html>

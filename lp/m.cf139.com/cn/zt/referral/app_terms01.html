@@ -1,0 +1,215 @@
+<!--#include file="/cn/zt/common-html/ssi.html"-->
+<!DOCTYPE html>
+<html lang="en" ng-app="cfApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="<!--#echo var='IMG_URL' default=''-->/source/www/template/fav.ico"/>
+    <meta name="wap-font-scale" content="no">
+    <title>创富国际-全球最佳金融网站,贵金属,原油,股指期货,金融交易平台</title>
+    <meta name="keywords" content="创富国际官网,创富炒外汇,原油,贵金属,股指期货,现货白银投资,贵金属交易平台,互联网金融交易平台,现货期货投资交易,今日原油价格,贵金属今日走势"/>
+    <meta name="description" content="创富国际作为一所实力雄厚的在线金融公司，提供全世界最具竞争力的金融服务产品，一直恪守「顾客至上」的宗旨，以力求创新，不断进步的精神去开拓多元化业务，我们提供24小时全球金融产品在线交易，包括外汇丶贵金属丶股指期货等多元化产品，同时提供独享交易终端丶手机终端及一平台多账号一体化交易，助您随时把握创富机会！" />
+    <link rel="stylesheet" href="<!--#echo var='M_URL' default=''-->/cn/zt/css/overall.css">
+    <link rel="stylesheet" href="/cn/zt/css/app_terms/app_terms.css">
+    <script type="text/javascript" src="../common-js/jquery-2.2.3.min.js"></script>
+    <!--<script type="text/javascript" src="https://m.cf139.com/cn/zt/js/referral/jquery.qrcode.min.js"></script>-->
+    <script type="text/javascript" src="https://m.cf139.com/cn/zt/js/referral/shareConfig.js?s=1"></script>
+    <script type="text/javascript" src="https://m.cf139.com/cn/zt/js/referral/share.js"></script>
+  
+    <script type="text/javascript">
+        var isApp=true;
+        !(function(doc, win) {
+            var docEle = doc.documentElement, //获取html元素
+                event = "onorientationchange" in window ? "orientationchange" : "resize", //判断是屏幕旋转还是resize;
+                fn = function() {
+                    var width = docEle.clientWidth;
+                    width && (docEle.style.fontSize = 50 * (width / 375) + "px"); //设置html的fontSize，随着event的改变而改变。
+                };
+            fn()
+            win.addEventListener(event, fn, false);
+            doc.addEventListener("DOMContentLoaded", fn, false);
+        }(document, window));
+
+        var convertActiveResult = function(resp,code){
+            if(resp.status==200){
+                var result = resp.data;
+                if(result.code===1){
+                    /*$(".m-list").show();*/
+                    // $('.m-mask').hide();
+                    //window.location.href = m_url+"/cn/zt/referral/recommended-record.html?code="+$scope.queryParm.code;
+                    if(isApp){
+                        //$(".rec-header").hide();
+                        window.location.href = m_url+"/cn/zt/referral/recommended-record.html?app=1&code="+code;
+                    }
+                    else{
+                        window.location.href = m_url+"/cn/zt/referral/recommended-record.html?code="+code;
+                    }
+                    // $(".m-check").attr("href",m_url+"/cn/zt/referral/recommended-record.html?code=");
+                }else{
+                    $('.m-mask').show();
+                    // window.location.href = m_url+"/cn/zt/referral/recommended-record.html?code="+$scope.queryParm.code;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="main" ng-controller="customerController">
+    <div style="background: #cc3830">
+        <div class="ref-banner">
+            <div class="ref-rules" onclick="$('.activity').show()">
+                <img src="../images/app_terms/ruleIcon.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="ref-detail">
+        <div class="ref-inner">
+            <div class="ref-title shadow-text">每<span>推荐</span>一位好友</div>
+            <div class="ref-sub-title">好友在激活后30天内，交易任意产品累计2手</div>
+            <div class="title-line"><img src="../images/app_terms/line.png" alt=""></div>
+            <div class="ref-friend">
+                <ul class="clearfix">
+                    <li>
+                            <div class="item-1">你获得</div>
+                            <div class="item-2">$15</div>
+                    </li>
+                    <li>
+                        <div class="item-1">好友获得</div>
+                        <div class="item-2">$15</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="ref-text">邀请越多，收益越多</div>
+            <div class="ref-more"><img src="../images/app_terms/icon03.png" alt=""></div>
+        </div>
+    </div>
+    <div class="ref-process">
+        <div class="pro-title shadow-textpro">推荐流程</div>
+        <div class="pro-line"><img src="../images/app_terms/line.png" alt=""></div>
+        <div class="pro-step">
+            <ul >
+                <li>
+                    点击下方 <br>邀请好友
+                </li>
+                <li>
+                    分享 <br> 好友
+                </li>
+                <li>
+                    在链接内 <br>注册激活
+                </li>
+                <li>
+                    完成交易 <br>领取奖励
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="ref-footer">
+        <!--<input id="copied">-->
+        <a class="left-btn" href="javascript:void(0)"  onclick="sharing()"><img src="../images/app_terms/btn01.png" alt=""></a>
+        <a class="right-btn" href="javascript:void(0)" ng-click="active()"><img src="../images/app_terms/btn02.png" alt=""></a>
+    </div>
+    <!--激活遮罩层-->
+    <div class="m-mask">
+        <div class="layout-1"></div>
+        <div class="layout-2">
+            <div class="item-1">您的账户尚未激活，需激活后才能领取推荐奖励 <br/>如有疑问请联系客服</div>
+            <div class="item-2"><a ng-click="enterToPage()" href="javascript:void(0)">确定</a></div>
+        </div>
+    </div>
+
+<!--活动规则-->
+<div class="activity">
+    <div class="masking"></div>
+    <div class="m-rule">
+        <div class="close"><img onclick="$('.activity').hide()" src="<!--#echo var='M_URL' default=''-->/cn/zt/images/rec-app/XX.png"/></div>
+        <div class="con">
+            <div class="layout-1">活动条款和细则</div>
+            <div class="layout-2">
+                <div class="item-1">1.活动时间</div>
+                <div class="item-2">被推荐客户激活后之 30 天内</div>
+                <!--<div class="item-1">3.奖励对象</div>-->
+                <!--<div class="item-2">-->
+                <!--1.本推荐计划只适用于創富CFD平台的标准或迷你账户<br>-->
+                <!--2.所有被推荐人，必须为创富国际之新客户-->
+                <!--</div>-->
+                <div class="item-1">2.奖励规则</div>
+                <div class="item-2" style="padding-right: 0.3rem;">
+                    <span><i></i> 推荐人邀请好友注册CFD账户，被推荐人激活后30天内完成以下交易要求，推荐人/被推荐人均可获得15美元<br></span>
+                    <span><i></i> 交易要求（被推荐人需在激活后30天内完成）</span>
+                    <div class="m-table">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>交易品种</th>
+                                <th>累计交易手数</th>
+                                <th>推荐人奖励</th>
+                                <th>被推荐人奖励</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            <tr>
+                                <td>任意产品</td>
+                                <td>2手</td>
+                                <td>15美元</td>
+                                <td>15美元</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+                <div class="item-1">3.注意事项</div>
+                <div class="item-2">
+                    <div ><i>1.</i>本活动推荐人只适用于CFD平台的已激活客户，可推荐人数无上限。所有被推荐人必须为创富国际的新客户；</div>
+                    <div ><i>2.</i>被推荐人需要通过推荐人发布的个人推荐链接完成开户，或在开户页面填写推荐人手机号完成开户，方为有效推荐。否则将视为无效推荐，无法享受客户推荐赠金。如因特殊情况，导致未能成功填写推荐人信息，可联系客服协助添加为有效推荐关系；</div>
+                    <div><i>3.</i>推荐有效期为 30天(被推荐人成功激活账户起 30 天内)，如被推荐人未能在此有效期内完成规定的交易手数，该推荐将被视为无效；交易返利以平仓单计算，期间开仓但未能完成平仓的订单将不计入统计中；</div>
+                    <div><i>4.</i>交易手数的计算定义：客户开仓 1 手，然后再行平仓 1 手，整个交易来回算 1 手；</div>
+                    <div><i>5.</i>在被推荐人达交易要求时，如其推荐人在该时间为未激活状态，则将冻结应发放给推荐人的15美元，在之后推荐人完成激活后再进行发放；</div>
+                    <div><i>6.</i>奖金将于满足交易要求后的三个工作日发到推荐人/被推荐人已激活的CFD真实账户内；</div>
+                    <div><i>7.</i>赠金将有可能用作抵扣交易帐户负数结余、补足保证金或其他因交易而产生的结欠；</div>
+                    <div><i>8.</i>活动期间如发现客户不正规交易或有违规操作，创富国际有权停止客户交易并取消奖励资格，同时保留追究权利；任何因计算机或网络的通讯或技术问题、故障、意外或任何原因而引致数据送交迟延、遗失资料、数据错误或无法辨识等情况，创富国际概不负责。上述活动记录均以系统记录为准；</div>
+                    <div><i>9.</i>创富国际保留本条款的最终解释权，及修改或终止本优惠的权利；</div>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--弹窗-->
+<div class="app-btn-copy">
+    <div class="masking"></div>
+    <div class="con">
+        <div class="item">复制成功</div>
+        <div class="item-1"><a href="javascript:;" onclick="$('.app-btn-copy').hide()">确定</a></div>
+    </div>
+</div>
+</div>
+</body>
+
+<script>
+    bi_url ="https://datac.gwghk.com"
+</script>
+<script src="<!--#echo var='M_URL' default=''-->/cn/zt/common-js/new-cfanalysis.js" type="text/javascript" charset="utf-8"></script>
+<script src="<!--#echo var='M_URL' default=''-->/cn/zt/common-js/live800.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="<!--#echo var='M_URL' default=''-->/cn/zt/js/referral/angular.min.js"></script>
+<script type="text/javascript" src="<!--#echo var='M_URL' default=''-->/cn/zt/js/referral/customerRelation.js"></script>
+<script type="text/javascript" src="<!--#echo var='M_URL' default=''-->/cn/zt/js/referral/laydate/laydate.js"></script>
+<script type="text/javascript" src="<!--#echo var='M_URL' default=''-->/cn/zt/js/referral/navs.js"></script>
+<script type="text/javascript" src="<!--#echo var='M_URL' default=''-->/cn/zt/js/referral/jquery.app.js"></script>
+<script>
+    function sharing()
+    {
+        var title ="我在创富炒汇多年 希望和您一起投资赚钱",
+            content="推荐好友享三重好礼",
+            // url = "https://m.cf139.com.cn/cn/zt/campaign1802.html?utm_source=company&amp;utm_medium=Data%20contrast&amp;utm_campaign=tuijian2"+shareConfig.direct,
+            imageUrl =img_url+"/source/material/app-logo.png?v="+ Math.random();
+        $.share(title,content,shareConfig.link,imageUrl);
+    }
+</script>
+</html>

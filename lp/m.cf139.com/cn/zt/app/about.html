@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>超讯-关于我们</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script type="text/javascript">
+        !(function(doc, win) {
+            var docEle = doc.documentElement, //获取html元素
+                event = "onorientationchange" in window ? "orientationchange" : "resize", //判断是屏幕旋转还是resize;
+                fn = function() {
+                    var width = docEle.clientWidth;
+                    width && (docEle.style.fontSize = 50 * (width / 375) + "px"); //设置html的fontSize，随着event的改变而改变。
+                };
+            win.addEventListener(event, fn, false);
+            doc.addEventListener("DOMContentLoaded", fn, false);
+        }(document, window));
+    </script>
+    <link rel="stylesheet" type="text/css" href="../css/overall.css"/>
+    <style>
+       .m-app{
+           background: url("https://m.cf139.com/images/about-us/banner-page2.jpg") no-repeat;
+           width: 7.5rem;
+           height: 11.06rem;
+           background-size: 7.5rem 11.06rem;
+           padding: 1rem .3rem;
+           box-sizing: border-box;
+       }
+        .m-app .title{
+            overflow: hidden;
+            display: block;
+            font-size: .36rem;
+            font-weight: bold;
+            line-height: .48rem;
+            margin-bottom: .1rem;
+        }
+        .m-app .content{
+            overflow: hidden;
+            display: block;
+            font-size: .28rem;
+            line-height: .48rem;
+            margin-bottom: .3rem;
+        }
+    </style>
+</head>
+<body>
+<div class="m-app">
+ <div class="title">关于超讯</div>
+
+    <div class="content">
+        10年匠心沉淀 ，懂投资更懂您 超讯深耕行业10年，具备专业的投资服务素质，时刻把握市场脉动，竭诚为客户提供全面周到的投资服务，用10年时间打造一流水准投资服务团队，为客户提供最专业的服务；专注投资领域10年，时刻追求进步，每一次创新，都为满足客户的投资需求，在投资市场与客户共赢。
+    </div>
+</div>
+</body>
+</html>

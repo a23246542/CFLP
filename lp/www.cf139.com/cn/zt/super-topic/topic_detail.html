@@ -1,0 +1,186 @@
+<!--#include file="/cn/zt/module/config.html"-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创富汇聊</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="wap-font-scale" content="no">
+    <!--#include file="/cn/zt/module/html.head.html"-->
+    <link rel="shortcut icon" href="<!--#echo var='IMG_URL' default=''-->/source/www/template/fav.ico">
+    <link rel="stylesheet" type="text/css" href="../css/template.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="https://www.cf139.com/cn/css/template-black.css"/>-->
+    <link rel="stylesheet" href="../css/swiper.min-4.0.7.css">
+    <link rel="stylesheet" href="../css/super-topic/topic-detail.css">
+    <script src="https://www.cf139.com/cn/js/jquery-1.11.3.min.js"></script>
+    <script src="../js/jquery.SuperSlide.2.1.1.js"></script>
+</head>
+<body>
+<div class="e-header">
+    <!--#include file="/cn/zt/module/template.header.html"-->
+</div>
+<div class="top-banner">
+    <div class="img-banner-commodities">
+        <div class="content-area">
+            <div class="title-banner">创富汇聊</div>
+            <div class="sub-title">聊外汇，来汇聊，与全球汇友探讨最新的交易动向</div>
+        </div>
+    </div>
+</div>
+<div class="crumb-wrap">
+    <div class="w clearfix">
+        <div class="item"><a href="https://www.cf139.com">首页</a></div>
+        <div class="item sep">&gt;</div>
+        <div class="item"><a href="javascript:;">创富研究院</a></div>
+        <div class="item sep">&gt;</div>
+        <div class="item"><a href="javascript:;">创富汇聊</a></div>
+    </div>
+</div>
+<!--<div style="width: 100%;height: 1px;background: #dfdfdf;margin-top: 25px;"></div>-->
+<div class="content-area">
+    <div class="detail">
+        <div class="detail-img">
+
+        </div>
+        <div class="detail-content">
+            <div class="detail-title">
+                <!--<div class="news-title">中国网友的目光聚焦在了黄海上一艘满载大豆中国网友的目光聚焦在了黄海上一艘满载大豆</div>-->
+                <!--<div class="news-time">7月13日</div>-->
+            </div>
+            <!--<div class="detail-stract">中国网友的目光聚焦在了黄海上一艘满载大豆中国网友的目光聚焦在了黄海上一艘满载大豆满载大豆中国网友的目光聚焦在了黄海上一艘满载大豆</div>-->
+            <div class="icon-open" style="display: none" onclick="$('.open-content').show();$(this).hide();$('.detail-stract').hide()">展开详情 <span></span></div>
+            <!--内容展开弹窗-->
+            <div class="open-content">
+                <div class="open-detail">
+
+
+                    <div class="open-title">
+                        7月6日上午，就在这一天，美国开始对34
+                        0亿美元中国产品加征25%关税，发动迄今为
+                        止经济史上最大规模贸易战。
+                    </div>
+                    <div class="situ-content">
+                        <div class="layout-1">
+                            <div class="situ-detail">
+                                7月5日上午，就在这一天，美国开始对
+                                340亿美元中国产品加征25%关税，发动迄
+                                今为止经济史上最大规模贸易战。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="close" onclick="$('.open-content').hide();$('.icon-open').show();$('.detail-stract').show()">收起 <span></span></div>
+            </div>
+        </div>
+        <div class="detail-list">
+            <div class="compactWrapper">
+                <div class="compact">
+                    <!--<div class="title">中美贸易战打响</div>-->
+                    <!--<div class="compact-content">-->
+                    <!--<div class="compact-left">-->
+                    <!--<div class="item-1">-->
+                    <!--<span class="red">会:</span>-->
+                    <!--美国毕竟是世界霸主-->
+                    <!--</div>-->
+                    <!--<div class="item-2">-->
+                    <!--<button class="btn">会</button>-->
+                    <!--<div class="count"><span>566</span>票</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="compact-right">-->
+                    <!--<div class="item-1">-->
+                    <!--<span class="blue">会:</span>-->
+                    <!--中国打赢贸易战，是有底气的-->
+                    <!--</div>-->
+                    <!--<div class="item-2">-->
+                    <!--<button class="btn">不会</button>-->
+                    <!--<div class="count"><span>567</span>票</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                </div>
+                <div class="talk-popup" >
+                    <div class="talk-box">
+                        <div class="area-wrapper">
+                            <div class="sayCustorm">我想说:</div>
+                            <textarea id="area"  maxlength="50"></textarea>
+                            <div class="right-sub talk-btn">
+                                发送
+                            </div>
+                        </div>
+                        <div class="info" style="display:none"><img src="images/send.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="voited-popup" style="display: none">
+                    为了话题真实性，每个用户只有一次投票机会
+                </div>
+                <div class="news-wrapper">
+                    <div class="news-title">资讯</div>
+                    <ul class="news-list" id="newsList">
+                        <!--<li><a href="">fdsfadsfsdf</a></li>-->
+                        <!--<li><a href="">fdsfadsfsdf</a></li>-->
+                        <!--<li><a href="">fdsfadsfsdf</a></li>-->
+                        <!--<li><a href="">fdsfadsfsdf</a></li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="detail-hf">
+            <div class="swiper-container swiper-container02" id="detail-hf">
+                <div class="swiper-wrapper" id="detail-hff">
+                    <!--<div class="swiper-slide">-->
+                    <!--<a href="" class="item-1">-->
+                    <!--<img src="../images/super-topic/ttpi.png" alt="">-->
+                    <!--<span class="future-label">话题预告</span>-->
+                    <!--</a>-->
+                    <!--</div>-->
+                    <!--<div class="swiper-slide">-->
+                    <!--<a href="" class="item-1">-->
+                    <!--<img src="../images/super-topic/ttpi.png" alt="">-->
+                    <!--<span class="history-label">历史话题</span>-->
+                    <!--</a>-->
+                    <!--</div>-->
+                    <!--<div class="swiper-slide">-->
+                    <!--<a href="" class="item-1">-->
+                    <!--<img src="../images/super-topic/ttpi.png" alt="">-->
+                    <!--<span class="history-label">历史话题</span>-->
+                    <!--</a>-->
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="add-info">
+        以上文章、言论均属于各方观点，不代表创富及合作伙伴的官方意见
+    </div>
+
+
+
+
+
+
+
+<!--登录弹窗-->
+<!--#include file="/cn/zt/common-html/login.html"-->
+
+<!--#include file="/cn/zt/module/template.footer.html"-->
+<!--#include file="/cn/zt/module/template.right-1.html"-->
+<!--#include file="/cn/zt/module/html.body.end.html"-->
+<script src="../js/super-topic/danmu.js"></script>
+<script src="../js/super-topic/topic-detail.js?v=3213"></script>
+<script src="../js/jquery.cookie.min.js"></script>
+<script src="../js/super-topic/common.js"></script>
+<script src="../js/swiper.min-4.0.7.js"></script>
+<script>
+    $.getData();
+</script>
+<script src="https://www.cf139.com/cn/js/template.js"></script>
+
+
+</body>
+</html>

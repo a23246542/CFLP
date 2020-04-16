@@ -1,0 +1,268 @@
+<!--#include file="/cn/zt/common-html/ssi.html"-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创富汇聊</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="wap-font-scale" content="no">
+    <link rel="shortcut icon" href="<!--#echo var='IMG_URL' default=''-->/source/www/template/fav.ico">
+    <link rel="stylesheet" href="../css/overall.css">
+    <link rel="stylesheet" href="../css/super-topic/topic-detail_new.css?v=4244655">
+    <script src="<!--#echo var='IMG_URL' default=''-->/source/public/js/jquery-2.2.3.min.js"></script>
+    <script src="../common-js/backheader.js"></script>
+    <script type="text/javascript">
+        !(function(doc, win) {
+            var docEle = doc.documentElement, //获取html元素
+                event = "onorientationchange" in window ? "orientationchange" : "resize", //判断是屏幕旋转还是resize;
+                fn = function() {
+                    var width = docEle.clientWidth;
+                    width && (docEle.style.fontSize = 50 * (width / 375) + "px"); //设置html的fontSize，随着event的改变而改变。
+                };
+            fn();
+            win.addEventListener(event, fn, false);
+            doc.addEventListener("DOMContentLoaded", fn, false);
+        }(document, window));
+    </script>
+    <style>
+        .loadingTopic{
+            width: 100%;
+            height: 200%;
+            background: rgba(0,0,0,.5);
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 10000;
+            position: fixed;
+        }
+       .loadingTopic img{
+            position: absolute;
+            top:50%;
+            left: 50%;
+            margin-left: -.5rem;
+            margin-top:-7.5rem;
+            width: 1rem;
+            height: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+<!--header -->
+<!-- 头部 -->
+<script>
+    menu();
+</script>
+<!-- 头部结束 -->
+<div class="detail">
+    <div class="detail-img">
+        <!--<img src="../images/super-topic/banner.jpg" alt="">-->
+    </div>
+    <div class="detail-content">
+        <div class="detail-header">
+            <div class="header-box"></div>
+            <div class="header-time"></div>
+        </div>
+        <div class="detail-title">
+            <!--<div class="news-title">中国网友的目光聚焦在了黄海上一艘满载大豆中国网友的目光聚焦在了黄海上一艘满载大豆</div>-->
+            <!--<div class="news-time">7月13日</div>-->
+        </div>
+        <div class="detail-stract"></div>
+        <div class="icon-open" onclick="$('.open-content').show();$(this).hide();$('.detail-stract').hide();$('.close').show()" >展开详情 <span></span></div>
+        <!--内容展开弹窗-->
+        <div class="open-content">
+            <div class="open-detail">
+
+                <div class="situ-content">
+                    <div class="layout-1">
+                        <div class="situ-detail">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="close" onclick="$('.open-content').hide();$('.icon-open').show();$('.detail-stract').show();$(this).hide()" style="display: none">收起 <span></span></div>
+        </div>
+    </div>
+    <div class="market-box dn">
+        <ul class="clearfix" id="marketBox">
+            <!--<li>-->
+            <!--<a href="javascript:void(0)">-->
+            <!--<div class="market-name"><em>欧元美元</em><span>EURUSD</span></div>-->
+            <!--<div class="market-value"><span>1.16243</span><i>0.03%</i></div>-->
+            <!--</a>-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<div class="market-name"><em>欧元美元</em><span>EURUSD</span></div>-->
+            <!--<div class="market-value"><span>1.16243</span><i>0.03%</i></div>-->
+            <!--</li>-->
+        </ul>
+    </div>
+    <div class="news-wrapper">
+        <div class="news-title">相关资讯</div>
+        <ul class="news-list" id="newsList">
+
+        </ul>
+    </div>
+    <div class="detail-list">
+        <div class="option-title">观点支持</div>
+        <div class="compactWrapper">
+            <div class="compact">
+                <div class="compact-content">
+                    <!--<div class="viewpoint red active">-->
+                    <!--<div class="item-1"><img src="../images/super-topic/icon-red.jpg" alt="">赞成 <i>315</i>票</div>-->
+                    <!--<div class="item-2">是，产量影响价格</div>-->
+                    <!--</div>-->
+                    <!--<div class="viewpoint blue">-->
+                    <!--<div class="item-1"><img src="../images/super-topic/oppsit.png" alt="">不赞成 <i>324</i>票</div>-->
+                    <!--<div class="item-2">否，市场打压低迷</div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+            <div class="voited-popup" style="display: none">
+                为了话题真实性，每个用户只有一次投票机会
+            </div>
+        </div>
+        <div class="commentWrapper">
+            <div class="commment">
+                <div class="title">热门评论</div>
+                <div class="commentList">
+                    <ul id="commentList">
+                        <!--<li>-->
+                        <!--<div class="item-1">-->
+                        <!--<div class="leftArea">-->
+                        <!--<div class="left">正方</div>-->
+                        <!--<div class="right">-->
+                        <!--<div class="leftNumber">11111111</div>-->
+                        <!--<div class="leftTime">2019-01-24 15:56:23 <i class="hot">-->
+                        <!--<img src="../images/super-topic/hot.png" alt=""></i>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="rightArea">-->
+                        <!--<i class="hot"><img src="../images/super-topic/like01.png" alt=""></i>-->
+                        <!--<span>6666</span>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="item-2">-->
+                        <!--下跌就下跌呗，反正可以做空，趋势明显点，更容易操作，赚赚赚！！！下跌就下跌呗，反正可以做空，趋势明显点，更容易操作，赚赚赚！！-->
+                        <!--</div>-->
+
+                        <!--</li>-->
+
+                    </ul>
+                </div>
+                <div class="load-more">
+                    <a href="javascript:void(0)" id="loadMoreComment">查看更多热门评论</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--<div class="detail-hf">-->
+    <!--<div class="swiper-container" id="detail-hf">-->
+    <!--<div class="swiper-wrapper" id="detail-hff"></div>-->
+    <!--</div>-->
+    <div class="add-info">
+        以上文章、言论均属于各方观点,不代表创富及合作伙伴的官方意见
+    </div>
+</div>
+</div>
+<!-- end header-->
+
+<!--#include file="/cn/zt/common-html/footer-download.html"-->
+
+
+<div class="copyright">
+    <span>风险警告：保证金交易具高风险，投资者考虑投资金额时需视乎自身能力。投资有盈有亏，您可能因此损失全部本金。 </span>
+    <span>Copyright © 2019 创富国际有限公司 版权所有 不得转载</span>
+</div>
+
+
+<!--我要发声弹窗-->
+<div class="talk-popup" style="display: none">
+    <div class="overlay" onclick="$('.talk-popup').hide();$('.fixed-popup').show()"></div>
+    <div class="talk-box">
+        <div class="area-wrapper">
+            <textarea id="area"  placeholder="我来说两句。。。" ></textarea>
+        </div>
+        <div class="area-bottom">
+            <div class="left-count">
+                <span>0</span>/300
+            </div>
+            <div class="right-sub">
+                发送
+            </div>
+        </div>
+        <div class="info" style="display:none">不能为空</div>
+    </div>
+</div>
+<div class="bg-voitsucc">
+    <div class="voit-inner">
+        <img src="../images/super-topic/right.png" alt="">
+        <span>发表成功</span>
+    </div>
+</div>
+<!--底部输入框-->
+<div class="fixed-popup">
+    <div class="votedInfo">请先选择您支持的观点</div>
+    <div class="talkIn">
+        <div class="left">说点什么吧，万一火了呢</div>
+        <span class="right"><img src="../images/super-topic/text.png" alt=""><i id="commentTotal"></i></span>
+    </div>
+</div>
+<!--登录弹窗-->
+<!--#include file="/cn/zt/common-html/login.html"-->
+<div class="loadingTopic" id="loadingTopic" >
+    <img src="../images/super-topic/spin.gif" />
+</div>
+<script src="<!--#echo var='IMG_URL' default=''-->/source/channel/js/shence/sensors_Analytic.js"></script>
+<script src="../js/super-topic/md5.js"></script>
+<script src="../js/super-topic/topic_detail_new.js"></script>
+<script src="../common-js/jquery.cookie.min.js"></script>
+<script src="../js/super-topic/common_new.js"></script>
+
+<script>
+
+    // app中隐藏头和尾巴
+    window.onload = function(){
+        var pram = window.location.search;
+        // alert(pram)
+        // app端直接点击进入详情
+        if(pram.indexOf("noneheader=1") != -1 || pram.indexOf("noneHeader=1") != -1){
+            // alert("app进来")
+            // alert("显示产品")
+            $(".market-box").removeClass("dn")
+
+            if(pram.indexOf("platform") != -1){
+                //app端由列表进入详情 用户信息是从参数中获得
+                $.getAppInfo();
+            }else{
+                // alert("app")
+                $.getAppUserInfo();
+            }
+           
+           
+            
+
+        }else{
+            $.getData();
+        }
+    }
+    $.getStatus(10,1);
+    $.getCommentList(1)
+    //点击评论加载更多
+    $.getMoreComment("1",'more')
+   
+
+</script>
+
+</body>
+</html>

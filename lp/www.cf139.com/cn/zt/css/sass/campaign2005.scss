@@ -1,0 +1,214 @@
+
+
+@import url("../reset.css");
+// @import url("../template.css");
+
+// ========init===================
+html{
+    height: 100%;
+    // font-family: Arial, Helvetica, sans-serif;
+    // font-family: "Microsoft JhengHei", "Heiti TC", "sans-self";
+    font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+}
+
+body{
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,p,ul,li,a{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+img,a{
+    display: block;
+}
+// =======layout===============
+section[class*="web-page"] {
+    width: 100%;
+    min-width: 1200px;//勉得缩到1200以下 container的东西挤爆
+}
+
+// #main { //我是用或是里面在包wrapper
+.wrapper { //我是用或是里面在包wrapper
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    // color: #292626;
+}
+// ====================================================
+// template.css里面的
+// .inner {  //我是用container
+.container {  //我是用container
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.clearfix{
+    display: block;
+    clear: both;
+    &::before{
+        content: "";
+        display: block;
+        visibility: hidden;
+        font-size: 0;
+        height: 0;
+        clear: both;
+    }
+}
+
+
+.e-header{
+    font-size: 10px;
+}
+.banner-posi{
+    position: relative;
+    z-index: 1;
+    top: -74px;
+    margin-bottom: -74px;
+}
+
+.web-page1.banner-all{
+    width: 100%;
+    padding-bottom: 31.25%;
+    background-image: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/campaign2005/PC2_bn.jpg");
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+
+    .container {
+        position: relative;
+        h1,
+        h2 {
+            position: absolute; //定位住才不会变高(盒子模型)
+            color: transparent;
+            user-select: none;
+        }
+    }
+
+}
+
+
+
+
+
+
+// ====左邊品牌 右邊註冊
+.web-page6{
+    .leftCon{
+        .brand{
+            &>ul{
+                &>li{
+
+                }
+            }
+        }
+    }
+
+    .rightCon{
+        float: right;
+        .sign_box{
+            width: 520px;
+            padding-top: 64px;
+            // .clearfix:before TODO
+            h3{
+                font-size: 48px;
+                color: white;
+                margin-bottom: 16px;
+            }
+            form.zhuizong{
+                margin-bottom: 43px;
+                .form-item{
+                    display: flex;
+                    align-items: center;
+                    background-color: #fff;
+                    height: 66px;
+                    // padding-left: 25px;
+                    padding-left: 22px;
+                    box-sizing: border-box !important;
+                    border-radius: 6px;
+                    &>div{
+                        margin-right: 22px;
+                        img{
+                            width: auto;
+                        }
+                    }
+                    input{
+                        display: block;
+                        flex: 1;
+                        background: transparent;
+                        border: none;
+                        line-height: 66px;
+                        // padding-left: 20px;
+                        font-size: 20px;
+                        &::-webkit-input-placeholder{
+                            color: #999;
+                        }
+                    }
+                }
+
+                .input-tip{
+                    height: 34px !important;
+                    line-height: 34px;
+                    width: 100%;
+                    margin: 0 auto;
+                    text-align: left;
+                    overflow: hidden;
+                    span{
+                        font-size: 14px;
+                        padding-left: 20px;
+                        color: #de3f00!important;
+                    }
+                }
+
+                .yan-wrapper{
+                    display: flex;
+                    align-items: center;//??
+                    margin-bottom: 43px;
+                    &>.form-item{
+                        width: 372px;
+                    }
+                    .yanzheng-btn{
+                        margin-left: auto;
+                        width: 130px;
+                        height: 66px;
+                        line-height: 66px;
+                        text-align: center;
+                        background-image: linear-gradient(180deg,#1e7395 0%,#105183 50%);
+                        border-radius: 5px;
+                        box-shadow: 0px 3px 7px 0px rgba(0,0,0,.4);
+                        a.btn-phonecode{
+                            font-size: 20px;
+                            color: white;
+                            // display: none;
+                        }
+                        a.re-btn{
+                            font-size: 17px;
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+            .btn-account{
+                &>a{
+                    font-size: 30px;
+                    line-height: 66px;
+
+                    color: white;
+                    // letter-spacing: 1.5px;
+                    background-image: linear-gradient(180deg,#1e7395 0%,#0e4c81 50%);
+                    border-radius: 6px;
+                    box-shadow: 0px 3px 7px 0px rgba(0,0,0,.3);
+                }
+            }
+        }
+    }
+}

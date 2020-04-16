@@ -1,0 +1,167 @@
+<!--#include file="/cn/zt/common-html/ssi.html"-->
+<!DOCTYPE html>
+<html lang="en" ng-app="cfApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="<!--#echo var='IMG_URL' default=''-->/source/www/template/fav.ico"/>
+    <meta name="wap-font-scale" content="no">
+    <title>创富国际-全球最佳金融网站,贵金属,原油,股指期货,金融交易平台</title>
+    <meta name="keywords" content="创富国际官网,创富炒外汇,原油,贵金属,股指期货,现货白银投资,贵金属交易平台,互联网金融交易平台,现货期货投资交易,今日原油价格,贵金属今日走势"/>
+    <meta name="description" content="创富国际作为一所实力雄厚的在线金融公司，提供全世界最具竞争力的金融服务产品，一直恪守「顾客至上」的宗旨，以力求创新，不断进步的精神去开拓多元化业务，我们提供24小时全球金融产品在线交易，包括外汇丶贵金属丶股指期货等多元化产品，同时提供独享交易终端丶手机终端及一平台多账号一体化交易，助您随时把握创富机会！" />
+    <link rel="stylesheet" href="<!--#echo var='M_URL' default=''-->/cn/zt/css/overall.css">
+    <link rel="stylesheet" href="<!--#echo var='M_URL' default=''-->/cn/zt/css/rec-app/rec-app-m.css">
+    <script type="text/javascript" src="<!--#echo var='M_URL' default=''-->/static/js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript">
+        !(function(doc, win) {
+            var docEle = doc.documentElement, //获取html元素
+                event = "onorientationchange" in window ? "orientationchange" : "resize", //判断是屏幕旋转还是resize;
+                fn = function() {
+                    var width = docEle.clientWidth;
+                    width && (docEle.style.fontSize = 50 * (width / 375) + "px"); //设置html的fontSize，随着event的改变而改变。
+                };
+            win.addEventListener(event, fn, false);
+            doc.addEventListener("DOMContentLoaded", fn, false);
+        }(document, window));
+    </script>
+</head>
+<body>
+<div id="main-app">
+    <div class="rec-header"><a href="javascript:history.go(-1);"><img src="<!--#echo var='M_URL' default=''-->/cn/zt/images/rec-app/arrow-1.png"/></a><span>我的推荐记录</span></div>
+    <div id="loginKuang" ng-controller="customerController">
+        <div class="title">
+            <ul class="clearfix">
+                <li>
+                    <div class="left"><span></span></div>
+                    <div class="right"><span><em>$</em><em ng-bind="sumDirectByTop"></em></span><span>累计赠金收益</span></div>
+                </li>
+                <li class="line"><span></span></li>
+                <li>
+                    <div class="left"><span></span></div>
+                    <div class="right"><span><em>$</em><em ng-bind="sumIndirectByTop"></em></span><span>累计返利收益</span></div>
+                </li>
+            </ul>
+        </div>
+        <div class="w1200">
+            <div class="nav">
+                <ul class="important cl clearfix">
+                    <li class="rcsp_1" style="cursor: pointer" ng-click="changePage(1)"><p class="on">我的推荐</p></li>
+                    <li class="rcsp_2" style="cursor: pointer" ng-click="changePage(2)"><p>我的赠金</p></li>
+                    <li class="rcsp_3" style="cursor: pointer" ng-click="changePage(3)"><p>我的返利</p></li>
+                </ul>
+            </div>
+            <div class="contents">
+                <!--我的推荐-->
+                <div class="cl">
+                    <div class="important_r">
+                        <div class="nav-1">
+                            <ul class="important cl">
+                                <li style="cursor: pointer" class="rcsp" ng-click="changeDateType(1,$event)">
+                                    <div>当日</div>
+                                    <strong style="display:none"><i></i></strong>
+                                </li>
+                                <li style="cursor: pointer" class="rcsp" ng-click="changeDateType(2,$event)" >
+                                    <div>近一周</div>
+                                    <strong style="display:none"><i></i></strong>
+                                </li>
+                                <li style="cursor: pointer" class="rcsp" ng-click="changeDateType(3,$event)">
+                                    <div class="active">自定义</div>
+                                    <strong><i></i></strong>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="contents inner-content">
+                            <div class="cl ">
+                                <div class="important_r">
+                                    <div class="check" ng-show="timeInput">
+                                        <div><input ng-model="queryParm.beginDate" class="demo-input"  type="text" id="date1"></div>
+                                        <div><span>至</span></div>
+                                        <div><input  ng-model="queryParm.endDate" class="demo-input" type="text" id="date2"></div>
+                                        <div><a ng-click="queryPage()">查询</a></div>
+                                    </div>
+                                    <div class="detail">
+                                        <table>
+                                            <tr>
+                                                <th ng-repeat="t in pageTitle1" ng-bind="t"></th>
+                                            </tr>
+                                            <tr ng-repeat="data in pageData.data" ng-if="queryParm.pageType==1">
+                                                <td ng-bind="data.mobile_phone | formatPhone"></td>
+                                                <td ng-bind="data.relationType"></td>
+                                                <td ng-bind="data.activeTime==0?'否':'是'"></td>
+                                                <td ng-bind="data.create_date | date:'yyyyMMdd'"></td>
+                                                <td ng-bind="data.excuteNum==''?'否':'是'"></td>
+                                            </tr>
+                                            <tr ng-repeat="data in pageData.data" ng-if="queryParm.pageType==2">
+                                                <td ng-bind="data.excutePhone | formatPhone"></td>
+                                                <td ng-bind="data.relationType | relationTypeFilter"></td>
+                                                <td ng-bind="data.currentRebete+'$'"></td>
+                                                <td ng-bind="data.ttime | date:'yyyyMMdd'"></td>
+                                            </tr>
+                                            <tr ng-repeat="data in pageData.data" ng-if="queryParm.pageType==3">
+                                                <td ng-bind="data.excutePhone | formatPhone"></td>
+                                                <td ng-bind="data.orderid"></td>
+                                                <td ng-bind="data.execvolume+'手'"></td>
+                                                <td ng-bind="data.ttime | date:'yyyyMMdd'"></td>
+                                                <td ng-bind="data.currentRebete+'$'"></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="totle clearfix">
+                                        <label ng-if="queryParm.pageType==1">
+                                            <div>小计：直接推荐 <em ng-bind="totalInfo.direct"></em>人，间接推荐 <span ng-bind="totalInfo.indirect"></span> 人</div>
+                                            <div>总计：直接推荐 <em ng-bind="totalInfo.sumDirect"></em>人，间接推荐 <span ng-bind="totalInfo.sumIndirect"></span> 人</div>
+                                        </label>
+                                        <label ng-if="queryParm.pageType==2">
+                                            <div>小计：直接奖励 <em>$</em><em ng-bind="totalInfo.direct"></em> ，间接奖励 <em>$</em><span ng-bind="totalInfo.indirect"></span> </div>
+                                            <div>总计：直接奖励 <em>$</em><em ng-bind="totalInfo.sumDirect"></em> ，间接奖励 <em>$</em><span ng-bind="totalInfo.sumIndirect"></span> </div>
+                                        </label>
+                                        <label ng-if="queryParm.pageType==3">
+                                            <div>小计：直接返利 <em>$</em><em ng-bind="totalInfo.direct"></em> ，间接返利 <em>$</em><span ng-bind="totalInfo.indirect"></span> </div>
+                                            <div>总计：直接返利 <em>$</em><em ng-bind="totalInfo.sumDirect"></em> ，间接返利 <em>$</em><span ng-bind="totalInfo.sumIndirect"></span> </div>
+                                        </label>
+                                        <p class="pager">
+                                            <a href="" ng-click="prevPage()"></a>
+                                            <a href="" ng-bind="currentPage"></a>
+                                            <a href="" ng-click="nextPage()"></a>
+                                            <a>共 <i ng-bind="pageData.pageCount">1</i>页</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    bi_url ="https://datac.gwghk.com"
+</script>
+<script src="<!--#echo var='M_URL' default=''-->/cn/zt/common-js/new-cfanalysis.js" type="text/javascript" charset="utf-8"></script>
+<script src="<!--#echo var='M_URL' default=''-->/cn/zt/common-js/live800.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="<!--#echo var='M_URL' default=''-->/cn/zt/js/referral/angular.min.js"></script>
+<script type="text/javascript" src="<!--#echo var='M_URL' default=''-->/cn/zt/js/referral/customerRelation.js"></script>
+<script type="text/javascript" src="<!--#echo var='M_URL' default=''-->/cn/zt/js/referral/laydate/laydate.js"></script>
+<script type="text/javascript" src="<!--#echo var='M_URL' default=''-->/cn/zt/js/referral/navs.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.w1200 .nav ul li').click(function(){
+            $('.w1200 .nav .important li p').removeClass();
+            $(this).children('p').addClass('on');
+        });
+        var href= window.location.search;
+        if(href.indexOf("app")!=-1){
+            $(".rec-header").hide();
+        }else{
+            $(".rec-header").show();
+        }
+
+    });
+</script>
+</html>

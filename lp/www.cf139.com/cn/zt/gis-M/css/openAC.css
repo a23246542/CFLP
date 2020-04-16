@@ -1,0 +1,430 @@
+
+/*page*/
+
+
+html{
+    font-size:62.5%;
+    height:100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body{font-size:1em;height:100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+
+.wrapper{
+    position: relative;
+}
+/*page2*/
+
+
+.register p em{
+    color:#ff0000;
+    font-weight: bolder;
+    font-style: normal;
+}
+/*表单部分*/
+.reg-form input{
+    color:#333;
+}
+.reg-form .input-tip {
+    text-align: left;
+    color:  #ff0000;
+}
+.form-item a.btn-phonecode span,.form-item a.re-btn span{
+    border:1px solid #cccccc;
+    height: 20px;
+    margin-right:20px;
+}
+.form-item a.btn-phonecode,.form-item a.re-btn{
+    cursor: pointer;
+}
+.form-item a.re-btn b{
+    color:#0096dc;
+}
+    /*验证码*/
+.confirm{
+    text-align: left;
+    margin-top:30px;
+    color: #035b83;
+    font-size: 14px;
+}
+p.warn{
+    font-size: 12px;
+    color: #999;
+    text-align: justify;
+    margin-top: 20px;
+    line-height: 1.8;
+}
+.refer{
+    text-align: left;
+    color:#999;
+    font-size: 14px;
+    margin-top:50px;
+    height:50px;
+    line-height: 50px;
+}
+@media(max-width:1920px){
+    body{
+        font-size:100px;
+        font-family: "Microsoft JhengHei";
+    }
+    html{
+        font-size: 100px;
+    }
+    .wrapper {
+        height:auto;
+        width:100%;
+        padding-bottom:0.3rem;
+    }
+    .register{
+        width:100%;
+        height:auto;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 1px 0 0 10px rgba(0,0,0,0.1);
+        padding:0.3rem;
+        padding-top:0.4rem;
+    }
+    .open{
+        margin-bottom: 0.7rem;
+    }
+     .open .o-left,.open .o-right{
+         width:50%;
+         height:0.7rem;
+         line-height: 0.7rem;
+         color:#003355;
+
+     }
+    .open .o-left{
+        float:left;
+    }
+    .open .o-right{
+        margin-left: 50%;
+    }
+
+    .open .o-left a{
+        display: block;
+        font-size:0.34rem;
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+        color:#aaa;
+    }
+    .open .o-left a.hover{
+        border-bottom: 1px solid #003355;
+        color:#003355;
+    }
+
+    .open .o-right a.hover {
+        border-bottom: 1px solid #003355;
+        color:#003355;
+    }
+
+    .open .o-right a{
+        display: block;
+        border-bottom: 1px solid #ccc;
+        font-size:0.34rem;
+        text-align: center;
+        color:#aaaaaa
+    }
+
+    .form-item{
+        position:relative;
+        font-size: 0;
+        border: 1px solid #855a4d;
+        height:0.7rem;
+        line-height: 0.7rem;
+        padding-top:0.15rem;
+    }
+    .form-item  label {
+        position: absolute;
+        left: 0.2rem;
+        top: 0.08rem;
+        font-size: 0.3rem;
+        color: #fff;
+        padding-right: 0;
+        padding-left:0.1rem;
+        height:0.5rem;
+        padding-bottom: 0.1rem;
+    }
+    .reg-form input {
+        width: 100%;
+        border:none;
+        border-radius: 0;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        padding-left: 0.3rem;
+        font-size: 0.3rem;
+        outline: medium;
+        filter:alpha(opacity=0); /*androd*/
+        -moz-appearance:none;
+        -webkit-appearance:none;
+        background-color:transparent;
+        color: #fff;
+    }
+    input:focus{
+        outline: none;
+    }
+    .phone-f1.error,.upwd-f1.error,.yanZ-f1.error,.pc-yanZ-f1.error,.uname-f1.error,.email-f1.error,.idCard-f1.error{
+    border-color:#ef392b;
+    }
+    .upwd-f1.success,.phone-f1.success,.yanZ-f1.success,.pc-yanZ-f1.success,.uname-f1.success,.email-f1.success,.idCard-f1.success{
+        border-color: #fff;
+    }
+    .phone-f1.yellow,.upwd-f1.yellow,.yanZ-f1.yellow,.pc-yanZ.yellow,.uname-f1.yellow,.email-f1.yellow,.idCard-f1.yellow{
+        border-color:#fff;
+    }
+    .rec .re-number input {
+        font-size: 0.28rem;
+        -webkit-appearance: none;
+        border: none;
+        outline: medium;
+        width: 5rem;
+    }
+    .reg-form .input-tip {
+        height: 0.65rem;
+        font-size: 0.24rem;
+        padding-top:0;
+    }
+    .reg-form .input-tip em {
+        vertical-align: top;
+        margin-right: 0.05rem;
+        width: 0.3rem;
+        height: 0.35rem;
+        display: inline-block;
+        background: url(../../rcfd-m/images/m-icon-img1.png) no-repeat -0.8rem -0.42rem;
+        background-size: 2.4rem 1.7rem;
+    }
+
+    .form-item a.btn-phonecode, .form-item a.re-btn {
+        position: absolute;
+        right: 3px;
+        top: 4px;
+        line-height: 0.68rem;
+        font-size: 0.24rem;
+        width: 1.75rem;
+        height:0.68rem;
+        display: inline-block;
+        padding: 0;
+        -webkit-tap-highlight-color: transparent;
+        color:#fff;
+    }
+    .form-item a.yz-code {
+        position: absolute;
+        right: 0;
+        top: 0.04rem;
+        line-height:0.58rem;
+        font-size: 16px;
+        width: 1.5rem;
+        height: 0.58rem;
+        display: inline-block;
+        color: #666;
+        padding: 0;
+        cursor: pointer;
+        padding-top: 0.1rem;
+    }
+    .form-item a.yz-code img {
+        display: inline-block;
+        vertical-align: middle;
+        width: 1rem;
+        height: 0.4rem;
+    }
+    .form-item a.yz-code span {
+        display: inline-block;
+        vertical-align: middle;
+        width:0.4rem;
+        height: 0.5rem;
+        background: url(../../rcfd-m/images/m-icon-img1.png) no-repeat -1.05rem 0.05rem;
+        background-size: 2.4rem 1.7rem;
+    }
+    .confirm {
+        text-align: left;
+        margin-top: 0;
+        color: #035b83;
+        font-size: 0.24rem;
+        letter-spacing: -0.01rem;
+    }
+    p.warn {
+        font-size: 0.24rem;
+        color: #999;
+        text-align: justify;
+        margin-top: 0.1rem;
+        line-height: 0.36rem;
+    }
+    .confirm span {
+        float: left;
+        width: 0.3rem;
+        height: 0.3rem;
+        display: inline-block;
+        background: url(../../rcfd-m/images/m-icon-img1.png) no-repeat -0.39rem -0.45rem;
+        background-size:2.4rem 1.7rem;
+        margin-right:0.1rem;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .confirm span.active2 {
+        background: url(../../rcfd-m/images/m-icon-img1.png) no-repeat -0.39rem -0.08rem;
+        background-size:2.4rem 1.7rem;
+    }
+    .refer {
+        text-align: left;
+        font-size: 0.24rem;
+        margin-top: 0.3rem;
+        height: 0.6rem;
+        line-height: 0.6rem;
+        letter-spacing: -1px;
+    }
+    .tijiao a {
+        display:block;
+        width: 100%;
+        height: 0.9rem;
+        color: #fff;
+        line-height: 0.9rem;
+        font-size: 0.36rem;
+        background: #0096dc;
+        border-radius: 10px;
+        text-align: center;
+        vertical-align: middle;
+        transition: all 0.3s;
+        margin-top:0.2rem;
+        margin-bottom: 0.2rem;
+    }
+    .page1 {
+        width: 96%;
+        text-align: center;
+        padding-left:0.25rem;
+        padding-right:0.25rem;
+        height:auto;
+        margin:0 auto;
+        margin-top:0.8rem;
+    }
+    .platform{
+        font-size: 0.4rem;
+        font-family: "Microsoft YaHei", arial, sans-serif;
+        margin-bottom: 0.2rem;
+    }
+    .wrapper .other{
+       position:absolute;
+        right:0.3rem;
+        top:-0.6rem;
+        font-size: 0.24rem;
+        color:#003355;
+    }
+    .wrapper .service{
+        color: #666;
+        font-size: 0.24rem;
+        text-align: center;
+        margin-top:0.35rem;
+    }
+    .wrapper .service span{
+        display: inline-block;
+        width:1.3rem;
+        border: 1px solid #0096DC;
+        height:0.54rem;
+        line-height:0.54rem;
+        border-radius: 10px;
+    }
+    .form-item a.btn-phonecode span, .form-item a.re-btn span {
+        border-left: 1px solid #ccc;
+        height: 0.1rem;
+        margin-right: 0.2rem;
+    }
+    .login-bottom{
+        text-align: right;
+    }
+    .login-bottom p{
+        font-size: 0.24rem;
+        color: #999;
+        margin-top:0.3rem;
+    }
+    .login-bottom p a{
+        color:#666;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .login-bottom p a span{
+        display: inline-block;
+        width:0.3rem;
+        height:0.3rem;
+        background: url('../../rcfd-m/images/m-icon-img1.png') no-repeat  -0.75rem -0.1rem ;
+        background-size: 2.4rem 1.7rem;
+        vertical-align: middle;
+        margin-left: 0.15rem;
+    }
+
+}
+@media(min-width:320px){
+    body{
+        font-size:42.6px;
+    }
+    html{
+        font-size: 42.6px;
+    }
+    .reg-form .input-tip {
+        height: 0.4rem;
+    }
+}
+@media(min-width:360px){
+    body{
+        font-size:48px;
+    }
+    html{
+        font-size:48px;
+    }
+
+}
+@media(min-width:375px){
+    body{
+        font-size:50px;
+    }
+    html{
+        font-size: 50px;
+    }
+
+}
+@media(min-width:412px){
+    body{
+        font-size:54.93px;
+    }
+    html{
+        font-size: 54.93px;
+    }
+
+
+
+}
+@media(min-width:414px){
+    body{
+        font-size:55.2px;
+    }
+    html{
+        font-size: 55.2px;
+    }
+
+
+}
+@media(min-width:420px){
+    body{
+        font-size:56px;
+    }
+    html{
+        font-size: 56px;
+    }
+
+
+}
+@media(min-width:560px) {
+    html {
+        font-size: 74.6px;
+    }
+    body{
+        font-size: 74.6px;
+    }
+}
+
+
+
+
+
+
+/*Nice select css*/
+
+/*# sourceMappingURL=yearend.css.map */
