@@ -2,6 +2,7 @@
 
 @import url("../reset.css");
 // @import url("../template.css");
+$primary-color:#7CD5FF;
 
 // ========init===================
 html{
@@ -95,18 +96,110 @@ section[class*="web-page"] {
 
 }
 
+.title-item{
+    font-size: 0;
+    text-align: center;
+    span {
+        //!!这边小图span 行内元素会自动垂直置中?
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+        // background-image: url("../images/gift_icon.png");
+        background-size: cover;
+        background-position: 50% 50%;
+    }
 
+    h2 {
+        display: inline-block;
+        font-size: 40px;
+        font-weight: bold;
+        padding: 0 30px;
+        // color: #074b6b;
+        margin-bottom: 45px;
+    }
+}
 
+.web-page2{
+    .title{
+        @extend .title-item;
+    }
+    .conList{
+        >ul{
+            display: flex;
+            
+        }
+    }
+}
 
+.web-page5{
+    background-color: #fff;
+    .title{
+        text-align: center;
+        padding-top: 75px;
+        .title-item{
+            @extend .title-item;
+            display: inline-block;
+            h2{
+                color:blue;
+                margin-bottom: 60px;
+            }
+            span{
+                background-image: url("../images/gift_icon.png");
+            }
+        }
+        
+    }
+
+    .layout{
+        ul{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 50px;
+            li{
+                color: blue;
+                &>div{
+                    // width: 260px;
+                    // height: 264px;
+                    width: 250px;
+                    // height: 246px ;//!!!!!!好像其实不用给他高 给宽度 看出来的图片比例高度就好
+                    margin-bottom: 30px;
+                    
+                    img{
+                        width: 100%;
+                        filter: drop-shadow(0px 3px 5px rgba(0,0,0,.2)) !important;
+                    }
+                }
+                text-align: center;
+                font-weight: 500;
+                span{
+                    font-size: 26px;
+                    display: block;//!!span block才能margin
+                    margin-bottom: 10px;
+                }
+
+                p{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+}
 
 
 // ====左邊品牌 右邊註冊
 .web-page6{
+    overflow: hidden;
+    background-color: $primary-color;
     .leftCon{
+        float: left;
         .brand{
             &>ul{
+                
                 &>li{
-
+                    display: flex;
+                    align-items:center;
                 }
             }
         }
@@ -116,7 +209,7 @@ section[class*="web-page"] {
         float: right;
         .sign_box{
             width: 520px;
-            padding-top: 64px;
+            // padding-top: 64px;
             // .clearfix:before TODO
             h3{
                 font-size: 48px;
@@ -124,7 +217,7 @@ section[class*="web-page"] {
                 margin-bottom: 16px;
             }
             form.zhuizong{
-                margin-bottom: 43px;
+                // margin-bottom: 43px;
                 .form-item{
                     display: flex;
                     align-items: center;
@@ -171,8 +264,8 @@ section[class*="web-page"] {
                 .yan-wrapper{
                     display: flex;
                     align-items: center;//??
-                    margin-bottom: 43px;
-                    &>.form-item{
+                    // margin-bottom: 43px;
+                    &>.form-item.yanZ-f1{
                         width: 372px;
                     }
                     .yanzheng-btn{
@@ -208,6 +301,146 @@ section[class*="web-page"] {
                     border-radius: 6px;
                     box-shadow: 0px 3px 7px 0px rgba(0,0,0,.3);
                 }
+            }
+        }
+    }
+}
+
+.web-page7{
+    background-color: #333333;
+    color: white;
+    // .line{
+    //     height: 5px;
+    //     background-color: #fff;
+    // }
+    .title{
+        text-align: center;
+        padding-top: 80px;
+        .title-item{
+            display: inline-block;
+             @extend .title-item;
+             h2{
+                color:white;
+                font-weight: normal;
+             }
+             span{
+                background-image: url("../images/gift_icon2.png");
+             }
+        }
+       
+    }
+    .layout{
+        overflow: hidden;
+        .leftCon2{
+            float: left;
+            width: 52.5%;
+            ul{
+                display: flex;
+                // justify-content: space-around;
+                
+                li{
+                    margin-left: 60px;
+                    &>div{
+                        width: 255px;
+                        height: 255px;
+                        img{
+                            // object-fit: cover;//????完全沒用
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+
+                    p{
+                        font-size: 23px;
+                        margin-top: 40px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .rightCon2{
+            float: right;
+            width: 47.5%;
+        
+            ul{
+                padding-left: 120px;
+                li{
+                    padding-left: 60px;
+                    background: url("../images/footer_icon.png") no-repeat;
+                    background-position: left center;
+                    p{
+                        font-size: 24px;
+                        line-height: 80px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.web-footer{
+    background-color: #333333;
+    padding: 55px 0 178px;
+    // margin-bottom: 133px;//还是为显
+    // color: #ffffff !important;//放這邊竟然是沒用的對template
+    // .item-1.item-2{//!!!上下差異 上面是兩個都要有
+    .item-1,.item-2{
+        color: #ffffff !important;
+        margin: 0;
+        font-size: 18px;
+        font-weight: 300;
+        opacity: .8;
+    }
+}
+
+
+.web-fixed{//!!!切图思维不一样 
+    position: fixed;
+    z-index: 100;//定位不要忘记社z-index!
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 133px;
+    // text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        width: 100%;
+        background-color: #f2f8ff;
+    }
+    .item{ //以前都是先acount 再a
+        // display: inline-block;
+        // vertical-align: middle;//垂直置中失败????
+        // line-height: 133px;
+        margin: 0 160px;//!!!先置中在中间 再依次margin左右 不用特别指margin一编
+        a{
+            background-image: linear-gradient(180deg,#207897 0%,#0e4d81 100%);
+            width: 270px;
+            height: 80px;
+            border-radius: 6px;
+            text-align: center;
+            box-shadow: 0px 5px 12px 0px rgba(0,0,0,.35);
+            p{
+                font-size: 23px;
+                color: #fefefe;
+                padding: 8px 0 8px;
+            }
+            span{
+                font-size: 17px;
+                color: #fefefe;
+                opacity: .9;
             }
         }
     }

@@ -88,23 +88,123 @@ section[class*="web-page"] {
           user-select: none;
 }
 
+.title-item, .web-page2 .title, .web-page5 .title .title-item, .web-page7 .title .title-item {
+  font-size: 0;
+  text-align: center;
+}
+
+.title-item span, .web-page2 .title span, .web-page5 .title .title-item span, .web-page7 .title .title-item span {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.title-item h2, .web-page2 .title h2, .web-page5 .title .title-item h2, .web-page7 .title .title-item h2 {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 0 30px;
+  margin-bottom: 45px;
+}
+
+.web-page2 .conList > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.web-page5 {
+  background-color: #fff;
+}
+
+.web-page5 .title {
+  text-align: center;
+  padding-top: 75px;
+}
+
+.web-page5 .title .web-page2 .title, .web-page2 .web-page5 .title .title, .web-page5 .title .title-item {
+  display: inline-block;
+}
+
+.web-page5 .title .web-page2 .title h2, .web-page2 .web-page5 .title .title h2, .web-page5 .title .title-item h2 {
+  color: blue;
+  margin-bottom: 60px;
+}
+
+.web-page5 .title .web-page2 .title span, .web-page2 .web-page5 .title .title span, .web-page5 .title .title-item span {
+  background-image: url("../images/gift_icon.png");
+}
+
+.web-page5 .layout ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.web-page5 .layout ul li {
+  color: blue;
+  text-align: center;
+  font-weight: 500;
+}
+
+.web-page5 .layout ul li > div {
+  width: 250px;
+  margin-bottom: 30px;
+}
+
+.web-page5 .layout ul li > div img {
+  width: 100%;
+  -webkit-filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.2)) !important;
+          filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.2)) !important;
+}
+
+.web-page5 .layout ul li span {
+  font-size: 26px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.web-page5 .layout ul li p {
+  font-size: 20px;
+}
+
+.web-page6 {
+  overflow: hidden;
+  background-color: #7CD5FF;
+}
+
+.web-page6 .leftCon {
+  float: left;
+}
+
+.web-page6 .leftCon .brand > ul > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .web-page6 .rightCon {
   float: right;
 }
 
 .web-page6 .rightCon .sign_box {
   width: 520px;
-  padding-top: 64px;
 }
 
 .web-page6 .rightCon .sign_box h3 {
   font-size: 48px;
   color: white;
   margin-bottom: 16px;
-}
-
-.web-page6 .rightCon .sign_box form.zhuizong {
-  margin-bottom: 43px;
 }
 
 .web-page6 .rightCon .sign_box form.zhuizong .form-item {
@@ -167,10 +267,9 @@ section[class*="web-page"] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 43px;
 }
 
-.web-page6 .rightCon .sign_box form.zhuizong .yan-wrapper > .form-item {
+.web-page6 .rightCon .sign_box form.zhuizong .yan-wrapper > .form-item.yanZ-f1 {
   width: 372px;
 }
 
@@ -206,5 +305,155 @@ section[class*="web-page"] {
   border-radius: 6px;
   -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.3);
+}
+
+.web-page7 {
+  background-color: #333333;
+  color: white;
+}
+
+.web-page7 .title {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.web-page7 .title .web-page2 .title, .web-page2 .web-page7 .title .title, .web-page7 .title .title-item {
+  display: inline-block;
+}
+
+.web-page7 .title .web-page2 .title h2, .web-page2 .web-page7 .title .title h2, .web-page7 .title .title-item h2 {
+  color: white;
+  font-weight: normal;
+}
+
+.web-page7 .title .web-page2 .title span, .web-page2 .web-page7 .title .title span, .web-page7 .title .title-item span {
+  background-image: url("../images/gift_icon2.png");
+}
+
+.web-page7 .layout {
+  overflow: hidden;
+}
+
+.web-page7 .layout .leftCon2 {
+  float: left;
+  width: 52.5%;
+}
+
+.web-page7 .layout .leftCon2 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.web-page7 .layout .leftCon2 ul li {
+  margin-left: 60px;
+}
+
+.web-page7 .layout .leftCon2 ul li > div {
+  width: 255px;
+  height: 255px;
+}
+
+.web-page7 .layout .leftCon2 ul li > div img {
+  width: 100%;
+  height: auto;
+}
+
+.web-page7 .layout .leftCon2 ul li p {
+  font-size: 23px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.web-page7 .layout .rightCon2 {
+  float: right;
+  width: 47.5%;
+}
+
+.web-page7 .layout .rightCon2 ul {
+  padding-left: 120px;
+}
+
+.web-page7 .layout .rightCon2 ul li {
+  padding-left: 60px;
+  background: url("../images/footer_icon.png") no-repeat;
+  background-position: left center;
+}
+
+.web-page7 .layout .rightCon2 ul li p {
+  font-size: 24px;
+  line-height: 80px;
+}
+
+.web-footer {
+  background-color: #333333;
+  padding: 55px 0 178px;
+}
+
+.web-footer .item-1, .web-footer .item-2 {
+  color: #ffffff !important;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 300;
+  opacity: .8;
+}
+
+.web-fixed {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 133px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+}
+
+.web-fixed::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  width: 100%;
+  background-color: #f2f8ff;
+}
+
+.web-fixed .item {
+  margin: 0 160px;
+}
+
+.web-fixed .item a {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#207897), to(#0e4d81));
+  background-image: linear-gradient(180deg, #207897 0%, #0e4d81 100%);
+  width: 270px;
+  height: 80px;
+  border-radius: 6px;
+  text-align: center;
+  -webkit-box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.35);
+}
+
+.web-fixed .item a p {
+  font-size: 23px;
+  color: #fefefe;
+  padding: 8px 0 8px;
+}
+
+.web-fixed .item a span {
+  font-size: 17px;
+  color: #fefefe;
+  opacity: .9;
 }
 /*# sourceMappingURL=campaign2005.css.map */
