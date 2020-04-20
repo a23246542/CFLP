@@ -1,0 +1,704 @@
+@import url("../reset.css");
+@import url("../template.css");
+@import url("../swiper.min-4.0.7.css");
+html {
+  height: 100%;
+  font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+img, a {
+  display: block;
+}
+
+html {
+  font-size: 16px;
+}
+.m-header .layout-1 .item-1 .left-1{
+	background-image: url(../../images/common/header43_03.png);
+	background-size: 2.25rem 0.63rem;
+	width: 2.25rem;
+	height: 0.63rem;
+}
+.title-item-structure, .web-page2 .title .title-item, .web-page3 .container .title .title-item, .web-page4 .title .title-item, .web-page5 .title .title-item {
+  text-align: center;
+}
+
+.title-item-structure span, .web-page2 .title .title-item span, .web-page3 .container .title .title-item span, .web-page4 .title .title-item span, .web-page5 .title .title-item span {
+  display: inline-block;
+  width: .32rem;
+  height: .32rem;
+  background-image: url("https://img.getfc.com.cn/source/www/zt/lp-img/mobile/campaign2004/gift_icon.png");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.title-item-structure h2, .web-page2 .title .title-item h2, .web-page3 .container .title .title-item h2, .web-page4 .title .title-item h2, .web-page5 .title .title-item h2 {
+  display: inline-block;
+  font-size: .4rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 .3rem;
+  color: #074b6b;
+  margin-bottom: .45px;
+}
+
+.wrapper .container {
+  width: 100% !important;
+}
+
+.web-page1 .container {
+  height: 9.88rem;
+  background: url("https://img.getfc.com.cn/source/www/zt/lp-img/mobile/campaign2004/M_toppic.png") no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.web-page1 .container h1, .web-page1 .container h2 {
+  color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.web-page2 {
+	height: auto!important;
+	height: 7.66rem;
+	min-height: 7.66rem;
+  background: #f2f8ff;
+}
+
+.web-page2 .title {
+  padding-top: 1rem;
+  margin-bottom: .3rem;
+}
+
+.web-page2 .title .title-item {
+  margin-bottom: .1rem;
+}
+
+.web-page2 .title p {
+  font-size: .28rem;
+  font-weight: 500;
+  color: #fe3838;
+  text-align: center;
+  padding: 0 .3rem;
+  line-height: .48rem;
+}
+
+.web-page2 .conList .swiper-ticket {
+  height: 2.6rem;
+  margin-bottom: .4rem;
+}
+
+.web-page2 .conList .swiper-ticket ul.swiper-wrapper {
+  height: 2.32rem;
+}
+
+.web-page2 .conList .swiper-ticket ul.swiper-wrapper li.swiper-slide {
+  width: 4.85rem;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding-left: 0.53rem;
+  padding-top: .1rem;
+  padding-bottom: .1rem;
+}
+
+.web-page2 .conList .swiper-ticket ul.swiper-wrapper li.swiper-slide .ticket {
+  width: 4.85rem;
+  height: 2.35rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url("https://img.getfc.com.cn/source/www/zt/lp-img/mobile/campaign2004/ticket_bu.png");
+  background-size: 4.85rem 2.35rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-filter: drop-shadow(0px 0.01rem 0.03rem #9db4e7);
+          filter: drop-shadow(0px 0.01rem 0.03rem #9db4e7);
+}
+
+.web-page2 .conList .swiper-ticket ul.swiper-wrapper li.swiper-slide .ticket.red {
+  background-image: url("https://img.getfc.com.cn/source/www/zt/lp-img/mobile/campaign2004/ticket_red.png");
+  background-size: 100% 100%;
+  height: 2.28rem;
+  background-size: 4.85rem 2.28rem;
+}
+
+.web-page2 .conList .swiper-ticket ul.swiper-wrapper li.swiper-slide .ticket-item {
+  width: 3.25rem;
+  padding-top: .3rem;
+  text-align: center;
+}
+
+.web-page2 .conList .swiper-ticket ul.swiper-wrapper li.swiper-slide .ticket-item p {
+  font-size: .25rem;
+  color: #2851bd;
+  letter-spacing: .02rem;
+}
+
+.web-page2 .conList .swiper-ticket ul.swiper-wrapper li.swiper-slide .ticket-item span {
+  display: inline-block;
+  font-size: .44rem;
+  line-height: 0.44rem;
+  position: relative;
+  top: -.06rem;
+  color: #fec738;
+  vertical-align: sub;
+  margin-left: .08rem;
+  margin-right: .08rem;
+}
+
+.web-page2 .conList .swiper-ticket ul.swiper-wrapper li.swiper-slide .ticket-item p:nth-child(1) {
+  margin-bottom: .1rem;
+  height: .28rem;
+  line-height: .28rem;
+}
+
+.web-page2 .conList .swiper-ticket ul.swiper-wrapper li.swiper-slide .ticket-item p:nth-child(2) {
+  padding-top: .07rem;
+  height: .7rem;
+  line-height: .7rem;
+}
+
+.web-page2 .conList .swiper-ticket ul.swiper-wrapper li.swiper-slide a.receive {
+  width: 1.45rem;
+}
+
+.web-page2 .btn-detail {
+  text-align: center;
+  margin-top: .4rem;
+  padding-bottom: .9rem;
+}
+
+.web-page2 .btn-detail > div {
+  display: inline-block;
+}
+
+.web-page2 .btn-detail > div a.btn {
+  width: 3.2rem;
+  height: .75rem;
+  line-height: .75rem;
+  color: #fff;
+  font-size: .28rem;
+  letter-spacing: .01rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#155065), to(#0a375b));
+  background-image: linear-gradient(180deg, #155065 0%, #0a375b 100%);
+  border-radius: .1rem;
+  font-weight: normal;
+  -webkit-box-shadow: 0px 0.11rem 0.08rem 0.02rem rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 0.11rem 0.08rem 0.02rem rgba(0, 0, 0, 0.12);
+}
+
+.web-page3 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#09355a), color-stop(40%, #165266));
+  background-image: linear-gradient(180deg, #09355a 0%, #165266 40%);
+}
+
+.web-page3 .container {
+  width: 100%;
+  padding: 0 .3rem;
+}
+
+.web-page3 .container .title {
+  margin-bottom: 0.7rem;
+  padding-top: 1rem;
+}
+
+.web-page3 .container .title .title-item {
+  margin-bottom: .1rem;
+}
+
+.web-page3 .container .title .title-item h2 {
+  color: #fff;
+}
+
+.web-page3 .container .title .title-item span {
+  background-image: url("https://img.getfc.com.cn/source/www/zt/lp-img/mobile/campaign2004/gift_icon2.png");
+}
+
+.web-page3 .container .title p {
+  font-size: .28rem;
+  color: #fec738;
+  text-align: center;
+  line-height: .48rem;
+}
+
+.web-page3 .container .conList ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 0.8rem;
+}
+
+.web-page3 .container .conList ul li {
+  text-align: center;
+}
+
+.web-page3 .container .conList ul li > div {
+  width: 2.1rem;
+  height: 2.25rem;
+  overflow: hidden;
+  margin-bottom: 0.1rem;
+}
+
+.web-page3 .container .conList ul li > div img {
+  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.web-page3 .container .conList ul li h3 {
+  font-size: .25rem;
+  color: #fff;
+  margin-bottom: .18rem;
+}
+
+.web-page3 .container .conList ul li p {
+  font-size: .28rem;
+  color: #eb2929;
+  width: 1.3rem;
+  height: .5rem;
+  line-height: .5rem;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: .05rem;
+  text-align: center;
+}
+
+.web-page4 {
+  background-color: #f2f8ff;
+}
+
+.web-page4 .container {
+  width: 100%;
+}
+
+.web-page4 .title {
+  padding-top: 1rem;
+}
+
+.web-page4 .swiper-focus.swiper-container {
+  /* padding-bottom: .75rem;
+  padding-top: 1.35rem; */
+  padding-bottom: 1.1rem;
+  padding-top: 1.65rem;
+}
+
+.web-page4 .swiper-focus.swiper-container .swiper-pagination-bullets {
+  position: absolute;
+  top: 0rem;
+  text-align: center !important;
+  height: 1.5rem;
+  padding-top: .48rem;
+}
+
+.web-page4 .swiper-focus.swiper-container .swiper-pagination-bullet {
+  display: inline-block;
+  width: 1.9rem;
+  height: .55rem;
+  line-height: .55rem;
+  text-align: center !important;
+  letter-spacing: .015rem;
+  margin: 0 .25rem;
+  color: #074b6b;
+  background-color: #fff;
+  font-size: .28rem;
+  border-radius: .05rem;
+  font-weight: 700;
+  font-family: "Ping Fang";
+  opacity: 1;
+  -webkit-box-shadow: 0 0.01rem 0.08rem 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.01rem 0.08rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.web-page4 .swiper-focus.swiper-container .swiper-pagination-bullet-active {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#155065), to(#0a365b));
+  background-image: linear-gradient(180deg, #155065 0%, #0a365b 100%);
+  color: #fff;
+}
+
+.web-page4 .swiper-focus.swiper-container .swiper-wrapper {
+  width: 32.4rem;
+  height: 6rem;
+  /* margin-top: -0.3rem; */
+  margin-bottom: -0.2rem;
+}
+
+.web-page4 .swiper-focus.swiper-container .swiper-wrapper .swiper-slide {
+  width: 3.5rem;
+}
+.web-page4 .swiper-focus.swiper-container .swiper-wrapper .swiper-slide-active {
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+}
+.web-page4 .swiper-focus.swiper-container .swiper-wrapper .swiper-slide .item {
+  width: 3.3rem;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: .2rem;
+  background-color: #fff;
+  border-radius: .1rem;
+  -webkit-box-shadow: 0 0.01rem 0.09rem 0.01rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.01rem 0.09rem 0.01rem rgba(0, 0, 0, 0.1);
+  color: #333;
+  opacity: .7;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.web-page4 .swiper-focus.swiper-container .swiper-wrapper .swiper-slide .item > div.pic {
+  width: 2.9rem;
+  height: 1.4rem;
+  margin-bottom: .15rem;
+}
+
+/* .web-page4 .swiper-focus.swiper-container .swiper-wrapper .swiper-slide .item > div img {
+  width: 100%;
+  height: 100%;
+} */
+
+.web-page4 .swiper-focus.swiper-container .swiper-wrapper .swiper-slide .item p {
+  text-align: left;
+}
+
+.web-page4 .swiper-focus.swiper-container .swiper-wrapper .swiper-slide .item p:nth-of-type(1) {
+  font-size: .26rem;
+  font-weight: 500;
+}
+
+.web-page4 .swiper-focus.swiper-container .swiper-wrapper .swiper-slide .item p:nth-of-type(2) {
+  font-size: .24rem;
+  padding: .12rem 0;
+}
+
+.web-page4 .swiper-focus.swiper-container .swiper-wrapper .swiper-slide .item p:nth-of-type(3) {
+  font-size: .18rem;
+  line-height: .32rem;
+}
+
+.web-page4 .swiper-focus.swiper-container .swiper-wrapper .swiper-slide-active .item {
+  background-color: #074b6b;
+  color: #fff;
+  opacity: 1;
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.web-page5 .container {
+  width: 100%;
+  padding: 0 .3rem;
+}
+
+.web-page5 .title {
+  padding-top: 1rem;
+  margin-bottom: .2rem;
+}
+
+.web-page5 .layout ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.web-page5 .layout ul li {
+  padding-bottom: .45rem;
+  color: #074b6b;
+  text-align: center;
+}
+
+.web-page5 .layout ul li > div {
+  width: 3.3rem;
+  height: 3.3rem;
+  margin-bottom: .25rem;
+}
+
+.web-page5 .layout ul li > div img {
+  width: 100%;
+  -webkit-filter: drop-shadow(0px 0px 0.03rem rgba(0, 0, 0, 0.1)) !important;
+          filter: drop-shadow(0px 0px 0.03rem rgba(0, 0, 0, 0.1)) !important;
+}
+
+.web-page5 .layout ul li span {
+  font-size: .36rem;
+  font-weight: bold;
+}
+
+.web-page5 .layout ul li p {
+  font-size: .28rem;
+  font-weight: bold;
+  line-height: .38rem;
+  text-align: center;
+}
+
+.web-footer {
+  background-color: #333;
+  padding-top: 0;
+  padding-bottom: 1.5rem;
+}
+
+.web-footer > div {
+  padding: .2rem .3rem;
+}
+
+.web-footer > div p {
+  color: #f8f5f5 !important;
+  font-size: .26rem;
+  font-family: "Ping Fang";
+  line-height: .4rem;
+  opacity: .9;
+}
+
+.web-fixed {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #fff;
+  -webkit-box-shadow: inset 0rem 0rem 0.02rem 0.01rem rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0rem 0rem 0.02rem 0.01rem rgba(0, 0, 0, 0.1);
+}
+
+.web-fixed .item > a {
+  padding: .2rem 0;
+}
+
+.web-fixed .item > a > div {
+  width: .66rem;
+  height: .66rem;
+  margin: 0 auto .05rem;
+}
+
+.web-fixed .item > a > div img {
+  width: 100%;
+}
+
+.web-fixed .item > a p {
+  font-size: .28rem;
+  color: #074b6b;
+  text-align: center;
+}
+/*# sourceMappingURL=campaign2004.css.map */
+
+.tc-hide{
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    line-height: 1.8;
+}
+.masking{
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+}
+.popup-box {
+    overflow: hidden;
+    max-width:95%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top:10%;
+    background: #fff;
+    z-index: 99999;
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 .1rem rgba(0, 0, 0, 0.3);
+}
+.popup-box .box-in {
+    margin: 3% 4% 5% 4%;
+    overflow-y: auto;
+    height: 8rem;
+}
+.popup-box .close-top{
+    padding:0.3rem 0.3rem;
+    font-size: 0.44rem;
+    color:#b78255;
+    text-align: center;
+    border-bottom: 1px solid #b78255;
+    width:6rem;
+    margin: 0 auto;
+    position: relative;
+}
+.popup-box .close-top a{
+    background: url(../../images/campaign1710/close-b.png) no-repeat;
+    width: 0.21rem;
+    height:0.21rem;
+    background-size: 0.21rem 0.21rem;
+    position: absolute;
+    right: 0;
+    margin-top: .2rem;
+    text-decoration: none;
+}
+.popup-box  .box-in .section1 .item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: .1rem;
+}
+.popup-box .section1 h2{
+    font-size: 0.28rem;
+    font-weight: bold;
+    color: #b78255;
+}
+.popup-box table.data-box {
+    width: 100%;
+    margin: 16px auto .25rem;
+    text-align: center;
+    border: 0 !important;
+    font-size: 1.6em;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.popup-box .box-in .line-throw{font-size: 0.3rem;}
+.popup-box .box-in .section1 p{
+    font-size:0.28rem;
+    line-height: 1.8;
+}
+.popup-box .box-in .section3 p{
+    font-size:0.28rem;
+    /*margin-bottom: 0.2rem;*/
+    line-height: 1.8;
+}
+.popup-box .box-in .section3 p a{color: #0096dc}
+.popup-box .box-in .section3 p span{
+    color: #f00;
+    font-weight: bold;
+}
+.popup-box .box-in .section4  h2{
+    font-size: 0.3rem;
+    margin-bottom: 0.1rem;
+    color: #b78255;
+}
+.popup-box .box-in .section4 li{
+    font-size: 0.28rem;
+    line-height: 1.8;
+}
+.popup-box .box-in .section4 li span{
+    /*margin-right: 0.15rem;*/
+}
+.popup-box .box-in .section4 li p{
+    display: flex;
+}
+
+.section5 ol li{
+    font-size: .2rem;
+}
+
+.popup-box table.data-box thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box thead th {
+    font-size: .28rem;
+    /* font-size: .2rem; */
+    text-align: center;
+    padding: .15rem .05rem;
+    color: #FFFFFF;
+    background: #dcb08e;
+    line-height: 1.0;
+}
+.popup-box table.data-box thead tr {
+    /* border: 1px solid #dcb08e; */
+}
+.popup-box table.data-box tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.popup-box table.data-box tbody td {
+    line-height: 1.0;
+    text-align: center;
+    color: #333333;
+    padding: 1.44%;
+    /* padding: 1.44% 0; */
+    font-size: .28rem;
+    /* font-size: .16rem; */
+    border: 0.025rem solid #ead5c2;
+    font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+}
+
+.popup-box table.data-box tbody tr.grey td:nth-child(1){
+    /* width: 30px; */
+}
+.popup-box table.data-box tbody .unit {
+    font-size: 0.8em;
+}
+.popup-box table.data-box tbody tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.popup-box table.data-box tbody tr.grey {
+    background: #fff;
+}
+.popup-box table.data-box tbody tr.last-row td {
+    border-bottom: 1px solid #CCCCCC;
+}
+.popup-box table.data-box .first-child {
+    text-align: center;
+    font-size: .28rem;
+}
+.popup-box table.data-box .first-child a {
+    color: #666666;
+    text-decoration: none;
+}
+.popup-box .table1 td,
+.popup-box .table2 td {
+    width: 25%;
+}
+.popup-box .table4 td {
+    width: 16%;
+}
+.popup-box .table3 td {
+    width: 33.333333%;
+}
+.popup-box .note{line-height: 1.8;font-size: 0.24rem;margin-bottom: 0.1rem}
+.popup-box .note span{color: #f00}
+.down-footer span{
+    line-height: 1.8;
+}
+.bot-fixed li{
+    line-height: 1.8;
+}

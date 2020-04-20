@@ -1,0 +1,49 @@
+@import url("../reset.css");
+@import url("../template.css");
+@import url("../swiper.min-4.0.7.css");
+@import "./init";
+
+
+.title-item-structure {
+    text-align: center;
+    span {
+        //!!这边小图span 行内元素会自动垂直置中?
+        display: inline-block;
+        width: .32rem;
+        height: .32rem;
+        background-image: url("../images/gift_icon.png");
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+
+    h2 {
+        display: inline-block;
+        font-size: .4rem;
+        font-weight: bold;
+        text-align: center;
+        padding: 0 .3rem;
+        color: $dark-blue;
+        margin-bottom: .45px;
+    }
+}
+
+// =====================================
+.wrapper{
+    
+    .container{
+        width: 100% !important;
+    }
+}
+// ===================================
+.web-page1{
+    .container{
+        height: 9.88rem;
+        background: url("../lp-img/mobile/campaign2005/M_topbn.png") no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        h1,h2{
+            color: transparent;
+            user-select: none;
+        }
+    }
+}

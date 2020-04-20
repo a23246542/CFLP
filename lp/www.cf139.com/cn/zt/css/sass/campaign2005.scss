@@ -3,6 +3,7 @@
 @import url("../reset.css");
 // @import url("../template.css");
 $primary-color:#7CD5FF;
+$secondary-color:#0399de;
 
 // ========init===================
 html{
@@ -105,7 +106,7 @@ section[class*="web-page"] {
         width: 32px;
         height: 32px;
         font-size: 16px;
-        // background-image: url("../images/gift_icon.png");
+        background-image: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/campaign2005/PC2_tab3.png");
         background-size: cover;
         background-position: 50% 50%;
     }
@@ -125,8 +126,21 @@ section[class*="web-page"] {
 }
 
 .web-page2{
+    padding-top: 120px;
     .title{
-        @extend .title-item;
+        // @extend .title-item;
+        h2{
+            color: transparent;
+            user-select: none;
+            background: url("../images/pc2_h1.png") no-repeat;
+            width: 728px;
+            height: 219px;
+            background-size: 728px 129px;
+        }
+        P{
+            color:$secondary-color;
+            font-size: 24px;
+        }
     }
     .conList{
         >ul{

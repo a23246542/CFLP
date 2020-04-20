@@ -1,0 +1,835 @@
+
+
+@import url("../reset.css");
+// @import url("../template.css");
+$primary-color:#7CD5FF;
+$secondary-color:#0399de;
+$text-color:#0393d7;
+$text-color2:#35b1ec;
+$text-dark-color:#066490;
+$linear-color:linear-gradient(180deg, #FBDC32 0%, #FA9A02 100%);
+// 之后应该bg-color title-color
+// ========init===================
+html{
+    height: 100%;
+    // font-family: Arial, Helvetica, sans-serif;
+    // font-family: "Microsoft JhengHei", "Heiti TC", "sans-self";
+    font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+}
+
+body{
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,p,ul,li,a{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+img,a{
+    display: block;
+}
+// =======layout===============
+section[class*="web-page"] {
+    width: 100%;
+    min-width: 1200px;//勉得缩到1200以下 container的东西挤爆
+}
+
+// #main { //我是用或是里面在包wrapper
+.wrapper { //我是用或是里面在包wrapper
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    // color: #292626;
+}
+
+@mixin bgTxt($width,$height,$title){
+    width: $width+px;
+    height: $height+px;
+    background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/campaign2005/#{$title}.png") no-repeat;
+    background-size: $width+px $height+px;
+    background-position: 50% 50%;
+    @content;
+}
+@mixin bgTxt2($width,$height,$title){
+    width: $width+px;
+    height: $height+px;
+    background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/campaign2005/#{$title}.png") no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    @content;
+}
+// ====================================================
+// template.css里面的
+// .inner {  //我是用container
+.container {  //我是用container
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.clearfix{
+    display: block;
+    clear: both;
+    &::before{
+        content: "";
+        display: block;
+        visibility: hidden;
+        font-size: 0;
+        height: 0;
+        clear: both;
+    }
+}
+
+
+.e-header{
+    font-size: 10px;
+}
+.banner-posi{
+    position: relative;
+    z-index: 1;
+    top: -74px;
+    margin-bottom: -74px;
+}
+
+.web-page1.banner-all{
+    width: 100%;
+    padding-bottom: 31.25%;
+    background-image: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/campaign2005/PC2_bn.jpg");
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+
+    .container {
+        position: relative;
+        h1,
+        h2 {
+            position: absolute; //定位住才不会变高(盒子模型)
+            color: transparent;
+            user-select: none;
+        }
+    }
+
+}
+
+.title-item{
+    font-size: 0;
+    text-align: center;
+    span {
+        //!!这边小图span 行内元素会自动垂直置中?
+        &:nth-of-type(1){
+            background-image: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/campaign2005/PC2_tab3.png");
+
+        }
+        &:nth-of-type(2){
+            background-image: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/campaign2005/PC2_tab4.png");
+
+        }
+        display: inline-block;
+        width: 74px;
+        height: 38px;
+        // font-size: 16px;
+        // background-image: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/campaign2005/PC2_tab3.png");
+        background-size: 74px 38px;
+        background-position: 50% 50%;
+    }
+
+    h2 {
+        display: inline-block;
+        font-size: 40px;
+        font-weight: bold;
+        padding: 0 30px;
+        color: $secondary-color;
+        // margin-bottom: 45px;
+    }
+
+    p{
+        text-align: center;
+    }
+}
+
+.web-page2{
+    padding-top: 120px;
+    .title{
+        // @extend .title-item;
+        
+        h2{
+            color: transparent;
+            user-select: none;
+            background: url("../images/pc2_h1.png") no-repeat;
+            width: 728px;
+            height: 129px;
+            background-size: 728px 129px;
+            margin-bottom: 40px;
+        }
+
+        p{
+            
+            top: 0;
+            left: 0;
+            color: $secondary-color;
+            font-size: 24px;
+        }
+    }
+    .conList{
+        padding-top: 60px;
+        padding-bottom: 10px;
+        
+        >ul{
+            display: flex;
+            justify-content: center;
+            
+
+            div[class*="item"]{
+                width: 389px;
+                height: 168px;
+                background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/campaign2005/PC2_blue.png") no-repeat;
+                background-size: 389px 168px;
+                text-align: center;
+                font-weight: bold;
+                P:nth-child(1) {
+                    font-size: 24px;
+                    padding: 9px 0;
+                    color:#FFFFFF;
+                }
+                P:nth-child(2) {
+                    margin: 0 auto;
+                    padding: 13px 0 11px;
+                    box-sizing: content-box;
+                }
+                P:nth-child(3) {
+                    font-size: 20px;
+                    color:#fff;
+                    font-weight: 500;
+                    
+                }
+            }
+
+            .left-box{
+                div[class*="item"]{
+                    filter: drop-shadow(2px 4px 3px rgba(0, 0, 0,.2));
+
+                }
+                .item-1{
+                    margin-bottom: 11px;
+                    // >p:nth-child(2){
+                    >p:nth-of-type(2){
+                        @include bgTxt(220,55,sam_na2);
+                    }
+                }
+                // .item:nth-of-type(2){
+                // .item:last-of-type{//!!!为和都会吃到这两个
+                .item-2{
+                    >p:nth-of-type(2) {
+                        @include bgTxt(220,55,sam_na3);
+                    }
+                }
+            }
+            .center-box{
+                margin: 0 18px;
+                .item-3{
+                    width: 281px;
+                    height: 365px;
+                    background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/campaign2005/PC2_redbox.png") no-repeat;
+                    background-size: 281px 365px;
+                    padding-top: 28px;
+                    box-sizing: border-box;
+                    filter: drop-shadow(2px 9px 5px rgba(0,0,0,.3));
+                    P:nth-child(1){
+                        padding: 0;//!!!!还要去除前面的
+                        margin-bottom: 150px;
+                    }
+                    P:nth-child(2){
+                        padding: 0;
+                        margin-bottom: 16px;
+                        // @include bgTxt();
+                    }
+                    P:nth-child(3){
+                        padding: 0;
+                    }
+                }
+            }
+            .right-box{
+                div[class*="item"]{
+                    filter: drop-shadow(2px 4px 3px rgba(0, 0, 0, .2));
+                }
+                .item-4{
+                    margin-bottom: 11px;
+                    p:nth-child(2) {
+                        @include bgTxt(220,55,sam_na1);
+                    }
+                }
+                .item-5{
+                    p:nth-child(2) {
+                        @include bgTxt(220,55,sam_na4)
+                    }
+                }
+            }
+            
+        }
+
+    }
+
+
+    .btn-detail-area{
+        padding-top: 50px;
+        padding-bottom: 100px;
+        text-align: center;
+        >div{
+            display: inline-block;
+            >a.btn{
+                width: 400px;
+                height: 75px;
+                box-sizing:border-box;
+                background-color: #5ecdfe;
+                border:4px solid #fff;
+                border-radius: 45px;
+                line-height: 66px;//75-4-4
+                text-align: center;
+                color: white;
+                font-size: 32px;
+                letter-spacing: 2.5px;
+                // background-image: linear-gradient(180deg, #155065 0%, #09355a 100%);
+                box-shadow: 0px 2px 8px 2px rgba(0,0,0,.2);
+            }
+        }
+    }
+}
+
+
+.web-page4{
+    background-color: $primary-color;
+    padding-top: 135px;
+    .title{
+        @extend .title-item;
+        h2{
+            color:#fff;
+            font-weight: 500;
+            text-shadow: 2px 0px 14px rgba(0,0,0,.4);
+        }
+        span:nth-of-type(1){
+            background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/campaign2005/PC2_tab1.png");
+        }
+        span:nth-of-type(2){
+            background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/campaign2005/PC2_tab2.png");
+        }
+    }
+
+    .swiper {
+        padding-top: 63px;
+        padding-bottom: 115px;
+        .swiper-container1 {
+            // width: 1000px;
+            // position: relative;//swiper內建
+            max-width: 1125px;
+            margin: 0 auto;//??劉這個會跑出來 沒下面hidden的話
+            overflow: hidden;
+            padding-top: 145px;
+            position: relative;
+            .swiper-pagination {
+                position: absolute;//!!swiper內建
+                top: 0;
+                height: fit-content;
+
+                .swiper-pagination-bullet {
+                    top: 0;
+                    display: inline-block;
+                    vertical-align:middle;
+                    // outline: 1px solid red;
+                    width: auto;//!!!
+                    height: auto;//!!
+                    margin: 0 25px;
+                    color: #fff;
+                    font-size: 24px;
+                    opacity: 1;
+                    background: none;
+                    transition: background-image .3s;//??背景圖無效
+                    // transition: background 2s;//??背景图无效
+                    
+                    
+                    &-active {
+                        width: 204px;
+                        height: 55px;
+                        line-height: 51px;//55-2-2!!!
+                        color: white;
+                        font-size: 30px;
+                        width: 210px;
+                        border-radius: 15px;
+                        border:2px solid #fff;
+                        background-image: $linear-color;
+                        box-shadow: 0px 4px 10px 0 rgba(0,0,0,.5);
+                        
+                    }
+                }
+            }
+
+            .swiper-wrapper{
+                width: 100%;
+                height: auto;//!!!不然会出现不知名高度
+                // position: relative;//swiper预设
+                // height: 100%;//swiper预设
+                .swiper-slide{
+                    // padding: 10px;
+                    // box-sizing: border-box;
+                    // width: 315px;////!!!!!插电忘记slidfe
+                    // height: 393px;
+                    outline:1px solid red;
+                    margin: 0;
+                    padding-bottom: 20px;//!!不然陰影會被切掉
+                    
+                    &.item-1{
+                        .pic{
+                            @include bgTxt2(315,160,pic1){
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                    &.item-2{
+                        .pic{
+                            @include bgTxt2(315,160,pic2){
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                    &.item-3{
+                        .pic{
+                            @include bgTxt2(315,160,pic3){
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                    
+                    .item{ 
+                        background-color: #fff;
+                        // padding: 20px;
+                        width: 315px;////!!!!!插电忘记slidfe
+                        height: 393px;
+                        margin: 0 auto;
+                        border-radius: 20px;
+                        overflow: hidden;
+                        box-sizing: border-box;
+                        // box-shadow: 0 1px 9px 1px rgba(0,0,0,.1);
+                        transition: all .1s;
+                        &>div.pic{
+                            // width: 315px;
+                            // height: 160px;
+                            // margin: 0 auto;//插点忘记这样置中就好
+                            // // height: 160px;
+                            // img{
+                            //     width: 100%;
+                            //     height: auto;
+                            // }
+
+                            
+                        }
+
+                        .txt{
+                            // box-sizing: border-box;
+                            padding: 20px;
+                        }
+                        h2{
+                            font-size: 24px;
+                            color: #555555;
+                            text-align: center;
+                            font-weight: bold;
+                            // padding: 5px 0 20px;
+                            margin-bottom: 20px;
+                        }
+                        p{
+                            color: #717273;
+                            font-size: 16px;
+                            letter-spacing:1.2;
+                            // padding-left: 20px;
+                        }
+
+                        // p:nth-of-type(1){
+                        //     padding-top: 25px;
+                        // }
+                        // p:nth-of-type(2){
+                        //     padding: 10px 0px 0px;
+                        //     font-size: 22px;
+                        // }
+                        // p:nth-of-type(3){
+                        //     padding: 20px 0 0;//TODO看这边是否要用text-overflow
+                        //     font-size: 18px;
+                        //     line-height: 26px;
+                        // }
+                    }
+                    &-active .item{
+                        box-shadow:3px 5px 10px 2px rgba(0, 0, 0, 0.35);
+                        h2{
+                            color:$text-color;
+                        }
+                        p{
+                            color: $text-color2;
+                        }
+                        
+                    }
+                    &:not(.swiper-slide-active) .item{
+                        // transform: scale(.8);
+                        // opacity: .8;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+.web-page5{
+    background-color: #fff;
+    .title{
+        text-align: center;
+        padding-top: 75px;
+        .title-item{
+            @extend .title-item;
+            display: inline-block;
+            h2{
+                color:$secondary-color;
+                // margin-bottom: 60px;
+            }
+            span{
+                background-image: url("../images/gift_icon.png");
+            }
+        }
+        
+    }
+
+    .layout{
+        padding-top: 65px;
+        padding-bottom: 95px;
+        ul{
+            max-width: 1064px;
+            margin: 0 auto;
+            display: flex;
+            // justify-content: space-between;
+            justify-content: space-around;
+            padding-bottom: 50px;
+            li{
+                color: $secondary-color;
+                &>div{
+                    width: 206px;
+                    height: 206px;
+                    // height: 246px ;//!!!!!!好像其实不用给他高 给宽度 看出来的图片比例高度就好
+                    margin-bottom: 30px;
+                    
+                    img{
+                        width: 100%;
+                        filter: drop-shadow(0px 3px 5px rgba(0,0,0,.4)) !important;
+                    }
+                }
+                text-align: center;
+                font-weight: 500;
+                span{
+                    color: $secondary-color;
+                    font-size: 26px;
+                    display: block;//!!span block才能margin
+                    margin-bottom: 10px;
+                }
+
+                p{
+                    color: $secondary-color;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+}
+
+
+// ====左邊品牌 右邊註冊
+.web-page6{
+    overflow: hidden;
+    background-color: $primary-color;
+    padding-top: 60px;
+    padding-bottom: 100px;
+    .leftCon{
+        float: left;
+        width: 48%;
+        .brand{
+            &>ul{
+                padding-left: 10px;//才不會aos華過去切到
+                &>li{
+                    display: flex;
+                    align-items:center;
+                    &:not(:last-child){margin-bottom: 26px;}
+                    .icon{
+                        width: 103px;
+                        height: 103px;
+                        >img{
+                            width: 100%;
+                        }
+                    }
+                    .txt{
+                        padding-left: 26px;
+                        padding-top: 9px;
+                        p{
+                            color: $text-dark-color;
+                            font-size: 26px;
+                            margin-bottom: 12px;
+                        }
+                        span{
+                            display: block;
+                            font-size: 20px;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .rightCon{
+        float: right;
+        width: 52%;
+        .sign_box{
+            width: 520px;
+            // padding-top: 64px;
+            // .clearfix:before TODO
+            h3{
+                font-size: 48px;
+                color: white;
+                margin-bottom: 16px;
+                text-shadow:7.13px 3.63px 13px #00000042;
+            }
+            form.zhuizong{
+                // margin-bottom: 43px;
+                .form-item{
+                    display: flex;
+                    align-items: center;
+                    background-color: #fff;
+                    height: 66px;
+                    // padding-left: 25px;
+                    padding-left: 22px;
+                    box-sizing: border-box !important;
+                    border-radius: 6px;
+                    &>div{
+                        margin-right: 22px;
+                        img{
+                            width: auto;
+                        }
+                    }
+                    input{
+                        display: block;
+                        flex: 1;
+                        background: transparent;
+                        border: none;
+                        line-height: 66px;
+                        // padding-left: 20px;
+                        border: none;
+                        font-size: 20px;
+                        &::-webkit-input-placeholder{
+                            color: #999;
+                        }
+                    }
+                }
+
+                .input-tip{
+                    height: 34px !important;
+                    line-height: 34px;
+                    width: 100%;
+                    margin: 0 auto;
+                    text-align: left;
+                    overflow: hidden;
+                    span{
+                        font-size: 14px;
+                        padding-left: 20px;
+                        color: #de3f00!important;
+                    }
+                }
+
+                .yan-wrapper{
+                    display: flex;
+                    align-items: center;//??
+                    // margin-bottom: 43px;
+                    &>.form-item.yanZ-f1{
+                        width: 372px;
+                    }
+                    .yanzheng-btn{
+                        margin-left: auto;
+                        width: 130px;
+                        height: 66px;
+                        line-height: 63px;
+                        text-align: center;
+                        background-image: linear-gradient(180deg,#7CD5FF 0%,#3dc4fd 100%);
+                        border-radius: 6px;
+                        border: 2px solid #fff;
+                        // box-shadow: 0px 3px 7px 0px rgba(0,0,0,.4);
+                        box-shadow: 2.63px 5.39px 13px 0px #0000003B;
+                        a.btn-phonecode{
+                            font-size: 20px;
+                            color: white;
+                            // display: none;
+                        }
+                        a.re-btn{
+                            font-size: 17px;
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+            .btn-account{
+                &>a{
+                    font-size: 30px;
+                    line-height: 66px;
+                    text-align: center;
+                    color: white;
+                    letter-spacing: 1.5px;
+                    background-image: $linear-color;
+                    border-radius: 6px;
+                    border:2px solid #fff;
+                    box-shadow: 0px 3px 7px 0px rgba(0,0,0,.3);
+                }
+            }
+        }
+    }
+}
+
+.web-page7{
+    background-color: #02abe3;
+    color: white;
+    // .line{
+    //     height: 5px;
+    //     background-color: #fff;
+    // }
+    .title{
+        text-align: center;
+        padding-top: 80px;
+        .title-item{
+            display: inline-block;
+             @extend .title-item;
+             h2{
+                color:white;
+                font-weight: normal;
+             }
+             span{
+                background-image: url("../images/gift_icon2.png");
+             }
+        }
+       
+    }
+    .layout{
+        overflow: hidden;
+        .leftCon2{
+            float: left;
+            width: 52.5%;
+            ul{
+                display: flex;
+                // justify-content: space-around;
+                
+                li{
+                    margin-left: 60px;
+                    &>div{
+                        width: 255px;
+                        height: 255px;
+                        img{
+                            // object-fit: cover;//????完全沒用
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+
+                    p{
+                        font-size: 23px;
+                        margin-top: 40px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .rightCon2{
+            float: right;
+            width: 47.5%;
+        
+            ul{
+                padding-left: 120px;
+                li{
+                    padding-left: 60px;
+                    background: url("../images/footer_icon.png") no-repeat;
+                    background-position: left center;
+                    p{
+                        font-size: 24px;
+                        line-height: 80px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.web-footer{
+    background-color: #02abe3;
+    padding: 0px 0 150px;
+    // margin-bottom: 133px;//还是为显
+    // color: #ffffff !important;//放這邊竟然是沒用的對template
+    // .item-1.item-2{//!!!上下差異 上面是兩個都要有
+    .item-1,.item-2{
+        color: #fff;
+        margin: 0;
+        font-size: 18px;
+        font-weight: 300;
+        opacity: .8;
+    }
+}
+
+
+.web-fixed{//!!!切图思维不一样 
+    position: fixed;
+    z-index: 100;//定位不要忘记社z-index!
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 112px;
+    // text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #606162;
+    // &::before{
+    //     content: "";
+    //     display: block;
+    //     position: absolute;
+    //     z-index: 999;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     height: 4px;
+    //     width: 100%;
+    //     background-color: #f2f8ff;
+    // }
+    .item{ //以前都是先acount 再a
+        // display: inline-block;
+        // vertical-align: middle;//垂直置中失败????
+        // line-height: 133px;
+        margin: 0 160px;//!!!先置中在中间 再依次margin左右 不用特别指margin一编
+        a{
+            background-image:$linear-color;
+            width: 270px;
+            height: 80px;
+            // line-height: 80px;
+            border-radius: 10px;
+            border: 2px solid rgba(255, 255,255,.9);
+            text-align: center;
+            box-shadow: 0px 5px 12px 0px rgba(0,0,0,.35);
+            p{
+                font-size: 23px;
+                color: #fefefe;
+                padding: 6px 0 6px;
+            }
+            span{
+                font-size: 17px;
+                color: #fefefe;
+                opacity: .9;
+            }
+        }
+    }
+}

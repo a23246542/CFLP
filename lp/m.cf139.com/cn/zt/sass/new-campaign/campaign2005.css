@@ -1,0 +1,26 @@
+@import url("../reset.css");
+@import url("../template.css");
+@import url("../swiper.min-4.0.7.css");
+html {
+  height: 100%;
+  font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+img, a {
+  display: block;
+}
+/*# sourceMappingURL=campaign2005.css.map */

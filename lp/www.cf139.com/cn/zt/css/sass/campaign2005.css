@@ -88,26 +88,48 @@ section[class*="web-page"] {
           user-select: none;
 }
 
-.title-item, .web-page2 .title, .web-page5 .title .title-item, .web-page7 .title .title-item {
+.title-item, .web-page5 .title .title-item, .web-page7 .title .title-item {
   font-size: 0;
   text-align: center;
 }
 
-.title-item span, .web-page2 .title span, .web-page5 .title .title-item span, .web-page7 .title .title-item span {
+.title-item span, .web-page5 .title .title-item span, .web-page7 .title .title-item span {
   display: inline-block;
   width: 32px;
   height: 32px;
   font-size: 16px;
+  background-image: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/campaign2005/PC2_tab3.png");
   background-size: cover;
   background-position: 50% 50%;
 }
 
-.title-item h2, .web-page2 .title h2, .web-page5 .title .title-item h2, .web-page7 .title .title-item h2 {
+.title-item h2, .web-page5 .title .title-item h2, .web-page7 .title .title-item h2 {
   display: inline-block;
   font-size: 40px;
   font-weight: bold;
   padding: 0 30px;
   margin-bottom: 45px;
+}
+
+.web-page2 {
+  padding-top: 120px;
+}
+
+.web-page2 .title h2 {
+  color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background: url("../images/pc2_h1.png") no-repeat;
+  width: 728px;
+  height: 219px;
+  background-size: 728px 129px;
+}
+
+.web-page2 .title P {
+  color: #0399de;
+  font-size: 24px;
 }
 
 .web-page2 .conList > ul {
@@ -125,16 +147,16 @@ section[class*="web-page"] {
   padding-top: 75px;
 }
 
-.web-page5 .title .web-page2 .title, .web-page2 .web-page5 .title .title, .web-page5 .title .title-item {
+.web-page5 .title .title-item {
   display: inline-block;
 }
 
-.web-page5 .title .web-page2 .title h2, .web-page2 .web-page5 .title .title h2, .web-page5 .title .title-item h2 {
+.web-page5 .title .title-item h2 {
   color: blue;
   margin-bottom: 60px;
 }
 
-.web-page5 .title .web-page2 .title span, .web-page2 .web-page5 .title .title span, .web-page5 .title .title-item span {
+.web-page5 .title .title-item span {
   background-image: url("../images/gift_icon.png");
 }
 
@@ -317,16 +339,16 @@ section[class*="web-page"] {
   padding-top: 80px;
 }
 
-.web-page7 .title .web-page2 .title, .web-page2 .web-page7 .title .title, .web-page7 .title .title-item {
+.web-page7 .title .title-item {
   display: inline-block;
 }
 
-.web-page7 .title .web-page2 .title h2, .web-page2 .web-page7 .title .title h2, .web-page7 .title .title-item h2 {
+.web-page7 .title .title-item h2 {
   color: white;
   font-weight: normal;
 }
 
-.web-page7 .title .web-page2 .title span, .web-page2 .web-page7 .title .title span, .web-page7 .title .title-item span {
+.web-page7 .title .title-item span {
   background-image: url("../images/gift_icon2.png");
 }
 
