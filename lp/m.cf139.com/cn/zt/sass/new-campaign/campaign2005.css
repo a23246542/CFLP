@@ -23,4 +23,240 @@ h1, h2, h3, p, ul, li, a {
 img, a {
   display: block;
 }
+
+.title-item-structure, .web-page4 .title {
+  text-align: center;
+}
+
+.title-item-structure span, .web-page4 .title span {
+  display: inline-block;
+  width: .32rem;
+  height: .32rem;
+  background-image: url("../images/gift_icon.png");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.title-item-structure h2, .web-page4 .title h2 {
+  display: inline-block;
+  font-size: .4rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 .3rem;
+  color: #7CD5FF;
+  margin-bottom: .45px;
+}
+
+.wrapper .container {
+  width: 100% !important;
+}
+
+.web-page1 .container {
+  height: 9rem;
+  background: url("../lp-img/mobile/campaign2005/M_topbn.png") no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.web-page1 .container h1, .web-page1 .container h2 {
+  color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.web-page2 {
+  background: #fff;
+  padding-top: 70px;
+}
+
+.web-page2 .title h2 {
+  width: 6.06rem;
+  height: 1.5rem;
+  background: url("../lp-img/mobile/campaign2005/M_h1tit.png") no-repeat;
+  background-size: 6.06rem 1.5rem;
+  background-position: 50% 50%;
+  margin: 0 auto .3rem;
+}
+
+.web-page2 p {
+  font-size: .27rem;
+  font-weight: bold;
+  color: #079ade;
+  text-align: center;
+  line-height: .42rem;
+}
+
+.web-page2 .conList .swiper-ticket.swiper-container {
+  padding: .5rem 0 .1rem;
+}
+
+.web-page2 .conList .swiper-ticket.swiper-container ul.swiper-wrapper {
+  height: auto;
+}
+
+.web-page2 .conList .swiper-ticket.swiper-container ul.swiper-wrapper li.swiper-slide {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0;
+  margin: 0;
+}
+
+.web-page2 .conList .swiper-ticket.swiper-container ul.swiper-wrapper li.swiper-slide .ticket {
+  width: 3.32rem;
+  height: 4.3rem;
+  background: url("../lp-img/mobile/campaign2005/M_red_ye.png") no-repeat;
+  background-size: 3.32rem 4.3rem;
+  background-position: 50% 50%;
+  margin: 0 auto;
+  -webkit-filter: drop-shadow(0px 0.01rem 0.03rem #9db4e7);
+          filter: drop-shadow(0px 0.01rem 0.03rem #9db4e7);
+}
+
+.web-page2 .btn-detail {
+  text-align: center;
+  padding-top: .4rem;
+  padding-bottom: .9rem;
+}
+
+.web-page2 .btn-detail > div {
+  display: inline-block;
+}
+
+.web-page2 .btn-detail > div a.btn {
+  width: 4.22rem;
+  height: .7rem;
+  line-height: .7rem;
+  color: #fff;
+  font-size: .34rem;
+  letter-spacing: .01rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7CD5FF), to(#3dc4fd));
+  background-image: linear-gradient(180deg, #7CD5FF 0%, #3dc4fd 100%);
+  border: .04rem solid #fff;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border-radius: .35rem;
+  font-weight: normal;
+  -webkit-box-shadow: 0px 0.11rem 0.08rem 0.02rem rgba(0, 0, 0, 0.32);
+          box-shadow: 0px 0.11rem 0.08rem 0.02rem rgba(0, 0, 0, 0.32);
+}
+
+.web-page4 {
+  background-color: #7CD5FF;
+  padding-top: .4rem;
+}
+
+.web-page4 .title h2 {
+  color: #fff;
+}
+
+.web-page4 .swiper {
+  padding-top: 0.7rem;
+}
+
+.web-page4 .swiper .swiper-focus, .web-page4 .swiper .swiper-container {
+  position: relative;
+  padding-top: 1.4rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.web-page4 .swiper .swiper-pagination-bullets {
+  position: absolute;
+  top: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+}
+
+.web-page4 .swiper .swiper-pagination-bullets .swiper-pagination-bullet {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+  text-align: center;
+  letter-spacing: .015rem;
+  margin: 0 .15rem;
+  color: #fff;
+  background: none;
+  font-size: 0.32rem;
+  border-radius: .05rem;
+  opacity: 1;
+}
+
+.web-page4 .swiper .swiper-pagination-bullets .swiper-pagination-bullet-active {
+  width: 2rem;
+  height: 0.55rem;
+  line-height: .55rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FBDC32), to(#FA9A02));
+  background-image: linear-gradient(180deg, #FBDC32 0%, #FA9A02 100%);
+  -webkit-box-shadow: 0 0.01rem 0.08rem 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.01rem 0.08rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.web-page4 .swiper .swiper-wrapper {
+  padding: .1rem 0;
+}
+
+.web-page4 .swiper .swiper-wrapper .swiper-slide {
+  width: 55%;
+  padding: 0;
+  margin: 0;
+}
+
+.web-page4 .swiper .swiper-wrapper .swiper-slide .item {
+  width: 3.5rem;
+  height: 5.42rem;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fff;
+}
+
+.web-page4 .swiper .swiper-wrapper .swiper-slide .item .item-txt {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: .25rem .3rem 0 .3rem;
+}
+
+.web-page4 .swiper .swiper-wrapper .swiper-slide .item .item-txt h2 {
+  text-align: center;
+  font-size: 0.27rem;
+  color: #0393d7;
+  margin-bottom: .2rem;
+}
+
+.web-page4 .swiper .swiper-wrapper .swiper-slide .item .item-txt p {
+  font-size: 0.22rem;
+  color: #35b1ec;
+}
+
+.web-page4 .swiper .swiper-wrapper .slide-1 .item > .pic {
+  width: 3.51rem;
+  height: 1.76rem;
+  background: url("../lp-img/mobile/campaign2005/pic1.png") no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.web-page4 .swiper .swiper-wrapper .slide-2 .item > .pic {
+  width: 3.51rem;
+  height: 1.76rem;
+  background: url("../lp-img/mobile/campaign2005/pic2.png") no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.web-page4 .swiper .swiper-wrapper .slide-3 .item > .pic {
+  width: 3.51rem;
+  height: 1.76rem;
+  background: url("../lp-img/mobile/campaign2005/pic3.png") no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
 /*# sourceMappingURL=campaign2005.css.map */

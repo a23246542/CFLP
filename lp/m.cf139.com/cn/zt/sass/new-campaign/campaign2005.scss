@@ -3,6 +3,29 @@
 @import url("../swiper.min-4.0.7.css");
 @import "./init";
 
+$primary-color:#7CD5FF;
+$secondary-color:#0399de;
+$title-color:#0393d7;
+$text-color:#35b1ec;
+$linear-color-org:linear-gradient(180deg, #FBDC32 0%, #FA9A02 100%);
+$linear-color-blue:linear-gradient(180deg,#7CD5FF 0%,#3dc4fd 100%);
+
+@mixin bgTxt($width,$height,$title){
+    width: $width+rem;
+    height: $height+rem;
+    background: url("../lp-img/mobile/campaign2005/#{$title}.png") no-repeat;
+    background-size: $width+rem $height+rem;
+    background-position: 50% 50%;
+    @content;
+}
+@mixin bgTxt2($width,$height,$title){
+    width: $width+rem;
+    height: $height+rem;
+    background: url("../lp-img/mobile/campaign2005/#{$title}.png") no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    @content;
+}
 
 .title-item-structure {
     text-align: center;
@@ -22,7 +45,7 @@
         font-weight: bold;
         text-align: center;
         padding: 0 .3rem;
-        color: $dark-blue;
+        color: $primary-color;
         margin-bottom: .45px;
     }
 }
@@ -37,13 +60,224 @@
 // ===================================
 .web-page1{
     .container{
-        height: 9.88rem;
+        height: 9rem;
         background: url("../lp-img/mobile/campaign2005/M_topbn.png") no-repeat;
         background-size: cover;
         background-position: 50% 50%;
         h1,h2{
             color: transparent;
             user-select: none;
+        }
+    }
+}
+
+.web-page2{
+    background:#fff;
+    // padding:70px ;
+    padding-top: 70px;
+    .title{
+        h2{
+            @include bgTxt(6.06,1.5,M_h1tit);
+            margin: 0 auto .3rem;
+        }
+    }
+    p{
+        font-size: .27rem;
+        font-weight: bold;
+        color: #079ade;
+        text-align: center;
+        // padding: 0 .3rem;
+        line-height: .42rem;
+    }
+
+     .conList{
+        .swiper-ticket.swiper-container{
+
+            padding: .5rem 0 .1rem;//這樣才不用受預設干擾 陰影被柴掉
+            ul.swiper-wrapper{
+                height: auto;
+                li.swiper-slide{
+                    width: 100%;
+                    height: fit-content;
+                    padding: 0;
+                    margin: 0;
+                    // width: 60%;
+                    // width: 4.7rem;
+                    // width: 4.7rem;
+                    // box-sizing: content-box;
+                    // // padding-left: .5rem !important;
+                    // // margin-left: .5rem !important;
+                    // padding-left: 0.53rem;
+                    // padding-top: .1rem;
+                    // padding-bottom: .1rem;
+                    .ticket{
+                        @include bgTxt(3.32,4.3,M_red_ye){
+                            margin: 0 auto;
+                        };
+                        // // width: 4.7rem;
+                        // width: 100%;
+                        // height: 2.3rem;//結果量不夠高票券下面被吃掉 還cue casper
+                        // display: flex;
+                        // // border-radius: 15px;
+                        // // box-sizing: content-box;
+                        // // padding-top: .1rem;
+                        // background: url("../images/ticket_bu.png");
+                        // background-size: cover;
+                        // background-position: 50% 50%;
+                        filter: drop-shadow(0px .01rem .03rem #9db4e7);
+                    }
+                    // .ticket.red{
+                    //     background-image: url("../images/ticket_red.png");
+                    //     background-size: 100% 100%;//!!!原来这样就可以把它完美比例缩小了
+                    // }
+                    .ticket-item{
+                        // width: 3.25rem;
+                        // padding-top: .26rem;
+                        // text-align: center;
+                        // p{
+                        //     font-size: .25rem;
+                        //     color: #2851bd;
+                        //     letter-spacing: .02rem;
+                        // }
+                        // span{
+                        //     font-size: .49rem;
+                        //     color: #fec738;
+                        // }
+                        // p:nth-child(2){
+                        //     padding: .07rem;
+                        // }
+
+                    }
+                   
+                }
+            }
+        }   
+    }
+
+    .btn-detail{
+        // height: auto;//???高度到底是哪裡來的
+        text-align: center;
+        // margin-top: -.2rem;
+        padding-top: .4rem;
+        padding-bottom: .9rem;
+        &>div{
+            display: inline-block;
+            a.btn{
+                width: 4.22rem;
+                height: .7rem;
+                line-height: .7rem;
+                color: #fff;
+                font-size: .34rem;
+                letter-spacing: .01rem;
+                background-image:$linear-color-blue;
+                border:.04rem solid #fff;
+                box-sizing: content-box;//!!!pc要加回去
+                border-radius: .35rem;
+                font-weight: normal;
+                box-shadow: 0px .11rem .08rem .02rem rgba(0,0,0,.32);
+            }
+        }
+    }
+
+   
+}
+
+.web-page4{
+    background-color: $primary-color;
+    padding-top: .4rem;
+    .title{
+        @extend .title-item-structure;
+        h2{
+            color: #fff;
+        }
+    }
+
+    .swiper{
+        padding-top: 0.7rem;
+        .swiper-focus,.swiper-container{
+            position: relative;
+            padding-top: 1.4rem;
+            height: fit-content;//!!!!!
+            
+        }
+
+        .swiper-pagination-bullets{
+            position: absolute;
+            top: 0;
+            height: fit-content;
+            text-align: center;
+            .swiper-pagination-bullet{
+                display: inline-block;
+                width: auto;//不加會預設小點點
+                height: auto;//
+                vertical-align:middle;
+                text-align: center;
+                letter-spacing: .015rem;
+                margin: 0 .15rem;
+                color: #fff;
+                background:none; 
+                font-size: 0.32rem;
+                border-radius: .05rem;
+                opacity: 1;
+                
+                &-active{
+                    width: 2rem;
+                    height: 0.55rem;
+                    line-height: .55rem;
+                    background-image: $linear-color-org;
+                    box-shadow: 0 .01rem .08rem 0 rgba(0,0,0,.1);   
+                }
+            }
+            
+        }
+
+        .swiper-wrapper{
+            padding: .1rem 0;//!!免得上下陰影被裁
+            .swiper-slide{
+                width: 55%;
+                padding: 0;
+                margin: 0;
+                .item{
+                    width: 3.5rem;
+                    height: 5.42rem;
+                    margin: 0 auto;
+                    box-sizing: border-box;
+                    background-color: #fff;
+                    .pic{
+                        // @include bgTxt2(3.51,1.76,pic1);//??該如何簡化優化
+                    }
+                    .item-txt{
+                        overflow: hidden;
+                        text-overflow: ellipsis;//??!!沒有用 除非限制高度
+                        padding: .25rem .3rem 0 .3rem;
+                        h2{
+                            text-align: center;
+                            font-size: 0.27rem;
+                            color:$title-color;
+                            margin-bottom: .2rem;
+                        }
+                        p{
+                            font-size: 0.22rem;
+                            color: $text-color;
+                        }
+                    }
+                }
+            }
+            .slide-1{
+                .item>.pic{
+                    @include bgTxt2(3.51,1.76,pic1);
+                }
+            }
+            .slide-2{
+                .item>.pic{
+                    @include bgTxt2(3.51,1.76,pic2);
+                }
+            }
+            .slide-3{
+                .item>.pic{
+                    @include bgTxt2(3.51,1.76,pic3);
+                }
+            }
         }
     }
 }
