@@ -19,10 +19,6 @@ h1, h2, h3, p, ul, li, a {
   list-style-type: none;
 }
 
-img, a {
-  display: block;
-}
-
 section[class*="web-page"] {
   width: 100%;
   min-width: 1200px;
@@ -35,7 +31,11 @@ section[class*="web-page"] {
   padding: 0;
 }
 
-.container {
+.wrapper img, .wrapper a {
+  display: block;
+}
+
+.wrapper .container {
   overflow: hidden;
   width: 1200px;
   margin: 0 auto;

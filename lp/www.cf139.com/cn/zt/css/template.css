@@ -2606,7 +2606,7 @@ padding-top:72px;
 .crumb-wrap{
   width:100%;
   background-color:#f2f2f2;
-  //padding-left:18.5%;
+  /* //padding-left:18.5%; */
   font-size:16px;
 }
 .crumb-wrap .w{
@@ -3060,7 +3060,7 @@ padding-top:72px;
 /*底部 end*/
 /*右边侧导航*/
 #nav-right{
-  //overflow: hidden;
+  /* //overflow: hidden; */
   position: fixed;
   right: 0;
   top: 50%;

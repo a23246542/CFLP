@@ -31,23 +31,14 @@ h1,h2,h3,p,ul,li,a{
 }
 
 
-img,a{
-    display: block;
-}
+
 // =======layout===============
 section[class*="web-page"] {
     width: 100%;
     min-width: 1200px;//勉得缩到1200以下 container的东西挤爆
 }
 
-// #main { //我是用或是里面在包wrapper
-.wrapper { //我是用或是里面在包wrapper
-    overflow: hidden;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    // color: #292626;
-}
+
 
 @mixin bgTxt($width,$height,$title){
     width: $width+px;
@@ -66,14 +57,29 @@ section[class*="web-page"] {
     @content;
 }
 // ====================================================
-// template.css里面的
-// .inner {  //我是用container
-.container {  //我是用container
+
+// #main { //我是用或是里面在包wrapper
+.wrapper { //我是用或是里面在包wrapper
     overflow: hidden;
-    width: 1200px;
-    margin: 0 auto;
-    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    // color: #292626;
+    img,a{//放这边保险 不会动到menu
+        display: block;
+    }
+
+    // template.css里面的
+    // .inner {  //我是用container
+        //!!!赣 难怪里面用inner 上面menu有container会影响到
+    .container {  //我是用container
+        overflow: hidden;
+        width: 1200px;
+        margin: 0 auto;
+        position: relative;
+    }
 }
+
 
 .clearfix{
     display: block;
