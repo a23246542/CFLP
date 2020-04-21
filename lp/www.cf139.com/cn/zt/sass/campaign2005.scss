@@ -178,7 +178,7 @@ section[class*="web-page"] {
         }
     }
     .conList{
-        padding-top: 60px;
+        padding-top: 65px;
         padding-bottom: 10px;
         
         >ul{
@@ -187,34 +187,60 @@ section[class*="web-page"] {
             
 
             div[class*="item"]{
+                position: relative;
                 width: 389px;
                 height: 168px;
-                background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/campaign2005/PC2_blue.png") no-repeat;
-                background-size: 389px 168px;
+                // background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/campaign2005/PC2_blue.png") no-repeat;
+                // background-size: 389px 168px;
                 text-align: center;
                 font-weight: bold;
-                P:nth-child(1) {
+                // border-radius: 20px;
+                // overflow: hidden;
+
+                >img{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    // z-index: 1;
+                }
+                p{
+                    position: relative;//!!!加上relative就可以不用更动原本pading maring而可以用z-index
+                    z-index: 5;//!!!!
+                }
+
+                // P:nth-child(1) {//还是改type最保险!!!!以免像这次临时新增img佘么的
+                P:nth-of-type(1) {
                     font-size: 24px;
                     padding: 9px 0;
                     color:#FFFFFF;
+                    letter-spacing: 1.5px;
                 }
-                P:nth-child(2) {
+                P:nth-of-type(2) {
                     margin: 0 auto;
                     padding: 13px 0 11px;
                     box-sizing: content-box;
                 }
-                P:nth-child(3) {
+                P:nth-of-type(3) {
                     font-size: 20px;
                     color:#fff;
                     font-weight: 500;
+                    letter-spacing:1.5px;
                     
                 }
             }
 
             .left-box{
-                div[class*="item"]{
-                    filter: drop-shadow(2px 4px 3px rgba(0, 0, 0,.2));
-
+                
+                div[class*="item"]{///!!!!!!!这一part
+                    // --------------------
+                    border: 4px solid #FFFFFF;
+                    box-sizing: content-box;
+                    // -------------------
+                    border-radius: 20px;
+                    overflow: hidden;
+                    filter: drop-shadow(2px 4px 4px rgba(0, 0, 0,.1));
+                    // filter: drop-shadow(3px 5px 13px #0000003B);
+                    // box-shadow: 3px 5px 13px #0000003B;
                 }
                 .item-1{
                     margin-bottom: 11px;
@@ -236,37 +262,62 @@ section[class*="web-page"] {
                 .item-3{
                     width: 281px;
                     height: 365px;
-                    background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/campaign2005/PC2_redbox.png") no-repeat;
-                    background-size: 281px 365px;
-                    padding-top: 28px;
+                    // background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/campaign2005/PC2_redbox.png") no-repeat;
+                    // background-size: 281px 365px;
+                    padding-top: 30px;
                     box-sizing: border-box;
                     filter: drop-shadow(2px 9px 5px rgba(0,0,0,.3));
-                    P:nth-child(1){
+
+                    P:nth-of-type(1){
                         padding: 0;//!!!!还要去除前面的
-                        margin-bottom: 150px;
+                        margin-bottom: 143px;
                     }
-                    P:nth-child(2){
+                    P:nth-of-type(2){
                         padding: 0;
-                        margin-bottom: 16px;
+                        margin-bottom: 12px;
+                        font-size: 44px;
+                        color:#3c9bf2;
                         // @include bgTxt();
                     }
-                    P:nth-child(3){
+                    P:nth-of-type(3){
                         padding: 0;
+                        line-height: 1.3;//
                     }
                 }
             }
             .right-box{
-                div[class*="item"]{
-                    filter: drop-shadow(2px 4px 3px rgba(0, 0, 0, .2));
+                
+                div[class*="item"]{///!!!!!!!这一part
+                    // position: relative;
+                    // --------------------
+                    border: 4px solid #FFFFFF;
+                    box-sizing: content-box;
+                    // -------------------
+                    border-radius: 20px;
+                    overflow: hidden;
+                    filter: drop-shadow(2px 4px 4px rgba(0, 0, 0,.1));
+                    // filter: drop-shadow(3px 5px 13px #0000003B);
+                    // box-shadow: 3px 5px 13px #0000003B;
+
+                    // >img{
+                    //     position: absolute;
+                    //     top: 0;
+                    //     left: 0;
+                    //     // z-index: 1;
+                    // }
+                    // p{
+                    //     position: relative;//!!!加上relative就可以不用更动原本pading maring而可以用z-index
+                    //     z-index: 5;//!!!!
+                    // }
                 }
                 .item-4{
                     margin-bottom: 11px;
-                    p:nth-child(2) {
+                    p:nth-of-type(2) {
                         @include bgTxt(220,55,sam_na1);
                     }
                 }
                 .item-5{
-                    p:nth-child(2) {
+                    p:nth-of-type(2) {
                         @include bgTxt(220,55,sam_na4)
                     }
                 }
@@ -286,6 +337,7 @@ section[class*="web-page"] {
             >a.btn{
                 width: 400px;
                 height: 75px;
+                cursor: pointer;
                 box-sizing:border-box;
                 background-color: #5ecdfe;
                 border:4px solid #fff;
@@ -296,14 +348,15 @@ section[class*="web-page"] {
                 font-size: 32px;
                 letter-spacing: 2.5px;
                 // background-image: linear-gradient(180deg, #155065 0%, #09355a 100%);
-                box-shadow: 0px 2px 8px 2px rgba(0,0,0,.2);
+                // box-shadow: 0px 2px 8px 2px rgba(0,0,0,.2);
+                box-shadow: 3px 5px 13px #0000003B;
             }
         }
     }
 }
 
 
-.web-page4{
+.web-page3{
     background-color: $primary-color;
     padding-top: 135px;
     .title{
@@ -379,7 +432,7 @@ section[class*="web-page"] {
                     // box-sizing: border-box;
                     // width: 315px;////!!!!!插电忘记slidfe
                     // height: 393px;
-                    outline:1px solid red;
+                    // outline:1px solid red;
                     margin: 0;
                     padding-bottom: 20px;//!!不然陰影會被切掉
                     
@@ -409,7 +462,7 @@ section[class*="web-page"] {
                         background-color: #fff;
                         // padding: 20px;
                         width: 315px;////!!!!!插电忘记slidfe
-                        height: 393px;
+                        // height: 393px;//不写死高了
                         margin: 0 auto;
                         border-radius: 20px;
                         overflow: hidden;
@@ -444,7 +497,8 @@ section[class*="web-page"] {
                         p{
                             color: #717273;
                             font-size: 16px;
-                            letter-spacing:1.2;
+                            letter-spacing:1.3px;
+                            line-height: 1.5;
                             // padding-left: 20px;
                         }
 
@@ -481,7 +535,7 @@ section[class*="web-page"] {
     }
     
 }
-.web-page5{
+.web-page4{
     background-color: #fff;
     .title{
         text-align: center;
@@ -509,7 +563,7 @@ section[class*="web-page"] {
             display: flex;
             // justify-content: space-between;
             justify-content: space-around;
-            padding-bottom: 50px;
+            // padding-bottom: 50px;
             li{
                 color: $secondary-color;
                 &>div{
@@ -520,7 +574,7 @@ section[class*="web-page"] {
                     
                     img{
                         width: 100%;
-                        filter: drop-shadow(0px 3px 5px rgba(0,0,0,.4)) !important;
+                        // filter: drop-shadow(0px 3px 5px rgba(0,0,0,.4)) !important;
                     }
                 }
                 text-align: center;
@@ -544,7 +598,7 @@ section[class*="web-page"] {
 
 
 // ====左邊品牌 右邊註冊
-.web-page6{
+.web-page5{
     overflow: hidden;
     background-color: $primary-color;
     padding-top: 60px;
@@ -568,7 +622,7 @@ section[class*="web-page"] {
                     }
                     .txt{
                         padding-left: 26px;
-                        padding-top: 9px;
+                        // padding-top: 9px;
                         p{
                             color: $text-dark-color;
                             font-size: 26px;
@@ -610,7 +664,7 @@ section[class*="web-page"] {
                     box-sizing: border-box !important;
                     border-radius: 6px;
                     &>div{
-                        margin-right: 22px;
+                        // margin-right: 22px;//用内推的
                         img{
                             width: auto;
                         }
@@ -618,21 +672,23 @@ section[class*="web-page"] {
                     input{
                         display: block;
                         flex: 1;
-                        background: transparent;
-                        border: none;
+                        padding-left: 22px;
                         line-height: 66px;
-                        // padding-left: 20px;
-                        border: none;
+                        background: transparent;//
+                        border: none;//
+                        outline: none !important;//
                         font-size: 20px;
-                        &::-webkit-input-placeholder{
+                        &::-webkit-input-placeholder{//字型要再另外加一次!!!!
                             color: #999;
+                            font-family:  "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+                            // font-weight:bold;
                         }
                     }
                 }
 
                 .input-tip{
-                    height: 34px !important;
-                    line-height: 34px;
+                    height: 43px !important;
+                    line-height: 43px;
                     width: 100%;
                     margin: 0 auto;
                     text-align: left;
@@ -660,6 +716,7 @@ section[class*="web-page"] {
                         background-image: linear-gradient(180deg,#7CD5FF 0%,#3dc4fd 100%);
                         border-radius: 6px;
                         border: 2px solid #fff;
+                        // font-family:  "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
                         // box-shadow: 0px 3px 7px 0px rgba(0,0,0,.4);
                         box-shadow: 2.63px 5.39px 13px 0px #0000003B;
                         a.btn-phonecode{
@@ -692,37 +749,38 @@ section[class*="web-page"] {
     }
 }
 
-.web-page7{
+.web-page6{
     background-color: #02abe3;
     color: white;
     // .line{
     //     height: 5px;
     //     background-color: #fff;
     // }
+    padding-top: 100px;
     .title{
         text-align: center;
-        padding-top: 80px;
         .title-item{
             display: inline-block;
              @extend .title-item;
              h2{
                 color:white;
                 font-weight: normal;
+                text-shadow: 7px 4px 13px #00000042;
              }
-             span{
-                background-image: url("../images/gift_icon2.png");
-             }
+            
         }
        
     }
     .layout{
         overflow: hidden;
+        padding-top: 70px;
+        padding-bottom: 60px; 
         .leftCon2{
             float: left;
-            width: 52.5%;
+            width: 52.5%;//良过世630px刚好
             ul{
                 display: flex;
-                // justify-content: space-around;
+                justify-content: space-around;
                 
                 li{
                     margin-left: 60px;
@@ -747,13 +805,13 @@ section[class*="web-page"] {
 
         .rightCon2{
             float: right;
-            width: 47.5%;
+            width: 47.5%;//570px
         
             ul{
                 padding-left: 120px;
                 li{
                     padding-left: 60px;
-                    background: url("../images/footer_icon.png") no-repeat;
+                    background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/campaign2005/footer_icon.png") no-repeat;
                     background-position: left center;
                     p{
                         font-size: 24px;
@@ -768,7 +826,7 @@ section[class*="web-page"] {
 
 .web-footer{
     background-color: #02abe3;
-    padding: 0px 0 150px;
+    padding: 0px 0px 250px; //150+112
     // margin-bottom: 133px;//还是为显
     // color: #ffffff !important;//放這邊竟然是沒用的對template
     // .item-1.item-2{//!!!上下差異 上面是兩個都要有
@@ -810,16 +868,19 @@ section[class*="web-page"] {
         // display: inline-block;
         // vertical-align: middle;//垂直置中失败????
         // line-height: 133px;
-        margin: 0 160px;//!!!先置中在中间 再依次margin左右 不用特别指margin一编
+        width: 320px;
+        margin: 0 135px;//!!!先置中在中间 再依次margin左右 不用特别指margin一编
         a{
             background-image:$linear-color;
             width: 270px;
             height: 80px;
+            margin: 0 auto;
             // line-height: 80px;
             border-radius: 10px;
             border: 2px solid rgba(255, 255,255,.9);
             text-align: center;
             box-shadow: 0px 5px 12px 0px rgba(0,0,0,.35);
+            transition: all .26s;
             p{
                 font-size: 23px;
                 color: #fefefe;
@@ -830,6 +891,258 @@ section[class*="web-page"] {
                 color: #fefefe;
                 opacity: .9;
             }
+            &:hover{
+                // transform:scaleX(1.1);//会连字都变大!!
+                width: 290px;
+
+            }
         }
     }
 }
+
+.popup-box{
+    max-width: 1000px;
+    height: 650px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: -325px auto 0 auto;
+    top: 50%;
+    background: #fff;
+    z-index: 9999999999;
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+    padding: 0 20px 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+   
+    p{
+        font-size: 20px; //這行好像是我自己家的?
+        line-height: 1.9;
+        color: #333333;
+        text-align: justify;
+
+        span{
+            overflow: hidden;
+            display: inline;
+            color: #d8505a;
+        }
+        a{
+            overflow: hidden;
+            display: inline;
+            color: #225b76;
+            text-decoration: underline;
+        }
+    }
+    h2{
+        font-size:20px;
+        color: #b78255;
+        font-weight: bold;
+        position: relative;
+
+        &.verline i{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #b78255;
+            color:#fff;
+            position: absolute;
+            left: 0;
+            top: 1px;
+            text-align: center;
+            line-height: 30px;
+        }
+    }
+
+    .note{
+        line-height: 30px;
+        span{
+            color: #f00;
+        }
+    }
+    .close-top{
+        height: 60px;
+        color:  #b78255;
+        border-bottom: 1px solid #b78255;
+        text-align: center;
+        line-height: 60px;
+        font-size: 24px;
+        font-weight: bold;
+        a{
+            display: block;
+            width: 21px;
+            height: 21px;
+            position: absolute;
+            background: url(//img.getfc.com.cn/source/www/zt/campaign1710/close.png) no-repeat;
+            top: 25px;
+            right: 25px;
+            text-decoration: none;
+        }
+    }
+    .table3 td{
+        width: 33.333333%;
+    }
+    .table4 td{
+        width: 16%;
+    }
+    table.data-box{
+        width: 100%;
+        margin: 16px auto;
+        text-align: center;
+        font-size: 1.6em;
+        border-collapse: collapse;
+        border-spacing: 0;
+        border: 1px solid #ead5c2;
+
+        thead{
+            display: table-header-group;
+            vertical-align: middle;
+            border-color: inherit;
+            th{
+                font-size: 16px;
+                text-align: center;
+                padding: 15px;
+                color: #FFFFFF;
+                background: #dcb08e;
+                line-height: 1.0;
+                border: 1px dotted #ccc;
+            }
+            tr{
+                border: 1px dotted #ccc;
+            }
+        }
+
+        tbody{
+            display: table-row-group;
+            vertical-align: middle;
+            border-color: inherit;
+            td{
+                line-height: 1.6;
+                text-align: center;
+                color: #333333;
+                padding: 1.44%;
+                font-size: 16px;
+                border: 1px dotted #ccc;
+                font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+            }
+            .unit{
+                font-size: 0.8em;
+            }
+
+            tr{
+                display: table-row;
+                vertical-align: inherit;
+                border-color: inherit;
+                background: #FFFFFF;
+            }
+
+            tr.white{}
+
+            tr.last-row td{
+                border-bottom: 1px solid #CCCCCC;
+            }
+        }
+
+    }
+    .box-in{
+        margin: 3% 3% 5% 5%;
+        color: #333333;
+        overflow: auto;
+        height: 500px;
+        padding: 0% 2% 0 0;
+
+        .section1{
+            margin-top:0px;
+
+            .detailContent{
+                width:670px;
+                font-size:18px;
+                text-align: center;
+                margin-left:50px;
+
+                ul li span{
+                    display: inline-block;
+                    font-size:20px;
+                    color:#e84c00;
+                    position:relative;
+                    left:-2px;
+                    top:-1px;
+                }
+
+                img{
+                    display:inline-block;
+                    width:20px;
+                    height:20px;
+                    position:relative;
+                    top:-90px;
+                    left:-110px;
+                }
+
+                img.pic{
+                    position:relative;
+                    top:-90px;
+                    left:108px;
+                }
+            }
+
+            .item{
+                display: flex;
+                justify-content: flex-start;
+                align-items: baseline;
+                margin-bottom: 5px;
+            }
+
+            p{
+                font-size:20px;
+            }
+
+            ul li:nth-child(2){
+                margin:8px 63px;
+            }
+        }
+
+        div.title,div.bottom{
+            height:50px;
+            width:100%;
+            line-height: 50px;
+            background:#e4f2f8;
+        }
+
+        div.bottom{
+            background:#f1f8fa;
+            text-align: left;
+            padding-left:20px;  
+        }
+
+        .section3 ol li{
+            font-size:16px;
+            margin-top: 10px;
+        }
+
+        .section4 ol li{
+            font-size:20px;
+            line-height:2.2;
+            text-align: justify;
+            display: -webkit-box;  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+            display: -moz-box;     /* 老版本语法: Firefox (buggy) */
+            display: -ms-flexbox;  /* 混合版本语法: IE 10 */
+            display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+            display: flex;         /* 新版本语法: Opera 12.1, Firefox 22+ */
+
+            p.clearfix{
+                font-size: 16px;
+            }
+        }
+
+        .section5 ol li{
+            font-size:16px;
+            line-height:2.2;
+            text-align: justify;
+            display: -webkit-box;  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+            display: -moz-box;     /* 老版本语法: Firefox (buggy) */
+            display: -ms-flexbox;  /* 混合版本语法: IE 10 */
+            display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+            display: flex;         /* 新版本语法: Opera 12.1, Firefox 22+ */
+        }
+    }
+}
+

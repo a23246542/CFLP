@@ -24,11 +24,16 @@ img, a {
   display: block;
 }
 
-.title-item-structure, .web-page4 .title {
-  text-align: center;
+html {
+  font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
 }
 
-.title-item-structure span, .web-page4 .title span {
+.title-item-structure, .web-page3 .title, .web-page4 .title .title-item {
+  text-align: center;
+  font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+}
+
+.title-item-structure span, .web-page3 .title span, .web-page4 .title .title-item span {
   display: inline-block;
   width: .32rem;
   height: .32rem;
@@ -37,14 +42,14 @@ img, a {
   background-position: 50% 50%;
 }
 
-.title-item-structure h2, .web-page4 .title h2 {
+.title-item-structure h2, .web-page3 .title h2, .web-page4 .title .title-item h2 {
   display: inline-block;
   font-size: .4rem;
   font-weight: bold;
   text-align: center;
   padding: 0 .3rem;
   color: #7CD5FF;
-  margin-bottom: .45px;
+  letter-spacing: 0.02rem;
 }
 
 .wrapper .container {
@@ -58,8 +63,8 @@ img, a {
   background-position: 50% 50%;
 }
 
-.web-page1 .container h1, .web-page1 .container h2 {
-  color: transparent;
+.web-page1 .container .title h1, .web-page1 .container .title h2 {
+  color: transparent !important;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -68,28 +73,57 @@ img, a {
 
 .web-page2 {
   background: #fff;
-  padding-top: 70px;
+  padding-top: .7rem;
+  font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+}
+
+.web-page2 .title {
+  padding: 0 .4rem;
 }
 
 .web-page2 .title h2 {
   width: 6.06rem;
   height: 1.5rem;
-  background: url("../lp-img/mobile/campaign2005/M_h1tit.png") no-repeat;
+  background: url("https://sc.tfejy.com/source/www/zt/lp-img/mobile/campaign2005/M_h1tit.png") no-repeat;
   background-size: 6.06rem 1.5rem;
   background-position: 50% 50%;
   margin: 0 auto .3rem;
+  color: transparent !important;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
-.web-page2 p {
+.web-page2 .title p {
   font-size: .27rem;
   font-weight: bold;
   color: #079ade;
   text-align: center;
-  line-height: .42rem;
+  letter-spacing: -0.01rem;
+  line-height: .48rem;
 }
 
 .web-page2 .conList .swiper-ticket.swiper-container {
   padding: .5rem 0 .1rem;
+}
+
+.web-page2 .conList .swiper-ticket.swiper-container .swiper-button-prev {
+  left: .75rem;
+  width: 0.67rem;
+  height: 0.88rem;
+  background: url("https://sc.tfejy.com/source/www/zt/lp-img/mobile/campaign2005/left.png") no-repeat;
+  background-size: 0.67rem 0.88rem;
+  background-position: 50% 50%;
+}
+
+.web-page2 .conList .swiper-ticket.swiper-container .swiper-button-next {
+  right: .75rem;
+  width: 0.67rem;
+  height: 0.88rem;
+  background: url("https://sc.tfejy.com/source/www/zt/lp-img/mobile/campaign2005/right.png") no-repeat;
+  background-size: 0.67rem 0.88rem;
+  background-position: 50% 50%;
 }
 
 .web-page2 .conList .swiper-ticket.swiper-container ul.swiper-wrapper {
@@ -108,12 +142,60 @@ img, a {
 .web-page2 .conList .swiper-ticket.swiper-container ul.swiper-wrapper li.swiper-slide .ticket {
   width: 3.32rem;
   height: 4.3rem;
-  background: url("../lp-img/mobile/campaign2005/M_red_ye.png") no-repeat;
+  background: url("https://sc.tfejy.com/source/www/zt/lp-img/mobile/campaign2005/M_red_bgg.png") no-repeat;
   background-size: 3.32rem 4.3rem;
   background-position: 50% 50%;
   margin: 0 auto;
-  -webkit-filter: drop-shadow(0px 0.01rem 0.03rem #9db4e7);
-          filter: drop-shadow(0px 0.01rem 0.03rem #9db4e7);
+  -webkit-filter: drop-shadow(0rem 0.01rem 0.03rem #9db4e7);
+          filter: drop-shadow(0rem 0.01rem 0.03rem #9db4e7);
+}
+
+.web-page2 .conList .swiper-ticket.swiper-container ul.swiper-wrapper li.swiper-slide .ticket > .ticket-item {
+  padding-top: .5rem;
+  font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+}
+
+.web-page2 .conList .swiper-ticket.swiper-container ul.swiper-wrapper li.swiper-slide .ticket > .ticket-item P:nth-of-type(1) {
+  margin-bottom: 1.67rem;
+  font-size: .3rem;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 0.015rem;
+}
+
+.web-page2 .conList .swiper-ticket.swiper-container ul.swiper-wrapper li.swiper-slide .ticket > .ticket-item P:nth-of-type(2) {
+  margin-bottom: .22rem;
+  font-size: .5rem;
+  color: #fdd14e;
+  font-weight: bold;
+  letter-spacing: 0.015rem;
+}
+
+.web-page2 .conList .swiper-ticket.swiper-container ul.swiper-wrapper li.swiper-slide .ticket > .ticket-item P:nth-of-type(3) {
+  font-size: 0.24rem;
+  color: #fff;
+  letter-spacing: 0.015rem;
+}
+
+.web-page2 .conList .swiper-ticket.swiper-container ul.swiper-wrapper li.swiper-slide .ticket.red {
+  width: 3.32rem;
+  height: 4.3rem;
+  background: url("https://sc.tfejy.com/source/www/zt/lp-img/mobile/campaign2005/M_red_ye.png") no-repeat;
+  background-size: 3.32rem 4.3rem;
+  background-position: 50% 50%;
+  margin: 0 auto;
+}
+
+.web-page2 .conList .swiper-ticket.swiper-container ul.swiper-wrapper li.swiper-slide .ticket.red > .ticket-item p:nth-of-type(1) {
+  color: #fff;
+}
+
+.web-page2 .conList .swiper-ticket.swiper-container ul.swiper-wrapper li.swiper-slide .ticket.red > .ticket-item p:nth-of-type(2) {
+  color: #3c9bf2;
+}
+
+.web-page2 .conList .swiper-ticket.swiper-container ul.swiper-wrapper li.swiper-slide .ticket.red > .ticket-item p:nth-of-type(3) {
+  color: #fff;
 }
 
 .web-page2 .btn-detail {
@@ -129,10 +211,10 @@ img, a {
 .web-page2 .btn-detail > div a.btn {
   width: 4.22rem;
   height: .7rem;
-  line-height: .7rem;
+  line-height: .74rem;
   color: #fff;
   font-size: .34rem;
-  letter-spacing: .01rem;
+  letter-spacing: .015rem;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#7CD5FF), to(#3dc4fd));
   background-image: linear-gradient(180deg, #7CD5FF 0%, #3dc4fd 100%);
   border: .04rem solid #fff;
@@ -140,32 +222,39 @@ img, a {
           box-sizing: content-box;
   border-radius: .35rem;
   font-weight: normal;
-  -webkit-box-shadow: 0px 0.11rem 0.08rem 0.02rem rgba(0, 0, 0, 0.32);
-          box-shadow: 0px 0.11rem 0.08rem 0.02rem rgba(0, 0, 0, 0.32);
+  -webkit-box-shadow: .03rem .05rem .13rem #0000003B;
+          box-shadow: .03rem .05rem .13rem #0000003B;
+  font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
 }
 
-.web-page4 {
+.web-page3 {
   background-color: #7CD5FF;
-  padding-top: .4rem;
+  padding-top: 1.2rem;
+  font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
 }
 
-.web-page4 .title h2 {
+.web-page3 .title h2 {
   color: #fff;
+  font-size: 0.5rem;
+  font-weight: normal;
+  text-shadow: .07rem 0.035rem .13rem #00000042;
 }
 
-.web-page4 .swiper {
+.web-page3 .swiper {
   padding-top: 0.7rem;
+  padding-bottom: 1rem;
+  font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
 }
 
-.web-page4 .swiper .swiper-focus, .web-page4 .swiper .swiper-container {
+.web-page3 .swiper .swiper-focus, .web-page3 .swiper .swiper-container {
   position: relative;
-  padding-top: 1.4rem;
+  padding-top: 1.3rem;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
 
-.web-page4 .swiper .swiper-pagination-bullets {
+.web-page3 .swiper .swiper-pagination-bullets {
   position: absolute;
   top: 0;
   height: -webkit-fit-content;
@@ -174,89 +263,484 @@ img, a {
   text-align: center;
 }
 
-.web-page4 .swiper .swiper-pagination-bullets .swiper-pagination-bullet {
+.web-page3 .swiper .swiper-pagination-bullets .swiper-pagination-bullet {
   display: inline-block;
   width: auto;
   height: auto;
   vertical-align: middle;
   text-align: center;
-  letter-spacing: .015rem;
+  letter-spacing: .04rem;
   margin: 0 .15rem;
   color: #fff;
   background: none;
-  font-size: 0.32rem;
+  font-size: 0.3rem;
   border-radius: .05rem;
   opacity: 1;
 }
 
-.web-page4 .swiper .swiper-pagination-bullets .swiper-pagination-bullet-active {
+.web-page3 .swiper .swiper-pagination-bullets .swiper-pagination-bullet-active {
   width: 2rem;
-  height: 0.55rem;
-  line-height: .55rem;
+  height: 0.57rem;
+  line-height: .57rem;
+  border: .02rem solid #fff;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border-radius: .1rem;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#FBDC32), to(#FA9A02));
   background-image: linear-gradient(180deg, #FBDC32 0%, #FA9A02 100%);
-  -webkit-box-shadow: 0 0.01rem 0.08rem 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0.01rem 0.08rem 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: .026rem .05rem .13rem #0000003B;
+          box-shadow: .026rem .05rem .13rem #0000003B;
 }
 
-.web-page4 .swiper .swiper-wrapper {
+.web-page3 .swiper .swiper-wrapper {
   padding: .1rem 0;
 }
 
-.web-page4 .swiper .swiper-wrapper .swiper-slide {
+.web-page3 .swiper .swiper-wrapper .swiper-slide {
   width: 55%;
   padding: 0;
   margin: 0;
+  padding-bottom: 10px;
 }
 
-.web-page4 .swiper .swiper-wrapper .swiper-slide .item {
+.web-page3 .swiper .swiper-wrapper .swiper-slide .item {
   width: 3.5rem;
-  height: 5.42rem;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border-radius: .2rem;
+  overflow: hidden;
   background-color: #fff;
 }
 
-.web-page4 .swiper .swiper-wrapper .swiper-slide .item .item-txt {
+.web-page3 .swiper .swiper-wrapper .swiper-slide .item .item-txt {
+  padding: .2rem .3rem .3rem .3rem;
   overflow: hidden;
-  text-overflow: ellipsis;
-  padding: .25rem .3rem 0 .3rem;
 }
 
-.web-page4 .swiper .swiper-wrapper .swiper-slide .item .item-txt h2 {
+.web-page3 .swiper .swiper-wrapper .swiper-slide .item .item-txt h2 {
   text-align: center;
-  font-size: 0.27rem;
-  color: #0393d7;
-  margin-bottom: .2rem;
+  font-size: 0.31rem;
+  color: #606060;
+  margin-bottom: .15rem;
 }
 
-.web-page4 .swiper .swiper-wrapper .swiper-slide .item .item-txt p {
-  font-size: 0.22rem;
-  color: #35b1ec;
+.web-page3 .swiper .swiper-wrapper .swiper-slide .item .item-txt p {
+  font-size: 0.25rem;
+  color: #717273;
+  line-height: .35rem;
+  letter-spacing: .02rem;
+  font-weight: lighter;
 }
 
-.web-page4 .swiper .swiper-wrapper .slide-1 .item > .pic {
+.web-page3 .swiper .swiper-wrapper .swiper-slide-active .item {
+  -webkit-box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2);
+          box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.2);
+}
+
+.web-page3 .swiper .swiper-wrapper .swiper-slide-active .item-txt h2 {
+  color: #0393d7 !important;
+}
+
+.web-page3 .swiper .swiper-wrapper .swiper-slide-active .item-txt p {
+  color: #35b1ec !important;
+}
+
+.web-page3 .swiper .swiper-wrapper .slide-1 .item > .pic {
   width: 3.51rem;
   height: 1.76rem;
-  background: url("../lp-img/mobile/campaign2005/pic1.png") no-repeat;
+  background: url("https://sc.tfejy.com/source/www/zt/lp-img/mobile/campaign2005/pic1.png") no-repeat;
   background-size: cover;
   background-position: 50% 50%;
 }
 
-.web-page4 .swiper .swiper-wrapper .slide-2 .item > .pic {
+.web-page3 .swiper .swiper-wrapper .slide-2 .item > .pic {
   width: 3.51rem;
   height: 1.76rem;
-  background: url("../lp-img/mobile/campaign2005/pic2.png") no-repeat;
+  background: url("https://sc.tfejy.com/source/www/zt/lp-img/mobile/campaign2005/pic2.png") no-repeat;
   background-size: cover;
   background-position: 50% 50%;
 }
 
-.web-page4 .swiper .swiper-wrapper .slide-3 .item > .pic {
+.web-page3 .swiper .swiper-wrapper .slide-3 .item > .pic {
   width: 3.51rem;
   height: 1.76rem;
-  background: url("../lp-img/mobile/campaign2005/pic3.png") no-repeat;
+  background: url("https://sc.tfejy.com/source/www/zt/lp-img/mobile/campaign2005/pic3.png") no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+}
+
+.web-page4 {
+  padding-top: 1rem;
+  background-color: #fff;
+  font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+}
+
+.web-page4 .container {
+  width: 100%;
+  padding: 0 .66rem;
+}
+
+.web-page4 .title .title-item h2 {
+  font-size: 0.44rem;
+  color: #0399dd;
+  font-weight: bold;
+}
+
+.web-page4 .layout {
+  padding-top: .85rem;
+  padding-bottom: .5rem;
+}
+
+.web-page4 .layout ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.web-page4 .layout ul li {
+  padding-bottom: .7rem;
+  color: #0399de;
+  text-align: center;
+}
+
+.web-page4 .layout ul li > div {
+  width: 2.52rem;
+  height: 2.53rem;
+  margin-bottom: .25rem;
+}
+
+.web-page4 .layout ul li > div img {
+  width: 100%;
+}
+
+.web-page4 .layout ul li span {
+  display: block;
+  font-size: .3rem;
+  margin-bottom: .1rem;
+}
+
+.web-page4 .layout ul li p {
+  font-size: .3rem;
+}
+
+.web-footer {
+  background-color: #7CD5FF;
+  padding-top: 0;
+  padding-bottom: 1.5rem;
+  font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+}
+
+.web-footer > div {
+  padding: .23rem .65rem;
+}
+
+.web-footer > div > p.item {
+  color: #fff;
+  font-size: .24rem;
+  line-height: .36rem;
+  font-weight: lighter;
+  opacity: .9;
+}
+
+.web-fixed {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+  background-color: #fff;
+  -webkit-box-shadow: inset 0rem 0rem 0.02rem 0.01rem rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0rem 0rem 0.02rem 0.01rem rgba(0, 0, 0, 0.1);
+}
+
+.web-fixed .item > a {
+  padding: .2rem 0;
+}
+
+.web-fixed .item > a > div {
+  width: .66rem;
+  height: .66rem;
+  margin: 0 auto .05rem;
+}
+
+.web-fixed .item > a > div img {
+  width: 100%;
+}
+
+.web-fixed .item > a p {
+  font-size: .28rem;
+  color: #074b6b;
+  text-align: center;
+}
+
+.tc-hide {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  line-height: 1.8;
+}
+
+.masking {
+  display: block;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+ul li, table {
+  list-style-type: none !important;
+}
+
+.popup-box {
+  overflow: hidden;
+  max-width: 95%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 10%;
+  background: #fff;
+  z-index: 99999;
+  font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+  padding: 0;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.3);
+}
+
+.popup-box .close-top {
+  padding: 0.3rem 0.3rem;
+  font-size: 0.44rem;
+  color: #b78255;
+  text-align: center;
+  border-bottom: 1px solid #b78255;
+  width: 6rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.popup-box .close-top a {
+  background: url(../../images/campaign1710/close-b.png) no-repeat;
+  width: 0.21rem;
+  height: 0.21rem;
+  background-size: 0.21rem 0.21rem;
+  position: absolute;
+  right: 0;
+  margin-top: .2rem;
+  text-decoration: none;
+}
+
+.popup-box .note {
+  line-height: 1.8;
+  font-size: 0.24rem;
+  margin-bottom: 0.1rem span;
+  margin-bottom-color: #f00;
+}
+
+.popup-box .table1 td, .popup-box .table2 td {
+  width: 25%;
+}
+
+.popup-box .table3 td {
+  width: 33.3333%;
+}
+
+.popup-box .table4 td {
+  width: 16%;
+}
+
+.popup-box table.data-box {
+  width: 100%;
+  margin: 16px auto .25rem;
+  text-align: center;
+  border: 0 !important;
+  font-size: 1.6em;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.popup-box table.data-box .first-child {
+  text-align: center;
+  font-size: .28rem;
+}
+
+.popup-box table.data-box .first-child a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.popup-box table.data-box thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.popup-box table.data-box thead th {
+  font-size: .28rem;
+  /* font-size: .2rem; */
+  text-align: center;
+  padding: .15rem .05rem;
+  color: #FFFFFF;
+  background: #dcb08e;
+  line-height: 1.0;
+}
+
+.popup-box table.data-box tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.popup-box table.data-box tbody td {
+  line-height: 1.0;
+  text-align: center;
+  color: #333333;
+  padding: 1.44%;
+  font-size: .28rem;
+  /* font-size: 14px; template*/
+  border: 0.025rem solid #ead5c2;
+  font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+}
+
+.popup-box table.data-box tbody tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+.popup-box table.data-box tbody tr.grey td:nth-child(1) {
+  /* width: 30px; */
+}
+
+.popup-box table.data-box tbody tr.grey {
+  background: #fff;
+}
+
+.popup-box table.data-box tbody tr.last-row td {
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.popup-box table.data-box tbody .unit {
+  font-size: 0.8em;
+}
+
+.popup-box .box-in {
+  margin: 3% 4% 5% 4%;
+  overflow-y: auto;
+  height: 8rem;
+}
+
+.popup-box .box-in .line-throw {
+  font-size: 0.3rem;
+}
+
+.popup-box .box-in .section1 .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-bottom: .1rem;
+}
+
+.popup-box .box-in .section1 h2 {
+  font-size: 0.28rem;
+  font-weight: bold;
+  color: #b78255;
+}
+
+.popup-box .box-in .section1 p {
+  font-size: 0.28rem;
+  line-height: 1.8;
+}
+
+.popup-box .box-in .section3 p {
+  font-size: 0.28rem;
+  /*margin-bottom: 0.2rem;*/
+  line-height: 1.8;
+}
+
+.popup-box .box-in .section3 p a {
+  color: #0096dc;
+}
+
+.popup-box .box-in .section3 p span {
+  color: #f00;
+  font-weight: bold;
+}
+
+.popup-box .box-in .section3 .first {
+  border-left: .025rem solid #ccc;
+}
+
+.popup-box .box-in .section3 ul li ul li {
+  float: left;
+  font-size: 12px;
+  width: 16%;
+  text-align: center;
+  height: 2.5rem;
+  border-right: 0.025rem solid #ccc;
+  border-bottom: 0.025rem solid #ccc;
+  padding-top: 1rem;
+}
+
+.popup-box .box-in .section3 ul li ul li.last {
+  width: 20%;
+  padding-top: .5rem;
+}
+
+.popup-box .box-in .section4 h2 {
+  font-size: 0.3rem;
+  margin-bottom: 0.1rem;
+  color: #b78255;
+}
+
+.popup-box .box-in .section4 li {
+  font-size: 0.28rem;
+  line-height: 1.8;
+}
+
+.popup-box .box-in .section4 li span {
+  /*margin-right: 0.15rem;*/
+}
+
+.popup-box .box-in .section4 li p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.popup-box .box-in .section5 ol li {
+  font-size: .2rem;
+}
+
+.down-footer span {
+  line-height: 1.8;
+}
+
+.bot-fixed li {
+  line-height: 1.8;
 }
 /*# sourceMappingURL=campaign2005.css.map */
