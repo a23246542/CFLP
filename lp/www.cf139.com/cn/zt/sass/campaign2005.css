@@ -14,9 +14,12 @@ body {
 h1, h2, h3, p, ul, li, a {
   margin: 0;
   padding: 0;
-  font-size: 16px;
   text-decoration: none;
   list-style-type: none;
+}
+
+img, a {
+  display: block;
 }
 
 section[class*="web-page"] {
@@ -31,14 +34,10 @@ section[class*="web-page"] {
   padding: 0;
 }
 
-.wrapper img, .wrapper a {
-  display: block;
-}
-
-.wrapper .container {
-  overflow: hidden;
+.wrapper section[class*="web-page"] .container {
   width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
   position: relative;
 }
 
@@ -132,7 +131,7 @@ section[class*="web-page"] {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  background: url("../images/pc2_h1.png") no-repeat;
+  background: url("https://sc.tfejy.com/source/www/zt/lp-img/pc/campaign2005/pc2_h1.png") no-repeat;
   width: 728px;
   height: 129px;
   background-size: 728px 129px;
@@ -487,10 +486,6 @@ section[class*="web-page"] {
   color: #0399de;
 }
 
-.web-page4 .title .web-page3 .title span, .web-page3 .web-page4 .title .title span, .web-page4 .title .title-item span {
-  background-image: url("../images/gift_icon.png");
-}
-
 .web-page4 .layout {
   padding-top: 65px;
   padding-bottom: 95px;
@@ -546,6 +541,10 @@ section[class*="web-page"] {
   width: 48%;
 }
 
+.web-page5 .leftCon .brand {
+  padding-left: 30px;
+}
+
 .web-page5 .leftCon .brand > ul {
   padding-left: 10px;
 }
@@ -595,6 +594,7 @@ section[class*="web-page"] {
 
 .web-page5 .rightCon .sign_box {
   width: 520px;
+  margin-left: 20px;
 }
 
 .web-page5 .rightCon .sign_box h3 {
@@ -744,10 +744,7 @@ section[class*="web-page"] {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-}
-
-.web-page6 .layout .leftCon2 ul li {
-  margin-left: 60px;
+  padding-left: 45px;
 }
 
 .web-page6 .layout .leftCon2 ul li > div {
@@ -773,6 +770,8 @@ section[class*="web-page"] {
 
 .web-page6 .layout .rightCon2 ul {
   padding-left: 120px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .web-page6 .layout .rightCon2 ul li {
@@ -788,7 +787,7 @@ section[class*="web-page"] {
 
 .web-footer {
   background-color: #02abe3;
-  padding: 0px 0px 250px;
+  padding: 0px 0px 200px;
 }
 
 .web-footer .item-1, .web-footer .item-2 {
@@ -816,6 +815,10 @@ section[class*="web-page"] {
       -ms-flex-align: center;
           align-items: center;
   background-color: #606162;
+}
+
+.web-fixed img, .web-fixed a {
+  display: block;
 }
 
 .web-fixed .item {

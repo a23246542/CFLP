@@ -219,31 +219,27 @@
         </div>
     </section>
     </div>
-    <div class="web-fixed">
-        <div class="item account" id="isLogin">
-            <a href="javaScript:;" onclick="ga('send', 'event', 'Reg_Real', 'ClickAccount', 'SJ_LP', '1');">
-                <div>
+    <div class="bot-fixed">
+        <ul>
+            <li class="item account" id="isLogin">
+                <a href="javaScript:;" onclick="ga('send', 'event', 'Reg_Real', 'ClickAccount', 'SJ_LP', '1');">
                     <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/campaign2005/M_icon1.png" alt="">
-                </div>
-                <p>开户领赠金</p>
-            </a>
-        </div>
-        <div class="item">
-            <a href="javaScript:;" onclick="openLive800(); ga('send', 'event', 'Chat_Live800', 'Click800', 'SJ_LP', '1');" class="chat">
-                <div>
+                    <span>开户领赠金</span>
+                </a>
+            </li>
+            <li class="item">
+                <a href="javaScript:;" onclick="openLive800(); ga('send', 'event', 'Chat_Live800', 'Click800', 'SJ_LP', '1');" class="chat">
                     <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/campaign2005/M_icon2.png" alt="">
-                </div>
-                <p>咨询客服</p>
-            </a>
-        </div>
-        <div class="item" id="app">
-            <a href="javaScript:;" class="app download" target="_blank">
-                <div>
+                    <span>咨询客服</span>
+                </a>
+            </li>
+            <li class="item" id="app">
+                <a href="javaScript:;" class="app download" target="_blank">   
                     <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/campaign2005/M_icon3.png" alt="">
-                </div>
-                <p>下载APP</p>
-            </a>
-        </div>
+                    <span>下载APP</span>
+                </a>
+            </li>
+        </ul>
     </div>
     <div class="tc-hide">
         <div class="masking" onclick="$('.tc-hide').hide()"></div>
@@ -280,12 +276,15 @@
                     <ol>
                         <li>
                             <!-- <li> -->
-                                <p>新客户首次入金≥200美元，即可联系客服报名参与活动，并获得对应赠金，详情如下表:</p>
+                                <p>1. 活动期间内新客户开通真实账户，即可联系客服报名参与；</p>
+                                <p>2. 成功参与活动，并达成首次入金≥200美元，即可获得对应层级首充赠金，每完成1手交易，首充赠金中8美元转为可提现，直到全部首充赠金均转为可提现；</p>
+                                <p>3. 完成首充赠金交易回赠手数后，开始计算交易赠金，按当天完成的交易手数，在次日结算后发放赠金；</p>
+                                <p>4. 客户当日开户24小时内激活即可联系客服，领取额外现金红包；</p>
                             <!-- </li> -->
                         </li>
                         <li>
-                            <table class="data-box table2">
-                                <table class="data-box table2">
+                            <!-- <table class="data-box table2"> -->
+                                <table class="data-box table2"><!--??为舌么这层拿掉会坏掉-->
                                     <thead>
                                     <tr>
                                         <th class="first-child">首入金金额</th>
@@ -353,11 +352,15 @@
                                     </tr>
                                     </tbody>
                                 </table>
-                            </table>
+                            <!-- </table> -->
+                        </li>
+                        <li>
+                            <p class="clearfix">例：王先生活动期间，开户当日激活并首次入金3500美元，取款前共完成300手有效交易，则王先生共提取总赠金=首充赠金$800 + 交易赠金$1200（(300-100) X $6）= $2000
+                            </p>
                         </li>
                     </ol>
                 </div>
-                <div class="section1 section3">
+                <!-- <div class="section1 section3">
                     <h2 class="ver-line">额外交易返利</h2>
                     <ol>
                         <li>
@@ -391,21 +394,20 @@
                             </table>
                         </li>
                     </ol>    
-                </div>
-                <div class="section4">
+                </div> -->
+                <!-- <div class="section4">
                     <h2 class="ver-line">奖励说明</h2>
                     <ol>
                         <li><span>1.</span>活动期间内新客户开通真实账户，即可联系客服报名参与活动；</li>
                         <li><span>2.</span>成功参与活动，并达成首次入金≥200美元，即可获得对应层级首充赠金，每完成1手交易，首充赠金中8美元转为可提现，直到全部首充赠金均转为可提现；</li>
                         <li><span>3.</span>完成首充赠金交易回赠手数后，开始计算交易赠金，按当天完成的交易手数，在次日结算后发放赠金；</li>
-                        <li><span>4.</span>开户24小时内激活，并且首次入金达标，即可联系客服，领取额外现金红包；</li>
-                        <p class="clearfix">案例说明：王先生开户后首次入金1000美元，成功参与活动后，在活动期间累积交易100手欧元美元、20手现货黄金、25手美国原油，则王先生提取的总赠金为: 
-                            300+6*（100+20+25-37.5）+20*5+25*5=1170 美元
-                        </p>
-                    </ol>
-                </div>
+                        <li><span>4.</span>开户24小时内激活，并且首次入金达标，即可联系客服，领取额外现金红包；</li> -->
+                        <!-- <p class="clearfix">例：王先生活动期间，开户当日激活并首次入金3500美元，取款前共完成300手有效交易，则王先生共提取总赠金=首充赠金$800 + 交易赠金$1200（(300-100) X $6）= $2000
+                        </p> -->
+                    <!-- </ol>
+                </div> -->
                 <div class="section5">
-                    <h2 class="ver-line">注意事项</h2>
+                    <h2 class="ver-line" style="font-size:.28rem">注意事项</h2>
                     <ol>
                         <li><span>1.</span>交易手数计算定义：客户开仓1手，然后再平仓1手，则整个来回算1手交易；</li>
                         <li><span>2.</span>本活动只适用于在内地开户或存款的客户，每人仅有1次参与机会，已有同IP或身份证号开户用户、创富国际员工不可参加此活动；</li>

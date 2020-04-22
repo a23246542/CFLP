@@ -25,12 +25,14 @@ body{
 h1,h2,h3,p,ul,li,a{
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    // font-size: 16px;
     text-decoration: none;
     list-style-type: none;
 }
 
-
+img,a{//放这边保险 不会动到menu /其实还是会....
+    display: block;
+}
 
 // =======layout===============
 section[class*="web-page"] {
@@ -65,19 +67,26 @@ section[class*="web-page"] {
     margin: 0;
     padding: 0;
     // color: #292626;
-    img,a{//放这边保险 不会动到menu
-        display: block;
-    }
 
     // template.css里面的
     // .inner {  //我是用container
         //!!!赣 难怪里面用inner 上面menu有container会影响到
-    .container {  //我是用container
-        overflow: hidden;
+    // .container:not(.header>.container)//!!没有效
+    // .container{  //我是用container
+    //     // overflow: hidden;
+    //     width: 1200px;
+    //     margin: 0 auto;
+    //     position: relative;
+    // }
+    
+    section[class*="web-page"] .container {
         width: 1200px;
         margin: 0 auto;
+        overflow: hidden;
         position: relative;
     }
+
+
 }
 
 
@@ -168,7 +177,7 @@ section[class*="web-page"] {
         h2{
             color: transparent;
             user-select: none;
-            background: url("../images/pc2_h1.png") no-repeat;
+            background: url("https://sc.tfejy.com/source/www/zt/lp-img/pc/campaign2005/pc2_h1.png") no-repeat;
             width: 728px;
             height: 129px;
             background-size: 728px 129px;
@@ -553,9 +562,9 @@ section[class*="web-page"] {
                 color:$secondary-color;
                 // margin-bottom: 60px;
             }
-            span{
-                background-image: url("../images/gift_icon.png");
-            }
+            // span{
+            //     background-image: url("../images/gift_icon.png");
+            // }
         }
         
     }
@@ -613,6 +622,7 @@ section[class*="web-page"] {
         float: left;
         width: 48%;
         .brand{
+            padding-left: 30px;//后来加的
             &>ul{
                 padding-left: 10px;//才不會aos華過去切到
                 &>li{
@@ -652,6 +662,7 @@ section[class*="web-page"] {
             width: 520px;
             // padding-top: 64px;
             // .clearfix:before TODO
+            margin-left: 20px;//用padding 因为写死宽麻凡
             h3{
                 font-size: 48px;
                 color: white;
@@ -787,9 +798,10 @@ section[class*="web-page"] {
             ul{
                 display: flex;
                 justify-content: space-around;
+                padding-left: 45px;
                 
                 li{
-                    margin-left: 60px;
+                    // margin-left: 60px;//之前乱加的删掉
                     &>div{
                         width: 255px;
                         height: 255px;
@@ -815,6 +827,7 @@ section[class*="web-page"] {
         
             ul{
                 padding-left: 120px;
+                box-sizing: border-box;
                 li{
                     padding-left: 60px;
                     background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/campaign2005/footer_icon.png") no-repeat;
@@ -832,7 +845,7 @@ section[class*="web-page"] {
 
 .web-footer{
     background-color: #02abe3;
-    padding: 0px 0px 250px; //150+112
+    padding: 0px 0px 200px; //150+112
     // margin-bottom: 133px;//还是为显
     // color: #ffffff !important;//放這邊竟然是沒用的對template
     // .item-1.item-2{//!!!上下差異 上面是兩個都要有
@@ -858,6 +871,7 @@ section[class*="web-page"] {
     justify-content: center;
     align-items: center;
     background-color: #606162;
+    img,a{display: block;}//!!!!!!
     // &::before{
     //     content: "";
     //     display: block;
@@ -906,7 +920,13 @@ section[class*="web-page"] {
     }
 }
 
+// =======================================================================
+
+
+
+// ----------------------
 .popup-box{
+    $pop-color:#538135;
     max-width: 1000px;
     height: 650px;
     position: fixed;
@@ -942,6 +962,7 @@ section[class*="web-page"] {
     h2{
         font-size:20px;
         color: #b78255;
+        // color: $pop-color;
         font-weight: bold;
         position: relative;
 
@@ -967,6 +988,8 @@ section[class*="web-page"] {
     }
     .close-top{
         height: 60px;
+        // color:  $pop-color;
+        // border-bottom: 1px solid $pop-color;
         color:  #b78255;
         border-bottom: 1px solid #b78255;
         text-align: center;
@@ -997,6 +1020,7 @@ section[class*="web-page"] {
         font-size: 1.6em;
         border-collapse: collapse;
         border-spacing: 0;
+        // border: 1px solid lighten($pop-color,40%);
         border: 1px solid #ead5c2;
 
         thead{
@@ -1009,6 +1033,7 @@ section[class*="web-page"] {
                 padding: 15px;
                 color: #FFFFFF;
                 background: #dcb08e;
+                // background:$pop-color;
                 line-height: 1.0;
                 border: 1px dotted #ccc;
             }
