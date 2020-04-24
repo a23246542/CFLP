@@ -32,32 +32,24 @@
     </div>
     
     <!-- =============mobile============================ -->
-    <!-- ????不知道为舌么手机版class是在a -->
-    <!-- 像account手机版写在div 或li为舌么不是写在a会怎么样 -->
-    <div class="web-fixed">
+    <div class="bot-fixed">
         <ul>
-            <li id="isLogin" class="item account">
+            <li class="item account" id="isLogin">
                 <a href="javaScript:;" onclick="ga('send', 'event', 'Reg_Real', 'ClickAccount', 'SJ_LP', '1');">
-                    <div>
-                        <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/campaign2004/M_icon1.png" alt="">
-                    </div>
-                    <p>开户领赠金</p>
+                    <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/campaign2005/M_icon1.png" alt="">
+                    <span>开户领赠金</span>
                 </a>
             </li>
             <li class="item">
-                <a href="javaScript:;" class="chat" onclick="openLive800(); ga('send', 'event', 'Chat_Live800', 'Click800', 'SJ_LP', '1');" >
-                    <div>
-                        <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/campaign2004/M_icon2.png" alt="">
-                    </div>
-                    <p>咨询客服</p>
+                <a href="javaScript:;" onclick="openLive800(); ga('send', 'event', 'Chat_Live800', 'Click800', 'SJ_LP', '1');" class="chat">
+                    <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/campaign2005/M_icon2.png" alt="">
+                    <span>咨询客服</span>
                 </a>
             </li>
-            <li id="app" class="item">
-                <a href="javaScript:;" class="app download" target="_blank">
-                    <div>
-                        <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/campaign2004/M_icon3.png" alt="">
-                    </div>
-                    <p>下载APP</p>
+            <li class="item" id="app">
+                <a href="javaScript:;" class="app download" target="_blank">   
+                    <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/campaign2005/M_icon3.png" alt="">
+                    <span>下载APP</span>
                 </a>
             </li>
         </ul>
