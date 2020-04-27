@@ -1,0 +1,190 @@
+// 这是template body的样式
+//     body {
+//     font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+//     font-size: 1em;
+//     color: #333333;
+//     background-color: #FFFFFF;
+//     line-height: 1.4;
+// }
+    
+// _init
+html{
+    height: 100%;
+    // font-family: Arial, Helvetica, sans-serif;
+    // font-family: "Microsoft JhengHei", "Heiti TC", "sans-self";
+    font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+}
+
+body{
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,p,ul,li,a{
+    margin: 0;
+    padding: 0;
+    // font-size: 16px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+//放这边保险 不会动到menu /其实还是会....
+a{
+    display: block;
+}
+// img,a{
+//     display: block;
+// }
+// ==========================================================
+.e-header{font-size: 10px;}//!!!!!!?????
+//原本的wrapper
+#main{
+    overflow: hidden;
+    width: 100%; 
+    margin: 0; 
+    padding: 0;
+}
+
+//section
+.web-page{
+    width: 100%;
+    min-width: 1200px;//勉得缩到1200以下 container的东西挤爆
+    font-size: 16px;
+    color: #333333;
+    .title{
+        padding-top: 100px;
+    }
+}
+
+//原本的container
+.inner{
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+//图片跟露出匡匡一样大
+@mixin bgTxt($width,$height,$title){
+    width: $width+px;
+    height: $height+px;
+    background: url("../lp-img/pc/oldCampaign2005/#{$title}") no-repeat;
+    background-size: $width+px $height+px; //100% 100% 也可以?
+    background-position: 50% 50%;
+    @content;
+}
+//原始图片要比露出匡匡还大
+@mixin bgTxt2($width,$height,$title){
+    width: $width+px;
+    height: $height+px;
+    background: url("../lp-img/pc/oldCampaign2005/#{$title}") no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    @content;
+}
+
+.clearfix{
+    display: block;
+    clear: both;
+    &::before{
+        content: "";
+        display: block;
+        visibility: hidden;
+        font-size: 0;
+        height: 0;
+        clear: both;
+    }
+    &::after{
+        content: "";
+        display: block;
+        visibility: hidden;
+        font-size: 0;
+        height: 0;
+        clear: both;
+    }
+}
+.banner-posi{
+    position: relative;
+    z-index: 1;
+    top: -74px;
+    margin-bottom: -74px;
+}
+
+.web-page1.banner-all,.web-banner.banner-all{
+    width: 100%;
+    height: 0;
+    // padding-bottom: 31.25%;
+    padding-bottom: 37.8125%;
+    background: url("../lp-img/pc/oldCampaign2005/Banner-up1.png") no-repeat;
+    background-size: 100% 100%;//相对背景区
+    background-position: 50% 50%;
+    position: relative;
+
+    .container,.inner{//如果不是只有h1 h2的其他东西放这
+        // position: relative;
+        position: absolute;
+        // position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    
+    .banner-title-img{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 5;
+    }
+    h1,//移出来保险
+    h2 {
+        position: absolute; //定位住才不会变高(盒子模型)
+        color: transparent;
+        user-select: none;
+    }
+}
+
+
+// $bg-title1-left:left-yellow-1;
+// $bg-title1-left:right-yellow-2;
+// $bg-title2-right:left-white-1;
+// $bg-title2-right:right-white-2;
+
+.title-item{
+    font-size: 0;
+    text-align: center;
+    span {
+        //!!这边小图span 行内元素会自动垂直置中?
+        &:nth-of-type(1){
+            // background-image: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/campaign2005/PC2_tab3.png");
+            @include bgTxt(34,25,left-yellow-1)
+        }
+        &:nth-of-type(2){
+            // background-image: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/campaign2005/PC2_tab4.png");
+            @include bgTxt(34,25,right-yellow-2)
+        }
+        // display: inline-block;
+        // width: 74px;
+        // height: 38px;
+        // // font-size: 16px;
+        // // background-image: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/campaign2005/PC2_tab3.png");
+        // background-size: 74px 38px;
+        // background-position: 50% 50%;
+    }
+
+    h2 {
+        display: inline-block;
+        font-size: 40px;
+        font-weight: bold;
+        padding: 0 30px;
+        color: #000;
+        // margin-bottom: 45px;
+    }
+
+    p{
+        text-align: center;
+    }
+}
