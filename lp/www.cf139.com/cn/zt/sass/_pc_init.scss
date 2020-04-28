@@ -29,12 +29,12 @@ h1,h2,h3,p,ul,li,a{
 }
 
 //放这边保险 不会动到menu /其实还是会....
-a{
-    display: block;
-}
-// img,a{
+// a{
 //     display: block;
 // }
+img,a{
+    display: block;
+}
 // ==========================================================
 .e-header{font-size: 10px;}//!!!!!!?????
 //原本的wrapper
@@ -69,7 +69,7 @@ a{
 @mixin bgTxt($width,$height,$title){
     width: $width+px;
     height: $height+px;
-    background: url("../lp-img/pc/oldCampaign2005/#{$title}") no-repeat;
+    background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/oldCampaign2005/#{$title}.png") no-repeat;
     background-size: $width+px $height+px; //100% 100% 也可以?
     background-position: 50% 50%;
     @content;
@@ -78,7 +78,7 @@ a{
 @mixin bgTxt2($width,$height,$title){
     width: $width+px;
     height: $height+px;
-    background: url("../lp-img/pc/oldCampaign2005/#{$title}") no-repeat;
+    background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/oldCampaign2005/#{$title}.png") no-repeat;
     background-size: cover;
     background-position: 50% 50%;
     @content;
@@ -111,7 +111,7 @@ a{
     margin-bottom: -74px;
 }
 
-.web-page1.banner-all,.web-banner.banner-all{
+.banner-all{
     width: 100%;
     height: 0;
     // padding-bottom: 31.25%;
@@ -154,10 +154,11 @@ a{
 // $bg-title2-right:right-white-2;
 
 .title-item{
-    font-size: 0;
     text-align: center;
+    font-size: 0;
     span {
         //!!这边小图span 行内元素会自动垂直置中?
+        display: inline-block;
         &:nth-of-type(1){
             // background-image: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/campaign2005/PC2_tab3.png");
             @include bgTxt(34,25,left-yellow-1)
@@ -166,7 +167,6 @@ a{
             // background-image: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/campaign2005/PC2_tab4.png");
             @include bgTxt(34,25,right-yellow-2)
         }
-        // display: inline-block;
         // width: 74px;
         // height: 38px;
         // // font-size: 16px;
@@ -179,12 +179,14 @@ a{
         display: inline-block;
         font-size: 40px;
         font-weight: bold;
-        padding: 0 30px;
+        // padding: 0 30px;
+        padding: 0 10px;
         color: #000;
         // margin-bottom: 45px;
     }
 
     p{
         text-align: center;
+        font-size: 16px;
     }
 }

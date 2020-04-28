@@ -2,4 +2,220 @@
 @import "./variables";
 @import "./pc_init";
 
+.body{
+    color: #000;
+}
 
+.web-banner.banner-all{
+
+    .inner{
+        width: auto;//盖掉!!!
+        max-width: 1200px;
+    }
+    .banner-title-img{
+        // max-width: 370px;
+        // max-width: 100%;//!!!!!!!!!竟然没用
+        width: 30.83%;//370/1200
+        height: auto;
+        // top: 120px;
+        // right: 190px;
+        top: 12%;
+        right: 10%;
+    }
+}
+
+.title-item{
+    span:nth-of-type(1){
+        transform:translateY(-40%);
+    }
+    span:nth-of-type(2){
+        transform:translateY(10%);
+    }
+}
+
+
+.web-page.block1{//!!!!这种命名好处是还可以额外再sass提高权重(以免init覆盖)
+    .title{
+        @extend .title-item;
+    }
+    .list{
+        width: 1200px;
+    }
+
+    .list-up{
+
+    }
+    ///!!!!原来flex这样排表格取代display block
+    .table-box{
+        // display: block;//!!!table标签不会占满宽
+        width: 100%;
+        font-size: 20px;
+        thead,tbody{ display: block;}
+        tr{
+            // display:block;/////要拿掉!!!
+            display: flex;//!!!加上flex就会自动占满
+            justify-content: center;
+            align-items: center;
+        }
+        td,th{
+            // display: block;
+            // width: 33%;
+            // flex: 1;
+            flex-basis: 270px;
+            padding: 10px;
+
+            &:nth-child(1){
+                margin-left: 200px;
+            }
+        }////
+
+        thead{
+            tr{
+                background-color: #ffd300;
+            }
+        }
+        tbody{
+            tr:nth-child(even){
+                background-color: #ffd300;
+            }
+        }
+
+    }
+    .table-tip{
+        text-align: center;
+        p{
+            font-size: 17px;
+        }
+    }
+
+    .rule-button{
+        text-align: center;
+        // line-height: initial;
+
+        a{
+            display: inline-block;
+            margin: 0 30px;
+            width: 220px;
+            height: 55px;
+            line-height: 55px;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            border-radius: 10px;
+            text-align: center;
+
+        }
+
+        a.rule{
+            box-sizing: border-box;
+            border: 1px solid $primary-color;
+            color: $primary-color;
+        }
+
+        a.chat{
+            color:#fff;
+            background-color: $primary-color;
+        }
+    }
+}
+
+.web-page.block-2{
+    @include bgTxt(1920,470,GirlBG);
+    h2,p{color: #fff;}
+    
+    .layout-box{
+        // width: 600px;//!!!float也可不用写宽度
+        float: right;
+    }
+
+    .title{
+        h2{
+            padding: 0 10px;
+        }
+        .title-item{
+            text-align: left;
+            margin-bottom: 10px;
+        }
+    }
+
+    .example-content{
+        font-size: 20px;
+        letter-spacing: 1.5px;
+        line-height: 2;
+    }
+
+
+}
+
+.web-page.block-3{
+    background-color: $primary-color;
+
+
+    .conList1{
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            li{
+                margin: 0 70px;
+                text-align: center;
+                span{
+                    display: block;
+                    img{
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.web-page.block-4{
+    background-color: $secondary-color;
+    .title-item{
+        span:nth-of-type(1){
+            background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/oldCampaign2005/left-white-1.png") no-repeat;
+        }
+        span:nth-of-type(2){
+            background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/oldCampaign2005/right-white-2.png") no-repeat;
+        }
+    }
+    .conList2{
+        padding: 60px 0 100px;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            li{
+                box-shadow: 0 0 8px 1px rgba(0,0,0,.3);
+                border-radius: 30px;
+                overflow: hidden;//不然这边阴影切不到
+                margin: 0 5px;//避免阴影被切掉
+                span{
+                    display: block;
+                }
+                .txt{
+                    padding: 30px 0 30px;
+                    font-size: 20px;
+                    text-align: center;
+                    h3{
+                        font-weight: bolder;
+                        color: #000;
+                    }
+                    p{
+                        color: $text-color2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.web-footer{
+    background-color: #000;
+    color:$footer-color;
+    line-height: 1.5;
+}

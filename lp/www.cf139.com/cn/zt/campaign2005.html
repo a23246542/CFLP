@@ -119,7 +119,7 @@
                 </div>
                 <!-- <div class="sliderCon"></div> 取这-->
                 <div class="swiper" aos="fade-down">
-                    <div class="swiper-container1">
+                    <div class="swiper-container1 swiper-no-swiping">
                         <div class="swiper-pagination"></div>
                         <div class="swiper-wrapper">
                             <div class="swiper-slide item-1">
@@ -127,8 +127,9 @@
                                     <div class="pic"></div>
                                     <div class="txt">
                                         <h2>重点关注: 美股指数</h2>
+                                        <h3>美股大涨逾10%</h3>
                                         <p>
-                                            疫情冲击全球，蔓延至美国，美国就业数据开始浮现警讯，初领失业金人数逼近30万人，美国经济或将迎来史上最大衰退。创富CFD支持做空交易，不同于股票只能做多，即使行情大跌，同样存在获利机会!!
+                                            美国虽然疫情严峻，但美股经历三月连续历史性熔断后，谷底反弹逾10%，其中美国DJ30指数更飙涨6275点。美股4月涨幅创历史纪录，目前市场正充满交易机会
                                         </p>
                                     </div>
                                 </div>
@@ -137,9 +138,10 @@
                                 <div class="item">
                                     <div class="pic"></div>
                                     <div class="txt">
-                                        <h2>重点关注: 黄金、贵金属</h2>
+                                        <h2>重点关注: 黄金</h2>
+                                        <h3>突破1700美元</h3>
                                         <p>
-                                            针对减产协议，俄罗斯和欧佩克一言不合，大打价格战，本次原油单月50%的下跌行情，对空头而言可说是史上最容易挣钱的交易。急跌的行情是否将迎来急速反弹?也同样令人期待!!
+                                            史无前例的宽松力度，全球央行成为黄金飙涨的幕后推手。短短一个月时间，黄金从1450美元飙涨逾20%，为热爱黄金交易的国人，带来庞大的获利机会，目前看来，这波行情仍未停止!!
                                         </p>
                                     </div>
                                 </div>
@@ -149,8 +151,9 @@
                                     <div class="pic"></div>
                                     <div class="txt">
                                         <h2>重点关注: 原油</h2>
+                                        <h3>跌至<span>负数</span>历史首见</h3>
                                         <p>
-                                            即使美联储连续紧急降息，并且开启无限制的QE政策，但美元兑日元依旧飙涨。东京奥运延期，日本观光产业遭到重创，也导致了日元崩跌。目前国际外汇交易趋向活络，今年正是进入市场的大好机会!!
+                                            <span>-37.63</span>美元/桶，原油4月份创下负数结算的首例。但投资者交易原油的热情并未退去，做空原油仿佛成为2020年最简单的交易。原油市场正在书写历史，错失行情将十分可惜!!
                                         </p>
                                     </div>
                                 </div>
@@ -564,6 +567,7 @@ var swiper = new Swiper('.swiper-container1', {
     slideToClickedSlide: true,
     watchSlidesProgress: true,
     initialSlide:1,
+    noSwiping:true,//增加让文字可以选中的
     pagination: {
         el: '.swiper-pagination',
         clickable: true,

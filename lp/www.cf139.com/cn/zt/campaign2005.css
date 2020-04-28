@@ -438,24 +438,15 @@ section[class*="web-page"] {
 }
 
 .web-page3 .swiper .swiper-container1 .swiper-wrapper .swiper-slide .item .txt {
-  padding: 17px;
-  text-align: justify;
+  padding: 20px;
 }
 
 .web-page3 .swiper .swiper-container1 .swiper-wrapper .swiper-slide .item h2 {
   font-size: 24px;
   color: #555555;
-  text-align: left;
+  text-align: center;
   font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.web-page3 .swiper .swiper-container1 .swiper-wrapper .swiper-slide .item h3 {
-  text-align: left;
-  font-size: 19px;
-  font-weight: bold;
-  color: #555555;
-  margin-bottom: 8px;
+  margin-bottom: 20px;
 }
 
 .web-page3 .swiper .swiper-container1 .swiper-wrapper .swiper-slide .item p {
@@ -463,11 +454,6 @@ section[class*="web-page"] {
   font-size: 16px;
   letter-spacing: 1.3px;
   line-height: 1.5;
-  text-align: justify;
-}
-
-.web-page3 .swiper .swiper-container1 .swiper-wrapper .swiper-slide .item span {
-  color: #e72d2d;
 }
 
 .web-page3 .swiper .swiper-container1 .swiper-wrapper .swiper-slide-active .item {
@@ -476,10 +462,6 @@ section[class*="web-page"] {
 }
 
 .web-page3 .swiper .swiper-container1 .swiper-wrapper .swiper-slide-active .item h2 {
-  color: #0393d7;
-}
-
-.web-page3 .swiper .swiper-container1 .swiper-wrapper .swiper-slide-active .item h3 {
   color: #0393d7;
 }
 

@@ -343,20 +343,32 @@ html{
                     }
                     .item-txt{
                         // text-overflow: ellipsis;//??!!沒有用 除非限制高度
-                        padding: .2rem .3rem .3rem .3rem;
+                        padding: .15rem .2rem .25rem .2rem;
                         overflow: hidden;//可不写
+                        text-align: justify;
                         h2{
-                            text-align: center;
+                            text-align: left;
                             font-size: 0.31rem;
                             color:#606060;
                             margin-bottom: .15rem;
                         }
+                        h3{
+                            text-align: left;
+                            font-size: 0.27rem;
+                            color:#606060;
+                            margin-bottom: .15rem;
+                        }
                         p{
-                            font-size: 0.25rem;//.23还.24是手机极限!!!小于12px
+                            font-size: 0.26rem;//.23还.24是手机极限!!!小于12px
                             color:#717273;
                             line-height: .35rem;
                             letter-spacing:.02rem;
+                            text-align: left;
+                            text-align: justify;//!!!发现手机有时会吃不到 再加一次保险
                             // font-weight: lighter;//!!!!用了手机看会浅掉
+                        }
+                        span{
+                            color:rgb(231, 45, 45);
                         }
                     }
                 }
@@ -366,6 +378,9 @@ html{
                     }
                     .item-txt{
                         h2{
+                            color:$title-color !important;//不然层次权重不够
+                        }
+                        h3{
                             color:$title-color !important;//不然层次权重不够
                         }
                         p{
