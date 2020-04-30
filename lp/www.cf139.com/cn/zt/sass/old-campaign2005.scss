@@ -6,21 +6,45 @@
     color: #000;
 }
 
-.web-banner.banner-all{
-
+// .web-banner.banner-all{
+.web-banner{//!!!!看来要拉出一个单纯的class!!!
+    @include bgTxt(1920,726,'Banner-up1');
+    margin: 0 auto;//给死宽度的缺点就是超出1920会跑版 所以这边都得加至中
+    position: relative;
     .inner{
         width: auto;//盖掉!!!
         max-width: 1200px;
+
+        position: absolute;//!!!!不这样定位的话inner高度会部件!!! 子层的position是无法撑起高度的!!!
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
     }
+    // .banner-title-img{
+    //     // max-width: 370px;
+    //     // max-width: 100%;//!!!!!!!!!竟然没用
+    //     width: 30.83%;//370/1200  //要做这边的RWD发现满难的 可能要用断点来处理
+    //     height: auto;
+    //     // top: 120px;
+    //     // right: 190px;
+    //     top: 50%;
+    //     transform:translateY(-50%);
+    //     right: 10%;
+    // }
     .banner-title-img{
-        // max-width: 370px;
-        // max-width: 100%;//!!!!!!!!!竟然没用
-        width: 30.83%;//370/1200
-        height: auto;
-        // top: 120px;
-        // right: 190px;
-        top: 12%;
-        right: 10%;
+        position: absolute;
+        top: 138px;
+        right: 180px;
+        // z-index: 5;
+    }
+    h1,
+    h2 {
+        font-size: 20px;
+        position: absolute; 
+        color: transparent;
+        user-select: none;
     }
 }
 
@@ -35,21 +59,35 @@
 
 
 .web-page.block1{//!!!!这种命名好处是还可以额外再sass提高权重(以免init覆盖)
+    background-color: #fff;
     .title{
         @extend .title-item;
+        padding-top: 50px;
+        .title-item{
+            margin-bottom: 40px;
+        }
+        p{
+            color: #000;
+            font-family: $font-family;
+            line-height: 1.7;
+            font-size: 20px;
+            letter-spacing:2px
+        }
     }
     .list{
         width: 1200px;
     }
 
     .list-up{
-
+        padding: 45px 0 0;
     }
     ///!!!!原来flex这样排表格取代display block
     .table-box{
         // display: block;//!!!table标签不会占满宽
         width: 100%;
+        margin-bottom: 22px;
         font-size: 20px;
+        font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
         thead,tbody{ display: block;}
         tr{
             // display:block;/////要拿掉!!!
@@ -72,11 +110,29 @@
         thead{
             tr{
                 background-color: #ffd300;
+                color: #000;
+                // font-weight: bold;//字仲也吃不到!!! 噢噢因未template 这边权重不够
+                th{
+                    font-weight: bold;
+                    font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+                }
             }
         }
         tbody{
             tr:nth-child(even){
                 background-color: #ffd300;
+            }
+            tr{
+                td:first-child{
+                    color:#858585;
+                }
+                td:not(:first-child){
+                    color:#ff6300;
+                }
+            }
+            td{
+                font-weight: bold;
+                letter-spacing: 1.3;
             }
         }
 
@@ -85,10 +141,13 @@
         text-align: center;
         p{
             font-size: 17px;
+            font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+            color: #000;
         }
     }
 
     .rule-button{
+        padding: 50px 0 100px;
         text-align: center;
         // line-height: initial;
 
@@ -101,8 +160,16 @@
             font-size: 20px;
             font-weight: bold;
             letter-spacing: 1.5px;
-            border-radius: 10px;
+            border-radius: 15px;
             text-align: center;
+            cursor: pointer;
+            //上网查过a的字体会被浏览器盖过 所以不会继承
+            font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+            transition: all .25s;
+            &:hover{
+                // box-shadow: 0 2px 8px 1px rgba(45,221,255,.5);
+                box-shadow: 0 2px 12px 2px lighten($primary-color,20%);
+            }
 
         }
 
@@ -121,6 +188,8 @@
 
 .web-page.block-2{
     @include bgTxt(1920,470,GirlBG);
+    // background-color: #000;
+    margin: 0 auto;//
     h2,p{color: #fff;}
     
     .layout-box{
@@ -141,7 +210,10 @@
     .example-content{
         font-size: 20px;
         letter-spacing: 1.5px;
-        line-height: 2;
+        line-height: 1.8;
+        font-weight: normal;
+        font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+
     }
 
 
@@ -150,20 +222,43 @@
 .web-page.block-3{
     background-color: $primary-color;
 
+    .title{
+        padding-top: 100px;
+        // margin-bottom: 50px;
+    }
+    .title-item h2{//!!不写h2吃不到 字体是写在section的父曾至少可以吃到
+        color: #fff;
+    }
 
     .conList1{
+        padding: 80px 0 125px;
         ul{
             display: flex;
             justify-content: center;
             align-items: center;
+            // font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
             li{
                 margin: 0 70px;
                 text-align: center;
                 span{
                     display: block;
+                    margin-bottom: 32px;
                     img{
                         margin: 0 auto;
                     }
+                }
+                p{
+                    font-size: 20px;
+                    font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+                    letter-spacing: 1px;
+                }
+                p:nth-of-type(1) {
+                    color:#ffd400;
+                    margin-bottom: 6px;
+                    font-weight: bold;
+                }
+                p:nth-of-type(2) {
+                    color:#fff;
                 }
             }
         }
@@ -174,6 +269,9 @@
 
 .web-page.block-4{
     background-color: $secondary-color;
+    .title{
+        @extend .title-item;
+    }
     .title-item{
         span:nth-of-type(1){
             background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/oldCampaign2005/left-white-1.png") no-repeat;
@@ -183,7 +281,7 @@
         }
     }
     .conList2{
-        padding: 60px 0 100px;
+        padding: 68px 0 110px;
         ul{
             display: flex;
             justify-content: space-between;
@@ -198,15 +296,19 @@
                     display: block;
                 }
                 .txt{
+                    background-color: #fff;
                     padding: 30px 0 30px;
                     font-size: 20px;
                     text-align: center;
-                    h3{
-                        font-weight: bolder;
+                    h3{//这边很特别 只有h3要给字体 p反而不用
+                        font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+                        font-weight: bold;
                         color: #000;
+                        letter-spacing:1px;
                     }
                     p{
                         color: $text-color2;
+                        font-weight: bold;
                     }
                 }
             }
@@ -215,7 +317,17 @@
 }
 
 .web-footer{
+    padding: 55px 0 45px;
     background-color: #000;
-    color:$footer-color;
+    // color:$footer-color;//没笑
     line-height: 1.5;
+    
+    .item-1,.item-2{
+        color:$footer-color;
+        opacity: .8;
+    }
+    .item-1{
+        margin-bottom: 7px;
+    }
+    
 }

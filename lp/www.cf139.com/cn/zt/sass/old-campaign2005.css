@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("./reset.css");
 html {
   height: 100%;
@@ -84,7 +85,6 @@ img, a {
   width: 100%;
   height: 0;
   padding-bottom: 37.8125%;
-  background: url("../lp-img/pc/oldCampaign2005/Banner-up1.png") no-repeat;
   background-size: 100% 100%;
   background-position: 50% 50%;
   position: relative;
@@ -117,16 +117,16 @@ img, a {
           user-select: none;
 }
 
-.title-item, .web-page.block1 .title {
+.title-item, .web-page.block1 .title, .web-page.block-4 .title {
   text-align: center;
   font-size: 0;
 }
 
-.title-item span, .web-page.block1 .title span {
+.title-item span, .web-page.block1 .title span, .web-page.block-4 .title span {
   display: inline-block;
 }
 
-.title-item span:nth-of-type(1), .web-page.block1 .title span:nth-of-type(1) {
+.title-item span:nth-of-type(1), .web-page.block1 .title span:nth-of-type(1), .web-page.block-4 .title span:nth-of-type(1) {
   width: 34px;
   height: 25px;
   background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/oldCampaign2005/left-yellow-1.png") no-repeat;
@@ -134,7 +134,7 @@ img, a {
   background-position: 50% 50%;
 }
 
-.title-item span:nth-of-type(2), .web-page.block1 .title span:nth-of-type(2) {
+.title-item span:nth-of-type(2), .web-page.block1 .title span:nth-of-type(2), .web-page.block-4 .title span:nth-of-type(2) {
   width: 34px;
   height: 25px;
   background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/oldCampaign2005/right-yellow-2.png") no-repeat;
@@ -142,7 +142,7 @@ img, a {
   background-position: 50% 50%;
 }
 
-.title-item h2, .web-page.block1 .title h2 {
+.title-item h2, .web-page.block1 .title h2, .web-page.block-4 .title h2 {
   display: inline-block;
   font-size: 40px;
   font-weight: bold;
@@ -150,44 +150,365 @@ img, a {
   color: #000;
 }
 
-.title-item p, .web-page.block1 .title p {
+.title-item p, .web-page.block1 .title p, .web-page.block-4 .title p {
   text-align: center;
   font-size: 16px;
+}
+
+.popup-box {
+  max-width: 1000px;
+  height: 650px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: -325px auto 0 auto;
+  top: 50%;
+  background: #fff;
+  z-index: 9999999999;
+  font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+  padding: 0 20px 20px 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.popup-box p {
+  font-size: 20px;
+  line-height: 1.9;
+  color: #333333;
+  text-align: justify;
+}
+
+.popup-box p span {
+  overflow: hidden;
+  display: inline;
+  color: #d8505a;
+}
+
+.popup-box p a {
+  overflow: hidden;
+  display: inline;
+  color: #225b76;
+  text-decoration: underline;
+}
+
+.popup-box h2 {
+  font-size: 20px;
+  color: #b78255;
+  font-weight: bold;
+  position: relative;
+}
+
+.popup-box h2.verline i {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #b78255;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 1px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.popup-box .note {
+  line-height: 30px;
+}
+
+.popup-box .note span {
+  color: #f00;
+}
+
+.popup-box .close-top {
+  height: 60px;
+  color: #b78255;
+  border-bottom: 1px solid #b78255;
+  text-align: center;
+  line-height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.popup-box .close-top a {
+  display: block;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  background: url(//img.getfc.com.cn/source/www/zt/campaign1710/close.png) no-repeat;
+  top: 25px;
+  right: 25px;
+  text-decoration: none;
+}
+
+.popup-box .table3 td {
+  width: 33.333333%;
+}
+
+.popup-box .table4 td {
+  width: 16%;
+}
+
+.popup-box table.data-box {
+  width: 100%;
+  margin: 16px auto;
+  text-align: center;
+  font-size: 1.6em;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #ead5c2;
+}
+
+.popup-box table.data-box thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.popup-box table.data-box thead th {
+  font-size: 16px;
+  text-align: center;
+  padding: 15px;
+  color: #FFFFFF;
+  background: #dcb08e;
+  line-height: 1.0;
+  border: 1px dotted #ccc;
+}
+
+.popup-box table.data-box thead tr {
+  border: 1px dotted #ccc;
+}
+
+.popup-box table.data-box tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.popup-box table.data-box tbody td {
+  line-height: 1.6;
+  text-align: center;
+  color: #333333;
+  padding: 1.44%;
+  font-size: 16px;
+  border: 1px dotted #ccc;
+  font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+}
+
+.popup-box table.data-box tbody .unit {
+  font-size: 0.8em;
+}
+
+.popup-box table.data-box tbody tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+  background: #FFFFFF;
+}
+
+.popup-box table.data-box tbody tr.last-row td {
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.popup-box .box-in {
+  margin: 3% 3% 5% 5%;
+  color: #333333;
+  overflow: auto;
+  height: 500px;
+  padding: 0% 2% 0 0;
+}
+
+.popup-box .box-in .section1 {
+  margin-top: 0px;
+}
+
+.popup-box .box-in .section1 .detailContent {
+  width: 670px;
+  font-size: 18px;
+  text-align: center;
+  margin-left: 50px;
+}
+
+.popup-box .box-in .section1 .detailContent ul li span {
+  display: inline-block;
+  font-size: 20px;
+  color: #e84c00;
+  position: relative;
+  left: -2px;
+  top: -1px;
+}
+
+.popup-box .box-in .section1 .detailContent img {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: -90px;
+  left: -110px;
+}
+
+.popup-box .box-in .section1 .detailContent img.pic {
+  position: relative;
+  top: -90px;
+  left: 108px;
+}
+
+.popup-box .box-in .section1 .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-bottom: 5px;
+}
+
+.popup-box .box-in .section1 p {
+  font-size: 20px;
+}
+
+.popup-box .box-in .section1 ul li:nth-child(2) {
+  margin: 8px 63px;
+}
+
+.popup-box .box-in div.title, .popup-box .box-in div.bottom {
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  background: #e4f2f8;
+}
+
+.popup-box .box-in div.bottom {
+  background: #f1f8fa;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.popup-box .box-in .section3 ol li {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.popup-box .box-in .section4 ol li {
+  font-size: 20px;
+  line-height: 2.2;
+  text-align: justify;
+  display: -webkit-box;
+  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  /* 老版本语法: Firefox (buggy) */
+  display: -ms-flexbox;
+  /* 混合版本语法: IE 10 */
+  /* 新版本语法: Chrome 21+ */
+  display: flex;
+  /* 新版本语法: Opera 12.1, Firefox 22+ */
+}
+
+.popup-box .box-in .section4 ol li p.clearfix {
+  font-size: 16px;
+}
+
+.popup-box .box-in .section5 ol li {
+  font-size: 16px;
+  line-height: 2.2;
+  text-align: justify;
+  display: -webkit-box;
+  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  /* 老版本语法: Firefox (buggy) */
+  display: -ms-flexbox;
+  /* 混合版本语法: IE 10 */
+  /* 新版本语法: Chrome 21+ */
+  display: flex;
+  /* 新版本语法: Opera 12.1, Firefox 22+ */
 }
 
 .body {
   color: #000;
 }
 
-.web-banner.banner-all .inner {
+.web-banner {
+  width: 1920px;
+  height: 726px;
+  background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/oldCampaign2005/Banner-up1.png") no-repeat;
+  background-size: 1920px 726px;
+  background-position: 50% 50%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.web-banner .inner {
   width: auto;
   max-width: 1200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
 
-.web-banner.banner-all .banner-title-img {
-  width: 30.83%;
-  height: auto;
-  top: 12%;
-  right: 10%;
+.web-banner .banner-title-img {
+  position: absolute;
+  top: 138px;
+  right: 180px;
 }
 
-.title-item span:nth-of-type(1), .web-page.block1 .title span:nth-of-type(1) {
+.web-banner h1,
+.web-banner h2 {
+  font-size: 20px;
+  position: absolute;
+  color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.title-item span:nth-of-type(1), .web-page.block1 .title span:nth-of-type(1), .web-page.block-4 .title span:nth-of-type(1) {
   -webkit-transform: translateY(-40%);
           transform: translateY(-40%);
 }
 
-.title-item span:nth-of-type(2), .web-page.block1 .title span:nth-of-type(2) {
+.title-item span:nth-of-type(2), .web-page.block1 .title span:nth-of-type(2), .web-page.block-4 .title span:nth-of-type(2) {
   -webkit-transform: translateY(10%);
           transform: translateY(10%);
+}
+
+.web-page.block1 {
+  background-color: #fff;
+}
+
+.web-page.block1 .title {
+  padding-top: 50px;
+}
+
+.web-page.block1 .title .title-item, .web-page.block1 .title .title {
+  margin-bottom: 40px;
+}
+
+.web-page.block1 .title p {
+  color: #000;
+  font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+  line-height: 1.7;
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 
 .web-page.block1 .list {
   width: 1200px;
 }
 
+.web-page.block1 .list-up {
+  padding: 45px 0 0;
+}
+
 .web-page.block1 .table-box {
   width: 100%;
+  margin-bottom: 22px;
   font-size: 20px;
+  font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
 }
 
 .web-page.block1 .table-box thead, .web-page.block1 .table-box tbody {
@@ -218,10 +539,29 @@ img, a {
 
 .web-page.block1 .table-box thead tr {
   background-color: #ffd300;
+  color: #000;
+}
+
+.web-page.block1 .table-box thead tr th {
+  font-weight: bold;
+  font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
 }
 
 .web-page.block1 .table-box tbody tr:nth-child(even) {
   background-color: #ffd300;
+}
+
+.web-page.block1 .table-box tbody tr td:first-child {
+  color: #858585;
+}
+
+.web-page.block1 .table-box tbody tr td:not(:first-child) {
+  color: #ff6300;
+}
+
+.web-page.block1 .table-box tbody td {
+  font-weight: bold;
+  letter-spacing: 1.3;
 }
 
 .web-page.block1 .table-tip {
@@ -230,9 +570,12 @@ img, a {
 
 .web-page.block1 .table-tip p {
   font-size: 17px;
+  font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+  color: #000;
 }
 
 .web-page.block1 .rule-button {
+  padding: 50px 0 100px;
   text-align: center;
 }
 
@@ -245,8 +588,17 @@ img, a {
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 1.5px;
-  border-radius: 10px;
+  border-radius: 15px;
   text-align: center;
+  cursor: pointer;
+  font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+}
+
+.web-page.block1 .rule-button a:hover {
+  -webkit-box-shadow: 0 2px 12px 2px #93c4ff;
+          box-shadow: 0 2px 12px 2px #93c4ff;
 }
 
 .web-page.block1 .rule-button a.rule {
@@ -267,6 +619,7 @@ img, a {
   background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/oldCampaign2005/GirlBG.png") no-repeat;
   background-size: 1920px 470px;
   background-position: 50% 50%;
+  margin: 0 auto;
 }
 
 .web-page.block-2 h2, .web-page.block-2 p {
@@ -281,7 +634,7 @@ img, a {
   padding: 0 10px;
 }
 
-.web-page.block-2 .title .title-item, .web-page.block-2 .title .web-page.block1 .title, .web-page.block1 .web-page.block-2 .title .title {
+.web-page.block-2 .title .title-item, .web-page.block-2 .title .web-page.block1 .title, .web-page.block1 .web-page.block-2 .title .title, .web-page.block-2 .title .web-page.block-4 .title, .web-page.block-4 .web-page.block-2 .title .title {
   text-align: left;
   margin-bottom: 10px;
 }
@@ -289,11 +642,25 @@ img, a {
 .web-page.block-2 .example-content {
   font-size: 20px;
   letter-spacing: 1.5px;
-  line-height: 2;
+  line-height: 1.8;
+  font-weight: normal;
+  font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
 }
 
 .web-page.block-3 {
   background-color: #2D8DFF;
+}
+
+.web-page.block-3 .title {
+  padding-top: 100px;
+}
+
+.web-page.block-3 .title-item h2, .web-page.block-3 .web-page.block1 .title h2, .web-page.block1 .web-page.block-3 .title h2, .web-page.block-3 .web-page.block-4 .title h2, .web-page.block-4 .web-page.block-3 .title h2 {
+  color: #fff;
+}
+
+.web-page.block-3 .conList1 {
+  padding: 80px 0 125px;
 }
 
 .web-page.block-3 .conList1 ul {
@@ -315,26 +682,43 @@ img, a {
 
 .web-page.block-3 .conList1 ul li span {
   display: block;
+  margin-bottom: 32px;
 }
 
 .web-page.block-3 .conList1 ul li span img {
   margin: 0 auto;
 }
 
+.web-page.block-3 .conList1 ul li p {
+  font-size: 20px;
+  font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+.web-page.block-3 .conList1 ul li p:nth-of-type(1) {
+  color: #ffd400;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.web-page.block-3 .conList1 ul li p:nth-of-type(2) {
+  color: #fff;
+}
+
 .web-page.block-4 {
   background-color: #D2D2D2;
 }
 
-.web-page.block-4 .title-item span:nth-of-type(1), .web-page.block-4 .web-page.block1 .title span:nth-of-type(1), .web-page.block1 .web-page.block-4 .title span:nth-of-type(1) {
+.web-page.block-4 .title-item span:nth-of-type(1), .web-page.block-4 .title span:nth-of-type(1) {
   background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/oldCampaign2005/left-white-1.png") no-repeat;
 }
 
-.web-page.block-4 .title-item span:nth-of-type(2), .web-page.block-4 .web-page.block1 .title span:nth-of-type(2), .web-page.block1 .web-page.block-4 .title span:nth-of-type(2) {
+.web-page.block-4 .title-item span:nth-of-type(2), .web-page.block-4 .title span:nth-of-type(2) {
   background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/oldCampaign2005/right-white-2.png") no-repeat;
 }
 
 .web-page.block-4 .conList2 {
-  padding: 60px 0 100px;
+  padding: 68px 0 110px;
 }
 
 .web-page.block-4 .conList2 ul {
@@ -362,23 +746,36 @@ img, a {
 }
 
 .web-page.block-4 .conList2 ul li .txt {
+  background-color: #fff;
   padding: 30px 0 30px;
   font-size: 20px;
   text-align: center;
 }
 
 .web-page.block-4 .conList2 ul li .txt h3 {
-  font-weight: bolder;
+  font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+  font-weight: bold;
   color: #000;
+  letter-spacing: 1px;
 }
 
 .web-page.block-4 .conList2 ul li .txt p {
   color: #606060;
+  font-weight: bold;
 }
 
 .web-footer {
+  padding: 55px 0 45px;
   background-color: #000;
-  color: #D2D2D2;
   line-height: 1.5;
+}
+
+.web-footer .item-1, .web-footer .item-2 {
+  color: #D2D2D2;
+  opacity: .8;
+}
+
+.web-footer .item-1 {
+  margin-bottom: 7px;
 }
 /*# sourceMappingURL=old-campaign2005.css.map */

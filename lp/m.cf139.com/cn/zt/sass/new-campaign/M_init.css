@@ -1,0 +1,442 @@
+html {
+  height: 100%;
+  font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+img, a {
+  display: block;
+}
+
+#main {
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.web-page {
+  width: 100%;
+  color: #333333;
+}
+
+.inner {
+  overflow: hidden;
+  width: 100% !important;
+  padding: 0 !important;
+  position: relative;
+}
+
+.inner .title {
+  padding-top: .8rem;
+}
+
+.m-header .layout-1 .item-1 .left-1 {
+  background-image: url(../../images/common/header43_03.png);
+  background-size: 2.25rem 0.63rem;
+  width: 2.25rem;
+  height: 0.63rem;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  font-size: 0;
+  height: 0;
+  clear: both;
+}
+
+.banner-all {
+  width: 100%;
+  height: 0;
+  padding-bottom: 37.8125%;
+  background: url("../lp-img/pc/oldCampaign2005/Banner-up1.png") no-repeat;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  position: relative;
+}
+
+.banner-all .container, .banner-all .inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.banner-all .banner-title-img {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+}
+
+.banner-all h1,
+.banner-all h2 {
+  position: absolute;
+  color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.title {
+  font-size: 0;
+}
+
+.title .title-item {
+  text-align: center;
+  font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+}
+
+.title .title-item span {
+  display: inline-block;
+}
+
+.title .title-item span:nth-of-type(1) {
+  width: 0.33rem;
+  height: 0.25rem;
+  background: url("https://sc.tfejy.com/source/www/zt/lp-img/mobile/oldCampaign2005/(M)left-Yellow.png") no-repeat;
+  background-size: 0.33rem 0.25rem;
+  background-position: 50% 50%;
+}
+
+.title .title-item span:nth-of-type(2) {
+  width: 0.33rem;
+  height: 0.25rem;
+  background: url("https://sc.tfejy.com/source/www/zt/lp-img/mobile/oldCampaign2005/(M)right-yellow.png") no-repeat;
+  background-size: 0.33rem 0.25rem;
+  background-position: 50% 50%;
+}
+
+.title .title-item h2 {
+  display: inline-block;
+  font-size: .42rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 .1rem;
+  color: #000;
+  letter-spacing: 0.02rem;
+}
+
+.title p {
+  text-align: center;
+  font-size: .26rem;
+}
+
+.web-banner {
+  width: 100%;
+}
+
+.web-banner .web-inner {
+  position: relative;
+  width: 100%;
+  height: 9.5rem;
+  background: url("https://sc.tfejy.com/source/www/zt/lp-img/mobile/oldCampaign2005/(M)BannerUPbg.png") no-repeat;
+  background-size: 100% 9.5rem;
+  background-position: 50% 50%;
+}
+
+.web-banner .web-inner .banner-title-img {
+  position: absolute;
+}
+
+.web-banner .web-inner h1, .web-banner .web-inner h2 {
+  color: transparent !important;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.popup-box .box-in .section1 .item h2.ver-line {
+  white-space: nowrap;
+}
+
+.tc-hide .popup-box .close-top a {
+  width: 0.31rem !important;
+  height: 0.31rem !important;
+  background-size: 0.31rem 0.31rem !important;
+}
+
+.tc-hide {
+  display: none;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  line-height: 1.8;
+}
+
+.masking {
+  display: block;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+ul li, table {
+  list-style-type: none !important;
+}
+
+.popup-box .box-in .section5 h2.var-line {
+  font-size: .28rem !important;
+}
+
+.popup-box {
+  overflow: hidden;
+  max-width: 95%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 10%;
+  background: #fff;
+  z-index: 99999;
+  font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+  padding: 0;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.3);
+}
+
+.popup-box .close-top {
+  padding: 0.3rem 0.3rem;
+  font-size: 0.44rem;
+  color: #b78255;
+  text-align: center;
+  border-bottom: 1px solid #b78255;
+  width: 6rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.popup-box .close-top a {
+  background: url(../../images/campaign1710/close-b.png) no-repeat;
+  width: 0.21rem;
+  height: 0.21rem;
+  background-size: 0.21rem 0.21rem;
+  position: absolute;
+  right: 0;
+  margin-top: .2rem;
+  text-decoration: none;
+}
+
+.popup-box .note {
+  line-height: 1.8;
+  font-size: 0.24rem;
+  margin-bottom: 0.1rem span;
+  margin-bottom-color: #f00;
+}
+
+.popup-box .table1 td, .popup-box .table2 td {
+  width: 25%;
+}
+
+.popup-box .table3 td {
+  width: 33.3333%;
+}
+
+.popup-box .table4 td {
+  width: 16%;
+}
+
+.popup-box table.data-box {
+  width: 100%;
+  margin: 16px auto .25rem;
+  text-align: center;
+  border: 0 !important;
+  font-size: 1.6em;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.popup-box table.data-box .first-child {
+  text-align: center;
+  font-size: .28rem;
+}
+
+.popup-box table.data-box .first-child a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.popup-box table.data-box thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.popup-box table.data-box thead th {
+  font-size: .28rem;
+  /* font-size: .2rem; */
+  text-align: center;
+  padding: .15rem .05rem;
+  color: #FFFFFF;
+  background: #dcb08e;
+  line-height: 1.0;
+}
+
+.popup-box table.data-box tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.popup-box table.data-box tbody td {
+  line-height: 1.0;
+  text-align: center;
+  color: #333333;
+  padding: 1.44%;
+  font-size: .28rem;
+  /* font-size: 14px; template*/
+  border: 0.025rem solid #ead5c2;
+  font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+}
+
+.popup-box table.data-box tbody tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+.popup-box table.data-box tbody tr.grey td:nth-child(1) {
+  /* width: 30px; */
+}
+
+.popup-box table.data-box tbody tr.grey {
+  background: #fff;
+}
+
+.popup-box table.data-box tbody tr.last-row td {
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.popup-box table.data-box tbody .unit {
+  font-size: 0.8em;
+}
+
+.popup-box .box-in {
+  margin: 3% 4% 5% 4%;
+  overflow-y: auto;
+  height: 8rem;
+}
+
+.popup-box .box-in .line-throw {
+  font-size: 0.3rem;
+}
+
+.popup-box .box-in .section1 .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-bottom: .1rem;
+}
+
+.popup-box .box-in .section1 h2 {
+  font-size: 0.28rem;
+  font-weight: bold;
+  color: #b78255;
+}
+
+.popup-box .box-in .section1 p {
+  font-size: 0.28rem;
+  line-height: 1.8;
+}
+
+.popup-box .box-in .section3 p {
+  font-size: 0.28rem;
+  /*margin-bottom: 0.2rem;*/
+  line-height: 1.8;
+}
+
+.popup-box .box-in .section3 p a {
+  color: #0096dc;
+}
+
+.popup-box .box-in .section3 p span {
+  color: #f00;
+  font-weight: bold;
+}
+
+.popup-box .box-in .section3 .first {
+  border-left: .025rem solid #ccc;
+}
+
+.popup-box .box-in .section3 ul li ul li {
+  float: left;
+  font-size: 12px;
+  width: 16%;
+  text-align: center;
+  height: 2.5rem;
+  border-right: 0.025rem solid #ccc;
+  border-bottom: 0.025rem solid #ccc;
+  padding-top: 1rem;
+}
+
+.popup-box .box-in .section3 ul li ul li.last {
+  width: 20%;
+  padding-top: .5rem;
+}
+
+.popup-box .box-in .section4 h2 {
+  font-size: 0.3rem;
+  margin-bottom: 0.1rem;
+  color: #b78255;
+}
+
+.popup-box .box-in .section4 li {
+  font-size: 0.28rem;
+  line-height: 1.8;
+}
+
+.popup-box .box-in .section4 li span {
+  /*margin-right: 0.15rem;*/
+}
+
+.popup-box .box-in .section4 li p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.popup-box .box-in .section5 ol li {
+  font-size: .2rem;
+}
+
+.down-footer span {
+  line-height: 1.8;
+}
+
+.bot-fixed li {
+  line-height: 1.8;
+}
+/*# sourceMappingURL=M_init.css.map */
