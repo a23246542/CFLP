@@ -1,0 +1,60 @@
+
+// ======第一種作法=======================
+// 如果可以量出兩個icon圈圈的間距(圖片有切剛好大小 下面的字沒有爆出來)
+// 那個這個間距除以2 可以算出container(inner) 讓裡面平均分配 然後space-around
+
+
+// ======第二種作法==========================
+// 像這樣這樣 直接量兩邊到視窗距離 然後flex直接對其兩邊 讓中間自動流空
+.conList1{
+    padding: .55rem 0 .9rem;
+    ul{
+        padding: 0 .9rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        // justify-content: space-around;
+        // align-items: center;
+        // align-content: space-between;
+        font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+        li{
+            width: 2.4rem;//!!?用最大的那个为宽/没用
+            // &:nth-of-type(2)::after{
+                //     content:"";
+                //     width: 100%;
+                // }
+                // margin: 0 70px;
+            text-align: center;
+            
+
+            &:nth-of-type(1),&:nth-of-type(2){
+                margin-bottom: .85rem;
+            }
+
+            span{
+                display: block;//!!!!原来span是这样用
+                // width:1.5rem;
+                // height: 1.5rem;
+                margin-bottom: .3rem;
+                img{
+                    width:1.5rem;
+                    height: 1.5rem;
+                    margin: 0 auto;
+                }
+            }
+            p{
+                font-size: .27rem;
+                letter-spacing:.03rem;
+                // font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+            }
+            p:nth-of-type(1) {
+                color:#ffd400;
+                margin-bottom: .05rem;
+                font-weight: bold;
+            }
+            p:nth-of-type(2) {
+                color:#fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+
+// ==========================================================
+// 最簡單的方式就是全部flex置中再彼此margin推開就好
+
+
+.conList1{
+    padding: 80px 0 125px;
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+        li{
+            margin: 0 70px;
+            text-align: center;
+            span{
+                display: block;
+                margin-bottom: 32px;
+                img{
+                    margin: 0 auto;
+                }
+            }
+            p{
+                font-size: 20px;
+                font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+                letter-spacing: 1px;
+            }
+            p:nth-of-type(1) {
+                color:#ffd400;
+                margin-bottom: 6px;
+                font-weight: bold;
+            }
+            p:nth-of-type(2) {
+                color:#fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,133 @@
+.web-banner{
+    @include bgTxt(1920,726,'Banner-up1');//還是乾脆寫死寬高背景圖˙ 不要給他什麼padding-bottom了
+    margin: 0 auto;//给死宽度的缺点就是超出1920会跑版 所以这边都得加至中
+    position: relative;
+    .inner{//不過這是原本banner有padding-bottom 定位的作法
+        width: auto;//盖掉!!!
+        max-width: 1200px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    
+    .banner-title-img{
+        position: absolute;
+        top: 138px;
+        right: 180px;
+        // z-index: 5;
+    }
+    h1,
+    h2 {
+        font-size: 20px;
+        position: absolute; 
+        color: transparent;
+        user-select: none;
+    }
+}
+
+
+.banner-title-img{}
+h1,h2 {
+        font-size: 20px;
+        position: absolute; 
+        color: transparent;
+        user-select: none;
+    }
+
+// 1.全響應式RWD banner會響應式高度 banner跟裡面的img縮放下比例要ok
+
+.web-banner{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 37.8125%;//726/1920 
+
+    background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/oldCampaign2005/Banner-up1.png") no-repeat;
+    background-size: 100% 100%;//相对背景区  /背景圖本來就會顯示在padding的地方
+    background-position: 50% 50%;
+    .inner{//定位不能用margin:auto 要改用這種方式置中
+        position: absolute;
+        width: auto;//盖掉!!!話說是否等於width100% 因為預設
+        max-width: 1200px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .web-banner-img{ //banner因為會響應式縮高度 到接近手機時 裡面的img會爆出來
+        // 要再另外想辦法處理
+        position: absolute;
+        width: 30.83%;
+        height: auto;
+        top: 50%;
+        transform:translateY(-50%);
+        right: 10%;
+    }
+}
+
+// 2.半響應式 banner高度配合背景圖寫死 縮小時背景置中 裡面的img跟著寬度縮小也不至於超出來
+// 但是縮到手機時 寬度變小嚴重 裡面的img還是要斷點特別處理放大
+.web-banner{
+    width: 100%;
+    height: 726px;//寫死高度也是一班背景圖的作法
+
+    background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/oldCampaign2005/Banner-up1.png") no-repeat;
+    // background-size: auto 100%;//寬度不要100%
+    background-size: cover;//!!!發現上面效果跟cover差不多 可能因為縮小時 一定是寬度爆出去
+    background-position: 50% 50%;//背景圖水平置中必須
+
+    // ------用相對定位---------------------------
+    .inner{
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;//banner放大超出1200的時候就需要這個置中了
+    }
+
+    .web-banner-img{
+        position: relative;//也可以!!?? 一樣依父層inner!!!??
+        width: 30.83%;//370/1200
+        height: auto;
+
+        top: 50%;
+        transform:translateY(-50%);
+        // right: 10%;
+        left: 65%; //!!!只能按照static的方式從上面跟左邊推過來!!!!!
+    }
+
+    // ------用絕對定位-----------------------------
+    .inner{
+        position: absolute;
+    }
+
+    .web-banner-img{
+        position: absolute;
+        right: 10%;//可以從右邊跟下面定位過來!!!
+    }
+}
+
+
+
+// 3.圖片背景寬高寫死  裡面img也固定寬高(原本的圖片大小就好) 然後寫好定位
+
+.web-banner{
+    @include bgTxt(1920,726,'Banner-up1');//直接寫死寬高背景圖˙ 不要給他什麼padding-bottom了
+    margin: 0 auto;//给死宽度的缺点就是超出1920会跑版 所以这边都得加至中
+    .inner{
+        // width: 100%;
+        // max-width: 1200px;!!!觀念 根本不用寫這個
+        width: 1200px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .web-banner-img{
+        position: absolute;
+        top: 138px;
+        right: 180px;
+    }
+}

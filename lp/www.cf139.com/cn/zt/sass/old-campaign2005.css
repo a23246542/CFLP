@@ -429,12 +429,11 @@ img, a {
 }
 
 .web-banner {
-  width: 1920px;
+  width: 100%;
   height: 726px;
   background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/oldCampaign2005/Banner-up1.png") no-repeat;
-  background-size: 1920px 726px;
+  background-size: cover;
   background-position: 50% 50%;
-  margin: 0 auto;
   position: relative;
 }
 
@@ -450,9 +449,13 @@ img, a {
 }
 
 .web-banner .banner-title-img {
-  position: absolute;
-  top: 138px;
-  right: 180px;
+  position: relative;
+  width: 30.83%;
+  height: auto;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 10%;
 }
 
 .web-banner h1,
