@@ -1,0 +1,228 @@
+@import url("./reset.css");
+@import "./duanwu_base/pc_init";
+@import "./duanwu_base/variables";
+
+.web-banner{
+    width: 100%;
+    height: 520px;
+    background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/duanwu/pc_bn.jpg") no-repeat;
+    // background-size: 100% 520px; //100% 100% 也可以?
+    background-size: cover;//!!这就是100%跟cover的差别
+    background-position: 50% 50%;
+
+    h1,
+    h2 {
+        font-size: 20px;
+        position: absolute;
+        color: transparent;
+        user-select: none;
+    }
+}
+
+.web-page{//!!!min-height原来就是窗口缩小后 让页面也不会缩小
+    width: 100%;
+    // min-width: 1200px;//勉得缩到1200以下 container的东西挤爆
+    font-size: 16px;
+    color: #333333;
+}
+
+//原本的container
+.inner{
+    overflow: hidden;//但是容易裁到兩邊的陰影
+    width: 1200px;
+    margin: 0 auto;
+    // position: relative;
+}
+
+.web-page.block1{
+    position: relative;
+    // min-width: 1200px;//有用响应是百分比不要用这好了 不然缩小比例跑掉
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 0;
+    padding-bottom: 52%;
+    margin: 0 auto;
+    background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/duanwu/stage2_bg.jpg") no-repeat;
+    background-size: 100% 100%; //100% 100% 也可以?
+    background-position: 50% 50%;
+
+    // width: 1920px;
+    // margin: 0 auto;
+    // height: 997px;
+    // background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/duanwu/stage2_bg.jpg") no-repeat;
+    // background-size: 100% 100%; //100% 100% 也可以?
+    // background-position: 50% 50%;
+
+    
+
+    .inner{
+        outline: 1px solid red;
+        width: 62.5%;
+        // margin: 0 auto;//无效
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+
+        // width: 1200px;
+        // margin: 0 auto;
+
+    }
+    .title{
+        height: 23%;
+        // padding-top: 75px;
+        text-align: center;
+        // font-size: 36px;
+        font-size: 1.6rem;
+        color: $primary-color;
+        span{
+            color: #f0580d;
+        }
+    }
+    .zongzi{
+        width: 100%;
+        outline:1px solid blue;
+        height: 77%;//!!!没加发现没高度 absolute无法撑起高度
+        // height: 50.65%;//!!!没加发现没高度 absolute无法撑起高度
+        // min-height: calc(100% -其他元素高度);//!!!!
+
+        position: relative;//还好这边还可以放入相对定位
+        ul{
+            width: 100%;
+            height: 100%;//让下面绝对定位吃到
+            position: relative;
+            li{
+                width: 21.08%;
+                position: absolute;
+                img{
+                    width: 100%;//img自带等比例响应 如果想在li做反而不好做
+                    height: auto;
+                }
+            }
+            li:nth-child(1){
+                top: 11%;
+                left: 14%;
+            }
+            li:nth-child(2){
+                top: 3.5%;
+                left: 40%;
+            }
+            li:nth-child(3){
+                top: 12%;
+                left: 66%;
+            }
+            li:nth-child(4){
+                top: 43%;
+                left: 10%;
+            }
+            li:nth-child(5){
+                top: 34%;
+                left: 39%;
+            }
+            li:nth-child(6){
+                top: 42%;
+                left: 67%;
+            }
+        }
+
+        .rule-button{//定位在zongzi!!!
+            position: absolute;
+            left: 0;
+            right: 0;//!!!
+            bottom: 17%;
+            width: 100%;
+            text-align: center;
+            a{ //发现里面用背景图不好做响应是!! 改做法
+                width: 27%;
+                margin: 0 1%;
+                position: relative;//
+                display: inline-block;
+                vertical-align:bottom;//这样跟下面div就没间隔了
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+                span{//发现文字贴满四边!!!! 这两个要比较一下了
+                    //四边0这个适合本身要有宽高才行 这边文字不会给宽高就会这样 用transform则都可不用
+                    //视窗有一定宽高旧很适合
+                    position: absolute;
+                    // right: 0;
+                    // left: 0;
+                    // top: 0;
+                    // bottom: 0;
+                    // margin: auto;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 30px;
+                    color: #fff;
+                    white-space: nowrap;//!
+                    @media screen and (max-width:1460px){
+                        font-size: 24px;
+                    }
+                }
+                // width: 324px;
+                // height: 113px;
+                // background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/duanwu/but1.png") 50% 50%;
+                // background-size: cover;
+            }
+        }
+    }
+}
+
+
+.web-page.block2{
+    width: 100%;
+    // padding-top: 100px;
+    padding-top: 5.2%;
+    padding-bottom: 4.583%;
+    background:url("http://sc.tfejy.com/source/www/zt/lp-img/pc/duanwu/stage3_bg.jpg") 50% 50%;
+    background-size: cover;//因为缩小让宽度去超过!!
+    // .layout-box{//inner就可以了 不用多这一层
+    //     // max-width: 1200px;
+    //     // min-width: 1200px;
+    //     width: 1200px;
+    //     margin: 0 auto;
+    // }
+    .inner{
+        max-width: 1200px;//!!盖过去原本写死的width1200 啊发现没笑
+        width: 100%;//还是要这样才行盖过去
+    }
+    .layout-box{
+        // width: 59.0625%;//1134/1920
+        width: 94.5%;//1134/1200
+        //!!!!!要用inner(container)限制的宽度1200 也不能用1920 因为外面宽度是用100%别忘了!!
+        margin: 0 auto;
+        height: 0;
+        // padding-bottom: 36.1458%;//!!!694/1920 都是除以1920!
+        padding-bottom: 57.83%;//!!!694/1920 都是除以1920!
+        position: relative;
+
+    }
+    .rule-content{
+        
+        // width: 1134px;
+        // margin: 0 auto;
+        // height: 694px;
+        // background:url("http://sc.tfejy.com/source/www/zt/lp-img/pc/duanwu/boder.png") 50% 50%;
+        // background-size:1134px 694px;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        background:url("http://sc.tfejy.com/source/www/zt/lp-img/pc/duanwu/boder.png") 50% 50%;
+        background-size:100% 100%;
+
+        .activity,.notice{
+            // font-size: 20px;
+            position: absolute; 
+            color: transparent;
+            user-select: none;
+        }
+    }
+}

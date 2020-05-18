@@ -1,0 +1,416 @@
+
+html{
+    height: 100%;
+    font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+}
+
+body{
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,p,ul,li,a{
+    margin: 0;
+    padding: 0;
+    // font-size: 16px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+img,a{
+    display: block;
+}
+// ==========================================================
+.e-header{font-size: 10px;}
+
+#main{
+    overflow: hidden;
+    width: 100%; 
+    margin: 0; 
+    padding: 0;
+}
+
+//section
+// .web-page{
+//     width: 100%;
+//     // min-width: 1200px;//勉得缩到1200以下 container的东西挤爆
+//     font-size: 16px;
+//     color: #333333;
+// }
+
+// //原本的container
+// .inner{
+//     overflow: hidden;//但是容易裁到兩邊的陰影
+//     width: 1200px;
+//     margin: 0 auto;
+//     // position: relative;
+// }
+
+
+//图片跟露出匡匡一样大
+@mixin bgTxt($width,$height,$title){
+    width: $width+px;
+    height: $height+px;
+    background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/oldCampaign2005/#{$title}.png") no-repeat;
+    background-size: $width+px $height+px; //100% 100% 也可以?
+    background-position: 50% 50%;
+    @content;
+}
+//原始图片要比露出匡匡还大
+@mixin bgTxt2($width,$height,$title){
+    width: $width+px;
+    height: $height+px;
+    background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/oldCampaign2005/#{$title}.png") no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    @content;
+}
+
+.clearfix{
+    display: block;
+    clear: both;
+    &::before{
+        content: "";
+        display: block;
+        visibility: hidden;
+        font-size: 0;
+        height: 0;
+        clear: both;
+    }
+    &::after{
+        content: "";
+        display: block;
+        visibility: hidden;
+        font-size: 0;
+        height: 0;
+        clear: both;
+    }
+}
+.banner-posi{
+    position: relative;
+    z-index: 1;
+    top: -74px;
+    margin-bottom: -74px;
+}
+
+.banner-all{//RWD
+    width: 100%;
+    height: 0;
+    // padding-bottom: 31.25%;
+    padding-bottom: 37.8125%;
+    // background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/oldCampaign2005/#{$title}.png") no-repeat;
+    background-size: 100% 100%;//相对背景区
+    background-position: 50% 50%;
+    position: relative;
+
+    .container,.inner{//如果不是只有h1 h2的其他东西放这
+        // position: relative;
+        position: absolute;
+        // position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    
+    .banner-title-img{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 5;
+    }
+    h1,//移出来保险
+    h2 {
+        position: absolute; //定位住才不会变高(盒子模型)
+        color: transparent;
+        user-select: none;
+    }
+}
+
+
+
+.title-item{
+    // text-align: center;
+    // font-size: 0;
+    // span {
+    //     display: inline-block;
+    //     &:nth-of-type(1){
+    //     }
+    //     &:nth-of-type(2){
+    //     }
+
+    // }
+
+    // h2 {
+    //     display: inline-block;
+    //     font-size: 40px;
+    //     font-weight: bold;
+    //     padding: 0 10px;
+    //     color: #000;
+    // }
+
+    // p{
+    //     text-align: center;
+    //     font-size: 16px;
+    // }
+}
+
+
+
+
+// ----------------------
+.popup-box{
+    $pop-color:#538135;
+    max-width: 1000px;
+    height: 650px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: -325px auto 0 auto;
+    top: 50%;
+    background: #fff;
+    z-index: 9999999999;
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+    padding: 0 20px 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+   
+    p{
+        font-size: 20px; //這行好像是我自己家的?
+        line-height: 1.9;
+        color: #333333;
+        text-align: justify;
+
+        span{
+            overflow: hidden;
+            display: inline;
+            color: #d8505a;
+        }
+        a{
+            overflow: hidden;
+            display: inline;
+            color: #225b76;
+            text-decoration: underline;
+        }
+    }
+    h2{
+        font-size:20px;
+        color: #b78255;
+        // color: $pop-color;
+        font-weight: bold;
+        position: relative;
+
+        &.verline i{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #b78255;
+            color:#fff;
+            position: absolute;
+            left: 0;
+            top: 1px;
+            text-align: center;
+            line-height: 30px;
+        }
+    }
+
+    .note{
+        line-height: 30px;
+        span{
+            color: #f00;
+        }
+    }
+    .close-top{
+        height: 60px;
+        // color:  $pop-color;
+        // border-bottom: 1px solid $pop-color;
+        color:  #b78255;
+        border-bottom: 1px solid #b78255;
+        text-align: center;
+        line-height: 60px;
+        font-size: 24px;
+        font-weight: bold;
+        a{
+            display: block;
+            width: 21px;
+            height: 21px;
+            position: absolute;
+            background: url(//img.getfc.com.cn/source/www/zt/campaign1710/close.png) no-repeat;
+            top: 25px;
+            right: 25px;
+            text-decoration: none;
+        }
+    }
+    .table3 td{
+        width: 33.333333%;
+    }
+    .table4 td{
+        width: 16%;
+    }
+    table.data-box{
+        width: 100%;
+        margin: 16px auto;
+        text-align: center;
+        font-size: 1.6em;
+        border-collapse: collapse;
+        border-spacing: 0;
+        // border: 1px solid lighten($pop-color,40%);
+        border: 1px solid #ead5c2;
+
+        thead{
+            display: table-header-group;
+            vertical-align: middle;
+            border-color: inherit;
+            th{
+                font-size: 16px;
+                text-align: center;
+                padding: 15px;
+                color: #FFFFFF;
+                background: #dcb08e;
+                // background:$pop-color;
+                line-height: 1.0;
+                border: 1px dotted #ccc;
+            }
+            tr{
+                border: 1px dotted #ccc;
+            }
+        }
+
+        tbody{
+            display: table-row-group;
+            vertical-align: middle;
+            border-color: inherit;
+            td{
+                line-height: 1.6;
+                text-align: center;
+                color: #333333;
+                padding: 1.44%;
+                font-size: 16px;
+                border: 1px dotted #ccc;
+                font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+            }
+            .unit{
+                font-size: 0.8em;
+            }
+
+            tr{
+                display: table-row;
+                vertical-align: inherit;
+                border-color: inherit;
+                background: #FFFFFF;
+            }
+
+            tr.white{}
+
+            tr.last-row td{
+                border-bottom: 1px solid #CCCCCC;
+            }
+        }
+
+    }
+    .box-in{
+        margin: 3% 3% 5% 5%;
+        color: #333333;
+        overflow: auto;
+        height: 500px;
+        padding: 0% 2% 0 0;
+
+        .section1{
+            margin-top:0px;
+
+            .detailContent{
+                width:670px;
+                font-size:18px;
+                text-align: center;
+                margin-left:50px;
+
+                ul li span{
+                    display: inline-block;
+                    font-size:20px;
+                    color:#e84c00;
+                    position:relative;
+                    left:-2px;
+                    top:-1px;
+                }
+
+                img{
+                    display:inline-block;
+                    width:20px;
+                    height:20px;
+                    position:relative;
+                    top:-90px;
+                    left:-110px;
+                }
+
+                img.pic{
+                    position:relative;
+                    top:-90px;
+                    left:108px;
+                }
+            }
+
+            .item{
+                display: flex;
+                justify-content: flex-start;
+                align-items: baseline;
+                margin-bottom: 5px;
+            }
+
+            p{
+                font-size:20px;
+            }
+
+            ul li:nth-child(2){
+                margin:8px 63px;
+            }
+        }
+
+        div.title,div.bottom{
+            height:50px;
+            width:100%;
+            line-height: 50px;
+            background:#e4f2f8;
+        }
+
+        div.bottom{
+            background:#f1f8fa;
+            text-align: left;
+            padding-left:20px;  
+        }
+
+        .section3 ol li{
+            font-size:16px;
+            margin-top: 10px;
+        }
+
+        .section4 ol li{
+            font-size:20px;
+            line-height:2.2;
+            text-align: justify;
+            display: -webkit-box;  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+            display: -moz-box;     /* 老版本语法: Firefox (buggy) */
+            display: -ms-flexbox;  /* 混合版本语法: IE 10 */
+            display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+            display: flex;         /* 新版本语法: Opera 12.1, Firefox 22+ */
+
+            p.clearfix{
+                font-size: 16px;
+            }
+        }
+
+        .section5 ol li{
+            font-size:16px;
+            line-height:2.2;
+            text-align: justify;
+            display: -webkit-box;  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+            display: -moz-box;     /* 老版本语法: Firefox (buggy) */
+            display: -ms-flexbox;  /* 混合版本语法: IE 10 */
+            display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+            display: flex;         /* 新版本语法: Opera 12.1, Firefox 22+ */
+        }
+    }
+}
+

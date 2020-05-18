@@ -1,0 +1,568 @@
+@charset "UTF-8";
+@import url("./reset.css");
+html {
+  height: 100%;
+  font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+img, a {
+  display: block;
+}
+
+.e-header {
+  font-size: 10px;
+}
+
+#main {
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix {
+  display: block;
+  clear: both;
+}
+
+.clearfix::before {
+  content: "";
+  display: block;
+  visibility: hidden;
+  font-size: 0;
+  height: 0;
+  clear: both;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  font-size: 0;
+  height: 0;
+  clear: both;
+}
+
+.banner-posi {
+  position: relative;
+  z-index: 1;
+  top: -74px;
+  margin-bottom: -74px;
+}
+
+.banner-all {
+  width: 100%;
+  height: 0;
+  padding-bottom: 37.8125%;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+  position: relative;
+}
+
+.banner-all .container, .banner-all .inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.banner-all .banner-title-img {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+}
+
+.banner-all h1,
+.banner-all h2 {
+  position: absolute;
+  color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.popup-box {
+  max-width: 1000px;
+  height: 650px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: -325px auto 0 auto;
+  top: 50%;
+  background: #fff;
+  z-index: 9999999999;
+  font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+  padding: 0 20px 20px 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.popup-box p {
+  font-size: 20px;
+  line-height: 1.9;
+  color: #333333;
+  text-align: justify;
+}
+
+.popup-box p span {
+  overflow: hidden;
+  display: inline;
+  color: #d8505a;
+}
+
+.popup-box p a {
+  overflow: hidden;
+  display: inline;
+  color: #225b76;
+  text-decoration: underline;
+}
+
+.popup-box h2 {
+  font-size: 20px;
+  color: #b78255;
+  font-weight: bold;
+  position: relative;
+}
+
+.popup-box h2.verline i {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #b78255;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 1px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.popup-box .note {
+  line-height: 30px;
+}
+
+.popup-box .note span {
+  color: #f00;
+}
+
+.popup-box .close-top {
+  height: 60px;
+  color: #b78255;
+  border-bottom: 1px solid #b78255;
+  text-align: center;
+  line-height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.popup-box .close-top a {
+  display: block;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  background: url(//img.getfc.com.cn/source/www/zt/campaign1710/close.png) no-repeat;
+  top: 25px;
+  right: 25px;
+  text-decoration: none;
+}
+
+.popup-box .table3 td {
+  width: 33.333333%;
+}
+
+.popup-box .table4 td {
+  width: 16%;
+}
+
+.popup-box table.data-box {
+  width: 100%;
+  margin: 16px auto;
+  text-align: center;
+  font-size: 1.6em;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #ead5c2;
+}
+
+.popup-box table.data-box thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.popup-box table.data-box thead th {
+  font-size: 16px;
+  text-align: center;
+  padding: 15px;
+  color: #FFFFFF;
+  background: #dcb08e;
+  line-height: 1.0;
+  border: 1px dotted #ccc;
+}
+
+.popup-box table.data-box thead tr {
+  border: 1px dotted #ccc;
+}
+
+.popup-box table.data-box tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.popup-box table.data-box tbody td {
+  line-height: 1.6;
+  text-align: center;
+  color: #333333;
+  padding: 1.44%;
+  font-size: 16px;
+  border: 1px dotted #ccc;
+  font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+}
+
+.popup-box table.data-box tbody .unit {
+  font-size: 0.8em;
+}
+
+.popup-box table.data-box tbody tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+  background: #FFFFFF;
+}
+
+.popup-box table.data-box tbody tr.last-row td {
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.popup-box .box-in {
+  margin: 3% 3% 5% 5%;
+  color: #333333;
+  overflow: auto;
+  height: 500px;
+  padding: 0% 2% 0 0;
+}
+
+.popup-box .box-in .section1 {
+  margin-top: 0px;
+}
+
+.popup-box .box-in .section1 .detailContent {
+  width: 670px;
+  font-size: 18px;
+  text-align: center;
+  margin-left: 50px;
+}
+
+.popup-box .box-in .section1 .detailContent ul li span {
+  display: inline-block;
+  font-size: 20px;
+  color: #e84c00;
+  position: relative;
+  left: -2px;
+  top: -1px;
+}
+
+.popup-box .box-in .section1 .detailContent img {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: -90px;
+  left: -110px;
+}
+
+.popup-box .box-in .section1 .detailContent img.pic {
+  position: relative;
+  top: -90px;
+  left: 108px;
+}
+
+.popup-box .box-in .section1 .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-bottom: 5px;
+}
+
+.popup-box .box-in .section1 p {
+  font-size: 20px;
+}
+
+.popup-box .box-in .section1 ul li:nth-child(2) {
+  margin: 8px 63px;
+}
+
+.popup-box .box-in div.title, .popup-box .box-in div.bottom {
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  background: #e4f2f8;
+}
+
+.popup-box .box-in div.bottom {
+  background: #f1f8fa;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.popup-box .box-in .section3 ol li {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.popup-box .box-in .section4 ol li {
+  font-size: 20px;
+  line-height: 2.2;
+  text-align: justify;
+  display: -webkit-box;
+  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  /* 老版本语法: Firefox (buggy) */
+  display: -ms-flexbox;
+  /* 混合版本语法: IE 10 */
+  /* 新版本语法: Chrome 21+ */
+  display: flex;
+  /* 新版本语法: Opera 12.1, Firefox 22+ */
+}
+
+.popup-box .box-in .section4 ol li p.clearfix {
+  font-size: 16px;
+}
+
+.popup-box .box-in .section5 ol li {
+  font-size: 16px;
+  line-height: 2.2;
+  text-align: justify;
+  display: -webkit-box;
+  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  /* 老版本语法: Firefox (buggy) */
+  display: -ms-flexbox;
+  /* 混合版本语法: IE 10 */
+  /* 新版本语法: Chrome 21+ */
+  display: flex;
+  /* 新版本语法: Opera 12.1, Firefox 22+ */
+}
+
+.web-banner {
+  width: 100%;
+  height: 520px;
+  background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/duanwu/pc_bn.jpg") no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.web-banner h1,
+.web-banner h2 {
+  font-size: 20px;
+  position: absolute;
+  color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.web-page {
+  width: 100%;
+  font-size: 16px;
+  color: #333333;
+}
+
+.inner {
+  overflow: hidden;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.web-page.block1 {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 0;
+  padding-bottom: 52%;
+  margin: 0 auto;
+  background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/duanwu/stage2_bg.jpg") no-repeat;
+  background-size: 100% 100%;
+  background-position: 50% 50%;
+}
+
+.web-page.block1 .inner {
+  outline: 1px solid red;
+  width: 62.5%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.web-page.block1 .title {
+  height: 23%;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #316247;
+}
+
+.web-page.block1 .title span {
+  color: #f0580d;
+}
+
+.web-page.block1 .zongzi {
+  width: 100%;
+  outline: 1px solid blue;
+  height: 77%;
+  position: relative;
+}
+
+.web-page.block1 .zongzi ul {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.web-page.block1 .zongzi ul li {
+  width: 21.08%;
+  position: absolute;
+}
+
+.web-page.block1 .zongzi ul li img {
+  width: 100%;
+  height: auto;
+}
+
+.web-page.block1 .zongzi ul li:nth-child(1) {
+  top: 11%;
+  left: 14%;
+}
+
+.web-page.block1 .zongzi ul li:nth-child(2) {
+  top: 3.5%;
+  left: 40%;
+}
+
+.web-page.block1 .zongzi ul li:nth-child(3) {
+  top: 12%;
+  left: 66%;
+}
+
+.web-page.block1 .zongzi ul li:nth-child(4) {
+  top: 43%;
+  left: 10%;
+}
+
+.web-page.block1 .zongzi ul li:nth-child(5) {
+  top: 34%;
+  left: 39%;
+}
+
+.web-page.block1 .zongzi ul li:nth-child(6) {
+  top: 42%;
+  left: 67%;
+}
+
+.web-page.block1 .zongzi .rule-button {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 17%;
+  width: 100%;
+  text-align: center;
+}
+
+.web-page.block1 .zongzi .rule-button a {
+  width: 27%;
+  margin: 0 1%;
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.web-page.block1 .zongzi .rule-button a img {
+  width: 100%;
+  height: auto;
+}
+
+.web-page.block1 .zongzi .rule-button a span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1460px) {
+  .web-page.block1 .zongzi .rule-button a span {
+    font-size: 24px;
+  }
+}
+
+.web-page.block2 {
+  width: 100%;
+  padding-top: 5.2%;
+  padding-bottom: 4.583%;
+  background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/duanwu/stage3_bg.jpg") 50% 50%;
+  background-size: cover;
+}
+
+.web-page.block2 .inner {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.web-page.block2 .layout-box {
+  width: 94.5%;
+  margin: 0 auto;
+  height: 0;
+  padding-bottom: 57.83%;
+  position: relative;
+}
+
+.web-page.block2 .rule-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/duanwu/boder.png") 50% 50%;
+  background-size: 100% 100%;
+}
+
+.web-page.block2 .rule-content .activity, .web-page.block2 .rule-content .notice {
+  position: absolute;
+  color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+/*# sourceMappingURL=duanwu.css.map */
