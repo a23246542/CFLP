@@ -13,16 +13,13 @@ body {
 h1, h2, h3, p, ul, li, a {
   margin: 0;
   padding: 0;
+  font-size: .16rem;
   text-decoration: none;
   list-style-type: none;
 }
 
 img, a {
   display: block;
-}
-
-.e-header {
-  font-size: 10px;
 }
 
 #main {
@@ -32,76 +29,26 @@ img, a {
   padding: 0;
 }
 
-.clearfix {
-  display: block;
-  clear: both;
-}
-
-.clearfix::before {
-  content: "";
-  display: block;
-  visibility: hidden;
-  font-size: 0;
-  height: 0;
-  clear: both;
-}
-
-.clearfix::after {
-  content: "";
-  display: block;
-  visibility: hidden;
-  font-size: 0;
-  height: 0;
-  clear: both;
-}
-
-.banner-posi {
-  position: relative;
-  z-index: 1;
-  top: -74px;
-  margin-bottom: -74px;
-}
-
-.banner-all {
+.web-page {
   width: 100%;
-  height: 0;
-  padding-bottom: 37.8125%;
-  background-size: 100% 100%;
-  background-position: 50% 50%;
+  color: #fff;
+}
+
+.inner {
+  overflow: hidden;
+  width: 100% !important;
+  padding: 0 !important;
   position: relative;
 }
 
-.banner-all .container, .banner-all .inner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-}
-
-.banner-all .banner-title-img {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 5;
-}
-
-.banner-all h1,
-.banner-all h2 {
-  position: absolute;
-  color: transparent;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+.inner .title {
+  padding-top: .8rem;
 }
 
 .web-banner {
   width: 100%;
-  height: 520px;
-  background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/duanwu/pc_bn.jpg") no-repeat;
+  height: 7rem;
+  background: url("http://sc.tfejy.com/source/www/zt/lp-img/mobile/duanwu/m_bn.jpg") no-repeat;
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -117,81 +64,46 @@ img, a {
           user-select: none;
 }
 
-.web-page {
-  width: 100%;
-  font-size: 16px;
-  color: #333333;
-}
-
-.inner {
-  overflow: hidden;
-  width: 1200px;
-  margin: 0 auto;
-}
-
 .web-page.block1 {
-  position: relative;
-  max-width: 1920px;
-  margin: 0 auto;
-  height: 0;
-  padding-bottom: 52%;
-  margin: 0 auto;
-  background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/duanwu/stage2_bg.jpg") no-repeat;
+  height: 11.62rem;
+  background: url("http://sc.tfejy.com/source/www/zt/lp-img/mobile/duanwu/m_stage1.jpg") no-repeat;
   background-size: 100% 100%;
   background-position: 50% 50%;
 }
 
-@media screen and (max-width: 992px) {
-  .web-page.block1 {
-    margin-top: -100px;
-    z-index: 10;
-  }
-}
-
 .web-page.block1 .inner {
-  outline: 1px solid red;
-  width: 62.5%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
+  height: 100%;
 }
 
 .web-page.block1 .title {
-  height: 23%;
-  padding-top: 70px;
+  height: 2.1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: .6rem;
   text-align: center;
-  font-size: 32px;
   font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
   color: #316247;
-}
-
-@media screen and (max-width: 1200px) {
-  .web-page.block1 .title {
-    font-size: 24px;
-    padding-top: 10px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .web-page.block1 .title {
-    font-size: 20px;
-  }
 }
 
 .web-page.block1 .title span {
   color: #f0580d;
   font-weight: bold;
   letter-spacing: 4.5;
-  margin: 0 7px;
+  margin: 0 .07rem;
+}
+
+.web-page.block1 .title .title-item:nth-child(1) {
+  font-size: .47rem;
+  margin-bottom: .4rem;
+}
+
+.web-page.block1 .title .title-item:nth-child(2) {
+  font-size: .36rem;
 }
 
 .web-page.block1 .zongzi {
   width: 100%;
-  outline: 1px solid blue;
-  height: 77%;
+  height: calc(100% - 2.1rem);
   position: relative;
 }
 
@@ -202,7 +114,7 @@ img, a {
 }
 
 .web-page.block1 .zongzi ul li {
-  width: 21.08%;
+  width: 2.05rem;
   position: absolute;
   -webkit-animation: move 5s ease-in-out infinite;
           animation: move 5s ease-in-out infinite;
@@ -315,13 +227,14 @@ img, a {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 17%;
+  bottom: 2.6rem;
   width: 100%;
   text-align: center;
 }
 
 .web-page.block1 .zongzi .rule-button a {
-  width: 27%;
+  width: 2.9rem;
+  height: 1rem;
   margin: 0 1%;
   position: relative;
   display: inline-block;
@@ -331,7 +244,7 @@ img, a {
 
 .web-page.block1 .zongzi .rule-button a img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .web-page.block1 .zongzi .rule-button a span {
@@ -340,43 +253,29 @@ img, a {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font-size: 30px;
+  font-size: .32rem;
   color: #fff;
   white-space: nowrap;
   font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
 }
 
-@media screen and (max-width: 1460px) {
-  .web-page.block1 .zongzi .rule-button a span {
-    font-size: 24px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .web-page.block1 .zongzi .rule-button a span {
-    font-size: 18px;
-  }
-}
-
 .web-page.block2 {
   width: 100%;
-  padding-top: 5.2%;
-  padding-bottom: 4.583%;
-  background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/duanwu/stage3_bg.jpg") 50% 50%;
-  background-size: cover;
-}
-
-.web-page.block2 .inner {
-  max-width: 1200px;
-  width: 100%;
+  padding-top: .93rem;
+  padding-bottom: 1.42rem;
+  background-color: #316247;
+  color: #316247;
+  font-size: .26rem;
 }
 
 .web-page.block2 .layout-box {
-  width: 94.5%;
-  margin: 0 auto;
-  height: 0;
-  padding-bottom: 57.83%;
   position: relative;
+  width: 6.86rem;
+  height: 9.92rem;
+  margin: 0 auto;
+  background: url("http://sc.tfejy.com/source/www/zt/lp-img/mobile/duanwu/m_boderruru.png") no-repeat;
+  background-size: 6.86rem 9.92rem;
+  background-position: 50% 50%;
 }
 
 .web-page.block2 .rule-content {
@@ -386,17 +285,49 @@ img, a {
   right: 0;
   bottom: 0;
   margin: auto;
-  background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/duanwu/boder.png") 50% 50%;
-  background-size: 100% 100%;
+  padding-top: 1.6rem;
+  padding-left: .5rem;
+  padding-right: .45rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+  font-weight: normal;
+  letter-spacing: .03rem;
+  line-height: 1.5;
 }
 
-.web-page.block2 .rule-content .activity, .web-page.block2 .rule-content .notice {
-  position: absolute;
-  color: transparent;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+.web-page.block2 .activity {
+  margin-bottom: .27rem;
+}
+
+.web-page.block2 .activity .item:not(.no-flex) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.web-page.block2 .activity li:not(:last-child) {
+  margin-bottom: .04rem;
+}
+
+.web-page.block2 .activity br {
+  width: 100%;
+  height: 0;
+}
+
+.web-page.block2 .notice {
+  font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+}
+
+.web-page.block2 .notice h2 {
+  font-size: .29rem;
+  margin-bottom: .13rem;
+}
+
+.web-page.block2 .notice li:not(:last-child) {
+  margin-bottom: .03rem;
 }
 
 .popup-bg {
