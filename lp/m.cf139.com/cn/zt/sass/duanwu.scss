@@ -44,7 +44,7 @@
     .title{
         height: 2.1rem;
         box-sizing: border-box;
-        padding-top: .6rem;
+        padding-top: .55rem;
         text-align: center;
         font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
         color: $primary-color;
@@ -57,7 +57,7 @@
 
         .title-item:nth-child(1){
             font-size: .47rem;
-            margin-bottom: .4rem;
+            margin-bottom: .35rem;
         }
         .title-item:nth-child(2){
             font-size: .36rem;
@@ -216,7 +216,7 @@
         right: 0;
         bottom: 0;
         margin: auto;
-        padding-top: 1.6rem;
+        padding-top: 1.5rem;
         padding-left: .5rem;
         padding-right: .45rem;
         box-sizing: border-box;
@@ -224,6 +224,8 @@
         font-weight: normal;
         letter-spacing: .03rem;
         line-height: 1.5;
+
+
     }
     .activity{
         margin-bottom: .27rem;
@@ -240,6 +242,12 @@
         }
     }
     .notice{
+        li.item{
+            display: flex;
+        }
+        span{
+            display: block;
+        }
         h2{
             font-size: .29rem;
             margin-bottom: .13rem;

@@ -187,11 +187,122 @@
 </body>
 <script src="common-js/new-cfanalysis.js"></script>
 <script src="js/aos.js"></script>
+<script src="common-js/app.js"></script>
+<script src="js/loadApp.js"></script>
 <script>
     AOS.init({
         easing: 'ease-out-back',
         duration: 1000
     });
+
+    var getCookie = function (name) {
+        var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+        if(arr=document.cookie.match(reg))
+            return unescape(arr[2]);
+        else
+            return null;
+    }
+
+    var isLogin = function(){
+        var cookie = getCookie('duanwu');
+        if(cookie == null || cookie == ""){
+            //弹出登录框
+            return false;
+        }
+        return true;
+    }
+    console.log(isLogin());
+    $(function(){
+        var type = $.mechined();//android or ios
+        var noneheader = $.urlParams("noneheader");//确定是否是app
+        var useInfo;
+        console.log(type,noneheader);
+
+        //点选粽子的时后
+        if (noneheader !== null && $.trim(noneheader).length > 0) {
+
+            if (type == 0 && typeof (uiObject) !== "undefined") {
+                useInfo = uiObject.getInfo();//android终端
+            } else if (type == 1){
+                //判断getInfo真的有回传东西
+                useInfo = getInfo();//ios
+            }
+            if (typeof (useInfo) != "undefined") {
+
+                var user = $.parseJSON(useInfo);
+                console.log(user.account);
+            
+                if (typeof (user.account) != "undefined" && (user.account!=null  && user.account!="")) {
+                    console.log("已登入显示剩余的粽子数");
+                    // var param = {
+                    //     "url": pre_op + "/api/activity/luckyDrawReCord/beforeRaffle",
+                    //     "luckyDrawId": actId,
+                    //     "account": longin.account
+                    // };
+                    // 判断有没有激活
+                    // 这个接口是获取抽奖次数的接口
+                    // data.turnTimes  这个是接口返回的抽奖次数
+                } else {
+                    console.log("未登入 弹窗显示请登入真实账号 但不知道登入去哪 看病毒");
+                }
+            } else {
+                console.log("表示还没登入或注册");
+                //舌么kian的messagehandle
+                // window.webkit.messageHandlers.getInfo.postMessage("");
+                if ($.isEmpty($.parseJSON(useInfo).account)) {
+                $("#real").css("display", "flex");
+                }
+            }
+
+            // if (type != -1){//-1 可能是内迁浏览器开启的 连结开启app 可是要连去哪
+            //     //请下载app登入
+            //     // alert("请下载app-type")
+            // }else{
+            //     console.log("判断登入");
+                
+            //     //判断是否登入     
+            //     if(!isLogin()){
+            //         console.log("未登入");
+                    
+            //     // $("#loginKuang").show();
+            //     }else {
+            //     // $.goPrize();
+            //         console.log("已登入");
+                    
+            //     }
+            // }
+            
+        }else{//非真正的app登入 M站网页登入
+            //弹窗请下载app登入 连结判断手机如下
+            console.log("hello");
+            
+            // alert("请下载app-noneheader")
+            if (CheckIsIOS()) {
+                $(".down-footer .footer-con a,.download").attr("href","https://itunes.apple.com/us/app/chuang-fucfd/id1153506842?mt=8");
+            }
+            if (CheckIsAndroid()) {
+                $(".down-footer .footer-con a,.download").attr("href","https://sc.tfejy.com/source/material/CFD_APP.apk");
+            }
+        }
+
+       
+    })
+    // 要抽奖 如果是m站就跑登入app 如果是app旧跑出登录视窗
+
+    // $.extend({
+    //     //要抽奖 确定是app进去
+    //     appLogin:function(){
+    //         let noneHeader = $.urlParams("noneheader"), type = $.mechined();
+    //         if (noneHeader !== null && $.trim(noneHeader).length > 0) {
+    //             if (type != -1){
+    //                 //确定是手机app 检查是否登入
+    //             }else{
+    //                 //弹掉
+    //             }
+    //             // 弹掉趣登入
+    //         }
+    //     }
+    // })
     $(function() {
         //设定点楫可以切换换图 & 点级别的 全部都怎样怎样
         $("#zongzi li").mousemove(function() {

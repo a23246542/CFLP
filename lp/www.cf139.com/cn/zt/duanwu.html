@@ -193,11 +193,17 @@
 <script src="https://www.cf139.com/cn/js/template.js"></script>
 <script src="js/aos.js"></script>
 <script src="js/swiper.min-4.0.7.js"></script>
+<script src="js/loadApp.js"></script>
 <script>
     AOS.init({
         easing: 'ease-out-back',
         duration: 1000
     });
+    $(function(){
+        let type = $.mechined();//android or ios
+        let noneheader = $.urlParams("noneheader");
+        console.log(type,noneheader);
+    })
     $(function() {
         $("#zongzi li").mousemove(function() {
             $(this).children('img').attr('src','http://sc.tfejy.com/source/www/zt/lp-img/pc/duanwu/rice2.png')

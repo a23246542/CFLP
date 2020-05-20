@@ -79,7 +79,7 @@ img, a {
   height: 2.1rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-top: .6rem;
+  padding-top: .55rem;
   text-align: center;
   font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
   color: #316247;
@@ -94,7 +94,7 @@ img, a {
 
 .web-page.block1 .title .title-item:nth-child(1) {
   font-size: .47rem;
-  margin-bottom: .4rem;
+  margin-bottom: .35rem;
 }
 
 .web-page.block1 .title .title-item:nth-child(2) {
@@ -285,7 +285,7 @@ img, a {
   right: 0;
   bottom: 0;
   margin: auto;
-  padding-top: 1.6rem;
+  padding-top: 1.5rem;
   padding-left: .5rem;
   padding-right: .45rem;
   -webkit-box-sizing: border-box;
@@ -319,6 +319,16 @@ img, a {
 
 .web-page.block2 .notice {
   font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+}
+
+.web-page.block2 .notice li.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.web-page.block2 .notice span {
+  display: block;
 }
 
 .web-page.block2 .notice h2 {
