@@ -1,6 +1,9 @@
 let popMsg ={
 
 }
+// 關注點分離
+//還有規劃api的資料 就知道少了哪些 
+// 規劃獲取api存放現在用戶狀態的資料0 -1 2 或是粽子數量
 
 $.extend({
     jsonpAjax: function (options, callbackSuc, callbackErr) {

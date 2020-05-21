@@ -8,5 +8,25 @@
 				"label": ""
 			}
 		]
+	},
+	{
+		"path": "$ROOTPATH$\\lp\\m.cf139.com\\cn\\zt\\js\\epidemic\\epidemicData copy.js",
+		"bookmarks": [
+			{
+				"line": 134,
+				"column": 10,
+				"label": ""
+			}
+		]
+	},
+	{
+		"path": "$ROOTPATH$\\lp\\m.cf139.com\\cn\\zt\\js\\epidemic\\epidemicData.js",
+		"bookmarks": [
+			{
+				"line": 147,
+				"column": 37,
+				"label": ""
+			}
+		]
 	}
 ]

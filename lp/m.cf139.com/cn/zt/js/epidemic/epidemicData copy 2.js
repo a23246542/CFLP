@@ -13,18 +13,6 @@ window.getInfoCallback = function (info) {
     //     }
     // },
 };
-// =======
-// 有呼叫initList的地方
-// 1.一進來的時候
-// 2.clickSignIn 點擊簽到可是找不到呼叫在哪
-// 3.initSignIn 初始畫遷到的地方 第一次開始點擊遊戲開始會給0 不是第一次開始不給東西
-// 4.關閉遊戲視窗 呼叫一次沒給東西
-// 5.拆紅包api成功會給1
-// 6.$.winningRule();
-
-// (h5直接呼叫)clickSignIn>app有就呼叫intList+ 點擊簽到呼叫initSignIn
-//app getinfo有東西 就newCallboak=-1 有先呼叫initList 沒東西是0
-// 一按"簽到"initCallback就變-1 並呼叫initSingin
 $.extend({
     jsonpAjax: function (options, callbackSuc, callbackErr) {
         $.extend(options, {_r: Math.random()});
@@ -145,7 +133,6 @@ $.extend({
                 }
             }
             //是-1就初始化簽到記錄根紅包詳情
-            //不對應該是app getinfo有東西 就newCallboak=-1 可直接呼叫initList
             if (newCallback == -1) $.initList();//如果都是
             $.closeGamePop();
             $.winningRule();
@@ -158,7 +145,6 @@ $.extend({
     /*登录*/
     login: function () {
         var useInfo = "", type = $.mechined();
-        //noneheader就確定是app進去 要嘛0 安卓 要嘛1ios
         if (noneHeader !== null && $.trim(noneHeader).length > 0) {
             if (type == 0 && typeof (uiObject) !== "undefined") {
                 useInfo = uiObject.getInfo();//android终端
@@ -169,7 +155,6 @@ $.extend({
                     window.webkit.messageHandlers.getInfo.postMessage("");
                 }
             }
-            //如果useInfo撈取不到資料代表app沒登入
             if ($.isEmpty($.parseJSON(useInfo).account)) {
                 $("#real").css("display", "flex");
             }
@@ -188,7 +173,6 @@ $.extend({
     /*初始化签到*/
     initSignIn: function () {
         var useInfo;
-        //按下了簽到 資料重新取得一次
         if (newCallback == -1) useInfo = $.login();
         else useInfo = use;
         var param = $.extend(useInfo, {"url": mis_url + "/public/ding/today", "actId": actId});
@@ -288,23 +272,15 @@ $.extend({
     /*签到记录与红包详情*/
     initList: function (type, useData) {
         var ding, red, time, start, end, redData = [], html = "", RemovableData = [], useInfo;
-         //獲取使用者資料
-        //一開始有使用者資料的畫init=0 開始遊戲會變-1 簽到也會變-1 這樣代表沒簽到過是0
-        //newCallback是手機登入給  點擊簽到 newCallback才會出現變化 一開始根本沒直
         if (initCallback == 0){
-        //狀況-第一次進去app但點簽到 但判斷app端getinfo uiobject是undefined沒反應
-            if (newCallback == 0){//手動給app調用函數的資料
+            if (newCallback == 0){
                 use = useData;
                 useInfo = useData;
-            //app端getinfo有反應 用這撈取使用者資料
             }else useInfo = $.login();
-
-        //已經簽到過的執行下面這個
         }else {
             if (newCallback == 0) useInfo = use;
             else useInfo = $.login();
         }
-        //獲取到的使用者資料加入api送過去 重新撈取資料
         var param = $.extend(useInfo, {"url": mis_url + "/public/ding/list", "actId": actId});
         $.loadingPost(param, function (res) {
             if (res.code == 200) {
@@ -320,14 +296,11 @@ $.extend({
                         redData.push(i);
                     }
                 }
-                //初始畫簽到initSignIn 開始遊戲 給initList(0)
                 if (type == 0) {
                     checkRed = redData[0];
                     $.initAccount()
-                //拆開紅包後多少錢的initList(type=1)
                 } else if (type == 1) {
                     $("#moneyPop").empty().text(red[checkRed].dollar);
-                //跑中獎紀錄的
                 } else if (type == 2) {
                     for (var j in red) {
                         if (red[j].dollar > 0) {
@@ -343,17 +316,14 @@ $.extend({
                         $("#winningCon").empty().append(html);
                     }
                 }
-            //??獲取到使用者資料了 卻說還未登入
             } else if (res.code == 1001) {
                 $("#real").css("display", "flex");
                 $("#real .message").empty().text(res.code_desc);
                 $.pop("#real", ".m-popCon")
-            //useInfo不是激活的帳號
             } else if (res.code == 1002) {
                 $("#activation").css("display", "flex");
                 $("#activation .message").empty().text(res.code_desc);
                 $.pop("#activation", ".m-popCon")
-            //其他訊息
             } else {
                 $("#tip").css("display", "flex");
                 $("#tip .message").empty().text(res.code_desc);
