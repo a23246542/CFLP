@@ -121,6 +121,9 @@ $.extend({
                     if (res.data.interestStatus == 1) $.clickSignUp(1, data);
                     else $.clickSignUp(2, data, res.data.interestStatus)
                 }
+            } else if (res.code == 10032){
+                $("#real").css("display", "flex");
+                $("#real .message").empty().text(res.msg);
             } else {
                 $("#tip").css("display", "flex");
                 $("#tip .message").empty().text(res.msg);
@@ -135,6 +138,9 @@ $.extend({
                 $("#tip .message").empty().text("您已报名成功！");
                 $("#signUp").empty().text("我的收益");
                 $("#signUp").attr("name", "signUp");
+            }  else if (res.code == 10032){
+                $("#real").css("display", "flex");
+                $("#real .message").empty().text(res.msg);
             } else {
                 $("#tip").css("display", "flex");
                 $("#tip .message").empty().text(res.msg);
@@ -164,6 +170,9 @@ $.extend({
                     income.find(".popItem ul").empty().append(html);
                     income.find(".pop-tit em").empty().append(total.toFixed(2));
                 }
+            } else if (res.code == 10032){
+                $("#real").css("display", "flex");
+                $("#real .message").empty().text(res.msg);
             } else {
                 $("#tip").css("display", "flex");
                 $("#tip .message").empty().text(res.msg);

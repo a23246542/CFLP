@@ -1,0 +1,179 @@
+<!--#include file="common-html/ssi.html"-->
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8">
+    <title>双旦狂欢，天天转大奖</title>
+    <meta name="keywords" content="创富国际，创富国际推荐有奖，创富国际交易返利"/>
+    <meta name="description" content="创富国际外汇交易平台，中国外汇投资实例雄厚的在线金融公司，关注外汇交易、外汇投资、外汇买卖、炒外汇等新闻资讯，及最新汇率、外汇牌价查询、汇率换算等内容。创富国际有奖分享体验计划，双级推荐赠金、双层交易返利等多重奖励优惠。" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="wap-font-scale" content="no">
+    <link rel="shortcut icon" href="<!--#echo var='IMG_URL' default=''-->/source/www/template/fav.ico">
+    <link rel="apple-touch-icon image_src" href="<!--#echo var='IMG_URL' default=''-->/source/www/template/fav.ico">
+    <link rel="stylesheet" href="css/overall.css">
+    <link rel="stylesheet" type="text/css" href="css/new-campaign/campaign-lottery2019.css"/>
+    <script src="<!--#echo var='IMG_URL' default=''-->/source/public/js/jquery-2.2.3.min.js"></script>
+    <script src="common-js/backheader.js"></script>
+    <script type="text/javascript">
+        !(function (doc, win) {
+            var docEle = doc.documentElement, //获取html元素
+                event = "onorientationchange" in window ? "orientationchange" : "resize", //判断是屏幕旋转还是resize;
+                fn = function () {
+                    var width = docEle.clientWidth;
+                    width && (docEle.style.fontSize = 50 * (width / 375) + "px"); //设置html的fontSize，随着event的改变而改变。
+                };
+            fn();
+            win.addEventListener(event, fn, false);
+            doc.addEventListener("DOMContentLoaded", fn, false);
+        }(document, window));
+    </script>
+</head>
+<body>
+<div id="main">
+    <div class="m-banner"><img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/campaign-lottery2019/font.png"/></div>
+    <div class="m-page">
+        <div class="marquee">
+            <div class="layout">
+                <ul></ul>
+            </div>
+        </div>
+        <div class="lottery">
+            <img class="lotteryCon rotate" src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/campaign-lottery2019/pand.png"/>
+           
+            <a class="lotteryStart"><img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/campaign-lottery2019/start.png"/></a>
+            <img class="lotteryShadow" src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/campaign-lottery2019/pan-shadow.png"/>
+        </div>
+        <div class="loginCon">
+            <p class="user"><span></span></p>
+        </div>
+       <!-- <div class="explain"><p>活动期间累积完成1手指数/美股股票类产品交易，将解锁1笔抽奖奖励（按中奖顺序进行解锁）。活动结束后按解锁奖励进行发放。</p></div> -->
+        <div class="btnList">
+            <a class="activity" onclick="$('#activity').show()">活动规则</a>
+            <a class="prize">我的奖品</a>
+        </div>
+    </div>
+</div>
+<!--#include file="common-html/campaign-lottery.html"-->
+<!--中奖-->
+<div class="tc-hide" id="suc">
+    <div class="masking" onclick="$('#suc').hide()"></div>
+    <div class="m-tcCon">
+        <div class="con bg">
+            <div class="layout order-layout">
+                <p class="this-p">恭喜您！获得</p>
+                <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/campaign-lottery2019/line.png"/>
+                <span></span>
+                <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/campaign-lottery2019/line.png"/>
+            </div>
+        </div>
+		 <div class="close order" onclick="$('#suc').hide()"><img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/campaign-lottery2019/icon-close.png"/></div>
+    </div>
+</div>
+<!--获奖记录-->
+<div class="tc-hide" id="record">
+    <div class="masking tcConThis" onclick="$('#record').hide()"></div>
+    <div class="m-tcCon order-tcCon">
+        <div class="con order-record">
+            <div class="title"><span>我的奖品</span></div>
+            <div class="conList">
+                <ul></ul>
+            </div>
+            <div class="total" style="display: none;">
+                <ul>
+                    <li><span>需交易手数：</span><p id="num">3</p><span>手</span></li>
+                    <li><span>累积赠金：</span><p id="total"></p></li>
+                </ul>
+            </div>
+        </div>
+		<div class="close order" onclick="$('#record').hide()"><img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/campaign-lottery2019/icon-close.png"/></div>
+    </div>
+</div>
+<!--活动规则-->
+<div class="tc-hide" id="activity">
+	<div class="masking tcConThis" onclick="$('#activity').hide()"></div>
+    <div class="m-tcCon order-tcCon">
+        <div class="con order-record">
+            <div class="title"><span>双旦狂欢，天天转红包</span></div>
+            <div class="conList01">
+                <ul>
+                    <li>
+                        <div class="item"><span>活动规则：</span></div>
+                        <div class="item thisItem">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+		<div class="close order" onclick="$('#activity').hide()"><img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/campaign-lottery2019/icon-close.png"/></div>
+    </div>
+</div>
+<!--入金-->
+<div class="tc-hide" id="deposit">
+    <div class="masking" onclick="$('#deposit').hide()"></div>
+    <div class="m-tcCon noneBg">
+        <div class="close" onclick="$('#deposit').hide()"><img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/campaign-lottery2019/icon-close.png"/></div>
+        <div class="con bgColor">
+            <div class="title"><span>请入金激活</span></div>
+            <div class="layout">
+                <p class="marginTop">本活动需入金激活后方可参与抽奖，请先完成账户入金。</p>
+                <a href="https://admin.cfxdealer.com/fundDepositOnline.do?intercept_deposit">马上入金</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--入金-->
+
+<div class="tc-hide" id="tipOrderNo">
+    <div class="masking" onclick="$('#tipOrderNo').hide()"></div>
+    <div class="m-tcCon noneBg">
+        <div class="close" onclick="$('#tipOrderNo').hide()"><img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/campaign-lottery2019/icon-close.png"/></div>
+        <div class="con bgColor">
+            <div class="title"><span>温馨提示</span></div>
+            <div class="layout">
+                <p class="marginTop">您今天的抽奖次数已用完!</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="tc-hide" id="tipOrder">
+    <div class="masking" onclick="$('#tipOrder').hide()"></div>
+    <div class="m-tcCon noneBg">
+        <div class="close" onclick="$('#tipOrder').hide()"><img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/campaign-lottery2019/icon-close.png"/></div>
+        <div class="con bgColor">
+            <div class="title"><span>温馨提示</span></div>
+            <div class="layout">
+                <p class="marginTop">当前活动未开始</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="<!--#echo var='IMG_URL' default=''-->/source/channel/js/shence/sensors_Analytic.js"></script>
+<script src="common-js/new-cfanalysis.js"></script>
+<script src="common-js/jquery.SuperSlide.2.1.1.js"></script>
+<script src="js/act/awardRotate.js"></script>
+<script src="js/campaign-lottery2003.js"></script>
+<script>
+    $.initLuckyLottery();
+    $(".masking,.close,.zhezhao,#btclose").click(function () {
+        $("body,html").css("overflow","auto");
+    });
+    $(function () {
+        var hg = $("#main").height();
+        if (window.screen.width <= 750) {
+            $(".btnList .activity").click(function () {
+                $('#activity').show();
+                var hg_c = $("#activity .m-tcCon").height(), result = (hg - hg_c) / 2;
+                $("#activity .m-tcCon").css("top", result);
+            });
+            $(".lotteryStart").click(function () {
+                $("body,html").css("overflow", "hidden");
+            })
+        }
+    });
+</script>
+</html>

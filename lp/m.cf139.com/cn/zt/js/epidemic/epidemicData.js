@@ -1,5 +1,5 @@
 ﻿var oldTime = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30"]
-var actId = 1, noneHeader, checkRed, use = "", newCallback, initCallback;
+var actId = 100, noneHeader, checkRed, use = "", newCallback, initCallback;
 window.getInfoCallback = function (info) {
     $.getInfoCallback(info);
 };
@@ -174,7 +174,8 @@ $.extend({
                 } else if (res.open == 0) {
                     $("#tip").css("display", "flex");
                     $("#tip .message").empty().text("累计签到天数+1，累计签到天数达标即可参与“消灭病毒”小游戏，赢取随机额度现金红包！！");
-                    $.pop("#tip", ".m-popCon")
+                    $.pop("#tip", ".m-popCon");
+                    $.initList();
                 }
             } else {
                 $("#tip").css("display", "flex");

@@ -79,6 +79,7 @@
                 width: 2.05rem;
                 // height: ;
                 position: absolute;
+                cursor: pointer;
                 img{
                     width: 100%;//img自带等比例响应 如果想在li做反而不好做
                     height: auto;
@@ -210,6 +211,7 @@
 
     }
     .rule-content{
+        overflow: hidden;
         position: absolute;
         top: 0;
         left: 0;
@@ -219,13 +221,13 @@
         padding-top: 1.5rem;
         padding-left: .5rem;
         padding-right: .45rem;
+        padding-bottom: .5rem;
         box-sizing: border-box;
         font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
         font-weight: normal;
         letter-spacing: .03rem;
-        line-height: 1.5;
-
-
+        font-size: .26rem;
+        line-height: 1.3;
     }
     .activity{
         margin-bottom: .27rem;
@@ -371,6 +373,78 @@
         p{
             margin-bottom: 37px;
         }
+    }
+}
+
+.d-flex.tc-hide{
+    display: flex;
+}
+.tc-hide{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.8;
+
+    .masking{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 99999;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,.6);
+    }
+}
+
+.m-popCon{
+    // width: 100%;
+    width: 7.5rem;//一百的話 裡面視窗就不能用百分比了!!!
+    position: fixed;
+    z-index: 999999;
+    .popColor{
+        overflow: hidden;
+        width: 84%;
+        margin: 0 auto;
+        padding: .8rem 0;
+        border-radius: .2rem;
+        background-color: #fff;
+    }
+    .pop-tit{
+        overflow: hidden;
+        font-size: .36rem;
+        margin-bottom: .3rem;
+        text-align: center;
+        font-weight: bold;
+        color: #333;
+    }
+    .popItem{
+       p{
+            overflow: hidden;
+            width: 90%;
+            margin: 0 auto .3rem;
+            font-size: 0.28rem;
+            text-align: center;
+            color: #0c656f;
+       }
+
+       a{
+            overflow: hidden;
+            width: 3rem;
+            height: .8rem;
+            margin: 0 auto;
+            line-height: .8rem;
+            text-align: center;
+            font-size: .32rem;
+            background-color: #ec666b;
+            color: #fff;
+            border-radius:.2rem;
+       }
     }
 }
 

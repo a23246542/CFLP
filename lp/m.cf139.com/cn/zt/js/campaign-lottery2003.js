@@ -1,5 +1,5 @@
 var bRotate = false;
-var actId = 27;
+var actId = 95;
 var money = { 50: "50", 20: "20", 10: "10", 5: "5", 1: "1", 谢谢参与: "0.88" };
 //var mis_url = "http://mis.cf860.com";
 $.extend({
@@ -54,6 +54,10 @@ $.extend({
         param = $.extend(param, { "ajaxtype": "POST" });
         $.ajaxData(param, callbackSuc, callbackErr);
     },
+	loadingGetNo: function(param, callbackSuc, callbackErr) {
+	    param = $.extend(param, { "ajaxtype": "GET" });
+	    $.ajaxData(param, callbackSuc, callbackErr);
+	},
     initLuckyLottery: function() {
         //初始用户是否登陆,主要是针对app，保证app登陆了，h5就不用登陆
         $.initLogined();
@@ -409,6 +413,16 @@ $.extend({
             "luckyDrawId": actId,
             "account": longin.account
         };
+		var paramLoginAfter = {
+			"url": pre_op + "/api/activity/luckyDrawReCord/loginAfter",
+			"luckyDrawId": actId,
+			"account": longin.account
+		}
+		$.loadingGetNo(paramLoginAfter, function(data) {
+			console.info(data);
+		}, function(data) {
+		    console.info(data);
+		});
         $.loadingPostNo(param, function(data) {
             $.initLuckyUser(data);
             $(".conList01 .thisItem").html(data.data.describe);

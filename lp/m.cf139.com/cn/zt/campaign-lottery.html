@@ -1,0 +1,193 @@
+<!--#include file="common-html/ssi.html"-->
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8">
+    <title>4月股指转盘活动-创富国际</title>
+    <meta name="keywords" content="创富国际，创富国际推荐有奖，创富国际交易返利"/>
+    <meta name="description" content="创富国际外汇交易平台，中国外汇投资实例雄厚的在线金融公司，关注外汇交易、外汇投资、外汇买卖、炒外汇等新闻资讯，及最新汇率、外汇牌价查询、汇率换算等内容。创富国际有奖分享体验计划，双级推荐赠金、双层交易返利等多重奖励优惠。" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="wap-font-scale" content="no">
+    <link rel="shortcut icon" href="<!--#echo var='IMG_URL' default=''-->/source/www/template/fav.ico">
+    <link rel="apple-touch-icon image_src" href="<!--#echo var='IMG_URL' default=''-->/source/www/template/fav.ico">
+    <link rel="stylesheet" href="css/overall.css">
+    <link rel="stylesheet" type="text/css" href="css/new-campaign/campaign-lottery.css"/>
+    <script src="<!--#echo var='IMG_URL' default=''-->/source/public/js/jquery-2.2.3.min.js"></script>
+    <script src="common-js/backheader.js"></script>
+    <script type="text/javascript">
+        !(function (doc, win) {
+            var docEle = doc.documentElement, //获取html元素
+                event = "onorientationchange" in window ? "orientationchange" : "resize", //判断是屏幕旋转还是resize;
+                fn = function () {
+                    var width = docEle.clientWidth;
+                    width && (docEle.style.fontSize = 50 * (width / 375) + "px"); //设置html的fontSize，随着event的改变而改变。
+                };
+            fn();
+            win.addEventListener(event, fn, false);
+            doc.addEventListener("DOMContentLoaded", fn, false);
+        }(document, window));
+    </script>
+</head>
+<body>
+<div id="main">
+    <div class="m-banner"><img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/mobile/campaign-lottery/font.png"/></div>
+    <div class="m-page">
+        <div class="marquee">
+            <div class="layout">
+                <ul></ul>
+            </div>
+        </div>
+        <div class="lottery">
+            <img class="lotteryCon rotate" src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/mobile/campaign-lottery/pan.png"/>
+            <img class="lotterySuc" src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/mobile/campaign-lottery/suc.png"/>
+            <a class="lotteryStart"><img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/mobile/campaign-lottery/start.png"/></a>
+            <img class="lotteryShadow" src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/mobile/campaign-lottery/pan-shadow.png"/>
+            <img class="lotteryMoney" src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/mobile/campaign-lottery/money.png"/>
+        </div>
+        <div class="loginCon">
+            <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/mobile/campaign-lottery/icon01.png"/>
+            <p class="user"><span></span></p>
+            <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/mobile/campaign-lottery/icon01.png"/>
+        </div>
+        <div class="explain"><p>活动期间累积完成1手指数/美股股票类产品交易，将解锁1笔抽奖奖励（按中奖顺序进行解锁）。活动结束后按解锁奖励进行发放。</p></div>
+        <div class="btnList">
+            <a class="activity" onclick="$('#activity').show()"><img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/mobile/campaign-lottery/icon02.png"/><span>活动规则</span></a>
+            <a class="prize"><img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/mobile/campaign-lottery/icon03.png"/><span>我的奖品</span></a>
+        </div>
+    </div>
+</div>
+<!--#include file="common-html/campaign-lottery.html"-->
+<!--中奖-->
+<div class="tc-hide" id="suc">
+    <div class="masking" onclick="$('#suc').hide()"></div>
+    <div class="m-tcCon">
+        <div class="close" onclick="$('#suc').hide()"><img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/mobile/campaign-lottery/icon-close.png"/></div>
+        <div class="con bg">
+            <div class="layout">
+                <p>恭喜您！获得</p>
+                <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/mobile/campaign-lottery/line.png"/>
+                <span></span>
+                <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/mobile/campaign-lottery/line.png"/>
+            </div>
+        </div>
+    </div>
+</div>
+<!--获奖记录-->
+<div class="tc-hide" id="record">
+    <div class="masking" onclick="$('#record').hide()"></div>
+    <div class="m-tcCon">
+        <div class="close" onclick="$('#record').hide()"><img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/mobile/campaign-lottery/icon-close.png"/></div>
+        <div class="con">
+            <div class="title"><span>我的奖品</span></div>
+            <div class="conList">
+                <ul></ul>
+            </div>
+            <div class="total">
+                <ul>
+                    <li><span>需交易手数：</span><p id="num">3</p><span>手</span></li>
+                    <li><span>累积赠金：</span><p id="total"></p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--活动规则-->
+<div class="tc-hide" id="activity">
+    <div class="masking" onclick="$('#activity').hide()"></div>
+    <div class="m-tcCon noneBg">
+        <div class="close" onclick="$('#activity').hide()"><img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/mobile/campaign-lottery/icon-close.png"/></div>
+        <div class="con">
+            <div class="title"><span>活动规则</span></div>
+            <div class="conList01">
+                <ul>
+                    <li>
+                        <div class="item"><span class="dot"></span><span>活动时间：</span></div>
+                        <div class="item"><p>2019年4月15日至2019年4月30日</p></div>
+                    </li>
+                    <li>
+                        <div class="item"><span class="dot"></span><span>发奖时间：</span></div>
+                        <div class="item"><p>活动结束后3个工作日内</p></div>
+                    </li>
+                    <li>
+                        <div class="item"><span class="dot"></span><span>奖励领取要求：</span></div>
+                        <div class="item"><p>活动期间净入金≥0</p></div>
+                    </li>
+                    <li>
+                        <div class="item"><span class="dot"></span><span>参与对象：</span></div>
+                        <div class="item"><p>已完成入金激活的真实账户</p></div>
+                    </li>
+                    <li>
+                        <div class="item"><span class="dot"></span><span>活动平台：</span></div>
+                        <div class="item"><p>创富CFD</p></div>
+                    </li>
+                    <li>
+                        <div class="item"><span class="dot"></span><span>活动规则：</span></div>
+                        <div class="item">
+                            <p>1.活动期间，已激活客户每天可进行3次抽奖，每天重置抽奖次数。</p>
+                            <p>2.活动期间抽中的奖励，将按客户活动期间累积交易的指数类产品及美股（阿里巴巴、苹果）的手数进行解锁。按中奖时间顺序进行解锁。</p>
+                            <p>3.活动结束后，对满足净入金≥0的客户，按已解锁的奖励进行发放，未解锁的奖励将会被取消。</p>
+                            <p>例子：</p>
+                            <p>张先生4月15日抽中$88.88赠金，4月16日抽中$1.88赠金，4月17日抽中$18.88赠金，活动结束后，张先生活动期间累积交易了2.34手指数类产品，且活动期间未取款（净入金≥0），则张先生可以获得的奖励是$88.88+$1.88=$90.76。4月17日抽中的奖励由于未达到解锁要求，将被回扣取消。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item"><span class="dot"></span><span>注意事项：</span></div>
+                        <div class="item">
+                            <p>1.本活动只适用于在内地开户或存款的客户，每人仅有1个账号能参与活动，已有同IP或身份证号开户用户、销户后重开户用户和创富国际员工不参加此活动；</p>
+                            <p>2.交易手数计算定义：客户开仓1手，然后再行平仓1手，则整个交易来回算1手；</p>
+                            <p>3.抽奖次数在每天0点进行重置，注意及时使用；</p>
+                            <p>4.解锁奖励将于活动结束后进行发放，未解锁的奖励将取消发放，请及时完成交易手数以解锁奖励；</p>
+                            <p>5.奖励发放还需活动期间净入金≥0，净入金=总存款金额-总取款金额；</p>
+                            <p>5.活动期间，如发现客户有不正规交易（如AB仓、恶意对冲、滥用赠金等情况），创富国际有权终止客户新交易及要求客户取消账户及所有交易，并视情况扣除账户结余 6% 至 10% 作为行政费用；</p>
+                            <p>6.创富国际保留随时修订、暂停、终止本活动及任何相关规则条款之权利及其解释权。</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--入金-->
+<div class="tc-hide" id="deposit">
+    <div class="masking" onclick="$('#deposit').hide()"></div>
+    <div class="m-tcCon noneBg">
+        <div class="close" onclick="$('#deposit').hide()"><img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/mobile/campaign-lottery/icon-close.png"/></div>
+        <div class="con bgColor">
+            <div class="title"><span>请入金激活</span></div>
+            <div class="layout">
+                <p class="marginTop">本活动需入金激活后方可参与抽奖，请先完成账户入金。</p>
+                <a href="https://admin.cfxdealer.com/fundDepositOnline.do?intercept_deposit">马上入金</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="<!--#echo var='IMG_URL' default=''-->/source/channel/js/shence/sensors_Analytic.js"></script>
+<script src="common-js/new-cfanalysis.js"></script>
+<script src="common-js/jquery.SuperSlide.2.1.1.js"></script>
+<script src="js/act/awardRotate.js"></script>
+<script src="js/campaign-lottery.js"></script>
+<script>
+    $.initLuckyLottery();
+    $(".masking,.close,.zhezhao,#btclose").click(function () {
+        $("body,html").css("overflow","auto");
+    });
+    $(function () {
+        var hg = $("#main").height();
+        if (window.screen.width <= 750) {
+            $(".btnList .activity").click(function () {
+                $('#activity').show();
+                var hg_c = $("#activity .m-tcCon").height(), result = (hg - hg_c) / 2;
+                $("#activity .m-tcCon").css("top", result);
+            });
+            $(".lotteryStart").click(function () {
+                $("body,html").css("overflow", "hidden");
+            })
+        }
+    });
+</script>
+</html>
