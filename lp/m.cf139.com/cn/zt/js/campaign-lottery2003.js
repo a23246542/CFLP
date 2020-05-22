@@ -60,7 +60,7 @@ $.extend({
 	},
     initLuckyLottery: function() {
         //初始用户是否登陆,主要是针对app，保证app登陆了，h5就不用登陆
-        $.initLogined();
+        $.initLogined();//执行loadFromApp
         //登陆操作
         $(".clickLogin").click(function() {
             $.loginTurn();

@@ -227,7 +227,7 @@
 <script src="common-js/new-cfanalysis.js"></script>
 <script src="js/aos.js"></script>
 <script src="common-js/app.js"></script>
-<script src="js/loadApp.js"></script>
+<!-- <script src="js/loadApp.js"></script> -->
 <script src="js/duanwu/duanwu.js"></script>
 <script>
     AOS.init({
@@ -235,6 +235,7 @@
         duration: 1000
     });
 
+    //下面包成ininLogined
     $(function(){
         var type = $.mechined();//android or ios
         var noneHeader = $.urlParams("noneheader");//确定是否是app
@@ -274,28 +275,30 @@
             // if (typeof (useInfo) != "undefined") {
                 // typeof (user.account) != "undefined" && (user.account!=null  && user.account!="")
                 // var param = $.extend(useInfo, {"url": mis_url + "/public/ding/list", "actId": actId});
+
+                // 1.出现用户剩余粽子的api 传用户跟活动api过去
                 var param = $.extend(user, {
                     "url": pre_op + "/api/activity/luckyDrawReCord/beforeRaffle",
                     "luckyDrawId": actId,
                     // "account": longin.account
                 })
+
                 $.loadingPost(param, function (res) {
                     if (res.code == 200) {
                         // $.zongziNum();//api粽子數量
                         let zongziNum = res.turnTimes;
                         // $.zongzi();//改變畫面
-
                             $("#balance span").text(`${zongziNum}颗`);
                             $("粽子").click(function(){
-                                $.lottery
+                                $.openZongzi()
                                 //点过之后还要重新取得一次
                                 $("#balance span").text(`${zongziNum}颗`);
                             })
 
-                    } else if (res.code == 1002) {
-                        $("zongzi li").click(function(){
-                            $.activation();
-                        })
+                    // } else if (res.code == 1002) {
+                    //     $("zongzi li").click(function(){
+                    //         $.activation();
+                    //     })
                     }else{
                         $("#tip").css("display", "flex");
                         $("#tip .message").empty().text(res.code_desc);

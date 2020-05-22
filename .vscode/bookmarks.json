@@ -10,21 +10,31 @@
 		]
 	},
 	{
-		"path": "$ROOTPATH$\\lp\\m.cf139.com\\cn\\zt\\js\\epidemic\\epidemicData copy.js",
+		"path": "$ROOTPATH$\\lp\\m.cf139.com\\cn\\zt\\js\\campaign-lottery2003.js",
 		"bookmarks": [
 			{
-				"line": 134,
-				"column": 10,
+				"line": 98,
+				"column": 35,
 				"label": ""
-			}
-		]
-	},
-	{
-		"path": "$ROOTPATH$\\lp\\m.cf139.com\\cn\\zt\\js\\epidemic\\epidemicData.js",
-		"bookmarks": [
+			},
 			{
-				"line": 147,
-				"column": 37,
+				"line": 101,
+				"column": 26,
+				"label": ""
+			},
+			{
+				"line": 159,
+				"column": 30,
+				"label": ""
+			},
+			{
+				"line": 173,
+				"column": 27,
+				"label": ""
+			},
+			{
+				"line": 408,
+				"column": 18,
 				"label": ""
 			}
 		]
