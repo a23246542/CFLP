@@ -279,11 +279,12 @@ $.extend({
                             if (data.prizeId != -2) {
                                 if (!bRotate) {
                                     bRotate = !bRotate;
-                                    $.clickTurn();
+                                    // $.clickTurn();
+                                    $.clickZongzi();
                                 }
                             } else {
                                 if (!bRotate) {
-                                    $.showlogin();
+                                    $.showlogin();//但我這邊應該是goLogin
                                 }
                                 bRotate = !bRotate;
                             }
@@ -312,13 +313,13 @@ $.extend({
 // ========================================================================
     //登入且激活的状况下click调用 action
     // clickZongzi:function(){
-    openZongzi:function(){
+    openZongzi:function(){ //==clickTurn
         var param = {
             "url":api.lotteryZongzi,
             "luckyDrawId": actId,
             "account": login.account
         }
-        if(zongziNum>0){
+        // if(zongziNum>0){
             // var param = {
             //     url:api.lotteryZongzi,
             //     "luckyDrawId": actId,
@@ -330,14 +331,14 @@ $.extend({
                 console.error(`clickZongzi_postErr:${res}`);
             }
             // $.actZongzi()//重新改变粽子数量 绑定click反应
-        }else{//前台没粽子
-            "function tip说已经没粽子"
-        }
+        // }else{//前台没粽子
+        //     "function tip说已经没粽子"
+        // }
         //如果为0颗就说已经没粽子了
         //典籍粽子抽奖后 要重新取得粽子actZongzi
     },
     //statue
-    getLottery: function(data){
+    getLottery: function(data){ //ajaxTurn
         // 还可以抽奖 要麻获奖要吗谢谢参与
         //登入才掉用 提使没登入
         //虽然是入金才调用 可是这边再确认一次
@@ -352,14 +353,15 @@ $.extend({
                 $.actZongzi()//重新改变粽子数量 绑定click反应
             //后台还没登入
             } else if (data.prizeId == -1){
-                $.showTips("请联系在线客服!")
+                $.showTips("请联系在线客服!","线上咨询",openLive800)
                 "是否要出现liveopen800"
             } else if (data.prizeId == -2){
                 $.real()
                 "改成showLogin"
             //后台没有粽子
             } else if (data.code == 5001){
-                $.showNoZongziNum();
+                // $.showNoZongziNum();
+                $.showTips("您今日的抽奖次数已用完")
             //后台还未达参与资格
             } else if (data.code == 5003 || data.msg == '没有参与资格'){
                 $.showDeposit();
@@ -382,22 +384,43 @@ $.extend({
             console.error(`getLottery_dataErr:${data}`)
         }
     },
-    showNoZongziNum: function(){
-
+    showTips:function(msg,btnMsg,btnfn){
+        // $("#pop-tip .pop-tit").empty().text("温馨提示");
+        $("#pop-tip .message").empty().text(msg);
+        if(btnMsg){
+            $("#pop-tip popItem span").empty().text(btnMsg);
+        }
+        if(btnFn){
+            $("#pop-tip popItem span").click(btnFn)
+        }
+        $("#pop-tip").show();
     },
+    // showNoZongziNum: function(){
+    //     $("#pop-tip .pop-tit").empty().text("温馨提示");
+    //     $("#pop-tip .message").empty().text("您今日的抽奖次数已用完");
+    //     $("#pop-tip").show();
+    // },
     showLottery: function (lotteryResult){
-        
+        if(lotteryResult == null){
+            $("#pop-lottery .pop-tit>span").empty().text("节日愉快!!");
+            $("#pop-lottery .message").empty().text("谢谢参与");
+            $("pop-lottery").show();
+        }else{
+            $("#pop-lottery .pop-tit>span").empty().text("粽奖了!!");
+            $("#pop-lottery .message").empty().html(`恭喜获得<span>${lotteryResult.bonus}</span>美元`);
+            $("pop-lottery").show();
+        }
     },
     showDeposit(){//點擊判斷不是激活帳戶執行  //已经有了
         'tc-hide也要开启'
-        $("#activation").css("display", "flex");
-        $("#activation .message").empty().text(res.code_desc);//打卡api才有code_desc
-
-        // $.pop("#activation", ".m-popCon")
-        // $("#despite").attr("href","https://admin.cfxdealer.com/fundDepositOnline.do?intercept_deposit")
         $("#despite").click(function(){
             window.location.href="https://admin.cfdealer88.com?intercept_deposit";
         })
+        // $("#activation .message").empty().text(res.code_desc);//打卡api才有code_desc
+        
+        // $.pop("#activation", ".m-popCon")
+        // $("#despite").attr("href","https://admin.cfxdealer.com/fundDepositOnline.do?intercept_deposit")
+        $("#activation").css("display", "flex");
     },
     showTips: function(){
 

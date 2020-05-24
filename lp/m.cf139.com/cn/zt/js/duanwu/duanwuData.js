@@ -8,6 +8,7 @@ const state = {
 var longin = {
     account: $.getCookie("accountId")
 }
+var brotate = false;
 const api = {
     initUser:"https://api.",//loadformApp 样实现自动登入跟拿取使用者资料
     // actId:
