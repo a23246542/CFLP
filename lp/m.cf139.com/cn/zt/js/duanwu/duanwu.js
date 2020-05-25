@@ -76,6 +76,11 @@ $.extend({
         // }
         $("#download").css("display", "flex");
     },
+    clickZongzi: function(fn){
+        $("#zongzi li").click(function(){
+            fn();
+        })
+    },
     // ===下面是已登入app===
     //这个事2003抽奖的登录小跳窗
     showLogin: function() {
@@ -128,13 +133,14 @@ $.extend({
         if ($.isEmpty($.parseJSON(useInfo).account)) {
             $("#real").css("display", "flex");
         } else {
-
+            
         }
     },
     isLogin: function(use){
 
         if ($.isEmpty(use.account)) {//如果账户是空的 回传false代表不是登入
-            return false;
+            // return false;
+            login.appLogin = false;
             // $("#real").css("display", "flex");
         }
     },
@@ -198,12 +204,13 @@ $.extend({
             console.error(res);
         })
     },
-    //此活动跟此用户的个人粽子 mutation
+    //此活动跟此用户的个人粽子 mutation 有可能是空的
     initZongziUser(res){//==initLuckyUser
         if(res.code == 0){
             let zongziData = res.data;
             $.showZongziNum(zongziData);
             
+            $.otherPopMsg(zongziData);
             "改成before抽粽子前的判断"
             "没app用户讯习依样送过去...但其实没用户不用api判断吧 还是说需要"
             $("#zongzi li").click(function(){
@@ -211,10 +218,13 @@ $.extend({
                 //可能此时还没登入
                 "不过这样判断偶个问题 如何已经登入了还调用isLogin的结果会是旧的 要确保登入后回到这个页面会执行initLogin更新"
                 "或是说传回来的zongziData传回来没有就是没有"
-                if (!$.isLogin()){
-                    $.goLogin();
+                // if (!$.isLogin()){
+                if(!login.appLogin || zongziData.customerNo ==0){
+                    // $.goLogin();
+                    $("#zongzi li").click(function(){
+                        $.showLogin;
+                    })
                     return;//??有没有加这个的差别
-
                 // } else if ("此用户没激活") {
                 //     $.checkActivation()
                 //     $.showDeposit()
@@ -224,25 +234,21 @@ $.extend({
                     $.checkActivation(zongziData);
                 }
             })
-
-            $.otherPopMsg(res);
         } else {
             console.info(data.ch_msg[0]);
         }
     },
-    otherPopMsg: function(){//==luckyProp
-        // if (data.status == 2) {
-        //     $(".user").html("活动已停用，如有问题请联系客服。");
-        // } else if (data.status == 3) {
-        //     $(".user").html("活动已结束，下次活动请来早，感谢关注。");
-        // } else if (data.status == 4) {
-        //     $(".user").html("活动正在赶来的路上，请稍后再尝试。");
+    otherPopMsg: function(zongziData){//==luckyProp
+        // if(zongziData.customerNo == 0){
+        //     $.clickZongzi($.showLogin)
         // } else {
-        //     if (data.userStatus == 2) {
-        //         $(".user").html("当前账号未报名,请先<a href='javascript:void(0)' style='color: #f7ee01;text-decoration: underline;' onclick=\"$.signUp()\">点击报名</a>参与");
-        //     } else {
-        //         $(".user").html("您今天还可以抽奖 <span>" + data.turnTimes + "</span> 次！");
-        //     }
+            if (zongziData.status == 2) {
+                $.showTips("活动已停用，如有问题请联系客服。");
+            } else if ( zongziData.status == 3) {
+                $.showTips("活动已结束");
+            } else if ( zongziData.status == 4) {
+                $.showTips("活动尚未开始");
+            }
         // }
     },
     showZongziNum:function(zongziData){//進入頁面有登錄真實帳號 顯示粽子數量
@@ -250,8 +256,12 @@ $.extend({
                 //綁定事件:點超過次數會說超過 還是說剩下幾顆就顯示幾顆
         "有可能没登入是没资料的给1颗或是不动 有资料再给 Num isEmpty资料存在&&是数字 不然就是1颗"
         let zongziNum = zongziData.turnTimes;
+        if ($.isEmpty(zongziNum)){
+            $("#balance span").empty().text("1颗");
+        } else {
+            $("#balance span").empty().text(`${zongziNum}颗`);
+        }
         //如果是数字再秀出来?? 请联系客服
-        $("#balance span").text(`${zongziNum}颗`);
     },
     //噢噢 确定有登入才调用这个方法
     checkActivation:function(zongziData){
@@ -264,7 +274,9 @@ $.extend({
                 data = data.ch_msg;
                 if (data.length > 0) {
                     if (typeof(data[0].activetime) == "undefined" || data[0].activetime == "") {
-                        $.showDeposit();
+                        $("#zongzi li").click(function(){
+                            $.showDeposit();
+                        })
                         // $("#deposit").show();
                         // if (window.screen.width <= 750) {
                         //     var hg = $("#main").height();
@@ -280,11 +292,13 @@ $.extend({
                                 if (!bRotate) {
                                     bRotate = !bRotate;
                                     // $.clickTurn();
-                                    $.clickZongzi();
+                                    $.openZongzi();
                                 }
                             } else {
                                 if (!bRotate) {
-                                    $.showlogin();//但我這邊應該是goLogin
+                                    $("#zongzi li").click(function(){
+                                        $.showLogin();//但我這邊應該是goLogin
+                                    })
                                 }
                                 bRotate = !bRotate;
                             }
@@ -293,7 +307,9 @@ $.extend({
                 } else {
                 "可是如果是没登入的回传的资料 也是入金激活帐户??"
                 "??!!虽然网址导像一漾 可是没办法判断给说是请激活还是请登入啊?"
-                    $.showDeposit();
+                    $("#zongzi li").click(function(){
+                        $.showDeposit();
+                    })
                     // $("#deposit").show();
                     // if (window.screen.width <= 750) {
                     //     var hg = $("#main").height();
@@ -349,25 +365,36 @@ $.extend({
         if(!$.isEmpty(data)){
             if (data.code == 0){
                 var lotteryResult = data.data.prize;
-                $.showLottery(lotteryResult);//传入中奖金额或于谢谢参与
-                $.actZongzi()//重新改变粽子数量 绑定click反应
+                $("#zongzi li").click(function(){
+                    $.showLottery(lotteryResult);//传入中奖金额或于谢谢参与
+                    $.actZongzi()//重新改变粽子数量 绑定click反应
+                })
             //后台还没登入
             } else if (data.prizeId == -1){
-                $.showTips("请联系在线客服!","线上咨询",openLive800)
-                "是否要出现liveopen800"
+                $("#zongzi li").click(function(){
+                    $.showTips("请联系在线客服!","咨询客服",openLive800)
+                })
+            
             } else if (data.prizeId == -2){
-                $.real()
-                "改成showLogin"
+                $("#zongzi li").click(function(){
+                    $.showLogin()
+                })
             //后台没有粽子
             } else if (data.code == 5001){
                 // $.showNoZongziNum();
-                $.showTips("您今日的抽奖次数已用完")
+                $("#zongzi li").click(function(){
+                    $.showTips("您今日的抽奖次数已用完")
+                })
             //后台还未达参与资格
             } else if (data.code == 5003 || data.msg == '没有参与资格'){
-                $.showDeposit();
+                $("#zongzi li").click(function(){
+                    $.showDeposit();
+                })
             //后台 活动还未开启
             } else if (data.code == 5004){
-                $.showTips("当前活动未开始!");
+                $("#zongzi li").click(function(){
+                    $.showTips("当前活动未开始!");
+                })
                 // if (window.screen.width <= 750) {
                 //     var hg = $("#main").height();
                 //     var hg1_c = $("#deposit .m-tcCon").height(),
@@ -376,24 +403,17 @@ $.extend({
                 // }
             //后台 活动已经关闭
             } else if(data.prizeId == -5){
-                $.showTips("本次活动已结束!");
+                $("#zongzi li").click(function(){
+                    $.showTips("本次活动已结束!");
+                })
             } else {
-                $.showTips(data.msg)
+                $("#zongzi li").click(function(){
+                    $.showTips(data.msg)
+                })
             }
         }else{
             console.error(`getLottery_dataErr:${data}`)
         }
-    },
-    showTips:function(msg,btnMsg,btnfn){
-        // $("#pop-tip .pop-tit").empty().text("温馨提示");
-        $("#pop-tip .message").empty().text(msg);
-        if(btnMsg){
-            $("#pop-tip popItem span").empty().text(btnMsg);
-        }
-        if(btnFn){
-            $("#pop-tip popItem span").click(btnFn)
-        }
-        $("#pop-tip").show();
     },
     // showNoZongziNum: function(){
     //     $("#pop-tip .pop-tit").empty().text("温馨提示");
@@ -422,8 +442,16 @@ $.extend({
         // $("#despite").attr("href","https://admin.cfxdealer.com/fundDepositOnline.do?intercept_deposit")
         $("#activation").css("display", "flex");
     },
-    showTips: function(){
-
+    showTips:function(msg,btnMsg,btnFn){
+        // $("#pop-tip .pop-tit").empty().text("温馨提示");
+        $("#pop-tip .message").empty().text(msg);
+        if(btnMsg){
+            $("#pop-tip popItem span").empty().text(btnMsg);
+        }
+        if(btnFn){
+            $("#pop-tip popItem span").click(btnFn)
+        }
+        $("#pop-tip").show();
     },
 
 // ================================================================

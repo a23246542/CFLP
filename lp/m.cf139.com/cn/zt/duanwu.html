@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="css/template.css" />
     <link rel="stylesheet" type="text/css" href="css/aos.css" />
     <!-- <link rel="stylesheet" type="text/css" href="css/swiper.min-4.0.7.css" /> -->
-    <link rel="stylesheet" href="sass/duanwu.css"/>
+    <link rel="stylesheet" href="sass/duanwu/duanwu.css"/>
     <script src="common-js/jquery-2.2.3.min.js"></script>
     <script src="common-js/backheader.js"></script>
     <script type="text/javascript">
@@ -131,61 +131,67 @@
             </div>
         </section>
     </div>
-    <div class="popup-bg" style="display: none">
-        <div class="close-top">
-            <a href="javascript://" onclick="$('.popup-bg').hide();"></a>
-        </div>
-        <!-- <div class="box-in" id="content-popup"> -->
-            <div id="lottery-box" class="box-in-zongzi" style="display: none">
-                <div class="light-box">
-                    <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/duanwu/lightbox_qrcode.png"
-                        alt="">
-                    <div class="content">
-                        <ul class="qr-code">
-                            <li>
-                                <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/duanwu/qr-ios.png"
-                                    alt="">
-                                <p>苹果手机</p>
-                            </li>
-                            <li>
-                                <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/duanwu/code-adr.png"
-                                    alt="">
-                                <p>安卓手机</p>
-                            </li>
-                        </ul>
-                        <a type="button" onclick="$('.popup-bg').hide();">
-                            <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/duanwu/but1.png" alt="">
-                            <span>我知道了</span> 
-                        </a>
-                    </div>
-                   
-                </div>
-            </div>
-            <div id="award-box" class="box-in-zongzi" style="display: none">
-                <div class="light-box">
-                    <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/duanwu/lightbox_winner.png"
-                        alt="">
-                    <div class="content">
-                        <ul class="award-list">
-                            <li><span>50</span>美 元</li>
-                            <li><span>20</span>美 元</li>
-                            <li><span>10</span>美 元</li>
-                            <li><span>5</span>美 元</li>
-                            <li><span>1</span>美 元</li>
-                        </ul>
-                        <p>谢谢参与</p>
-                        <a type="button" onclick="$('.popup-bg').hide();">
-                            <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/duanwu/but1.png" alt="">
-                            <span>我知道了</span> 
-                        </a>
-                    </div>
-                   
+    <div class="tc-hide" id="lottery-box" style="display: none">
+        <div class="masking" onclick="$('#lottery-box').hide()"></div>
+        <!-- <div  class="box-in-zongzi"> -->
+            <div class="light-box">
+                <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/duanwu/lightbox_qrcode.png"
+                    alt="">
+                <div class="content">
+                    <ul class="qr-code">
+                        <li>
+                            <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/duanwu/qr-ios.png"
+                                alt="">
+                            <p>苹果手机</p>
+                        </li>
+                        <li>
+                            <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/duanwu/code-adr.png"
+                                alt="">
+                            <p>安卓手机</p>
+                        </li>
+                    </ul>
+                    <a type="button" onclick="$('.popup-bg').hide();">
+                        <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/duanwu/but1.png" alt="">
+                        <span  onclick="$('#lottery-box').hide()">我知道了</span> 
+                    </a>
                 </div>
             </div>
         <!-- </div> -->
     </div>
-    <!--下載彈窗-->
-    <div class="tc-hide" id="download">
+    <div class="tc-hide" id="award-box" style="display: none">
+        <div class="masking" onclick="$('#award-box').hide()"></div>
+            <!-- <div  class="box-in-zongzi" > -->
+            <div class="light-box">
+                <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/duanwu/lightbox_winner.png"
+                    alt="">
+                <div class="content">
+                    <ul class="award-list">
+                        <li><span>50</span>美 元</li>
+                        <li><span>20</span>美 元</li>
+                        <li><span>10</span>美 元</li>
+                        <li><span>5</span>美 元</li>
+                        <li><span>1</span>美 元</li>
+                    </ul>
+                    <p>谢谢参与</p>
+                    <a type="button" onclick="$('.popup-bg').hide();">
+                        <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/duanwu/but1.png" alt="">
+                        <span onclick="$('#award-box').hide()">我知道了</span> 
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-bg" style="display: none" onclick="$('.popup-bg').hide();">
+        <div class="close-top">
+            <a href="javascript://" onclick="$('.popup-bg').hide();"></a>
+        </div>
+        <!-- <div class="box-in" id="content-popup"> -->
+           
+          
+        <!-- </div> -->
+    </div>
+    <!--下载彈窗-->
+    <div class="tc-hide" id="download" style="display:none">
         <div class="masking" onclick="$('#download').hide()"></div>
         <div class="m-popCon">
             <div class="popColor">
@@ -197,34 +203,34 @@
             </div>
         </div>
     </div>
-    <!--真实账户弹窗-->
-    <div class="tc-hide" id="real">
-        <div class="masking"></div>
+    <!--登入账户弹窗-->
+    <div class="tc-hide" id="signIn" style="display:none;">
+        <div class="masking" onclick="$('#signIn').hide();"></div>
         <div class="m-popCon">
             <div class="popColor">
-                <!-- <div class="pop-tit"><span>温馨提醒</span></div> -->
+                <div class="pop-tit"><span>温馨提醒</span></div>
                 <div class="popItem">
                     <p class="message">请登入真实帐户</p>
-                    <span id="goLogin">去登入</span>
+                    <a id="goLogin">去登入</a>
                 </div>
             </div>
         </div>
     </div>
     <!--激活弹窗-->
-    <div class="tc-hide" id="activation">
+    <div class="tc-hide" id="activation" style="display: none">
         <div class="masking" onclick="$('#activation').hide()"></div>
         <div class="m-popCon">
             <div class="popColor">
                 <div class="pop-tit"><span>温馨提醒</span></div>
                 <div class="popItem">
                     <p class="message">需入金激活账户才可参与“粽子抽奖”小游戏</p>
-                    <span id="despite">马上入金激活</span>
+                    <a id="despite">马上入金激活</a>
                 </div>
             </div>
         </div>
     </div>
-    <!--中獎結果-->
-    <div class="tc-hide" id="pop-lottery">
+    <!--中獎结果弹窗-->
+    <div class="tc-hide" id="pop-lottery" style="display: none">
         <div class="masking" onclick="$('#pop-lottery').hide();"></div>
         <div class="m-popCon">
             <div class="popColor">
@@ -232,13 +238,13 @@
                 <div class="popItem">
                     <img class="pop-img" src="" alt="">
                     <p class="message">謝謝參與</p>
-                    <span onclick="$('pop-lottery').hide();">我知道了</span>
+                    <a onclick="$('pop-lottery').hide();">我知道了</a>
                 </div>
             </div>
         </div>
     </div>
     <!--提示弹窗-->
-    <div class="tc-hide" id="pop-tip">
+    <div class="tc-hide" id="pop-tip" style="display: none">
         <div class="masking" onclick="$('#pop-tip').hide();"></div>
         <div class="m-popCon">
             <div class="popColor">
@@ -246,20 +252,7 @@
                 <div class="popItem">
                     <img class="pop-img" src="" alt="">
                     <p class="message">謝謝參與</p>
-                    <span onclick="$('pop-tip').hide();">我知道了</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--提示弹窗-->
-    <div class="tc-hide" id="tipOrder">
-        <div class="masking" onclick="$('#tipOrder').hide()"></div>
-        <div class="m-tcCon noneBg">
-            <div class="close" onclick="$('#tipOrder').hide()"><img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/campaign-lottery2019/icon-close.png"/></div>
-            <div class="con bgColor">
-                <div class="title"><span>温馨提示</span></div>
-                <div class="layout">
-                    <p class="marginTop">当前活动未开始</p>
+                    <a onclick="$('pop-tip').hide();">我知道了</a>
                 </div>
             </div>
         </div>
@@ -269,20 +262,30 @@
 <script src="js/aos.js"></script>
 <script src="common-js/app.js"></script>
 <!-- <script src="js/loadApp.js"></script> -->
-<script src="js/duanwu/duanwu.js"></script>
+<!-- <script src="js/duanwu/duanwu.js"></script> -->
+<script src="./js/duanwu/duanwu2020.js"></script>
 <script>
     AOS.init({
         easing: 'ease-out-back',
         duration: 1000
     });
-
+    $(".rule-button").on("click","a",function(){
+            let btn = $(this).data('key');      
+            if(btn=="lottery"){
+                $("#lottery-box").css("display", "flex")
+            }else{
+                $("#award-box").css("display", "flex")
+            }
+        })
+    $.initLogined();
     //下面包成ininLogined
     $(function(){
         var type = $.mechined();//android or ios
         var noneHeader = $.urlParams("noneheader");//确定是否是app
         var useInfo="";
-        console.log(type,noneHeader);
-
+        // console.log(type,noneHeader);
+        // console.log($.isEmpty(noneHeader));
+        
         //還沒點擊前 如果有登入 還要顯示剩餘的粽子數
 
         // 進入頁面判斷1.是不是app 2.是不是登入
@@ -291,9 +294,9 @@
         if (noneHeader == null || $.trim(noneHeader).length <= 0) {
             // console.log("點擊");
             
-            $("#zongzi li").click(function(){
-                $.downloadApp();
-            })
+            // $("#zongzi li").click(function(){
+            //     $.downloadApp();
+            // })
         }else{
             //是app進入頁面就判斷是不是登入
             if (type == 0 && typeof (uiObject) !== "undefined") {
@@ -325,6 +328,8 @@
                 })
 
                 $.loadingPost(param, function (res) {
+                    console.log(res);
+                    
                     if (res.code == 200) {
                         // $.zongziNum();//api粽子數量
                         let zongziNum = res.turnTimes;
@@ -346,8 +351,6 @@
                         $.pop("#tip", ".m-popCon")
                     }
                 })
-
-
                 $("粽子").click(function(){
                     if("激活"){
                         $.lottery();
@@ -357,48 +360,52 @@
                 })
             //為登入直接談川顯示    
             }else{
-                $.real();
+                // $.real();
+                console.log("请登入");
+                
             }
         }
         
     })
-   
-    $(function() {
+    // $(function() {
         //设定点楫可以切换换图 & 点级别的 全部都怎样怎样
-        $("#zongzi li").mousemove(function() {
-            $(this).children('img').attr('src','http://sc.tfejy.com/source/www/zt/lp-img/mobile/duanwu/m_rice2.png')
-        }).mouseout(function(){
-            $(this).children('img').attr('src','http://sc.tfejy.com/source/www/zt/lp-img/mobile/duanwu/m_rice1.png')
-        })
+        // $("#zongzi li").mousemove(function() {
+        //     $(this).children('img').attr('src','http://sc.tfejy.com/source/www/zt/lp-img/mobile/duanwu/m_rice2.png')
+        // }).mouseout(function(){
+        //     $(this).children('img').attr('src','http://sc.tfejy.com/source/www/zt/lp-img/mobile/duanwu/m_rice1.png')
+        // })
 
-        $(".rule-button").on("click","a",function(){
-            let btn = $(this).data('key');
-            // console.log(btn);           
-            if(btn=="lottery"){
-                //不知道为舌么超慢 原来要输入数字0!!!就可以
-                // $("#award-box").hide(function(){
-                //     $("#lottery-box").show(function(){
-                //         $(".popup-bg").show();
-                //     });
-                // });
-                $("#award-box").hide();
-                $("#lottery-box").show();
-                $(".popup-bg").show();
-            }else{
-                $("#lottery-box").hide();
-                $("#award-box").show();
-                $(".popup-bg").show();
-            }
-        })
-    })
-    // function openLive800() {
-    //     var url = 'https://www.cf-service.com/k800/chatClient/chatbox.jsp?companyID=475&configID=56&jid=';
-    //     var left = (screen.width / 2) - (600 / 2);
-    //     var top = (screen.height / 2) - (400 / 2);
-    //     window.open(url,
-    //         "DescriptiveWindowName",
-    //         "resizable,scrollbars=yes,status=1,width=800, height=550, top=" + top + ", left=" + left);
-    // };
+        // $(".rule-button").on("click","a",function(){
+        //     let btn = $(this).data('key');
+        //     // console.log(btn);           
+        //     if(btn=="lottery"){
+        //         //不知道为舌么超慢 原来要输入数字0!!!就可以
+        //         // $("#award-box").hide(function(){
+        //         //     $("#lottery-box").show(function(){
+        //         //         $(".popup-bg").show();
+        //         //     });
+        //         // });
+        //         // $("#award-box").hide();
+        //         // $("#lottery-box").show();
+        //         // $(".popup-bg").show();
+        //         $("#lottery-box").css("display", "flex")
+        //     }else{
+        //         // $("#lottery-box").hide();
+        //         // $("#award-box").show();
+        //         // $(".popup-bg").show();
+        //         $("#award-box").css("display", "flex")
+        //     }
+        // })
+    // })
+
+    function openLive800() {
+        var url = 'https://www.cf-service.com/k800/chatClient/chatbox.jsp?companyID=475&configID=56&jid=';
+        var left = (screen.width / 2) - (600 / 2);
+        var top = (screen.height / 2) - (400 / 2);
+        window.open(url,
+            "DescriptiveWindowName",
+            "resizable,scrollbars=yes,status=1,width=800, height=550, top=" + top + ", left=" + left);
+    };
     // window.onscroll = function () {
     //     var scroll = document.documentElement.scrollTop || document.body.scrollTop || window.pageYOffset;
     //     if (scroll >= 300) {

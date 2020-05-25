@@ -5,8 +5,10 @@ const state = {
 }
 // var phone = $.trim($("#phone").val());
 // $.setCookie("accountId", phone);
-var longin = {
-    account: $.getCookie("accountId")
+var login = {
+    // account: $.getCookie("accountId"),
+    account: "81018191",
+    appLogin:false
 }
 var brotate = false;
 const api = {

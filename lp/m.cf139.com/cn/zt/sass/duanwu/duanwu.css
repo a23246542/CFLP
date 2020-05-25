@@ -1,4 +1,4 @@
-@import url("./reset.css");
+@import url("../reset.css");
 html {
   height: 100%;
   font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -42,6 +42,13 @@ img, a {
 
 .inner .title {
   padding-top: .8rem;
+}
+
+.m-header .layout-1 .item-1 .left-1 {
+  background-image: url("../../images/common/header43_03.png");
+  background-size: 2.25rem 0.63rem;
+  width: 2.25rem;
+  height: 0.63rem;
 }
 
 .web-banner {
@@ -194,33 +201,33 @@ img, a {
 }
 
 .web-page.block1 .zongzi ul li:nth-child(1) {
-  top: 11%;
-  left: 14%;
+  top: 14%;
+  left: 7%;
 }
 
 .web-page.block1 .zongzi ul li:nth-child(2) {
-  top: 3.5%;
-  left: 40%;
+  top: 8.6%;
+  left: 37%;
 }
 
 .web-page.block1 .zongzi ul li:nth-child(3) {
-  top: 12%;
-  left: 66%;
+  top: 14%;
+  left: 67%;
 }
 
 .web-page.block1 .zongzi ul li:nth-child(4) {
-  top: 43%;
-  left: 10%;
+  top: 38%;
+  left: 7%;
 }
 
 .web-page.block1 .zongzi ul li:nth-child(5) {
   top: 34%;
-  left: 39%;
+  left: 38%;
 }
 
 .web-page.block1 .zongzi ul li:nth-child(6) {
-  top: 42%;
-  left: 67%;
+  top: 38%;
+  left: 70%;
 }
 
 .web-page.block1 .zongzi .rule-button {
@@ -362,21 +369,19 @@ img, a {
           align-items: center;
 }
 
-.box-in-zongzi {
-  color: #fff;
-  font-size: 20px;
-}
-
-.box-in-zongzi .light-box {
+.light-box {
+  z-index: 999999;
   position: relative;
+  color: #fff;
+  font-size: .2rem;
 }
 
-.box-in-zongzi .light-box img {
+.light-box img {
   width: 100%;
   height: auto;
 }
 
-.box-in-zongzi .light-box .content {
+.light-box .content {
   position: absolute;
   left: 0;
   top: 0;
@@ -385,21 +390,21 @@ img, a {
   margin: auto;
 }
 
-.box-in-zongzi .light-box a[type="button"] {
+.light-box a[type="button"] {
   position: relative;
   cursor: pointer;
-  width: 290px;
-  height: 90px;
+  width: 2.9rem;
+  height: .9rem;
   margin: 0 auto;
   color: #FAB948;
 }
 
-.box-in-zongzi .light-box a[type="button"] img {
+.light-box a[type="button"] img {
   width: 100%;
   height: 100%;
 }
 
-.box-in-zongzi .light-box a[type="button"] span {
+.light-box a[type="button"] span {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -410,8 +415,12 @@ img, a {
   font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
 }
 
+.light-box a[type="button"] span {
+  font-size: .36rem;
+}
+
 #lottery-box .content {
-  padding-top: 228px;
+  padding-top: 2.28rem;
 }
 
 #lottery-box .content > ul {
@@ -421,38 +430,44 @@ img, a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: .3rem;
 }
 
 #lottery-box .content > ul li {
-  margin: 0 25px;
+  margin: 0 .25rem;
   font-weight: bold;
-  font-size: 29px;
+  font-size: .29rem;
   text-align: center;
 }
 
 #lottery-box .content > ul li > img {
-  margin-bottom: 12px;
+  width: 2.02rem;
+  height: 2.02rem;
+  margin-bottom: .12rem;
 }
 
 #award-box .content {
-  padding-top: 130px;
+  padding-top: 1.25rem;
   text-align: center;
-  font-size: 35px;
+  font-size: .35rem;
   font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
 }
 
-#award-box .content .award-list {
-  margin-bottom: 46px;
+#award-box .content ul.award-list {
+  margin-bottom: .36rem;
 }
 
-#award-box .content .award-list span {
+#award-box .content ul.award-list li {
+  line-height: 1.5;
+}
+
+#award-box .content ul.award-list span {
   font-weight: bold;
-  letter-spacing: 6px;
+  letter-spacing: .06rem;
 }
 
 #award-box .content p {
-  margin-bottom: 37px;
+  margin-bottom: .23rem;
 }
 
 .d-flex.tc-hide {
@@ -462,7 +477,6 @@ img, a {
 }
 
 .tc-hide {
-  display: none;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -485,7 +499,7 @@ img, a {
   z-index: 99999;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .m-popCon {

@@ -59,7 +59,7 @@
     
 
     .inner{
-        outline: 1px solid red;
+        // outline: 1px solid red;
         width: 62.5%;
         // margin: 0 auto;//无效
         position: absolute;
@@ -98,7 +98,7 @@
     }
     .zongzi{
         width: 100%;
-        outline:1px solid blue;
+        // outline:1px solid blue;
         height: 77%;//!!!没加发现没高度 absolute无法撑起高度
         // height: 50.65%;//!!!没加发现没高度 absolute无法撑起高度
         // min-height: calc(100% -其他元素高度);//!!!!
@@ -295,6 +295,32 @@
 
 }
 
+.tc-hide{
+    // display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.8;
+
+    .masking{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 99999;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,.2);
+    }
+}
+
+
+
+
 @mixin btn-img {//for RWD
 
     a[type="button"]{
@@ -321,12 +347,14 @@
 }
 
 // #lottery-box,#awards-box{//放在class里面有问题 id btn-img
-.box-in-zongzi{//放在class里面有问题
+// .box-in-zongzi{//放在class里面有问题
     // width: 50%; //有flex不用先给宽
-    color:#fff;
-    font-size: 20px;
+    
     .light-box{
         position: relative;
+        z-index: 99999;
+        color:#fff;
+        font-size: 20px;
         img{
             width: 100%;
             height: auto;
@@ -348,7 +376,7 @@
             color: #FAB948;
         };
     }
-}
+// }
 
 
 

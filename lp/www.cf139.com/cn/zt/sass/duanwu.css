@@ -149,7 +149,6 @@ img, a {
 }
 
 .web-page.block1 .inner {
-  outline: 1px solid red;
   width: 62.5%;
   position: absolute;
   top: 0;
@@ -190,7 +189,6 @@ img, a {
 
 .web-page.block1 .zongzi {
   width: 100%;
-  outline: 1px solid blue;
   height: 77%;
   position: relative;
 }
@@ -418,21 +416,45 @@ img, a {
           align-items: center;
 }
 
-.box-in-zongzi {
+.tc-hide {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.8;
+}
+
+.tc-hide .masking {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 99999;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.light-box {
+  position: relative;
+  z-index: 99999;
   color: #fff;
   font-size: 20px;
 }
 
-.box-in-zongzi .light-box {
-  position: relative;
-}
-
-.box-in-zongzi .light-box img {
+.light-box img {
   width: 100%;
   height: auto;
 }
 
-.box-in-zongzi .light-box .content {
+.light-box .content {
   position: absolute;
   left: 0;
   top: 0;
@@ -441,7 +463,7 @@ img, a {
   margin: auto;
 }
 
-.box-in-zongzi .light-box a[type="button"] {
+.light-box a[type="button"] {
   position: relative;
   cursor: pointer;
   width: 290px;
@@ -450,12 +472,12 @@ img, a {
   color: #FAB948;
 }
 
-.box-in-zongzi .light-box a[type="button"] img {
+.light-box a[type="button"] img {
   width: 100%;
   height: 100%;
 }
 
-.box-in-zongzi .light-box a[type="button"] span {
+.light-box a[type="button"] span {
   position: absolute;
   top: 50%;
   left: 50%;

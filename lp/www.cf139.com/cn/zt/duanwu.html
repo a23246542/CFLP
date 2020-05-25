@@ -136,74 +136,72 @@
         <!--#include file="./module/template.footer-1.html"-->
         <!--#include file="./module/html.body.end.html"-->
     </div>
-    <div class="popup-bg" style="display: none">
-        <div class="close-top">
-            <a href="javascript://" onclick="$('.popup-bg').hide();"></a>
-        </div>
-        <!-- <div class="box-in" id="content-popup"> -->
-            <div id="lottery-box" class="box-in-zongzi" style="display: none">
-                <div class="light-box">
-                    <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/pc/duanwu/lightbox_qrcode.png"
-                        alt="">
-                    <div class="content">
-                        <ul class="qr-code">
-                            <li>
-                                <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/pc/duanwu/qr-ios.png"
-                                    alt="">
-                                <p>苹果手机</p>
-                            </li>
-                            <li>
-                                <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/pc/duanwu/code-adr.png"
-                                    alt="">
-                                <p>安卓手机</p>
-                            </li>
-                        </ul>
-                        <a type="button" onclick="$('.popup-bg').hide();">
-                            <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/pc/duanwu/but1.png" alt="">
-                            <span>我知道了</span> 
-                        </a>
-                    </div>
-                   
-                </div>
-            </div>
-            <div id="award-box" class="box-in-zongzi" style="display: none">
-                <div class="light-box">
-                    <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/pc/duanwu/lightbox_winner.png"
-                        alt="">
-                    <div class="content">
-                        <ul class="award-list">
-                            <li><span>50</span>美 元</li>
-                            <li><span>20</span>美 元</li>
-                            <li><span>10</span>美 元</li>
-                            <li><span>5</span>美 元</li>
-                            <li><span>1</span>美 元</li>
-                        </ul>
-                        <p>谢谢参与</p>
-                        <a type="button" onclick="$('.popup-bg').hide();">
-                            <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/pc/duanwu/but1.png" alt="">
-                            <span>我知道了</span> 
-                        </a>
-                    </div>
-                   
+    <div class="tc-hide" id="lottery-box" style="display: none">
+        <div class="masking" onclick="$('#lottery-box').hide()"></div>
+        <!-- <div  class="box-in-zongzi"> -->
+            <div class="light-box">
+                <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/pc/duanwu/lightbox_qrcode.png"
+                    alt="">
+                <div class="content">
+                    <ul class="qr-code">
+                        <li>
+                            <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/duanwu/qr-ios.png"
+                                alt="">
+                            <p>苹果手机</p>
+                        </li>
+                        <li>
+                            <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/duanwu/code-adr.png"
+                                alt="">
+                            <p>安卓手机</p>
+                        </li>
+                    </ul>
+                    <a type="button" onclick="$('.popup-bg').hide();">
+                        <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/pc/duanwu/but1.png" alt="">
+                        <span  onclick="$('#lottery-box').hide()">我知道了</span> 
+                    </a>
                 </div>
             </div>
         <!-- </div> -->
+    </div>
+    <div class="tc-hide" id="award-box" style="display: none">
+        <div class="masking" onclick="$('#award-box').hide()"></div>
+            <!-- <div  class="box-in-zongzi" > -->
+            <div class="light-box">
+                <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/pc/duanwu/lightbox_winner.png"
+                    alt="">
+                <div class="content">
+                    <ul class="award-list">
+                        <li><span>50</span>美 元</li>
+                        <li><span>20</span>美 元</li>
+                        <li><span>10</span>美 元</li>
+                        <li><span>5</span>美 元</li>
+                        <li><span>1</span>美 元</li>
+                    </ul>
+                    <p>谢谢参与</p>
+                    <a type="button" onclick="$('.popup-bg').hide();">
+                        <img src="<!--#echo var='IMG_URL' default=''-->/source/www/zt/lp-img/mobile/duanwu/but1.png" alt="">
+                        <span onclick="$('#award-box').hide()">我知道了</span> 
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 <script src="https://www.cf139.com/cn/js/template.js"></script>
 <script src="js/aos.js"></script>
 <script src="js/swiper.min-4.0.7.js"></script>
-<script src="js/loadApp.js"></script>
+<!-- <script src="js/loadApp.js"></script> -->
 <script>
     AOS.init({
         easing: 'ease-out-back',
         duration: 1000
     });
-    $(function(){
-        let type = $.mechined();//android or ios
-        let noneheader = $.urlParams("noneheader");
-        console.log(type,noneheader);
-    })
+    //下面这个报错后 mousemove直接不执行了
+    // $(function(){
+    //     let type = $.mechined();//android or ios
+    //     let noneheader = $.urlParams("noneheader");
+    //     console.log(type,noneheader);
+    // })
     $(function() {
         $("#zongzi li").mousemove(function() {
             $(this).children('img').attr('src','http://sc.tfejy.com/source/www/zt/lp-img/pc/duanwu/rice2.png')
@@ -216,18 +214,20 @@
             // console.log(btn);           
             if(btn=="lottery"){
                 //不知道为舌么超慢 原来要加0
-                $("#award-box").hide(0,function(){
-                    $("#lottery-box").show(0,function(){
-                        $(".popup-bg").show();
-                    });
-                });
+                // $("#award-box").hide(0,function(){
+                //     $("#lottery-box").show(0,function(){
+                //         $(".popup-bg").show();
+                //     });
+                // });
                 // $("#award-box").hide();
                 // $("#lottery-box").show();
                 // $(".popup-bg").show();
+                $("#lottery-box").css("display", "flex")
             }else{
-                $("#lottery-box").hide();
-                $("#award-box").show();
-                $(".popup-bg").show();
+                // $("#lottery-box").hide();
+                // $("#award-box").show();
+                // $(".popup-bg").show();
+                $("#award-box").css("display", "flex")
             }
         })
     })
