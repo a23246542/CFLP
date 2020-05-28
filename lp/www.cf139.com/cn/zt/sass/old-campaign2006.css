@@ -49,6 +49,9 @@ img, a {
   width: 1320px;
   margin: 0 auto;
   position: relative;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 0 15px;
 }
 
 .clearfix {
@@ -515,20 +518,23 @@ img, a {
 }
 
 .web-page.block-1 .table-box {
-  border-radius: 20px;
+  border-radius: 22px;
   overflow: hidden;
   -webkit-box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.6);
           box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.6);
+  position: relative;
   width: 426px;
   height: 332px;
   background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/oldCampaign2006/table1.png") no-repeat;
-  background-size: 426px 332px;
+  background-size: 427px 332px;
   font-size: 20px;
   font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
 }
 
 .web-page.block-1 .table-box thead, .web-page.block-1 .table-box tbody {
-  visibility: hidden;
+  position: absolute;
+  top: -99999px;
+  left: -99999px;
 }
 
 .web-page.block-1 .table-box tr {

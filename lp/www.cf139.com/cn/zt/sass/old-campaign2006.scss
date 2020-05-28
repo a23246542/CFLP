@@ -122,17 +122,21 @@ $footer-gray:#D2D2D2;
         // display: block;//!!!table标签不会占满宽
         // width: 100%;
         // flex: 1;
-        border-radius: 20px;
+        border-radius: 22px;
         overflow: hidden;
         box-shadow: 0 3px 10px 2px rgba(0,0,0,.6);
+        position: relative;
         // ===============================
         width:426px; 
         height:332px;
         background:url("http://sc.tfejy.com/source/www/zt/lp-img/pc/oldCampaign2006/table1.png") no-repeat;
-        background-size:426px 332px;
+        background-size:427px 332px;
         thead,tbody{
             // display: block;好像可放一起
-            visibility: hidden;
+            // visibility: hidden;
+            position: absolute;
+            top: -99999px;
+            left: -99999px;
         }
 
         // -------------------------------

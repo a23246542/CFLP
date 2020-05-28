@@ -62,6 +62,9 @@ img,a{
     width: 1320px;
     margin: 0 auto;
     position: relative;
+    // ---
+    box-sizing: content-box;
+    padding: 0 15px;
 }
 
 

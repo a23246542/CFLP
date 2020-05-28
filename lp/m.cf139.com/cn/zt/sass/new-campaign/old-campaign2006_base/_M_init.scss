@@ -1,0 +1,478 @@
+@import "./variables";
+html{
+    height: 100%;
+    // font-family: Arial, Helvetica, sans-serif;
+    // font-family: "Microsoft JhengHei", "Heiti TC", "sans-self";
+    font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+}
+
+body{
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,p,ul,li,a{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+img,a{
+    display: block;
+}
+
+// =====================================
+// .wrapper{//原本2005的
+    
+//     .container{
+//         width: 100% !important;//盖掉原本断点设定的
+//     }
+// }
+
+#main{
+    overflow: hidden;
+    width: 100%; 
+    margin: 0; 
+    padding: 0;
+}
+
+//section
+.web-page{
+    width: 100%;
+    // min-width: 1200px;//勉得缩到1200以下 container的东西挤爆
+    // font-size: 16px;
+    color: #333333;
+    
+}
+
+//原本的container
+.inner{
+    overflow: hidden;
+    width: 100% !important;
+    // margin: 0 auto;//template预设
+    padding: 0 !important;//盖掉预设
+    position: relative;
+    .title{
+        padding-top: .8rem;
+    }
+}
+
+// =============================================================
+@mixin bgTxt($width,$height,$title){
+    width: $width+rem;
+    height: $height+rem;
+    // https://sc.tfejy.com/source/www/zt/lp-img/mobile/campaign2004/step2.png
+    background: url("https://sc.tfejy.com/source/www/zt/lp-img/mobile/oldCampaign2005/#{$title}.png") no-repeat;
+    background-size: $width+rem $height+rem;
+    background-position: 50% 50%;
+    @content;
+}
+@mixin bgTxt2($width,$height,$title){
+    width: $width+rem;
+    height: $height+rem;
+    background: url("https://sc.tfejy.com/source/www/zt/lp-img/mobile/oldCampaign2005/#{$title}.png") no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    @content;
+}
+.m-header .layout-1 .item-1 .left-1 {
+    background-image: url(../../images/common/header43_03.png);
+    background-size: 2.25rem 0.63rem;
+    width: 2.25rem;
+    height: 0.63rem;
+    // @include bgTxt(2.25,.63,header43_03);
+}
+
+.clearfix{
+    &::after{
+        content: "";
+        display: block;
+        visibility: hidden;
+        font-size: 0;
+        height: 0;
+        clear: both;
+    }
+}
+
+// .banner-posi{
+//     position: relative;
+//     z-index: 1;
+//     top: -74px;
+//     margin-bottom: -74px;
+// }
+
+.banner-all{//???m版无用?
+    width: 100%;
+    height: 0;
+    // padding-bottom: 31.25%;
+    padding-bottom: 37.8125%;
+    background: url("../lp-img/pc/oldCampaign2005/Banner-up1.png") no-repeat;
+    background-size: 100% 100%;//相对背景区
+    background-position: 50% 50%;
+    position: relative;
+
+    .container,.inner{//如果不是只有h1 h2的其他东西放这
+        // position: relative;
+        position: absolute;
+        // position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    
+    .banner-title-img{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 5;
+    }
+    h1,//移出来保险
+    h2 {
+        position: absolute; //定位住才不会变高(盒子模型)
+        color: transparent;
+        user-select: none;
+    }
+}
+
+
+.title{
+    font-size: 0;//!!!这个药加再外面!!
+    .title-item{
+        text-align: center;
+        font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+        span {
+            //!!这边小图span 行内元素会自动垂直置中?baseline
+            display: inline-block;
+            &:nth-of-type(1){
+                // background-image: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/campaign2005/PC2_tab3.png");
+                @include bgTxt(.33,.25,'(M)left-Yellow')
+            }
+            &:nth-of-type(2){
+                // background-image: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/campaign2005/PC2_tab4.png");
+                @include bgTxt(.33,.25,'(M)right-yellow')
+            }
+        }
+
+
+        h2 {
+            display: inline-block;
+            font-size: .42rem;
+            font-weight: bold;
+            // font-weight: normal;//这边有换
+            text-align: center;
+            padding: 0 .1rem;
+            color: #000;
+            letter-spacing:0.02rem;
+            // margin-bottom: .45px;
+        }
+    }
+    p{
+        text-align: center;
+        font-size: .26rem;
+    }
+}
+
+
+
+// ===================================
+// .web-page1{
+.web-banner{
+    width: 100%;
+    .web-inner{
+        position: relative;
+        width: 100%;
+        height: 9.5rem;
+        background: url("https://sc.tfejy.com/source/www/zt/lp-img/mobile/oldCampaign2005/(M)BannerUPbg.png") no-repeat;
+        // background-size: cover;
+        background-size: 100% 9.5rem;
+        background-position: 50% 50%;
+        .title{//加这个权重  pc得html也补title!!!!!
+        }
+
+        .banner-title-img{
+            position: absolute;
+        }
+        h1,h2{
+            color: transparent !important;
+            user-select: none;
+        }
+    }
+}
+
+
+
+
+
+
+.popup-box .box-in .section1 .item h2.ver-line{
+    white-space: nowrap;
+}
+.tc-hide .popup-box .close-top a{
+    width: 0.31rem !important;
+    height: 0.31rem !important;
+    background-size: 0.31rem 0.31rem !important;
+}
+.popup-box .close-top{
+    // letter-spacing: .01rem;
+}
+
+
+// ======================tc-hide==================================
+
+
+
+.tc-hide{
+    display:none;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    line-height: 1.8;
+}
+
+.masking{
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.6);
+}
+
+ul li,table{
+    list-style-type: none !important;
+}
+
+.popup-box .box-in .section5 h2.var-line{//!!!没有用
+    font-size: .28rem !important;
+}
+
+.popup-box{
+    overflow: hidden;
+    max-width:95%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top:10%;
+    background: #fff;
+    z-index: 99999;
+    font-family: "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 .1rem rgba(0, 0, 0, 0.3);
+    .close-top{
+        padding:0.3rem 0.3rem;
+        font-size: 0.44rem;
+        color:#b78255;
+        text-align: center;
+        border-bottom: 1px solid #b78255;
+        width:6rem;
+        margin: 0 auto;
+        position: relative;
+        a{
+            background: url(../../images/campaign1710/close-b.png) no-repeat;
+            width: 0.21rem;
+            height:0.21rem;
+            background-size: 0.21rem 0.21rem;
+            position: absolute;
+            right: 0;
+            margin-top: .2rem;
+            text-decoration: none;
+        }
+    }
+
+    .note{
+        line-height: 1.8;font-size: 0.24rem;margin-bottom: 0.1rem
+        span{color: #f00}
+    }
+
+    .table1 td,.table2 td{
+        width: 25%;
+    }
+    .table3 td{
+        width: 33.3333%;
+    }
+    .table4 td{
+        width: 16%;
+    }
+    
+    table.data-box{
+        width: 100%;
+        margin: 16px auto .25rem;
+        text-align: center;
+        border: 0 !important;
+        font-size: 1.6em;
+        border-collapse: collapse;
+        border-spacing: 0;
+
+        .first-child {
+            text-align: center;
+            font-size: .28rem;
+            a {
+                color: #666666;
+                text-decoration: none;
+            }
+        }
+        thead {
+            display: table-header-group;
+            vertical-align: middle;
+            border-color: inherit;
+            th {
+                font-size: .28rem;
+                /* font-size: .2rem; */
+                // font-size: 16px template;
+                text-align: center;
+                padding: .15rem .05rem;
+                color: #FFFFFF;
+                background: #dcb08e;
+                line-height: 1.0;
+            }
+        }
+
+        tbody {
+            display: table-row-group;
+            vertical-align: middle;
+            border-color: inherit;
+            td {
+                line-height: 1.0;
+                text-align: center;
+                color: #333333;
+                padding: 1.44%;
+                font-size: .28rem;
+                /* font-size: 14px; template*/
+                border: 0.025rem solid #ead5c2;
+                font-family: Notol, "Microsoft JhengHei", "Microsoft YaHei", arial, sans-serif;
+            }
+
+            tr {
+                display: table-row;
+                vertical-align: inherit;
+                border-color: inherit;
+                &.grey td:nth-child(1){
+                /* width: 30px; */
+                }
+                &.grey {
+                    background: #fff;
+                }
+                &.last-row td {
+                    border-bottom: 1px solid #CCCCCC;
+                }
+            }
+            
+            .unit {
+                font-size: 0.8em;
+            }
+        }
+    }
+
+    // //template
+    // h2 {
+    //     font-size: 0.28rem;
+    //     font-weight: bold;
+    //     color: #b78255;
+    // }
+    .box-in{
+        margin: 3% 4% 5% 4%;
+        overflow-y: auto;
+        height: 8rem;
+        // //template
+        // p {
+        //     font-size: 0.28rem;
+        //     line-height: 1.8;
+        // }
+        
+        // font-size: 16px;
+        .line-throw{font-size: 0.3rem;}
+        .section1{
+            .item{
+            display: flex;
+            justify-content: flex-start;
+            align-items: baseline;
+            margin-bottom: .1rem;
+            }
+            h2{
+                font-size: 0.28rem;
+                font-weight: bold;
+                color: #b78255;
+            }
+            p{
+                font-size:0.28rem;
+                line-height: 1.8;
+            }
+        }
+        .section3{
+            p{
+                font-size:0.28rem;
+                /*margin-bottom: 0.2rem;*/
+                line-height: 1.8;
+                a{color: #0096dc}
+                span{
+                    color: #f00;
+                    font-weight: bold;
+                }
+            }
+            // template
+            .first{
+                border-left: .025rem solid #ccc;
+            }
+            ul li ul li{
+                float: left;
+                font-size: 12px;
+                width: 16%;
+                text-align: center;
+                height: 2.5rem;
+                border-right: 0.025rem solid #ccc;
+                border-bottom: 0.025rem solid #ccc;
+                padding-top:1rem;
+            }
+            
+            ul li ul li.last{
+                width:20%;
+                padding-top:.5rem;
+            }
+        }
+        .section4{
+            h2{
+                font-size: 0.3rem;
+                margin-bottom: 0.1rem;
+                color: #b78255;
+            }
+            li{
+                font-size: 0.28rem;
+                line-height: 1.8;
+                span{
+                    /*margin-right: 0.15rem;*/
+                }
+                p{
+                    display: flex;
+                }
+            }
+        }
+        .section5 ol li{
+            font-size: .2rem;
+            //下面template的部分
+            // font-size: .28rem;
+            // line-height: 2.2;
+            // text-align: justify;
+            // display: flex;
+        }
+        
+    }
+}
+
+.down-footer span{
+    line-height: 1.8;
+}
+.bot-fixed li{
+    line-height: 1.8;
+}
