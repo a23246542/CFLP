@@ -17,24 +17,14 @@ $text-blue2:#034da8;//light
 $footer-gray:#D2D2D2;
 // =====================================
 .web-banner{
-
-    .banner-title-img {
-        width: 4.9rem;
-        height: 5.6rem;
-        img{width: 100%;}//要写盖掉template
-        top: .8rem;
-        left:.65rem;
-    }
+    background: url("http://sc.tfejy.com/source/www/zt/lp-img/mobile/oldCampaign2006/m_banner.jpg") no-repeat;
+    width: 7.5rem;
+    height: 8.5rem;
+    background-size: 7.5rem 8.5rem;
+    background-position: 50% 50%;
+    
 }
 
-.title-item{
-    span:nth-of-type(1){
-        transform:translateY(-40%);
-    }
-    span:nth-of-type(2){
-        transform:translateY(10%);
-    }
-}
 
 
 
@@ -57,9 +47,6 @@ $footer-gray:#D2D2D2;
             letter-spacing:.02rem;
         }
     }
-    .list{
-        // width: 1200px;
-    }
 
     .list-up{
         padding: .65rem 0 0;
@@ -72,6 +59,18 @@ $footer-gray:#D2D2D2;
     .swiper-wrapper{
         width: auto;
         height: auto;
+    }
+    
+    .swiper-navigation{
+        // &::after{content:'';display:block;clear:both;}
+        position: absolute;
+        width: 6rem ;
+        top: 43%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        
+
     }
     .swiper-slide{
         width: 100%;
@@ -86,8 +85,8 @@ $footer-gray:#D2D2D2;
         width:4.26rem; 
         height:3.32rem;
         margin: 0 auto .7rem;
-        background:url("http://sc.tfejy.com/source/www/zt/lp-img/mobile/oldCampaign2006/table1.png") no-repeat;
-        background-size:4.27rem 3.32rem;
+        // background:url("http://sc.tfejy.com/source/www/zt/lp-img/mobile/oldCampaign2006/table1.png") no-repeat;
+        background-size:4.26rem 3.32rem;
         // margin-bottom: .23rem;
         box-sizing: border-box;
         // padding-left: .75rem;//??无效
@@ -98,6 +97,31 @@ $footer-gray:#D2D2D2;
             top: -999rem;
             left: -999rem;
         }
+        
+    }
+
+    .swiper-wrapper{
+        // .swiper-slide:nth-child(1){
+        .slide1{
+                .table-box{
+                    // background:url("http://sc.tfejy.com/source/www/zt/lp-img/mobile/oldCampaign2006/table1.png") no-repeat;
+                    background-image:url("http://sc.tfejy.com/source/www/zt/lp-img/mobile/oldCampaign2006/table1.png");
+                }
+        }
+        // .swiper-slide:nth-child(2){
+        .slide2{
+            .table-box{
+                                // background:url("http://sc.tfejy.com/source/www/zt/lp-img/mobile/oldCampaign2006/table2.png") no-repeat;
+                background-image:url("http://sc.tfejy.com/source/www/zt/lp-img/mobile/oldCampaign2006/table2.png");
+            }
+        }
+        // .swiper-slide:nth-child(3){
+        .slide3{
+            // background:url("http://sc.tfejy.com/source/www/zt/lp-img/mobile/oldCampaign2006/table3.png") no-repeat;
+            .table-box{
+                background-image:url("http://sc.tfejy.com/source/www/zt/lp-img/mobile/oldCampaign2006/table3.png");
+            }
+        }
     }
     .list-tip{
         text-align: center;
@@ -106,7 +130,7 @@ $footer-gray:#D2D2D2;
             line-height: 1.7;
             font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
             color: $text-blue;
-            letter-spacing:.01rem;
+            letter-spacing:.02rem;
         }
     }
     // .rule-button{
@@ -142,162 +166,99 @@ $footer-gray:#D2D2D2;
 
 
 
-.web-page.block-4{
-    background-color: $secondary-color;
+.web-page.block-2{
+    background-color: $bg-blue !important;
     .title{
         @extend .title-item;
-    }
-    .title-item{
-        span:nth-of-type(1){
-            background: url("http://sc.tfejy.com/source/www/zt/lp-img/mobile/oldCampaign2005/(M)left-White.png") no-repeat;
-            background-size: 0.33rem 0.25rem;//???为舌么会被盖掉
-        }
-        span:nth-of-type(2){
-            background: url("http://sc.tfejy.com/source/www/zt/lp-img/mobile/oldCampaign2005/(M)Right-White.png") no-repeat;
-            background-size: 0.33rem 0.25rem;
+        padding-top: .9rem;
+        h2{
+            color: $text-yellow;
         }
     }
+    // .title-item{
+    //     span:nth-of-type(1){
+    //         background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/oldCampaign2005/left-white-1.png") no-repeat;
+    //     }
+    //     span:nth-of-type(2){
+    //         background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/oldCampaign2005/right-white-2.png") no-repeat;
+    //     }
+    // }
+    .conList1{
+        padding: .9rem 0 .15rem;
+        .container{
+            // display: flex;
+            padding: 0 .52rem;//60-7
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            // justify-content: space-between;
+            // justify-content: space-around;
+            // justify-content: center;
+            // align-items: center;
 
-    .conList2{
-        padding: .65rem 0 .55rem;
-    }
-    .swiper-container{
-        width: auto;
-        height: auto;
-        padding-bottom: .75rem;
-    }
-    .swiper-pagination-bullet{
-        width: 0.35rem;
-        height: .35rem;
-        background-color: #fff;
-        opacity: 1;
-        &-active{
-            background-color: $primary-color;
-        }
+            li{
+                width: 50%;
 
-    }
-    .swiper-wrapper{
-        width: auto;
-        height: auto;
-    }
-    .swiper-slide{
-        width: auto;
-        height: auto;
-        padding: 0;
-        margin: 0;
-        padding: .2rem 0;
-        opacity: .6;
-        transition: all .2s;
-        // &-active{
-        //     opacity: 1;
-        //     li.item{
-        //         width: 3rem;//!!!顺序有差 会被下面2.8覆盖
-        //     }
-        // }
-        
-        li.item{
-            width: 2.8rem;
-            margin: 0 .2rem;
-            // padding: 0 .2rem;//!!!跟原本2005不一样的方式!!!噢 不行 发现要用marign把slide撑开 不然阴影会变再外面!!!
-            //要paddin阴影 加再外面的slide??
-            // box-sizing: content-box;
-            border-radius: 30px;
-            overflow: hidden;//不然这边阴影切不到
-            font-family: $font-family;
-            box-shadow: 0 .06rem .08rem .01rem rgba(0,0,0,.2);
-            // filter: drop-shadow(0 0 5px #555);//阴影问题试过各种方法确定没用 只能帮父层留内边距跟边界
-            .txt{
-                background-color: #fff;
-                padding: .25rem 0;
-                text-align: center;
-            }
-            span{
-                display: block;
-                img{width:100%}
-            }
-            h3{
-                font-size: 0.26rem;
-                font-weight: bold;
-            }
-            p{
-                font-size: 0.26rem;
-                color: #606060;
-            }
-        }
-
-        &-active{
-            opacity: 1;
-            li.item{
-                // width: 3rem;
+                // --------
+                // box-shadow: 0 0 8px 1px rgba(0,0,0,.3);
+                .news-item{
+                    // margin: 0 .07rem;
+                    padding: 0 .08rem;
+                    margin-bottom: 1.2rem;
+                }
+                span{
+                    display: block;
+                    width: 3.1rem;
+                    height: 3.43rem;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit:cover//
+                    }
+                }
+                .txt{
+                    white-space: nowrap;
+                    padding: .25rem 0px 0px;
+                    text-align: center;
+                    font-size: .24rem;
+                    line-height: 1.5;
+                    color: $text-yellow;
+                    h3{//这边很特别 只有h3要给字体 p反而不用
+                        font-size: .28rem;
+                        font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
+                        font-weight: normal;
+                        letter-spacing:.01rem;
+                    }
+                    p{
+                        font-size: .28rem;
+                        letter-spacing:.015rem;
+                    }
+                }
             }
         }
     }
 }
 
 
-// .web-page.block-2{
-//     @include bgTxt(7.5,6.77,'(M)GirlBG');
-//     h2,p{color: #fff;}
-    
-//     .layout-box{
-//         // width: 600px;//!!!float也可不用写宽度
-//         float: right;
-//         width: 3.3rem;
-//         margin-right: .4rem;
-//     }
-
-//     .title{
-//         // h2{
-//         //     padding: 0 10px;
-//         // }
-//         padding-top: .65rem;
-//         .title-item{
-//             margin-bottom: .2rem;
-//         }
-//     }
-
-//     .example-content{
-//         // font-size: .26rem;//写在这边被init盖掉
-//         line-height: 1.8;
-//         font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
-//         p{
-//             font-weight: normal;
-//             font-size: 0.25rem;
-//             letter-spacing: .04rem;
-//             text-align: left;
-//             opacity: .8;
-//             margin-bottom: .35rem;
-//         }
-//         span{
-//             // letter-spacing:initial;//!不然会继承到p
-//             letter-spacing:.01rem;
-//             font-size: .28rem;
-//             font-weight: bold;
-//             color: #f8b300;
-//             white-space: nowrap;//!!
-//         }
-//     }
-
-// }
-
-
 
 
 .web-page.block-3{
-    background-color: $primary-color;
+    background-color: $bg-yellow;
     margin-top: -.01rem;
     .title{
-        padding-top: .85rem;
+        padding-top: .75rem;
         // margin-bottom: 50px;
     }
     .title-item h2{//!!不写h2吃不到 字体是写在section的父曾至少可以吃到
-        color: #fff;
+        color: $text-blue2;
     }
 
-    .conList1{
-        padding: .55rem 0 .9rem;
+    .conList2{
+        padding: .55rem 0 0rem;
         ul{
-            padding: 0 .9rem;
+            padding: 0 1.27rem;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -306,7 +267,8 @@ $footer-gray:#D2D2D2;
             // align-content: space-between;
             font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
             li{
-                width: 2.4rem;//!!?用最大的那个为宽/没用
+                width: 2.25rem;//!!?用最大的那个为宽/没用
+                margin-bottom: .9rem;
                 // &:nth-of-type(2)::after{
                     //     content:"";
                     //     width: 100%;
@@ -315,33 +277,34 @@ $footer-gray:#D2D2D2;
                 text-align: center;
                 
 
-                &:nth-of-type(1),&:nth-of-type(2){
-                    margin-bottom: .85rem;
-                }
+                // &:nth-of-type(1),&:nth-of-type(2){
+                //     margin-bottom: .85rem;
+                // }
 
                 span{
                     display: block;//!!!!原来span是这样用
                     // width:1.5rem;
                     // height: 1.5rem;
-                    margin-bottom: .3rem;
+                    margin-bottom: .15rem;
                     img{
-                        width:1.5rem;
-                        height: 1.5rem;
+                        width:1.83rem;
+                        height: 1.81rem;
                         margin: 0 auto;
                     }
                 }
                 p{
-                    font-size: .27rem;
-                    letter-spacing:.03rem;
+                    color: $text-blue2;
+                    white-space: nowrap;
+                    letter-spacing:.01rem;
                     // font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
                 }
                 p:nth-of-type(1) {
-                    color:#ffd400;
-                    margin-bottom: .05rem;
-                    font-weight: bold;
+                    font-size: .3rem;
+                    margin-bottom: .24rem;
+                    // font-weight: bold;
                 }
                 p:nth-of-type(2) {
-                    color:#fff;
+                    font-size: .33rem;
                 }
             }
         }
@@ -351,16 +314,19 @@ $footer-gray:#D2D2D2;
 
 
 .web-footer{
-    background-color: $secondary-color;
+    background-color: $bg-blue;
     // padding: .65rem .65rem;
-    padding: .2rem 0 1.7rem;
+    padding: .2rem 0 1.8rem;
     text-align: center;
     .item-1,.item-2{
-        color: #231815;
+        color: #fff;
         font-size: 0.2rem;
         font-family:$font-family;
-        line-height: 1.3;
-        opacity: .9;
+        line-height: 1.5;
+        opacity: .7;
+    }
+    .item-1{
+        margin-bottom: .15rem;
     }
     
 }
@@ -371,34 +337,35 @@ $footer-gray:#D2D2D2;
 
 
 .bot-fixed{
-    background-color: #000;
+    background-color: #434241;
     position: fixed;
     z-index: 888;
+    width: 100%;
     left: 0;
     bottom: 0;
     overflow: hidden;
-    width: 100%;
     ul{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: .27rem 0;
+        padding: .4rem 0 .3rem;
     }
     
-    img{
-        width: 0.62rem;
-        height: 0.67rem;
-        margin-right: .1rem;
-    }
+    // img{
+    //     width: 0.62rem;
+    //     height: 0.67rem;
+    //     margin-right: .1rem;
+    // }
     li.bot-item{
-        display: flex;
-        margin: 0 .22rem;
-        font-size: 0;
+        // display: flex;
+        margin: 0 .07rem;
+        // font-size: 0;
         a{
-            width: 2.2rem;
-            height: 0.65rem;
-            line-height: .65rem;
-            font-size: 0.3rem;
+            width: 3.38rem;
+            height: 0.83rem;
+            line-height: .83rem;
+            box-sizing: border-box;
+            font-size: 0.38rem;
             font-weight: bold;
             font-family: $font-family;
             text-align: center;
@@ -408,17 +375,16 @@ $footer-gray:#D2D2D2;
     }
     li.bot-item:nth-of-type(1){
         a{
-            color: #ffd400;
-            background-color: #000;
-            box-sizing: border-box;
-            border:1px solid  #ffd400;
-            line-height: .63rem;//!!!!lh只算不包含border的
+            color: $text-blue2;
+            background-color: #fff;
+            border: .02rem solid $bg-blue;
+            line-height: .79rem;//!!!!lh只算不包含border的
         }
     }
     li.bot-item:nth-of-type(2){
         a{
-            background-color: #ffd400;
-            color: #000;
+            color:$text-yellow2;
+            background-image: linear-gradient(180deg, #1394f8 0%, #044fab 100%);
         }
     }
 }
@@ -437,3 +403,9 @@ li.bot-item.onlyChat{//要写再后面!!!!!!
     }
 }
 
+.popup-box .box-in .section1 .item{
+    margin-bottom: 0;
+}
+.popup-box .box-in .section4 h2{
+    margin: .15rem 0 0;
+}

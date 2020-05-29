@@ -129,7 +129,7 @@ $footer-gray:#D2D2D2;
         // ===============================
         width:426px; 
         height:332px;
-        background:url("http://sc.tfejy.com/source/www/zt/lp-img/pc/oldCampaign2006/table1.png") no-repeat;
+        // background:url("http://sc.tfejy.com/source/www/zt/lp-img/pc/oldCampaign2006/table1.png") no-repeat;
         background-size:427px 332px;
         thead,tbody{
             // display: block;好像可放一起
@@ -138,7 +138,6 @@ $footer-gray:#D2D2D2;
             top: -99999px;
             left: -99999px;
         }
-
         // -------------------------------
         // margin-bottom: 22px;
         font-size: 20px;
@@ -180,6 +179,15 @@ $footer-gray:#D2D2D2;
             }
         }
 
+    }
+    .table1{
+        background-image: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/oldCampaign2006/table1.png");
+    }
+    .table2{
+        background-image: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/oldCampaign2006/table2.png");
+    }
+    .table3{
+        background-image: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/oldCampaign2006/table3.png")
     }
     .table-tip{
         text-align: center;
@@ -283,7 +291,7 @@ $footer-gray:#D2D2D2;
     //         background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/oldCampaign2005/right-white-2.png") no-repeat;
     //     }
     // }
-    .conList2{
+    .conList1{
         padding: 90px 0 130px;
         ul{
             display: flex;
@@ -336,7 +344,7 @@ $footer-gray:#D2D2D2;
         color: $text-blue2;
     }
 
-    .conList1{
+    .conList2{
         padding: 90px 0 140px;
         ul{
             display: flex;
@@ -393,4 +401,12 @@ $footer-gray:#D2D2D2;
         margin-bottom:0;
     }
     
+}
+
+.section2>.line-throw+p{
+    line-height: 1;
+    margin-top: 20px;
+}
+.section4 h2{
+    margin: 10px 0 0;
 }

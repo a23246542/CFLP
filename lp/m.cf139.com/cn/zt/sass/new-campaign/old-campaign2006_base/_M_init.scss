@@ -162,9 +162,10 @@ img,a{
 
         h2 {
             display: inline-block;
-            font-size: .42rem;
-            font-weight: bold;
-            // font-weight: normal;//这边有换
+            // font-size: .42rem;
+            font-size: .5rem;
+            // font-weight: bold;
+            font-weight: normal;//这边有换
             text-align: center;
             padding: 0 .1rem;
             color: #000;
@@ -186,22 +187,18 @@ img,a{
     width: 100%;
     .web-inner{
         position: relative;
-        width: 100%;
-        height: 9.5rem;
-        background: url("https://sc.tfejy.com/source/www/zt/lp-img/mobile/oldCampaign2005/(M)BannerUPbg.png") no-repeat;
-        // background-size: cover;
-        background-size: 100% 9.5rem;
+        background: url("http://sc.tfejy.com/source/www/zt/lp-img/mobile/oldCampaign2006/m_banner.jpg") no-repeat;
+        width: 7.5rem;
+        height: 8.5rem;
+        background-size: 7.5rem 8.5rem;
         background-position: 50% 50%;
-        .title{//加这个权重  pc得html也补title!!!!!
+        .banner-title{//加这个权重  pc得html也补title!!!!!
+            h1,h2{
+                color: transparent !important;
+                user-select: none;
+            }
         }
-
-        .banner-title-img{
-            position: absolute;
-        }
-        h1,h2{
-            color: transparent !important;
-            user-select: none;
-        }
+        
     }
 }
 

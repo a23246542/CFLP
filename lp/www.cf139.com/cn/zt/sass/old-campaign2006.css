@@ -525,7 +525,6 @@ img, a {
   position: relative;
   width: 426px;
   height: 332px;
-  background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/oldCampaign2006/table1.png") no-repeat;
   background-size: 427px 332px;
   font-size: 20px;
   font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
@@ -574,6 +573,18 @@ img, a {
 .web-page.block-1 .table-box tbody td {
   font-weight: bold;
   letter-spacing: 1.3;
+}
+
+.web-page.block-1 .table1 {
+  background-image: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/oldCampaign2006/table1.png");
+}
+
+.web-page.block-1 .table2 {
+  background-image: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/oldCampaign2006/table2.png");
+}
+
+.web-page.block-1 .table3 {
+  background-image: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/oldCampaign2006/table3.png");
 }
 
 .web-page.block-1 .table-tip {
@@ -637,11 +648,11 @@ img, a {
   color: #ffde00;
 }
 
-.web-page.block-2 .conList2 {
+.web-page.block-2 .conList1 {
   padding: 90px 0 130px;
 }
 
-.web-page.block-2 .conList2 ul {
+.web-page.block-2 .conList1 ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -652,17 +663,17 @@ img, a {
           align-items: center;
 }
 
-.web-page.block-2 .conList2 ul li {
+.web-page.block-2 .conList1 ul li {
   margin: 0 5px;
 }
 
-.web-page.block-2 .conList2 ul li span {
+.web-page.block-2 .conList1 ul li span {
   display: block;
   overflow: hidden;
   border-radius: 30px;
 }
 
-.web-page.block-2 .conList2 ul li .txt {
+.web-page.block-2 .conList1 ul li .txt {
   padding: 35px 0px 0px;
   text-align: center;
   font-size: 24px;
@@ -670,12 +681,12 @@ img, a {
   color: #ffde00;
 }
 
-.web-page.block-2 .conList2 ul li .txt h3 {
+.web-page.block-2 .conList1 ul li .txt h3 {
   font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
   letter-spacing: 1px;
 }
 
-.web-page.block-2 .conList2 ul li .txt p {
+.web-page.block-2 .conList1 ul li .txt p {
   letter-spacing: 1.5px;
 }
 
@@ -691,11 +702,11 @@ img, a {
   color: #034da8;
 }
 
-.web-page.block-3 .conList1 {
+.web-page.block-3 .conList2 {
   padding: 90px 0 140px;
 }
 
-.web-page.block-3 .conList1 ul {
+.web-page.block-3 .conList2 ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -707,34 +718,34 @@ img, a {
           align-items: center;
 }
 
-.web-page.block-3 .conList1 ul li {
+.web-page.block-3 .conList2 ul li {
   width: 220px;
   margin: 0 35px;
   text-align: center;
 }
 
-.web-page.block-3 .conList1 ul li span {
+.web-page.block-3 .conList2 ul li span {
   display: block;
   margin-bottom: 32px;
 }
 
-.web-page.block-3 .conList1 ul li span img {
+.web-page.block-3 .conList2 ul li span img {
   margin: 0 auto;
 }
 
-.web-page.block-3 .conList1 ul li p {
+.web-page.block-3 .conList2 ul li p {
   font-size: 20px;
   color: #034da8;
   font-family: "Microsoft YaHei", "Microsoft JhengHei", arial, sans-serif;
   letter-spacing: 1px;
 }
 
-.web-page.block-3 .conList1 ul li p:nth-of-type(1) {
+.web-page.block-3 .conList2 ul li p:nth-of-type(1) {
   font-size: 20px;
   margin-bottom: 20px;
 }
 
-.web-page.block-3 .conList1 ul li p:nth-of-type(2) {
+.web-page.block-3 .conList2 ul li p:nth-of-type(2) {
   font-size: 30px;
 }
 
@@ -755,5 +766,14 @@ img, a {
 
 .web-footer .item-2 {
   margin-bottom: 0;
+}
+
+.section2 > .line-throw + p {
+  line-height: 1;
+  margin-top: 20px;
+}
+
+.section4 h2 {
+  margin: 10px 0 0;
 }
 /*# sourceMappingURL=old-campaign2006.css.map */
