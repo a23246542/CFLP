@@ -30,7 +30,8 @@ $footer-gray:#D2D2D2;
     background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/oldCampaign2006/topban.jpg") no-repeat;
     // background-size: auto 100%;//相对背景区
     background-size: cover;
-    background-position: top center;
+    // background-position: top center;//SF说会跑掉
+    background-position: center center;
     position: relative;
 
     // @include bgTxt(1920,726,'Banner-up1');

@@ -2,82 +2,67 @@ var login = {
     account: "81018191",
     appLogin: false
 }
-var brotate = false;
+var bRotate = false;
 var actId = 98;
 const api = {
-    initZongzi: pre_op + "api/activity/luckyDrawReCord/beforeRaffle",
-    // initZongzi: mis_url + "api/activity/luckyDrawReCord/beforeRaffle",
-    // activation: mis_url + "/public/customer/act/" + data.account,
+    initZongzi: pre_op + "/api/activity/luckyDrawReCord/beforeRaffle",
     lotteryZongzi: pre_op + "/api/activity/luckyDrawReCord/startRaffle",
 }
 
 $.extend({
-    ajaxData:function(options, callbackSuc, callbackErr){
-        options = $.extend(options, {"_r":Math.random()});
+    ajaxData: function(options, callbackSuc, callbackErr) {
+        options = $.extend(options, { "_r": Math.random() });
         $.ajax({
             type: options.ajaxtype,
-            url:options.url,
+            url: options.url,
             async: true,
             data: options,
-            dataType:"json",
-            success: function(data){
-                if($.isFunction(callbackSuc)){callbackSuc(data);}
+            dataType: "json", //数据类型为jsonp
+            success: function(data) {
+                if ($.isFunction(callbackSuc)) callbackSuc(data);
             },
-            error: function(data){
-                if($.isFunction(callbackErr)){callbackErr(data);}
+            error: function(data) {
+                if ($.isFunction(callbackErr)) callbackErr(data);
             }
         });
     },
-    jsonpAjax: function (options, callbackSuc, callbackErr) {
-        $.extend(options, {
-            _r: Math.random()
-        });
+    jsonpAjax: function(options, callbackSuc, callbackErr) {
+        $.extend(options, { _r: Math.random() });
+        var jsonPUrl = options.url;
         $.ajax({
             type: "GET",
-            url: options.url,
+            url: jsonPUrl,
             async: true,
             data: options,
             dataType: "jsonp", // 数据类型为jsonp
             jsonp: 'jsonpCallback',
-            // jsonpCallback: 'handleResponse', //设置回调函数名
-            success: function (data,status,xhr) {
-                if ($.isFunction(callbackSuc)){callbackSuc(data);}
-                // console.log('状态为：' + status + ',状态是：' + xhr.statusText);
-                // console.log(data);
-                // function handleResponse(response){
-                //     // 对response数据进行操作代码
-                //     alert(response);
-                // }
-                // handleResponse();
-                
+            success: function(data) {
+                if ($.isFunction(callbackSuc)) callbackSuc(data);
             },
-            error: function (data,status,xhr) {
-                console.log("请求失败的url," + options.url);
-                if ($.isFunction(callbackErr)){callbackErr(data);}
-                // console.log('状态为：' + status + ',状态是：' + xhr.statusText);
-                // console.log(data);
-                // function handleResponse(response){
-                //     // 对response数据进行操作代码
-                //     alert(response);
-                // }
-                // handleResponse();
+            error: function(data) {
+                console.log("请求失败，url :" + options.url);
+                if ($.isFunction(callbackErr)) callbackErr(data);
             }
         });
+    
     },
     //get提交加载
-    loadingGet: function (param, callbackSuc, callbackErr) {
-        param = $.extend(param, {
-            "ajaxtype": "GET"
-        });
-        // $.jsonpAjax(param, callbackSuc, callbackErr);
-        $.ajaxData(param, callbackSuc, callbackErr);
+    loadingGet: function(param, callbackSuc, callbackErr) {
+        param = $.extend(param, { "ajaxtype": "GET" });
+        $.jsonpAjax(param, callbackSuc, callbackErr);
     },
     //post提交加载
-    loadingPost: function (param, callbackSuc, callbackErr) {
-        param = $.extend(param, {
-            "ajaxtype": "POST"
-        });
-        // $.jsonpAjax(param, callbackSuc, callbackErr);
+    loadingPost: function(param, callbackSuc, callbackErr) {
+        param = $.extend(param, { "ajaxtype": "POST" });
+        $.jsonpAjax(param, callbackSuc, callbackErr);
+    },
+    //post提交加载
+    loadingPostNo: function(param, callbackSuc, callbackErr) {
+        param = $.extend(param, { "ajaxtype": "POST" });
+        $.ajaxData(param, callbackSuc, callbackErr);
+    },
+    loadingGetNo: function(param, callbackSuc, callbackErr) {
+        param = $.extend(param, { "ajaxtype": "GET" });
         $.ajaxData(param, callbackSuc, callbackErr);
     },
     initList: function () {
@@ -113,7 +98,6 @@ $.extend({
         $("#real .message").empty().text(res.code_desc);
         // $.pop("#real", ".m-popCon")
         // $("goLogin").attr("href","https://admin.cfxdealer.com/")
-        // 用span来实现a的功能
         $("#goLogin").click(function () {
             window.location.href = "https://admin.cfdealer88.com?intercept_login";
         })
@@ -156,8 +140,8 @@ $.extend({
         }
     },
     loadFromApp: function () {
-        // var useInfo="";//不要给他宣告字串!!!
-        var useInfo;//不要给他宣告字串!!!
+        // var useInfo="";
+        var useInfo;
         var type = $.mechined();
         //如果是安卓手机浏览器且是配置的是APP内应用
         var noneHeader = $.urlParams("noneheader");
@@ -209,7 +193,6 @@ $.extend({
                 $.loggedInByAccount(user)
             } else {
                 //   "请登入帐户"
-                // $.real();
                 login.appLogin = false;
                 $.actZongzi();
             }
@@ -251,17 +234,20 @@ $.extend({
     // 登入的情况下调用 action 去获取用户的粽子状况 跟给交互行为
     // actZongzi() { //==actTurner
     // https://cors-anywhere.herokuapp.com/
-    actZongzi() { 
+    actZongzi:function() { 
         var param = {
             "url": api.initZongzi,
             "luckyDrawId": actId,
             "account": login.account
         };
-        $.loadingPost(param, function (res) {
-            $.initZongziUser(res);
-        }, function (res) {
-            console.error(res);
-        })
+		$.loadingPostNo(param, function(data) {
+            // console.log("actZongzi,"+ $.parseJSON(data));
+            // console.log("actZongzi,"+ data);
+            console.log("actZongzi,", data);
+		    $.initZongziUser(data);
+		}, function(data) {
+		    console.info(data);
+		});
     },
     //此活动跟此用户的个人粽子 mutation 有可能是空的
     initZongziUser(res) { //==initLuckyUser
@@ -315,7 +301,7 @@ $.extend({
         }
     },
     // ==========================================================================
-    //噢噢 确定有登入才调用这个方法
+    //确定有登入才调用这个方法
     checkActivation: function (zongziData) {
         var options = {
             "url": mis_url + "/public/customer/act/" + zongziData.account
@@ -343,7 +329,7 @@ $.extend({
                         } else {
                             if (!bRotate) {
                                 // $("#zongzi li").click(function () {
-                                    $.showLogin(); //但我這邊應該是goLogin
+                                    $.showLogin();
                                 // })
                                 // $("#lottery").click(function () {
                                     
@@ -374,7 +360,12 @@ $.extend({
             "account": login.account
         }
 
-        $.loadingPost(param,function(res){
+        // $.loadingPost(param,function(res){
+        $.loadingPostNo(param,function(res){
+
+            // console.log("openZongzi,"+res);
+            console.log("openZongzi,",res);
+            
             $.getLottery(res);
         }),function(data){
             console.error(`clickZongzi_postErr:${res}`);

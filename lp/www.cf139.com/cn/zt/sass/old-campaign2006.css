@@ -439,7 +439,7 @@ img, a {
   height: 600px;
   background: url("http://sc.tfejy.com/source/www/zt/lp-img/pc/oldCampaign2006/topban.jpg") no-repeat;
   background-size: cover;
-  background-position: top center;
+  background-position: center center;
   position: relative;
 }
 
